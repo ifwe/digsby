@@ -737,7 +737,7 @@ class MSNClient(protocol):
         if buddy not in self.waiting_for_auth:
             buddy.pending_auth = False
             self.waiting_for_auth.add(buddy)
-            self.hub.authorize_buddy(self, buddy, message = self.ns.get_auth_message_for(buddy))
+            self.hub.authorize_buddy(self, buddy, message = getattr(self.ns, 'get_auth_message_for', lambda b: u'')(buddy))
 
     def on_contact_recv(self, name, flags, groups, soap = None, id = None):
         log.debug('on_contact_recv: name=%s, flags=%s, groups=%s', name, flags, groups)
