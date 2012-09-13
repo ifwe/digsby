@@ -6,7 +6,7 @@ import util.callbacks as callbacks
 def LoadPluginInfo(
                    feature_id = 'facebook',
                    plugin_id = 'fbchat',
-                   site_path = 'http://s3.amazonaws.com/update.digsby.com/',
+                   site_path = 'http://update.digsby.com/',
                    platform_version = 'digsby-1_0_0',
                    tag = 'release',
                    callback = None):
@@ -27,7 +27,7 @@ def LoadPluginInfo(
     return site
 
 @callbacks.callsback
-def LoadDigsbyInfo(site_path = 'http://s3.amazonaws.com/update.digsby.com/', callback = None):
+def LoadDigsbyInfo(site_path = 'http://update.digsby.com/', callback = None):
 
     feature_name = 'digsby'
 

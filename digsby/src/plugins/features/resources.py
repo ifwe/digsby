@@ -358,7 +358,7 @@ class RemoteOrLocalCached(RemoteOrLocal, CachedResource):
 
 def _main():
     import stdpaths, digsby_updater.file_integrity as file_integrity
-    remote = 'http://s3.amazonaws.com/update.digsby.com/update.yaml'
+    remote = 'http://update.digsby.com/update.yaml'
     local = 'c:\\program files (x86)\\digsby\\update.yaml'
     updateyaml = LocalOrRemoteYaml(local = (local,),
                                    remote = (remote,))

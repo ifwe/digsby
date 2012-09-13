@@ -66,7 +66,7 @@ class FeatureSite(resources.YamlResource, resources.LocalOrRemote):
         if feat.feature_id == 'digsby':
             import util
             assert cls is DigsbyFeatureSite
-            remote_path = 'http://s3.amazonaws.com/update.digsby.com/'
+            remote_path = 'http://update.digsby.com/'
             local_path = util.program_dir()
         else:
             remote_path = feat.remote_path

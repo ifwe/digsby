@@ -7,7 +7,7 @@ compatible_platform_versions = (
     current_platform_version,
 )
 
-digsby_update_site = 'http://s3.amazonaws.com/update.digsby.com/'
+digsby_update_site = 'http://update.digsby.com/'
 
 class Feature(object):
     def __init__(self, feature_id,

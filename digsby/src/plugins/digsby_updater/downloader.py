@@ -6,27 +6,27 @@ Initialize a Downloader with an UpdateManager instance:
 
 The download process can be kicked off by calling the `start` method:
 >>> d.start(success = lambda list_of_downloaded_files: None,
-			error   = lambda list_of_error_files, list_of_success_files: None)
+            error   = lambda list_of_error_files, list_of_success_files: None)
 
 Instances of this class also trigger certain hooks:
  - digsby.updater.update_download_start(list_of_file_descriptions_to_download)
-	When the first file is about to be processed.
+    When the first file is about to be processed.
  - digsby.updater.file_download_start(file_description)
     When any file is about to be processed.
  - digsby.updater.file_download_complete(file_description)
-	When a file is moved to the 'done' state.
+    When a file is moved to the 'done' state.
  - digsby.updater.file_download_error(file_description)
-	When a file is moved to the 'error' state.
+    When a file is moved to the 'error' state.
  - digsby.updater.update_download_complete(list_of_done_file_descriptions)
-	When all files are in the 'done' state.
+    When all files are in the 'done' state.
  - digsby.updater.update_download_error(list_of_failed_file_descriptions, list_of_done_file_descriptions)
-	When all files are in the 'done' or 'failed' state.
-			
-Manages a queue of files (file description objects) that need to be downloaded. The source 
-should be a web URL and the destination should be a directory - usually a temporary one. 
+    When all files are in the 'done' or 'failed' state.
 
-For each file, the destination directory is scanned for an existing and equivalent copy 
-(equivalence is determined the file description we have). If found, the file is considered 
+Manages a queue of files (file description objects) that need to be downloaded. The source
+should be a web URL and the destination should be a directory - usually a temporary one.
+
+For each file, the destination directory is scanned for an existing and equivalent copy
+(equivalence is determined the file description we have). If found, the file is considered
 'done'. If an equivalent copy is not found, downloading begins.
 
 Downloading is performed with asynchttp, which by default may attempt the a single request up
@@ -38,7 +38,7 @@ If downloading succeeds, the file content is checked against the description we 
 If the description matches, the file is considered 'done'. If it does not, the backup host will
 be attempted. If the file was retrieved from the backup host, the file is considered  'failed'.
 
-At this point the next file is attempted. Only one file is downloaded at a time (the process is 
+At this point the next file is attempted. Only one file is downloaded at a time (the process is
 not parallelized).
 
 Once all files are in either 'done' or 'failed' state, callbacks are called (success if all files
@@ -79,13 +79,19 @@ class Downloader(object):
     remote_root_base = path.path('http://update.digsby.com/')
     backup_root_base = path.path('http://updatebackup.digsby.com/')
 
+    remote_root_base_equivalent = path.path('http://s3.amazonaws.com/update.digsby.com/')
+
     def __init__(self, updater):
         self.updater = updater
         self.unchecked_files = list(updater.update_files)
         self.errored_files = []
         self.downloaded_files = []
         self.num_files = len(self.unchecked_files)
-        relpath = self.remote_root_base.relpathto(path.path(updater.manifest_path).parent)
+        if updater.manifest_path.startswith(self.remote_root_base):
+            relpath = self.remote_root_base.relpathto(path.path(updater.manifest_path).parent)
+        else:
+            relpath = self.remote_root_base_equivalent.relpathto(path.path(updater.manifest_path).parent)
+
         self.local_root = path.path(updater.temp_dir)
         self.remote_root = net.httpjoin(self.remote_root_base, relpath) + "/"
         self.backup_root = net.httpjoin(self.backup_root_base, relpath) + "/"
@@ -159,8 +165,8 @@ class Downloader(object):
                 self.try_backup(file, Exception("Bad data from primary server"))
                 return # Don't queue next file yet.
             else:
-                log.error("Error downloading %r. Bad data from backup server; primary server error was: %r", 
-						  file.path, backup_exception)
+                log.error("Error downloading %r. Bad data from backup server; primary server error was: %r",
+                          file.path, backup_exception)
                 self.errored_files.append(file)
                 hooks.notify("digsby.updater.file_download_error", file)
 
@@ -173,8 +179,8 @@ class Downloader(object):
                  error = lambda req, e2: self.file_error(file, e, e2))
 
     def file_error(self, file, e1, e2):
-        log.error("Errors occurred fetching %r from primary and backup servers. Errors were (%r, %r)", 
-				  file.path, e1, e2)
+        log.error("Errors occurred fetching %r from primary and backup servers. Errors were (%r, %r)",
+                  file.path, e1, e2)
         self.errored_files.append(file)
         self.queue_next_file()
 

@@ -163,7 +163,7 @@ class UpdateChecker(object):
                 return
 
         log.info("Manifest path not found in %r. checking web for update.yaml", local_info_file)
-        asynchttp.httpopen("http://s3.amazonaws.com/update.digsby.com/update.yaml?%s" % int(time.time()), success = self.got_updateyaml, error = self.manifest_path_error)
+        asynchttp.httpopen("http://update.digsby.com/update.yaml?%s" % int(time.time()), success = self.got_updateyaml, error = self.manifest_path_error)
 
     def got_updateyaml(self, req = None, fobj = None):
         '''
