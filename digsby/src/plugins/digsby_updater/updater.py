@@ -59,15 +59,17 @@ class UpdateChecker(object):
         self.callback = callback
         self.get_manifest_path()
 
-    def manifest_path_error(self, e):
-        log.info("Error getting manifest path: %r", e)
-        self._error(e)
+    def manifest_path_error(self, req, err=None):
+        if err is None:
+            err = req
+        log.info("Error getting manifest path: %r", err)
+        self._error(err)
 
-    def manifest_request_error(self, e):
+    def manifest_request_error(self, e, *a):
         log.error("Error retrieving manifest file: %r", e)
         self._error(e)
 
-    def manifest_check_error(self, e):
+    def manifest_check_error(self, e, *a):
         log.error("Error checking manifest integrity: %r", e)
         self._error(e)
 
