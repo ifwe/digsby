@@ -137,6 +137,10 @@ class SignBinary(deploy.Prepare):
 class SignBinaryInstaller(deploy.Prepare):
     strategy = 'sign_binary_installer'
 
+    def do(self):
+        from buildutil.signing import Authenticode
+        Authenticode(self.path)
+
 class DigsbyUpdaterPrep(deploy.Prepare):
     strategy = 'digsby'
 
