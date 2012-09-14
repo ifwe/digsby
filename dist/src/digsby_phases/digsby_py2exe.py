@@ -40,6 +40,16 @@ class py2exeSafe(build_exe.py2exe):
     boolean_options = build_exe.py2exe.boolean_options + ['retain_times']
     _module_finder = None
 
+    def get_boot_script(self, boot_type):
+        # return the filename of the script to use for com servers.
+        thisfile = __file__
+        pth = os.path.join(os.path.dirname(thisfile),
+                           "boot_" + boot_type + ".py")
+        if os.path.exists(pth):
+            return pth
+
+        return build_exe.py2exe.get_boot_script(self, boot_type)
+
     def initialize_options(self):
         build_exe.py2exe.initialize_options(self)
         self.retain_times = 0
