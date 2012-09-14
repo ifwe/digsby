@@ -1604,7 +1604,7 @@ class MSNClient(protocol):
             if conv.ischat and is_circle and buddy.name == conv._chatbuddy:
                 return conv
 
-            if buddy.name == conv._chat_target_name:
+            if buddy.name == getattr(conv, '_chat_target_name', getattr(conv, '_chatbuddy', conv.buddy.name)):
                 return conv
 
             if buddy.name == self.self_buddy.name:

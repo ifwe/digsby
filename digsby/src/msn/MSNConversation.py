@@ -525,7 +525,7 @@ class MSNConversation(Conversation):
             log.info('Checking if %r should "really_exit"', self)
             self._exit()
 
-            if self.p2p_clients > 0 and not force_close and not is_chat:
+            if getattr(self, 'p2p_clients', 0) > 0 and not force_close and not is_chat:
                 log.info('P2P clients still active. Not disconnecting.')
                 return
 
@@ -558,7 +558,9 @@ class MSNConversation(Conversation):
         self.p2p_clients = 0
         log.info('Disconnecting. unregistering %r from client (%r)', self, self.client)
         self.client.unregister_conv(self)
-        self.client._p2p_manager._unregister_transport(self)
+        p2p_manager = getattr(self.client, '_p2p_manager', None)
+        if p2p_manager is not None:
+            p2p_manager._unregister_transport(self)
 
         if get(self, 'sb', None):
             self._set_switchboard(None)
