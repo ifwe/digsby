@@ -84,7 +84,10 @@ class DigsbyTwitterAuthHandler(rauth.service.OAuth1Service):
     def process_authorize_response(self, verifier):
         log.info('got success during twitter auth: %r', verifier)
         self.verifier = verifier
-        response = self.get_access_token(self.request_token, self.request_token_secret, http_method='GET', oauth_verifier=self.verifier)
+        response = self.get_access_token(method = 'GET',
+                                         request_token = self.request_token,
+                                         request_token_secret = self.request_token_secret,
+                                         params = dict(oauth_verifier = self.verifier))
         data = response.content
         self.access_token = data['oauth_token']
         self.access_token_secret = data['oauth_token_secret']
