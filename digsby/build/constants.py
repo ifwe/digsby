@@ -13,7 +13,7 @@ else:
     PYTHON_PROJECTS_SVN = 'http://svn.python.org/projects'
 
 # remote SIP info
-SIP_GIT_REPO   = 'https://github.com/kevinw/sip.git'
+SIP_GIT_REPO   = 'https://github.com/tagged/sip.git'
 SIP_GIT_REMOTE = 'origin'
 SIP_GIT_BRANCH = 'master'
 
@@ -36,7 +36,7 @@ WXWIDGETS_TRUNK_SVN_DIR = WXWIDGETS_BASE_SVN + "wxWidgets/trunk"
 WXPYTHON_TRUNK_SVN_DIR = WXWIDGETS_BASE_SVN + "wxPython/trunk"
 
 # remote WXPY info
-WXPY_GIT_REPO = 'https://github.com/kevinw/wxpy.git'
+WXPY_GIT_REPO = 'https://github.com/tagged/wxpy.git'
 
 DEBUG_ARG = '--DEBUG'
 DEBUG = False
