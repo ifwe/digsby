@@ -40,6 +40,11 @@ class py2exeSafe(build_exe.py2exe):
     boolean_options = build_exe.py2exe.boolean_options + ['retain_times']
     _module_finder = None
 
+    def get_hidden_imports(self):
+        hidden = build_exe.py2exe.get_hidden_imports(self)
+        hidden.pop('_sre', None)
+        return hidden
+
     def get_boot_script(self, boot_type):
         # return the filename of the script to use for com servers.
         thisfile = __file__
@@ -99,6 +104,17 @@ class py2exeSafe(build_exe.py2exe):
             return None
         from modulefinder import Module
         return Module(item.__name__, pathname)
+
+    def find_dlls(self, extensions):
+        dlls = build_exe.py2exe.find_dlls(self, extensions)
+        for thing in list(self.other_depends):
+            print 'dll', thing
+            basename = os.path.basename(thing).lower()
+            if basename.startswith('msvc') and basename != 'msvcrt.dll':
+                self.other_depends.remove(thing)
+                dlls.add(thing)
+
+        return dlls
 
 
 class Py2EXE(deploy.Freeze):
