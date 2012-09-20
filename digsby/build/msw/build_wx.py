@@ -11,7 +11,7 @@ from os.path import abspath
 
 import sys; sys.path.append('..')
 
-WX_GIT_REPO = 'https://github.com/kevinw/wx.git'
+WX_GIT_REPO = 'https://github.com/tagged/wx.git'
 WX_GIT_BRANCH = 'cairo'
 
 WXWIDGETS_28_SVN_DIR = "http://svn.wxwidgets.org/svn/wx/wxWidgets/branches/wxWebKitBranch-2.8"
