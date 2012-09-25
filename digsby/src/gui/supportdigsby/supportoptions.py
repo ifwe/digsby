@@ -123,22 +123,12 @@ class TextElongonator(SupportMechanism):
 enabled = [
            #TextElongonator,
            #IncrementCounter,
-           SearchHomepage,
-           EmailInviter,
            FacebookInviter,
            FacebookFan,
            LinkedInFan,
            TwitterFollow,
-           #Research,
            BlogSubscribe,
-           CreateWidget,
            ]
 
 def get_enabled():
-    import common
-    myenabled = enabled[:]
-    if common.pref('support.show_research_option', type = bool, default = False):
-        if Research not in myenabled:
-            myenabled.insert(-2, Research)
-
-    return myenabled
+    return enabled[:]
