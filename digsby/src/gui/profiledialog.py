@@ -85,14 +85,12 @@ class ProfilePanel(SimplePanel):
 
         s = wx.BoxSizer(wx.HORIZONTAL)
         s.Add(profile_password, 1, ALIGN_LEFT | ALIGN_CENTER_VERTICAL | EXPAND)
-        s.Add(TEXT(_('(optional)')), 0, ALIGN_LEFT | ALIGN_CENTER_VERTICAL | EXPAND | wx.LEFT | wx.TOP, 5)
         aus.Add(s, 1, ALIGN_LEFT | ALIGN_CENTER_VERTICAL | EXPAND | ALL, 2)
 
         aus.Add(TEXT(_("&Re-Enter Password:")), 0, ALIGN_RIGHT | ALIGN_CENTER_VERTICAL | ALL, 2)
 
         s = wx.BoxSizer(wx.HORIZONTAL)
         s.Add(reenter_password, 1, ALIGN_LEFT | ALIGN_CENTER_VERTICAL | EXPAND)
-        s.Add(TEXT(_('(optional)')), 0, ALIGN_LEFT | ALIGN_CENTER_VERTICAL | EXPAND | wx.LEFT | wx.TOP, 5)
         aus.Add(s, 1, ALIGN_LEFT | ALIGN_CENTER_VERTICAL | EXPAND | ALL, 2)
 
         aus.AddGrowableCol(1, 1)

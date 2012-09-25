@@ -380,20 +380,13 @@ class LoginController(object):
 
             identity_obj.password = self.window.GetPassword()
 
-            if not (self.window.GetPassword() or identity_obj.is_valid):
-                evt.EventObject.SetSelection(last_choice)
-                wx.MessageBox(
-                    _('Please enter the profile\'s password before removing it.'),
-                    _('Remove Profile'))
-                return
-
             if wx.OK == wx.MessageBox(
                 _('Are you sure you want to delete profile "%s"?' % username),
                 _('Remove Profile'), wx.OK | wx.CANCEL):
 
                 import digsby.digsbylocal as digsbylocal
                 try:
-                    hooks.first('digsby.identity.delete', username, self.window.GetPassword(),
+                    hooks.first('digsby.identity.delete', username,
                                 raise_hook_exceptions=True)
                 except digsbylocal.InvalidPassword:
                     wx.MessageBox(_('Please enter the correct password to delete "%s".' % username),

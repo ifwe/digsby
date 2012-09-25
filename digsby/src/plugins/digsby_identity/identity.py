@@ -54,16 +54,13 @@ class Identity(object):
         return active.get(key, default)
 
     @classmethod
-    def delete(cls, name, password):
+    def delete(cls, name):
         if not cls.exists(name):
             # TODO: should this just cleanly return?
             # the expected post-conditions of this function are satisfied...
             raise digsbylocal.InvalidUsername
 
-        identity = cls(name, password)
-        if not identity.is_valid:
-            raise digsbylocal.InvalidPassword
-
+        identity = cls(name)
         identity.storage.rmtree()
 
     @classmethod
