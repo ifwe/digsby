@@ -210,11 +210,3 @@ text_conversations = [
     "Show emoticons:",
 ]
 
-widgets = [
-    "Widget Preview",
-    "Copy To Clipboard",
-    "Widgets",
-    "New Widget",
-    "Embed Tag",
-]
-

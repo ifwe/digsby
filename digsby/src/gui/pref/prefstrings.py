@@ -20,7 +20,6 @@ tabnames = [
     ('status',             _('Status')),
     ('privacy',            _('Privacy')),
     ('notifications',      _('Notifications')),
-    ('widgets',            _('Widgets')),
 #    ('supportdigsby',      _('Support Digsby')),
     ('proxy',              _("Connection Settings")),
 #   ('plugins',            _('Plugins')),
