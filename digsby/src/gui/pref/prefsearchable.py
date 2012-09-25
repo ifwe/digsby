@@ -111,7 +111,6 @@ general_profile = [
 ]
 
 helpdigsby = [
-    "Allow Digsby to conduct research during idle itme",
     "Help Digsby",
 ]
 
@@ -160,15 +159,6 @@ privacy = [
 ]
 
 proxy = [
-]
-
-research = [
-    "Research Module",
-    "Allow Digsby to use CPU time to conduct research after %2(research.idle_time_min)d minutes of idle time",
-    "Maximum CPU Usage:",
-    "%",
-    "Maximum Bandwidth Usage:",
-    "Options",
 ]
 
 status = [
