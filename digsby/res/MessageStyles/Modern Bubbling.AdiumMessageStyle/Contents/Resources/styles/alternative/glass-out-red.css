@@ -1,0 +1,51 @@
+
+/* @group outgoing */
+
+.outgoing .history {
+	color: #9f5657;
+}
+
+.outgoing .compact .cnbody {
+	border-top: 1px dotted #f28385;
+}
+
+.outgoing .message .bottomright {
+	background-image: url("../../images/glass-red/bottomright-arrow.png");
+}
+
+/* @group message */
+
+.outgoing .message .time {
+	color: #c5a3a4;
+}
+.outgoing .message .topleft {
+	background: url("../../images/glass-red/topleft.png") top left no-repeat;
+}
+.outgoing .message .top {
+	background: url("../../images/glass-red/top.png") top right repeat-x;
+}
+.outgoing .message .topright {
+	background: url("../../images/glass-red/topright.png") top right no-repeat;
+}
+.outgoing .message .left {
+	background: url("../../images/glass-red/left.png") top left repeat-y;
+}
+.outgoing .message .middle {
+	background: url("../../images/glass-red/middle.png") top left repeat;
+}
+.outgoing .message .right {
+	background: url("../../images/glass-red/right.png") top right repeat-y;
+}
+.outgoing .message .bottomleft {
+	background: url("../../images/glass-red/bottomleft.png") bottom left no-repeat;
+}
+.outgoing .message .bottom {
+	background: url("../../images/glass-red/bottom.png") bottom right repeat-x;
+}
+/*.outgoing .message .bottomright {
+	background: url("../../images/glass-red/bottomright.png") bottom right no-repeat;
+}*/
+
+/* @end */
+
+/* @end */

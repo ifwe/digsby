@@ -1,0 +1,3 @@
+
+
+class LoginError(Exception): pass

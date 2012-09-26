@@ -1,0 +1,227 @@
+Variant: Dark Green
+
+Common:
+
+  Hover: darkgreen/cl_hover.png 5 3 5 3
+  Menu_Hover: darkgreen/menu_hover.png 5 3 5 3
+  Menu_Checked: darkgreen/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: darkgreen/group_bg.png
+  
+  Selected: darkgreen/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: darkgreen/menu_sep.png
+  
+MenuBar:
+  background: 0x91d356
+  
+MenuLite:
+  SeparatorImage: darkgreen/menu_sep.png
+  Backgrounds:
+    Selection: 0xBFEA85
+  FontColors:
+    Selection: 0x000000
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0x91d356
+    Down: darkgreen/mainmenuhover.png 1 1 1 1
+    Active: darkgreen/mainmenuhover.png 1 1 1 1
+    Hover: darkgreen/mainmenuhover.png 1 1 1 1
+    ActiveHover: darkgreen/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: darkgreen/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: darkgreen/group_bg2.png
+    List: darkgreen/list_bg.png 0 90 0 100
+    GroupSelected: darkgreen/cl_selected2.png 5 3 5 3
+    BuddySelected: darkgreen/cl_selected2.png 5 3 5 3
+    Buddy: darkgreen/group_bg2.png
+  GroupIcons:
+    Collapsed: darkgreen/right1.png
+    CollapsedHover: darkgreen/right_hover.png
+    ExpandedHover: darkgreen/expanded_hover.png
+    CollapsedSelected: darkgreen/right.png
+  FontColors:
+    Group: 0x004502
+    GroupHover: 0x004502
+    GroupSelected: 0xf8f8f8
+    AddAccountsLink: 0x004502
+    
+Button:
+  Backgrounds:
+    Normal: darkgreen/format_bar_button_bg.png
+    Down: darkgreen/format_button_down.png 3 3 3 3
+    Active: darkgreen/format_button_down.png 3 3 3 3
+    Hover: darkgreen/format_button.png 3 3 3 3
+    ActiveHover: darkgreen/format_button_down.png 3 3 3 3
+    Disabled: darkgreen/button.png 1 1 1 1
+    Notify: darkgreen/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: darkgreen/format_button.png 3 3 3 3
+    Down: darkgreen/format_button_down.png 3 3 3 3
+    Active: darkgreen/format_button_down.png 3 3 3 3
+    Hover: darkgreen/format_button.png 3 3 3 3
+    ActiveHover: darkgreen/format_button_down.png 3 3 3 3
+    Disabled: darkgreen/button.png 1 1 1 1
+    Notify: darkgreen/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: darkgreen/actionbar_button_bg.png
+    Down: darkgreen/actionbar_button_down.png 2 2 2 2
+    Active: darkgreen/actionbar_button_down.png 2 2 2 2
+    Hover: darkgreen/actionbar_button.png 2 3 2 4
+    ActiveHover: darkgreen/actionbar_button_down.png 2 2 2 2
+    Disabled: darkgreen/actionbar_button.png 2 3 2 4
+    Notify: darkgreen/actionbar_button.png 2 3 2 4
+
+FormattingBarButton:
+  Backgrounds:
+    Normal: darkgreen/actionbar_button_bg.png
+    Down: darkgreen/actionbar_button_down.png 2 2 2 2
+    Active: darkgreen/actionbar_button_down.png 2 2 2 2
+    Hover: darkgreen/actionbar_button.png 2 3 2 4
+    ActiveHover: darkgreen/actionbar_button_down.png 2 2 2 2
+    Disabled: darkgreen/actionbar_button.png 2 3 2 4
+    Notify: darkgreen/actionbar_button.png 2 3 2 4
+  
+AccountAero:
+  Backgrounds:
+    Normal: darkgreen/aero_button.png 75 10 75 10
+    Down: darkgreen/aero_hover.png 75 10 75 0
+    Active: darkgreen/aero_hover.png 75 10 75 0
+    Hover: darkgreen/aero_hover.png 75 10 75 0
+    ActiveHover: darkgreen/aero_button.png 75 10 75 0
+    Disabled: darkgreen/aero_button.png 75 10 75 0
+    Notify: darkgreen/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: darkgreen/cbo_button_normal_left.png 3 3 3 3
+    hover: darkgreen/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: darkgreen/cbo_button_normal_right.png 3 3 3 3
+    Hover: darkgreen/cbo_button_hover_right.png 3 3 3 3
+    Down: darkgreen/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: darkgreen/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: darkgreen/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: darkgreen/cbo_button_normal_left.png 3 3 3 3
+    hover: darkgreen/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: darkgreen/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: darkgreen/TFLEFTO.png 4 4 0 4
+    Down: darkgreen/TFLEFTO.png 4 4 0 4
+    Hover: darkgreen/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkgreen/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: darkgreen/CommandBar.png 1 0 1 0
+    EmailHover: darkgreen/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xe1fbba
+    Contact: darkgreen/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x004502
+    NavBarHeader:  black
+    NavBarLink: 0x004502
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0x004502
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: darkgreen/status_combo.png tile
+    Hover: darkgreen/status_combo.png tile
+    Down: darkgreen/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: darkgreen/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: darkgreen/Tabpage.png 0 0 0 5
+    Normal: darkgreen/TabN.png 8 16 8 16
+    Active: darkgreen/TabP.png 8 16 8 16
+    ActiveHover: darkgreen/TabPO.png 8 16 8 16
+    Hover: darkgreen/TabO.png 8 16 8 16
+    Notify: darkgreen/TabA.png 8 16 8 16
+    
+AccountPanels:
+  frame: darkgreen/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0x91d356
+    Behind: 0x91d356
+  Icons:
+    Show: darkgreen/showicon.png
+  FontColors:
+    Account: black
+    State: 0x333333
+    Link: 0x004502
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0x91d356     
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0x91d356
+    
+Popup:
+  Background: darkgreen/toast.png 20 20 20 20
+  FontColors:
+      Title: black
+      Major: black
+      Minor: black

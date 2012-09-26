@@ -1,0 +1,39 @@
+@import "style.css";
+
+
+.post_incoming, .post_outgoing {
+	margin: 0 0 0 36px;
+}
+
+.toprow_incoming, .toprow_outgoing {
+	margin: -2px 0 0 0;
+}
+
+.toprow_middle_incoming, .toprow_middle_outgoing
+{
+	left: 10px;
+	right: 8px;
+}
+
+span.buddy_icon_incoming, span.buddy_icon_outgoing
+{
+	float: left;
+}
+
+.bottom_right_incoming, .bottom_right_incoming_context, .bottom_right_outgoing, .bottom_right_outgoing_context {
+	left: 2px;
+	right: 11px;
+}
+
+
+.arrow_incoming, .arrow_outgoing, .arrow_incoming_context, .arrow_outgoing_context {
+	left:30px;
+}
+
+.arrow_incoming, .arrow_outgoing {
+	background: url("images/arrow.png");
+}
+
+.arrow_incoming_context, .arrow_outgoing_context {
+	background: url("images/arrow_context.png");
+}

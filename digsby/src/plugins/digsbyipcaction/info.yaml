@@ -1,0 +1,25 @@
+name: 'DigsbyIPCAction'
+path: 'digsbyipcaction'
+type: 'pure'
+
+platforms: ['win']
+
+entry_points: 
+  #these 'digsby.ipcaction' would really get registered by something like Digsby.core
+  digsby.ipcaction:
+    prefsdialog: gui.pref.prefsdialog:show
+    globalstatus: main:SetStatusPrompt
+    newim: gui.imdialogs:ShowNewIMDialog
+    chat: gui.imwin.imhub:open
+    status: digsbyprofile:set_simple_status
+    exit: main:ExitDigsby
+  #these stay here
+  digsby.app.init.post:
+    ipcaction: digsbyipcaction.funcs:register_ipc_handlers
+  digsby.app.init.pre:
+    ipcaction: digsbyipcaction.funcs:handle_ipc_action
+  buddylist.sorted:
+    ipcaction: gui.native.win.jumplist:buddylist_sorted
+  digsby.im.statusmessages.set.post:
+    ipcaction: gui.native.win.jumplist:status_set
+

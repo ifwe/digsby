@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <base href="file:///C:/dev/digsby/res/MessageStyles/Smooth Separate Lines.AdiumMessageStyle/Contents/Resources/">
+    <script type="text/ecmascript" defer="defer">
+
+        //Appending new content to the message view
+        function appendMessage(html) {
+            shouldScroll = nearBottom();
+
+            //Remove any existing insertion point
+            insert = document.getElementById("insert");
+            if(insert) insert.parentNode.removeChild(insert);
+
+            //Append the new message to the bottom of our chat block
+            chat = document.getElementById("Chat");
+            range = document.createRange();
+            range.selectNode(chat);
+            documentFragment = range.createContextualFragment(html);
+            chat.appendChild(documentFragment);
+
+            alignChat(shouldScroll);
+        }
+        function appendMessageNoScroll(html) {
+            //Remove any existing insertion point
+            insert = document.getElementById("insert");
+            if(insert) insert.parentNode.removeChild(insert);
+
+            //Append the new message to the bottom of our chat block
+            chat = document.getElementById("Chat");
+            range = document.createRange();
+            range.selectNode(chat);
+            documentFragment = range.createContextualFragment(html);
+            chat.appendChild(documentFragment);
+        }
+        function appendNextMessage(html){
+            shouldScroll = nearBottom();
+
+            //Locate the insertion point
+            insert = document.getElementById("insert");
+
+            //make new node
+            range = document.createRange();
+            range.selectNode(insert.parentNode);
+            newNode = range.createContextualFragment(html);
+
+            //swap
+            insert.parentNode.replaceChild(newNode,insert);
+
+            alignChat(shouldScroll);
+        }
+        function appendNextMessageNoScroll(html){
+            //Locate the insertion point
+            insert = document.getElementById("insert");
+
+            //make new node
+            range = document.createRange();
+            range.selectNode(insert.parentNode);
+            newNode = range.createContextualFragment(html);
+
+            //swap
+            insert.parentNode.replaceChild(newNode,insert);
+        }
+
+        //Auto-scroll to bottom.  Use nearBottom to determine if a scrollToBottom is desired.
+        function nearBottom() {
+            return ( document.body.scrollTop >= ( document.body.offsetHeight - ( window.innerHeight * 1.2 ) ) );
+        }
+        function scrollToBottom() {
+            document.body.scrollTop = document.body.offsetHeight;
+        }
+
+        //Dynamically exchange the active stylesheet
+        function setStylesheet( id, url ) {
+            code = "<style id=\"" + id + "\" type=\"text/css\" media=\"screen,print\">";
+            if( url.length ) code += "@import url( \"" + url + "\" );";
+            code += "</style>";
+            range = document.createRange();
+            head = document.getElementsByTagName( "head" ).item(0);
+            range.selectNode( head );
+            documentFragment = range.createContextualFragment( code );
+            head.removeChild( document.getElementById( id ) );
+            head.appendChild( documentFragment );
+        }
+
+        //Swap an image with its alt-tag text on click, or expand/unexpand an attached image
+        document.onclick = imageCheck;
+        function imageCheck() {
+            node = event.target;
+            if(node.tagName == 'IMG' && !client.zoomImage(node) && node.alt) {
+                a = document.createElement('a');
+                a.setAttribute('onclick', 'imageSwap(this)');
+                a.setAttribute('src', node.getAttribute('src'));
+                a.className = node.className;
+                text = document.createTextNode(node.alt);
+                a.appendChild(text);
+                node.parentNode.replaceChild(a, node);
+            }
+        }
+
+        function imageSwap(node) {
+            shouldScroll = nearBottom();
+
+            //Swap the image/text
+            img = document.createElement('img');
+            img.setAttribute('src', node.getAttribute('src'));
+            img.setAttribute('alt', node.firstChild.nodeValue);
+            img.className = node.className;
+            node.parentNode.replaceChild(img, node);
+
+            alignChat(shouldScroll);
+        }
+
+        //Align our chat to the bottom of the window.  If true is passed, view will also be scrolled down
+        function alignChat(shouldScroll) {
+            var windowHeight = window.innerHeight;
+
+            if (windowHeight > 0) {
+                var contentElement = document.getElementById('Chat');
+                var contentHeight = contentElement.offsetHeight;
+                if (windowHeight - contentHeight > 0) {
+                    contentElement.style.position = 'relative';
+                    contentElement.style.top = (windowHeight - contentHeight) + 'px';
+                } else {
+                    contentElement.style.position = 'static';
+                }
+            }
+
+            if (shouldScroll) scrollToBottom();
+        }
+
+        function windowDidResize(){
+            alignChat(true/*nearBottom()*/); //nearBottom buggy with inactive tabs
+        }
+
+        window.onresize = windowDidResize;
+    </script>
+
+    <!-- This style is shared by all variants. !-->
+    <style id="baseStyle" type="text/css" media="screen,print">
+        body {
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Lucida;
+  font-size: 11pt;
+}
+
+        *{ word-wrap:break-word; }
+        img.scaledToFitImage { height:auto; width:100%; }
+    </style>
+
+    <!-- Although we call this mainStyle for legacy reasons, it's actually the variant style !-->
+    <style id="mainStyle" type="text/css" media="screen,print">
+        @import url( "Variants/Brown vs. Orange - (Time) Name.css" );
+    </style>
+
+</head><body onload="alignChat(true);" style="==bodyBackground==">
+
+<div id="Chat" style="top: 32px; position: static; ">
+<div class="status_container">  <div class="status_message">    Monday, November 26, 2007    <span class="status_time">5:12 AM</span>  </div>    </div><div class="outgoing">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:12 AM] </span><span class="sender">ninjadigsby</span><span class="timestampafter"> [5:12 AM]</span>: </span><span style="color: red; font-family: courier new;">You don't seem to like any fantasy movies, ever see Dragon Heart?</span>    </div>	</div><div class="incoming">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:13 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:13 AM]</span>: </span><span style="color: blue;">Naw, but Braveheart is kind of fantasy</span>    </div>	</div><div class="outgoing">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:14 AM] </span><span class="sender">ninjadigsby</span><span class="timestampafter"> [5:14 AM]</span>: </span><span style="color: red; font-family: courier new;">Not really, lol</span>    </div>	</div><div class="incoming">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:15 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:15 AM]</span>: </span><span style="color: blue;">I think so</span>    </div>	<div class="nextmessagebody" style="background-color: %textbackgroundcolor%;">    <span class="prefix"><span class="timestampbefore">[5:15 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:15 AM]</span>: </span><span style="color: blue;">He fights dragons, Dragons are a fantasy icon man! Lol</span></div><div class="nextmessagebody" style="background-color: %textbackgroundcolor%;">    <span class="prefix"><span class="timestampbefore">[5:15 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:15 AM]</span>: </span><span style="color: blue;">Braveheart ftw!</span></div></div><div class="outgoing">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:15 AM] </span><span class="sender">ninjadigsby</span><span class="timestampafter"> [5:15 AM]</span>: </span><span style="color: red; font-family: courier new;">There's no dragons in Braveheart...</span>    </div>	</div><div class="incoming">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:16 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:16 AM]</span>: </span><span style="color: blue;">Wait, did I get them confused?</span>    </div>	<div class="nextmessagebody" style="background-color: %textbackgroundcolor%;">    <span class="prefix"><span class="timestampbefore">[5:16 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:16 AM]</span>: </span><span style="color: blue;">What's the one where he fights dragons?</span></div></div><div class="outgoing">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:16 AM] </span><span class="sender">ninjadigsby</span><span class="timestampafter"> [5:16 AM]</span>: </span><span style="color: red; font-family: courier new;">Dragon Hart</span>    </div>	</div><div class="incoming">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:16 AM] </span><span class="sender">Friend</span><span class="timestampafter"> [5:16 AM]</span>: </span><span style="color: blue;">Mel Gibson?</span>    </div>	</div><div class="outgoing">    <div class="messagebody" style="background-color: %textbackgroundcolor%;">        <span class="prefix"><span class="timestampbefore">[5:17 AM] </span><span class="sender">ninjadigsby</span><span class="timestampafter"> [5:17 AM]</span>: </span><span style="color: red; font-family: courier new;">I don't think Mel Gibson ever fought any dragons <img src="file:///C:/dev/digsby/res/emoticons/default/Impish.png" width="16" height="16" alt=":P" title=":P"></span>    </div>	<div id="insert"></div></div></div>
+<style type="text/css">#header { display: none; }</style>
+
+
+</body></html>

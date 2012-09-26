@@ -1,0 +1,6 @@
+<div class="trends">
+<?py import simplejson ?>
+<?py for trend in trends: ?>
+    <span class="trend"><span class="trendval" style="display:none;">${simplejson.dumps(trend['query'])}</span><a class="trendlink" href="http://search.twitter.com/search?q=${trend['query'].encode('utf8url')}">${trend['name']}</a></span>
+<?py #endfor ?>
+</div>

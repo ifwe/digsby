@@ -1,0 +1,10 @@
+<?py comments = item.get_comments() ?>
+<div class="comments">
+<?py for comment in comments: ?>
+    <?py if comment.is_like or comment.is_dislike: ?>
+    <?py     continue ?>
+    <?py _context['comment'] = comment ?>
+    <?py include(r"#{{app.resource('comment.tenjin')}}") ?>
+    <?py del _context['comment'] ?>
+<?py #endfor ?>
+</div>

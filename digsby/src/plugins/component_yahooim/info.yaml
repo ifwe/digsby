@@ -1,0 +1,40 @@
+service_provider: &service_provider yahoo
+name: !_ "Yahoo"
+name_truncated: yaho
+service_name: !_ "Yahoo Messenger"
+shortname: yahoo
+popularity: 860
+path: yahoo.protocol
+username_desc: !_ "Yahoo! ID"
+newuser_url: https://edit.yahoo.com/registration
+password_url: https://edit.yahoo.com/forgot
+needs_httponly: yes
+compatible:
+  - yahoo
+  - msn
+  - lcs
+  - sametime
+  - pingbox
+component_type: im
+type: service_component
+defaults:
+  use_http_only: False
+  autologin: False
+  server: !python/tuple
+    - scs.msg.yahoo.com
+    - 5050
+  block_unknowns: False
+has_invisible: True
+statuses:
+  - - Available
+  - - Away
+
+entry_points:
+  digsby.component.im:
+    *service_provider: yahoo.YahooProtocol:YahooProtocol
+
+skin:
+  serviceicons:
+    lcs: res/lcs.png
+    pingbox: res/icn_wdgt_pbx_48_1.gif
+    sametime: res/sametime.png

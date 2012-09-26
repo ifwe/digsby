@@ -1,0 +1,35 @@
+<div align="center" onload="javascript:get_update_status()">
+    <div id="digsbyimg" onclick="javascript:get_update_status();">
+        <img src="${(platform.resource('').parent.parent / 'digsbybig.png').url()}" width="149" height="160" />
+    </div>
+    <div id="maintext" class="green">
+        <span id="appname">Digsby</span>
+        <span id="dashbuild"> - Build</span>
+        <span id="tagname">${revision}</span>
+    </div>
+    <div id="update" class="minor" style="min-height: 16px;">
+        <div id="checking">
+            <img src="${app.resource('ajax-loader.gif').url()}" />
+            <span>
+                ${{_('Checking for updates...')}}
+            </span>
+        </div>
+        <div id="up-to-date">
+            <img src="${app.resource('latest.png').url()}" />
+            <span>
+                ${{_('Digsby is up to date')}}
+            </span>
+        </div>
+        <div id="need-update" onclick="javascript:perform_update()">
+            <img src="${app.resource('download.png').url()}" />
+            <span class="link">
+                ${{_('Update Available')}}
+            </span>
+        </div>
+    </div>
+    <div id="copyright" class="smalltext">
+        ${{_(u'Copyright \xa9 2012 Tagged, Inc.')}}
+        <br>
+        ${{_('All Rights Reserved.')}}
+    </div>
+</div>

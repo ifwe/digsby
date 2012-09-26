@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="SIP Interface"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="Run SIP"
+			DisplayName="Run SIP"
+			CommandLine="$(SIP_BIN) -I $(SolutionDir)..\sip -c $(SolutionDir)..\generated [inputs]"
+			Outputs="$(SolutionDir)..\generated\sipblistBuddyListSorter.cpp;$(SolutionDir)..\generated\sipblistcmodule.cpp"
+			FileExtensions="*.sip"
+			ExecutionDescription="Generating SIP sources..."
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

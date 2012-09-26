@@ -1,0 +1,13 @@
+---
+en: 
+  name_english: English
+  location: en/aspell5-en-6.0-0.tar.bz2
+en_CA: 
+  name_english: English (Canadian)
+  location: en/aspell5-en-6.0-0.tar.bz2
+en_GB: 
+  name_english: English (British)
+  location: en/aspell5-en-6.0-0.tar.bz2
+en_US: 
+  name_english: English (American)
+  location: en/aspell5-en-6.0-0.tar.bz2

@@ -1,0 +1,48 @@
+
+    <?py img = skin.get('linkedinicons.dislike') ?>
+<div class="dislikes minor">
+    <?py user_dislikes = item.user_dislikes(conn.userid) ?>
+    <?py uids = item.get_dislikers() ?>
+    <?py dislike_count = len(uids) ?>
+    <?py if dislike_count: ?>
+        <img src="${img.path.url()}"
+                width="${img.Width}"
+                height="${img.Height}" /> 
+        <?py if user_dislikes: ?>
+    <span>
+            You
+            <?py if dislike_count > 1: ?>
+                ${{_('and')}}
+                ${ngettext('other', 'others', dislike_count-1)}
+            <?py #endif ?>
+            ${{_('disliked this')}}</span>
+        <?py elif uids: ?>
+            <?py for uid in uids: ?>
+                <?py if uid in conn.users and conn.users[uid].name: ?>
+                    <div>
+                        <img src="${img.path.url()}"
+                            width="${img.Width}"
+                            height="${img.Height}"
+                        />
+                    <?py if conn.users[uid].profile_url: ?>
+<a class="link no_ondown_link" href="${conn.users[uid].profile_url}">${conn.users[uid].name}</a>
+                    <?py else: ?>
+                        ${conn.users[uid].name}
+                    <?py #endif ?>
+                    <?py if len(uids) > 1: ?>
+                        ${{_('and')}}
+                        ${ngettext('other', 'others', len(uids)-1)}
+                    <?py #endif ?>
+                    disliked this
+                    <br/>
+                    </div>
+                    <?py break ?>
+                <?py #endif ?>
+            <?py else: ?>
+                ${len(uids)} user${len(uids) > 1 and 's' or ''}
+                disliked this
+            <?py #endfor ?>
+        <?py #endif ?>
+    <?py #endif ?>
+    <?py del user_dislikes ?>
+</div>

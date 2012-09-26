@@ -1,0 +1,22 @@
+contact_signoff: &other other.wav
+contact_signon: *other
+contact_away: *other
+contact_available: *other
+contact_idle: *other
+contact_returnsfromidle: *other
+filetransfer_request: *other
+email_new: *other
+message_received: &receive receive.wav
+message_received_background: *receive
+message_received_initial: *receive
+message_sent: &send send.wav
+facebook_alert: *other
+facebook_newsfeed: *other
+facebook_notifications: *other
+myspace_alert: *other
+myspace_newsfeed: *other
+error: *other
+twitter_newtweet: *receive
+twitter_newdirect: *receive
+chatinvite_received: *receive
+default: *other

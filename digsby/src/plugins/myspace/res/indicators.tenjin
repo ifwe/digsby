@@ -1,0 +1,86 @@
+   <?py i = indicators ?>
+  <span class="title">${{_('Alerts')}}</span>
+  <ul>
+   <?py if i.get('mailurl'): ?>
+       <li class="indicator">
+        <a href="${i.get('mailurl')}" class="link">${{_('New Mail')}}</a>
+       </li>
+   <?py #end ?>
+   
+   <?py if i.get('birthdayurl'): ?>
+       <li class="indicator">
+        <a href="${i.get('birthdayurl')}" class="link">${{_('New Birthdays')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('blogcommenturl'): ?>
+       <li class="indicator">
+        <a href="${i.get('blogcommenturl')}" class="link">${{_('New Blog Comments')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('blogsubscriptionposturl'): ?>
+       <li class="indicator">
+        <a href="${i.get('blogsubscriptionposturl')}" class="link">${{_('New Blog Subscriptions')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('commenturl'): ?>
+       <li class="indicator">
+        <a href="${i.get('commenturl')}" class="link">${{_('New Comments')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('eventinvitationurl'): ?>
+       <li class="indicator">
+        <a href="${i.get('eventinvitationurl')}" class="link">${{_('New Event Invitations')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('friendsrequesturl'): ?>
+       <li class="indicator">
+        <a href="${i.get('friendsrequesturl')}" class="link">${{_('New Friend Requests')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('groupnotificationurl'): ?>
+       <li class="indicator">
+        <a href="${i.get('groupnotificationurl')}" class="link">${{_('New Group Notifications')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('phototagapproval'): ?>
+       <li class="indicator">
+        <a href="${i.get('phototagapprovalurl')}" class="link">${{_('New Photo Tag Approvals')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('picturecommenturl'): ?>
+       <li class="indicator">
+        <a href="${i.get('picturecommenturl')}" class="link">${{_('New Picture Comments')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('recentlyaddedfriendurl'): ?>
+       <li class="indicator">
+        <a href="${i.get('recentlyaddedfriendurl')}" class="link">${{_('New Recently Added Friends')}}</a>
+       </li>
+   <?py #end ?>
+       
+       
+   <?py if i.get('videocommenturl'): ?>
+       <li class="indicator">
+        <a href="${i.get('videocommenturl')}" class="link">${{_('New Video Comments')}}</a>
+       </li>
+   <?py #end ?>
+       
+  </ul> 

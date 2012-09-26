@@ -1,0 +1,43 @@
+#
+# digsby default keyboard shortcuts
+#
+
+InfoBox:
+  Copy: Ctrl+C
+
+ImFrame:
+  Tabs:
+    CloseActive: Ctrl+W, Escape
+    CloseIfNotLast: Ctrl+F4
+    NextTab: Ctrl+Tab, Alt+Right
+    PrevTab: Ctrl+Shift+Tab, Alt+Left
+
+# BuddyList:
+  # Accounts:
+    # ToggleShow: Ctrl+C
+
+Global:
+  DigsbyShell:
+    ToggleShow: F12
+
+  AdvancedPrefs:
+    ToggleShow: F11
+
+  DownloadManager:
+    ToggleShow: Ctrl+J
+
+  Skin:
+    Reload: F5
+
+TextControls:
+  SelectAll: Ctrl+A
+  DeletePreviousWord: Ctrl+Backspace
+
+Buddylist:
+  ToggleAutoHide: Ctrl+Shift+F8
+  Sorting:
+    Toggle: F9
+
+Debug:
+  XMLConsole: Ctrl+Alt+X
+  ClearConsole: Ctrl+Alt+C

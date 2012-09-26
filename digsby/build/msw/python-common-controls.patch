@@ -1,0 +1,24 @@
+Index: Modules/python.c
+===================================================================
+--- Modules/python.c	(revision 72606)
++++ Modules/python.c	(working copy)
+@@ -1,5 +1,7 @@
+ /* Minimal main program -- everything is loaded from the library */
+ 
++#pragma comment(linker,"\"/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
++
+ #include "Python.h"
+ 
+ #ifdef __FreeBSD__
+Index: PC/WinMain.c
+===================================================================
+--- PC/WinMain.c	(revision 72606)
++++ PC/WinMain.c	(working copy)
+@@ -1,5 +1,7 @@
+ /* Minimal main program -- everything is loaded from the library. */
+ 
++#pragma comment(linker,"\"/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
++
+ #include "Python.h"
+ 
+ #define WIN32_LEAN_AND_MEAN

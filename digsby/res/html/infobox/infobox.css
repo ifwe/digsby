@@ -1,0 +1,39 @@
+.ul {
+ display: inline;
+}
+
+.time-container {
+ white-space: nowrap;
+}
+
+.time-container:before {
+ content: "(";
+}
+
+.time-container:after {
+ content: ")";
+}
+
+.date-separator + .date-separator.today {
+ display: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+body {
+ word-wrap: break-word;
+}
+
+.trend_link {
+    border-left: solid 2px #d7d7d7;
+    margin-top: 2px;
+    padding-left: .5em;
+}
+
+.trend_link_text {
+    display: inline;
+    max-width: 100%;
+}
+

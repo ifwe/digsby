@@ -1,0 +1,648 @@
+# Windows 7 Theme
+# Originally by: Derek Erdmann
+# derek@derekerdmann.com
+
+name: Windows 7
+Variant: Default
+fontplatform: windows
+
+Common:
+
+  Hover: images/cl_hover.png 5 3 5 3
+  Menu_Hover: images/menu_hover.png 5 3 5 3
+  Menu_Checked: images/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: images/group_bg.png
+  
+  Selected: images/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  Frame: 0x979797
+  FrameSize: 1
+  Padding: 6 5
+  Iconsize: 16
+  Font: Segoe UI 9
+  SubMenuIcon: icons/submenu.png
+  SeparatorImage: images/menu_sep.png
+  CheckedIcon: $Menu_Checked
+  Backgrounds:
+    menu: $Menu_Background
+    Selection: $Menu_Hover
+    Gutter: $Menu_Background
+  FontColors:
+    Normal: black
+    Selection: black
+    Disabled: grey
+
+MenuLite:
+  Frame: 0x979797
+  FrameSize: 1
+  Padding: 3 3
+
+  Iconsize: 16
+  Font: Segoe UI 9
+  SeparatorImage: images/menu_sep.png
+  SubMenuIcon: icons/submenu.png
+  CheckedIcon: checked.png
+  Backgrounds:
+    menu: white
+    Selection: 0x3399FF
+    Gutter: $Menu_Background
+  FontColors:
+    Normal: black
+    Selection: white
+    Disabled: grey
+  
+MenuBar:
+  padding: 0 0
+  background: 0xe3f1f6
+  itemskin: MenuButton
+  MenuSkin: Menu
+  IconSize: 16
+
+MenuButton:
+  IconSize: 8
+  Backgrounds:
+    Normal: 0xe3f1f6
+    Down: images/mainmenuhover.png 1 1 1 1
+    Active: images/mainmenuhover.png 1 1 1 1
+    Hover: images/mainmenuhover.png 1 1 1 1
+    ActiveHover: images/mainmenuhover.png 1 1 1 1
+    Disabled: 0x666666
+    Notify: 0x3399ff
+  FontColors:
+    Normal: black
+    Down:  black
+    Active: black
+    Hover: black
+    ActiveHover: black
+    Disabled: black
+    Notify: black
+  Padding: 5 5
+  margins: 0
+
+BuddiesPanel:
+  FrameSize: 0 0 0 0
+  Frame: black
+  BuddyMargins: 8 0 3 0
+  GroupMargins: 3 0 0 0
+  GroupPadding: 3 2
+  FontColors:
+    Buddy: black
+    BuddyOffline: grey
+    BuddyHover: black
+    BuddySelected: black
+    Group: 0x355A88
+    GroupHover: 0x355A88
+    GroupSelected: 0x355A88
+    Status: black
+    StatusHover: black
+    StatusSelected: black
+    IdleTime: grey
+    IdleTimeHover: 0x000044
+    IdleTimeSelected: 0x000044
+    RenameBox: orange
+    AddAccountsLink: blue
+  Fonts:
+    AddAccountsLink: Segoe UI
+  BuddyIcons:
+    Rounded: no
+    NoIcon: images/buddy_av.png
+    NoIconAlpha: 60%
+    Frame: images/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: images/group_bg2.png
+    List: images/list_bg.png 0 90 0 100
+    GroupSelected: images/cl_selected2.png 5 3 5 3
+    BuddySelected: images/cl_selected2.png 5 3 5 3
+    BuddyHover: $Hover
+    GroupHover: $Hover
+    Buddy: images/group_bg2.png
+  RenameBox: black
+  
+  GroupIcons:
+    Collapsed: icons/right.png
+    CollapsedHover: icons/right_hover.png
+    CollapsedSelected: icons/right.png
+
+    Expanded: icons/down.png
+    ExpandedHover: icons/expanded_hover.png
+    ExpandedSelected: icons/down.png
+
+Button:
+  IconSize: 20
+  Backgrounds:
+    Normal: images/format_bar_button_bg.png
+    Down: images/format_button_down.png 3 3 3 3
+    Active: images/format_button_down.png 3 3 3 3
+    Hover: images/format_button.png 3 3 3 3
+    ActiveHover: images/format_button_down.png 3 3 3 3
+    Disabled: images/button.png 1 1 1 1
+    Notify: images/button.png 1 1 1 1
+  FontColors:
+    Normal: black
+    Down: black
+    Active: black
+    Hover:  black
+    ActiveHover: black
+    Disabled:  black
+    Notify:  black
+  Padding: 4 4
+  margins: 2
+  
+PopupButton:
+  IconSize: 20
+  Backgrounds:
+    Normal: images/format_button.png 3 3 3 3
+    Down: images/format_button_down.png 3 3 3 3
+    Active: images/format_button_down.png 3 3 3 3
+    Hover: images/format_button.png 3 3 3 3
+    ActiveHover: images/format_button_down.png 3 3 3 3
+    Disabled: images/button.png 1 1 1 1
+    Notify: images/button.png 1 1 1 1
+  FontColors:
+    Normal: black
+    Down: black
+    Active: black
+    Hover:  black
+    ActiveHover: black
+    Disabled:  black
+    Notify:  black
+  Padding: 4 4
+  margins: 2
+  
+ActionBarButton:
+  IconSize: 32
+  Backgrounds:
+    Normal: images/actionbar_button_bg.png
+    Down: images/actionbar_button_down.png 2 2 2 2
+    Active: images/actionbar_button_down.png 2 2 2 2
+    Hover: images/actionbar_button.png 2 3 2 4
+    ActiveHover: images/actionbar_button_down.png 2 2 2 2
+    Disabled: images/actionbar_button.png 2 3 2 4
+    Notify: images/actionbar_button.png 2 3 2 4
+  FontColors:
+    Normal: black
+    Down: black
+    Active: black
+    Hover:  black
+    ActiveHover: black
+    Disabled:  0x9AA9BC
+    Notify:  white
+  Padding: 4 3
+  MenuIcon: icons/CDD.png
+  margins: 2 1 2 2
+  
+FormattingBarButton:
+  IconSize: 32
+  Backgrounds:
+    Normal: images/actionbar_button_bg.png
+    Down: images/actionbar_button_down.png 2 2 2 2
+    Active: images/actionbar_button_down.png 2 2 2 2
+    Hover: images/actionbar_button.png 2 3 2 4
+    ActiveHover: images/actionbar_button_down.png 2 2 2 2
+    Disabled: images/actionbar_button.png 2 3 2 4
+    Notify: images/actionbar_button.png 2 3 2 4
+  FontColors:
+    Normal: black #0x1e395b
+    Down: black #0x1e395b
+    Active: black #0x1e395b
+    Hover: black #0x1e395b
+    ActiveHover: black #0x1e395b
+    Disabled: black #0x1e395b
+    Notify: black #0x1e395b
+  Padding: 4 3
+  MenuIcon: icons/CDD.png
+  margins: 2 1 2 2
+ 
+AccountAero:
+  IconSize: 20
+  Backgrounds:
+    Normal: images/aero_button.png 75 10 75 10
+    Down: images/aero_hover.png 75 10 75 0
+    Active: images/aero_hover.png 75 10 75 0
+    Hover: images/aero_hover.png 75 10 75 0
+    ActiveHover: images/aero_button.png 75 10 75 0
+    Disabled: images/aero_button.png 75 10 75 0
+    Notify: images/aero_button.png 75 10 75 0
+  FontColors:
+    Normal: black
+    Down: black
+    Active: black
+    Hover:  black
+    ActiveHover: black
+    Disabled:  black
+    Notify:  black
+  Padding: 4 4
+  margins: 2
+
+ComboBox:
+  Backgrounds:
+    Normal: images/cbo_button_normal_left.png 3 3 3 3
+    hover: images/cbo_button_hover_left.png 3 3 3 3
+  FontColors:
+    Normal:  black
+    Active:  black
+    Hover:  black
+  Font: Segoe UI
+  DropdownButtonSkin: ButtonCombo
+  CyclebuttonSkin: Button
+  MenuSkin: MenuLite
+  Padding: 4 4
+  margins: 0 0 0 0
+  IconSize: 16
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: images/cbo_button_normal_right.png 3 3 3 3
+    Hover: images/cbo_button_hover_right.png 3 3 3 3
+    Down: images/cbo_button_hover_right.png 3 3 3 3
+  Padding: 3 1
+  margins: 0
+  Frame: 0x979797
+  FrameSize: 0
+
+ButtonBar:
+  padding: 6 2
+  margin: 2
+  buttonskin: Button
+  MenuSkin: Menu
+  background: 0xFFFFFF
+  
+ActionButtonBar:
+  padding: 2 2
+  margin: 2
+  buttonskin: ActionBarButton
+  MenuSkin: MenuLite
+  background: images/CommandBar.png 1 0 1 0
+
+FormattingButtonBar:
+  padding: 2 2
+  margin: 2
+  buttonskin: FormattingBarButton
+  MenuSkin: MenuLite
+  background: images/CommandBar.png 1 0 1 0
+  
+FormattingBar:
+  ToolbarSkin: FormattingButtonBar
+  MenuSkin: MenuLite
+  IconSize: 15
+  Icons:
+    Bold: icons/Bold.png
+    Italic: icons/Italics.png
+    Underline: icons/Underline.png
+    ForegroundColor: icons/TextCol.png
+    BackgroundColor: icons/BackCol.png
+    Emote: icons/Emote2.png
+  FontDropDownWidth: 150
+  SizeDropDownWidth:  40
+
+emotibox:
+  padding: 2 2
+  margins: 1 1 1 1
+  maxemoticonsize: 20
+  emoticonspace: 24
+  Backgrounds:
+    Window: white border 1 0x979797
+    Emoticon: white
+    Hover: 0x3399FF
+    
+ButtonBarCombo:
+  padding: 0 0
+  buttonskin: ButtonCombo
+  background: black
+  IconSize: 16
+
+ActionsBar:
+  IconSize: 16
+  ToolbarSkin: ActionButtonBar
+  MenuSkin: Menu
+  ComboBoxSkin: ComboBox
+
+SocialPanel:
+  FrameSize: 0
+  Padding: 4 3
+  Backgrounds:
+    Normal: 0xE2F2F9
+    Hover: $Menu_Hover #images/social_hover.png 3 3 3 3
+  FontColors:
+    Normal: black
+    Hover: black
+
+EmailPanel:
+  FrameSize: 0
+  Padding: 4 3
+  Backgrounds:
+    Normal: 0xE2F2F9
+    Hover: $Menu_Hover #images/social_hover.png 3 3 3 3
+  FontColors:
+    Normal: black
+    Hover: black
+
+StatusComboBox:
+  Backgrounds:
+    Normal: images/cbo_button_normal_left.png 3 3 3 3
+    hover: images/cbo_button_hover_left.png 3 3 3 3
+  FontColors:
+    Normal:  black
+    Active:  black
+    Hover:  black
+  Font: Segoe UI
+  DropdownButtonSkin: ButtonCombo
+  CyclebuttonSkin: Button
+  MenuSkin: Menu
+  Padding: 4 4
+  margins: 0 0 0 0
+  IconSize: 16
+ 
+ToFromBar:
+    ToolbarSkin: ToFrom
+    ComboBoxSkin: ComboBoxToFrom
+    FontColor: 0x566478
+    Font: Segoe UI 9
+    
+ToFrom:
+  padding: 5 5
+  buttonskin: Button  #not used?
+  MenuSkin: MenuLite  ##################
+  background: images/Header.png  #modified
+  margins: 5 2 5 2
+  borders: 0 3 0 0
+
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: images/TFLEFTO.png 4 4 0 4
+    Down: images/TFLEFTO.png 4 4 0 4
+    Hover: images/TFLEFTO.png 4 4 0 4
+    Active: white border 1 0xe1e7ed
+  FontColors:
+    Normal: black
+    Down: black
+    Hover: black
+    Active: black
+  Font: Segoe UI 9
+  DropdownButtonSkin: CommandButtonToFrom
+  CyclebuttonSkin: Invis  #do we need this?
+  MenuSkin: MenuLite
+  Padding: 3 1
+  margins: 1 2 0 2
+
+
+CommandButtonToFrom:
+  #MenuIcon: icons/down_white.png
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - images/TFRIGHTO.png 0 4 4 4
+  FontColors:
+    Normal: 0x1e395b
+    Down: 0x1e395b
+    Active: 0x1e395b
+    Hover: 0x1e395b
+    ActiveHover: 0x1e395b
+    Disabled: 0x5c7aa0
+    Notify: 0x1e395b
+  Padding: 1 1
+  margins: 0
+
+EmailSubjectBar:
+  ToolBarSkin: Subject
+  FontColors:
+    SubjectLabel: 0x566478
+    SubjectField: 0x000000
+  Fonts:
+    SubjectLabel: Segoe UI 9
+    SubjectField: Segoe UI 9
+  FieldBackgroundColor: white
+
+Subject:
+  padding: 5 4
+  borders: 0 0 0 10
+  margins: 5 -4 5 0
+  buttonskin: Button #not used?
+  MenuSkin: MenuLite #not used?
+  background: white
+    
+HorizontalSizerBar: 
+  Backgrounds:
+    Normal: 0xcccccc
+    Hover: 0x909090
+    Active: 0xa0a0a0
+  Thickness: 2
+
+VerticalSizerBar: 
+  Backgrounds:
+    Normal: 0xcccccc
+    Hover: 0x909090
+    Active: 0xa0a0a0
+  Thickness: 2
+
+InfoBox:
+  Padding: 5 5
+  border: 0
+  Framesize: 1
+  Frame: 0x666666
+  Backgrounds:
+    Header: images/CommandBar.png 1 0 1 0 #images/wave.png
+    Email:  white
+    EmailHover: images/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xE1F1F4
+    Contact: images/group_bg.png
+    ContactHover: $Hover
+    ContactSelected: $Selected
+  Fonts:
+    Header: Segoe UI 10
+    Title: Segoe UI 8 bold
+    Major: Segoe UI 8
+    Minor: Segoe UI 8
+    Link: Segoe UI 8 underline
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x0066CC
+    NavBarHeader:  black
+    NavBarLink: 0x0066CC
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0x0066CC
+
+StatusBar:
+  Backgrounds:
+    Normal: 0xf8f8f8
+    hover: 0xf8f8f8
+    Active: 0xf8f8f8
+  FontColors:
+    Normal:  black
+    Active:  black
+    Hover:  black
+  Font: Segoe UI
+  DropdownButtonSkin: StatusDropdown
+  DropdownButtonIcon: icons/dropdown.gif
+  CyclebuttonSkin: Button
+  MenuSkin: MenuLite
+  Padding: 0 0
+  margins: 0 1 0 0
+
+StatusButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: 0xf8f8f8
+    Hover: 0xf8f8f8
+    Down: 0xf8f8f8
+  Padding: 3 1
+  margins: 0 0 0 0
+  Frame: 0x979797
+  FrameSize: 0
+  
+StatusDropdown:
+  IconSize: 8
+  Backgrounds:
+    Normal: images/status_combo.png tile
+    Hover: images/status_combo.png tile
+    Down: images/status_combo.png tile
+  Padding: 3 1
+  margins: 0
+  Frame: 0x979797
+  FrameSize: 0
+  
+StatusPanel:
+  ComboBoxSkin: StatusBar
+  StatusButtonSkin: StatusButtonCombo
+  FrameSize: 8
+  Frame: images/statusbar.png 7 7 7 7
+  SearchIcon: icons/search.png
+  CancelSearchIcon: icons/search_close.png
+  
+  
+Progressbar:
+  Mode: Native
+
+SendBar:
+  ToolBarSkin: ActionButtonBar
+  Font: Segoe UI bold
+  FontColor:  black
+
+Tabs:
+  Font: Segoe UI
+  Spacing: 0
+  Padding: 5 3
+  margins: 3 7 3 3
+  Backgrounds:
+    Bar: images/Tabpage.png 0 0 0 5
+    Normal: images/TabN.png 8 16 8 16
+    Active: images/TabP.png 8 16 8 16
+    ActiveHover: images/TabPO.png 8 16 8 16
+    Notify: images/TabA.png 8 16 8 16
+    Hover: images/TabO.png 8 16 8 16
+  DropMarker: 
+    Image: images/tab_drop.png
+    Offset: 2
+  Iconsize: 16
+  MaxWidth: 150
+  FontColors:
+    Normal: black #0x002963
+    Active: black #0x002963
+    ActiveHover: black #0x002963
+    Notify: 0xa64000
+    Hover: black #0x002963
+
+AccountPanels:
+  Framesize: 0 1 0 1
+  frame: images/aero_button.png 75 10 75 10 #0xb7cdde
+  ButtonSkin: AccountAero
+  Backgrounds:
+    Account: 0xEAF6FA
+    Behind: 0xEAF6FA
+  Spacing: 4
+  ServiceIconSize: 16
+  Icons:
+  #    Close: icons/down.png
+  #    CloseHover: icons/down.png
+  #    CloseDown: icons/down.png
+      Show: icons/showicon.png
+
+FileTransfers:
+  Backgrounds:
+    Selected: $Selected
+    Normal: 0xEEEEEE border 0xBBBBBB
+    List: white
+    Padding: 5 5
+  Margins: 0
+
+  CleanUpTaskBar: ActionButtonBar
+
+  Fonts:
+    FileName: bold
+    Other: ~
+    Link: ~
+
+  FontColors:
+    FileName: black
+    Other: black
+    Link: blue
+    FileNameSelected: white
+    OtherSelected: white
+    LinkSelected: white
+
+statusicons:
+  available: statusicons/available.png
+  mobile: statusicons/mobile.png
+  idle: statusicons/idle.png
+  away: statusicons/away.png
+  invisible: statusicons/unknown.png
+  offline: statusicons/unknown.png
+  unknown: statusicons/unknown.png
+  typing: statusicons/typing.png
+  typed: statusicons/enteredtext.png
+  
+Popup:
+    Background: images/toast.png 20 20 20 20
+    Margins: 20 20 20 20
+
+    Padding: 8 4
+    Width: 300
+
+    Fonts:
+      Title: 11
+      Major: 9 bold
+      Minor: 8
+
+    FontColors:
+      Title: black
+      Major: black
+      Minor: black
+
+    ButtonSkin: PopupButton
+    IconSize: 32
+    IconBadgeSize: 16
+    IconRounded: 2
+
+InputSpacer:
+    Background: 0xcccccc
+    Size: 2 2

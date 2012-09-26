@@ -1,0 +1,33 @@
+<div id="${item.id}" class="activityItem major social_background_hover ${feed_trends_classes}" timestamp="${item.updated_parsed}" timestyle="smart">
+    <div class="activity-icon">
+      <div class="viewport">
+         <img id="${item.id}_buddyicon" class="buddyicon clipped" src="${item.source_logo_url}" />
+      </div>
+    </div>
+    <div class="activity-data" timestamp="${item.updated_parsed}" timestyle="smart">
+        <span class="default feed_ad">
+            <div xmlns="http://www.w3.org/1999/xhtml" xmlns:activity="http://activitystrea.ms/schema/1.0/"><div class="activityBody"><h5 class="activityHeader"><a onclick="adClick(${item.id});" href="${item.redirect_url}">${item.source}</a> #{item.feed_text()}</h5></div></div>
+        </span>
+<?py if item.link_text: ?>
+    <div class="trend_link"><div class="trend_link_text">#{item.link_text}</div>
+<?py #endif ?>
+<?py _context['post'] = item ?>
+<?py include(r"#{{app.resource('trend_details.tenjin')}}") ?>
+</div>
+        <div class="bottom_row">
+<?py if feed_trends_show_timestamp: ?>
+              <div class="time-container minor"></div>
+              · <!--! this line has a dot  -->
+<?py #endif ?>
+          <span class="minor">${item.keyword}
+<?py if feed_trends_help: ?>
+              [ <a href="javascript:trendsHelp();">?</a> ]
+<?py #endif ?>
+          · <!--! this line has a dot  -->
+          <a href="#" class="skinlink link" onclick="shareAd(${item.id}); return false;">Share</a>
+          <span class="adImpressionDiv" ad_id="${item.id}" lazy_src="${item.tracking_url}" />
+        </div>
+    </div>
+</div>
+<hr class="activity-divider" />
+

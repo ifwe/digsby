@@ -1,0 +1,51 @@
+
+/* @group incoming */
+
+.incoming .history {
+	color: #b19158;
+}
+
+.incoming .compact .cnbody {
+	border-top: 1px dotted #ffef00;
+}
+
+.incoming .message .bottomleft {
+	background-image: url("../../images/glass-yellow/bottomleft-arrow.png");
+}
+
+/* @group message */
+
+.incoming .message .time {
+	color: #c6af7f;
+}
+.incoming .message .topleft {
+	background: url("../../images/glass-yellow/topleft.png") top left no-repeat;
+}
+.incoming .message .top {
+	background: url("../../images/glass-yellow/top.png") top right repeat-x;
+}
+.incoming .message .topright {
+	background: url("../../images/glass-yellow/topright.png") top right no-repeat;
+}
+.incoming .message .left {
+	background: url("../../images/glass-yellow/left.png") top left repeat-y;
+}
+.incoming .message .middle {
+	background: url("../../images/glass-yellow/middle.png") top left repeat;
+}
+.incoming .message .right {
+	background: url("../../images/glass-yellow/right.png") top right repeat-y;
+}
+/*.incoming .message .bottomleft {
+	background: url("../../images/glass-yellow/bottomleft.png") bottom left no-repeat;
+}*/
+.incoming .message .bottom {
+	background: url("../../images/glass-yellow/bottom.png") bottom right repeat-x;
+}
+.incoming .message .bottomright {
+	background: url("../../images/glass-yellow/bottomright.png") bottom right no-repeat;
+}
+
+/* @end */
+
+/* @end */

@@ -1,0 +1,13 @@
+name: !_ "MySpace Account"
+type: "service_provider"
+provider_id: &provider_id "myspace"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_myspace.myspace_sp:MyspaceServiceProvider"
+
+provider_info:
+    popularity: 152
+    username_desc: !_ "Email Address"
+    newuser_url:  http://signups.myspace.com/index.cfm?fuseaction=signup
+    password_url: http://collect.myspace.com/index.cfm?fuseaction=user.retrievepassword

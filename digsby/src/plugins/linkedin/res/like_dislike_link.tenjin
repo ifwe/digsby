@@ -1,0 +1,53 @@
+<?py
+num_comments = len(item.comments);
+can_comment = item.supports_comments;
+likes = ([c for c in item.comments if c.is_like]);
+dislikes = ([c for c in item.comments if c.is_dislike]);
+num_likes = len(likes);
+num_dislikes = len(dislikes);
+num_non_like_comments = max(num_comments - num_likes, 0);
+num_non_dislike_comments = max(num_comments - num_dislikes, 0);
+user_likes = [c for c in likes if c.userid == conn.userid]
+user_dislikes = [c for c in dislikes if c.userid == conn.userid]
+?>
+    <span class="like_link_block">
+<?py if can_comment: ?>
+    · <!--! this line has a dot  -->
+    <span class="like_button_section link_section minor">
+    <?py if user_likes: ?>
+        ${{_('Liked')}}
+    <?py else: ?>
+        <a href="javascript:null;" class="link like_button">${{_('Like')}}</a>
+    <?py #endif ?>
+    </span>
+    <?py if num_likes > 0: ?>
+            <a class="link link_section num_likes comment_button_section comment_button" href="javascript:null;">(${num_likes})</a>
+    <?py #endif ?>
+<?py else: ?>
+    <?py if num_likes > 0: ?>
+        · <!--! this line has a dot  -->
+        <a class="link link_section num_likes comment_button_section comment_button" href="javascript:null;">${{_('Likes')}} (${num_likes})</a> <!--! &lt;--needs link2 -->
+    <?py #endif ?>
+<?py #endif ?>
+    </span>
+
+    <span class="dislike_link_block">
+<?py if can_comment: ?>
+    <span class="dislike_button_section link_section minor">
+    · <!--! this line has a dot  -->
+    <?py if user_dislikes: ?>
+        Disliked
+    <?py else: ?>
+        <a href="javascript:null;" class="link dislike_button">Dislike</a>
+    <?py #endif ?>
+    </span>
+    <?py if num_dislikes > 0: ?>
+        <a class="link link_section num_dislikes comment_button_section comment_button" href="javascript:null;">(${num_dislikes})</a>
+    <?py #endif ?>
+<?py else: ?>
+    <?py if num_dislikes > 0: ?>
+        · <!--! this line has a dot  -->
+        <a class="link link_section num_dislikes comment_button_section comment_button" href="javascript:null;">Dislikes (${num_dislikes})</a> <!--! &lt;--needs link2 -->
+    <?py #endif ?>
+<?py #endif ?>
+    </span>

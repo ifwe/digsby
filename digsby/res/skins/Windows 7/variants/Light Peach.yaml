@@ -1,0 +1,219 @@
+Variant: Peach
+
+Common:
+
+  Hover: orange/cl_hover.png 5 3 5 3
+  Menu_Hover: orange/menu_hover.png 5 3 5 3
+  Menu_Checked: orange/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: orange/group_bg.png
+  
+  Selected: orange/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: orange/menu_sep.png
+  
+MenuBar:
+  background: 0xf9efe1
+  
+MenuLite:
+  SeparatorImage: orange/menu_sep.png
+  Backgrounds:
+    Selection: 0xe8b26b
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0xf9efe1
+    Down: orange/mainmenuhover.png 1 1 1 1
+    Active: orange/mainmenuhover.png 1 1 1 1
+    Hover: orange/mainmenuhover.png 1 1 1 1
+    ActiveHover: orange/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: orange/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: orange/group_bg2.png
+    List: orange/list_bg.png 0 90 0 100
+    GroupSelected: orange/cl_selected2.png 5 3 5 3
+    BuddySelected: orange/cl_selected2.png 5 3 5 3
+    Buddy: orange/group_bg2.png
+  GroupIcons:
+    CollapsedHover: orange/right_hover.png
+    ExpandedHover: orange/expanded_hover.png
+  FontColors:
+    Group: 0xa7b4d13
+    GroupHover: 0x7b4d13
+    GroupSelected: 0x7b4d13
+    AddAccountsLink: 0x7b4d13
+    
+Button:
+  Backgrounds:
+    Normal: orange/format_bar_button_bg.png
+    Down: orange/format_button_down.png 3 3 3 3
+    Active: orange/format_button_down.png 3 3 3 3
+    Hover: orange/format_button.png 3 3 3 3
+    ActiveHover: orange/format_button_down.png 3 3 3 3
+    Disabled: orange/button.png 1 1 1 1
+    Notify: orange/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: orange/format_button.png 3 3 3 3
+    Down: orange/format_button_down.png 3 3 3 3
+    Active: orange/format_button_down.png 3 3 3 3
+    Hover: orange/format_button.png 3 3 3 3
+    ActiveHover: orange/format_button_down.png 3 3 3 3
+    Disabled: orange/button.png 1 1 1 1
+    Notify: orange/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: orange/actionbar_button_bg.png
+    Down: orange/actionbar_button_down.png 2 2 2 2
+    Active: orange/actionbar_button_down.png 2 2 2 2
+    Hover: orange/actionbar_button.png 2 3 2 4
+    ActiveHover: orange/actionbar_button_down.png 2 2 2 2
+    Disabled: orange/actionbar_button.png 2 3 2 4
+    Notify: orange/actionbar_button.png 2 3 2 4
+
+FormattingBarButton:
+  Backgrounds:
+    Normal: orange/actionbar_button_bg.png
+    Down: orange/actionbar_button_down.png 2 2 2 2
+    Active: orange/actionbar_button_down.png 2 2 2 2
+    Hover: orange/actionbar_button.png 2 3 2 4
+    ActiveHover: orange/actionbar_button_down.png 2 2 2 2
+    Disabled: orange/actionbar_button.png 2 3 2 4
+    Notify: orange/actionbar_button.png 2 3 2 4
+  
+AccountAero:
+  Backgrounds:
+    Normal: orange/aero_button.png 75 10 75 10
+    Down: orange/aero_hover.png 75 10 75 0
+    Active: orange/aero_hover.png 75 10 75 0
+    Hover: orange/aero_hover.png 75 10 75 0
+    ActiveHover: orange/aero_button.png 75 10 75 0
+    Disabled: orange/aero_button.png 75 10 75 0
+    Notify: orange/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: orange/cbo_button_normal_left.png 3 3 3 3
+    hover: orange/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: orange/cbo_button_normal_right.png 3 3 3 3
+    Hover: orange/cbo_button_hover_right.png 3 3 3 3
+    Down: orange/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: orange/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: orange/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: orange/cbo_button_normal_left.png 3 3 3 3
+    hover: orange/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: orange/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: orange/TFLEFTO.png 4 4 0 4
+    Down: orange/TFLEFTO.png 4 4 0 4
+    Hover: orange/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - orange/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: orange/CommandBar.png 1 0 1 0
+    EmailHover: orange/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xf9efe1
+    Contact: orange/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x7b4d13
+    NavBarHeader:  black
+    NavBarLink: 0x7b4d13
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0x7b4d13
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: orange/status_combo.png tile
+    Hover: orange/status_combo.png tile
+    Down: orange/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: orange/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: orange/Tabpage.png 0 0 0 5
+    Normal: orange/TabN.png 8 16 8 16
+    Active: orange/TabP.png 8 16 8 16
+    ActiveHover: orange/TabPO.png 8 16 8 16
+    Hover: orange/TabO.png 8 16 8 16
+    Notify: orange/TabA.png 8 16 8 16 
+    
+AccountPanels:
+  frame: orange/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0xf9efe1
+    Behind: 0xf9efe1
+  Icons:
+    Show: orange/showicon.png
+  FontColors:
+    Account: black
+    State: 0x666666
+    Link: 0x7b4d13
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0xf9efe1     
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0xf9efe1
+    
+Popup:
+  Background: orange/toast.png 20 20 20 20

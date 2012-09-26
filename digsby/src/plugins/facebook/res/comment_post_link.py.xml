@@ -1,0 +1,18 @@
+<?PY
+DISLIKE = _("Dislike! (via http://digsby.com/fb)")
+?>
+<?py
+from common import pref
+num_comments = ('comments' in post and 'count' in post.comments and post.comments.count != '0' and post.comments.count) or 0;
+can_comment = 'comments' in post and 'can_post' in post.comments and post.comments.can_post;
+if pref('facebook.dislike_enabled', type=bool, default=True):
+    num_dislikes = (post.post_id in feed.comments and len([c for c in feed.comments[post.post_id] if c.text == #{{repr(DISLIKE)}}])) or 0;
+else:
+    num_dislikes = 0;
+num_non_dislike_comments = max(num_comments - num_dislikes, 0);
+?>
+<?py if num_non_dislike_comments > 50: ?>
+    <div class="comment_post_link" style="clear:left"><a href="${post.permalink}" class="link">${_('See all %d comments') % num_non_dislike_comments}</a></div>
+<?py elif 'comment_count' in _context and comment_count == -1: ?>
+    <div class="comment_post_link" style="clear:left"><a href="${post.permalink}" class="link">${{_('See all comments')}}</a></div>
+<?py #endif ?>

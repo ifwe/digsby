@@ -1,0 +1,52 @@
+Index: src/_popupwin.i
+===================================================================
+--- src/_popupwin.i	(revision 52902)
++++ src/_popupwin.i	(working copy)
+@@ -20,7 +20,6 @@
+ %}
+ 
+ //---------------------------------------------------------------------------
+-#ifndef __WXMAC__
+ %newgroup;
+ 
+ MustHaveApp(wxPopupWindow);
+@@ -103,39 +102,4 @@
+ 
+ //---------------------------------------------------------------------------
+ 
+-
+-
+-#else  // On Mac we need to provide dummy classes to keep the renamers in sync
+-%{
+-class wxPopupWindow : public wxWindow {
+-public:
+-    wxPopupWindow(wxWindow *, int)  { wxPyRaiseNotImplemented(); }
+-    wxPopupWindow()                 { wxPyRaiseNotImplemented(); }
+-};
+-
+-class wxPyPopupTransientWindow : public wxPopupWindow
+-{
+-public:
+-    wxPyPopupTransientWindow(wxWindow *, int)  { wxPyRaiseNotImplemented(); }
+-    wxPyPopupTransientWindow()                 { wxPyRaiseNotImplemented(); }
+-};
+-%}
+-
+-
+-class wxPopupWindow : public wxWindow {
+-public:
+-    wxPopupWindow(wxWindow *parent, int flags = wxBORDER_NONE);
+-    %RenameCtor(PrePopupWindow, wxPopupWindow());
+-};
+-
+-%rename(PopupTransientWindow) wxPyPopupTransientWindow;
+-class wxPyPopupTransientWindow : public wxPopupWindow
+-{
+-public:
+-    wxPyPopupTransientWindow(wxWindow *parent, int style = wxBORDER_NONE);
+-    %RenameCtor(PrePopupTransientWindow, wxPyPopupTransientWindow());
+-};
+-
+-
+-#endif
+ //---------------------------------------------------------------------------

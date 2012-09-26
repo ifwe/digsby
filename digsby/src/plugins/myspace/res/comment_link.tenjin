@@ -1,0 +1,12 @@
+<?py comments = item.get_comments() ?>
+<?py num_comments = max(len(comments), getattr(item, 'numComments', 0)) ?>
+<span class="comment_button_section link_section">
+  · <!--! this line has a dot  -->
+    <a href="javascript:null;" class="skinlink link makecommenttxt comment_button">
+<?py if num_comments > 0: ?>
+    ${{_('Comment')}} (${num_comments})</a>
+<?py else: ?>
+    ${{_('Comment')}}</a>
+<?py #endif ?>
+</span>
+<?py del num_comments ?>

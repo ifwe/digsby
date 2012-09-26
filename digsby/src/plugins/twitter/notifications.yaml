@@ -1,0 +1,16 @@
+- twitter_newtweet:
+    description: !_ 'Twitter Update'
+    header: '${tweet.user.screen_name}'
+    minor: '${tweet.text.decode("xml")}'
+    icon: 'skin:serviceicons.twitter'
+    pages: 'tweets'
+    update: paged
+
+- twitter_newdirect:
+    description: !_ 'Twitter Direct Message'
+    header: "Twitter Direct Message"
+    minor: '${tweet.sender.screen_name + ": " + tweet.text.decode("xml")}'
+    icon: 'skin:serviceicons.twitter'
+    pages: 'tweets'
+    update: paged
+

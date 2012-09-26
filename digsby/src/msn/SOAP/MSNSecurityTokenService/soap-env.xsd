@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Envelope" type="soapenv:Envelope" />
+  <xs:complexType name="Envelope">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="soapenv:Header" />
+      <xs:element minOccurs="1" ref="soapenv:Body" />
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax" />
+    </xs:sequence>
+    <xs:anyAttribute namespace="##other" processContents="lax" />
+  </xs:complexType>
+  <xs:element name="Header" type="soapenv:Header" />
+  <xs:complexType name="Header">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax" />
+    </xs:sequence>
+    <xs:anyAttribute namespace="##other" processContents="lax" />
+  </xs:complexType>
+  <xs:element name="Body" type="soapenv:Body" />
+  <xs:complexType name="Body">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" />
+    </xs:sequence>
+    <xs:anyAttribute namespace="##any" processContents="lax">
+      <xs:annotation>
+        <xs:documentation>
+          Prose in the spec does not specify that attributes are allowed on the Body element
+        </xs:documentation>
+      </xs:annotation>
+    </xs:anyAttribute>
+  </xs:complexType>
+  <xs:attribute name="mustUnderstand">
+    <xs:simpleType>
+      <xs:restriction base="xs:boolean">
+        <xs:pattern value="0|1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="actor" type="xs:anyURI" />
+  <xs:simpleType name="encodingStyle">
+    <xs:annotation>
+      <xs:documentation>
+        'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification
+      </xs:documentation>
+    </xs:annotation>
+    <xs:list itemType="xs:anyURI" />
+  </xs:simpleType>
+  <xs:attribute name="encodingStyle" type="soapenv:encodingStyle" />
+  <xs:attributeGroup name="encodingStyle">
+    <xs:attribute ref="soapenv:encodingStyle" />
+  </xs:attributeGroup>
+  <xs:element name="Fault" type="soapenv:Fault" />
+  <xs:complexType name="Fault" final="extension">
+    <xs:annotation>
+      <xs:documentation>
+        Fault reporting structure
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="faultcode" type="xs:QName" />
+      <xs:element name="faultstring" type="xs:string" />
+      <xs:element minOccurs="0" name="faultactor" type="xs:anyURI" />
+      <xs:element minOccurs="0" name="detail" type="soapenv:detail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detail">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" />
+    </xs:sequence>
+    <xs:anyAttribute namespace="##any" processContents="lax" />
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,357 @@
+#
+# actions.yaml
+#
+#
+# This file specifies the ordering and layout of actions as they appear
+# in user interface elements.
+#
+
+# the buddylist right click menu displays the following "common" actions for all buddies:
+
+Contact:
+
+    - call: buddy_info
+      name: !_ '&Buddy Info'
+
+    - call: chat
+      name: !_ "&Send IM"
+
+    - call: send_file
+      name: !_ 'Send &File'
+
+    - call: send_email
+      name: !_ 'Send &Email'
+
+    - call: send_sms
+      name: !_ 'Send &SMS'
+
+    - ---------
+
+    - call: view_past_chats
+      name: !_ '&View Past Chats'
+
+    - call: edit_alerts
+      name: !_ '&Alert Me When...'
+
+    - ---------
+
+    - call: rename_gui
+      name: !_  'Re&name'
+
+    - call: block
+      name: !_  'Bl&ock'
+      gui:  gui.protocols.block_buddy
+
+    - call: unblock
+      name: !_  'Unbl&ock'
+
+    - call: remove
+      name: !_  "&Delete"
+      gui:  gui.protocols.remove_contact
+
+YahooContact:
+
+    - --------------------------
+
+    - call: view_past_chats
+      name: !_  '&View Past Chats'
+
+    - call: block
+      name: !_  'Bl&ock'
+      gui:  gui.protocols.block_buddy
+
+    - call: unblock
+      name: !_  'Unbl&ock'
+
+    - method: gui.buddylist.buddylistmenu.yahoo_buddy_menu
+
+OscarContact:
+
+    - call: view_past_chats
+      name: !_  '&View Past Chats'
+
+    - call: block
+      name: !_  'Bl&ock'
+      gui:  gui.protocols.block_buddy
+
+    - call: unblock
+      name: !_  'Unbl&ock'
+
+JabberContact:
+
+    - --------------------------
+
+    - call: view_past_chats
+      name: !_  '&View Past Chats'
+
+    - method: gui.buddylist.buddylistmenu.jabber_buddy_menu
+
+    - call: subscribed
+      name: !_  'Resend authorization'
+
+    - call: subscribe
+      name: !_  "Re-request authorization"
+
+    - call: unsubscribed
+      name: !_  "Remove authorization"
+
+MSNContact:
+
+    - call: view_past_chats
+      name: !_  '&View Past Chats'
+
+    - call: appear_offline
+      name: !_  "Appear offline"
+
+    - call: appear_online
+      name: !_  "Appear online"
+
+    - call: block
+      name: !_  'Bl&ock'
+      gui:  gui.protocols.block_buddy
+
+    - call: unblock
+      name: !_  'Unbl&ock'
+
+MetaContact:
+
+    - call: buddy_info
+      name: !_  '&Buddy Info'
+
+    - call: chat
+      name: !_  "&Send IM"
+
+    - call: send_file
+      name: !_  'Send &File'
+
+    - call: send_email
+      name: !_  'Send &Email'
+
+    - call: send_sms
+      name: !_  'Send &SMS'
+
+    - ---------
+
+    - call: edit_alerts
+      name: !_  '&Alert Me When...'
+
+    - ---------
+
+    - call: rename_gui
+      name: !_  'Re&name && Rearrange...'
+
+    - call: explode
+      name: !_  'Split Merged Contact...'
+
+    - ----------------
+
+    - method: gui.buddylist.buddylistmenu.metacontact_buddy_menu
+
+DGroup:
+
+    - method: gui.addcontactdialog.groupaddcontact
+
+    - call: rename_gui
+      name: !_  "&Rename Group"
+
+    - call: delete
+      name: !_  '&Delete Group'
+      gui:  gui.protocols.remove_group
+
+    - call: add_group
+      name: !_  'Add &Group'
+
+Protocol:
+
+    - call: Connect
+      name: !_  '&Connect'
+
+    - call: Disconnect
+      name: !_  '&Disconnect'
+
+OscarProtocol:
+
+    - call: format_screenname
+      name: !_  '&Format Screen Name'
+      gui: gui.protocols.oscargui.format_screenname
+
+    - call: set_account_email
+      name: !_  '&Update Email Address'
+      gui: gui.protocols.oscargui.set_account_email
+
+    - call: request_account_confirm
+      name: !_  '&Confirm Account'
+
+    - call: change_password
+      name: !_  'Change &Password (URL)'
+
+    - call: im_forwarding
+      name: !_  '&IM Forwarding (URL)'
+
+    - call: aol_alerts
+      name: !_  '&AOL Alerts (URL)'
+
+    - call: my_icq_page
+      name: !_  '&My Page on ICQ.com (URL)'
+
+JabberProtocol:
+
+    - call: set_priority
+      name: !_  'Set Priority'
+      gui: gui.protocols.jabbergui.set_priority
+
+    - call: change_password
+      name: !_  'Change &Password'
+      gui: gui.protocols.jabbergui.PasswordChangeDialog
+
+    - call: xml_console
+      name: '&XML Console'
+
+MSNClient:
+
+    - call: search_for_contact
+      name: !_  '&Search for a Contact'
+
+    - call: address_book
+      name: !_  'Address Book'
+
+    - call: mobile_settings
+      name: !_  'Mobile Settings'
+
+    - call: my_profile
+      name: !_  'My Account'
+
+    - call: CreateCircle
+      name: !_  'Create Group Chat'
+
+YahooProtocol:
+
+    - call: my_account_info
+      name: !_  'My Account Info (URL)'
+
+    - call: my_web_profile
+      name: !_  'My Web Profile (URL)'
+
+FacebookChat:
+    - call: _update
+      name: !_  'Update presence'
+
+EmailAccount:
+    - call: OnClickInboxURL
+      name: !_  "Open &Inbox"
+
+    - call: OnComposeEmail
+      name: !_  'C&ompose...'
+
+    - ------------------------
+
+    - call: rename_gui
+      name: !_  "&Rename"
+
+    - ------------------------
+
+    - call: update_now
+      name: !_  '&Check Now'
+
+    - call: tell_me_again
+      name: !_  '&Tell Me Again'
+
+AOLMail:
+    - call: open
+      name: !_  '&Open'
+    - call: markAsRead
+      name: !_  'Mark as &Read'
+    - call: archive
+      name: !_  '&Archive'
+    - call: delete
+      name: !_  '&Delete'
+    - call: reportSpam
+      name: !_  'Report &Spam'
+
+Gmail:
+    - call: open
+      name: !_  '&Open'
+    - call: markAsRead
+      name: !_  'Mark as &Read'
+    - call: archive
+      name: !_  '&Archive'
+    - call: delete
+      name: !_  '&Delete'
+    - call: reportSpam
+      name: !_  'Report &Spam'
+
+Hotmail:
+    - call: open
+      name: !_  '&Open'
+    - call: markAsRead
+      name: !_  'Mark as &Read'
+    - call: delete
+      name: !_  '&Delete'
+    - call: reportSpam
+      name: !_  'Report &Spam'
+
+IMAPMail:
+    - call: open
+      name: !_  '&Open'
+    - call: markAsRead
+      name: !_  'Mark as &Read'
+    - call: delete
+      name: !_  '&Delete'
+
+PopMail:
+    - call: open
+      name: !_  '&Open'
+    - call: delete
+      name: !_  '&Delete'
+
+YahooMail:
+    - call: open
+      name: !_  '&Open'
+    - call: markAsRead
+      name: !_  'Mark as &Read'
+    - call: delete
+      name: !_  '&Delete'
+    - call: reportSpam
+      name: !_  'Report &Spam'
+
+Myspace:
+    - call: update_now
+      name: !_  '&Update Now'
+
+    - call: OpenHome
+      name: !_  '&Home'
+
+    - call: OpenProfile
+      name: !_  '&Profile'
+
+    - call: OpenMail
+      name: !_  '&Inbox'
+
+    - call: OpenFriends
+      name: !_  '&Friends'
+
+    - call: OpenBlog
+      name: !_  '&Blog'
+
+    - call: OpenBulletins
+      name: !_  'B&ulletins'
+    - ------------------------
+    - call: edit_status
+      name: !_  '&Set Status'
+
+SearchWebGroup:
+    - call: edit
+      name: !_  'Edit...'
+
+SearchEntry:
+    - call: activate
+      name: ${obj.menu_search_string}
+    - -----------
+    - call: delete
+      name: !_  'Delete'
+
+IRCClient:
+#    - name: !_  Join Room
+#      call: join_chat_room
+#      gui: irc.ircgui.join_chat_room
+

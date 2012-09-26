@@ -1,0 +1,89 @@
+name: !_ "Twitter"
+shortname: twitter
+name_truncated: twit
+service_name: !_ "Timeline"
+service_provider: &service_provider twitter
+
+popularity: 434
+type: service_component
+component_type: social
+form: social
+username_desc: !_ 'Twitter ID'
+newuser_url: https://twitter.com/signup
+path: twitter.twitter.TwitterAccount
+
+new_details:
+  - type: bool
+    store: do_follow_digsby
+    label: Follow Digsby on Twitter
+    default: true
+  - type: meta
+    store: informed_ach
+    value: yes
+#  - type: bool
+#    store: do_tweet_about_digsby
+#    label: Tweet about Digsby
+#    default: True
+#    help: http://wiki.digsby.com/doku.php?id=faq#q33
+account_gui: 'twitter.twitter_account_gui.TwitterAccountPanel'
+defaults:
+  alias: ~
+  friends_timeline: 2
+  replies: 2
+  direct_messages: 5
+  search_updatefreq: 5
+  auto_throttle: true
+  informed_ach: yes
+  post_ach_all: no
+whitelist_opts:
+  - enabled
+  - friends_timeline
+  - replies
+  - direct_messages
+  - search_updatefreq
+  - auto_throttle
+  - informed_ach
+  - post_ach_all
+  - oauth_token
+  - alias
+  - api_server
+skin:
+  serviceicons:
+    twitter: res/img/twitter.png
+  Twitter:
+    toolbaricons:
+        link: res/img/link.png
+        image: res/img/picture.png
+        shrink: res/img/shrink.png
+        global: serviceicons/widget_trans.png
+
+        # actions bar
+        timeline: res/img/timeline.png
+        mentions: res/img/mentions.png
+        directs: res/img/directs.png
+        favorites: res/img/favorites.png
+        history: res/img/history.png
+        group: res/img/groups.png
+        search: res/img/search.png
+        user: res/img/groups.png
+infobox:
+    maxheight: True
+    hosted: True
+
+
+entry_points:
+  digsby.component.social:
+    *service_provider: twitter.twitter:TwitterAccount
+  digsby.services.edit.advanced.extract_sub.social:
+    *service_provider: twitter.twgui:extract_advanced_subpanel_social
+  digsby.services.edit.basic.extract_sub.social:
+    *service_provider: twitter.twgui:extract_basic_subpanel_social
+  digsby.services.edit.advanced.construct_sub.social:
+    *service_provider: twitter.twgui:construct_advanced_subpanel_social
+  digsby.services.edit.basic.construct_sub.social:
+    *service_provider: twitter.twgui:construct_basic_subpanel_social
+  # register twitter autocomplete for status entry text controls
+  digsby.status_textctrl.created:
+    autocomplete: twitter.twitter_gui:twitter_autocomplete
+    regex_ignore: twitter.twitter_util:add_regex_ignores_to_ctrl
+

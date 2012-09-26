@@ -1,0 +1,9 @@
+name: 'XEP 0249 + MUC Mediated invite'
+path: 'digsby_muc_invite'
+type: 'pure'
+
+entry_points:
+  digsby.jabber.session_started:
+    muc_invite: digsby_muc_invite:session_started
+  digsby.jabber.initialized:
+    muc_invite: digsby_muc_invite:initialized

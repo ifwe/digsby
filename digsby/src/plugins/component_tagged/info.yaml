@@ -1,0 +1,32 @@
+name: !_ "Tagged"
+shortname: tagged
+name_truncated: tag
+service_name: !_ Tagged Updates
+service_provider: &service_provider tagged
+popularity: 125
+type: service_component
+component_type: social
+username_desc: !_ "Email Address"
+newuser_url: http://www.tagged.com/register.html
+needs_password: true
+path: component_tagged.TaggedAccount.TaggedAccount
+form: social
+whitelist_opts: ['filters', 'enabled']
+
+skin:
+  serviceicons:
+    tagged: res/tagged.png
+    elections: res/elections.png
+
+infobox:
+    maxheight: True
+    hosted: True
+
+entry_points:
+  digsby.services.edit.advanced.extract_sub.social:
+    *service_provider: component_tagged.TaggedGui:extract_advanced_subpanel_social
+  digsby.services.edit.advanced.construct_sub.social:
+    *service_provider: component_tagged.TaggedGui:construct_advanced_subpanel_social
+
+  digsby.component.social:
+    *service_provider: component_tagged.TaggedAccount:TaggedAccount

@@ -1,0 +1,19 @@
+TaggedAccount:
+  - call: openurl_Home
+    name: !_ '&Home'
+  - call: openurl_Profile
+    name: !_ '&Profile'
+  - call: openurl_Messages
+    name: !_ '&Messages'
+  - call: openurl_People
+    name: !_ 'P&eople'
+  - call: openurl_Games
+    name: !_ '&Games'
+  - ------------------------
+  - call: update_now
+    name: !_ '&Check Now'
+  - call: rename_gui
+    name: !_ "&Rename"
+  - ------------------------
+  - call: SetStatus
+    name: !_ '&Set Status'

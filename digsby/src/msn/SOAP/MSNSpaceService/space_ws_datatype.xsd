@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xs:schema xmlns:sns="http://www.msn.com/webservices/spaces/v1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.msn.com/webservices/spaces/v1/" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+    <xs:complexType name="elementType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="url" type="xs:string"/>
+            <xs:element name="totalNewItems" type="xs:integer"/>
+            <xs:element name="subElement" type="sns:subelementBaseType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="subelementBaseType">
+        <xs:sequence>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="tooltip" type="xs:string"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="url" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="lastUpdated" type="xs:dateTime"/>
+        <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="elementsType">
+        <xs:sequence>
+            <xs:element name="element" type="sns:elementType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="totalMatches" type="xs:integer"/>
+        <xs:attribute name="returnedMatches" type="xs:integer"/>
+        <xs:attribute name="displayName" type="xs:string"/>
+        <xs:attribute name="displayPictureUrl" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="themeType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="titleBar" type="sns:surfaceType"/>
+            <xs:element name="clientArea" type="sns:clientAreaType"/>
+            <xs:element name="toolbar" type="sns:surfaceType"/>
+            <xs:element name="border" type="sns:borderType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="surfaceType">
+        <xs:attribute name="background" type="xs:string"/>
+        <xs:attribute name="foreground" type="xs:string"/>
+        <xs:attribute name="fontFace" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="clientAreaType" mixed="false">
+        <xs:complexContent mixed="false">
+            <xs:extension base="sns:surfaceType">
+                <xs:attribute name="backgroundImage" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="borderType">
+        <xs:attribute name="topLeftImage" type="xs:string"/>
+        <xs:attribute name="bottomLeftImage" type="xs:string"/>
+        <xs:attribute name="topRightImage" type="xs:string"/>
+        <xs:attribute name="bottomRightImage" type="xs:string"/>
+        <xs:attribute name="outline" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="liveThemeType">
+        <xs:sequence>
+            <xs:element name="themeName" type="xs:string"/>
+            <xs:element name="head" type="sns:headType"/>
+            <xs:element name="body" type="sns:bodyType"/>
+            <xs:element name="actions" type="sns:linkType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="linkType">
+        <xs:attribute name="linkColor" type="xs:string"/>
+        <xs:attribute name="backgroundColor" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="linkTextType" mixed="false">
+        <xs:complexContent mixed="false">
+            <xs:extension base="sns:linkType">
+                <xs:attribute name="textColor" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="headType" mixed="false">
+        <xs:complexContent mixed="false">
+            <xs:extension base="sns:linkTextType">
+                <xs:attribute name="backgroundImage" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="bodyType" mixed="false">
+        <xs:complexContent mixed="false">
+            <xs:extension base="sns:headType">
+                <xs:attribute name="secondaryLinkColor" type="xs:string"/>
+                <xs:attribute name="dividerColor" type="xs:string"/>
+                <xs:attribute name="accordionHoverColor" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="refreshInformationType">
+        <xs:sequence>
+            <xs:element name="cid" type="xs:string"/>
+            <xs:element name="storageAuthCache" type="xs:string"/>
+            <xs:element name="market" type="xs:language"/>
+            <xs:element name="brand" type="xs:string"/>
+            <xs:element name="maxElementCount" type="xs:integer" default="2"/>
+            <xs:element name="maxCharacterCount" type="xs:integer" default="200"/>
+            <xs:element name="maxImageCount" type="xs:integer" default="6"/>
+            <xs:element name="applicationId" type="xs:string"/>
+            <xs:element name="updateAccessedTime" type="xs:boolean" default="true"/>
+            <xs:element name="spaceLastViewed" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="isActiveContact" type="xs:boolean"/>
+            <xs:element name="profileLastViewed" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="contactProfileLastViewed" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="activeContactLastChanged" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contactCardType">
+        <xs:sequence>
+            <xs:element name="storageAuthCache" type="xs:string"/>
+            <xs:element name="elements" type="sns:elementsType"/>
+            <xs:element name="theme" type="sns:themeType"/>
+            <xs:element name="liveTheme" type="sns:liveThemeType"/>
+            <xs:element name="lastUpdate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="spaceContactCardElementsElementPhotoSubElement" mixed="false">
+        <xs:complexContent mixed="false">
+            <xs:extension base="sns:subelementBaseType">
+                <xs:sequence>
+                    <xs:element name="thumbnailUrl" type="xs:string"/>
+                    <xs:element name="webReadyUrl" type="xs:string"/>
+                    <xs:element name="albumName" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>

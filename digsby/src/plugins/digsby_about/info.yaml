@@ -1,0 +1,11 @@
+name: 'DigsbyAbout'
+path: 'digsby_about'
+type: 'pure'
+
+entry_points:
+  digsby.profile.addons:
+    digsby_about: digsby_about.aboutdialog:AboutAddon
+  digsby.help.actions:
+    digsby_about: digsby_about.aboutdialog:help_menu_items
+  digsby.updater.update_check_results:
+    digsby_about: digsby_about.aboutdialog:on_update_check_complete

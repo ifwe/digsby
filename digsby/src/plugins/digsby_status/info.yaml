@@ -1,0 +1,15 @@
+name: 'DigsbyStatusTagging'
+path: 'digsby_status'
+type: 'pure'
+
+entry_points:
+  digsby.status.tagging.tag_url:
+    text: digsby_status.status_tag_urls:tag_status
+  digsby.status.tagging.strip_tag:
+    text: digsby_status.status_tag_urls:remove_tag_text
+  digsby.status.url.for_protocol:
+    digsby_status: digsby_status.status_tag_urls:url_for_protocol
+  digsby.profile.addons:
+    status_tag: digsby_status.status_tag_urls:StatusPrefUpgrader
+  digsby.status.url.for_protocol_re:
+    digsby_status: digsby_status.status_tag_urls:re_url_for_protocol

@@ -1,0 +1,63 @@
+name: !_ 'Google Talk'
+service_provider: &service_provider google
+type: service_component
+component_type: im
+shortname: gtalk
+name_truncated: 'gtal'
+statuses: [[!N_ 'Available'],
+           [!N_ 'Away']]
+needs_dataproxy: yes
+has_invisible: yes
+
+defaults:
+    ignore_ssl_warnings: yes
+    do_tls: yes
+    priority: 25
+    resource: Digsby
+    sasl_plain: yes
+    server: ['talk.google.com', 5222]
+    dataproxy: ""
+    hide_os: no
+    allow_plaintext: yes
+    plain: yes
+    autologin: no
+    block_unknowns: no
+
+    alt_connect_opts:
+        - require_tls: no
+          verify_tls_peer: no
+          server: ['talk.google.com', 443]
+          do_ssl: yes
+          do_tls: no
+
+        - require_tls: yes
+          verify_tls_peer: no
+          server: ['talk.google.com', 80]
+          do_ssl: no
+          do_tls: yes
+
+        - require_tls: no
+          verify_tls_peer: no
+          server: ['talk.google.com', 5223]
+          do_ssl: yes
+          do_tls: no
+
+compatible: !set
+    - jabber
+    - gtalk
+
+entry_points:
+    digsby.component.im:
+        *service_provider: component_gtalk.gtalk:GoogleTalk
+    digsby.jabber.session_started:
+        *service_provider: component_gtalk.gtalkVideo:session_started
+    digsby.jabber.initialized:
+        *service_provider: component_gtalk.gtalkVideo:initialized
+
+
+path: component_gtalk.gtalk.GoogleTalk
+popularity: 1000
+username_desc: !_ 'Google Account'
+password_desc: !_ 'Password'
+newuser_url: 'https://www.google.com/accounts/NewAccount'
+password_url: 'https://www.google.com/accounts/ForgotPasswd'

@@ -1,0 +1,45 @@
+.outgoing a {
+	color: #404040;
+}
+.outgoing a:hover {
+	text-shadow: #a0a0a0 0 1px 1px;
+}
+.outgoing .header {
+	background: url(../images/dark/m-header-center.png) repeat-x;
+}
+.outgoing .header .left {
+	background: url(../images/dark/m-header-left.png);
+}
+.outgoing .header .right {
+	background: url(../images/dark/m-header-right.png);
+}
+.outgoing .header .sender {
+	color: #404040;
+	text-shadow: #808080 0 2px 2px;
+}
+.outgoing .messages {
+	background: url(../images/dark/m-left.png) left repeat-y;
+}
+.outgoing .messages > div {
+	background: url(../images/dark/m-right.png) right repeat-y;
+}
+.outgoing .messages > div > div {
+	background: #f8f8f8;
+}
+.outgoing .messages .time {
+	color: #404040;
+	text-shadow: #a0a0a0 0 1px 1px;
+}
+.outgoing .messages .sep {
+	background: #a0a0a0;
+	border-bottom: 1px solid #ebebeb;
+}
+.outgoing .bottom {
+	background: url(../images/dark/m-bottom-center.png) repeat-x;
+}
+.outgoing .bottom .left {
+	background: url(../images/dark/m-bottom-left.png);
+}
+.outgoing .bottom .right {
+	background: url(../images/dark/m-bottom-right.png);
+}

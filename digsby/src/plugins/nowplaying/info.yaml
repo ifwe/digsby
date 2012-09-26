@@ -1,0 +1,15 @@
+name: 'Now Playing Status'
+path: 'nowplaying'
+platforms: 
+  - 'win'
+
+type: 'pure'
+
+entry_points:
+  digsby.profile.addons:
+    nowplaying: nowplaying.nowplaying:NowPlaying
+  digsby.im.statusmessages.set.pre:
+    nowplaying: nowplaying.nowplaying:mutate_status
+  digsby.im.statusmessages:
+    nowplaying: nowplaying.nowplaying:status_factory
+

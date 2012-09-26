@@ -1,0 +1,302 @@
+Name: Darkness
+Variant: bluBlack
+fontplatform: windows
+
+common:
+# 768099 556a99 131a2d 02050a
+  GMain: 0x556a99 0x131a2d
+  GSelected: 0x768099 0x131a2d
+  GDark: 0x555555 black
+  MyBlack: 0x02050a
+  MyWhite: white
+  LightGrey: 0xcccccc
+  MidGrey: 0xdddddd
+  DarkGrey: grey
+  MyFont: tahoma
+  GAccount: 0x556a99 0x131a2d border 0x556a99
+
+Menu:
+  FrameSize: 1
+  Frame: $MyBlack
+  Iconsize: 16
+  Font: &MyFont
+  FontColors:
+    Selection: $MyWhite
+  Backgrounds:
+    Selection: $GMain
+    Gutter: $GMain
+  SubmenuIcon: img/mysubmenuicon.png
+  CheckedIcon: img/mychecked.png
+  UnCheckedIcon: img/myunchecked.png
+
+MenuBar:
+  padding: 1 0
+  background: $GMain
+  itemskin: Button
+
+myformattingbar:
+  padding: 0 0
+  buttonskin: Button
+  background: $GMain
+  menuskin: Menu
+
+formattingbar:
+  toolbarskin: myformattingbar
+
+  Icons:
+    Bold: formatbold.png
+    Italic: formatitalic.png
+    Underline: formatunderline.png
+    ForegroundColor: formatforecolor.png
+    BackgroundColor: formatbackcolor.png
+
+statusicons:
+  available: statusicons/available.png
+  mobile: statusicons/mobile.png
+  idle: statusicons/idle.png
+  away: statusicons/away.png
+  invisible: statusicons/invisible.png
+  offline: statusicons/offline.png
+  blocked: statusicons/blocked.png
+
+buttonbar:
+  padding: 2 2
+  buttonskin: Button
+  background: $GMain
+  Menuskin: Menu
+
+ButtonBarNP:
+  padding: 2 0
+  buttonskin: Button
+  background: $GMain
+  Menuskin: Menu
+
+
+ComboBox:
+  Font: $MyFont
+  Backgrounds:
+    Normal: $GMain
+    Active: $MyBlack
+    hover: $GDark
+  FontColors:
+    Normal: $LightGrey
+    Active: $MyWhite
+    Hover: $LightGrey
+    Hint: 0xaaaaaa
+  DropdownButtonIcon: img/mydropmenuicon.png
+
+SimpleMenu:
+  Framesize: 1
+  Padding: 3 4
+  Frame: $MyBlack
+  Font: $MyFont
+  Backgrounds:
+    Menu: $MyWhite
+    Selection: $GMain
+  Fontcolors:
+    Normal: $MyBlack
+    Selection: $MyWhite
+
+Button:
+  Backgrounds:
+    Normal: $GMain
+    Down: $MyBlack
+    Active: $MyBlack
+    Hover: $GDark #$MyBlack
+    ActiveHover: $MyBlack
+    Disabled: vertical 0x7D7D7D 0xEDEDED
+    Notify: vertical 0xFFFFC8 0xFFFF55
+  Font: 8
+  FontColors:
+    Normal: $LightGrey
+    Down: $MyWhite
+    Active: $MyWhite
+    Hover: $LightGrey
+    ActiveHover: $MyWhite
+    Disabled: $MyWhite
+    Notify: $MyWhite
+  Padding: 5 5
+  margins: 0
+  MenuIcon: img/mydropmenuicon.png
+
+ButtonChevron:
+  Backgrounds:
+    Normal: $GMain
+    Down: $MyBlack
+    Active: $MyBlack
+    Hover: $GDark #$MyBlack
+    ActiveHover: $MyBlack
+    Disabled: vertical 0x7D7D7D 0xEDEDED
+    Notify: vertical 0xFFFFC8 0xFFFF55
+  Font: 8
+  FontColors:
+    Normal: $LightGrey
+    Down: $MyWhite
+    Active: $MyWhite
+    Hover: $LightGrey
+    ActiveHover: $MyWhite
+    Disabled: $MyWhite
+    Notify: $MyWhite
+  Padding: 3 3
+  margins: 0
+  MenuIcon: img/mydropmenuicon.png
+
+EmailPanel:
+  FrameSize: 0
+  Frame: $MyBlack
+  Backgrounds:
+    Normal: $GMain
+    Hover: $GDark
+  FontColors:
+    Normal: $MyWhite
+    Hover: $MyWhite
+
+SocialPanel:
+  FrameSize: 0
+  Frame: $MyBlack
+  Backgrounds:
+    Normal: $GMain
+    Hover: $GDark
+  FontColors:
+    Normal: $MyWhite
+    Hover: $MyWhite
+
+buddiespanel:
+  framesize: 0
+  buddymargins: 3 0 3 0
+  GroupMargins: 2 0 0 0
+  backgrounds:
+    buddy: ~
+    buddyselected: $GSelected
+    buddyhover: $GMain
+    list: black
+    group: $GDark
+    grouphover: $GMain
+    groupselected: $GSelected
+  fontcolors:
+    buddy: $MyWhite
+    buddyhover: $MyWhite
+    buddyselected: $MyWhite
+    buddyoffline: $DarkGrey
+    group: $LightGrey
+    grouphover: $MyWhite
+    groupselected: $MyWhite
+    status: $MidGrey
+    statushover: $MidGrey
+    statusselected: $MidGrey
+    idletime: $DarkGrey
+    idletimehover: $DarkGrey
+    idletimeselected: $DarkGrey
+    renamebox: $MyWhite
+    AddAccountsLink: white
+  fonts:
+    addaccountslink: tahoma 13
+  BuddyIcons:
+    Rounded: yes
+  GroupIcons:
+    Collapsed: img/group_c.png
+    CollapsedHover: img/group_c.png
+    CollapsedSelected: img/group_c.png
+    Expanded: img/group_e.png
+    ExpandedHover: img/group_e.png
+    ExpandedSelected: img/group_e.png
+
+HorizontalSizerBar:
+  Backgrounds:
+    Normal: $MyBlack
+    Hover: $MyBlack
+    Active: $MyBlack
+  Thickness: 2
+
+VerticalSizerBar:
+  Backgrounds:
+    Normal: $MyBlack
+    Hover: $MyBlack
+    Active: $MyBlack
+  Thickness: 2
+
+actionsbar:
+  iconsize: 16
+
+statuspanel:
+  framesize: 0
+  SearchIcon: img/search-white.png
+  CancelSearchIcon: img/close-white.png
+
+EmailSubjectBar:
+  FontColors:
+    SubjectLabel: white
+    SubjectField: black
+
+ToFromBar:
+    FontColor: white
+    Font: Arial
+
+InfoBox:
+  border: 0
+  framesize: 1
+  frame: black
+  backgrounds:
+    frame: $MyBlack
+    header: $GMain
+    email: $MyWhite
+    emailhover: $GMain
+    contact: $GMain
+    contacthover: $GDark
+    contactselected: 0x7093D6 0x333333
+  fontcolors:
+    Title: $MyBlack
+    Body: $LightGrey
+    Link: 0x334162
+    NavBarHeader: white
+    NavBarLink: $LightGrey
+    EmailHoverTitle: white
+    EmailHoverMajor: white
+    EmailHoverMinor: $LightGrey
+    EmailHoverLink: $LightGrey
+    Contact: 0xDDDDDD
+    ContactHover: 0xDDDDDD
+    ContactSelected: 0xDDDDDD
+  Fonts:
+    Header: Tahoma 8 bold
+    Title: Tahoma 8 bold
+    Major: Tahoma 8
+    Minor: Tahoma 8
+    Link: Tahoma 8 underline
+
+Progressbar:
+  Mode: Native
+
+SendBar:
+  ToolBarSkin: ButtonBar
+  Font: Tahoma bold
+  FontColor: $LightGrey
+
+Tabs:
+  Font: Tahoma
+  FontColors:
+    Normal: 0x666666
+    Active: $MyBlack
+    ActiveHover: 0x333333
+    Notify: red
+    Hover: $MyBlack
+  MaxWidth: 100
+
+AccountPanels:
+  ButtonSkin: ButtonChevron
+  Frame: grey
+  FrameSize: 1
+  Backgrounds:
+    Account: $GAccount
+    Behind: 0x555555 black
+  Spacing: 1
+  ServiceIconSize: 16
+  FontColors:
+    Account: white
+    Link: white
+
+FileTransfers:
+  Backgrounds:
+    Selected: vertical 0xaaaaaa 0x777777
+    Normal: white
+    List: $MyBlack

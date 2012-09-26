@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.0"
+	Name="pythoncore"
+	ProjectGUID="{A89B81E6-3B74-4D41-9809-71E959C1AC10}"
+	VCNestedProjectGUID="{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}"
+	VCNestedProjectFileName="pythoncore.vcproj">
+	<Configurations>
+		<Configuration
+			Name="Release|Win32">
+			<Tool
+				Name="CppCmplrTool"
+				Optimization="1000"
+				InterproceduralOptimization="2"/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64">
+			<Tool
+				Name="CppCmplrTool"
+				Optimization="1000"/>
+		</Configuration>
+		<Configuration
+			Name="PGInstrument|Win32">
+			<Tool
+				Name="CppCmplrTool"
+				ProfileGuidedOptimization="1"/>
+		</Configuration>
+		<Configuration
+			Name="PGInstrument|x64">
+			<Tool
+				Name="CppCmplrTool"
+				ProfileGuidedOptimization="1"/>
+		</Configuration>
+		<Configuration
+			Name="PGUpdate|Win32">
+			<Tool
+				Name="CppCmplrTool"
+				Optimization="1000"
+				InterproceduralOptimization="2"
+				ProfileGuidedOptimization="3"/>
+		</Configuration>
+		<Configuration
+			Name="PGUpdate|x64">
+			<Tool
+				Name="CppCmplrTool"
+				Optimization="1000"
+				InterproceduralOptimization="2"
+				ProfileGuidedOptimization="3"/>
+		</Configuration>
+	</Configurations>
+	<Files/>
+</VisualStudioProject>

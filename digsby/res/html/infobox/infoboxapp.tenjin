@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?PY include(platform.resource('head.tenjin')) ?>
+    <link id="appCSS" rel="StyleSheet" href="" type="text/css">
+<?PY _buf.extend(plugins.head()) ?>
+    </head>
+    <body>
+        <div id="digsby_app_content" class="content major">
+        </div>
+    </body>
+</html>

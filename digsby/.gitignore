@@ -1,0 +1,13 @@
+.svn
+*.pyc
+lib/AutoUpdate/
+lib/pyxmpp/
+build/platlib_mac32_26/
+ext/build/
+ext/src/generated/
+logs/
+denv
+dist/
+.pydevproject
+svnrev.py
+debug/

@@ -1,0 +1,304 @@
+name: QuickSilver
+fontplatform: windows
+
+Common:
+  MyWhite: white
+  MyBlack: black
+  MyGrey: grey
+  LighterHover: 0xaaaaaa
+  LightGrey: 0xcccccc
+  MainGrey: 0xdddddd
+  DarkHover: 0xeeeeee
+  LinkBlue: 0x334162
+  Highlight: 0x6a8bcb
+  GLightHover: 0xeeeeee 0xaaaaaa
+  GMainGrey: white 0xdddddd
+  GMainGreyAlt: 0xdddddd white
+
+Menu:
+  Frame: $MyBlack
+  FrameSize: 1
+  Padding: 4 4
+  Iconsize: 16
+  Font: Tahoma
+  Backgrounds:
+    menu: $MyWhite
+    Selection: $Highlight
+    Gutter: $GMainGrey
+  FontColors:
+    Normal: $MyBlack
+    Selection: $MyWhite
+    Disabled: $MyGrey
+
+SimpleMenu:
+  Padding: 3 4
+  Framesize: 1
+  Frame: $MyBlack
+  Backgrounds:
+    Menu: $MyWhite
+    Selection: $Highlight
+  Font: Tahoma
+  Fontcolors:
+    Normal: $MyBlack
+    Selection: $MyWhite
+
+MenuBar:
+  padding: 0 0
+  background: $GMainGreyAlt
+  itemskin: ButtonAlt
+  MenuSkin: Menu
+
+BuddiesPanel:
+  FrameSize: 0 0 0 1
+  Frame: $LightGrey
+  BuddyMargins: 8 0 3 0
+  GroupMargins: 3 0 0 0
+  GroupPadding: 3 2
+  FontColors:
+    Buddy: $MyBlack
+    BuddyOffline: $MyGrey
+    BuddyHover: $MyBlack
+    BuddySelected: $MyWhite
+    Group: $MyBlack
+    GroupHover: $MyBlack
+    GroupSelected: $MyWhite
+    Status: $MyBlack
+    StatusHover: $MyBlack
+    StatusSelected: $MyWhite
+    IdleTime: $MyGrey
+    IdleTimeHover: $MyGrey
+    IdleTimeSelected: $MyWhite
+    RenameBox: $Highlight
+    AddAccountsLink: blue
+  Fonts:
+    AddAccountsLink: Tahoma 13
+  BuddyIcons:
+    Rounded: yes
+    NoIconAlpha: 40%
+  Backgrounds:
+    Group: 0xcccccc 50%
+    GroupHover: 0xeeeeee 50% 0xaaaaaa 50%
+    GroupSelected: 0x6a8bcb 50%
+    BuddySelected: 0x6a8bcb 50%
+    BuddyHover: 0xdedede 50%
+    Buddy: ~
+    List:
+    - watermark.png v_center h_center
+    - $MyWhite
+    RenameBox: $MyBlack
+
+Button:
+  IconSize: 8
+  Backgrounds:
+    Normal: $GMainGrey
+    Down: 0x666666
+    Active: 0xbbbbbb 0xcacaca
+    Hover: 0xcacaca
+    ActiveHover: 0xcacaca 0x000000
+    Disabled: 0x666666
+    Notify: 0x0f0f0f
+  FontColors:
+    Normal: $MyBlack
+    Down: $LighterHover
+    Active: $MyWhite
+    Hover: $MyBlack
+    ActiveHover: $MyWhite
+    Disabled: $MyBlack
+    Notify: $MyBlack
+  Padding: 3 3
+  margins: 0
+
+ButtonAlt:
+  IconSize: 8
+  Backgrounds:
+    Normal: $GMainGreyAlt
+    Down: 0x000000 0x555555
+    Active: 0x000000 0x555555
+    Hover: 0xdddddd 0xbbbbbb
+    ActiveHover: 0x5a5a5a
+    Disabled: 0x666666
+    Notify: 0x0f0f0f
+  FontColors:
+    Normal: $MyBlack
+    Down: $MyWhite
+    Active: $MyWhite
+    Hover: $MyBlack
+    ActiveHover: $MyWhite
+    Disabled: $MyBlack
+    Notify: $MyBlack
+  Padding: 5 5
+  margins: 0
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: white 0xdddddd border 1 0x999999
+    Down: 0x303030 border 1 black
+    Active: 0x555555 border 1 black
+    Hover: white border 1 black
+    ActiveHover: 0x5a5a5a border 1 black
+    Disabled: 0x666666 border 1 black
+    Notify: 0x0f0f0f border 1 black
+  Padding: 5 5
+  margins: 0
+
+ButtonBar:
+  padding: 2 2
+  buttonskin: Button
+  MenuSkin: SimpleMenu
+  background: $GMainGrey
+
+ButtonBarNP:
+  padding: 2 0
+  buttonskin: Button
+  background: $GMainGrey
+
+FormattingBar:
+  ToolBarSkin: ButtonBarNP
+  MenuSkin: SimpleMenu
+  IconSize: 15
+  FontDropDownWidth: 100
+  SizeDropDownWidth:  33
+
+ButtonBarCombo:
+  padding: 0 0
+  buttonskin: ButtonCombo
+  background: $GMainGrey
+
+ActionsBar:
+  IconSize: 16
+  ToolbarSkin: ButtonBar
+  MenuSkin: SimpleMenu
+
+SocialPanel:
+  FrameSize: 0
+  Backgrounds:
+    Normal: $GMainGrey
+    Hover: $GLightHover
+  FontColors:
+    Normal: $MyBlack
+    Hover: $MyBlack
+
+EmailPanel:
+  FrameSize: 0
+  Backgrounds:
+    Normal: $GMainGrey
+    Hover: $GLightHover
+  FontColors:
+    Normal: $MyBlack
+    Hover: $MyBlack
+
+ComboBox:
+  Backgrounds:
+    Normal: white border 1 0x999999
+    Active: white border 1 0x666666
+    hover: white border 1 0x333333
+  FontColors:
+    Normal: $MyBlack
+    Active: $MyBlack
+    Hover: $MyBlack
+  Font: tahoma
+  DropdownButtonSkin: ButtonCombo
+  CyclebuttonSkin: Button
+  MenuSkin: SimpleMenu
+  Padding: 4 4
+  margins: 0 0 0 0
+
+EmailSubjectBar:
+  ToolBarSkin: ButtonBar
+  FontColors:
+    SubjectLabel: $MyBlack
+    SubjectField: $MyBlack
+  Fonts:
+    SubjectLabel: ~
+    SubjectField: ~
+  FieldBackgroundColor: white
+
+ToFromBar:
+    ToolbarSkin: ButtonBar
+    ComboBoxSkin: ComboBox
+    FontColor: $MyBlack
+    Font: Arial
+
+InfoBox:
+  Padding: 4 4
+  border: 0
+  framesize: 1
+  frame: $MyBlack
+  Backgrounds:
+    Header: $GMainGrey
+    Email: $MyWhite
+    EmailHover: $DarkHover
+    Contact: white 0xeeeeee
+    ContactHover: $GMainGrey
+    ContactSelected: white 0x6a8bcb
+  Fonts:
+    Header: Tahoma 8 bold
+    Title: Tahoma 8 bold
+    Major: Tahoma 8
+    Minor: Tahoma 8
+    Link: Tahoma 8 underline
+  FontColors:
+    Header: $MyBlack
+    Title: $MyBlack
+    Body: 0xcccccc
+    Link: $LinkBlue
+    NavBarHeader: $MyBlack
+    NavBarLink: $LinkBlue
+    EmailHoverTitle: $MyBlack
+    EmailHoverMajor: $MyBlack
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: $LinkBlue
+
+StatusPanel:
+  ComboBoxSkin: ComboBox
+  StatusButtonSkin: ButtonCombo
+  FrameSize: 0
+
+Progressbar:
+  Mode: Native
+
+SendBar:
+  ToolBarSkin: ButtonBar
+  Font: Tahoma bold
+  FontColor: $MyBlack
+
+Tabs:
+  Font: Tahoma
+  FontColors:
+    Normal: 0x666666
+    Active: $MyBlack
+    ActiveHover: 0x333333
+    Notify: red
+    Hover: $MyBlack
+
+AccountPanels:
+  ButtonSkin: SimpleButtonSkin
+  Backgrounds:
+    Account: $MyWhite border $MyBlack
+    Behind: 0xcccccc, $MyWhite
+  Spacing: 4
+  ServiceIconSize: 32
+
+FileTransfers:
+  Backgrounds:
+    Selected: vertical 0xBBBBBB 0xAAAAAA
+    Normal: 0xEEEEEE border 0xBBBBBB
+    List: $MyWhite
+    Padding: 5 5
+  Margins: 0
+
+  CleanUpTaskBar: ButtonBar
+
+  Fonts:
+    FileName: bold
+    Other: ~
+    Link: ~
+
+  FontColors:
+    FileName: black
+    Other: black
+    Link: blue
+    FileNameSelected: white
+    OtherSelected: white
+    LinkSelected: white

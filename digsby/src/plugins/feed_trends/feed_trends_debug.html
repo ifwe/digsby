@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="feed_trends_debug.js">
+        <style type="text/css">
+            body {
+                font-family: helvetica, arial;
+                font-size: 10pt;
+            }
+
+            pre {
+                font-family: monaco, consolas;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="diag">
+        </div>
+
+        <script type="text/javascript">
+            var diag = document.getElementById('diag');
+            if (window.receivedAds)
+                diag.innerHTML = 'yes';
+            else
+                diag.innerHTML = 'no';
+        </script>
+    </body>
+</html>

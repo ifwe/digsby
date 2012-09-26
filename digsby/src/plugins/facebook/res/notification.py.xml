@@ -1,0 +1,35 @@
+<div class="post_row fb_filter___notification__" id="${notification.notification_id}" style="display:none; cursor:pointer;" timestamp="${notification.created_time}" href="${notification.href}">
+<div class="post_content social_background_hover ${'social_background_hover_on' if int(notification.is_unread) == 1 else ''}">
+<?py
+from common import pref
+_context['profile'] = profile = feed.profiles[int(notification['sender_id'])];
+_context['notification_id'] = notification_id = notification.notification_id;
+?>
+    <div class="buddyiconcell">
+        <div>
+            <img id="${notification_id}_buddyicon" class="buddyicon" src="${profile.pic_square}"/>
+        </div>
+    </div>
+    <div class="messagecell">
+        <div class="message_block">
+            #{notification['title_html']}
+        </div>
+        <div class="bottom_row">
+<?py icon_url = (feed.apps.get(notification.app_id, dict()).get('icon_url', '') or '') ?>
+            <div class="notification_app_block">
+<?py if icon_url: ?>
+            <img src="${icon_url}" />
+<?py #endif ?>
+            <span class="time minor" id="${notification_id}_time" timestamp="${notification.created_time}">${notification.created_time}</span>
+            </div>
+        </div>
+    </div>
+<?py
+for var in 'profile, notification_id'.split(', '):
+    del _context[var]
+#endfor
+del profile, notification_id
+?>
+</div>
+<hr class="post_divider" />
+</div>

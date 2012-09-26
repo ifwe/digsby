@@ -1,0 +1,43 @@
+<?py if getattr(item, '_isad', False): ?>
+<?py     include(app.resource('trend.tenjin')) ?>
+<?py else: ?>
+<?py     friend = item.person ?>
+<?py     _context['friend'] = friend ?>
+
+    <div class="news-item major social_background_hover" id="${item.id}" timestamp="${item.timestamp}" timestyle="smart">
+        <div class="activity-icon">
+            <div class="viewport">
+<?py     if friend is not None and friend.picture_url is not None: ?>
+                    <img id="${friend.id}_buddyicon" class="buddyicon clipped" src="${friend.picture_url}" />
+<?py     else: ?>
+                    <img id="${friend.id}_buddyicon" class="buddyicon clipped" src="${gui.skin.get('BuddiesPanel.BuddyIcons.NoIcon').path.url()}" />
+<?py     #endif ?>
+            </div>
+        </div>
+        <div class="news-item-content ${item.type}">
+<?py     include(app.resource('%s.tenjin' % item.type)) ?>
+          <div class="comments_section">
+<?py     if getattr(item, 'supports_comments', False) and do_comments: ?>
+<?py         include(r"#{{app.resource('likes.tenjin')}}") ?>
+<?py         include(r"#{{app.resource('dislikes.tenjin')}}") ?>
+            <div class="comment_block">
+                <div class="comments_start" style="display:none;"></div>
+<?py         include(r"#{{app.resource('comments_list.tenjin')}}") ?>
+                <div class="comments_end" style="display:none;"></div>
+            </div>
+<?py     #endif ?>
+          </div>
+          <div class="error_section" style="">
+          </div>
+          <div class="bottom-row">
+            <div class="time-container minor"></div>
+<?py     if getattr(item, 'supports_comments', False): ?>
+<?py         include(r"#{{app.resource('comment_link.tenjin')}}") ?>
+<?py         include(r"#{{app.resource('like_dislike_link.tenjin')}}") ?>
+<?py     #endif ?>
+          </div>
+        </div>
+    </div>
+<hr class="activity-divider" />
+<?py     del _context['friend'] ?>
+<?py #endif ?>

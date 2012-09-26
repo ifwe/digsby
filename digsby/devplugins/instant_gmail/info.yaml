@@ -1,0 +1,7 @@
+name: 'Instant Gmail'
+path: 'instant_igmail'
+type: 'pure'
+
+entry_points:
+  digsby.jabber.session_started:
+    instant_gmail: instant_gmail:session_started

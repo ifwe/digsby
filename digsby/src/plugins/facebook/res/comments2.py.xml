@@ -1,0 +1,5 @@
+<div class="comment_block">
+    <div class="comments_start" style="display:none;">placeholder</div>
+<?py include(r"#{{app.resource('comments.py.xml')}}") ?>
+    <div class="comments_end" style="display:none;">placeholder</div>
+</div>

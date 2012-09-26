@@ -1,0 +1,8 @@
+<script type="text/javascript">
+
+    /* used to replace missing or BMP buddy icons with the default digsby one */
+    function imgError(img) {
+        img.onerror = "";
+        img.src = "${skin.get('buddiespanel.buddyicons.noicon').path.url()}";
+    }
+</script>

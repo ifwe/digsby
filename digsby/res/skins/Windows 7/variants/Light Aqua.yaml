@@ -1,0 +1,219 @@
+Variant: Aqua
+
+Common:
+
+  Hover: green/cl_hover.png 5 3 5 3
+  Menu_Hover: green/menu_hover.png 5 3 5 3
+  Menu_Checked: green/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: green/group_bg.png
+  
+  Selected: green/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: green/menu_sep.png
+  
+MenuBar:
+  background: 0xe1f9e7
+  
+MenuLite:
+  SeparatorImage: green/menu_sep.png
+  Backgrounds:
+    Selection: 0x67e884
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0xe1f9e7
+    Down: green/mainmenuhover.png 1 1 1 1
+    Active: green/mainmenuhover.png 1 1 1 1
+    Hover: green/mainmenuhover.png 1 1 1 1
+    ActiveHover: green/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: green/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: green/group_bg2.png
+    List: green/list_bg.png 0 90 0 100
+    GroupSelected: green/cl_selected2.png 5 3 5 3
+    BuddySelected: green/cl_selected2.png 5 3 5 3
+    Buddy: green/group_bg2.png
+  GroupIcons:
+    CollapsedHover: green/right_hover.png
+    ExpandedHover: green/expanded_hover.png
+  FontColors:
+    Group: 0x004502
+    GroupHover: 0x004502
+    GroupSelected: 0x004502
+    AddAccountsLink: 0x004502
+    
+Button:
+  Backgrounds:
+    Normal: green/format_bar_button_bg.png
+    Down: green/format_button_down.png 3 3 3 3
+    Active: green/format_button_down.png 3 3 3 3
+    Hover: green/format_button.png 3 3 3 3
+    ActiveHover: green/format_button_down.png 3 3 3 3
+    Disabled: green/button.png 1 1 1 1
+    Notify: green/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: green/format_button.png 3 3 3 3
+    Down: green/format_button_down.png 3 3 3 3
+    Active: green/format_button_down.png 3 3 3 3
+    Hover: green/format_button.png 3 3 3 3
+    ActiveHover: green/format_button_down.png 3 3 3 3
+    Disabled: green/button.png 1 1 1 1
+    Notify: green/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: green/actionbar_button_bg.png
+    Down: green/actionbar_button_down.png 2 2 2 2
+    Active: green/actionbar_button_down.png 2 2 2 2
+    Hover: green/actionbar_button.png 2 3 2 4
+    ActiveHover: green/actionbar_button_down.png 2 2 2 2
+    Disabled: green/actionbar_button.png 2 3 2 4
+    Notify: green/actionbar_button.png 2 3 2 4
+
+FormattingBarButton:
+  Backgrounds:
+    Normal: green/actionbar_button_bg.png
+    Down: green/actionbar_button_down.png 2 2 2 2
+    Active: green/actionbar_button_down.png 2 2 2 2
+    Hover: green/actionbar_button.png 2 3 2 4
+    ActiveHover: green/actionbar_button_down.png 2 2 2 2
+    Disabled: green/actionbar_button.png 2 3 2 4
+    Notify: green/actionbar_button.png 2 3 2 4
+  
+AccountAero:
+  Backgrounds:
+    Normal: green/aero_button.png 75 10 75 10
+    Down: green/aero_hover.png 75 10 75 0
+    Active: green/aero_hover.png 75 10 75 0
+    Hover: green/aero_hover.png 75 10 75 0
+    ActiveHover: green/aero_button.png 75 10 75 0
+    Disabled: green/aero_button.png 75 10 75 0
+    Notify: green/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: green/cbo_button_normal_left.png 3 3 3 3
+    hover: green/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: green/cbo_button_normal_right.png 3 3 3 3
+    Hover: green/cbo_button_hover_right.png 3 3 3 3
+    Down: green/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: green/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: green/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: green/cbo_button_normal_left.png 3 3 3 3
+    hover: green/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: green/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: green/TFLEFTO.png 4 4 0 4
+    Down: green/TFLEFTO.png 4 4 0 4
+    Hover: green/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - green/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: green/CommandBar.png 1 0 1 0
+    EmailHover: green/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xe1f9e7
+    Contact: green/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x004502
+    NavBarHeader:  black
+    NavBarLink: 0x004502
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0x004502
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: green/status_combo.png tile
+    Hover: green/status_combo.png tile
+    Down: green/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: green/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: green/Tabpage.png 0 0 0 5
+    Normal: green/TabN.png 8 16 8 16
+    Active: green/TabP.png 8 16 8 16
+    ActiveHover: green/TabPO.png 8 16 8 16
+    Hover: green/TabO.png 8 16 8 16
+    Notify: green/TabA.png 8 16 8 16
+    
+AccountPanels:
+  frame: green/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0xe1f9e7
+    Behind: 0xe1f9e7
+  Icons:
+    Show: green/showicon.png
+  FontColors:
+    Account: black
+    State: 0x666666
+    Link: 0x004502
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0xe1f9e7      
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0xe1f9e7
+    
+Popup:
+  Background: green/toast.png 20 20 20 20

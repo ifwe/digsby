@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:oim="http://messenger.msn.com/ws/2004/09/oim/" xmlns:wsrm="http://schemas.xmlsoap.org/ws/2003/03/rm" xmlns:ns2="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://messenger.msn.com/ws/2004/09/oim/">
+    <types>
+        <ns:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:oim="http://messenger.msn.com/ws/2004/09/oim/">
+            <ns:include schemaLocation="oim_servicetypes.xsd" />
+            <ns:import schemaLocation="wsrm.xsd" namespace="http://schemas.xmlsoap.org/ws/2003/03/rm"/>
+        </ns:schema>
+    </types>
+    <message name="StoreHeader">
+        <part name="From" element="oim:From"/>
+        <part name="To" element="oim:To"/>
+        <part name="Ticket" element="oim:Ticket"/>
+        <part name="Sequence" element="wsrm:Sequence"/>
+    </message>
+    <message name="StoreMessage">
+        <part name="MessageType" element="oim:MessageType"/>
+        <part name="Context" element="oim:Content"/>
+    </message>
+    <message name="StoreResponseHeader">
+        <part name="SequenceAcknowledgment" element="wsrm:SequenceAcknowledgment"/>
+    </message>
+    <message name="StoreResponseMessage">
+        <part name="StoreResponse" element="oim:StoreResponse"/>
+    </message>
+    <message name="AuthenticationFailedMessage">
+        <part name="fault" element="oim:AuthenticationFailed"/>
+    </message>
+    <portType name="OIMPortType">
+        <operation name="Store">
+            <input message="oim:StoreMessage"/>
+            <output message="oim:StoreResponseMessage"/>
+            <fault name="AuthenticationFailed" message="oim:AuthenticationFailedMessage"/>
+        </operation>
+    </portType>
+    <binding name="OIMBinding" type="oim:OIMPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="Store">
+            <soap:operation soapAction="http://messenger.live.com/ws/2006/09/oim/Store2"/>
+            <input>
+                <soap:header message="oim:StoreHeader" part="From" use="literal"/>
+                <soap:header message="oim:StoreHeader" part="To" use="literal"/>
+                <soap:header message="oim:StoreHeader" part="Ticket" use="literal"/>
+                <soap:header message="oim:StoreHeader" part="Sequence" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="oim:StoreResponseHeader" part="SequenceAcknowledgment" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="AuthenticationFailed">
+                <soap:fault name="AuthenticationFailed" use="literal"/>
+            </fault>
+        </operation>
+    </binding>
+    <service name="OIMStoreService">
+        <port name="StorePort" binding="oim:OIMBinding">
+            <soap:address location="https://ows.messenger.msn.com/OimWS/oim.asmx"/>
+        </port>
+    </service>
+</definitions>

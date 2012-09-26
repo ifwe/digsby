@@ -1,0 +1,154 @@
+type: "multi"
+name: "AOL"
+
+plugins:
+  provider_aol:
+    name: !_ "AOL/AIM Account"
+    type: "service_provider"
+    provider_id: "aol"
+    entry_points:
+        digsby.service_provider:
+            aol: "provider_aol.aol_sp:AOLServiceProvider"
+    provider_info:
+        popularity: 647
+        username_desc: !_ 'Screen Name'
+        password_desc: !_ 'Password'
+        password_url: "https://account.login.aol.com/_cqr/opr/opr.psp"
+        newuser_url: "https://new.aol.com/productsweb"
+        default_domain: "aol.com"
+        display_domain: "aol"
+        equivalent_domains: ["aol.com", "aim.com", "aolmail.com", "aol.co.uk"]
+
+  aolmail:
+    defaults:
+      smtp_require_ssl: True
+      imapserver: imap.aol.com
+      smtp_server: smtp.aol.com
+      smtp_username: ""
+      smtp_password: ""
+      imapport_ssl: 993
+      smtp_port: 465
+      smtp_port_ssl: 465
+      require_ssl: True
+      email_address: ""
+      default_ssl_port: 993
+      updatefreq: 300
+      imapport: 993
+    whitelist_opts:
+      - enabled
+      - updatefreq
+      - alias
+      - smtp_server
+      - smtp_port
+      - smtp_require_ssl
+      - smtp_username
+      - imapserver
+      - imapport
+      - require_ssl
+    path: mail.aolmail.AOLMail
+    password_url: www.aol.com/aim/password.adp
+    popularity: 64
+    smtp_pw_type: True
+    compatible:
+      - aolmail
+    newuser_url: https://new.aol.com/freeaolweb
+    service_provider: aol
+    form: email
+    username_desc: !_ "Screen Name"
+    name_truncated: aolm
+    needs_webclient: False
+    name: AOL/AIM Mail
+    shortname: aolmail
+    type: service_component
+    component_type: email
+    service_name: !_ "AOL Mail"
+    entry_points:
+      digsby.component.email:
+        aol: mail.aolmail:AOLMail
+
+  aim:
+    popularity: 647
+    has_invisible: True
+    name: AIM
+    service_name: !_ "AIM"
+    username_desc: !_ "Screen Name"
+    password_url: https://account.login.aol.com/opr/_cqr/opr/opr.psp?sitedomain=www.aim.com&authLev=0&lang=en&locale=us
+    name_truncated: aim
+    defaults:
+      autologin: False
+      server: !python/tuple
+        - login.oscar.aol.com
+        - 443
+      protocol: aim
+    path: oscar.protocol
+    service_provider: aol
+    type: service_component
+    component_type: im
+    shortname: aim
+    compatible: !set
+      - aim
+      - icq
+    newuser_url: https://reg.my.screenname.aol.com/_cqr/registration/initRegistration.psp?sitedomain=www.aim.com&createSn=1
+    statuses:
+      - - !N_ 'Available'
+      - - !N_ 'Away'
+    entry_points:
+      digsby.component.im:
+        aol: oscar.OscarProtocol:OscarProtocol
+
+  provider_icq:
+    name: !_ "ICQ Account"
+    type: "service_provider"
+    provider_id: "icq"
+    entry_points:
+        digsby.service_provider:
+            icq: "services.service_provider:UsernamePasswordServiceProvider"
+        digsby.services.validate:
+            icq: "provider_aol.aol_sp:validate_icq"
+    provider_info:
+        popularity: 149
+        username_desc: !_ 'UIN or Email'
+        password_desc: !_ 'Password'
+        password_url: https://www.icq.com/password/
+        newuser_url: https://www.icq.com/register/
+        display_domain: "icq"
+
+  icq:
+    shortname: icq
+    service_name: !_ "Chat"
+    service_provider: icq
+    type: service_component
+    component_type: im
+    defaults:
+      block_url_requests: True
+      server: !python/tuple
+        - login.icq.com
+        - 443
+      http_gateway: False
+      webaware: False
+      auth_required: True
+      autologin: False
+      block_unknowns: True
+      protocol: icq
+      icq_number: ~
+    password_url: https://www.icq.com/password/
+    name_truncated: icq
+    has_invisible: True
+    statuses:
+      - - !N_ 'Available'
+        - !N_ 'Free For Chat'
+      - - !N_ 'Away'
+        - !N_ 'Do Not Disturb'
+        - !N_ 'Not Available'
+        - !N_ 'Occupied'
+    username_desc: !_ 'ICQ Number'
+    name: ICQ
+    compatible: !set
+      - aim
+      - icq
+    popularity: 149
+    path: oscar.protocol
+    newuser_url: https://www.icq.com/register/
+    entry_points:
+      digsby.component.im:
+        icq: oscar.OscarProtocol:OscarProtocol

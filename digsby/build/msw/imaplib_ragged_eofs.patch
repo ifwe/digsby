@@ -1,0 +1,13 @@
+Index: Lib/imaplib.py
+===================================================================
+--- Lib/imaplib.py	(revision 22028)
++++ Lib/imaplib.py	(working copy)
+@@ -1147,7 +1147,7 @@
+             self.port = port
+             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+             self.sock.connect((host, port))
+-            self.sslobj = ssl.wrap_socket(self.sock, self.keyfile, self.certfile)
++            self.sslobj = ssl.wrap_socket(self.sock, self.keyfile, self.certfile, suppress_ragged_eofs=False)
+ 
+ 
+         def read(self, size):

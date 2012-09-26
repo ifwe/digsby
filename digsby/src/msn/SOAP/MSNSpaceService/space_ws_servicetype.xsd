@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xs:schema xmlns:spc="http://www.msn.com/webservices/spaces/v1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.msn.com/webservices/spaces/v1/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:include schemaLocation="space_ws_datatype.xsd"/>
+    <xs:complexType name="GetXmlFeedResultType">
+        <xs:sequence>
+            <xs:element name="contactCard" type="spc:contactCardType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuthTokenHeader">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Token" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="GetXmlFeed" type="spc:GetXmlFeedRequestType"/>
+    <xs:complexType name="GetXmlFeedRequestType">
+        <xs:sequence>
+            <xs:element name="refreshInformation" type="spc:refreshInformationType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="GetXmlFeedResponse" type="spc:GetXmlFeedResponseType"/>
+    <xs:complexType name="GetXmlFeedResponseType">
+        <xs:sequence>
+            <xs:element name="GetXmlFeedResult" type="spc:GetXmlFeedResultType"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xs:schema xmlns:ps="http://schemas.microsoft.com/Passport/SoapServices/PPCRL" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust" targetNamespace="http://schemas.microsoft.com/Passport/SoapServices/PPCRL" elementFormDefault="qualified">
+	<xs:import namespace="http://schemas.xmlsoap.org/ws/2005/02/trust" schemaLocation="ws-trust.xsd"/>
+	<xs:element name="RequestMultipleSecurityTokens" type="ps:RequestMultipleSecurityTokensType"/>
+	<xs:complexType name="RequestMultipleSecurityTokensType">
+		<xs:sequence>
+			<xs:element ref="wst:RequestSecurityToken" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string"/>
+	</xs:complexType>
+	<xs:element name="AuthInfo" type="ps:AuthInfoType"/>
+	<xs:complexType name="AuthInfoType">
+		<xs:sequence>
+			<xs:element name="HostingApp" type="xs:string" default="{7108E71A-9926-4FCB-BCC9-9A9D3F32E423}"/>
+			<xs:element name="BinaryVersion" type="xs:string" default="5"/>
+			<xs:element name="UIVersion" type="xs:string" default="1"/>
+			<xs:element name="Cookies" type="xs:string"/>
+			<xs:element name="RequestParams" type="xs:string" default="AQAAAAIAAABsYwQAAAAyMDUy"/>
+		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string"/>
+	</xs:complexType>
+</xs:schema>

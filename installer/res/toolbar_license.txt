@@ -1,0 +1,90 @@
+ASK TOOLBAR END USER LICENSE AGREEMENT
+
+This end User License Agreement applies to the Ask Toolbar and versions of the Ask Toolbar branded with third party brands.  Upon the Installation of the Ask Toolbar, the following features will be added to your Internet browser (depending on how you customize the toolbar): 
+
+Ask Toolbar : This browser toolbar is customizable and will help you search the Internet with Ask and may provide other search features.  Use of the Ask services is subject to the Ask Terms of Service and Privacy Policy that you can find at http://about.ask.com/en/docs/about/site_policies.shtml.
+
+Default Search:  If you consent to make Ask your default search, your Internet browser default search feature will be set to Ask and you will access Ask web search services (i) by entering queries in your browser chrome search box; (ii) by entering queries in your browser address bar, and (iii) in response to misspelled, incorrectly formatted or unresolved DNS submissions in your browser address bar. 
+
+Ask Home Page: If you consent to making Ask.com your home page, Ask.com will become your default home page that will appear each time you open your Internet browser. 
+
+If you are an AskEraser user, please note that AskEraser does not work for the search queries submitted through the Ask Toolbar, including queries submitted through your browser with the Default Search feature.  To see more information about Ask Eraser, please see http://about.ask.com/en/docs/about/askeraser.shtml. 
+
+You can easily uninstall the Ask Toolbar by clicking on the "Start" button; then clicking on the "Settings" button, then clicking on the "Control Panel" button, then clicking on the "Add or Remove Programs" button, then selecting "Ask Toolbar", then clicking on the "Change/Remove" button. Make sure all your browser windows are closed before starting the uninstallation process. 
+
+THIS PRODUCT AND ALL THE FEATURES LISTED ABOVE ARE FREE.  NO REGISTRATION OR PERSONAL INFORMATION IS REQUIRED.  THIS PRODUCT IS NOT SPYWARE OR ADWARE.  
+
+This End User License Agreement is a legal contract between you and Ask.com.  You must agree to this contract and abide by its terms in order to download and use the Ask Toolbar.  You must be 18 years of age in order to agree to this contract and download this product.  If you are not yet 18, please ask your parent or Legal guardian to install the Ask Toolbar for you. This End User License Agreement applies to the Ask Toolbar and all features and functionalities developed by Ask.  In the event where you are installing a version of the Ask Toolbar that has third party features and functionalities, such third party features and functionalities are subject to such third party’s terms of service.  
+
+In this End User License Agreement (this "Agreement"), "Toolbar" shall refer to the Ask Toolbar, including any Toolbar owned and operated by Ask and branded with third party brands. "Web Sites" shall refer to the web pages in the www.ask.com domain and "Services" shall refer to the search and other services offered through the Toolbar. 
+
+1. License Grant
+Subject to the terms and conditions of this Agreement, Ask.com ("we" or "us") grants you a non-exclusive, revocable, limited license, to (a) download and install the most current generally available version of the Toolbar, and (b) use the Toolbar you download and install solely for your personal, non-commercial purposes. The term Toolbar includes all updates thereto which we make available to you.  Your use of the Ask search services through the Toolbar is subject to the Ask Terms of Service and Privacy Policy available here: http://about.ask.com/en/docs/about/site_policies.shtml. 
+
+2. License Conditions
+You may not rent, sell, lease, sublicense, distribute, assign, copy, or in any way transfer the Toolbar or this Agreement or use the Toolbar for the benefit of any third party in any manner. You may not modify, decompile, disassemble, or otherwise reverse-engineer the source code of the Toolbar, or attempt to do so for any reason. Further, you may not access, create or modify the source code of the Toolbar in any way. You do not have the right to and may not create derivative works of the Toolbar. All modifications or enhancements to the Toolbar remain our sole property. You understand that we, in our sole discretion, may modify or discontinue or suspend your right to access any of our services or to use the Toolbar at any time, and we may at any time suspend or terminate any license hereunder and disable the Toolbar or any of its component features.
+
+We reserve the right to add features or functions to the Toolbar. When installed on your computer, the Toolbar periodically communicates with our servers to request automatic updates when we release a new version of the Toolbar, or when we make new features available. 
+
+3. Ownership 
+You acknowledge and agree that the Toolbar is licensed, not sold to you. You acknowledge that the Toolbar, including all code, protocols, software and documentation provided to you by us in conjunction with the Toolbar or our services are our property or the property of our licensors, and are protected by U.S. and international copyright, trademarks, patents and other proprietary rights and laws relating to trade secrets, and any other intellectual property or proprietary rights recognized in any country or jurisdiction worldwide, including, without limitation, moral or similar rights. You may not delete, alter, or remove any copyright, trademark, or other proprietary rights notice we have placed on the Toolbar. All rights not expressly granted hereunder are expressly reserved to us and our licensors. 
+
+You represent and warrant that you are either the owner or an authorized user of the computer where the Toolbar is installed.  You may use the Toolbar, Web Sites or Services only for lawful purposes.  The Services are subject to, and you agree that you shall at all times comply with, all local, state, national, and international laws, statutes, rules, regulations, ordinances and the like applicable to the use of our Toolbar, Web Sites and Services.  You agree not to use the Toolbar, Web Sites or Services to conduct any business or activity or solicit the performance of any activity, which is prohibited by law or by any contractual provision by which you are bound.
+
+4. Privacy
+
+When you install the Toolbar, we assign a unique identification code to your copy of the Toolbar, and such code is written to your computer’s registry.  
+
+When you use the Toolbar to submit a query, the Toolbar forwards such query information to Ask servers.  Ask.com uses this information to process your web search requests and to return a search results page to you.  For information on additional uses of your query information by Ask.com, please see the Ask Privacy Policy at http://about.ask.com/en/docs/about/privacy.shtml.  
+
+When you access the Web Site through the Toolbar, the Web Site sets a "cookie" that collects information about your use of the Toolbar including the unique identification code of your Toolbar, the queries you submit through the Toolbar, your IP address, and whether you clicked on search results or advertising links.  When you start your browser, the Toolbar also sends a configuration request which also includes your computer’s IP address, browser type, and information about the specific release date and distribution source of your Toolbar.  This information allows Ask.com to distinguish your Toolbar for purposes of compensating third parties who distribute its products and to analyze retention and usage on an aggregated basis.  Such "cookies" and configuration settings are reset every 24 hours, but the information collected is stored in a query log for up to six months.  For more information on the use of cookies and on how to block or remove them, please see the Ask Privacy Policy at http://about.ask.com/en/docs/about/privacy.shtml. 
+
+The Toolbar does not: (a) collect or report back to us (or anyone else) any information about sites you visit on the; (b) collect or "screen-scrape" any search queries or information that you provide to any other web sites; (c) serve pop-ups when you are on other websites; or (d) collect or report back to us (or anyone else) any data unrelated to the Services.  
+
+If the Web Site or the Toolbar is ever involved in a corporate restructuring or a sale, merger or other transfer of assets, we may transfer all information provided by or collected from you in order to ensure continuity of service.
+
+5.  Access and Interference; Passwords
+
+You agree that you will not use any robot, spider, other automatic or manual device or process to interfere or attempt to interfere with the proper working of any of the Toolbar, Web Sites, Services, except to remove our Toolbar from a computer of which you are an owner or authorized user.  You may not violate or attempt to violate the security of our Toolbar.  We reserve the right to investigate occurrences which may involve such violations, and may involve, and cooperate with, law enforcement authorities in prosecuting users who have participated in such violations.  You agree that it is your responsibility to install anti-virus software and related protections against viruses, Trojan horses, worms, time bombs, cancelbots or other techniques that may have the effect of damaging, destroying, disrupting or otherwise impairing a computer's functionality or operation.
+
+6.  Disclaimer of Warranty
+
+YOU ACCESS AND USE THE TOOLBAR AT YOUR SOLE RISK.  WE PROVIDE THE TOOLBAR ON AN "AS IS," AND "AS AVAILABLE" BASIS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, CUSTOM, TRADE, QUIET ENJOYMENT, ACCURACY OF INFORMATIONAL CONTENT, SYSTEM INTEGRATION OR NON-INFRINGEMENT. WE MAKE NO REPRESENTATIONS OR WARRANTIES CONCERNING THE TOOLBAR, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF THE TOOLBAR.
+
+WE DO NOT MAKE ANY REPRESENTATION OR WARRANTY:  (A) AS TO THE TIMELINESS, SEQUENCE, ACCURACY, COMPLETENESS, OR RELIABILITY OF THE TOOLBAR, (B) THAT THE TOOLBAR WILL BE AVAILABLE OR WILL OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, OR (C) THAT ERRORS OR DEFECTS RELATED TO THE TOOLBAR WILL BE CORRECTED..  WE ALSO DO NOT WARRANT THAT THE TOOLBAR, OR THE INFORMATION AVAILABLE THROUGH TOOLBAR, IS APPROPRIATE, ACCURATE OR AVAILABLE FOR USE IN ANY PARTICULAR JURISDICTION.
+
+SOME JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES.  IN SUCH JURISDICTIONS, THE FOREGOING DISCLAIMERS MAY NOT APPLY TO YOU INSOFAR AS THEY RELATE TO IMPLIED WARRANTIES.
+
+THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS AGREEMENT.
+
+7.  Termination
+
+You may terminate this Agreement at any time by uninstalling and destroying all copies of the Toolbar in your possession or control.
+
+If you do not comply with this Agreement, at any time, we reserve the right to terminate your access to the Web Sites and Services through the Toolbar. We may discontinue or alter any aspect of the Services, including, but not limited to, (i) restricting the time the Services are available, (ii) restricting the amount of use permitted, and (iii) restricting or terminating any user's right to use the Services, at our sole discretion and without prior notice or liability.  We may also, in our sole discretion, terminate your use of the Services, and disable your use of the Toolbar, for any reason, including, without limitation, for lack of use or if we believe that you have violated or acted inconsistently with the letter or spirit of these license terms.  Further, you agree that we shall not be liable to you or any third-party for any termination of your access to the Services. 
+
+8.  Limitation of Liability
+
+YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT IN NO EVENT WILL ASK.COM BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO, DAMAGES FOR LOST PROFITS, LOST BUSINESS OR LOST OPPORTUNITY, GOODWILL, OR OTHER INTANGIBLE LOSSES (EVEN IF ASK.COM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES) OR OTHER RELIEF ARISING OUT OF, OR RELATED TO, THIS AGREEMENT OR TO: (i) YOUR USE OR THE INABILITY TO USE THE TOOLBAR.
+
+BECAUSE SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR THE LIMITATION OF LIABILITY FOR DAMAGES, IN SUCH STATE OR JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE EXTENT PERMITTED BY LAW.
+
+9.	Export Controls
+
+The Toolbar and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has currently embargoed goods; or (b) to anyone on the U.S. Treasury Department’s list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders.  By downloading or using the Toolbar, you agree to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list, and that you will otherwise comply with all applicable export control laws.
+
+10.	Notice to Government End Users
+
+The Toolbar and associated software, programs and documentation hereunder downloaded or otherwise installed for or on behalf of the United States of America, its agencies and/or instrumentalities ("U.S. Government"), is provided with Restricted Rights as "commercial Items," as that terms is defined at 48 C.F.R. §2.101, consisting of "Commercial Computer Software" and "Commercial Computer Software Documentation," as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable.  Pursuant to Federal Acquisition Regulation 12.212 (48 C.F.R. §12.212), the U.S. Government shall have only those rights specified in the license contained herein.  The U.S. Government shall not be entitled to (i) technical information that is not customarily provided to the public or to (ii) use, modify, reproduce, release, perform, display, or disclose commercial computer software or commercial computer software documentation except as specified herein.  Use, duplication, or disclosure by the U.S. Government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013 or subparagraphs (c)(1) and (2) of the Commercial Computer Software - Restricted Rights at 48 C.F.R. 52.227-19, as applicable.
+
+11.	Applicable Law
+
+The substantive laws of the State of California in the United States of America, without regard to conflict of laws principles, shall govern all matters relating to or arising from this Agreement, and the use (or inability to use) the Software.  You hereby submit to the exclusive jurisdiction and venue of the appropriate State and Federal courts located in San Francisco County, California, with respect to all matters arising out of or relating to this Agreement.  
+
+12.  	Customer Concerns.
+
+If you encounter any problem with the Toolbar, or would like to send us your feedback, our Customer Service may be reached at http://about.ask.com/en/docs/about/customer_service.shtml 
+
+Revised:  March 1, 2009
+
+© 2009 Ask.com, All rights reserved.

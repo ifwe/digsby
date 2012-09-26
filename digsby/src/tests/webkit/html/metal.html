@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <base href="file:///C:/dev/digsby/res/MessageStyles/Metal Chat 2.AdiumMessageStyle/Contents/Resources/">
+    <script type="text/ecmascript" defer="defer">
+
+        //Appending new content to the message view
+        function appendMessage(html) {
+            shouldScroll = nearBottom();
+
+            //Remove any existing insertion point
+            insert = document.getElementById("insert");
+            if(insert) insert.parentNode.removeChild(insert);
+
+            //Append the new message to the bottom of our chat block
+            chat = document.getElementById("Chat");
+            range = document.createRange();
+            range.selectNode(chat);
+            documentFragment = range.createContextualFragment(html);
+            chat.appendChild(documentFragment);
+
+            alignChat(shouldScroll);
+        }
+        function appendMessageNoScroll(html) {
+            //Remove any existing insertion point
+            insert = document.getElementById("insert");
+            if(insert) insert.parentNode.removeChild(insert);
+
+            //Append the new message to the bottom of our chat block
+            chat = document.getElementById("Chat");
+            range = document.createRange();
+            range.selectNode(chat);
+            documentFragment = range.createContextualFragment(html);
+            chat.appendChild(documentFragment);
+        }
+        function appendNextMessage(html){
+            shouldScroll = nearBottom();
+
+            //Locate the insertion point
+            insert = document.getElementById("insert");
+
+            //make new node
+            range = document.createRange();
+            range.selectNode(insert.parentNode);
+            newNode = range.createContextualFragment(html);
+
+            //swap
+            insert.parentNode.replaceChild(newNode,insert);
+
+            alignChat(shouldScroll);
+        }
+        function appendNextMessageNoScroll(html){
+            //Locate the insertion point
+            insert = document.getElementById("insert");
+
+            //make new node
+            range = document.createRange();
+            range.selectNode(insert.parentNode);
+            newNode = range.createContextualFragment(html);
+
+            //swap
+            insert.parentNode.replaceChild(newNode,insert);
+        }
+
+        //Auto-scroll to bottom.  Use nearBottom to determine if a scrollToBottom is desired.
+        function nearBottom() {
+            return ( document.body.scrollTop >= ( document.body.offsetHeight - ( window.innerHeight * 1.2 ) ) );
+        }
+        function scrollToBottom() {
+            document.body.scrollTop = document.body.offsetHeight;
+        }
+
+        //Dynamically exchange the active stylesheet
+        function setStylesheet( id, url ) {
+            code = "<style id=\"" + id + "\" type=\"text/css\" media=\"screen,print\">";
+            if( url.length ) code += "@import url( \"" + url + "\" );";
+            code += "</style>";
+            range = document.createRange();
+            head = document.getElementsByTagName( "head" ).item(0);
+            range.selectNode( head );
+            documentFragment = range.createContextualFragment( code );
+            head.removeChild( document.getElementById( id ) );
+            head.appendChild( documentFragment );
+        }
+
+        //Swap an image with its alt-tag text on click, or expand/unexpand an attached image
+        document.onclick = imageCheck;
+        function imageCheck() {
+            node = event.target;
+            if(node.tagName == 'IMG' && !client.zoomImage(node) && node.alt) {
+                a = document.createElement('a');
+                a.setAttribute('onclick', 'imageSwap(this)');
+                a.setAttribute('src', node.getAttribute('src'));
+                a.className = node.className;
+                text = document.createTextNode(node.alt);
+                a.appendChild(text);
+                node.parentNode.replaceChild(a, node);
+            }
+        }
+
+        function imageSwap(node) {
+            shouldScroll = nearBottom();
+
+            //Swap the image/text
+            img = document.createElement('img');
+            img.setAttribute('src', node.getAttribute('src'));
+            img.setAttribute('alt', node.firstChild.nodeValue);
+            img.className = node.className;
+            node.parentNode.replaceChild(img, node);
+
+            alignChat(shouldScroll);
+        }
+
+        //Align our chat to the bottom of the window.  If true is passed, view will also be scrolled down
+        function alignChat(shouldScroll) {
+            var windowHeight = window.innerHeight;
+
+            if (windowHeight > 0) {
+                var contentElement = document.getElementById('Chat');
+                var contentHeight = contentElement.offsetHeight;
+                if (windowHeight - contentHeight > 0) {
+                    contentElement.style.position = 'relative';
+                    contentElement.style.top = (windowHeight - contentHeight) + 'px';
+                } else {
+                    contentElement.style.position = 'static';
+                }
+            }
+
+            if (shouldScroll) scrollToBottom();
+        }
+
+        function windowDidResize(){
+            alignChat(true/*nearBottom()*/); //nearBottom buggy with inactive tabs
+        }
+
+        window.onresize = windowDidResize;
+    </script>
+
+    <!-- This style is shared by all variants. !-->
+    <style id="baseStyle" type="text/css" media="screen,print">
+        body {
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Lucida;
+  font-size: 11pt;
+}
+
+        *{ word-wrap:break-word; }
+        img.scaledToFitImage { height:auto; width:100%; }
+    </style>
+
+    <!-- Although we call this mainStyle for legacy reasons, it's actually the variant style !-->
+    <style id="mainStyle" type="text/css" media="screen,print">
+        @import url( "Variants/Blue & Green (No Header).css" );
+    </style>
+
+</head><body onload="alignChat(true);" style="==bodyBackground==">
+
+<div class="fadeBack"></div>
+<div class="divApple"></div>
+<div class="divHeader">
+  <div class="headerLeft"></div>
+  <div class="headerRight"></div>
+  
+  <div id="headerChatStarted">started at <span id="headerTimestamp">04:54 PM</span></div>
+  <div class="headerTile">
+    <span id="headerUsername">Nick</span>
+  </div>
+</div>
+
+<!--<div id="debugDIV"></div>-->
+
+<div id="Chat" style="top: 31px; position: static; ">
+<!-- Status Bar --><div class="statusBar">  <div class="left"></div>  <div class="center">    Monday, November 26, 2007 <span class="timestamp">(5:12 AM)</span>  </div>  <div class="right"></div></div><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerOutgoing">    <div class="left"></div>    	<div class="userName">        	<span class="sender">ninjadigsby</span>	        <span class="timestamp">5:12 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: red; font-family: courier new;">You don't seem to like any fantasy movies, ever see Dragon Heart?</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerIncoming">    <div class="left"></div>        <div class="userName">        	<span class="sender">Friend</span>	        <span class="timestamp">5:13 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: blue;">Naw, but Braveheart is kind of fantasy</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerOutgoing">    <div class="left"></div>    	<div class="userName">        	<span class="sender">ninjadigsby</span>	        <span class="timestamp">5:14 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: red; font-family: courier new;">Not really, lol</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerIncoming">    <div class="left"></div>        <div class="userName">        	<span class="sender">Friend</span>	        <span class="timestamp">5:15 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: blue;">I think so</span></p>    </div>            <div class="nextMessage">      <div class="leftTile"></div>      <div class="rightTile"></div>      <div class="divider"></div>      <div class="timestamp">5:15 AM</div>      <p><span style="color: blue;">He fights dragons, Dragons are a fantasy icon man! Lol</span></p>    </div>            <div class="nextMessage">      <div class="leftTile"></div>      <div class="rightTile"></div>      <div class="divider"></div>      <div class="timestamp">5:15 AM</div>      <p><span style="color: blue;">Braveheart ftw!</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerOutgoing">    <div class="left"></div>    	<div class="userName">        	<span class="sender">ninjadigsby</span>	        <span class="timestamp">5:15 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: red; font-family: courier new;">There's no dragons in Braveheart...</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerIncoming">    <div class="left"></div>        <div class="userName">        	<span class="sender">Friend</span>	        <span class="timestamp">5:16 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: blue;">Wait, did I get them confused?</span></p>    </div>            <div class="nextMessage">      <div class="leftTile"></div>      <div class="rightTile"></div>      <div class="divider"></div>      <div class="timestamp">5:16 AM</div>      <p><span style="color: blue;">What's the one where he fights dragons?</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerOutgoing">    <div class="left"></div>    	<div class="userName">        	<span class="sender">ninjadigsby</span>	        <span class="timestamp">5:16 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: red; font-family: courier new;">Dragon Hart</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerIncoming">    <div class="left"></div>        <div class="userName">        	<span class="sender">Friend</span>	        <span class="timestamp">5:16 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: blue;">Mel Gibson?</span></p>    </div>          </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --><!-- Start chat box --><div class="container">    <div class="topLeft">    <div class="userImage"><img width="32px" height="32px" src="file:///C:/dev/digsby/res/AppDefaults/contact.png"></div>  </div>  <div class="topRight"></div>      <!-- The User Name Bar -->  <div class="headerOutgoing">    <div class="left"></div>    	<div class="userName">        	<span class="sender">ninjadigsby</span>	        <span class="timestamp">5:17 AM</span>        </div>    <div class="right"></div>  </div>    <!-- The Message(s) -->  <div class="messageBox">    <div class="message">      <div class="leftTile"></div>      <div class="rightTile"></div>      <p><span style="color: red; font-family: courier new;">I don't think Mel Gibson ever fought any dragons <img src="file:///C:/dev/digsby/res/emoticons/default/Impish.png" width="16" height="16" alt=":P" title=":P"></span></p>    </div>        <div id="insert"></div>  </div>    <div class="bottomBorder">      <div class="bottomLeft"></div>      <div class="bottomRight"></div>      <div class="bottomTile"></div>  </div></div><!-- End chat box --></div>
+<style type="text/css">#header { display: none; }</style>
+
+
+</body></html>

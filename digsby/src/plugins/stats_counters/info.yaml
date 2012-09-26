@@ -1,0 +1,7 @@
+name: 'DigsbyUserStats'
+path: 'stats_counters'
+type: 'pure'
+
+entry_points:
+  digsby.profile.addons:
+    stats_counter: stats_counters.count_tracker:CountTracker

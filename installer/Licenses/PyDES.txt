@@ -1,0 +1,1 @@
+Thanks to Todd Whiteman (twhitema@gmail.com) for pyDES, which he has kindly placed in the public domain.

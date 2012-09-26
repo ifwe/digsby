@@ -1,0 +1,25 @@
+--- python/generator.py	Thu Nov 27 09:11:48 2008
++++ python/generator.py	Mon Jun 15 19:26:15 2009
+@@ -1061,8 +1061,8 @@
+                 if classes_ancestor[classname] == "xmlCore" or \
+                    classes_ancestor[classname] == "xmlNode":
+                     classes.write("    def __repr__(self):\n")
+-                    format = "<%s (%%s) object at 0x%%x>" % (classname)
+-                    classes.write("        return \"%s\" %% (self.name, long(pos_id (self)))\n\n" % (
++                    format = "<%s object at 0x%%x>" % (classname)
++                    classes.write("        return \"%s\" %% (long(pos_id (self)),)\n\n" % (
+                                   format))
+             else:
+                 txt.write("Class %s()\n" % (classname))
+
+--- win32/Makefile.msvc   Mon Jul  9 13:05:01 2012
++++ win32/Makefile.msvc   Mon Jul  9 13:04:51 2012
+@@ -69,7 +69,7 @@
+ LIBS = $(LIBS) wsock32.lib ws2_32.lib
+ !endif
+ !if "$(WITH_ICONV)" == "1"
+-LIBS = $(LIBS) iconv.lib
++LIBS = $(LIBS) libiconv.lib
+ !endif
+ !if "$(WITH_ZLIB)" == "1"
+ LIBS = $(LIBS) zdll.lib

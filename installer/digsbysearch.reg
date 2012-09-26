@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Search]
+"SearchAssistant"="http://searchbox.digsby.com/ie"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]
+"Search Page"="http://searchbox.digsby.com"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Use Search Asst"="no"
+"Search Page"="http://searchbox.digsby.com/"
+"Search Bar"="http://searchbox.digsby.com/ie"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchUrl]
+""="http://searchbox.digsby.com/search?q=%s"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{07b33380-46c1-11dd-ae16-0800200c9a66}"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{07b33380-46c1-11dd-ae16-0800200c9a66}]
+"DisplayName"="Digsby Search"
+"URL"="http://searchbox.digsby.com/search?q={searchTerms}"
+

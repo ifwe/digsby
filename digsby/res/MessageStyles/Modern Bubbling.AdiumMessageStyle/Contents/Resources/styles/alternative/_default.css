@@ -1,0 +1,125 @@
+
+
+/* @group outgoing */
+
+.outgoing {
+	float: right;
+	margin: 8px 0px 0px 38px;
+	position: relative;
+    max-width: 100%;
+}
+
+.outgoing .sender {
+	position: absolute;
+	right: 0px;
+	bottom: 11px;
+	width: 32px;
+	height: 32px;
+}
+.outgoing .icon {
+	
+}
+.outgoing .name {
+	font-size: 9px;
+	position: absolute;
+	right: 0px;
+	bottom: -14px;
+	min-width: 32px;
+	text-align: center;
+	visibility: hidden;
+	white-space: nowrap;
+	color: #6e6e6e;
+}
+.outgoing .sender:hover .name {
+	visibility: visible;
+}
+.outgoing .service {
+	font-size: 9px;
+	position: absolute;
+	right: 0px;
+	bottom: 34px;
+	min-width: 32px;
+	text-align: center;
+	visibility: hidden;
+	white-space: nowrap;
+	color: #c7c7c7;
+}
+.outgoing .sender:hover .service {
+	visibility: visible;
+}
+.outgoing .message {
+	margin-right: 38px;
+}
+.outgoing .message .bottomright {
+	background-image: url("../../images/modern/bottomright-arrow.png");
+}
+.outgoing .compact .ctime {
+	left: -58px;
+	text-align: right;
+}
+
+/* @end */
+
+
+
+/* @group incoming */
+
+.incoming {
+	float: left;
+	margin: 8px 38px 0px 0px;
+	position: relative;
+    max-width: 100%;
+}
+
+.incoming .sender {
+	position: absolute;
+	left: 0px;
+	bottom: 11px;
+	width: 32px;
+	height: 32px;
+}
+.incoming .icon {
+	
+}
+.incoming .name {
+	font-size: 9px;
+	position: absolute;
+	left: 0px;
+	bottom: -14px;
+	min-width: 32px;
+	text-align: center;
+	visibility: hidden;
+	white-space: nowrap;
+	color: #6e6e6e;
+}
+.incoming .sender:hover .name {
+	visibility: visible;
+}
+.incoming .service {
+	font-size: 9px;
+	position: absolute;
+	left: 0px;
+	bottom: 34px;
+	min-width: 32px;
+	text-align: center;
+	visibility: hidden;
+	white-space: nowrap;
+	color: #c7c7c7;
+}
+.incoming .sender:hover .service {
+	visibility: visible;
+}
+.incoming .message {
+	margin-left: 38px;
+}
+.incoming .message .bottomleft {
+	background-image: url("../../images/modern/bottomleft-arrow.png");
+}
+.incoming .compact .ctime {
+	right: -58px;
+	text-align: left;
+}
+
+/* @end */
+
+

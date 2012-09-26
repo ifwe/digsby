@@ -1,0 +1,1 @@
+<span class="news-item-text"><a href="${item.author.profile_url}" class="link namelink">${item.author.name}</a> asked a question: <a href="${item.url}" class="link">${item.title}</a></span>

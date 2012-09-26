@@ -1,0 +1,19 @@
+LinkedInAccount:
+  - call: update_now
+    name: !_ '&Check Now'
+  - call: openurl_Home
+    name: !_ '&Home'
+  - call: openurl_Inbox
+    name: !_ '&Inbox'
+  - call: openurl_Friends
+    name: !_ 'C&ontacts'
+  - call: openurl_Profile
+    name: !_ '&Profile'
+  - ------------------------
+  - call: rename_gui
+    name: !_ "&Rename"
+  - ------------------------
+  - call: SetStatus
+    name: !_ '&Set Status'
+
+

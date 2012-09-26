@@ -1,0 +1,760 @@
+# Lots of stuff in here are placeholder values, e.g. comic sans 
+# for font so that you'll know if you forgot to set your own when 
+# creating a new skin. 
+
+name: Test Skin
+fontplatform: windows
+
+###################################################################
+#### REUSABLE ELEMENTS
+###################################################################
+
+
+TabCloseButton:
+  Backgrounds:
+    Normal: ../../AppDefaults/v/tabclosebutton_inactive.png 2 2 2 2
+    Down:   ../../AppDefaults/v/tabclosebutton_down.png 2 2 2 2
+    Hover:  ../../AppDefaults/v/tabclosebutton.png 2 2 2 2
+
+Button:
+  Backgrounds:
+    Normal: white border gray
+    Active: black border gray
+    ActiveHover: black border gray
+    Down: black border gray
+    Disabled: gray border gray
+  FontColors:
+    Normal: black
+    Down: white
+    Active: white
+    ActiveHover: white
+    Disabled: black
+  Padding: 2 5
+  margins: 0
+
+TabScrollButton:
+  Backgrounds:
+    Normal: ../../AppDefaults/v/navbutton.png
+    Notify: ../../AppDefaults/v/navbutton_notify.png
+    Down: ../../AppDefaults/v/navbutton_down.png
+    Disabled: ../../AppDefaults/v/navbutton_disabled.png
+  FontColors:
+    Normal: black
+    Down: white
+    Active: white
+    Disabled: black
+  Padding: 5 5
+
+ButtonBar:
+  padding: 2 2
+  buttonskin: Button
+  background: white
+
+#### SHOULD BE LIKE REGULAR MENU - ONE USED THROUGHOUT
+SimpleMenu:
+  Padding: 3 4
+  Framesize: 2
+  Frame: black
+  Backgrounds:
+    Menu: white
+    Selection: black
+  Font: comic sans ms
+  Fontcolors:
+    Normal: black
+    Selection: white
+  SubmenuIcon: ../../AppDefaults/icons/right.png
+
+#### ?????
+#### USE GENERIC (comboboxskin) or separate for each place
+#### SINGLE BUTTON SKIN MODE !!!!!
+ComboBox:
+  Backgrounds:
+    Normal: white border gray
+    Active: white border black
+    hover: white border black
+  FontColors:
+    Normal: black
+    Active: black
+    Hover: black
+    Hint: grey
+  Font: comic sans ms
+#TODO: Needs default
+  DropdownButtonIcon: ../../AppDefaults/icons/down.png
+  DropdownButtonSkin: Button
+  CyclebuttonSkin: Button
+  MenuSkin: SimpleMenu
+  Padding: 3 3
+  margins: 0 0 0 0
+
+###################################################################
+#### GENERAL ICONS
+###################################################################
+
+serviceicons:
+  # im services
+  aim: serviceicons/aim.png
+  icq: serviceicons/icq.png
+  msn: serviceicons/msn.png
+  yahoo: serviceicons/yahoo.png
+  jabber: serviceicons/jabber.png
+  gtalk: serviceicons/gtalk.png
+  digsby: serviceicons/digsby.png
+  widget: serviceicons/widget_trans.png
+  fake: serviceicons/fake.png
+  fbchat: serviceicons/facebook.png
+
+  # email services
+  ymail: serviceicons/ymail.png
+  hotmail: serviceicons/hotmail.png
+  gmail: serviceicons/gmail.png
+  pop: serviceicons/pop.png
+  imap: serviceicons/imap.png
+  aolmail: serviceicons/aolmail2.png
+
+  #social services
+  facebook: serviceicons/facebook.png
+  myspace: serviceicons/myspace.png
+
+statusicons:
+  available: statusicons/available.png
+  mobile: statusicons/mobile.png
+  idle: statusicons/idle.png
+  away: statusicons/away.png
+  invisible: statusicons/invisible.png
+  offline: statusicons/offline.png
+  unknown: statusicons/unknown.png
+  typing: statusicons/typing.png
+  typed: statusicons/enteredtext.png
+  nowplaying: ../../AppDefaults/notes.png
+  promote: ../../AppDefaults/promote.png
+  blocked: statusicons/blocked.png
+
+FaceBookIcons:
+  Status: facebookicons/status.gif
+  Profile: facebookicons/profile.gif
+  Album: facebookicons/photos.gif
+  Wall: facebookicons/wall.gif
+  Note: facebookicons/notes.gif
+  Nothing: facebookicons/ad.gif
+
+MySpaceIcons:
+  Nothing: facebookicons/ad.gif
+  
+TwitterIcons:
+  Delete: twittericons/delete.gif
+  Direct: twittericons/direct.gif
+  Reply: twittericons/reply.png
+  StarOn: twittericons/star_on.gif
+  StarOff: twittericons/star_off.gif
+  Retweet: twittericons/retweet.gif
+
+###################################################################
+#### SKIN DEFINITIONS - GENERAL
+###################################################################
+
+#### USED FOR ALL RIGHT CLICK MENUS AND MAIN MENU IF 'MenuBar' IS DEFINED
+Menu:
+  Padding: 4 4
+  FrameSize: 1
+  Iconsize: 16
+  Font: comic sans ms
+  Frame: black
+  Backgrounds:
+    menu: white
+    Selection: blue
+    Gutter: black
+  FontColors:
+    Normal: black
+    Selection: black
+    Disabled: gray
+#TODO: fix these in the program
+  SeparatorImage: separator2.png
+  SubmenuIcon: ../../AppDefaults/icons/right.png
+  CheckedIcon: checked.png
+
+###################################################################
+#### SKIN DEFINITIONS - BUDDY LIST
+###################################################################
+
+#### OVERRIDE'S DEFAULT OPERATING SYSTEM MENUBAR AT THE TOP OF THE BUDDY LIST
+MenuBar:
+  Padding: 2 2
+  Background: white
+  ItemSkin: Button
+  MenuSkin: Menu
+
+NativeMenus:
+  Mode: Native
+
+StatusPanel:
+  ComboBoxSkin: ComboBox
+  StatusButtonSkin: Button
+  Frame: black
+  FrameSize: 0
+  SearchIcon: search-black.png
+  CancelSearchIcon: close-black.png
+
+#### GROUPS AND CONTACTS
+BuddiesPanel:
+  BuddyMargins: 3 0 0 0
+  GroupMargins: 0 3 0 3
+
+  GroupPadding: 4 4
+
+  FontColors:
+    Buddy: black
+    BuddyOffline: grey
+    BuddyHover: black
+    BuddySelected: white
+
+    Group: black
+    GroupHover: black
+    GroupSelected: white
+
+    Status: black
+    StatusHover: black
+    StatusSelected: white
+
+    IdleTime: grey
+    IdleTimeHover: grey
+    IdleTimeSelected: white
+
+    RenameBox: yellow
+    AddAccountsLink: blue
+
+  Fonts:
+    AddAccountsLink: Comic Sans MS 14
+
+  BuddyIcons:
+    Rounded: yes # or no
+
+#TODO: Needs default
+    NoIcon: ../../AppDefaults/contact.png
+    NoIconAlpha: 40%
+
+  Frame: black
+  FrameSize: 1
+  Backgrounds:
+    Group: gray
+    GroupHover: gray
+    GroupSelected: blue
+
+    Selected: blue
+    Hover: gray
+    Buddy: white
+    List: white
+
+    RenameBox: black
+
+#TODO: defaults
+  GroupIcons:
+    Collapsed: ../../AppDefaults/icons/right.png
+    CollapsedHover: ../../AppDefaults/icons/right.png
+    CollapsedSelected: ../../AppDefaults/icons/right.png
+
+    Expanded: ../../AppDefaults/icons/down.png
+    ExpandedHover: ../../AppDefaults/icons/down.png
+    ExpandedSelected: ../../AppDefaults/icons/down.png
+
+#TODO: defaults
+  DragImages:
+    bar: dragarrow.png 1 0 1 0
+    box: dragbox.png 2 2 2 2
+
+#### EMAIL PANEL
+EmailPanel:
+  FrameSize: 1
+  Frame: black
+  Backgrounds:
+    Normal: white
+    Hover: gray
+  FontColors:
+    Normal: black
+    Hover: black
+#TODO: defaults
+  MiscIcons:
+    DefaultIcon: email.png
+    AttachmentIcon: paperclip.gif
+
+#### SOCIAL NETWORK PANEL
+#### ???????
+SocialPanel:
+  FrameSize: 1
+  Frame: black
+  Backgrounds:
+    Normal: white
+    Hover: gray
+  FontColors:
+    Normal: black
+    Hover: black
+
+###################################################################
+#### SKIN DEFINITIONS - IM WINDOW
+###################################################################
+
+#### CONVERSATION TABS
+Tabs:
+  Spacing: 2
+  Padding: 3 4
+  margins: 3 3 3 6
+  Backgrounds:
+    Bar: ../../AppDefaults/v/tabBar.png 6 6 -6 -7
+    Normal: ../../AppDefaults/v/tabinactive.png 6 6 6 7
+    Active: ../../AppDefaults/v/tabselected.png 6 6 6 7
+    ActiveHover: ../../AppDefaults/v/tabselected.png 6 6 6 7
+    Notify: ../../AppDefaults/v/tabmouseover.png 6 6 6 7
+    Hover: ../../AppDefaults/v/tabmouseover.png 6 6 6 7
+  CloseButtonSkin: TabCloseButton
+  ScrollButtonSkin: TabScrollButton
+  Dropmarker:
+    Offset: -6
+    Image: ../../AppDefaults/v/droparrow.png
+  Icons:
+    Close: ../../AppDefaults/v/x.png
+    Right: ../../AppDefaults/v/blue_right.png
+    Left: ../../AppDefaults/v/blue_left.png
+    Up: ../../AppDefaults/v/blue_up.png
+    Down: ../../AppDefaults/v/blue_down.png
+  Iconsize: 16
+  MaxWidth: 150
+  FontColors:
+    Normal: 0x666666
+    Active: black
+    ActiveHover: 0x333333
+    Notify: black
+    Hover: black
+
+SideTabs:
+  Spacing: 2
+  Padding: 0 0
+  margins: 4 4 4 6
+  Backgrounds:
+    Bar: white
+    Normal: ../../AppDefaults/v/button.png 3 3 3 3
+    Active: ../../AppDefaults/v/button_down.png 3 3 3 3
+    ActiveHover: ../../AppDefaults/v/button_down.png 3 3 3 3
+    Notify: ../../AppDefaults/v/button_hover.png 3 3 3 3
+    Hover: ../../AppDefaults/v/button_hover.png 3 3 3 3
+  CloseButtonSkin: TabCloseButton
+  ScrollButtonSkin: TabScrollButton
+  Dropmarker:
+    Offset: -6
+    Image: ../../AppDefaults/v/droparrow.png
+  Icons:
+    Close: ../../AppDefaults/v/x.png
+    Right: ../../AppDefaults/v/blue_right.png
+    Left: ../../AppDefaults/v/blue_left.png
+    Up: ../../AppDefaults/v/blue_up.png
+    Down: ../../AppDefaults/v/blue_down.png
+  Iconsize: 32
+  MaxWidth: 259
+  Font: Arial
+  FontColors:
+    Normal: 0x666666
+    Active: black
+    ActiveHover: 0x333333
+    Notify: black
+    Hover: black
+
+#### CAPABILITIES BAR IN IM WINDOW
+#### NEEDS SUPPORT FOR ICON OR TEXT MODE
+#### SPLIT INTO ALL BARS INCLUDING EMAIL RELATED (some have icons) buttonbarskin (like buttonskin)
+ActionsBar:
+  ToolbarSkin: ButtonBar
+  IconSize: 24
+  Icons:
+    Info: actions/bulb.png
+    IM: actions/pencil.png
+    Files: actions/log.png
+    Pictures: actions/target.png
+    Email: actions/email.png
+    SMS: actions/sms.png
+    Add: actions/add.png
+    RoomList: groupchat.png
+    Video: actions/webcam.png
+
+ToFromBar:
+    ToolbarSkin: ButtonBar
+    ComboBoxSkin: ComboBox
+    Font: comic sans ms
+    FontColor: black
+
+#### FORMATTING BAR IN IM WINDOW
+FormattingBar:
+  ToolBarSkin: ButtonBar
+  MenuSkin: SimpleMenu
+  IconSize: 15
+  FontDropDownWidth: 100
+  SizeDropDownWidth:  33
+
+  Icons:
+    Bold: ../../AppDefaults/icons/Formatting/formatbold.png
+    Italic: ../../AppDefaults/icons/Formatting/formatitalic.png
+    Underline: ../../AppDefaults/icons/Formatting/formatunderline.png
+    ForegroundColor: ../../AppDefaults/icons/Formatting/formatforecolor.png
+    BackgroundColor: ../../AppDefaults/icons/Formatting/formatbackcolor.png
+    Emote: ../../AppDefaults/icons/Formatting/formatemoticon.png
+
+RoomListComboSkin: AppDefaults.PrefCombo
+
+EmailSubjectBar:
+  ToolBarSkin: ButtonBar
+  FontColors:
+    SubjectLabel: black
+    SubjectField: white
+  Fonts:
+    SubjectLabel: ~
+    SubjectField: ~
+  FieldBackgroundColor: white
+
+SendBar:
+    ToolBarSkin: ButtonBar
+    Font: Comic Sans MS
+    FontColor: black
+
+#### EMOTICON PICKER
+emotibox:
+  padding: 2 2
+  margins: 1 1 1 1
+  maxemoticonsize: 20
+  emoticonspace: 24
+  Backgrounds:
+    Window: white border 1 black
+    Emoticon: white
+    Hover: 0xcccccc
+
+#### BAR YOU DRAG TO RESIZE INPUT AREA, TAB BAR WIDTH, AND ROOM LIST
+
+HorizontalSizerBar: Native
+VerticalSizerBar: Native
+
+
+###################################################################
+#### SKIN DEFINITIONS - OTHER ELEMENTS
+###################################################################
+
+#### OVERRIDE'S DEFAULT OPERATING SYSTEM PROGRESS BAR USED FOR FILE TRANSFERS
+Progressbar:
+  Backgrounds:
+    Normal: gray
+    Fill: green
+
+#### POPUP NOTIFICATIONS
+Popup:
+#TODO: default
+    Background: toast.png 33 30 38 40
+    Margins: 28 22 30 35
+
+    Padding: 8 4
+    Width: 330
+
+    Fonts:
+      Title: 11 bold
+      Major: 9 bold
+      Minor: 8
+
+    FontColors:
+      Title: white
+      Major: white
+      Minor: white
+
+    ButtonSkin: Button
+    IconSize: 32
+    IconBadgeSize: 16
+    IconRounded: 2
+
+
+#### FILE TRANSFER HISTORY DIALOG
+
+FileTransfers:
+  Backgrounds:
+    Selected: blue
+    Normal: white
+    List: white
+
+  Padding: 5 5
+  Margins: 0
+
+  CleanUpTaskBar: ButtonBar
+
+  Fonts:
+    FileName: bold
+    Other: ~
+    Link: ~
+
+  FontColors:
+    FileName: black
+    Other: black
+    Link: blue
+    FileNameSelected: white
+    OtherSelected: white
+    LinkSelected: white
+
+
+###################################################################
+#### INFOBOX SKIN FOR BUDDIES, EMAIL ACCOUNTS, AND SOCIAL NETWORKS
+###################################################################
+
+#### GENERAL SKINNING
+InfoBox:
+#TODO: figure out defaults
+  shortseparatorimage: separator3.png
+  longseparatorimage: separator2.png
+  FrameSize: 2
+  Padding: 4 4                 #padding around html table
+  Margins: 8 8 8 8
+  Frame: black
+  Backgrounds:
+    Header: vertical white 0xC0FFC0
+    Email: white
+    EmailHover: gray
+    SocialHoverColor: 0xE1F1F4
+    Contact: white
+    ContactHover: gray
+    ContactSelected: blue
+  Fonts:
+    Header: Arial 12 bold
+    Title: Arial 10 bold
+    Major: Arial 10
+    Minor: Arial 8 italic
+    Link: Arial 10 underline
+  FontColors:
+    Header: black
+    Title: black
+    Major: black
+    Minor: gray
+    Link: blue
+    EmailHoverTitle: black
+    EmailHoverMajor: black
+    EmailHoverMinor: black
+    EmailHoverLink: blue
+    Contact: black
+    ContactHover: black
+    ContactSelected: black
+
+SimpleButtonSkin:
+  padding: 2 2
+  margins: 0 0 0 0
+  Backgrounds:
+    Normal: vertical white 0xCCCCCC
+    Hover: vertical 0xefefef 0xCCCCCC
+    Down: vertical 0xCCCCCC white
+
+
+AccountPanels:
+  Backgrounds:
+    Account: white border black
+    Behind: 0xcccccc 0xffffff
+  Spacing: 4
+  ServiceIconSize: 16
+  ButtonSkin: SimpleButtonSkin
+  Icons:
+      Close: ../../AppDefaults/closebutton0.PNG
+      CloseHover: ../../AppDefaults/closebutton1.PNG
+      CloseDown: ../../AppDefaults/closebutton2.PNG
+      Show: ../../AppDefaults/icons/showicon.png
+
+icons: 
+  insertlink: ../../AppDefaults/icons/insert_link.png
+  insertimage: ../../AppDefaults/icons/insert_image.png
+  SetIMStatus: ../../AppDefaults/icons/chat_icon.gif
+  globalstatus: serviceicons/widget_trans.png
+
+AppDefaults:
+  icons:
+    chevronexpanded: ../../AppDefaults/icons/down.png
+    chevroncolapsed: ../../AppDefaults/icons/right.png
+    notes: ../../AppDefaults/notes.png
+    taskbarcheck: ../../AppDefaults/icons/taskbar_check.png
+  
+  PrefComboButton:
+    IconSize: 8
+    Backgrounds:
+      Normal: ../../AppDefaults/v/button_square.png 3 3 3 3
+      Hover: ../../AppDefaults/v/button_square_hover.png 3 3 3 3
+      Down: ../../AppDefaults/v/button_square_down.png 3 3 3 3
+    Font: Arial 8 Bold
+    MenuIcon: ../../AppDefaults/icons/down.png
+    Padding: 5 5
+    margins: 0
+  
+  PrefButton:
+    BackGrounds:
+      Normal: ../../AppDefaults/v/button.png 3 3 3 3
+      Hover: ../../AppDefaults/v/button_hover.png 3 3 3 3
+      Down: ../../AppDefaults/v/button_down.png 3 3 3 3
+    Font: Arial 8 Bold
+
+  PrefCombo:
+    Backgrounds:
+      Normal: white border 1 0x999999
+      Active: white border 1 0x666666
+      hover: white border 1 0x3c7fb1
+    FontColors:
+      Normal: Black
+      Active: Black
+      Hover: Black
+    Font: tahoma
+    DropdownButtonIcon: ../../AppDefaults/icons/down.png
+    DropdownButtonSkin: AppDefaults.PrefComboButton
+    MenuSkin: Native
+    Padding: 4 4
+    margins: 0 0 0 0
+
+  ez:
+    icons:
+      one:   ../../AppDefaults/ezlayouts/layout_icon_left_badges.png
+      two:   ../../AppDefaults/ezlayouts/layout_icon_right_badges.png
+      three: ../../AppDefaults/ezlayouts/layout_left_icon_right_badge.png
+      four:  ../../AppDefaults/ezlayouts/layout_small_service_status.png
+      five:  ../../AppDefaults/ezlayouts/layout_small_status_service.png
+      six:   ../../AppDefaults/ezlayouts/layout_small_status_only.png
+    margins: 0 0 0 0
+
+
+  Notificationicons:
+    contact:      ../../AppDefaults/notifications/contact.png
+    message:      ../../AppDefaults/notifications/message.png
+    filetransfer: ../../AppDefaults/notifications/filetransfer.png
+    error:        ../../AppDefaults/notifications/error.png
+    email:        ../../AppDefaults/notifications/email.png
+    facebook:     ../../AppDefaults/notifications/facebook.png
+    myspace:      ../../AppDefaults/notifications/myspace.png
+    twitter:      ../../AppDefaults/notifications/twitter.png
+
+  preftabs:
+    backgrounds:
+      selected: 0xffffff
+      normal: 0xefefef
+      hover: vertical 0xdddddd 0xdedede
+      search: 0xcccccc 0xeeeeee horizontal
+
+  PastButton:
+    IconSize: 8
+    Backgrounds:
+      Normal: white
+      Hover: white border 0xcacaca
+      Down: 0xcacaca
+    FontColors:
+      Normal: black
+      Hover: black
+      Down: white
+    Padding: 3 3
+
+  SimpleMenu:
+    Frame: 0x979797
+    FrameSize: 1
+    Padding: 3 3
+
+    Iconsize: 16
+    Font: Segoe UI 9
+    CheckedIcon: checked.png
+    Backgrounds:
+      menu: white
+      Selection: 0x3399FF
+    FontColors:
+      Normal: black
+      Selection: white
+      Disabled: grey
+
+  Button:
+    IconSize: 8
+    Backgrounds:
+      Normal: white 0xdddddd
+      Down: 0x666666
+      Active: 0xbbbbbb 0xcacaca
+      Hover: 0xcacaca
+      ActiveHover: 0xcacaca 0x000000
+      Disabled: 0x666666
+      Notify: 0x0f0f0f
+    FontColors:
+      Normal: black
+      Down: 0xaaaaaa
+      Active: white
+      Hover: black
+      ActiveHover: white
+      Disabled: black
+      Notify: black
+    MenuIcon: ../../AppDefaults/icons/down.png
+    Padding: 3 3
+
+  ButtonBar:
+    padding: 2 0
+    buttonskin: AppDefaults.Button
+    MenuSkin: AppDefaults.SimpleMenu
+    background: white 0xdddddd
+
+  FormattingBar:
+    ToolBarSkin: AppDefaults.ButtonBar
+    IconSize: 15
+    FontDropDownWidth: 100
+    SizeDropDownWidth:  33
+
+    Icons:
+      Bold: ../../AppDefaults/icons/Formatting/formatbold.png
+      Italic: ../../AppDefaults/icons/Formatting/formatitalic.png
+      Underline: ../../AppDefaults/icons/Formatting/formatunderline.png
+      ForegroundColor: ../../AppDefaults/icons/Formatting/formatforecolor.png
+      BackgroundColor: ../../AppDefaults/icons/Formatting/formatbackcolor.png
+      Emote: ../../AppDefaults/icons/Formatting/formatemoticon.png
+
+
+  TaskbarIcon: ../../AppDefaults/digsbybig.png
+  JumpListCloseIcon: ../../AppDefaults/jumplistclose.png
+  UnreadMessageIcon: ../../AppDefaults/icons/message_bubbles.gif
+  dropdownicon: ../../AppDefaults/icons/down.png
+
+  removeicon: ../../AppDefaults/icons/x.png
+
+  traystatus:
+    icons:
+      available: ../../skins/default/statusicons/available.png
+      mobile: ../../skins/default/statusicons/mobile.png
+      idle: ../../skins/default/statusicons/idle.png
+      away: ../../skins/default/statusicons/away.png
+      invisible: ../../skins/default/statusicons/invisible.png
+      offline: ../../skins/default/statusicons/offline.png
+
+      quiet: ../../AppDefaults/icons/quietmode.png
+
+  search:
+    icons:
+      amazon: ../../AppDefaults/search/amazon.gif
+      ebay: ../../AppDefaults/search/ebay.png
+      facebook: ../../AppDefaults/search/facebook.png
+      google: ../../AppDefaults/search/google.jpg
+      itunes: ../../AppDefaults/search/itunes.gif
+      linkedin: ../../AppDefaults/search/linkedin.png
+      newegg: ../../AppDefaults/search/newegg.gif
+      technorati: ../../AppDefaults/search/technorati.gif
+      twitter: ../../AppDefaults/search/twitter.png
+      wikipedia: ../../AppDefaults/search/wikipedia.gif
+      youtube: ../../AppDefaults/search/youtube.png
+      oneriot: ../../AppDefaults/search/oneriot.png
+      bing: ../../AppDefaults/search/bing.png
+
+InputSpacer:
+    Background: 0xEEEEEE
+    Size: 2 2
+
+InputButton:
+  IconSize: 20
+  Backgrounds:
+    Normal: format_bar_button_bg.png 0 0 0 1
+    Down: format_button_down.png 3 3 3 3
+    Active: format_button_down.png 3 3 3 3
+    Hover: format_button.png 3 3 3 3
+    ActiveHover: format_button_down.png 3 3 3 3
+    Disabled: button.png 1 1 1 1
+    Notify: button.png 1 1 1 1
+  FontColors:
+    Normal: black
+    Down: black
+    Active: black
+    Hover:  black
+    ActiveHover: black
+    Disabled:  black
+    Notify:  black
+  Padding: 4 4
+  margins: 2
+  

@@ -1,0 +1,330 @@
+--- 
+de-alt: 
+  name_english: German - Old Spelling
+  location: de-alt/aspell6-de-alt-2.1-1.tar.bz2
+lt: 
+  name_english: Lithuanian
+  location: lt/aspell6-lt-1.2.1-0.tar.bz2
+  name_native: "lietuvi\xC5\xB3"
+af: 
+  name_english: Afrikaans
+  location: af/aspell-af-0.50-0.tar.bz2
+cs: 
+  name_english: Czech
+  location: cs/aspell6-cs-20040614-1.tar.bz2
+  name_native: "\xC4\x8Ce\xC5\xA1tina"
+hi: 
+  name_english: Hindi
+  location: hi/aspell6-hi-0.02-0.tar.bz2
+  name_native: "\xE0\xA4\xB9\xE0\xA4\xBF\xE0\xA4\x82\xE0\xA4\xA6\xE0\xA5\x80"
+vi: 
+  name_english: Vietnamese
+  location: vi/aspell6-vi-0.01.1-1.tar.bz2
+  name_native: "Vi\xE1\xBB\x87t ng\xE1\xBB\xAF"
+tk: 
+  name_english: Turkmen
+  location: tk/aspell5-tk-0.01-0.tar.bz2
+hsb: 
+  name_english: Upper Sorbian
+  location: hsb/aspell6-hsb-0.01-1.tar.bz2
+  name_native: hornjoserbsce
+ku: 
+  name_english: Kurdi
+  location: ku/aspell5-ku-0.20-1.tar.bz2
+  name_native: "Kurd\xC3\xAE"
+ny: 
+  name_english: Chichewa
+  location: ny/aspell5-ny-0.01-0.tar.bz2
+tn: 
+  name_english: Setswana
+  location: tn/aspell5-tn-1.0.1-0.tar.bz2
+es: 
+  name_english: Spanish
+  location: es/aspell-es-0.50-2.tar.bz2
+  name_native: Espa
+tet: 
+  name_english: Tetum
+  location: tet/aspell5-tet-0.1.1.tar.bz2
+az: 
+  name_english: Azerbaijani
+  location: az/aspell6-az-0.02-0.tar.bz2
+  name_native: "Az\xC9\x99rbaycanca"
+is: 
+  name_english: Icelandic
+  location: is/aspell-is-0.51.1-0.tar.bz2
+hu: 
+  name_english: Hungarian
+  location: hu/aspell6-hu-0.99.4.2-0.tar.bz2
+mt: 
+  name_english: Maltese
+  location: mt/aspell-mt-0.50-0.tar.bz2
+mg: 
+  name_english: Malagasy
+  location: mg/aspell5-mg-0.03-0.tar.bz2
+pt_PT: 
+  name_english: Portuguese
+  location: pt_PT/aspell6-pt_PT-20070510-0.tar.bz2
+  name_native: "portugu\xC3\xAAs"
+ms: 
+  name_english: Malay
+  location: ms/aspell-ms-0.50-0.tar.bz2
+bn: 
+  name_english: Bengali
+  location: bn/aspell6-bn-0.01.1-1.tar.bz2
+  name_native: "\xE0\xA6\xAC\xE0\xA6\xBE\xE0\xA6\x82\xE0\xA6\xB2\xE0\xA6\xBE"
+yi: 
+  name_english: Yiddish
+  location: yi/aspell6-yi-0.01.1-1.tar.bz2
+  name_native: "\xD7\x99\xD7\x99\xD6\xB4\xD7\x93\xD7\x99\xD7\xA9"
+bg: 
+  name_english: Bulgarian
+  location: bg/aspell6-bg-4.1-0.tar.bz2
+  name_native: "\xD0\x91\xD1\x8A\xD0\xBB\xD0\xB3\xD0\xB0\xD1\x80\xD1\x81\xD0\xBA\xD0\xB8"
+fi: 
+  name_english: Finnish
+  location: fi/aspell6-fi-0.7-0.tar.bz2
+fa: 
+  name_english: Farsi (Persian)
+  location: fa/aspell6-fa-0.11-0.tar.bz2
+  name_native: "\xD9\x81\xD8\xA7\xD8\xB1\xD8\xB3\xDB\x8C"
+id: 
+  name_english: Indonesian
+  location: id/aspell5-id-1.2-0.tar.bz2
+  name_native: Bahasa Indonesia
+sv: 
+  name_english: Swedish
+  location: sv/aspell-sv-0.51-0.tar.bz2
+br: 
+  name_english: Breton
+  location: br/aspell-br-0.50-2.tar.bz2
+he: 
+  name_english: Hebrew
+  location: he/aspell6-he-1.0-0.tar.bz2
+  name_native: "\xD7\xA2\xD7\x91\xD7\xA8\xD7\x99\xD7\xAA"
+eo: 
+  name_english: Esperanto
+  location: eo/aspell-eo-0.50-2.tar.bz2
+lv: 
+  name_english: Latvian
+  location: lv/aspell6-lv-0.5.5-1.tar.bz2
+gl: 
+  name_english: Galician
+  location: gl/aspell-gl-0.50-0.tar.bz2
+  name_native: Galego
+hr: 
+  name_english: Croatian
+  location: hr/aspell-hr-0.51-0.tar.bz2
+ro: 
+  name_english: Romanian
+  location: ro/aspell-ro-0.50-2.tar.bz2
+ia: 
+  name_english: Interlingua
+  location: ia/aspell-ia-0.50-1.tar.bz2
+nb: 
+  name_english: Norwegian Bokmal
+  location: nb/aspell-nb-0.50.1-0.tar.bz2
+ml: 
+  name_english: Malayalam
+  location: ml/aspell6-ml-0.03-1.tar.bz2
+  name_native: "\xE0\xB4\xAE\xE0\xB4\xB2\xE0\xB4\xAF\xE0\xB4\xBE\xE0\xB4\xB3\xE0\xB4\x82"
+csb: 
+  name_english: Kashubian
+  location: csb/aspell6-csb-0.02-0.tar.bz2
+  name_native: "Kasz\xC3\xABbsczi"
+pl: 
+  name_english: Polish
+  location: pl/aspell6-pl-6.0_20061121-0.tar.bz2
+  name_native: polski
+ca: 
+  name_english: Catalan
+  location: ca/aspell6-ca-20040130-1.tar.bz2
+  name_native: "Catal\xC3\xA0"
+en: 
+  name_english: English
+  location: en/aspell6-en-7.1-0.tar.bz2
+en_US:
+  name_english: English (American)
+  location: en/aspell6-en-7.1-0.tar.bz2
+en_GB:
+  name_english: English (British)
+  location: en/aspell6-en-7.1-0.tar.bz2
+en_CA:
+  name_english: English (Canadian)
+  location: en/aspell6-en-7.1-0.tar.bz2
+el: 
+  name_english: Greek
+  location: el/aspell-el-0.50-3.tar.bz2
+am: 
+  name_english: Amharic
+  location: am/aspell6-am-0.03-1.tar.bz2
+  name_native: "\xE1\x8A\xA0\xE1\x88\x9B\xE1\x88\xAD\xE1\x8A\x9B"
+mn: 
+  name_english: Mongolian
+  location: mn/aspell6-mn-0.01-0.tar.bz2
+  name_native: "\xD0\x9C\xD0\xBE\xD0\xBD\xD0\xB3\xD0\xBE\xD0\xBB"
+or: 
+  name_english: Oriya
+  location: or/aspell6-or-0.03-1.tar.bz2
+  name_native: "\xE0\xAC\x93\xE0\xAC\xA1\xE0\xAC\xBC\xE0\xAC\xBF\xE0\xAC\x86"
+sc: 
+  name_english: Sardinian
+  location: sc/aspell5-sc-1.0.tar.bz2
+cy: 
+  name_english: Welsh
+  location: cy/aspell-cy-0.50-3.tar.bz2
+nn: 
+  name_english: Norwegian Nynorsk
+  location: nn/aspell-nn-0.50.1-1.tar.bz2
+it: 
+  name_english: Italian
+  location: it/aspell6-it-2.2_20050523-0.tar.bz2
+  name_native: Italiano
+gv: 
+  name_english: Manx Gaelic
+  location: gv/aspell-gv-0.50-0.tar.bz2
+qu: 
+  name_english: Quechua
+  location: qu/aspell6-qu-0.02-0.tar.bz2
+  name_native: Runasimi (qheshwa)
+fo: 
+  name_english: Faroese
+  location: fo/aspell5-fo-0.2.16-1.tar.bz2
+  name_native: "F\xC3\xB8royskt"
+tr: 
+  name_english: Turkish
+  location: tr/aspell-tr-0.50-0.tar.bz2
+da: 
+  name_english: Danish
+  location: da/aspell5-da-1.4.42-1.tar.bz2
+  name_native: Dansk
+la: 
+  name_english: Latin
+  location: la/aspell6-la-20020503-0.tar.bz2
+nl: 
+  name_english: Dutch
+  location: nl/aspell-nl-0.50-2.tar.bz2
+ru: 
+  name_english: Russian
+  location: ru/aspell6-ru-0.99f7-1.tar.bz2
+  name_native: "\xD0\xA0\xD1\x83\xD1\x81\xD1\x81\xD0\xBA\xD0\xB8\xD0\xB9"
+be: 
+  name_english: Belarusian
+  location: be/aspell5-be-0.01.tar.bz2
+  name_native: "\xD0\x91\xD0\xB5\xD0\xBB\xD0\xB0\xD1\x80\xD1\x83\xD1\x81\xD0\xBA\xD1\x96"
+be_SU:
+  name_english: Belarusian (Soviet)
+  location: be/aspell5-be-0.01.tar.bz2
+  name_native: "\xD0\x91\xD0\xB5\xD0\xBB\xD0\xB0\xD1\x80\xD1\x83\xD1\x81\xD0\xBA\xD1\x96"
+
+tl: 
+  name_english: Tagalog
+  location: tl/aspell5-tl-0.02-1.tar.bz2
+  name_native: Tagalog
+sk: 
+  name_english: Slovak
+  location: sk/aspell6-sk-2.00-0.tar.bz2
+  name_native: "Slovensk\xC3\xBD"
+gu: 
+  name_english: Gujarati
+  location: gu/aspell6-gu-0.03-0.tar.bz2
+  name_native: "\xE0\xAA\x97\xE0\xAB\x81\xE0\xAA\x9C\xE0\xAA\xB0\xE0\xAA\xBE\xE0\xAA\xA4\xE0\xAB\x80"
+sl: 
+  name_english: Slovenian
+  location: sl/aspell-sl-0.50-0.tar.bz2
+ga: 
+  name_english: Irish
+  location: ga/aspell5-ga-4.3-0.tar.bz2
+  name_native: Gaeilge
+te: 
+  name_english: Telugu
+  location: te/aspell6-te-0.01-2.tar.bz2
+  name_native: "\xE0\xB0\xA4\xE0\xB1\x86\xE0\xB0\xB2\xE0\xB1\x81\xE0\xB0\x97\xE0\xB1\x81"
+mr: 
+  name_english: Marathi
+  location: mr/aspell6-mr-0.10-0.tar.bz2
+  name_native: "\xE0\xA4\xAE\xE0\xA4\xB0\xE0\xA4\xBE\xE0\xA4\xA0\xE0\xA5\x80"
+uk: 
+  name_english: Ukrainian
+  location: uk/aspell6-uk-1.4.0-0.tar.bz2
+  name_native: "\xD0\xA3\xD0\xBA\xD1\x80\xD0\xB0\xD1\x97\xD0\xBD\xD1\x81\xD1\x8C\xD0\xBA\xD0\xB0"
+fr: 
+  name_english: French
+  location: fr/aspell-fr-0.50-3.tar.bz2
+  name_native: Fran
+fr_CH:
+  name_english: Swiss (French)
+  location: fr/aspell-fr-0.50-3.tar.bz2
+  name_native: Suisse
+fy: 
+  name_english: Frisian
+  location: fy/aspell6-fy-0.12-0.tar.bz2
+  name_native: Frysk
+mi: 
+  name_english: Maori
+  location: mi/aspell-mi-0.50-0.tar.bz2
+zu: 
+  name_english: Zulu
+  location: zu/aspell-zu-0.50-0.tar.bz2
+de: 
+  name_english: German
+  location: de/aspell6-de-20030222-1.tar.bz2
+  name_native: Deutsch
+de_CH: 
+  name_english: Swiss (German)
+  location: de/aspell6-de-20030222-1.tar.bz2
+sw: 
+  name_english: Swahili
+  location: sw/aspell-sw-0.50-0.tar.bz2
+  name_native: Kiswahili
+pt_BR: 
+  name_english: Brazilian Portuguese
+  location: pt_BR/aspell6-pt_BR-20080221-1.tar.bz2
+  name_native: "Portugu\xC3\xAAs do Brasil"
+gd: 
+  name_english: Scottish Gaelic
+  location: gd/aspell5-gd-0.1.1-1.tar.bz2
+  name_native: "G\xC3\xA0idhlig"
+hy: 
+  name_english: Armenian
+  location: hy/aspell6-hy-0.10.0-0.tar.bz2
+  name_native: "\xD5\x80\xD5\xA1\xD5\xB5\xD5\xA5\xD6\x80\xD5\xA5\xD5\xB6"
+rw: 
+  name_english: Kinyarwanda
+  location: rw/aspell-rw-0.50-0.tar.bz2
+wa: 
+  name_english: Walloon
+  location: wa/aspell-wa-0.50-0.tar.bz2
+  name_native: walon
+ar: 
+  name_english: Arabic
+  location: ar/aspell6-ar-1.2-0.tar.bz2
+  name_native: "\xD8\xB9\xD8\xB1\xD8\xA8\xD9\x8A"
+uz: 
+  name_english: Uzbek
+  location: uz/aspell6-uz-0.6-0.tar.bz2
+  name_native: "\xD0\x8E\xD0\xB7\xD0\xB1\xD0\xB5\xD0\xBA\xD1\x87\xD0\xB0"
+hil: 
+  name_english: Hiligaynon
+  location: hil/aspell5-hil-0.11-0.tar.bz2
+ta: 
+  name_english: Tamil
+  location: ta/aspell6-ta-20040424-1.tar.bz2
+  name_native: "\xE0\xAE\xA4\xE0\xAE\xAE\xE0\xAE\xBF\xE0\xAE\xB4\xE0\xAF\x8D"
+nds: 
+  name_english: Low Saxon
+  location: nds/aspell6-nds-0.01-0.tar.bz2
+  name_native: "Plattd\xC3\xBC\xC3\xBCtsch"
+et: 
+  name_english: Estonian
+  location: et/aspell6-et-0.1.21-1.tar.bz2
+pa: 
+  name_english: Punjabi
+  location: pa/aspell6-pa-0.01-1.tar.bz2
+  name_native: "\xE0\xA8\xAA\xE0\xA9\xB0\xE0\xA8\x9C\xE0\xA8\xBE\xE0\xA8\xAC\xE0\xA9\x80"
+mk: 
+  name_english: Macedonian
+  location: mk/aspell-mk-0.50-0.tar.bz2
+sr: 
+  name_english: Serbian
+  location: sr/aspell6-sr-0.02.tar.bz2
+  name_native: "\xD0\xA1\xD1\x80\xD0\xBF\xD1\x81\xD0\xBA\xD0\xB8"

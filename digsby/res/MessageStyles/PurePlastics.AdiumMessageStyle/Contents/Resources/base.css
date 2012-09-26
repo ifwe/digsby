@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+
+    overflow: auto;
+}
+
+.next {
+    margin-top: 3px;
+    padding-top: 3px;
+    border-top: 1px solid #EBEBEB;
+
+}
+
+.next_text {
+    margin-right: 2px;
+    overflow:auto;
+}
+
+.next_timestamp {
+    float: right;
+
+    color: rgb(0, 0, 0);
+
+    font-family: "Lucida Grande";
+    font-size: 9px;
+    font-weight: bold;
+
+    margin: 0 2px 0 4px;
+}
+
+.status {
+    color: #555;
+}
+
+.container_post {
+    margin: 16px 2px 10px 6px;
+
+    position: relative;
+    clear: both;
+}
+
+.container_left {
+    margin: 0;
+    padding: 6px 0px 0px 8px;
+    float: left;
+
+    background: url("images/shadow_buddyicon.png") top left no-repeat;
+    height: 48px;
+    width: 43px;
+
+    z-index: 3;
+}
+
+.status_left {
+    color: #999999;
+
+    margin: 0;
+    padding: 7px 0px 0px 10px;
+    float: left;
+
+    font-family: "Lucida Grande";
+    font-size: 9px;
+    font-weight: bold;
+
+    background: url("images/status.png") top left no-repeat;
+    height: 24px;
+    width: 38px;
+
+    z-index: 3;
+
+    position: relative;
+}
+
+.buddyicon {
+    height: 32px;
+    width: 32px;
+    border: 0px;
+}
+
+.iconchecker[background="Incoming/buddy_icon.png"],
+.iconchecker[background="Outgoing/buddy_icon.png"] {
+    display: none;
+}
+
+.container_right {
+    margin: 0px 5px 0px 38px;
+
+    position: relative;
+    top: 2px;
+}
+
+.container_right[background="Incoming/buddy_icon.png"],
+.container_right[background="Outgoing/buddy_icon.png"] {
+    margin: 0px 5px 0px 0px;
+}
+
+.place_holder{
+    height: 17px
+}
+
+.header_blue, .header_red, .header_context {
+
+    font-family: "Lucida Grande";
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 17px;
+
+    height: 17px;
+
+    padding: 0px 10px 0px 8px;
+    
+    position: absolute;
+    left: 5px;
+    right: 11px;
+
+    
+    overflow: hidden;
+
+}
+
+
+.sender{
+
+    position: absolute;
+    left: 8px;
+    right: 70px;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.timestamp , .timestamp_context{
+    font-family: "Lucida Grande";
+    font-size: 9px;
+    font-weight: bold;
+    
+    color: rgb(255, 255, 255);
+    
+    float: right;
+    
+}
+
+.timestamp_context {
+    color: #999999;
+}
+
+.container_message {
+    position: relative;
+}
+
+.container_bottom {
+    position: relative;
+}
+
+.message_red, .message_blue, .message_context {
+    background: #fff url("images/message_background.png") top left repeat-x;
+
+    padding: 3px 10px 0px 8px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.message_red img, .message_blue img, .message_context img {
+    vertical-align: middle;
+}
+
+.message_red a, .message_blue a, .message_context a {
+    text-decoration: none;
+}
+
+.message_red a:hover, .message_blue a:hover, .message_context a:hover {
+    text-decoration: underline;
+}
+
+.header_blue_edge, .header_red_edge, .header_context_edge {
+    width: 11px;
+    height: 23px;
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+
+
+.left {
+    background: url("images/shadow_left.png") top right repeat-y;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.right {
+    background: url("images/shadow_right.png") top right repeat-y;
+    width: 5px;
+    position: absolute;
+    right: 0px;
+    top:21px;
+    bottom:0px;
+}
+
+.top {
+    background: url("images/shadow_top.png") top right repeat-x;
+    height:3px;
+    position:absolute;
+    top:-3px;
+    left:4px;
+    right:4px;
+
+}
+
+.right_status {
+    background: url("images/shadow_right.png") top right repeat-y;
+    width: 5px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    bottom:0px;
+}
+
+.bottom_left {
+    background: url("images/shadow_bottom_left.png") bottom right no-repeat;
+
+    height: 12px;
+    width: 5px;
+    position: absolute;
+    left: 0px;
+}
+
+.bottom_center {
+    background: url("images/shadow_bottom_center.png") bottom left repeat-x;
+
+    height: 12px;
+    position: absolute;
+    right: 13px;
+    left: 5px;
+}
+
+.bottom_right {
+    background: url("images/shadow_bottom_right.png") bottom right no-repeat;
+
+    height: 12px;
+    width: 13px;
+    position: absolute;
+    right: 0px;
+}
+
+
+#Chat {
+    overflow: hidden;
+    margin-bottom: -8px;
+}

@@ -1,0 +1,31 @@
+<div class="alerts">
+    <ul>
+<?py
+def feed_label(feed):
+    if feed['type'] == 'search':
+        prefix = _(u'Search: ')
+    elif feed['type'] == 'group':
+        prefix = _(u'Group: ')
+    else:
+        prefix = ''
+    #endif
+
+    return prefix + feed['label']
+#enddef
+
+did_show = False
+for feed in counts:
+    if feed['count'] == 0: continue
+    elif feed['type'] in ('search', 'user') and not feed.get('save'): continue # don't show unsaved searches
+    elif feed.get('noCount', False): continue
+    else: did_show = True
+?>
+<li><a href="javascript: (function() { changeView('${feed['name']}');})();">${feed_label(feed)} (${feed['count']})</a></li>
+<?py #endfor ?>
+
+<?py if not did_show: ?>
+    <li>(${{_('No alerts')}})</li>
+<?py #endif ?>
+    </ul>
+
+</div>

@@ -1,0 +1,26 @@
+.incoming a {	color: #712d1c;}.incoming a:hover {	text-shadow: #f1ad9c 0 1px 1px;}
+.incoming .header {
+	background: url(../images/red/m-header-center.png) repeat-x;
+}
+.incoming .header .left {
+	background: url(../images/red/m-header-left.png);
+}
+.incoming .header .right {
+	background: url(../images/red/m-header-right.png);
+}.incoming .header .sender {	color: #712d1c;	text-shadow: #d18d7c 0 2px 2px;}
+.incoming .messages {
+	background: url(../images/red/m-left.png) left repeat-y;
+}
+.incoming .messages > div {
+	background: url(../images/red/m-right.png) right repeat-y;
+}
+.incoming .messages > div > div {	background: #fff6f4;}.incoming .messages .time {	color: #712d1c;	text-shadow: #f1ad9c 0 1px 1px;}.incoming .messages .sep {	background: #f1ad9c;	border-bottom: 1px solid #f2e9e7;}
+.incoming .bottom {
+	background: url(../images/red/m-bottom-center.png) repeat-x;
+}
+.incoming .bottom .left {
+	background: url(../images/red/m-bottom-left.png);
+}
+.incoming .bottom .right {
+	background: url(../images/red/m-bottom-right.png);
+}

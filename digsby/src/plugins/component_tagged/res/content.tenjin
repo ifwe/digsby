@@ -1,0 +1,93 @@
+<div class="tagged">
+
+    <div class="tagged-status">
+      <span class="title">${{_('Status:')}}</span>
+    <?py if conn.status is not None and 'status' in conn.status: ?>
+        <span class="major">#{util.linkify(conn.status['status'].encode('xml'))}</span>
+    <?py else: ?>
+        ${{_('You have no status message')}}
+    <?py #endif ?>
+    (<a href="^_^SetStatus">${{_('update')}}</a>)
+    <hr/>
+    </div>
+
+    <div class="tagged-alerts">
+        <span class="title">${{_('Alerts')}}</span>
+    <ul class="content">
+    <?py if conn.alerts is not None and 'drop_down' in conn.alerts: ?>
+        <?py for alert in conn.alerts['drop_down'].items(): ?>
+            <li>
+                <a class="#{alert[0]}"
+                   style="background-image: url(#{app.resource('alerts_icons.png', 'base').url()}); background-repeat: no-repeat"
+                   title="#{util.linkify(alert[1]['label'].encode('xml'))}"
+                   href="#{alert[1]['link']}">
+                   #{util.linkify(alert[1]['label'].encode('xml'))}
+                </a>
+            </li>
+        <?py #endfor ?>
+    <?py else: ?>
+        ${{_('You have no alerts')}}
+    <?py #endif ?>
+    </ul>
+    <hr/>
+    </div>
+
+    <div class="tagged-chat">
+        <span class="title">${{_('Chat')}}</span>
+    <ul class="content">
+    <?py if conn.online_friends is not None: ?>
+        <?py for friend in conn.online_friends: ?>
+            <li>
+                <!-- <img src="#{friend['display_photo']}"/> -->
+                <a href="^_^SendMessage/#{friend['uid']}/#{friend['display_name']}">#{friend['display_name']}</a>
+            </li>
+        <?py #endfor ?>
+    <?py else: ?>
+        ${{_('You have no online friends')}}
+    <?py #endif ?>
+    </ul>
+    <hr/>
+    </div>
+
+    <div class="tagged-newsfeed">
+        <!-- TODO Fix menu -->
+        <ul class="menu">
+            <li><span class="id-button-elections title social_background_hover">${{_('Elections Feed')}}</span></li>
+            <li><span class="id-button-pets title social_background_hover">${{_('Pets Feed')}}</span></li>
+        </ul>
+
+    <ul class="elections-feed">
+    <?py if conn.elections_newsfeed is not None: ?>
+        <?py for event in conn.elections_newsfeed: ?>
+            <li class="ui-icon-#{event['feed_type']}-#{event['event_type']}-16"
+                style="background-image: url(#{app.resource('elections_icons.png', 'base').url()}); background-repeat: no-repeat">
+                #{event['string']}
+            <?py if event['numTimes'] > 1: ?>
+                #{event['numTimes']} ${{_('times')}}
+            <?py #endif ?>
+                - #{event['time']}</li>
+        <?py #endfor ?>
+    <?py else: ?>
+        ${{_('Elections Feed is currently not available')}}
+    <?py #endif ?>
+    </ul>
+
+    <ul class="pets-feed tag-state-hidden">
+    <?py if conn.pets_newsfeed is not None: ?>
+        <?py for event in conn.pets_newsfeed: ?>
+            <li class="pets-icon-#{event['event_type']}"
+                style="background-image: url(#{app.resource('pets_icons.png', 'base').url()}); background-repeat: no-repeat">
+                #{event['string']}
+            <?py if event['numTimes'] > 1: ?>
+                #{event['numTimes']} ${{_('times')}}
+            <?py #endif ?>
+                - #{event['time']}</li>
+        <?py #endfor ?>
+    <?py else: ?>
+        ${{_('Pets Feed is currently not available')}}
+    <?py #endif ?>
+    </ul>
+
+    </div>
+
+</div>

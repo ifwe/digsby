@@ -1,0 +1,37 @@
+$def with (path, rev, json)
+
+<!DOCTYPE html>
+<title>webtreemap demo (Chrome binary size)</title>
+<script>
+    $:json
+</script>
+<link rel=stylesheet href=/static/webtreemap.css>
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  margin: 2ex 4ex;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#map {
+  width: 700px;
+  height: 500px;
+
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+</style>
+
+<div id='map'></div>
+
+<script src='/static/webtreemap.js'></script>
+<script>
+var map = document.getElementById('map');
+appendTreemap(map, kTree);
+</script>
+

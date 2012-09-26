@@ -1,0 +1,42 @@
+
+<div class="facebook">
+<?py include(r"#{{app.resource('status.py.xml')}}") ?>
+<?py if alerts.count > 0: ?>
+    <?py include(r"#{{app.resource('alerts.py.xml')}}") ?>
+    <?py #include(r"#{{app.resource('birthdays.py.xml')}}") ?>
+<?py #endif ?>
+<div class='filter_header'>
+<div class="filter_keys" style="display:block; background:white; float:left; z-index:100; position:absolute;">
+<div class="filter_key active_filter_key title social_background_hover">
+<div class="feed_icon" style="background:url('${feed.filter_keys['nf']['icon_url']}') -16px 0; ">
+</div>
+<div class="filter_key_text">${feed.filter_keys['nf']['name']}</div>
+<img class="filter_menu_arrow" src="${app.resource('facebookicons/down_arrow_solid.png', 'base').url()}" />
+</div>
+<?py filter_keys = set(key for post in feed.post_filter_keys.values() for key in post)?>
+<?py for filter_key in [key for key in feed.filter_keys if key in filter_keys or key in ['__notification__']]: ?>
+<?py
+    if filter_key == 'nf':
+        continue
+    else:
+?>
+    <div class="filter_key major social_background_hover" style="display: none;">
+    <div class="feed_icon" style="background:url(${feed.filter_keys[filter_key]['icon_url']}) -16px 0;"></div>
+    <div class="filter_key_text">${feed.filter_keys[filter_key]['name']}</div>
+    <img class="filter_menu_arrow" src="${app.resource('facebookicons/down_arrow_solid.png', 'base').url()}" />
+    <div class="filter_key_val">${filter_key}</div>
+    </div>
+<?py
+    #endif
+?>
+<?py #endfor ?>
+</div>
+<div style="float: right;">
+    <a href="#" class="showNewsfeedToggle" style="display: none;">${{_('Back to News Feed')}}</a>
+</div>
+</div>
+<div class="post_table" style="clear:both;">
+<?py include(r"#{{app.resource('notifications.py.xml')}}") ?>
+<?py include(r"#{{app.resource('posts.py.xml')}}") ?>
+</div>
+</div>

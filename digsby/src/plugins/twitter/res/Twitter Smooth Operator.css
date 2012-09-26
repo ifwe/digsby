@@ -1,0 +1,159 @@
+body {
+    background: #B6C8E5 url(images/background.png) center top repeat-x fixed;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+
+/* smooth operator twitter overrides */
+.buddyicon {
+    background: none;
+}
+.message {
+    left: 15px;
+}
+.senderstring {
+    font-family: Arial;
+    left: 70px;
+}
+
+div.container {
+    -webkit-transition-property: opacity, height, min-height;
+    -webkit-transition-duration: 1s, 1s, 1s;
+    min-height: 76px;
+    height: auto;
+    opacity: 1;
+}
+
+div.reply {
+    margin-left: 19px;
+    -webkit-transition: margin-left .3s ease-in-out;
+}
+
+.replyArrow {
+    position: absolute;
+    top: 26px;
+    left: -14px;
+}
+
+.spinner {
+    -webkit-transition: opacity .5s;
+    opacity: 0;
+}
+
+.hiddenFeedItem {
+    min-height: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.senderstring a { text-decoration: none; }
+/*.senderstring a:hover { text-decoration: none; }*/
+
+/* todo: slightly faded versions of these colors for old tweets */
+.timeline .senderstring a { color: #001190; }
+.mention .senderstring a { color: #ff7f00; }
+.sent .senderstring a { color: #a6002c; }
+.direct .senderstring a { color: #ff0000; }
+.search .senderstring a { color: #009900; }
+
+.time_initial { text-transform: none; } /* don't lowercase times */
+.senderstring { text-transform: none; } /* don't lowercase screen names */
+
+/* in reply to... */
+.senderstring .in_reply_to a {
+    color: #808080;
+    font-weight: normal;
+    -webkit-transition: opacity .5s;
+}
+.senderstring .in_reply_to { visibility: hidden; }
+.container:hover .in_reply_to { visibility: visible; }
+
+/* context + hover = no context  
+.context:hover .top_left     { background: url("images/top_left.png") top left no-repeat; }
+.context:hover .top_center   { background: url("images/top_center.png") top left repeat-x; }
+.context:hover .top_right    { background: url("images/top_right.png") top right no-repeat; }
+.context:hover .middle_left  { background: url("images/middle_left.png") top left repeat-y; }
+.context:hover .middle_right { background: url("images/middle_right.png") top right repeat-y; }
+.context:hover .bottom_left  { background: url("images/bottom_left.png") bottom left no-repeat; }
+.context:hover .bottom_center{ background: url("images/bottom_center.png") bottom left repeat-x; }
+.context:hover .bottom_right { background: url("images/bottom_right.png") bottom right no-repeat; }
+.context:hover .middle_center{ background: url("images/middle_center.png") top left repeat; }
+*/
+
+/* fix how text bleeds into right margin in original smooth operator skin */
+.message p { margin-right: 12px; }
+
+body { -webkit-user-select: none; }
+.message p { -webkit-user-select: text; }
+.senderstring { -webkit-user-select: text; }
+
+.control {
+    padding-bottom: 4px;
+    padding-right: 5px;
+}
+
+/* make sure the time <div> is above the "sender" div so that the cursor
+ * becomes a hand when hovering over button links */
+.time_initial { z-index: 3; }
+
+/* only show .control when hovering over the div it's in */
+.control {
+    opacity: 0;
+    z-index: 5;
+    /* TODO: fix fading in wxWebKit */
+    /* -webkit-transition: opacity .1s linear; */
+}
+
+.container:hover .control { opacity: 1; }
+
+/* source */
+.source { font-size: 80%; visibility: hidden; }
+.source a { color: #cfcfcf; }
+.source { color: #cfcfcf; }
+.container:hover .source { visibility: visible; color: #cfcfcf; }
+
+
+* {
+    word-wrap:break-word;
+}
+
+body {
+    font-family: Lucida Sans Unicode;
+    font-size: 9pt;
+}
+
+img.feedImage {
+    width: 48px;
+    height: 48px;
+    padding-right: 5px;
+    float: left;
+}
+
+.status_container {
+    font-size: 9px;
+    text-transform: none;
+    font-family: Arial;
+}
+
+.status_time a {
+    line-height: 50%;
+    font-size: 9px;
+    font-family: Arial;
+    text-transform: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status_container a {
+    text-transform: none;
+    color: #fff;
+}
+
+.directTarget {
+    color: #808080;
+    font-weight: normal;
+}
+

@@ -1,0 +1,1 @@
+<span class="news-item-text"><a href="${item.person.profile_url}" class="link namelink">${item.person.name}</a> answered <a href="${item.url}">${item.question_title}</a></span>

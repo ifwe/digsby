@@ -1,0 +1,17 @@
+name: "Skype IM"
+name_truncated: "skyp"
+popularity: 0
+path: skype.skylibprotocol.SkyLibProtocol
+username_desc: "Skype Identity"
+form: im
+type: im
+whitelist_opts: ['has_added_friends']
+
+skin:
+ serviceicons:
+  skype: "res/skype.png"
+
+defaults:
+  autologin: no
+
+hostport: no

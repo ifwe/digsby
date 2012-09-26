@@ -1,0 +1,20 @@
+MyspaceAccount:
+  - call: update_now
+    name: !_ '&Update Now'
+  - ------------------------
+  - call: openurl_Home
+    name: !_ '&Home'
+  - call: openurl_Inbox
+    name: !_ '&Inbox'
+  - call: openurl_Friends
+    name: !_ '&Friends'
+  - call: openurl_Blog
+    name: !_ '&Blog'
+  - call: openurl_Post
+    name: !_ '&Post Bulletin'
+  - ------------------------
+  - call: rename_gui
+    name: !_ "&Rename"
+  - ------------------------
+  - call: edit_status
+    name: !_ '&Set Status'

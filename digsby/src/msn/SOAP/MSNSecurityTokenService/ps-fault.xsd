@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xs:schema xmlns:psf="http://schemas.microsoft.com/Passport/SoapServices/SOAPFault" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:env="http://www.w3.org/2003/05/soap-envelope" targetNamespace="http://schemas.microsoft.com/Passport/SoapServices/SOAPFault" elementFormDefault="qualified" version="1.0">
+    <xs:element name="pp" type="psf:ppHeaderType">
+        <xs:annotation>
+            <xs:documentation>Comment describing your root element</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="ppHeaderType">
+        <xs:sequence>
+            <xs:element ref="psf:serverVersion"/>
+            <xs:element ref="psf:PUID"/>
+            <xs:element ref="psf:configVersion"/>
+            <xs:element ref="psf:uiVersion"/>
+            <xs:element ref="psf:authstate"/>
+            <xs:element ref="psf:reqstatus"/>
+            <xs:element ref="psf:serverInfo"/>
+            <xs:element ref="psf:cookies"/>
+            <xs:element ref="psf:browserCookies" minOccurs="0"/>
+            <xs:element ref="psf:credProperties"/>
+            <xs:element ref="psf:extProperties"/>
+            <xs:element ref="psf:response"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="serverVersionType">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+    <xs:element name="serverVersion" type="psf:serverVersionType"/>
+    <xs:simpleType name="PUIDType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="PUID" type="psf:PUIDType"/>
+    <xs:simpleType name="configVersionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="configVersion" type="psf:configVersionType"/>
+    <xs:simpleType name="uiVersionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="uiVersion" type="psf:uiVersionType"/>
+    <xs:simpleType name="authstateType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="authstate" type="psf:authstateType"/>
+    <xs:simpleType name="reqstatusType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="reqstatus" type="psf:reqstatusType"/>
+    <xs:element name="serverInfo" type="psf:serverInfoType"/>
+    <xs:complexType name="serverInfoType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="ServerTime" type="xs:dateTime"/>
+                <xs:attribute name="LocVersion" type="xs:integer"/>
+                <xs:attribute name="RollingUpgradeState" type="xs:string"/>
+                <xs:attribute name="Path" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:element name="cookies"/>
+    <xs:complexType name="browserCookieType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="Name" type="xs:string"/>
+                <xs:attribute name="URL" type="xs:anyURI"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:element name="browserCookie" type="psf:browserCookieType"/>
+    <xs:element name="browserCookies" type="psf:browserCookieCollectionType"/>
+    <xs:complexType name="browserCookieCollectionType">
+        <xs:sequence>
+            <xs:element ref="psf:browserCookie" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="credPropertyType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="Name" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:element name="credProperty" type="psf:credPropertyType"/>
+    <xs:complexType name="credPropertyCollectionType">
+        <xs:sequence>
+            <xs:element ref="psf:credProperty" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="credProperties" type="psf:credPropertyCollectionType"/>
+    <xs:complexType name="extPropertyType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="IgnoreRememberMe" type="xs:boolean"/>
+                <xs:attribute name="Domains" type="xs:string"/>
+                <xs:attribute name="Expiry" type="xs:string"/>
+                <xs:attribute name="Name" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:element name="extProperty" type="psf:extPropertyType"/>
+    <xs:complexType name="extPropertyCollectionType">
+        <xs:sequence>
+            <xs:element ref="psf:extProperty" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="extProperties" type="psf:extPropertyCollectionType"/>
+    <xs:element name="response"/>
+    <xs:complexType name="internalerrorType">
+        <xs:sequence>
+            <xs:element name="code" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element name="text" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="errorType">
+        <xs:sequence>
+            <xs:element name="value" type="xs:unsignedInt"/>
+            <xs:element name="internalerror" type="psf:internalerrorType"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

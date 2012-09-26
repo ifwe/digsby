@@ -1,0 +1,108 @@
+body {
+	background: #e8e8e8;
+	margin: 0;
+	padding: 3px;
+}
+
+.header {
+	position: relative;
+	margin: 2px 8px 0;
+	height: 26px;
+}
+
+.header .left {
+	position: absolute;
+	left: -8px;
+	width: 8px;
+	height: 26px;
+}
+
+.header .right {
+	position: absolute;
+	right: -8px;
+	width: 8px;
+	height: 26px;
+}
+
+.header .sender {
+	height: 16px;
+    font-family: helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.header img {
+	float: right;
+	padding: 5px 2px;
+}
+
+.messages {
+	padding-left: 8px;
+}
+
+.messages > div {
+	padding-right: 8px;
+}
+
+.messages > div > div {
+	padding: 1px 1px 0;
+}
+
+.time {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.message {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.messages .sep {
+	margin: 3px 0 1px;
+	height: 1px;
+}
+
+.bottom {
+	position: relative;
+	margin: 0 8px;
+	height: 8px;
+}
+
+.bottom .left {
+	position: absolute;
+	left: -8px;
+	width: 8px;
+	height: 8px;
+}
+
+.bottom .right {
+	position: absolute;
+	right: -8px;
+	width: 8px;
+	height: 8px;
+}
+
+.status {
+	margin: 0 8px 2px;
+	padding: 0;
+}
+
+.context .header .overlay {
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: 5px -18px;
+}
+
+.context + .incoming, .context + .outgoing {
+	margin-top: 4px;
+	padding-top: 2px;
+}

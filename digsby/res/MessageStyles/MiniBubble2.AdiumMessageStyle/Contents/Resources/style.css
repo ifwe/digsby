@@ -1,0 +1,274 @@
+body {
+    font-family: Lucida Grande;
+    font-size: 10px;
+
+    background: #fff url("images/background.png") bottom left fixed;
+
+    margin: 4px;
+    margin-left: 10px;
+}
+
+span.block
+{
+    display: block;
+}
+
+.post_container {
+    clear: both;
+    margin: 0 10px 0px -4px;
+	
+    position: relative;
+}
+
+.post_incoming, .post_outgoing {
+    padding: 5px 5px 3px 5px;
+}
+
+.bottom_right_status {
+    position: relative;
+    top: 4px;
+    left: 2px;
+    right: 11px;
+
+    margin-bottom: 4px;
+}
+
+.post_message
+{
+    color:#000;
+    background: #fff;
+
+    margin: 4px 0 0 0;
+    padding: 3px;
+}
+
+span.buddy_icon_incoming, span.buddy_icon_outgoing
+{
+    height: 32px;
+    width: 32px;
+    background: url("images/buddy_icon_background.png") top left;
+
+    padding: 5px 6px 9px 5px;
+    margin: 0;
+
+    position:relative;
+}
+
+img.buddy_icon_incoming, img.buddy_icon_outgoing
+{
+    height: 32px;
+    width: 32px;
+    background: #F0F0F0;
+}
+
+.toprow_incoming, .toprow_outgoing {
+    color: #fff;
+
+    font-family: Lucida Grande;
+    font-size: 9px;
+    line-height: 11px;
+    font-weight:bold;
+
+    height: 12px;
+    position: relative;
+
+    white-space: nowrap;
+}
+
+.toprow_middle_incoming, .toprow_middle_outgoing
+{
+    position: absolute;
+    top: 0px;
+
+    height: 12px;
+    z-index: -1;
+
+    float: left;
+
+    background: url("images/toprow_middle.png") top left;
+
+
+}
+
+.toprow_name_start
+{
+    float:left;
+    background: url("images/toprow_left_start.png") top right;
+
+    height:12px;
+    width:8px;
+
+    padding: 0;
+    margin: 0;
+}
+.toprow_name
+{
+    float: left; 
+    
+    text-overflow: ellipsis;
+    
+    background: url("images/toprow_left_middle.png") top left;
+    
+
+    max-width: 65%;
+    height: 12px;
+    z-index: 2;
+
+    padding: 0;
+    margin: 0;
+    
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.toprow_name_end
+{
+    float:left;
+    background: url("images/toprow_right.png") top right;
+
+    height:12px;
+    width:2px;
+
+    padding: 0 0 0 4px;
+}
+
+.toprow_timestamp
+{
+    float: right;
+    background: url("images/toprow_right_edge.png") top right;
+
+    font-size: 8px;
+
+    height: 11px;
+    z-index: 2;
+
+    padding: 1px 6px 0 0;
+}
+
+.toprow_timestamp_end
+{
+    float: right;
+    background: url("images/toprow_left.png") top left;
+
+    height: 12px;
+    width: 4px;
+
+    padding: 0 2px 0 0;
+}
+
+
+
+
+
+.bottom_right_incoming, .bottom_right_outgoing, .bottom_right_incoming_context, .bottom_right_outgoing_context {
+    position: relative;
+    top: 4px;
+
+    margin-bottom: 4px;
+}
+
+.bottom_right_incoming, .bottom_right_outgoing {
+    background: url("images/bottom_right.png") bottom right no-repeat;
+}
+
+.bottom_right_incoming_context, .bottom_right_outgoing_context {
+    background: url("images/bottom_right_context.png") bottom right no-repeat;
+}
+
+.bottom_left, .bottom_left_context {
+    position: relative;
+    top: 0px;
+    left: -12px;
+
+    padding: 0 26px 10px 8px;
+    color: #333333;
+}
+
+.bottom_left {
+    background: url("images/bottom_left.png") bottom left repeat-y;
+}
+
+.bottom_left_context {
+    background: url("images/bottom_left_context.png") bottom left repeat-y;
+}
+
+.top_left, .top_left_context {
+    position: absolute;
+    top: -4px;
+    left: -9px;
+    right: 10px;
+    height: 4px;
+
+    padding: 0;
+}
+
+.top_left {
+    background: url("images/top_left.png") top left no-repeat;
+}
+
+.top_left_context {
+    background: url("images/top_left_context.png") top left no-repeat;
+}
+
+.top_right, .top_right_context {
+    position: absolute;
+    right: 3px;
+    top: -4px;
+
+    color: #888888;
+
+    font-family: Lucida Grande;
+    font-size: 9px;
+
+    padding: 4px 6px 0 4px;
+}
+
+.top_right {
+    background: url("images/top_right.png") top right no-repeat;
+}
+
+.top_right_context {
+    background: url("images/top_right_context.png") top right no-repeat;
+}
+
+p
+{
+    padding: 0;
+    margin: 1px 10px 0 0;
+    overflow: auto;
+}
+
+/*.arrow_incoming, .arrow_incoming_context {
+    left:30px;
+}
+
+.arrow_incoming {
+    background: url("images/arrow.png");
+}
+
+.arrow_incoming_context {
+    background: url("images/arrow_context.png");
+}
+
+.arrow_outgoing {
+    left:30px;
+
+    background: url("images/arrow.png");
+} */
+
+.arrow_incoming, .arrow_outgoing, .arrow_incoming_context, .arrow_outgoing_context {
+    position: absolute;
+    top: 28px;
+
+    height: 4px;
+    width: 5px;
+
+    z-index: 2;
+
+    background: #f00;
+}
+
+
+p img {
+    vertical-align: middle;
+}

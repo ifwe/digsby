@@ -1,0 +1,60 @@
+name: 'DigsbyUpdater'
+path: 'digsby_updater'
+type: 'pure'
+
+entry_points:
+  digsby.profile.addons:
+    digsby_updater: digsby_updater.updater:UpdateManager
+    digsby_updater_progress: digsby_updater.UpdateProgress:UpdateProgress
+  digsby.app.gui.pre:
+    digsby_updater: digsby_updater.updater:load_tag_and_install_update
+  digsby.updater.status:
+    digsby_updater: digsby_updater.updater:update_status
+  digsby.updater.check:
+    digsby_updater: digsby_updater.updater:update_check
+  digsby.updater.pushed:
+    digsby_updater: digsby_updater.updater:update_check
+  digsby.server.announcement:
+    digsby_updater: digsby_updater.updater:update_check
+  digsby.app.exit:
+    digsby_updater: digsby_updater.updater:update_cancel
+  digsby.updater.cancel:
+    digsby_updater: digsby_updater.updater:update_cancel
+  digsby.updater.cancelled:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_cancel_update
+  digsby.updater.file_check_start:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_file_check_start
+  digsby.updater.file_checked:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_file_checked
+  digsby.updater.file_check_complete:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_file_check_complete
+  digsby.updater.file_download_complete:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_file_download_complete
+  digsby.updater.file_download_error:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_file_download_complete
+  digsby.updater.update_download_start:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_update_download_start
+  digsby.updater.update_download_complete:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_update_download_complete
+  digsby.updater.update_failed:
+    digsby_updater_progress: digsby_updater.UpdateProgress:on_update_failed
+  digsby.updater.update_complete:
+    digsby_updater: digsby_updater.updater:on_update_complete
+  digsby.help.actions:
+    digsby_updater: digsby_updater.updater:help_menu_items
+  digsby.accounts.released.async:
+    digsby_updater: digsby_updater.updater:update_check_later
+    digsby_release_notes: digsby_updater.updater:was_updated
+  digsby.updater.fast_mode.enable:
+    digsby_updater: digsby_updater.updater:start_fastmode
+  digsby.updater.fast_mode.disable:
+    digsby_updater: digsby_updater.updater:stop_fastmode
+  digsby.jabber.session_started:
+    digsby_updater: digsby_updater.xmpp:session_started
+  digsby.jabber.initialized:
+    digsby_updater: digsby_updater.xmpp:initialized
+
+skin:
+    pluginicons:
+        updater: "res/digsby_updater_outline.png"
+

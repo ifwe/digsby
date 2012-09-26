@@ -1,0 +1,14 @@
+name: !_ "Twitter Account"
+type: "service_provider"
+provider_id: &provider_id "twitter"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_twitter.twitter_sp:TwitterServiceProvider"
+
+provider_info:
+    needs_password: false
+    popularity: 434
+    username_desc: !_ 'Twitter ID'
+    newuser_url: https://twitter.com/signup
+    display_domain: "twitter"

@@ -1,0 +1,19 @@
+name: 'Branding'
+path: 'digsby_branding'
+type: 'pure'
+
+entry_points:
+  digsby.status.url.for_protocol:
+    iac: digsby_branding.urls:iac_url
+  digsby.status.url.for_protocol_re:
+    iac: digsby_branding.urls:iac_url
+  digsby.promote.url:
+    iac: digsby_branding.urls:iac_url
+  digsby.inviter.email.code:
+    iac: digsby_branding.urls:iac_code
+  digsby.facebook.newsfeed.campaign:
+    iac: digsby_branding.urls:iac_code
+  digsby.myspace.newsfeed.campaign:
+    iac: digsby_branding.urls:iac_code
+  digsby.twitter.demovideo.link:
+    iac: digsby_branding.urls:iac_url

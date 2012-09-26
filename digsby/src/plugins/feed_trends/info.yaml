@@ -1,0 +1,32 @@
+name: 'FeedAds'
+path: 'feed_trends'
+type: 'pure'
+
+entry_points: 
+    social.feed.updated:
+        feed_ads: feed_trends.feed_trends:on_social_feed_updated
+    social.feed.iterator:
+        feed_ads: feed_trends.feed_trends:on_social_feed_iterator
+    social.feed.created:
+        feed_ads: feed_trends.feed_trends:on_social_feed_created
+
+    infobox.jsonrpc.share_ad:
+        feed_ads: feed_trends.feed_trends:on_share_ad
+    infobox.jsonrpc.ad_click:
+        feed_ads: feed_trends.feed_trends:on_click_ad
+    infobox.jsonrpc.ad_impression:
+        feed_ads: feed_trends.feed_trends:on_ad_impression
+    infobox.jsonrpc.disable_trends_help:
+        feed_ads: feed_trends.feed_trends:on_disable_trends_help
+
+    infobox.content.infoboxjs:
+        feed_ads: feed_trends.feed_trends:on_infoboxjs
+    infobox.content.context:
+        feed_ads: feed_trends.feed_trends:on_infoboxcontext
+    infobox.content.resource:
+        feed_ads: feed_trends.feed_trends:on_getresource
+
+    # register twitter autocomplete for status entry text controls
+    digsby.geoip.received:
+        feed_ads: feed_trends.geo_trends:on_geoip
+

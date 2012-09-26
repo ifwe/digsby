@@ -1,0 +1,8 @@
+type: pure
+name: "Digsby Plugin Platform v1.0.0"
+version: [1, 0, 0]
+shortname: digsby_platform_1_0_0
+
+entry_points:
+    digsby.platform.version:
+        "digsby-1.0.0": digsby_platform_1_0_0:version

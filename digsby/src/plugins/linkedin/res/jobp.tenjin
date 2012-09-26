@@ -1,0 +1,1 @@
+<span class="news-item-text"><a href="${friend.profile_url}" class="namelink link">${friend.name}</a> ${{_('posted a job')}}: <a href="${item.url}">${item.position_title} ${{_('at')}} ${item.company_name}</a></span>

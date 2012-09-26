@@ -1,0 +1,9 @@
+<?py for item in activities: ?>
+    <?py _context['item'] = item ?>
+    <?py if getattr(item, '_isad', False): ?>
+    <?py   include(app.resource('trend.tenjin')) ?>
+    <?py else: ?>
+    <?py   include(app.resource('activity.tenjin')) ?>
+    <?py #endif ?>
+    <?py del _context['item'] ?>
+<?py #endfor ?>

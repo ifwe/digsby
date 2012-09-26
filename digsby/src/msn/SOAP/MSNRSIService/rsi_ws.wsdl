@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/wsdl/envelope/" xmlns:rsi="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsrm="http://schemas.xmlsoap.org/ws/2003/03/rm" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.hotmail.msn.com/ws/2004/09/oim/rsi">
+    <wsdl:types>
+        <ns:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:rsi="http://www.hotmail.msn.com/ws/2004/09/oim/rsi">
+            <ns:include schemaLocation="rsi_servicetypes.xsd"/>
+        </ns:schema>
+        <ns:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:rsi="http://www.hotmail.msn.com/ws/2004/09/oim/rsi">
+            <ns:include schemaLocation="rsi_faulttypes.xsd"/>
+        </ns:schema>
+    </wsdl:types>
+    <wsdl:message name="GetMetadataMessage">
+        <wsdl:part name="GetMetadata" element="rsi:GetMetadata"/>
+    </wsdl:message>
+    <wsdl:message name="GetMetadataResponseMessage">
+        <wsdl:part name="GetMetadataResponse" element="rsi:GetMetadataResponse"/>
+    </wsdl:message>
+    <wsdl:message name="GetMessageMessage">
+        <wsdl:part name="GetMessage" element="rsi:GetMessage"/>
+    </wsdl:message>
+    <wsdl:message name="GetMessageResponseMessage">
+        <wsdl:part name="GetMessageResponse" element="rsi:GetMessageResponse"/>
+    </wsdl:message>
+    <wsdl:message name="DeleteMessagesMessage">
+        <wsdl:part name="DeleteMessages" element="rsi:DeleteMessages"/>
+    </wsdl:message>
+    <wsdl:message name="DeleteMessagesResponseMessage">
+        <wsdl:part name="DeleteMessagesResponse" element="rsi:DeleteMessagesResponse"/>
+    </wsdl:message>
+    <wsdl:message name="ServiceHeader">
+        <wsdl:part name="PassportCookie" element="rsi:PassportCookie"/>
+    </wsdl:message>
+    <wsdl:message name="AuthenticationFailedMessage">
+        <wsdl:part name="fault" element="rsi:AuthenticationFailed" xmlns="http://www.hotmail.msn.com/ws/2004/09/oim/rsi"/>
+    </wsdl:message>
+    <wsdl:portType name="RSIPortType">
+        <wsdl:operation name="GetMetadata">
+            <wsdl:input message="rsi:GetMetadataMessage"/>
+            <wsdl:output message="rsi:GetMetadataResponseMessage"/>
+            <wsdl:fault name="AuthenticationFailedException" message="rsi:AuthenticationFailedMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetMessage">
+            <wsdl:input message="rsi:GetMessageMessage"/>
+            <wsdl:output message="rsi:GetMessageResponseMessage"/>
+            <wsdl:fault name="AuthenticationFailedException" message="rsi:AuthenticationFailedMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="DeleteMessages">
+            <wsdl:input message="rsi:DeleteMessagesMessage"/>
+            <wsdl:output message="rsi:DeleteMessagesResponseMessage"/>
+            <wsdl:fault name="AuthenticationFailedException" message="rsi:AuthenticationFailedMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="RSIBinding" type="rsi:RSIPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="GetMetadata">
+            <soap:operation soapAction="http://www.hotmail.msn.com/ws/2004/09/oim/rsi/GetMetadata"/>
+            <wsdl:input>
+                <soap:header message="rsi:ServiceHeader" part="PassportCookie" use="literal"/>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="AuthenticationFailedException">
+                <soap:fault name="AuthenticationFailedException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="GetMessage">
+            <soap:operation soapAction="http://www.hotmail.msn.com/ws/2004/09/oim/rsi/GetMessage"/>
+            <wsdl:input>
+                <soap:header message="rsi:ServiceHeader" part="PassportCookie" use="literal"/>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="AuthenticationFailedException">
+                <soap:fault name="AuthenticationFailedException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="DeleteMessages">
+            <soap:operation soapAction="http://www.hotmail.msn.com/ws/2004/09/oim/rsi/DeleteMessages"/>
+            <wsdl:input>
+                <soap:header message="rsi:ServiceHeader" part="PassportCookie" use="literal"/>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="AuthenticationFailedException">
+                <soap:fault name="AuthenticationFailedException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="RSIService">
+        <wsdl:port name="GetMetadataPort" binding="rsi:RSIBinding">
+            <soap:address location="https://rsi.hotmail.com/rsi/rsi.asmx"/>
+        </wsdl:port>
+        <wsdl:port name="GetMessagePort" binding="rsi:RSIBinding">
+            <soap:address location="https://rsi.hotmail.com/rsi/rsi.asmx"/>
+        </wsdl:port>
+        <wsdl:port name="DeleteMessagesPort" binding="rsi:RSIBinding">
+            <soap:address location="https://rsi.hotmail.com/rsi/rsi.asmx"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

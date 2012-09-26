@@ -1,0 +1,38 @@
+<?py if do_attachment: ?>
+<div class="attachment minor">
+    <?py if have_media: ?>
+        <?py include(r"#{{app.resource('media.py.xml')}}") ?>
+    <?py #endif ?>
+    <?py if ('name' in post.attachment and post.attachment.name): ?>
+        <?py if ('attachment' in post and 'media' in post.attachment and len(post.attachment.media)) > 1: ?>
+            <div class="attachment_name multimedia_attachment_name">
+        <?py else: ?>
+            <div class="attachment_name one_zero_media_attachment_name">
+        <?py #endif?>
+        <?py if 'href' in post.attachment: ?>
+            <a href="${post.attachment.href}">${post.attachment.name}</a>
+        <?py else: ?>
+            #{linkify(escape(to_str(post.attachment.name)))}
+        <?py #endif ?>
+        </div>
+        <?py if ('caption' in post.attachment and post.attachment.caption): ?>
+            <?py if ('attachment' in post and 'media' in post.attachment and len(post.attachment.media)) > 1: ?>
+                <span> - </span>
+            <?py else: ?>
+<br/>
+            <?py #endif?>
+            <div class="attachment_caption">#{linkify(post.attachment.caption)}</div>
+        <?py #endif ?>
+    <?py #endif ?>
+    <?py if do_description: ?>
+    <div class="attachment_description">
+        #{linkify(post.attachment.description)}
+    </div>
+    <?py #endif ?>
+    <?py if have_media: ?>
+        <div class="attachment_end media_attachment_end"></div>
+    <?py else: ?>
+        <div class="attachment_end"></div>
+    <?py #endif ?>
+</div>
+<?py #endif ?>

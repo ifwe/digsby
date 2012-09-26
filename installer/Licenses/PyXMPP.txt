@@ -1,0 +1,1 @@
+PyXMPP (project lead is Jacek Konieczny) is covered under the Lesser Gnu Public License (LGPL).

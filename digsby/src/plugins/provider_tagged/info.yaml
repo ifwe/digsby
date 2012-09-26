@@ -1,0 +1,20 @@
+name: !_ "Tagged Account"
+type: "service_provider"
+provider_id: &provider_id "tagged"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_tagged.tagged_sp:TaggedServiceProvider"
+
+provider_info:
+    popularity: 125
+    username_desc: !_ Email Address
+    newuser_url: 'http://www.tagged.com/register.html'
+    password_url: 'http://www.tagged.com/forgot_password.html'
+
+    needs_password: yes
+    display_domain: "tagged"
+
+skin:
+    serviceprovidericons:
+        *provider_id: "res/tagged.png"

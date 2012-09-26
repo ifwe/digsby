@@ -1,0 +1,74 @@
+name: 'DigsbyServiceDialog'
+path: 'digsby_service_editor'
+type: 'pure'
+
+entry_points:
+  digsby.services.create:
+    digsby_service_editor: digsby_service_editor.service_editor:create
+  digsby.services.edit:
+    digsby_service_editor: digsby_service_editor.service_editor:edit
+  digsby.services.edit.title:
+    digsby_service_editor: digsby_service_editor.default_ui:title_for_service
+  digsby.services.delete.build_dialog:
+    default: digsby_service_editor.service_editor:delete_dialog
+  digsby.services.edit.save:
+    digsby_service_editor: digsby_service_editor.service_editor:on_save_account
+
+  # Construct
+  ## Basic
+  digsby.services.edit.basic.construct_panel:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_basic_panel
+  digsby.services.edit.basic.construct_sub.provider:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_basic_subpanel_provider
+  digsby.services.edit.basic.construct_sub.im:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_basic_subpanel_im
+  digsby.services.edit.basic.construct_sub.email:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_basic_subpanel_email
+  digsby.services.edit.basic.construct_sub.social:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_basic_subpanel_social
+  ## Advanced
+  digsby.services.edit.advanced.construct_panel:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_advanced_panel
+  digsby.services.edit.advanced.construct_sub.provider:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_advanced_subpanel_provider
+  digsby.services.edit.advanced.construct_sub.im:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_advanced_subpanel_im
+  digsby.services.edit.advanced.construct_sub.email:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_advanced_subpanel_email
+  digsby.services.edit.advanced.construct_sub.social:
+    digsby_service_editor: digsby_service_editor.default_ui:construct_advanced_subpanel_social
+
+  digsby.services.edit.layout.polish:
+    digsby_service_editor: digsby_service_editor.default_ui:layout_polish
+
+  # Extract
+  ## Basic
+  digsby.services.edit.basic.extract_panel:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_basic_panel
+  digsby.services.edit.basic.extract_sub.provider:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_basic_subpanel_provider
+  digsby.services.edit.basic.extract_sub.im:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_basic_subpanel_im
+  digsby.services.edit.basic.extract_sub.email:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_basic_subpanel_email
+  digsby.services.edit.basic.extract_sub.social:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_basic_subpanel_social
+  ## Advanced
+  digsby.services.edit.advanced.extract_panel:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_advanced_panel
+  digsby.services.edit.advanced.extract_sub.provider:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_advanced_subpanel_provider
+  digsby.services.edit.advanced.extract_sub.im:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_advanced_subpanel_im
+  digsby.services.edit.advanced.extract_sub.email:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_advanced_subpanel_email
+  digsby.services.edit.advanced.extract_sub.social:
+    digsby_service_editor: digsby_service_editor.default_ui:extract_advanced_subpanel_social
+
+  digsby.services.validate:
+    digsby_service_editor: digsby_service_editor.service_editor:validate
+  digsby.services.normalize:
+    digsby_service_editor: digsby_service_editor.service_editor:normalize
+  digsby.services.colorize_name:
+    digsby_service_editor: digsby_service_editor.service_editor:colorize_name
+

@@ -1,0 +1,91 @@
+type: "multi"
+name: !_ "Windows Live"
+
+common:
+  email_accounts_opts: &email_accounts_opts ["enabled", "updatefreq", "alias"]
+  email_defaults: &email_defaults
+    updatefreq: 300
+
+plugins:
+  provider_windows_live:
+    name: !_ "Windows Live Account"
+    type: "service_provider"
+    provider_id: "windows_live"
+    entry_points:
+        digsby.service_provider:
+            windows_live: "provider_windows_live.wl_sp:WindowsLiveServiceProvider"
+        digsby.services.validate:
+            windows_live: "provider_windows_live.wl_sp:validate"
+    provider_info:
+        newuser_url: "https://signup.live.com/signup.aspx"
+        password_url: "https://account.live.com/ResetPassword.aspx"
+        popularity: 933
+        username_desc: !_ 'Email Address'
+        password_desc: !_ 'Password'
+        default_domain: "hotmail.com"
+        display_domain: "hotmail.com"
+
+  msn:
+    password_url: https://account.live.com/ResetPassword.aspx
+    statuses:
+      - - !N_ 'Available'
+      - - !N_ 'Away'
+        - !N_ 'Be Right Back'
+        - !N_ 'Busy'
+        - !N_ 'On the Phone'
+        - !N_ 'Out to Lunch'
+    service_provider: windows_live
+    username_desc: !_ 'Email Address'
+    newuser_url: http://get.live.com/getlive/overview
+    compatible: !set
+      - msn
+      - yahoo
+    defaults:
+      autologin: False
+      server: !python/tuple
+        - muser.messenger.hotmail.com
+        - 1863
+      ? &id001 use_http_only
+      : False
+
+      remote_alias: ""
+      allow_unknown_contacts: False
+    type: service_component
+    component_type: im
+    service_name: !_ "Live Messenger"
+    needs_remotealias: True
+    has_invisible: True
+    name: MSN
+    path: msn.MSN.MSNClient
+    popularity: 933
+    name_truncated: msn
+    shortname: msn
+    needs_httponly: yes
+    entry_points:
+      digsby.component.im:
+        windows_live: msn.MSN:MSNClient
+      digsby.msn.circle_invite:
+        windows_live: msn.msngui:on_circle_invite
+      digsby.msn.circle_create_prompt:
+        windows_live: msn.msngui:on_circle_create_prompt
+
+  hotmail:
+    service_provider: windows_live
+    type: service_component
+    component_type: email
+    path: mail.hotmail.Hotmail
+    name: 'Hotmail'
+    service_name: !_ "Hotmail"
+    shortname: hotmail
+    name_truncated: 'hotm'
+    popularity: 464
+    username_desc: !_ 'Email Address'
+    form: email
+    newuser_url: 'http://get.live.com/mail/options'
+    password_url: 'https://account.live.com/ResetPassword.aspx'
+    needs_webclient: no
+    defaults: *email_defaults
+    whitelist_opts: *email_accounts_opts
+    entry_points:
+      digsby.component.email:
+        windows_live: mail.hotmail.hotmail:Hotmail

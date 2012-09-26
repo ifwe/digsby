@@ -1,0 +1,153 @@
+- clean:
+  ## Clean all artifact directories created.
+  - digsby:
+      paths:
+        - &build !path [&dist !path [&root !path './', 'dist'], build]
+        - &freeze !path [*dist, freeze]
+        - &prep !path [*dist, prep]
+        - &output !path [*dist, output]
+        - &install_output !path [*dist, install]
+- checkout:
+  ## Update the working copy
+  - git:
+      source: *root
+      remote: origin
+      branch: master
+# - compile:
+  ## TODO: Compile any binaries we need
+  # - msvc: {}
+  ## TODO: send debug symbols to our symbol store
+  # - sendsymbols: {}
+- test:
+  ## TODO: Check all unittests pass
+  # - unittest: {}
+  ## TODO: Check buildbot status
+  # - buildbot: {}
+  ## Sanitycheck to make sure all required components are present and ready to go.
+  ## XXX: currently this is performing double-duty and getting build information
+  ##      related to MSVC DLLs
+  - sanitycheck:
+      path: *root
+      launcher_exe: !path [*root, digsby, ext, msw, DigsbyLauncher.exe]
+- freeze:
+  ## Py2Exe options.
+  - py2exe:
+      source: &digsby_src !path [*root, digsby]
+      dest: *freeze
+      distutils_verbosity: 0
+      distutils_options:
+        options:
+          py2exe:
+            optimize: 2
+            compressed: 0
+            retain_times: 1
+            skip_archive: 1
+            verbose: 0
+            dist_dir: *freeze
+            dll_excludes: [
+              'MSVCP90.dll'
+            ]
+            includes: [
+              'plugins',
+              'distutils',
+              'pkg_resources'
+            ]
+            excludes: [
+             'sre',
+             'Tkconstants',
+             'Tkinter',
+             'tcl',
+             '_imagingtk',
+             'PIL._imagingtk',
+             'ImageTk',
+             'PIL.ImageTk',
+             'FixTk',
+             'platlib.mac',
+             'aifc',
+             'BaseHTTPServer',
+             'bdb',
+             'chunk',
+             'colorsys',
+             'doctest',
+             'dummy_thread',
+             'dummy_threading',
+             'formatter',
+             'getpass',
+             'gopherlib',
+             'imghdr',
+             'macpath',
+             'macurl2path',
+             'multifile',
+             'os2emxpath',
+             'pdb',
+             'py_compile',
+             'pydoc',
+             'repr',
+             'sndhdr',
+             'sre',
+             'symtable',
+             'tty',
+             'webbrowser',
+             'distutils.tests'
+            ]
+        windows:
+          -  script: !path [*digsby_src, "Digsby.py"]
+             dest_base: '%%NAME%%-app'
+             icon_resources:
+               - !!python/tuple [1, !path [*digsby_src, res, "digsby.ico"]]
+             version: '%%DQVERSION%%'
+             product_version: '%%VERSION%%'
+             comments: '%%COMMENTS%%'
+             company_name: '%%COMPANY%%'
+             copyright: '%%COPYRIGHT%%'
+             name: '%%NAME%%'
+             description: '%%DESCRIPTION%%'
+             other_resources: []
+        zipfile: ''
+        script_args: ['py2exe']
+      distutils_vals:
+        OUTFILEPREFIX: ""
+        RELEASE: 0
+        NAME: 'digsby'
+        DESCRIPTION: 'Digsby'
+        COMMENTS: 'digsby IM - A communications dashboard'
+        COPYRIGHT: 'Copyright (C) 2012 Tagged, Inc'
+        URL: 'http://github.com/tagged/digsby'
+        SUPPORTURL: 'http://github.com/tagged/digsby/wiki'
+        DQVERSION: '1.0.0.0'
+- prepare:
+  ## Prompt to make sure the builder has updated the release_notes.html file
+  # - release_notes: {}
+  ## Ensures that 'badfiles' are removed in the build output, and rearranges
+  ## the build output to match our desired install directory layout. this also
+  ## generates the 'manifest' for our updater.
+  - digsby:
+      source: *freeze
+      dest: *prep
+- verify:
+  ## Currently just ensures no source is distributed (based on blacklist of file
+  ## extensions in helpers.py)
+  - digsby:
+      path: *prep
+- package:
+  ## Create an NSIS installer with our content.
+  ## NOTE: all of these options are funneled to NSIS via PyInfo.nsh at build time.
+  - nsis:
+      DIGSBY_INSTALLER_DIR: &installer_source !path [*root, installer]
+      PRODUCT_WEB_SITE: "http://github.com/tagged/digsby"
+      PLURA_LEARNMORE_URL: "https://github.com/tagged/digsby/wiki/CPU-Usage"
+      DOCUMENTATION_URL: "http://github.com/tagged/digsby/wiki"
+      FORUM_SUPPORT_URL: "http://github.com/tagged/digsby/issues"
+      source: *prep
+      dest: *install_output
+      script: !path [*installer_source, 'DigsbyInstall.nsi']
+      path_nsis: !path [*installer_source, nsis, 'makensis.exe']
+      instver: 7
+      use_no_adware_image: yes
+      foldername: 'install'
+      honest: yes
+- prepare:
+  ## Moves the prepared files into the ultimate 'output' location.
+  - move_files:
+      source: *prep
+      dest_dir: *output

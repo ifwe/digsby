@@ -1,0 +1,7 @@
+<div class="bottom_row">
+    <div class="time-container minor"></div>
+<?py if getattr(item, 'supports_comments', False): ?>
+    <?py include(r"#{{app.resource('comment_link.tenjin')}}") ?>
+    <?py include(r"#{{app.resource('like_dislike_link.tenjin')}}") ?>
+<?py #endif ?>
+</div>

@@ -1,0 +1,43 @@
+body {
+    font-family: "MS Shell Dlg 2", sans-serif;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+div {
+    font-family: "MS Shell Dlg 2", sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#need-update {
+    cursor: pointer;
+}
+.smalltext {
+    font-size: 8pt;
+}
+.green {
+    font-size: 12pt;
+    color: #009600;
+}
+
+#copyright {
+    padding-top: .6em;
+}
+
+#maintext {
+    padding-top: .6em;
+}
+
+#update {
+    padding-top: .6em;
+}
+#update div {
+    display: none;
+}
+
+#update div * {
+    vertical-align: middle;
+}
+

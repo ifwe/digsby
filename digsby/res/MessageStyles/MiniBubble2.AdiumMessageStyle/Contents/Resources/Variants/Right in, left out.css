@@ -1,0 +1,80 @@
+@import "../style.css";
+
+
+.post_incoming {
+	margin: 0 36px 0 29px;
+}
+
+.post_outgoing {
+	margin: 0 29px 0 36px;
+}
+
+
+.toprow_incoming {
+	margin: -2px 0 0 0;
+}
+
+.toprow_outgoing {
+	margin: -2px 3px 0 0;
+}
+
+
+.toprow_middle_incoming
+{
+	left: 8px;
+	right: 10px;
+}
+
+.toprow_middle_outgoing
+{
+	left: 10px;
+	right: 8px;
+}
+
+
+span.buddy_icon_incoming
+{
+	float: right;
+}
+
+span.buddy_icon_outgoing
+{
+	float: left;
+}
+
+
+.bottom_right_incoming, .bottom_right_incoming_context {
+	left: 9px;
+	right: 2px;
+}
+
+.bottom_right_outgoing, .bottom_right_outgoing_context {
+	left: 2px;
+	right: 11px;
+}
+
+
+.arrow_incoming, .arrow_incoming_context {
+	right:31px;
+}
+
+.arrow_outgoing, .arrow_outgoing_context {
+	left:30px;
+}
+
+.arrow_incoming {
+	background: url("../images/arrow_right.png");
+}
+
+.arrow_outgoing {
+	background: url("../images/arrow.png");
+}
+
+
+.arrow_incoming_context {
+	background: url("../images/arrow_right_context.png");
+}
+
+.arrow_outgoing_context {
+	background: url("../images/arrow_context.png");
+}

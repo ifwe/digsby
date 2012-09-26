@@ -1,0 +1,27 @@
+<span class="alerts">
+<div class="alerts_title title">${{_('Alerts')}}</div>
+<?py if alerts.count <= 0: ?>
+    <div class="minor">${{_('No Alerts')}}</div>
+<?py else: ?>
+    <?py alert_types = (("num_msgs",            'msgs',            ngettext("%d new message", "%d new messages", alerts['num_msgs'])), ?>
+    <?py                ("num_friend_requests", 'friend_requests', ngettext("%d new friend request", "%d new friend requests", alerts['num_friend_requests'])), ?>
+    <?py                ("num_pokes",           'pokes',           ngettext("%d new poke", "%d new pokes", alerts['num_pokes'])), ?>
+    <?py                ("num_shares",          'shares',          ngettext("%d new share", "%d new shares", alerts['num_shares'])), ?>
+    <?py                ("num_group_invites",   'group_invites',   ngettext("%d new group invite", "%d new group invites", alerts['num_group_invites'])), ?>
+    <?py                ("num_event_invites",   'event_invites',   ngettext("%d new event invite", "%d new event invites", alerts['num_event_invites'])), ?>
+    <?py                ("num_notifications",   'notifications',   ngettext("%d new notification", "%d new notifications", alerts['num_notifications']))) ?>
+    <?py # ?>
+    <div class="alert_list">
+    <?py for alert_type in alert_types: ?>
+        <?py count = alerts[alert_type[0]] ?>
+        <?py if count: ?>
+        <div class="alert_section ${alert_type[1]}_alert">
+            <a class="major link" href="${alerts.urls[alert_type[1]]}">#{alert_type[2] % count}</a>
+        </div>
+        <?py #endif ?>
+    <?py #endfor ?>
+    <?py del count ?>
+    </div>
+<?py #endif ?>
+<hr class="content_hr"/>
+</span>

@@ -1,0 +1,44 @@
+
+/* @group outgoing */
+
+.outgoing .compact .cnbody {
+	border-top: 1px dotted #d1d1d1;
+}
+
+.outgoing .message .bottomright {
+	background-image: url("../../images/glass-grey/bottomright-arrow.png");
+}
+
+/* @group message */
+
+.outgoing .message .topleft {
+	background: url("../../images/glass-grey/topleft.png") top left no-repeat;
+}
+.outgoing .message .top {
+	background: url("../../images/glass-grey/top.png") top right repeat-x;
+}
+.outgoing .message .topright {
+	background: url("../../images/glass-grey/topright.png") top right no-repeat;
+}
+.outgoing .message .left {
+	background: url("../../images/glass-grey/left.png") top left repeat-y;
+}
+.outgoing .message .middle {
+	background: url("../../images/glass-grey/middle.png") top left repeat;
+}
+.outgoing .message .right {
+	background: url("../../images/glass-grey/right.png") top right repeat-y;
+}
+.outgoing .message .bottomleft {
+	background: url("../../images/glass-grey/bottomleft.png") bottom left no-repeat;
+}
+.outgoing .message .bottom {
+	background: url("../../images/glass-grey/bottom.png") bottom right repeat-x;
+}
+/*.outgoing .message .bottomright {
+	background: url("../../images/glass-grey/bottomright.png") bottom right no-repeat;
+}*/
+
+/* @end */
+
+/* @end */

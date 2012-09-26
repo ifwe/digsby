@@ -1,0 +1,76 @@
+<div class="post_row fb_filter_nf #{' '.join('fb_filter_' + f for f in feed.post_filter_keys.get(post.post_id, []))}" id="${post.post_id}" style="${'display:none;' if 'hidden' in post and post.hidden else ''}" timestamp="${post.created_time}">
+<div class="post_content social_background_hover">
+<?py
+from common import pref
+_context['profile'] = profile = feed.profiles[int(post['actor_id'])];
+_context['post_id'] = post_id = post.post_id;
+_context['do_link_block'] = do_link_block = (('likes' in post and 'count' in post.likes and post.likes.count) or
+                                       ('comments' in post and 'count' in post.comments and post.comments.count));
+_context['do_attachment'] = do_attachment = ('attachment' in post and post.attachment and
+                                            any([post.attachment.get(key) for key in
+                                            ('name', 'media', 'caption', 'description')]));
+_context['do_description'] = do_description = (do_attachment and 'description' in post.attachment and post.attachment.description);
+_context['can_like'] = can_like = 'likes' in post and ('can_like' not in post.likes or post.likes.can_like);
+_context['can_comment'] = can_comment = 'comments' in post and 'can_post' in post.comments and post.comments.can_post;
+_context['have_media'] = have_media = ('attachment' in post and 'media' in post.attachment and post.attachment.media);
+do_friendship = False;
+?>
+    <div class="buddyiconcell">
+        <div>
+            <img id="${post_id}_buddyicon" class="buddyicon" src="${profile.pic_square}"/>
+        </div>
+    </div>
+    <div class="messagecell">
+        <div class="message_block">
+            <span class="name">
+                <a href="${profile.url}" class="link namelink">${profile.name}</a>
+            </span>
+<?py if 'source_id' in post and 'actor_id' in post and 'target_id' in post and post.target_id and post.source_id and post.actor_id and int(post.target_id) != int(post.actor_id): ?>
+    <?py profile2 = feed.profiles[int(post['target_id'])] ?>
+    <span class="minor">»</span> <a href="${post.permalink}" class="link namelink">${profile2.name}</a> <span class="message major" py:if="'message' in post">#{linkify(escape(to_str(post.message)))}</span>
+    <?py do_friendship = True ?>
+<?py else: ?>
+    <?py if 'message' in post: ?>
+        <span class="message major" >#{linkify(escape(to_str(post.message)))}</span>
+    <?py #endif ?>
+<?py #endif ?>
+        </div>
+<?py if do_attachment and not have_media: ?>
+    <div class="no_media_bar minor">
+<?py #endif ?>
+        <div class="attachment_section">
+<?py include(r"#{{app.resource('attachment.py.xml')}}") ?>
+        </div>
+<?py include(r"#{{app.resource('properties.py.xml')}}") ?>
+<?py if do_attachment and not have_media: ?>
+    </div>
+<?py #endif ?>
+        <div class="likes_comments_section">
+<?py include(r"#{{app.resource('likes.py.xml')}}") ?>
+<?py if pref('facebook.dislike_enabled', type=bool, default=True): include(r"#{{app.resource('dislikes.py.xml')}}") ?>
+<?py include(r"#{{app.resource('comments2.py.xml')}}") ?>
+        </div>
+
+        <div class="error_section" style="">
+        </div>
+        <div class="bottom_row">
+            <span class="time minor" id="${post_id}_time" timestamp="${post.created_time}">${post.created_time}</span>
+<?py include(r"#{{app.resource('comment_link.py.xml')}}") ?>
+<?py include(r"#{{app.resource('like_link.py.xml')}}") ?>
+<?py if (not do_friendship) and pref('facebook.dislike_enabled', type=bool, default=True): include(r"#{{app.resource('dislike_link.py.xml')}}") ?>
+<?py if do_friendship: ?>
+        · <!--! this line has a dot  -->
+<a class="link link_section" href="http://www.facebook.com/profile.php?id=${int(post['actor_id'])}&and=${int(post['target_id'])}">${{_('See Friendship')}}</a>
+    <?py del profile2 ?>
+<?py #endif ?>
+        </div>
+    </div>
+<?py
+for var in 'profile, post_id, do_link_block, do_attachment, do_description, can_like, can_comment'.split(', '):
+    del _context[var]
+#endfor
+del profile, post_id, do_link_block, do_attachment, do_description, can_like, can_comment, have_media, do_friendship
+?>
+</div>
+<hr class="post_divider" />
+</div>

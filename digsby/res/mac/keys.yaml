@@ -1,0 +1,32 @@
+#
+# MAC digsby default keyboard shortcuts
+#
+
+InfoBox:
+  Copy: Cmd+C
+
+ImFrame:
+  Tabs:
+    CloseActive: Cmd+W, Escape
+    NextTab: Ctrl+Tab, Cmd+Shift+}        # firefox, safari
+    PrevTab: Ctrl+Shift+Tab, Cmd+Shift+{
+
+Global:
+  DigsbyShell:
+    ToggleShow: Ctrl+Alt+Cmd+C
+
+  AdvancedPrefs:
+    ToggleShow: Ctrl+Alt+P
+
+  DownloadManager:
+    ToggleShow: Cmd+Alt+L
+
+  Skin:
+    Reload: F5
+
+TextControls:
+  SelectAll: Cmd+A
+  DeletePreviousWord: Ctrl+Backspace
+
+Debug:
+  XMLConsole: Ctrl+Alt+X

@@ -1,0 +1,5992 @@
+# Translations for the Digsby client.
+# Copyright (C) 2011 dotSyntax, LLC
+# This file is distributed under the BSD License.
+#
+# TOS for Digsby is located at http://www.digsby.com/tos.php
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: digsby $Rev: 30062 $\n"
+"Report-Msgid-Bugs-To: https://translations.launchpad.net/digsby\n"
+"POT-Creation-Date: 2011-04-14 17:17-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: ext/src/LoginWindow.cpp:276
+msgid "Digsby Login"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:277
+msgid "Digsby &Username:"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:278 src/gui/proxydialog.py:105
+msgid "&Password:"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:279
+msgid "&Save password"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:280 src/gui/accountdialog.py:354
+msgid "&Auto login"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:281
+msgid "Sign In"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:282
+msgid "Forgot?"
+msgstr ""
+
+#: ext/src/LoginWindow.cpp:283
+#: src/plugins/digsby_service_editor/default_ui.py:150
+msgid "New User?"
+msgstr ""
+
+#: res/actions.yaml:13 res/actions.yaml:126
+msgid "&Buddy Info"
+msgstr ""
+
+#: res/actions.yaml:16 res/actions.yaml:129
+msgid "&Send IM"
+msgstr ""
+
+#: res/actions.yaml:19 res/actions.yaml:132
+msgid "Send &File"
+msgstr ""
+
+#: res/actions.yaml:22 res/actions.yaml:135
+msgid "Send &Email"
+msgstr ""
+
+#: res/actions.yaml:25 res/actions.yaml:138
+msgid "Send &SMS"
+msgstr ""
+
+#: res/actions.yaml:30 res/actions.yaml:58 res/actions.yaml:74
+#: res/actions.yaml:92 res/actions.yaml:108 src/gui/imwin/imwinmenu.py:65
+msgid "&View Past Chats"
+msgstr ""
+
+#: res/actions.yaml:33 res/actions.yaml:143
+msgid "&Alert Me When..."
+msgstr ""
+
+#: res/actions.yaml:38
+msgid "Re&name"
+msgstr ""
+
+#: res/actions.yaml:41 res/actions.yaml:61 res/actions.yaml:77
+#: res/actions.yaml:117
+msgid "Bl&ock"
+msgstr ""
+
+#: res/actions.yaml:45 res/actions.yaml:65 res/actions.yaml:81
+#: res/actions.yaml:121
+msgid "Unbl&ock"
+msgstr ""
+
+#: res/actions.yaml:48 res/actions.yaml:313 res/actions.yaml:325
+#: res/actions.yaml:335 res/actions.yaml:346 res/actions.yaml:352
+#: res/actions.yaml:360 src/gui/widgetlist.py:43
+#: src/plugins/twitter/twitter_gui.py:1383
+msgid "&Delete"
+msgstr ""
+
+#: res/actions.yaml:97
+msgid "Resend authorization"
+msgstr ""
+
+#: res/actions.yaml:100
+msgid "Re-request authorization"
+msgstr ""
+
+#: res/actions.yaml:103
+msgid "Remove authorization"
+msgstr ""
+
+#: res/actions.yaml:111
+msgid "Appear offline"
+msgstr ""
+
+#: res/actions.yaml:114
+msgid "Appear online"
+msgstr ""
+
+#: res/actions.yaml:148
+msgid "Re&name && Rearrange..."
+msgstr ""
+
+#: res/actions.yaml:151
+msgid "Split Merged Contact..."
+msgstr ""
+
+#: res/actions.yaml:162 src/gui/buddylist/buddylist.py:1011
+msgid "&Rename Group"
+msgstr ""
+
+#: res/actions.yaml:165 src/gui/buddylist/buddylist.py:1012
+msgid "&Delete Group"
+msgstr ""
+
+#: res/actions.yaml:169 src/gui/buddylist/buddylist.py:1013
+msgid "Add &Group"
+msgstr ""
+
+#: res/actions.yaml:174 src/gui/accountslist.py:136
+#: src/gui/uberwidgets/connectionlist.py:462
+msgid "&Connect"
+msgstr ""
+
+#: res/actions.yaml:177
+msgid "&Disconnect"
+msgstr ""
+
+#: res/actions.yaml:186
+msgid "&Format Screen Name"
+msgstr ""
+
+#: res/actions.yaml:190
+msgid "&Update Email Address"
+msgstr ""
+
+#: res/actions.yaml:194
+msgid "&Confirm Account"
+msgstr ""
+
+#: res/actions.yaml:197
+msgid "Change &Password (URL)"
+msgstr ""
+
+#: res/actions.yaml:200
+msgid "&IM Forwarding (URL)"
+msgstr ""
+
+#: res/actions.yaml:203
+msgid "&AOL Alerts (URL)"
+msgstr ""
+
+#: res/actions.yaml:206
+msgid "&My Page on ICQ.com (URL)"
+msgstr ""
+
+#: res/actions.yaml:218
+msgid "Set Priority"
+msgstr ""
+
+#: res/actions.yaml:234
+msgid "Change &Password"
+msgstr ""
+
+#: res/actions.yaml:244
+msgid "&Search for a Contact"
+msgstr ""
+
+#: res/actions.yaml:247
+msgid "Address Book"
+msgstr ""
+
+#: res/actions.yaml:250
+msgid "Mobile Settings"
+msgstr ""
+
+#: res/actions.yaml:253
+msgid "My Account"
+msgstr ""
+
+#: res/actions.yaml:256 src/msn/msngui.py:35
+msgid "Create Group Chat"
+msgstr ""
+
+#: res/actions.yaml:276
+msgid "My Account Info (URL)"
+msgstr ""
+
+#: res/actions.yaml:279
+msgid "My Web Profile (URL)"
+msgstr ""
+
+#: res/actions.yaml:283
+msgid "Update presence"
+msgstr ""
+
+#: res/actions.yaml:287
+msgid "Open &Inbox"
+msgstr ""
+
+#: res/actions.yaml:290
+msgid "C&ompose..."
+msgstr ""
+
+#: res/actions.yaml:295 src/plugins/facebook/actions.yaml:17
+#: src/plugins/linkedin/actions.yaml:13 src/plugins/myspace/actions.yaml:16
+#: src/plugins/twitter/twitter_gui.py:2044
+msgid "&Rename"
+msgstr ""
+
+#: res/actions.yaml:300 src/plugins/linkedin/actions.yaml:2
+msgid "&Check Now"
+msgstr ""
+
+#: res/actions.yaml:303 src/plugins/facebook/actions.yaml:4
+msgid "&Tell Me Again"
+msgstr ""
+
+#: res/actions.yaml:307 res/actions.yaml:319 res/actions.yaml:331
+#: res/actions.yaml:342 res/actions.yaml:350 res/actions.yaml:356
+#: src/gui/filetransfer/filetransferlist.py:473
+msgid "&Open"
+msgstr ""
+
+#: res/actions.yaml:309 res/actions.yaml:321 res/actions.yaml:333
+#: res/actions.yaml:344 res/actions.yaml:358
+msgid "Mark as &Read"
+msgstr ""
+
+#: res/actions.yaml:311 res/actions.yaml:323
+msgid "&Archive"
+msgstr ""
+
+#: res/actions.yaml:315 res/actions.yaml:327 res/actions.yaml:337
+#: res/actions.yaml:362
+msgid "Report &Spam"
+msgstr ""
+
+#: res/actions.yaml:366 src/plugins/facebook/actions.yaml:2
+#: src/plugins/myspace/actions.yaml:2 src/plugins/twitter/twitter_gui.py:1499
+msgid "&Update Now"
+msgstr ""
+
+#: res/actions.yaml:369 src/plugins/facebook/actions.yaml:6
+#: src/plugins/linkedin/actions.yaml:4 src/plugins/myspace/actions.yaml:5
+msgid "&Home"
+msgstr ""
+
+#: res/actions.yaml:372 src/plugins/linkedin/actions.yaml:10
+msgid "&Profile"
+msgstr ""
+
+#: res/actions.yaml:375 src/plugins/linkedin/actions.yaml:6
+#: src/plugins/myspace/actions.yaml:7
+msgid "&Inbox"
+msgstr ""
+
+#: res/actions.yaml:378 src/plugins/facebook/actions.yaml:10
+#: src/plugins/myspace/actions.yaml:9
+msgid "&Friends"
+msgstr ""
+
+#: res/actions.yaml:381 src/plugins/myspace/actions.yaml:11
+msgid "&Blog"
+msgstr ""
+
+#: res/actions.yaml:384
+msgid "B&ulletins"
+msgstr ""
+
+#: res/actions.yaml:387 src/plugins/facebook/actions.yaml:20
+#: src/plugins/linkedin/actions.yaml:16 src/plugins/myspace/actions.yaml:19
+msgid "&Set Status"
+msgstr ""
+
+#: res/actions.yaml:391 src/gui/imwin/imwin_email.py:51
+#: src/gui/imwin/imwin_email.py:57 src/gui/imwin/imwin_email.py:115
+msgid "Edit..."
+msgstr ""
+
+#: res/actions.yaml:398 src/gui/status.py:744 src/gui/widgetlist.py:61
+msgid "Delete"
+msgstr ""
+
+#: res/notificationview.yaml:1
+msgid "Contact Signs On"
+msgstr ""
+
+#: res/notificationview.yaml:6
+msgid "Contact Signs Off"
+msgstr ""
+
+#: res/notificationview.yaml:10
+msgid "Contact Becomes Available"
+msgstr ""
+
+#: res/notificationview.yaml:15
+msgid "Contact Goes Away"
+msgstr ""
+
+#: res/notificationview.yaml:20
+msgid "Contact Changes Status Message"
+msgstr ""
+
+#: res/notificationview.yaml:25
+msgid "Contact Returns From Idle"
+msgstr ""
+
+#: res/notificationview.yaml:29
+msgid "Contact Becomes Idle"
+msgstr ""
+
+#: res/notificationview.yaml:33
+msgid "IM Received"
+msgstr ""
+
+#: res/notificationview.yaml:39
+msgid "IM Received (not in focus)"
+msgstr ""
+
+#: res/notificationview.yaml:45
+msgid "IM Received (hidden to tray)"
+msgstr ""
+
+#: res/notificationview.yaml:53
+msgid "IM Received (first message)"
+msgstr ""
+
+#: res/notificationview.yaml:59
+msgid "IM Sent"
+msgstr ""
+
+#: res/notificationview.yaml:64
+msgid "Group Chat Invite"
+msgstr ""
+
+#: res/notificationview.yaml:74
+msgid "File Transfer Request"
+msgstr ""
+
+#: res/notificationview.yaml:85
+msgid "File Transfer Complete"
+msgstr ""
+
+#: res/notificationview.yaml:91
+msgid "File Transfer Error"
+msgstr ""
+
+#: res/notificationview.yaml:97
+msgid "New Email Arrives"
+msgstr ""
+
+#: res/notificationview.yaml:105
+msgid "Error Occurs"
+msgstr ""
+
+#: res/notificationview.yaml:112
+msgid "Downloading dictionary"
+msgstr ""
+
+#: src/plugins/component_gmail/info.yaml:2
+msgid "Gmail"
+msgstr ""
+
+#: src/plugins/component_gmail/info.yaml:6
+msgid "Gmail Account"
+msgstr ""
+
+#: src/plugins/component_gtalk/info.yaml:0
+msgid "Google Talk"
+msgstr ""
+
+#: src/plugins/component_gtalk/info.yaml:6 src/plugins/fbchat/info.yaml:17
+#: src/plugins/provider_aol/info.yaml:92 src/plugins/provider_aol/info.yaml:137
+#: src/plugins/provider_jabber/info.yaml:48
+#: src/plugins/provider_windows_live/info.yaml:30 src/common/protocolmeta.py:42
+#: src/common/statusmessage.py:31 src/common/statusmessage.py:32
+#: src/common/statusmessage.py:222 src/gui/native/win/jumplist.py:129
+#: src/gui/status.py:59 src/gui/statuscombo.py:501
+#: src/jabber/JabberResource.py:115
+msgid "Available"
+msgstr ""
+
+#: src/plugins/component_gtalk/info.yaml:7
+#: src/plugins/provider_aol/info.yaml:93 src/plugins/provider_aol/info.yaml:139
+#: src/plugins/provider_jabber/info.yaml:50
+#: src/plugins/provider_windows_live/info.yaml:31 src/common/protocolmeta.py:43
+#: src/common/statusmessage.py:33 src/common/statusmessage.py:223
+#: src/gui/native/win/jumplist.py:130 src/gui/status.py:60
+#: src/gui/statuscombo.py:517 src/gui/statuscombo.py:522
+#: src/oscar/OscarProtocol.py:1092
+msgid "Away"
+msgstr ""
+
+#: src/plugins/component_gtalk/info.yaml:59
+#: src/plugins/provider_google/info.yaml:0
+#: src/plugins/provider_google/info.yaml:10
+msgid "Google Account"
+msgstr ""
+
+#: src/plugins/component_gtalk/info.yaml:60
+#: src/plugins/digsby_email/info.yaml:19 src/plugins/digsby_email/info.yaml:77
+#: src/plugins/provider_aol/info.yaml:14 src/plugins/provider_aol/info.yaml:110
+#: src/plugins/provider_google/info.yaml:11
+#: src/plugins/provider_jabber/info.yaml:16
+#: src/plugins/provider_windows_live/info.yaml:23
+#: src/plugins/provider_yahoo/info.yaml:11 src/gui/pref/pg_advanced.py:71
+#: src/plugins/digsby_service_editor/default_ui.py:166
+#: src/plugins/digsby_service_editor/default_ui.py:173
+msgid "Password"
+msgstr ""
+
+#: src/plugins/component_yahooim/info.yaml:1
+msgid "Yahoo"
+msgstr ""
+
+#: src/plugins/component_yahooim/info.yaml:3
+msgid "Yahoo Messenger"
+msgstr ""
+
+#: src/plugins/component_yahooim/info.yaml:7
+#: src/plugins/component_ymail/info.yaml:7
+#: src/plugins/provider_yahoo/info.yaml:10
+msgid "Yahoo! ID"
+msgstr ""
+
+#: src/plugins/component_ymail/info.yaml:2
+msgid "Yahoo! Mail"
+msgstr ""
+
+#: src/plugins/component_ymail/info.yaml:3
+msgid "Yahoo Mail"
+msgstr ""
+
+#: src/plugins/digsby_email/info.yaml:1 src/plugins/digsby_email/info.yaml:26
+#: src/plugins/digsby_email/info.yaml:116
+#: src/plugins/myspace/MyspaceProtocol.py:40
+msgid "Mail"
+msgstr ""
+
+#: src/plugins/digsby_email/info.yaml:10
+msgid "POP Account"
+msgstr ""
+
+#: src/plugins/digsby_email/info.yaml:18 src/plugins/digsby_email/info.yaml:76
+#: src/gui/pref/pg_advanced.py:70
+#: src/plugins/digsby_service_editor/default_ui.py:149
+#: src/plugins/digsby_service_editor/default_ui.py:154
+#: src/plugins/msim/res/content.tenjin:19
+msgid "Username"
+msgstr ""
+
+#: src/plugins/digsby_email/info.yaml:30
+msgid "POP"
+msgstr ""
+
+#: src/plugins/digsby_email/info.yaml:68
+msgid "IMAP Account"
+msgstr ""
+
+#: src/plugins/digsby_email/info.yaml:101
+msgid "IMAP"
+msgstr ""
+
+#: src/plugins/facebook/actions.yaml:8
+msgid "Pro&file"
+msgstr ""
+
+#: src/plugins/facebook/actions.yaml:12
+msgid "&Photos"
+msgstr ""
+
+#: src/plugins/facebook/actions.yaml:14
+msgid "&Messages"
+msgstr ""
+
+#: src/plugins/facebook/info.yaml:0
+msgid "Facebook"
+msgstr ""
+
+#: src/plugins/facebook/info.yaml:4
+msgid "News Feed"
+msgstr ""
+
+#: src/plugins/facebook/info.yaml:9 src/plugins/fbchat/info.yaml:11
+#: src/plugins/linkedin/info.yaml:8 src/plugins/msim/info.yaml:7
+#: src/plugins/myspace/info.yaml:9 src/plugins/provider_linkedin/info.yaml:10
+#: src/plugins/provider_myspace/info.yaml:10
+#: src/plugins/provider_windows_live/info.yaml:22
+#: src/plugins/provider_windows_live/info.yaml:37
+#: src/plugins/provider_windows_live/info.yaml:81 src/gui/accountdialog.py:890
+msgid "Email Address"
+msgstr ""
+
+#: src/plugins/facebook/info.yaml:26 src/plugins/myspace/info.yaml:47
+#: src/plugins/twitter/res/content.tenjin:25
+msgid "Show Alerts"
+msgstr ""
+
+#: src/plugins/facebook/notifications.yaml:1
+msgid "Facebook Alert"
+msgstr ""
+
+#: src/plugins/facebook/notifications.yaml:10
+#: src/plugins/facebook/notifications.yaml:11
+msgid "Facebook Notification"
+msgstr ""
+
+#: src/plugins/facebook/notifications.yaml:21
+msgid "Facebook Newsfeed"
+msgstr ""
+
+#: src/plugins/fbchat/info.yaml:5
+msgid "Facebook Chat"
+msgstr ""
+
+#: src/plugins/linkedin/actions.yaml:8
+msgid "C&ontacts"
+msgstr ""
+
+#: src/plugins/linkedin/info.yaml:0
+msgid "LinkedIn"
+msgstr ""
+
+#: src/plugins/linkedin/info.yaml:46
+msgid "LinkedIn Newsfeed"
+msgstr ""
+
+#: src/plugins/msim/info.yaml:0
+msgid "MySpace IM"
+msgstr ""
+
+#: src/plugins/msim/info.yaml:4
+msgid "MySpaceIM"
+msgstr ""
+
+#: src/plugins/myspace/actions.yaml:13
+msgid "&Post Bulletin"
+msgstr ""
+
+#: src/plugins/myspace/info.yaml:63
+msgid "Show Newsfeed"
+msgstr ""
+
+#: src/plugins/myspace/notifications.yaml:1
+msgid "MySpace Alert"
+msgstr ""
+
+#: src/plugins/myspace/notifications.yaml:9
+#: src/plugins/myspace/MyspaceProtocol.py:395
+msgid "MySpace Newsfeed"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:5
+msgid "AOL/AIM Account"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:13 src/plugins/provider_aol/info.yaml:56
+#: src/plugins/provider_aol/info.yaml:73
+msgid "Screen Name"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:63
+msgid "AOL Mail"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:72
+msgid "AIM"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:99
+msgid "ICQ Account"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:109
+msgid "UIN or Email"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:117
+#: src/plugins/provider_jabber/info.yaml:25
+msgid "Chat"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:138
+#: src/plugins/provider_jabber/info.yaml:49 src/common/protocolmeta.py:42
+msgid "Free For Chat"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:140
+#: src/plugins/provider_jabber/info.yaml:51 src/common/protocolmeta.py:43
+#: src/jabber/JabberResource.py:14
+msgid "Do Not Disturb"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:141
+msgid "Not Available"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:142 src/oscar/OscarBuddies.py:46
+msgid "Occupied"
+msgstr ""
+
+#: src/plugins/provider_aol/info.yaml:143
+msgid "ICQ Number"
+msgstr ""
+
+#: src/plugins/provider_facebook/info.yaml:0
+#: src/plugins/provider_facebook/info.yaml:10
+msgid "Facebook Account"
+msgstr ""
+
+#: src/plugins/provider_jabber/info.yaml:5
+msgid "Jabber Account"
+msgstr ""
+
+#: src/plugins/provider_jabber/info.yaml:15
+#: src/plugins/provider_jabber/info.yaml:28
+msgid "Jabber ID"
+msgstr ""
+
+#: src/plugins/provider_jabber/info.yaml:52 src/common/protocolmeta.py:43
+#: src/jabber/JabberResource.py:16
+msgid "Extended Away"
+msgstr ""
+
+#: src/plugins/provider_linkedin/info.yaml:0
+msgid "LinkedIn Account"
+msgstr ""
+
+#: src/plugins/provider_myspace/info.yaml:0
+msgid "MySpace Account"
+msgstr ""
+
+#: src/plugins/provider_twitter/info.yaml:0
+msgid "Twitter Account"
+msgstr ""
+
+#: src/plugins/provider_twitter/info.yaml:10 src/plugins/twitter/info.yaml:10
+msgid "Twitter ID"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:1
+msgid "Windows Live"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:10
+msgid "Windows Live Account"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:32 src/msn/MSNBuddy.py:26
+msgid "Be Right Back"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:33
+msgid "Busy"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:34 src/msn/MSNBuddy.py:27
+msgid "On the Phone"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:35 src/msn/MSNBuddy.py:28
+msgid "Out to Lunch"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:54
+msgid "Live Messenger"
+msgstr ""
+
+#: src/plugins/provider_windows_live/info.yaml:77
+msgid "Hotmail"
+msgstr ""
+
+#: src/plugins/provider_yahoo/info.yaml:0
+msgid "Yahoo Account"
+msgstr ""
+
+#: src/plugins/twitter/info.yaml:0
+msgid "Twitter"
+msgstr ""
+
+#: src/plugins/twitter/info.yaml:3
+msgid "Timeline"
+msgstr ""
+
+#: src/plugins/twitter/notifications.yaml:1
+msgid "Twitter Update"
+msgstr ""
+
+#: src/plugins/twitter/notifications.yaml:9
+msgid "Twitter Direct Message"
+msgstr ""
+
+#: src/AccountManager.py:266
+msgid "Digsby is running in \"Local Mode\""
+msgstr ""
+
+#: src/AccountManager.py:268
+msgid "Changes to Digsby preferences may not synchronize to your other PCs right away"
+msgstr ""
+
+#: src/AccountManager.py:800 src/gui/social_status_dialog.py:592
+#: src/imaccount.py:517 src/plugins/twitter/twitter.py:1210
+#: src/social/network.py:69 src/social/network.py:74 src/social/network.py:76
+#: src/social/network.py:77
+msgid "Retry"
+msgstr ""
+
+#: src/AccountManager.py:801 src/imaccount.py:518 src/imaccount.py:519
+#: src/imaccount.py:520 src/social/network.py:75
+msgid "Reconnect"
+msgstr ""
+
+#: src/AccountManager.py:802 src/hub.py:80 src/jabber/JabberChat.py:263
+#: src/plugins/digsby_status/status_tag_urls.py:113
+#: src/plugins/digsby_updater/updater.py:577 src/plugins/facebook/fbacct.py:370
+#: src/plugins/myspace/MyspaceProtocol.py:436
+#: src/plugins/researchdriver/researchtoast.py:37
+#: src/plugins/twitter/twitter.py:1212
+msgid "Close"
+msgstr ""
+
+#: src/AccountManager.py:803 src/imaccount.py:516 src/social/network.py:67
+msgid "Edit Account"
+msgstr ""
+
+#: src/AccountManager.py:814 src/common/Protocol.py:35 src/digsbysplash.py:39
+#: src/digsbysplash.py:658 src/digsbysplash.py:662 src/digsbysplash.py:732
+msgid "Authentication Error"
+msgstr ""
+
+#: src/AccountManager.py:817
+msgid "Mailbox does not exist"
+msgstr ""
+
+#: src/AccountManager.py:820
+msgid "This account has been signed on from another location"
+msgstr ""
+
+#: src/AccountManager.py:823
+msgid "Connection to server lost"
+msgstr ""
+
+#: src/AccountManager.py:826
+msgid "Failed to connect to server"
+msgstr ""
+
+#: src/AccountManager.py:829
+msgid "Could not connect because you are signing on too often. Please wait 20 minutes before trying to log in again."
+msgstr ""
+
+#: src/AccountManager.py:848
+msgid "{protocol_name} Error"
+msgstr ""
+
+#: src/common/AchievementMixin.py:105
+#, python-format
+msgid "%(num_accounts)d account"
+msgid_plural "%(num_accounts)d accounts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/common/Conversation.py:12
+msgid "[Auto-Response] {message}"
+msgstr ""
+
+#: src/common/Conversation.py:46
+msgid "Disconnected"
+msgstr ""
+
+#: src/common/Conversation.py:114
+msgid "Some of the messages you sent may not have been received."
+msgstr ""
+
+#: src/common/Conversation.py:349
+msgid "{name} joined the group chat"
+msgstr ""
+
+#: src/common/Conversation.py:353
+msgid "{name} left the group chat"
+msgstr ""
+
+#: src/common/Conversation.py:371
+#, python-format
+msgid "%(name)s wants to have an Audio/Video chat. <a href=\"%(link)s\">Send them an invite.</a>"
+msgstr ""
+
+#: src/common/Protocol.py:25
+msgid "Online"
+msgstr ""
+
+#: src/common/Protocol.py:26 src/digsbysplash.py:520
+msgid "Connecting..."
+msgstr ""
+
+#: src/common/Protocol.py:27
+msgid "Authenticating..."
+msgstr ""
+
+#: src/common/Protocol.py:28
+msgid "Loading Contact List..."
+msgstr ""
+
+#: src/common/Protocol.py:29 src/common/statusmessage.py:35
+#: src/common/statusmessage.py:226 src/contacts/buddylistfilters.py:16
+#: src/gui/statuscombo.py:476 src/oscar/OscarBuddies.py:47
+msgid "Offline"
+msgstr ""
+
+#: src/common/Protocol.py:30
+msgid "Checking Mail..."
+msgstr ""
+
+#: src/common/Protocol.py:31
+msgid "Initializing..."
+msgstr ""
+
+#: src/common/Protocol.py:36
+msgid "You have signed in from another location"
+msgstr ""
+
+#: src/common/Protocol.py:37 src/digsbysplash.py:40 src/digsbysplash.py:734
+msgid "Connection Lost"
+msgstr ""
+
+#: src/common/Protocol.py:38 src/digsbysplash.py:654 src/digsbysplash.py:671
+#: src/digsbysplash.py:726 src/digsbysplash.py:736 src/digsbysplash.py:745
+msgid "Failed to Connect"
+msgstr ""
+
+#: src/common/Protocol.py:39
+msgid "You are signing in too often"
+msgstr ""
+
+#: src/common/Protocol.py:40
+msgid "This account does not have a mailbox"
+msgstr ""
+
+#: src/common/Protocol.py:41
+msgid "Failed to Initialize"
+msgstr ""
+
+#: src/common/Protocol.py:42
+#, python-format
+msgid "Connection Failed. Retry in %s"
+msgstr ""
+
+#: src/common/Protocol.py:43
+msgid "Internal Server Error"
+msgstr ""
+
+#: src/common/Protocol.py:457
+msgid "Error inviting {name}: they are offline"
+msgstr ""
+
+#: src/common/Protocol.py:459
+msgid "Error inviting {name}: they do not support group chat"
+msgstr ""
+
+#: src/common/accountbase.py:45 src/contacts/Contact.py:96
+#, python-format
+msgid "Enter an alias for %s:"
+msgstr ""
+
+#: src/common/accountbase.py:46 src/contacts/Contact.py:97
+#, python-format
+msgid "Rename %s"
+msgstr ""
+
+#: src/common/actions.py:149
+msgid "No actions"
+msgstr ""
+
+#: src/common/emailaccount.py:298
+msgid "Email Client"
+msgstr ""
+
+#: src/common/emailaccount.py:476
+msgid "No unread mail"
+msgstr ""
+
+#: src/common/emailaccount.py:557
+msgid "No System Email Client"
+msgstr ""
+
+#: src/common/emailaccount.py:558
+msgid "No system email client is configured."
+msgstr ""
+
+#: src/common/emailaccount.py:563
+msgid "Could not start system mail client."
+msgstr ""
+
+#: src/common/emailaccount.py:565
+msgid "Error launching system mail client"
+msgstr ""
+
+#: src/common/emailaccount.py:628
+#, python-format
+msgid "Could not start system mail client %r."
+msgstr ""
+
+#: src/common/filetransfer.py:73
+msgid "{completed} of {size} ({speed}/sec) -- {time} remain"
+msgstr ""
+
+#: src/common/filetransfer.py:74
+msgid "Received from {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:74
+msgid "Sent to {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:75
+msgid "Connecting to {name}..."
+msgstr ""
+
+#: src/common/filetransfer.py:76 src/common/filetransfer.py:79
+msgid "Waiting for {name} to accept file"
+msgstr ""
+
+#: src/common/filetransfer.py:78
+msgid "Canceled by {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:80
+msgid "Failed during transfer from {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:80
+msgid "Failed during transfer to {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:81
+msgid "Failed to connect to {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:82
+msgid "File size too big for proxy transfer"
+msgstr ""
+
+#: src/common/filetransfer.py:99
+msgid "Open"
+msgstr ""
+
+#: src/common/filetransfer.py:100 src/gui/imagedialog.py:12
+#: src/imaccount.py:521 src/imaccount.py:524 src/imaccount.py:525
+#: src/imaccount.py:526 src/plugins/digsby_updater/UpdateProgress.py:147
+#: src/plugins/twitter/twitter_gui.py:1621
+msgid "Cancel"
+msgstr ""
+
+#: src/common/filetransfer.py:101 src/gui/accountslist.py:40
+#: src/gui/imwin/imwin_tofrom.py:341 src/gui/pref/pg_accounts.py:631
+#: src/plugins/digsby_updater/UpdateProgress.py:144
+#: src/plugins/twitter/twitter_gui.py:1948
+#: src/tests/testgui/uberdemos/UberComboXTDemo.py:32
+msgid "Remove"
+msgstr ""
+
+#: src/common/filetransfer.py:104
+msgid "Save"
+msgstr ""
+
+#: src/common/filetransfer.py:105
+msgid "Save as..."
+msgstr ""
+
+#: src/common/filetransfer.py:106
+msgid "Reject"
+msgstr ""
+
+#: src/common/filetransfer.py:243
+msgid "Directory does not exist"
+msgstr ""
+
+#: src/common/filetransfer.py:273
+msgid "Choose a location to save"
+msgstr ""
+
+#: src/common/filetransfer.py:361
+msgid "Failed to send {filename} to {name}"
+msgstr ""
+
+#: src/common/filetransfer.py:361
+msgid "Failed to receive {filename} from {name}"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:471
+msgid "You need to download the {langname} dictionary to use it. Would you like to download this dictionary now?"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:472
+msgid "Download Dictionary?"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:482
+msgid "Dictionary not downloaded."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:483
+msgid "To download it later, select it in the Conversation Preferences."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:486
+msgid "Download Dictionary Canceled"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:505
+msgid "Dictionary Set"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:506
+msgid "Spellcheck language has been set to {langname}."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:511
+msgid "Spellcheck error"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:512
+msgid "Failed setting up dictionary. Try reselecting desired language in the preferences."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:518 src/common/spelling/spellcheck.py:676
+msgid "Dictionary Installed"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:519
+msgid "You can set this language in the conversation preferences."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:563
+msgid "Installing Dictionary"
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:563
+msgid "Dictionary will be activated after install completes."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:676
+msgid "Setting spellcheck language..."
+msgstr ""
+
+#: src/common/spelling/spellcheck.py:689
+msgid "{langname} Dictionary"
+msgstr ""
+
+#: src/common/statusmessage.py:34 src/common/statusmessage.py:225
+#: src/gui/native/win/jumplist.py:131 src/gui/statuscombo.py:544
+msgid "Invisible"
+msgstr ""
+
+#: src/common/statusmessage.py:138
+msgid "{truncatedtitle}..."
+msgstr ""
+
+#: src/common/statusmessage.py:224
+msgid "Idle"
+msgstr ""
+
+#: src/contacts/Group.py:187
+msgid "That buddy is already part of metacontact \"{alias}\" in group \"{group}.\""
+msgstr ""
+
+#: src/contacts/Group.py:189 src/gui/addcontactdialog.py:36
+#: src/gui/addcontactdialog.py:203 src/gui/capabilitiesbar.py:118
+#: src/gui/contactdialogs.py:252
+msgid "Add Contact"
+msgstr ""
+
+#: src/contacts/Group.py:221
+msgid "Enter a new name for {name}:"
+msgstr ""
+
+#: src/contacts/Group.py:222
+msgid "Rename Group"
+msgstr ""
+
+#: src/contacts/buddylistfilters.py:29 src/contacts/buddyliststore.py:97
+#: src/contacts/buddyliststore.py:384 src/contacts/buddyliststore.py:645
+#: src/contacts/metacontacts.py:43 src/plugins/linkedin/LinkedInAccount.py:84
+msgid "Contacts"
+msgstr ""
+
+#: src/contacts/metacontacts.py:65
+msgid "Unknown"
+msgstr ""
+
+#: src/contacts/metacontacts.py:820
+msgid "Are you sure you want to split up this merged contact?"
+msgstr ""
+
+#: src/contacts/metacontacts.py:821
+msgid "Split Contacts"
+msgstr ""
+
+#: src/contacts/sort_model.py:144
+msgid "None (custom)"
+msgstr ""
+
+#: src/contacts/sort_model.py:145 src/contacts/sort_model.py:152
+#: src/gui/pref/pg_contact_list.py:405 src/gui/pref/prefstrings.py:20
+#: src/gui/status.py:374 src/plugins/myspace/res/status.tenjin:13
+#: src/plugins/twitter/res/status.tenjin:11
+msgid "Status"
+msgstr ""
+
+#: src/contacts/sort_model.py:146 src/contacts/sort_model.py:153
+msgid "Service"
+msgstr ""
+
+#: src/contacts/sort_model.py:149
+msgid "None"
+msgstr ""
+
+#: src/contacts/sort_model.py:150
+msgid "Log Size"
+msgstr ""
+
+#: src/contacts/sort_model.py:151 src/gui/vcard/vcardgui.py:18
+msgid "Name"
+msgstr ""
+
+#: src/crashgui.py:11
+msgid "Digsby Crash Report"
+msgstr ""
+
+#: src/crashgui.py:12
+msgid "Digsby appears to have crashed."
+msgstr ""
+
+#: src/crashgui.py:13
+msgid "If you can, please describe what you were doing before it crashed."
+msgstr ""
+
+#: src/crashgui.py:15
+msgid "&Send Crash Report"
+msgstr ""
+
+#: src/digsby/DigsbyProtocol.py:55
+msgid "Synchronizing Preferences..."
+msgstr ""
+
+#: src/digsby/DigsbyProtocol.py:57
+msgid "Synchronizing..."
+msgstr ""
+
+#: src/digsby/videochat.py:28
+msgid "Audio/Video Call with {name}"
+msgstr ""
+
+#: src/digsby/videochat.py:91
+#, python-format
+msgid "Join me in an audio/video call: %s"
+msgstr ""
+
+#: src/digsby/videochat.py:96
+msgid "You have invited {name} to an audio/video chat."
+msgstr ""
+
+#: src/digsby/videochat.py:111
+msgid "Audio/Video chat is currently unavailable."
+msgstr ""
+
+#: src/digsby/videochat.py:179
+msgid "Audio/Video call ended by other party."
+msgstr ""
+
+#: src/digsbysplash.py:27
+msgid "&Sign In"
+msgstr ""
+
+#: src/digsbysplash.py:41 src/digsbysplash.py:739
+msgid "We are upgrading Digsby. Please try connecting again in a few minutes."
+msgstr ""
+
+#: src/digsbysplash.py:42 src/digsbysplash.py:741
+msgid "Could not contact remote server. Check your network configuration."
+msgstr ""
+
+#: src/digsbysplash.py:46
+msgid "Invalid Digsby Username"
+msgstr ""
+
+#: src/digsbysplash.py:322
+msgid "Update Successful"
+msgstr ""
+
+#: src/digsbysplash.py:499 src/digsbysplash.py:779
+msgid "Loading..."
+msgstr ""
+
+#: src/digsbysplash.py:541
+msgid "Login error!"
+msgstr ""
+
+#: src/digsbysplash.py:595
+msgid "Your password will be saved on your portable device."
+msgstr ""
+
+#: src/digsbysplash.py:596
+msgid "Anyone with access to this device will be able to log into your Digsby account. Are you sure you want to save your password?"
+msgstr ""
+
+#: src/digsbysplash.py:601
+msgid "Security Information"
+msgstr ""
+
+#: src/digsbysplash.py:660
+msgid "Please make sure you have entered your Digsby username and password correctly."
+msgstr ""
+
+#: src/digsbysplash.py:661
+msgid "If you need an account or forgot your password, use the links on the login screen."
+msgstr ""
+
+#: src/digsbysplash.py:667
+msgid ""
+"Please check your Internet connection and make sure a firewall isn't blocking Digsby.\n"
+"If you connect to the Internet through a proxy server,\n"
+"click the \"Connection Settings\" link to set up the proxy.\n"
+"If you are still unable to connect, email bugs@digsby.com for technical support."
+msgstr ""
+
+#: src/digsbysplash.py:769
+msgid "Register a Digsby Account"
+msgstr ""
+
+#: src/gui/accountdialog.py:38
+#: src/plugins/digsby_service_editor/default_ui.py:583
+msgid "System Default"
+msgstr ""
+
+#: src/gui/accountdialog.py:39
+#: src/plugins/digsby_service_editor/default_ui.py:584
+msgid "Other Mail Client..."
+msgstr ""
+
+#: src/gui/accountdialog.py:40
+#: src/plugins/digsby_service_editor/default_ui.py:585
+msgid "Launch URL..."
+msgstr ""
+
+#: src/gui/accountdialog.py:310 src/gui/accountdialog.py:393
+#: src/gui/contactdialogs.py:172 src/gui/pref/iconeditor.py:552
+#: src/gui/status.py:539 src/plugins/digsby_service_editor/service_editor.py:87
+#: src/plugins/twitter/twitter_gui.py:120
+#: src/plugins/twitter/twitter_gui.py:356
+msgid "&Save"
+msgstr ""
+
+#: src/gui/accountdialog.py:315 src/gui/contactdialogs.py:91
+#: src/gui/contactdialogs.py:180 src/gui/imwin/imtabs.py:125
+#: src/gui/pref/iconeditor.py:554 src/gui/proxydialog.py:234
+#: src/gui/status.py:543 src/plugins/digsby_service_editor/service_editor.py:90
+#: src/plugins/twitter/twitter_gui.py:129
+msgid "&Cancel"
+msgstr ""
+
+#: src/gui/accountdialog.py:321
+#: src/plugins/digsby_service_editor/service_editor.py:222
+msgid "That account already exists."
+msgstr ""
+
+#: src/gui/accountdialog.py:355
+msgid "If checked, this account will automatically sign in when Digsby starts."
+msgstr ""
+
+#: src/gui/accountdialog.py:361
+#: src/plugins/digsby_service_editor/default_ui.py:211
+msgid "&Register New Account"
+msgstr ""
+
+#: src/gui/accountdialog.py:393
+msgid "&Register"
+msgstr ""
+
+#: src/gui/accountdialog.py:580
+msgid "Check for new mail every {n} minutes"
+msgstr ""
+
+#: src/gui/accountdialog.py:591
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/gui/accountdialog.py:607
+#: src/plugins/digsby_service_editor/default_ui.py:73
+#: src/plugins/digsby_service_editor/default_ui.py:385
+msgid "Mail Client:"
+msgstr ""
+
+#: src/gui/accountdialog.py:626
+#: src/plugins/digsby_service_editor/default_ui.py:397
+msgid "SMTP username/password are the same as {servertype}"
+msgstr ""
+
+#: src/gui/accountdialog.py:627
+#: src/plugins/digsby_service_editor/default_ui.py:398
+msgid "Log on using:"
+msgstr ""
+
+#: src/gui/accountdialog.py:753
+msgid "{show_topic}:"
+msgstr ""
+
+#: src/gui/accountdialog.py:783
+msgid "Custom ({mailclient_name})"
+msgstr ""
+
+#: src/gui/accountdialog.py:812
+#: src/plugins/digsby_service_editor/default_ui.py:629
+msgid "Please choose a mail client"
+msgstr ""
+
+#: src/gui/accountdialog.py:860
+#: src/plugins/digsby_service_editor/default_ui.py:406
+msgid "Username:"
+msgstr ""
+
+#: src/gui/accountdialog.py:862
+#: src/plugins/digsby_service_editor/default_ui.py:407
+msgid "Password:"
+msgstr ""
+
+#: src/gui/accountdialog.py:921
+msgid "&Display Name:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1003
+#: src/plugins/digsby_service_editor/default_ui.py:265
+msgid "SMTP Server:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1005 src/gui/accountdialog.py:1026
+#: src/plugins/digsby_service_editor/default_ui.py:96
+msgid "Port:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1024
+msgid "Host:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1031 src/gui/infobox/htmlgeneration.py:237
+#: src/plugins/digsby_service_editor/default_ui.py:333
+msgid "Resource:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1033
+#: src/plugins/digsby_service_editor/default_ui.py:333
+msgid "Priority:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1038
+#: src/plugins/digsby_service_editor/default_ui.py:338
+msgid "Data Proxy:"
+msgstr ""
+
+#: src/gui/accountdialog.py:1119
+#: src/plugins/digsby_service_editor/default_ui.py:665
+msgid "Enter the URL that will be launched when you click \"Inbox\" for this email account."
+msgstr ""
+
+#: src/gui/accountdialog.py:1120
+#: src/plugins/digsby_service_editor/default_ui.py:666
+msgid "Enter the URL that will be launched when you click \"Compose\" for this email account."
+msgstr ""
+
+#: src/gui/accountdialog.py:1123
+#: src/plugins/digsby_service_editor/default_ui.py:669
+msgid "Launch URL"
+msgstr ""
+
+#: src/gui/accountdialog.py:1136
+#: src/plugins/digsby_service_editor/default_ui.py:682
+msgid "Enter a URL for the Inbox"
+msgstr ""
+
+#: src/gui/accountdialog.py:1139
+#: src/plugins/digsby_service_editor/default_ui.py:685
+msgid "Enter a URL for the Compose window"
+msgstr ""
+
+#: src/gui/accountslist.py:36 src/gui/pref/pg_accounts.py:627
+#: src/gui/pref/pg_privacy.py:269 src/gui/pref/pg_privacy.py:544
+#: src/gui/pref/pg_privacy.py:718 src/gui/pref/pg_privacy.py:720
+#: src/gui/status.py:740 src/gui/widgetlist.py:56
+#: src/plugins/twitter/twitter_gui.py:1947
+msgid "Edit"
+msgstr ""
+
+#: src/gui/accountslist.py:128 src/gui/accountslist.py:309
+#: src/gui/accountslist.py:406 src/gui/anylists.py:308 src/gui/status.py:728
+#: src/gui/uberwidgets/connectionlist.py:455 src/gui/widgetlist.py:42
+#: src/plugins/twitter/twitter_gui.py:1382
+msgid "&Edit"
+msgstr ""
+
+#: src/gui/accountslist.py:129 src/gui/accountslist.py:310
+#: src/gui/accountslist.py:407 src/gui/anylists.py:309
+#: src/gui/filetransfer/filetransferlist.py:476 src/gui/status.py:729
+msgid "&Remove"
+msgstr ""
+
+#: src/gui/accountslist.py:241
+#: src/plugins/digsby_service_editor/service_editor.py:211
+#: src/plugins/provider_jabber/jabber_gui.py:85
+msgid "Are you sure you want to delete account \"{name}\"?"
+msgstr ""
+
+#: src/gui/accountslist.py:242
+#: src/plugins/digsby_service_editor/service_editor.py:212
+#: src/plugins/provider_jabber/jabber_gui.py:86
+msgid "Delete Account"
+msgstr ""
+
+#: src/gui/accountslist.py:340
+msgid "Are you sure you want to delete social network account \"{name}\"?"
+msgstr ""
+
+#: src/gui/accountslist.py:341
+msgid "Delete Social Network Account"
+msgstr ""
+
+#: src/gui/accountslist.py:440
+msgid "Are you sure you want to delete email account \"{account_name}\"?"
+msgstr ""
+
+#: src/gui/accountslist.py:441
+msgid "Delete Email Account"
+msgstr ""
+
+#: src/gui/accountwizard.py:31
+msgid "Digsby Setup Wizard"
+msgstr ""
+
+#: src/gui/accountwizard.py:40
+msgid "Welcome to Digsby!"
+msgstr ""
+
+#: src/gui/accountwizard.py:116
+msgid "Quick Access to Newsfeeds"
+msgstr ""
+
+#: src/gui/accountwizard.py:117
+msgid ""
+"\n"
+"You can access social network and email newsfeeds by clicking their icons in the tray.\n"
+"\n"
+"Double click to update your status (social networks) or launch your inbox (email accounts).\n"
+" \n"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:200 src/gui/chatgui.py:15
+#: src/gui/imdialogs.py:68
+msgid "No Connections"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:214 src/gui/pref/prefcontrols.py:1050
+#: src/tests/testgui/uberdemos/UberComboXTDemo.py:34
+msgid "Add"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:228
+msgid "Contact Type:"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:232
+msgid "Screen Name:"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:240 src/gui/contactdialogs.py:164
+msgid "Alias:"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:244
+msgid "In Group:"
+msgstr ""
+
+#: src/gui/addcontactdialog.py:249
+msgid "On Accounts:"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:46 src/gui/app/menubar.py:38
+#: src/gui/buddylist/buddylistmenu.py:178
+#: src/gui/buddylist/buddylistmenu.py:307
+msgid "Status Panel"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:47 src/gui/buddylist/buddylistframe.py:595
+#: src/gui/buddylist/buddylistmenu.py:308 src/gui/pref/prefstrings.py:17
+#: src/main.py:504
+msgid "Buddy List"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:48 src/gui/buddylist/buddylistmenu.py:309
+msgid "Email Accounts"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:49 src/gui/buddylist/buddylistmenu.py:310
+msgid "Social Networks"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:50 src/gui/buddylist/buddylistmenu.py:311
+msgid "Connections"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:150 src/gui/app/menubar.py:11
+#: src/gui/buddylist/buddylistmenu.py:297
+msgid "&Digsby"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:152 src/gui/app/menubar.py:56
+#: src/gui/buddylist/buddylistmenu.py:243
+msgid "&Sort By"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:154 src/gui/app/menubar.py:32
+#: src/gui/buddylist/buddylistmenu.py:302
+msgid "&View"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:175 src/gui/app/menubar.py:24
+#: src/gui/buddylist/buddylistmenu.py:133
+#: src/gui/buddylist/buddylistmenu.py:150
+msgid "&Rename Selection"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:176 src/gui/buddylist/buddylistmenu.py:151
+msgid "&Delete Selection"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:180 src/gui/buddylist/buddylistmenu.py:155
+msgid "&Rename {name}"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:181 src/gui/buddylist/buddylistmenu.py:156
+msgid "&Delete {name}"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:312 src/gui/buddylist/buddylistmenu.py:172
+msgid "You can bring back the menubar by right clicking on the digsby icon in the task tray."
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:314 src/gui/buddylist/buddylistmenu.py:174
+msgid "Hide Menu Bar"
+msgstr ""
+
+#: src/gui/app/mainMenuEvents.py:330 src/gui/buddylist/buddylistmenu.py:322
+#: src/gui/visuallisteditor.py:286
+msgid "Arrange Panels"
+msgstr ""
+
+#: src/gui/app/menubar.py:14 src/gui/buddylist/buddylistmenu.py:109
+msgid "&New Status Message..."
+msgstr ""
+
+#: src/gui/app/menubar.py:15 src/gui/buddylist/buddylistmenu.py:110
+msgid "&Edit Status Messages..."
+msgstr ""
+
+#: src/gui/app/menubar.py:17 src/gui/buddylist/buddylistmenu.py:122
+msgid "My Status"
+msgstr ""
+
+#: src/gui/app/menubar.py:18 src/gui/buddylist/buddylistmenu.py:123
+msgid "My &Accounts..."
+msgstr ""
+
+#: src/gui/app/menubar.py:21
+msgid "&New IM..."
+msgstr ""
+
+#: src/gui/app/menubar.py:22
+msgid "Add &Contact..."
+msgstr ""
+
+#: src/gui/app/menubar.py:23
+msgid "Add &Group..."
+msgstr ""
+
+#: src/gui/app/menubar.py:25 src/gui/buddylist/buddylistmenu.py:134
+msgid "&Delete Selection..."
+msgstr ""
+
+#: src/gui/app/menubar.py:27
+msgid "Sign &Off Digsby"
+msgstr ""
+
+#: src/gui/app/menubar.py:29 src/gui/buddylist/buddylistmenu.py:138
+#: src/gui/trayicons.py:197
+msgid "E&xit Digsby"
+msgstr ""
+
+#: src/gui/app/menubar.py:33 src/gui/buddylist/buddylistmenu.py:165
+msgid "&Always On Top"
+msgstr ""
+
+#: src/gui/app/menubar.py:34
+msgid "Skins..."
+msgstr ""
+
+#: src/gui/app/menubar.py:37 src/gui/buddylist/buddylistmenu.py:168
+msgid "&Menu Bar"
+msgstr ""
+
+#: src/gui/app/menubar.py:39 src/gui/buddylist/buddylistmenu.py:179
+msgid "Arrange &Panels..."
+msgstr ""
+
+#: src/gui/app/menubar.py:41
+msgid "Show &Mobile Contacts"
+msgstr ""
+
+#: src/gui/app/menubar.py:42
+msgid "Show &Offline Contacts"
+msgstr ""
+
+#: src/gui/app/menubar.py:43
+msgid "&Group Offline Contacts"
+msgstr ""
+
+#: src/gui/app/menubar.py:44 src/gui/buddylist/buddylistmenu.py:185
+msgid "&Hide Offline Groups"
+msgstr ""
+
+#: src/gui/app/menubar.py:49 src/gui/buddylist/buddylistmenu.py:208
+msgid "&None"
+msgstr ""
+
+#: src/gui/app/menubar.py:50 src/gui/buddylist/buddylistmenu.py:209
+msgid "&Status"
+msgstr ""
+
+#: src/gui/app/menubar.py:51 src/gui/buddylist/buddylistmenu.py:210
+msgid "N&ame"
+msgstr ""
+
+#: src/gui/app/menubar.py:52 src/gui/buddylist/buddylistmenu.py:211
+msgid "&Log Size"
+msgstr ""
+
+#: src/gui/app/menubar.py:53 src/gui/buddylist/buddylistmenu.py:212
+msgid "Ser&vice"
+msgstr ""
+
+#: src/gui/app/menubar.py:54 src/gui/buddylist/buddylistmenu.py:222
+#: src/gui/buddylist/buddylistmenu.py:230
+msgid "Advan&ced..."
+msgstr ""
+
+#: src/gui/app/menubar.py:59 src/gui/buddylist/buddylistmenu.py:303
+msgid "&Tools"
+msgstr ""
+
+#: src/gui/app/menubar.py:60 src/gui/trayicons.py:192
+msgid "&Preferences..."
+msgstr ""
+
+#: src/gui/app/menubar.py:61
+msgid "&File Transfer History"
+msgstr ""
+
+#: src/gui/app/menubar.py:62
+msgid "&Chat History"
+msgstr ""
+
+#: src/gui/app/menubar.py:65 src/gui/buddylist/buddylistmenu.py:304
+msgid "&Help"
+msgstr ""
+
+#: src/gui/app/menubar.py:66 src/gui/buddylist/buddylistmenu.py:265
+msgid "&Documentation"
+msgstr ""
+
+#: src/gui/app/menubar.py:67 src/gui/buddylist/buddylistmenu.py:266
+msgid "Support &Forums"
+msgstr ""
+
+#: src/gui/app/menubar.py:69 src/gui/buddylist/buddylistmenu.py:268
+msgid "&Submit Bug Report"
+msgstr ""
+
+#: src/gui/app/menubar.py:70 src/gui/buddylist/buddylistmenu.py:269
+msgid "Su&ggest a Feature"
+msgstr ""
+
+#: src/gui/app/menubar.py:78
+msgid "&Invite Your Friends"
+msgstr ""
+
+#: src/gui/app/menubar.py:79 src/plugins/digsby_about/aboutdialog.py:132
+msgid "&About Digsby"
+msgstr ""
+
+#: src/gui/authorizationdialog.py:21
+msgid "Authorize Contact"
+msgstr ""
+
+#: src/gui/authorizationdialog.py:41
+msgid "Authorize and Add"
+msgstr ""
+
+#: src/gui/authorizationdialog.py:42
+msgid "Authorize"
+msgstr ""
+
+#: src/gui/authorizationdialog.py:43
+msgid "Deny"
+msgstr ""
+
+#: src/gui/browser/jsconsole.py:15
+msgid "Javascript Console"
+msgstr ""
+
+#: src/gui/browser/jsconsole.py:47 src/gui/browser/jsconsole.py:48
+msgid "Clear"
+msgstr ""
+
+#: src/gui/browser/webkit/webkiteditsource.py:41
+msgid "&Copy"
+msgstr ""
+
+#: src/gui/browser/webkit/webkiteditsource.py:72
+msgid "&Open in Browser"
+msgstr ""
+
+#: src/gui/browser/webkit/webkiteditsource.py:74
+msgid "Launches browser in pref \"debug.message_area.debug_browser\""
+msgstr ""
+
+#: src/gui/buddylist/accounttray.py:231
+msgid "{account.offline_reason} ({account.email_address})"
+msgstr ""
+
+#: src/gui/buddylist/accounttray.py:238
+msgid "{count} unread message ({account.email_address})"
+msgid_plural "{count} unread messages ({account.email_address})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/gui/buddylist/accounttray.py:250
+msgid "{account.offline_reason} ({account.name})"
+msgstr ""
+
+#: src/gui/buddylist/accounttray.py:252
+msgid "{count} new alert ({account.name})"
+msgid_plural "{count} new alerts ({account.name})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/gui/buddylist/buddylist.py:190
+msgid "BuddyList Popup"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:240 src/gui/pref/pg_accounts.py:789
+msgid "Add Accounts"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:253
+msgid "Need Help?"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:405
+msgid "&Add Group"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:658 src/gui/buddylist/buddylist.py:671
+#: src/gui/contactdialogs.py:279 src/gui/contactdialogs.py:306
+msgid "Merge Contacts"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:941
+msgid "This buddy can't accept file transfers"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:942 src/gui/capabilitiesbar.py:81
+#: src/gui/capabilitiesbar.py:351 src/gui/imwin/imwin_native.py:378
+#: src/gui/imwin/imwinmenu.py:14
+msgid "Send File"
+msgstr ""
+
+#: src/gui/buddylist/buddylist.py:1010
+msgid "&Add Contact"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:125
+msgid "&New IM...\tCtrl+N"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:127
+msgid "New Group C&hat...\tCtrl+Shift+N"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:131
+msgid "Add &Contact...\tCtrl+A"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:132
+msgid "Add &Group...\tCtrl+Shift+A"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:136
+#, python-format
+msgid "Sign &Off Digsby (%s)"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:166
+msgid "Skins...\tCtrl+S"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:181
+msgid "Show &Mobile Contacts\tCtrl+M"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:182
+msgid "Show &Offline Contacts\tCtrl+O"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:183
+msgid "&Group Offline Contacts\tCtrl+G"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:242
+msgid "&Group By"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:250
+msgid "&Preferences...\tCtrl+P"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:251
+msgid "Buddy List &Search\tCtrl+F"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:252
+msgid "&File Transfer History\tCtrl+J"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:258
+msgid "&Chat History\tCtrl+H"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:273
+msgid "Show Debug Console"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:276
+msgid "Su&pport Digsby"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:299 src/gui/pref/iconeditor.py:546
+msgid "&File"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:331
+msgid "&Sign Off"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:332
+msgid "&Sign On"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:335
+msgid "&Edit Account..."
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:405
+msgid "&Stealth Settings"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:411
+msgid "Selection"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:414
+msgid "Appear Online to {name}"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:416
+msgid "Appear Offline to {name}"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:418
+msgid "Appear Permanently Offline to {name}"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:423
+msgid "Learn More (URL)"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:463
+msgid "Chat with Resource"
+msgstr ""
+
+#: src/gui/buddylist/buddylistmenu.py:480
+msgid "&Remove from Merged Contact"
+msgstr ""
+
+#: src/gui/buddylist/renderers.py:831 src/gui/searchgui.py:122
+msgid "Options..."
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:41
+msgid "Use this tool to submit a diagnostic log right after you experience a bug"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:44
+#: src/gui/bugreporter/bugreportergui.py:80
+msgid "This diagnostic log file does not contain personal data such as the content of sent/received IMs, the content of emails, and the content of social network newsfeeds except where it directly pertains to an error."
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:51
+#: src/gui/bugreporter/bugreportergui.py:83
+msgid "Please describe the bug in as much detail as possible. Include information such as what you were doing when the bug occurred and exactly what goes wrong."
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:61
+msgid "Can you consistently reproduce this bug?"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:63
+msgid "&Yes"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:64
+msgid "&No"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:65
+msgid "&Don't Know"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:68
+msgid "If this is a visual bug, please attach a screenshot to this report."
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:69
+#: src/gui/bugreporter/bugreportergui.py:104
+#: src/gui/bugreporter/bugreportergui.py:141
+msgid "Take Screenshot"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:73
+msgid "Taking Screenshot in {secs}"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:139
+msgid "Remove Screenshot"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:199
+msgid "Submit Bug Report - Digsby"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:212
+msgid "Submit"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:225
+msgid "Please enter a description of the bug."
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:226
+msgid "Include as much information as possible about what went wrong and how to reproduce the issue."
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:230 src/gui/tracebackdialog.py:14
+msgid "Send Bug Report"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:255
+msgid "Submit Bug Report - Screenshot - Digsby"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:277
+msgid "Blank out non Digsby windows"
+msgstr ""
+
+#: src/gui/bugreporter/bugreportergui.py:284
+msgid "Is it OK to send this screenshot to digsby.com?"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:24
+msgid "Info"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:24
+msgid "View buddy information"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:25
+msgid "Instant message this buddy"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:25 src/gui/imdialogs.py:43
+msgid "IM"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:26
+msgid "Video"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:26
+msgid "Start an audio/video chat"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:27
+msgid "Files"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:27
+msgid "Send files to this buddy"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:29
+msgid "Send email"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:29 src/gui/vcard/vcardgui.py:138
+msgid "Email"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:30
+msgid "SMS"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:30
+msgid "Send SMS messages"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:107
+msgid "Group Chat"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:110
+msgid "View Past Chats"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:114
+msgid "Alert Me When..."
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:115
+msgid "Block"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:138
+msgid "To:"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:141
+msgid "From:"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:300
+msgid "Unblock {name}"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:302
+msgid "Block {name}"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:354 src/gui/imwin/imwin_native.py:379
+msgid "Transfer History"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:377
+msgid "Icons Only"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:378
+msgid "Text Only"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:379
+msgid "Icons Next to Text"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:380
+msgid "Icons Above Text"
+msgstr ""
+
+#: src/gui/capabilitiesbar.py:389
+msgid "Hide Actions Bar"
+msgstr ""
+
+#: src/gui/chatgui.py:90
+msgid "Join Chat Room"
+msgstr ""
+
+#: src/gui/chatgui.py:98 src/hub.py:155
+msgid "Join Chat"
+msgstr ""
+
+#: src/gui/chatgui.py:111
+msgid "Account:"
+msgstr ""
+
+#: src/gui/chatgui.py:117
+msgid "Invite:"
+msgstr ""
+
+#: src/gui/chatgui.py:155
+msgid "Server:"
+msgstr ""
+
+#: src/gui/chatgui.py:160
+msgid "Room Name:"
+msgstr ""
+
+#: src/gui/contactdialogs.py:37
+msgid "Would you like to send \"{files[0]}\" to {buddy_name:s}?"
+msgid_plural "Would you like to send {num_files:d} files to {buddy_name:s}?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/gui/contactdialogs.py:41
+msgid "Send Files"
+msgstr ""
+
+#: src/gui/contactdialogs.py:78
+msgid "Contact &Name:"
+msgstr ""
+
+#: src/gui/contactdialogs.py:81
+msgid "Accoun&t:"
+msgstr ""
+
+#: src/gui/contactdialogs.py:87
+msgid "&Add"
+msgstr ""
+
+#: src/gui/contactdialogs.py:158
+msgid "Would you like to merge these contacts?"
+msgstr ""
+
+#: src/gui/contactdialogs.py:161
+msgid "They will appear as one item on your buddy list."
+msgstr ""
+
+#: src/gui/contactdialogs.py:182
+msgid "Drag and drop to rearrange:"
+msgstr ""
+
+#: src/gui/filetransfer/filetransferlist.py:234
+#: src/gui/filetransfer/filetransferlist.py:243
+msgid "File not found"
+msgstr ""
+
+#: src/gui/filetransfer/filetransferlist.py:461
+#: src/gui/filetransfer/filetransferlist.py:599 src/gui/pref/pg_files.py:11
+#: src/gui/pref/prefstrings.py:19
+msgid "File Transfers"
+msgstr ""
+
+#: src/gui/filetransfer/filetransferlist.py:474
+msgid "Open &Containing Folder"
+msgstr ""
+
+#: src/gui/filetransfer/filetransferlist.py:542
+msgid "Clean Up"
+msgstr ""
+
+#: src/gui/filetransfer/filetransferlist.py:642
+msgid "file"
+msgid_plural "files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/gui/helpdigsby.py:4
+msgid "Keep Digsby Free"
+msgstr ""
+
+#: src/gui/helpdigsby.py:5
+msgid "Digsby will use your computer's free time using it to conduct both free and paid research."
+msgstr ""
+
+#: src/gui/helpdigsby.py:14 src/gui/pref/pg_privacy.py:342
+#: src/gui/pref/pg_research.py:129
+msgid "Options"
+msgstr ""
+
+#: src/gui/helpdigsby.py:15 src/gui/imagedialog.py:11
+msgid "OK"
+msgstr ""
+
+#: src/gui/imagedialog.py:71
+msgid "Send Image"
+msgstr ""
+
+#: src/gui/imagedialog.py:72
+msgid "&Send Image"
+msgstr ""
+
+#: src/gui/imagedialog.py:73
+msgid "&Don't Send"
+msgstr ""
+
+#: src/gui/imdialogs.py:19
+msgid "New IM"
+msgstr ""
+
+#: src/gui/imdialogs.py:30
+msgid "To"
+msgstr ""
+
+#: src/gui/imdialogs.py:36
+msgid "From"
+msgstr ""
+
+#: src/gui/imwin/imhub.py:483
+msgid "Group Chat ({chat.chat_member_count:d})"
+msgstr ""
+
+#: src/gui/imwin/imhub.py:484
+msgid "{alias:s}: {message:s}"
+msgstr ""
+
+#: src/gui/imwin/imtabs.py:57
+msgid "Close IM Window"
+msgstr ""
+
+#: src/gui/imwin/imtabs.py:58
+msgid "Warn me when I attempt to close multiple conversations"
+msgstr ""
+
+#: src/gui/imwin/imtabs.py:59
+msgid "You are about to close {num_tabs} conversations. Are you sure you want to continue?"
+msgstr ""
+
+#: src/gui/imwin/imtabs.py:60
+msgid "Close &tabs"
+msgstr ""
+
+#: src/gui/imwin/imtabs.py:757
+msgid "IM Windows"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:209
+msgid "Please add an email address for this buddy by clicking the \"To:\" box."
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:211
+msgid "Compose email to {name}"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:221
+msgid "Message Sent"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:230
+msgid "Failed to Send Email"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:234
+msgid "Sending..."
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:270
+msgid "Please add an SMS number first."
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:271 src/gui/imwin/imwin_ctrl.py:274
+msgid "Send SMS Message"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:273
+msgid "You are not signed in to any accounts which can send SMS messages."
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:288
+msgid "The error message received was:"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:292
+msgid "There was an error in sending your SMS message."
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:293
+msgid "Send SMS Message Error"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:299
+msgid "Only the first {max_length:d} characters of your message can be sent over SMS:"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:300
+msgid "Do you want to send this message now?"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:303
+msgid "Send SMS - Character Limit"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:461
+msgid "Reconnected"
+msgstr ""
+
+#: src/gui/imwin/imwin_ctrl.py:689
+msgid "You can only have one audio/video call at a time."
+msgstr ""
+
+#: src/gui/imwin/imwin_email.py:49
+msgid "Edit in {client}..."
+msgstr ""
+
+#: src/gui/imwin/imwin_email.py:95
+msgid "Subject:"
+msgstr ""
+
+#: src/gui/imwin/imwin_email.py:116
+#: src/gui/uberwidgets/formattedinput2/iminput.py:67
+msgid "Send"
+msgstr ""
+
+#: src/gui/imwin/imwin_gui.py:43
+msgid "Typing"
+msgstr ""
+
+#: src/gui/imwin/imwin_gui.py:44
+msgid "Entered Text"
+msgstr ""
+
+#: src/gui/imwin/imwin_gui.py:75
+msgid "Digsby Announcement"
+msgstr ""
+
+#: src/gui/imwin/imwin_gui.py:265
+#, python-format
+msgid "Would you like to send this image to %s?"
+msgstr ""
+
+#: src/gui/imwin/imwin_native.py:417 src/gui/uberwidgets/formattedinput.py:758
+#: src/gui/uberwidgets/formattedinput2/formattingbar.py:137
+msgid "Choose a background color"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:318
+msgid "{username} disconnected"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:321
+msgid "now sending from: {username}"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:342
+msgid "Add..."
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:584
+msgid "Please enter a valid SMS number (ie: 555-555-5555 or 5555555555)"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:585
+msgid "Invalid SMS Number"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:593
+msgid "That SMS number is already in this buddy's list."
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:594
+msgid "Add SMS Number"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:634
+msgid "Accounts..."
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:673
+msgid "Please enter a valid email address (ie: john123@digsby.com)"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:674
+msgid "Invalid Email Address"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:677
+msgid "That email is already registered with this buddy."
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:678
+msgid "Add Email Address"
+msgstr ""
+
+#: src/gui/imwin/imwin_tofrom.py:729
+msgid "Add Email Account"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:12
+msgid "Buddy Info"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:13
+msgid "Send IM"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:16
+msgid "Send Email"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:17
+msgid "Send SMS"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:40 src/gui/pastbrowser.py:414
+#: src/gui/toolbox/toolbox.py:1448 src/gui/uberwidgets/formattedinput.py:95
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:105
+#: src/plugins/twitter/twitter.py:1211 src/plugins/twitter/twitter_gui.py:1496
+msgid "Copy"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:41 src/gui/toolbox/toolbox.py:1451
+#: src/gui/uberwidgets/formattedinput.py:96
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:106
+msgid "Paste"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:44 src/gui/imwin/imwinmenu.py:123
+msgid "Show &Actions Bar"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:45 src/gui/imwin/imwinmenu.py:124
+msgid "Show &Formatting Bar"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:46
+msgid "Show Send Button"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:64 src/plugins/twitter/twitter_gui.py:50
+msgid "&Keep on Top"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:85
+msgid "Copy\tCtrl+C"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:94
+msgid "Copy &Link"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:96
+msgid "Paste\tCtrl+V"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:100
+msgid "Edit Source"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:103
+msgid "&Javascript Console"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:108 src/plugins/twitter/twitter_gui.py:1507
+msgid "&Increase Text Size\tCtrl+="
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:110 src/plugins/twitter/twitter_gui.py:1508
+msgid "&Decrease Text Size\tCtrl+-"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:113 src/plugins/twitter/twitter_gui.py:1510
+msgid "&Reset Text Size\tCtrl+0"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:116
+msgid "&Text Size"
+msgstr ""
+
+#: src/gui/imwin/imwinmenu.py:122
+msgid "Show &Room List"
+msgstr ""
+
+#: src/gui/imwin/roomlist.py:405
+msgid "Invite Buddy"
+msgstr ""
+
+#: src/gui/imwin/roomlist.py:524
+msgid "Do you want to invite {name} to this chat?"
+msgstr ""
+
+#: src/gui/imwin/roomlist.py:525
+msgid "Chat Invite"
+msgstr ""
+
+#: src/gui/imwin/styles/adiummsgstyles.py:193 src/gui/skin/skintree.py:427
+#: src/msn/MSNBuddy.py:563
+msgid "(none)"
+msgstr ""
+
+#: src/gui/infobox/emailpanels.py:596
+msgid "(No Subject)"
+msgstr ""
+
+#: src/gui/infobox/emailpanels.py:604
+msgid "(No Preview)"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:137
+msgid "No Profile"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:235
+msgid "Subscription:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:238 src/gui/infobox/htmlgeneration.py:395
+#: src/plugins/facebook/res/status.py.xml:3
+msgid "Status:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:339
+#: src/gui/pref/pg_text_conversations.py:191 src/yahoo/yahoobuddy.py:154
+msgid "Location:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:344
+msgid "IP Address:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:351
+msgid "Time on Page:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:374
+msgid "Online:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:381
+msgid "Idle:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:387
+msgid "Away:"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:396
+msgid "{status} + Idle"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:416 src/plugins/msim/res/content.tenjin:77
+msgid "Hide Profile"
+msgstr ""
+
+#: src/gui/infobox/htmlgeneration.py:416 src/plugins/msim/res/content.tenjin:79
+msgid "Show Profile"
+msgstr ""
+
+#: src/gui/infobox/infobox.py:1062
+#, python-format
+msgid "Unblock %s"
+msgstr ""
+
+#: src/gui/infobox/infobox.py:1064
+#, python-format
+msgid "Block %s"
+msgstr ""
+
+#: src/gui/infobox/infobox.py:1365
+msgid "Error generating content"
+msgstr ""
+
+#: src/gui/infobox/infobox.py:1564
+msgid "No additional information"
+msgstr ""
+
+#: src/gui/infobox/infobox.py:1792
+msgid "InfoBox"
+msgstr ""
+
+#: src/gui/input/inputmanager.py:391
+msgid "Key Debugger"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:51
+msgid "Chat with {name}"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:124
+msgid "Change IM Status to {status}"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:139
+msgid "Set your status on multiple networks"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:139 src/gui/social_status_dialog.py:830
+msgid "Set Global Status"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:140
+msgid "Open the New IM window"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:140
+msgid "New IM..."
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:141
+msgid "Open the Digsby Preferences window"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:141
+msgid "Preferences..."
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:150
+msgid "Close all windows and exit"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:150
+msgid "Exit Digsby"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:164
+msgid "Opens the Preferences Window where you can enable logging"
+msgstr ""
+
+#: src/gui/native/win/jumplist.py:164
+msgid "Enable Chat Logs"
+msgstr ""
+
+#: src/gui/notifications/notificationlist.py:68
+msgid "Sound"
+msgstr ""
+
+#: src/gui/notifications/notificationlist.py:69
+msgid "Popup"
+msgstr ""
+
+#: src/gui/pastbrowser.py:89
+msgid "Group Chats"
+msgstr ""
+
+#: src/gui/pastbrowser.py:301
+msgid "Find"
+msgstr ""
+
+#: src/gui/pastbrowser.py:304
+msgid "Next"
+msgstr ""
+
+#: src/gui/pastbrowser.py:305
+msgid "Prev"
+msgstr ""
+
+#: src/gui/pastbrowser.py:386 src/gui/status.py:374
+msgid "Account"
+msgstr ""
+
+#: src/gui/pastbrowser.py:392 src/gui/pastbrowser.py:470
+msgid "Buddy"
+msgstr ""
+
+#: src/gui/pastbrowser.py:402
+msgid "Date"
+msgstr ""
+
+#: src/gui/pastbrowser.py:449
+msgid "Conversation Log"
+msgstr ""
+
+#: src/gui/pastbrowser.py:466
+msgid "Chats"
+msgstr ""
+
+#: src/gui/pastbrowser.py:558
+msgid "{month}, {day}, {year}"
+msgstr ""
+
+#: src/gui/pastbrowser.py:561
+msgid "There are no chat logs for {specific_day_string}."
+msgstr ""
+
+#: src/gui/pastbrowser.py:563
+msgid "There are no chat logs for {specific_day_string} with {name}."
+msgstr ""
+
+#: src/gui/pastbrowser.py:664
+msgid "There is no chat history for {name} on {service} with {acct}."
+msgstr ""
+
+#: src/gui/pastbrowser.py:673
+msgid "Past Chat Browser"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:34
+msgid "Scree&n"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:35
+msgid "Capt&ure"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:48
+msgid "Set Buddy Icon"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:430
+msgid "Choose an icon"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:439
+msgid "Not a valid image:"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:442
+msgid "Invalid Image"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:547
+msgid "Cli&pboard"
+msgstr ""
+
+#: src/gui/pref/iconeditor.py:553 src/gui/protocols/jabbergui.py:289
+msgid "C&lear"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:617
+msgid "(auto login)"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:828
+msgid "My Accounts"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:832
+msgid "Account Options"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:863
+msgid "buddy list"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:864
+msgid "icon tray"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:865
+msgid "buddy list and icon tray"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:901
+msgid "Show email accounts in:"
+msgstr ""
+
+#: src/gui/pref/pg_accounts.py:902
+msgid "Show social networks in:"
+msgstr ""
+
+#: src/gui/pref/pg_advanced.py:14
+msgid "IM Window"
+msgstr ""
+
+#: src/gui/pref/pg_advanced.py:60 src/gui/pref/pg_advanced.py:94
+msgid "&Use Proxy Server"
+msgstr ""
+
+#: src/gui/pref/pg_advanced.py:68
+msgid "Host"
+msgstr ""
+
+#: src/gui/pref/pg_advanced.py:69
+msgid "Port"
+msgstr ""
+
+#: src/gui/pref/pg_advanced.py:94
+msgid "&Use Global Settings"
+msgstr ""
+
+#: src/gui/pref/pg_advanced.py:130
+msgid "&Protocol:"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:39
+msgid "Application Skin"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:41
+msgid "Conversation Theme"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:44
+msgid "Conversation Preview"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:115
+msgid "Skin:"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:115 src/gui/pref/pg_appearance.py:203
+msgid "Variant:"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:187
+msgid "Show header"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:192
+msgid "Show message fonts"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:194
+msgid "Show message colors"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:201
+msgid "Theme:"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:270
+msgid "Fonts:"
+msgstr ""
+
+#: src/gui/pref/pg_appearance.py:275
+msgid "Colors:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:27
+msgid "Sorting and Groups"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:46
+msgid "Autohide when not in &focus"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:51
+msgid "Automatically &dock when near edge of screen"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:57 src/gui/pref/pg_text_conversations.py:42
+msgid "&Keep on top of other applications"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:58
+msgid "Show in taskbar"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:64 src/gui/pref/pg_text_conversations.py:61
+msgid "Window Options"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:81
+msgid "Contact Layout"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:104 src/gui/pref/pg_contact_list.py:110
+msgid "Basic"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:104 src/gui/pref/pg_contact_list.py:110
+#: src/plugins/digsby_service_editor/service_editor.py:58
+msgid "Advanced"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:243
+msgid "Group by:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:244
+msgid "Sort by:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:245
+msgid "Then by:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:353 src/gui/pref/pg_sandbox.py:79
+msgid "Far Left"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:354 src/gui/pref/pg_sandbox.py:80
+msgid "Left"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:355 src/gui/pref/pg_sandbox.py:81
+msgid "Badge (Lower Left)"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:356 src/gui/pref/pg_sandbox.py:82
+msgid "Badge (Lower Right)"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:357 src/gui/pref/pg_sandbox.py:83
+msgid "Right"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:358 src/gui/pref/pg_sandbox.py:84
+msgid "Far Right"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:377
+msgid "Show service icon on:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:379
+msgid "Show status icon on:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:381
+msgid "Show buddy icon on the:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:390
+msgid "Buddy icon size:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:396
+msgid "Buddy padding:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:401
+msgid "Contact name:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:403
+msgid "&Show extra info:"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:406
+msgid "Idle Time"
+msgstr ""
+
+#: src/gui/pref/pg_contact_list.py:407
+msgid "Idle Time + Status"
+msgstr ""
+
+#: src/gui/pref/pg_files.py:13
+msgid "Save &files to:"
+msgstr ""
+
+#: src/gui/pref/pg_files.py:15
+msgid "Create s&ubfolders for each IM account"
+msgstr ""
+
+#: src/gui/pref/pg_files.py:16
+msgid "&Auto-accept all file transfers from contacts on my contact list"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:108
+msgid "&Launch Digsby when this computer starts"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:125
+msgid "&Automatically download software updates"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:126
+msgid "&If connection to IM service is lost, automatically attempt to reconnect"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:127
+msgid "Show trending news articles in social network feeds (powered by OneRiot)"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:131
+msgid "General Options"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:143
+msgid "Profile (AIM Only)"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:147
+msgid "Buddy Icon"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:163
+msgid "Language"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:216
+msgid "Change"
+msgstr ""
+
+#: src/gui/pref/pg_general_profile.py:252
+msgid "&Promote Digsby in my AIM profile"
+msgstr ""
+
+#: src/gui/pref/pg_helpdigsby.py:11
+msgid "&Allow Digsby to conduct research during idle itme"
+msgstr ""
+
+#: src/gui/pref/pg_helpdigsby.py:15
+msgid "Help Digsby"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:23
+msgid "bottom right corner"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:24
+msgid "bottom left corner"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:25
+msgid "top right corner"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:26
+msgid "top left corner"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:38
+msgid "Enable &pop-up notifications in the {location_dropdown} on monitor {monitor_dropdown}"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:69
+msgid "Enable &sounds"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:70 src/gui/pref/prefstrings.py:22
+#: src/plugins/facebook/fbgui.py:49
+msgid "Notifications"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:77 src/plugins/myspace/msgui.py:49
+msgid "Events"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:79
+msgid "Restore Defaults"
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:93
+msgid ""
+"Are you sure you want to restore the default notification set?\n"
+"\n"
+"All of your notification settings will be lost."
+msgstr ""
+
+#: src/gui/pref/pg_notifications.py:96
+msgid "Restore Default Notifications"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:17
+msgid "&Let others know that I am typing"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:18
+msgid "&Automatically sign me into websites (e.g., Yahoo! Mail)"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:21
+msgid "Global Privacy Options"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:144
+msgid "You must be signed in to modify privacy settings."
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:145
+#, python-format
+msgid "Sign in with \"%s\""
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:234
+msgid "{title} ({username})"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:295 src/gui/pref/pg_privacy.py:518
+msgid "Allow all users to contact me"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:296 src/gui/pref/pg_privacy.py:519
+#: src/gui/pref/pg_privacy.py:884
+msgid "Allow only users on my contact list"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:297 src/gui/pref/pg_privacy.py:675
+msgid "Allow only users on 'Allow List'"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:298
+msgid "Block all users"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:299 src/gui/pref/pg_privacy.py:676
+#: src/gui/pref/pg_privacy.py:885
+msgid "Block only users on 'Block List'"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:301
+msgid "Only my screen name"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:302
+msgid "Only that I have an account"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:303
+msgid "Nothing about me"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:330 src/gui/pref/pg_privacy.py:556
+#: src/gui/pref/pg_privacy.py:727 src/gui/pref/pg_privacy.py:900
+#: src/gui/pref/pg_privacy.py:948
+msgid "Permissions"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:337
+msgid "Allow users who know my email address to find:"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:411 src/gui/pref/pg_privacy.py:470
+#: src/gui/pref/pg_privacy.py:542 src/gui/pref/pg_privacy.py:643
+#: src/gui/pref/pg_privacy.py:719 src/gui/pref/pg_privacy.py:840
+msgid "Block List"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:494 src/gui/pref/pg_privacy.py:542
+msgid "Visible List"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:498 src/gui/pref/pg_privacy.py:542
+msgid "Invisible List"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:530 src/gui/pref/pg_privacy.py:934
+msgid "Allow only users on my buddy list to contact me"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:531
+msgid "Require authorization before users can add me to their contact list"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:532
+msgid "Block authorization requests with URLs in them"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:533
+msgid "Allow others to view my online status from the web"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:658 src/gui/pref/pg_privacy.py:717
+msgid "Allow List"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:674 src/gui/pref/pg_privacy.py:710
+msgid "Allow unknown users to contact me"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:862
+msgid "Could not block {item:s}"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:870
+msgid "{item:s} is on your buddylist. Do you want to remove {item:s} from your buddylist and block the user?"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:872
+msgid "Confirm Block and Remove"
+msgstr ""
+
+#: src/gui/pref/pg_privacy.py:939
+msgid "Hide operating system from other users"
+msgstr ""
+
+#: src/gui/pref/pg_research.py:12
+msgid ""
+"Help Digsby stay free for all users. Allow Digsby to use part of your computer's idle processing power to contribute to commercial grid computing projects by enabling the Research Module.\n"
+"<p>\n"
+"This module turns on after your computer has been completely idle (no mouse or keyboard movement) for a period of time. It turns off the instant you move your mouse or press a key, so it has no effect on your PC's performance when you're using it. The research module also runs as a low priority, sandboxed Java process, so that other tasks your computer is doing will get done first, and so that it is completely secure.\n"
+"<p>\n"
+"For more details, see the <a href=\"http://wiki.digsby.com/doku.php?id=cpuusage\">Research Module FAQ</a>.\n"
+msgstr ""
+
+#: src/gui/pref/pg_research.py:98 src/gui/pref/prefstrings.py:25
+msgid "Research Module"
+msgstr ""
+
+#: src/gui/pref/pg_research.py:105
+msgid "Allow Digsby to use CPU time to conduct research after %2(research.idle_time_min)d minutes of idle time"
+msgstr ""
+
+#: src/gui/pref/pg_research.py:111
+msgid "Maximum CPU Usage:"
+msgstr ""
+
+#: src/gui/pref/pg_research.py:116 src/gui/pref/pg_research.py:123
+msgid "{val}%"
+msgstr ""
+
+#: src/gui/pref/pg_research.py:118
+msgid "Maximum Bandwidth Usage:"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:19
+msgid "Status Options"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:21
+msgid "Promote Digsby in my IM status messages"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:24
+msgid "Help Digsby by linking album when sharing \"Listening to...\" as status"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:26
+msgid "Let others know that I am idle after %2(messaging.idle_after)d minutes of inactivity"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:33
+msgid "Autorespond with status message"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:34
+msgid "Disable sounds"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:35
+msgid "Disable pop-up notifications"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:38
+msgid "When away..."
+msgstr ""
+
+#: src/gui/pref/pg_status.py:45
+msgid "&Hide new conversation windows"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:46
+msgid "&Disable sounds"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:47
+msgid "Disable &pop-up notifications"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:50
+msgid "When running full screen applications..."
+msgstr ""
+
+#: src/gui/pref/pg_status.py:60
+msgid "Status Messages"
+msgstr ""
+
+#: src/gui/pref/pg_status.py:60 src/gui/status.py:607
+msgid "New Status Message"
+msgstr ""
+
+#: src/gui/pref/pg_supportdigsby.py:12
+#: src/gui/supportdigsby/supportdialog.py:120
+msgid "Support Digsby"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:21
+msgid "automatically take focus"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:22
+msgid "start minimized in taskbar"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:23
+msgid "start hidden (tray icon blinks)"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:27
+msgid "bottom"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:28
+msgid "top"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:29
+msgid "left"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:30
+msgid "right"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:46
+msgid "Group multiple conversations into one tabbed window"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:52
+msgid "New conversation windows: "
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:54
+msgid "buddy icon"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:55
+msgid "service icon"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:56
+msgid "status icon"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:57
+msgid "Identify conversations with the contact's: "
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:64
+msgid "Conversation Options"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:66
+msgid "Don't show flash ads"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:70
+msgid ""
+"Help keep Digsby free by showing an\n"
+"advertisement in the IM window."
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:71
+msgid "Support Digsby development with an ad"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:73
+msgid "Location of ad in IM window: "
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:77
+msgid "Ad Options"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:86
+msgid "Text Formatting"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:106
+msgid "Your messages will look like this."
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:157
+msgid "Show last %2(conversation_window.num_lines)d lines in IM window"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:160
+msgid "&Display timestamp:"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:168
+msgid "Spell check:"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:187
+msgid "Log IM conversations to hard drive"
+msgstr ""
+
+#: src/gui/pref/pg_text_conversations.py:219
+msgid "Show &emoticons:"
+msgstr ""
+
+#: src/gui/pref/pg_widgets.py:41
+msgid "Widget Preview"
+msgstr ""
+
+#: src/gui/pref/pg_widgets.py:49
+msgid "&Copy To Clipboard"
+msgstr ""
+
+#: src/gui/pref/pg_widgets.py:88
+msgid "New Widget"
+msgstr ""
+
+#: src/gui/pref/pg_widgets.py:88 src/gui/pref/prefstrings.py:23
+msgid "Widgets"
+msgstr ""
+
+#: src/gui/pref/pg_widgets.py:90
+msgid "Embed Tag"
+msgstr ""
+
+#: src/gui/pref/prefcontrols.py:584
+msgid "Custom ({prefval})"
+msgstr ""
+
+#: src/gui/pref/prefcontrols.py:643
+msgid "Choose a folder"
+msgstr ""
+
+#: src/gui/pref/prefcontrols.py:841
+msgid "{val}px"
+msgstr ""
+
+#: src/gui/pref/prefsdialog.py:170
+msgid "Digsby Preferences"
+msgstr ""
+
+#: src/gui/pref/prefsdialog.py:263
+msgid "&Done"
+msgstr ""
+
+#: src/gui/pref/prefsdialog.py:289
+msgid "Search"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:14
+msgid "Accounts"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:15
+msgid "General & Profile"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:16
+msgid "Skins"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:18
+msgid "Conversations"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:21 src/plugins/msim/myspacegui/privacy.py:88
+msgid "Privacy"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:26 src/gui/proxydialog.py:222
+msgid "Connection Settings"
+msgstr ""
+
+#: src/gui/pref/prefstrings.py:42
+msgid "Developer"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:7
+msgid "Enter a new password for {username}:"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:8 src/gui/protocols/jabbergui.py:139
+msgid "Change Password"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:22
+msgid "Are you sure you want to delete contact {name}?"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:23
+msgid "Delete Contact"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:36
+msgid "WARNING!"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:37
+msgid "All your contacts in this group will be deleted locally AND on the server."
+msgstr ""
+
+#: src/gui/protocols/__init__.py:38
+msgid "Are you sure you want to remove {groupname}?"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:42
+msgid "Delete Group"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:47
+msgid "Please enter a group name:"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:47
+msgid "Add Group"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:60
+#, python-format
+msgid "Are you sure you want to block %s?"
+msgstr ""
+
+#: src/gui/protocols/__init__.py:61
+msgid "Block Buddy"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:18
+#, python-format
+msgid "Enter a priority for %s:"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:19
+msgid "Set Jabber Priority"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:105
+msgid "Incorrect Password"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:111
+msgid "Failed to delete account from the server."
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:112
+msgid "Delete Account - Failed"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:150
+msgid "Old Password: "
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:152
+msgid "New Password: "
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:154
+msgid "Confirm New Password: "
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:217
+msgid "Incorrect Old Password"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:219
+msgid "Passwords do not match"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:219
+msgid "Paswords do not match"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:280
+msgid "&Enabled"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:283
+msgid "&Scroll Lock"
+msgstr ""
+
+#: src/gui/protocols/jabbergui.py:290
+msgid "&Close"
+msgstr ""
+
+#: src/gui/protocols/oscargui.py:10
+msgid "Enter a formatted screenname for {username}"
+msgstr ""
+
+#: src/gui/protocols/oscargui.py:11
+msgid "The new screenname must be the same as the old one, except for changes in capitalization and spacing."
+msgstr ""
+
+#: src/gui/protocols/oscargui.py:14
+msgid "Edit Formatted Screenname"
+msgstr ""
+
+#: src/gui/protocols/oscargui.py:26
+msgid "Enter an email address:"
+msgstr ""
+
+#: src/gui/protocols/oscargui.py:27
+msgid "Edit Account Email: {username}"
+msgstr ""
+
+#: src/gui/proxydialog.py:40
+msgid "&No proxy"
+msgstr ""
+
+#: src/gui/proxydialog.py:41
+msgid "Use &default system settings"
+msgstr ""
+
+#: src/gui/proxydialog.py:42
+msgid "&Specify proxy settings"
+msgstr ""
+
+#: src/gui/proxydialog.py:59
+msgid "&Host:"
+msgstr ""
+
+#: src/gui/proxydialog.py:66
+msgid "P&ort:"
+msgstr ""
+
+#: src/gui/proxydialog.py:96
+msgid "&Username:"
+msgstr ""
+
+#: src/gui/proxydialog.py:117
+msgid "Proxy Server"
+msgstr ""
+
+#: src/gui/proxydialog.py:118
+msgid "Protocol"
+msgstr ""
+
+#: src/gui/proxydialog.py:121
+msgid "How to Connect"
+msgstr ""
+
+#: src/gui/proxydialog.py:123
+msgid "Authentication"
+msgstr ""
+
+#: src/gui/proxydialog.py:232
+msgid "&OK"
+msgstr ""
+
+#: src/gui/searchgui.py:43
+msgid "Arrange Searches"
+msgstr ""
+
+#: src/gui/searchgui.py:89
+msgid "Search {search_engine_name:s} for \"{search_string:s}\""
+msgstr ""
+
+#: src/gui/searchgui.py:132
+msgid "Web Search"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:103
+msgid "Set IM Status"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:380
+msgid "Choose Accounts:"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:438
+msgid "Insert Link"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:451
+msgid "Website URL:"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:461
+msgid "Insert &Link"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:507
+msgid "Share Image"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:582
+msgid "Uploading Image..."
+msgstr ""
+
+#: src/gui/social_status_dialog.py:777
+msgid "Errors Encountered:"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:882
+#: src/plugins/msim/myspacegui/editstatus.py:6
+msgid "Your Status:"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:891
+msgid "&Update Status"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:1081
+#, python-format
+msgid "Network error (%r)"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:1083
+#, python-format
+msgid "Network error (%s)"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:1085
+msgid "Network error ({error!r} - {error!s})"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:1087 src/gui/social_status_dialog.py:1090
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:1092
+#, python-format
+msgid "Unknown error (%s)"
+msgstr ""
+
+#: src/gui/social_status_dialog.py:1094
+msgid "Unknown error"
+msgstr ""
+
+#: src/gui/spellchecktextctrlmixin.py:550
+msgid "Add to Dictionary"
+msgstr ""
+
+#. Translators: Separator when listing multiple accounts, ex: MSN/ICQ only
+#: src/gui/status.py:118
+msgid "/"
+msgstr ""
+
+#: src/gui/status.py:119
+msgid "{status} ({account_types} Only)"
+msgstr ""
+
+#: src/gui/status.py:374
+msgid "Message"
+msgstr ""
+
+#: src/gui/status.py:496
+msgid "&Title:"
+msgstr ""
+
+#: src/gui/status.py:501
+msgid "&State:"
+msgstr ""
+
+#: src/gui/status.py:509
+msgid "&Status message:"
+msgstr ""
+
+#: src/gui/status.py:535
+msgid "&Use a different status for some accounts"
+msgstr ""
+
+#: src/gui/status.py:539
+msgid "&Set"
+msgstr ""
+
+#: src/gui/status.py:548
+msgid "Save for &later"
+msgstr ""
+
+#: src/gui/status.py:608
+msgid "New Status for {name}"
+msgstr ""
+
+#: src/gui/status.py:633
+msgid "Edit Status Message"
+msgstr ""
+
+#: src/gui/status.py:636
+msgid "Edit Status for {account}"
+msgstr ""
+
+#: src/gui/status.py:793
+msgid "Are you sure you want to delete status message \"{title}\"?"
+msgstr ""
+
+#: src/gui/status.py:794
+msgid "Delete Status Message"
+msgstr ""
+
+#: src/gui/statuscombo.py:87 src/gui/statuscombo.py:165
+#: src/gui/statuscombo.py:529 src/plugins/twitter/twitter_gui.py:615
+msgid "Global Status"
+msgstr ""
+
+#: src/gui/statuscombo.py:105 src/gui/statuscombo.py:540
+msgid "Promote Digsby!"
+msgstr ""
+
+#: src/gui/statuscombo.py:125 src/gui/statuscombo.py:160
+#: src/gui/statuscombo.py:526
+msgid "Custom..."
+msgstr ""
+
+#: src/gui/statuscombo.py:639
+msgid "Press 'Ctrl+F' to Search List"
+msgstr ""
+
+#: src/gui/supportdigsby/supportdialog.py:96
+#: src/gui/supportdigsby/supportoptions.py:71
+msgid "Are you sure?"
+msgstr ""
+
+#: src/gui/supportdigsby/supportdialog.py:97
+msgid "Are you sure you want do this?"
+msgstr ""
+
+#: src/gui/supportdigsby/supportdialog.py:111
+msgid "Thank you for supporting Digsby."
+msgstr ""
+
+#: src/gui/supportdigsby/supportdialog.py:111
+msgid "Thank you!"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:22
+#: src/gui/supportdigsby/supportoptions.py:32
+msgid "Set"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:23
+msgid "Make Google Powered Digsby Search your homepage"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:33
+msgid "Make Google Powered Digsby Search your default search engine"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:42
+#: src/gui/supportdigsby/supportoptions.py:47
+msgid "Invite"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:43
+msgid "Invite your friends via Email"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:48
+msgid "Invite your friends via Facebook"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:52
+#: src/gui/supportdigsby/supportoptions.py:57
+msgid "Join Group"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:53
+msgid "Become a fan on Facebook"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:58
+msgid "Become a fan on LinkedIn"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:62
+msgid "Follow"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:63
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:67
+msgid "Help Digsby conduct research"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:70
+msgid "Helping us conduct research keeps Digsby free and ad-free. Are you sure you want to disable this option?"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:83
+msgid "Disable"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:85
+msgid "Enable"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:94
+msgid "Subscribe"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:95
+msgid "Subscribe to our Blog"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:99
+msgid "Create"
+msgstr ""
+
+#: src/gui/supportdigsby/supportoptions.py:100
+msgid "Create a Digsby widget for your blog or website"
+msgstr ""
+
+#: src/gui/toast/toasthelp.py:25
+msgid "TIP: Popup Notifications"
+msgstr ""
+
+#: src/gui/toast/toasthelp.py:27
+msgid "You can right click popups to close them right away instead of waiting for them to fade out."
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:427
+msgid "Confirm"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1225 src/gui/toolbox/toolbox.py:1252
+msgid "Right To Left"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1336
+msgid "Use Long URL"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1346
+msgid "Shorten URL"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1437
+msgid "Undo"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1440
+msgid "Redo"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1445
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:104
+msgid "Cut"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1455
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:108
+msgid "Select All"
+msgstr ""
+
+#: src/gui/toolbox/toolbox.py:1461
+msgid "Select an image file"
+msgstr ""
+
+#: src/gui/trayicons.py:172
+msgid "Set &Global Status..."
+msgstr ""
+
+#: src/gui/trayicons.py:175
+msgid "Set IM &Status"
+msgstr ""
+
+#: src/gui/trayicons.py:179 src/gui/trayicons.py:185
+msgid "Show &Buddy List"
+msgstr ""
+
+#: src/gui/trayicons.py:185
+msgid "Hide &Buddy List"
+msgstr ""
+
+#: src/gui/trayicons.py:190
+msgid "Show Menu Bar"
+msgstr ""
+
+#: src/gui/trayicons.py:214
+msgid "Digsby"
+msgstr ""
+
+#: src/gui/trayicons.py:225
+msgid "{msgs} message"
+msgid_plural "{msgs} messages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/gui/trayicons.py:230
+msgid "{alias} ({service}) - {message}"
+msgstr ""
+
+#: src/gui/trayicons.py:298
+msgid "Show All"
+msgstr ""
+
+#: src/gui/uberwidgets/formattedinput.py:423
+#: src/gui/uberwidgets/formattedinput2/formattingbar.py:103
+msgid "Hide Formatting Bar"
+msgstr ""
+
+#: src/gui/uberwidgets/formattedinput.py:726
+#: src/gui/uberwidgets/formattedinput2/formattedinput.py:206
+msgid "Set Font..."
+msgstr ""
+
+#: src/gui/uberwidgets/formattedinput.py:739
+#: src/gui/uberwidgets/formattedinput2/formattingbar.py:133
+msgid "Choose a foreground color"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:19
+msgid "Unit"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:48
+msgid "Last Name"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:49
+msgid "First Name"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:50
+msgid "Middle Name"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:51
+msgid "Prefix"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:52
+msgid "Suffix"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:108
+msgid "Number"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:173
+msgid "Street"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:176
+msgid "City"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:177
+msgid "State"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:178
+msgid "Postal Code"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:179
+msgid "Country"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:263
+msgid "vCard Editor for {username}"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:263
+msgid "vCard Viewer"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:274
+msgid "Retreive"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:334
+msgid "General"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:337
+msgid "Full Name"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:338 src/plugins/msim/res/content.tenjin:22
+msgid "Nickname"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:339 src/oscar/OscarBuddies.py:292
+msgid "Birthday"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:341
+msgid "Homepage"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:358
+msgid "Work"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:363 src/oscar/OscarBuddies.py:340
+msgid "Position"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:364
+msgid "Role"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:377 src/plugins/msim/res/content.tenjin:26
+msgid "Location"
+msgstr ""
+
+#: src/gui/vcard/vcardgui.py:390
+msgid "About"
+msgstr ""
+
+#: src/gui/video/webvideo.py:19
+msgid "{name} has invited you to an audio/video chat."
+msgstr ""
+
+#: src/gui/video/webvideo.py:20 src/hub.py:122
+msgid "Would you like to join?"
+msgstr ""
+
+#: src/gui/video/webvideo.py:24
+msgid "Audio/Video Chat Invitation"
+msgstr ""
+
+#: src/gui/visuallisteditor.py:114
+msgid "(Unnamed Panel)"
+msgstr ""
+
+#: src/gui/visuallisteditor.py:298
+msgid "Drag and drop to reorder"
+msgstr ""
+
+#: src/gui/visuallisteditor.py:308
+msgid "Done"
+msgstr ""
+
+#: src/gui/widgetlist.py:124
+msgid "Are you sure you want to delete widget \"{widgetname}\"?"
+msgstr ""
+
+#: src/gui/widgetlist.py:125
+msgid "Delete Widget"
+msgstr ""
+
+#: src/hub.py:107
+msgid "{protocolname} DirectIM"
+msgstr ""
+
+#: src/hub.py:108
+msgid "{name} wants to directly connect with you. (Your IP address will be revealed.)"
+msgstr ""
+
+#: src/hub.py:127
+msgid "{name} has invited you to a group chat."
+msgstr ""
+
+#: src/hub.py:130
+msgid "You have been invited to a group chat."
+msgstr ""
+
+#: src/hub.py:140
+msgid "Join"
+msgstr ""
+
+#: src/hub.py:141
+msgid "Ignore"
+msgstr ""
+
+#: src/hub.py:151
+msgid "{protocol_name:s} Invite"
+msgstr ""
+
+#: src/hub.py:157
+msgid "Ignore Invite"
+msgstr ""
+
+#: src/hub.py:176
+msgid "Allow {buddy} to add you ({you}) as a buddy on {protocol}?"
+msgstr ""
+
+#: src/imaccount.py:515 src/imaccount.py:522
+msgid "Connect"
+msgstr ""
+
+#: src/imaccount.py:523
+msgid "Disconnect"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:176 src/oscar/OscarBuddies.py:280
+msgid "Full Name:"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:187
+msgid "Birthday:"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:187
+msgid "Phone:"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:187
+#: src/plugins/digsby_service_editor/default_ui.py:143
+msgid "Email Address:"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:196
+msgid "Website"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:203 src/oscar/OscarBuddies.py:314
+msgid "Additional Information:"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:210
+msgid "{street} {extra_adress} {locality} {region} {postal_code} {country}"
+msgstr ""
+
+#: src/jabber/JabberBuddy.py:256 src/oscar/OscarBuddies.py:320
+msgid "Home Address:"
+msgstr ""
+
+#: src/jabber/JabberChat.py:298
+msgid "You have been invited to {roomname}"
+msgstr ""
+
+#: src/jabber/JabberConversation.py:133
+msgid "{name} has left the conversation."
+msgstr ""
+
+#: src/jabber/JabberResource.py:15 src/oscar/OscarBuddies.py:45
+msgid "Free for Chat"
+msgstr ""
+
+#: src/main.py:379
+msgid "Your digsby password has been changed. Please log back in with the new password."
+msgstr ""
+
+#: src/main.py:381
+msgid "Password Changed"
+msgstr ""
+
+#: src/main.py:562
+msgid "Please login first."
+msgstr ""
+
+#: src/main.py:562
+msgid "Advanced Preferences"
+msgstr ""
+
+#: src/main.py:816
+msgid "Global Shortcuts"
+msgstr ""
+
+#: src/main.py:820
+msgid "Debug Global Shortcuts"
+msgstr ""
+
+#: src/main.py:823
+msgid "Text Controls"
+msgstr ""
+
+#: src/main.py:1345
+msgid "There was an error submitting your crash report."
+msgstr ""
+
+#: src/main.py:1358
+msgid "Crash report submitted successfully."
+msgstr ""
+
+#: src/main.py:1365
+msgid "Would you like to restart Digsby now?"
+msgstr ""
+
+#: src/main.py:1367
+msgid "Crash Report"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:284 src/oscar/OscarBuddies.py:242
+msgid "Mobile"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:488 src/plugins/digsby_service_editor/default_ui.py:207
+msgid "Display Name:"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:559
+msgid "Administrators:"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:561
+msgid "Assistant Administrators:"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:563
+msgid "Members:"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:565
+msgid "Invited:"
+msgstr ""
+
+#: src/msn/MSNBuddy.py:802
+msgid "{song:s} by {artist:s}"
+msgstr ""
+
+#: src/msn/MSNConversation.py:287
+msgid "There was a network error creating a chat session."
+msgstr ""
+
+#: src/msn/MSNConversation.py:466
+msgid "Your messages could not be sent because too many conversation sessions have been requested."
+msgstr ""
+
+#. Translators: ex: Frank nudged you!
+#: src/msn/MSNConversation.py:599 src/msn/p21/MSNP21Conversation.py:260
+msgid "{name} {action}"
+msgstr ""
+
+#: src/msn/MSNConversation.py:603 src/msn/p21/MSNP21Conversation.py:264
+msgid "{name} winked at you!"
+msgstr ""
+
+#: src/msn/MSNConversation.py:604 src/msn/p21/MSNP21Conversation.py:265
+msgid "{name} nudged you!"
+msgstr ""
+
+#: src/msn/msngui.py:15
+msgid "Group Invite"
+msgstr ""
+
+#: src/msn/msngui.py:20 src/plugins/digsby_updater/updater.py:487
+#: src/plugins/digsby_updater/updater.py:499
+msgid "Yes"
+msgstr ""
+
+#: src/msn/msngui.py:21 src/plugins/digsby_updater/updater.py:488
+#: src/plugins/digsby_updater/updater.py:500
+msgid "No"
+msgstr ""
+
+#: src/msn/msngui.py:25
+msgid "{inviter_email} says: \"{invite_message}\""
+msgstr ""
+
+#: src/msn/msngui.py:28
+msgid ""
+"{inviter_email} has invited you to join the group {circle_name}.{invite_segment}\n"
+"Would you like to join?"
+msgstr ""
+
+#: src/msn/msngui.py:36
+msgid "Please enter a name for your group chat:"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:265 src/oscar/OscarBuddies.py:356
+msgid "Profile URL:"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:291 src/plugins/msim/res/content.tenjin:25
+msgid "Gender"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:295 src/oscar/OscarBuddies.py:343
+msgid "{label}:"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:301
+msgid "Website:"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:333
+msgid "Work Address:"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:340
+msgid "Company"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:340
+msgid "Department"
+msgstr ""
+
+#: src/oscar/OscarBuddies.py:348
+msgid "Work Website:"
+msgstr ""
+
+#: src/oscar/snac/family_x07.py:165
+msgid "You should receive an email with confirmation instructions shortly."
+msgstr ""
+
+#: src/oscar/snac/family_x07.py:166
+msgid "Your account is already confirmed."
+msgstr ""
+
+#: src/oscar/snac/family_x07.py:167
+msgid "There was an unknown server error."
+msgstr ""
+
+#: src/oscar/snac/family_x07.py:180
+msgid "Confirm Account: {username}"
+msgstr ""
+
+#: src/oscar/snac/family_x15.py:636
+msgid "Female"
+msgstr ""
+
+#: src/oscar/snac/family_x15.py:636
+msgid "Male"
+msgstr ""
+
+#: src/plugins/component_gmail/gmail.py:123
+msgid "Mark as Read"
+msgstr ""
+
+#: src/plugins/component_gmail/gmail.py:124
+msgid "Archive"
+msgstr ""
+
+#: src/plugins/digsby_about/aboutdialog.py:48
+msgid "About Digsby"
+msgstr ""
+
+#: src/plugins/digsby_about/res/content.tenjin:14
+msgid "Checking for updates..."
+msgstr ""
+
+#: src/plugins/digsby_about/res/content.tenjin:20
+msgid "Digsby is up to date"
+msgstr ""
+
+#: src/plugins/digsby_about/res/content.tenjin:26
+#: src/plugins/digsby_updater/updater.py:484
+#: src/plugins/digsby_updater/updater.py:496
+msgid "Update Available"
+msgstr ""
+
+#: src/plugins/digsby_about/res/content.tenjin:31
+msgid "Copyright © 2010 dotSyntax, LLC."
+msgstr ""
+
+#: src/plugins/digsby_about/res/content.tenjin:33
+msgid "All Rights Reserved."
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:62
+msgid "{account_name:s} - {service_name:s} Settings"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:167
+msgid "Forgot Password?"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:247
+msgid "&{server_type} Server:"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:248
+msgid "&This server requires SSL"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:266
+msgid "This server requires SSL"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:326
+msgid "IM Server:"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:348
+msgid "Always connect over HTTP"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:363
+msgid "Check for new mail every {minutes_input} minutes"
+msgstr ""
+
+#: src/plugins/digsby_service_editor/default_ui.py:600
+msgid "Custom ({mailclient})"
+msgstr ""
+
+#: src/plugins/digsby_status/status_tag_urls.py:56
+#: src/plugins/facebook/fbgui.py:10 src/plugins/linkedin/ligui.py:8
+#: src/plugins/myspace/msgui.py:10
+#: src/plugins/researchdriver/researchtoast.py:36
+#: src/plugins/twitter/twgui.py:14
+msgid "Learn More"
+msgstr ""
+
+#: src/plugins/digsby_status/status_tag_urls.py:67
+msgid "Yes, Spread the Word!"
+msgstr ""
+
+#: src/plugins/digsby_status/status_tag_urls.py:68
+#: src/plugins/facebook/fbgui.py:19 src/plugins/linkedin/ligui.py:17
+#: src/plugins/msim/myspacegui/prompts.py:11 src/plugins/myspace/msgui.py:19
+#: src/plugins/twitter/twgui.py:23
+msgid "No Thanks"
+msgstr ""
+
+#: src/plugins/digsby_status/status_tag_urls.py:106
+msgid "Spread the Word!"
+msgstr ""
+
+#: src/plugins/digsby_status/status_tag_urls.py:109
+msgid "We've made it easier to spread the word about Digsby by adding a link to your IM status. You can disable this option in Preferences > Status."
+msgstr ""
+
+#: src/plugins/digsby_updater/UpdateProgress.py:55
+msgid "Digsby Update"
+msgstr ""
+
+#: src/plugins/digsby_updater/UpdateProgress.py:63
+msgid "{state}: {completed} of {size} -- {time} remain"
+msgstr ""
+
+#: src/plugins/digsby_updater/UpdateProgress.py:145
+msgid "Slower"
+msgstr ""
+
+#: src/plugins/digsby_updater/UpdateProgress.py:146
+msgid "Faster!"
+msgstr ""
+
+#: src/plugins/digsby_updater/machelpers.py:18
+msgid "Error while updating Digsby. Please restart and try again, or grab the latest version from digsby.com. Digsby will now shut down."
+msgstr ""
+
+#: src/plugins/digsby_updater/machelpers.py:25
+msgid "Updated successfully. Digsby now needs to restart."
+msgstr ""
+
+#: src/plugins/digsby_updater/machelpers.py:31
+msgid "Unable to authenticate. Please restart and try again."
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:202
+msgid "Check for {tag} updates"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:204
+msgid "Check for Updates"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:485
+#: src/plugins/digsby_updater/updater.py:497
+msgid ""
+"A Digsby update is available to download.\n"
+"Would you like to begin downloading it now?"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:573
+msgid "Update Failed"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:574
+msgid "Digsby was unable to complete the download. This update will be attempted again later."
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:576
+msgid "Manual Update"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:606
+msgid "Update Ready"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:607
+msgid "A new version of Digsby is ready to install. Restart Digsby to apply the update."
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:609
+msgid "Restart Now"
+msgstr ""
+
+#: src/plugins/digsby_updater/updater.py:610
+msgid "Restart Later"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:310
+#: src/plugins/facebook/res/comment_link.py.xml:19
+#: src/plugins/facebook/res/comment_link.py.xml:20
+#: src/plugins/linkedin/LinkedInAccount.py:235
+#: src/plugins/linkedin/res/comment_link.tenjin:12
+#: src/plugins/linkedin/res/comment_link.tenjin:13
+#: src/plugins/myspace/MyspaceProtocol.py:417
+#: src/plugins/myspace/res/comment_link.tenjin:7
+#: src/plugins/myspace/res/comment_link.tenjin:9
+msgid "Comment"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:318
+#: src/plugins/facebook/res/like_link.py.xml:11
+#: src/plugins/linkedin/res/like_dislike_link.tenjin:20
+#: src/plugins/myspace/res/like_dislike_link.tenjin:17
+msgid "Like"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:318
+#: src/plugins/facebook/res/like_link.py.xml:16
+msgid "Unlike"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:329
+#: src/plugins/myspace/MyspaceProtocol.py:425
+msgid "comment"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:349 src/plugins/facebook/fbacct.py:353
+msgid "like"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:366
+msgid "Facebook Error"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:367
+#: src/plugins/myspace/MyspaceProtocol.py:433
+msgid "Error posting {thing}"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:368
+msgid "Digsby does not have permission to publish to your stream."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:369
+#: src/plugins/myspace/MyspaceProtocol.py:435
+msgid "Grant Permissions"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:389
+msgid "Facebook Alerts"
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:396
+msgid "You have new messages."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:399
+msgid "You have new pokes."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:402
+msgid "You have new shares."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:405
+msgid "You have new friend requests."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:408
+msgid "You have new group invites."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:411
+msgid "You have new event invites."
+msgstr ""
+
+#: src/plugins/facebook/fbacct.py:416
+msgid "You have new notifications."
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:18 src/plugins/linkedin/ligui.py:16
+#: src/plugins/myspace/msgui.py:18 src/plugins/twitter/twgui.py:22
+msgid "Post Achievements"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:24
+msgid "Post achievements to my Wall"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:40 src/plugins/myspace/msgui.py:69
+msgid "Show Alerts:"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:43
+msgid "Messages"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:44
+msgid "Pokes"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:45
+msgid "Shares"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:46 src/plugins/myspace/MyspaceProtocol.py:34
+#: src/plugins/myspace/msgui.py:79
+msgid "Friend Requests"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:47
+msgid "Group Invitations"
+msgstr ""
+
+#: src/plugins/facebook/fbgui.py:48 src/plugins/myspace/MyspaceProtocol.py:33
+msgid "Event Invitations"
+msgstr ""
+
+#: src/plugins/facebook/res/alerts.py.xml:2
+#: src/plugins/myspace/res/indicators.tenjin:2
+#: src/plugins/twitter/res/content.tenjin:8
+msgid "Alerts"
+msgstr ""
+
+#: src/plugins/facebook/res/alerts.py.xml:4
+msgid "No Alerts"
+msgstr ""
+
+#: src/plugins/facebook/res/alerts.py.xml:6
+#, python-format
+msgid "%d new message"
+msgid_plural "%d new messages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/alerts.py.xml:7
+#, python-format
+msgid "%d new friend request"
+msgid_plural "%d new friend requests"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/alerts.py.xml:8
+#, python-format
+msgid "%d new poke"
+msgid_plural "%d new pokes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/alerts.py.xml:9
+#, python-format
+msgid "%d new share"
+msgid_plural "%d new shares"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/alerts.py.xml:10
+#, python-format
+msgid "%d new group invite"
+msgid_plural "%d new group invites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/alerts.py.xml:11
+#, python-format
+msgid "%d new event invite"
+msgid_plural "%d new event invites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/alerts.py.xml:12
+#, python-format
+msgid "%d new notification"
+msgid_plural "%d new notifications"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/birthdays.py.xml:9
+msgid "Upcoming Birthdays"
+msgstr ""
+
+#: src/plugins/facebook/res/comment.py.xml:11
+#: src/plugins/facebook/res/comment.py.xml:13
+#: src/plugins/facebook/res/dislikes.py.xml:28
+#: src/plugins/facebook/res/dislikes.py.xml:30
+#: src/plugins/facebook/res/dislikes.py.xml:39
+#: src/plugins/facebook/res/dislikes.py.xml:41
+#: src/plugins/facebook/res/dislikes.py.xml:55
+#: src/plugins/facebook/res/dislikes.py.xml:57
+#: src/plugins/facebook/res/dislikes.py.xml:63
+#: src/plugins/facebook/res/dislikes.py.xml:65
+#: src/plugins/facebook/res/dislikes.py.xml:71
+#: src/plugins/facebook/res/dislikes.py.xml:73
+#: src/plugins/facebook/res/likes.py.xml:42
+#: src/plugins/facebook/res/likes.py.xml:46
+#: src/plugins/facebook/res/likes.py.xml:55
+#: src/plugins/facebook/res/likes.py.xml:62
+#: src/plugins/facebook/res/likes.py.xml:80
+#: src/plugins/facebook/res/likes.py.xml:85
+msgid "Facebook User"
+msgstr ""
+
+#: src/plugins/facebook/res/comment_link.py.xml:2
+#: src/plugins/facebook/res/comment_post_link.py.xml:2
+#: src/plugins/facebook/res/comments.py.xml:2
+#: src/plugins/facebook/res/dislike_link.py.xml:2
+#: src/plugins/facebook/res/dislikes.py.xml:2
+msgid "Dislike! (via http://digsby.com/fb)"
+msgstr ""
+
+#: src/plugins/facebook/res/comment_post_link.py.xml:15
+#, python-format
+msgid "See all %d comments"
+msgstr ""
+
+#: src/plugins/facebook/res/comment_post_link.py.xml:17
+msgid "See all comments"
+msgstr ""
+
+#: src/plugins/facebook/res/content.tenjin:35
+msgid "Back to News Feed"
+msgstr ""
+
+#: src/plugins/facebook/res/dislike_link.py.xml:18
+msgid "Dislike"
+msgstr ""
+
+#: src/plugins/facebook/res/dislike_link.py.xml:23
+msgid "Undislike"
+msgstr ""
+
+#: src/plugins/facebook/res/dislike_link.py.xml:32
+msgid "Dislikes"
+msgstr ""
+
+#: src/plugins/facebook/res/like_link.py.xml:25
+#: src/plugins/linkedin/res/like_dislike_link.tenjin:29
+#: src/plugins/myspace/res/like_dislike_link.tenjin:26
+msgid "Likes"
+msgstr ""
+
+#: src/plugins/facebook/res/likes.py.xml:14
+msgid "You liked this"
+msgstr ""
+
+#: src/plugins/facebook/res/likes.py.xml:16
+msgid "You and {startlink_other}one other{endlink_other} liked this"
+msgid_plural "You and {startlink_other}{num_others} others{endlink_other} liked this"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/likes.py.xml:40
+msgid "{startlink_name}{name}{endlink_name} liked this"
+msgstr ""
+
+#: src/plugins/facebook/res/likes.py.xml:51
+msgid "{startlink_name}{name}{endlink_name} and {startlink_other}one other{endlink_other} liked this"
+msgid_plural "{startlink_name}{name}{endlink_name} and {startlink_other}{num_others} others{endlink_other} liked this"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/likes.py.xml:76
+msgid "{startlink_other}one user{endlink_other} liked this"
+msgid_plural "{startlink_other}{num_users} users{endlink_other} liked this"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/facebook/res/post.py.xml:63
+msgid "See Friendship"
+msgstr ""
+
+#: src/plugins/facebook/res/status.py.xml:7
+#: src/plugins/linkedin/res/content.tenjin:3
+msgid "You have no status message"
+msgstr ""
+
+#: src/plugins/facebook/res/status.py.xml:9
+#: src/plugins/myspace/res/status.tenjin:18
+#: src/plugins/twitter/res/status.tenjin:14
+#: src/plugins/twitter/res/status.tenjin:21
+msgid "update"
+msgstr ""
+
+#: src/plugins/fbchat/xmppfb.py:116
+msgid "Send Message"
+msgstr ""
+
+#: src/plugins/fbchat/xmppfb.py:117
+msgid "Send Poke"
+msgstr ""
+
+#: src/plugins/fbchat/xmppfb.py:118
+msgid "View Photos"
+msgstr ""
+
+#: src/plugins/fbchat/xmppfb.py:122 src/yahoo/yahoobuddy.py:133
+msgid "View Profile"
+msgstr ""
+
+#: src/plugins/fbchat/xmppfb.py:123
+msgid "Write on Wall"
+msgstr ""
+
+#: src/plugins/fbchat/xmppfb.py:132 src/yahoo/yahoobuddy.py:164
+#: src/yahoo/yahoobuddy.py:181
+msgid "Links:"
+msgstr ""
+
+#: src/plugins/feed_trends/feed_trends.py:702
+msgid "Trending News"
+msgstr ""
+
+#: src/plugins/feed_trends/feed_trends.py:973
+msgid "read more..."
+msgstr ""
+
+#: src/plugins/feed_trends/feed_trends.py:1010
+msgid "Feed Trends Debug"
+msgstr ""
+
+#: src/plugins/feed_trends/geo_trends.py:259
+msgid "Featured Content"
+msgstr ""
+
+#: src/plugins/feed_trends/res/trend_details.tenjin:7
+msgid "get address"
+msgstr ""
+
+#: src/plugins/feed_trends/res/trend_details.tenjin:12
+msgid "phone number"
+msgstr ""
+
+#: src/plugins/feed_trends/res/trend_details.tenjin:25
+msgid "reviews"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInAccount.py:66
+msgid "Checking now..."
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInAccount.py:82
+#: src/plugins/twitter/twitter.py:214
+msgid "Home"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInAccount.py:83
+msgid "Inbox"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInAccount.py:85
+#: src/plugins/twitter/twitter.py:215
+msgid "Profile"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInAccount.py:176
+msgid "API request limit has been reached."
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInAccount.py:378
+#: src/plugins/myspace/MyspaceAccount.py:334
+msgid "Please set your computer clock to the correct time / timezone."
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:138
+msgid "Like! (via http://digsby.com)"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:139
+msgid "Dislike! (via http://digsby.com)"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:294
+#, python-format
+msgid "answered the question \"%s\""
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:356
+#: src/plugins/linkedin/LinkedInObjects.py:435
+#, python-format
+msgid "%s and "
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:360
+#, python-format
+msgid "is now connected to %s"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:371
+#: src/plugins/linkedin/res/ncon.tenjin:1
+msgid "is now a connection"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:385
+msgid "joined LinkedIn"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:412
+msgid "posted a job: {position_title:s} at {company_name:s}"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:439
+#, python-format
+msgid "is now a member of %s"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:459
+#: src/plugins/linkedin/res/picu.tenjin:1
+msgid "has a new profile photo"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:498
+#, python-format
+msgid "has recommended %s"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:500
+#, python-format
+msgid "was recommended by %s"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:512
+msgid "has an updated profile"
+msgstr ""
+
+#: src/plugins/linkedin/LinkedInObjects.py:536
+#, python-format
+msgid "asked a question: %s"
+msgstr ""
+
+#: src/plugins/linkedin/ligui.py:28
+msgid "Post achievements to my LinkedIn Network"
+msgstr ""
+
+#: src/plugins/linkedin/res/ccem.tenjin:1
+msgid "joined"
+msgstr ""
+
+#: src/plugins/linkedin/res/conn.tenjin:1
+msgid "is now connected to"
+msgstr ""
+
+#: src/plugins/linkedin/res/content.tenjin:11
+msgid "Network Updates"
+msgstr ""
+
+#: src/plugins/linkedin/res/content.tenjin:14
+msgid "No news today."
+msgstr ""
+
+#: src/plugins/linkedin/res/dislikes.tenjin:15
+#: src/plugins/linkedin/res/dislikes.tenjin:33
+#: src/plugins/myspace/res/dislikes.tenjin:15
+#: src/plugins/myspace/res/dislikes.tenjin:30
+#: src/plugins/myspace/res/likes.tenjin:15
+#: src/plugins/myspace/res/likes.tenjin:29
+msgid "and"
+msgstr ""
+
+#: src/plugins/linkedin/res/dislikes.tenjin:16
+#: src/plugins/linkedin/res/dislikes.tenjin:34
+#: src/plugins/myspace/res/dislikes.tenjin:17
+#: src/plugins/myspace/res/dislikes.tenjin:31
+#: src/plugins/myspace/res/likes.tenjin:16
+#: src/plugins/myspace/res/likes.tenjin:30
+msgid "other"
+msgid_plural "others"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/linkedin/res/dislikes.tenjin:18
+#: src/plugins/myspace/res/dislikes.tenjin:19
+#: src/plugins/myspace/res/dislikes.tenjin:33
+msgid "disliked this"
+msgstr ""
+
+#: src/plugins/linkedin/res/jgrp.tenjin:1
+msgid "has joined"
+msgstr ""
+
+#: src/plugins/linkedin/res/jobp.tenjin:1
+msgid "posted a job"
+msgstr ""
+
+#: src/plugins/linkedin/res/jobp.tenjin:1
+msgid "at"
+msgstr ""
+
+#: src/plugins/linkedin/res/like_dislike_link.tenjin:18
+#: src/plugins/myspace/res/like_dislike_link.tenjin:15
+msgid "Liked"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:35
+msgid "{name} zapped you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:36
+msgid "You zapped {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:37
+msgid "Zap"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:41
+msgid "{name} whacked you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:42
+msgid "You whacked {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:43
+msgid "Whack"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:47
+msgid "{name} torched you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:48
+msgid "You torched {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:49
+msgid "Torch"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:53
+msgid "{name} smooched you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:54
+msgid "You smooched {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:55
+msgid "Smooch"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:59
+msgid "{name} slapped you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:60
+msgid "You slapped {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:61
+msgid "Slap"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:65
+msgid "{name} goosed you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:66
+msgid "You goosed {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:67
+msgid "Goose"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:71
+msgid "{name} high-fived you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:72
+msgid "You high-fived {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:73
+msgid "High-Five"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:77
+msgid "{name} punk'd you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:78
+msgid "You punk'd {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:79
+msgid "Punk"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:83
+msgid "{name} raspberry'd you"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:84
+msgid "You raspberry'd {name}"
+msgstr ""
+
+#: src/plugins/msim/MSIMConversation.py:85
+msgid "Raspberry"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/editstatus.py:6
+msgid "MySpace Status"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:20
+msgid "Everyone"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:21
+msgid "Only people on my contact list"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:22
+msgid "No one"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:63
+msgid "Only people on my contact list can see my status"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:67
+msgid "Only people on my contact list can send me messages"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:74
+msgid "When I'm offline, receive and store messages from:"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/privacy.py:80
+msgid "Offline Messages"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/prompts.py:8
+msgid "Would you like to automatically add your MySpace friends to your MySpace IM contact list?"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/prompts.py:9
+msgid "Add Top Friends"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/prompts.py:10
+msgid "Add All Friends"
+msgstr ""
+
+#: src/plugins/msim/myspacegui/prompts.py:13
+msgid "Add Friends"
+msgstr ""
+
+#: src/plugins/msim/res/content.tenjin:20
+msgid "IM Name"
+msgstr ""
+
+#: src/plugins/msim/res/content.tenjin:21
+msgid "Display Name"
+msgstr ""
+
+#: src/plugins/msim/res/content.tenjin:23
+msgid "Real Name"
+msgstr ""
+
+#: src/plugins/msim/res/content.tenjin:24
+msgid "Age"
+msgstr ""
+
+#: src/plugins/msim/res/content.tenjin:27
+msgid "IM Headline"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceAccount.py:557
+msgid "added"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceAccount.py:558
+#, python-format
+msgid "%s account"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceAccount.py:559
+msgid "to"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:29 src/plugins/myspace/msgui.py:83
+msgid "Birthdays"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:30 src/plugins/myspace/msgui.py:73
+msgid "Blog Comments"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:31 src/plugins/myspace/msgui.py:74
+msgid "Blog Subscriptions"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:32
+msgid "Comments"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:35 src/plugins/myspace/msgui.py:81
+msgid "Group Notifications"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:36 src/plugins/myspace/msgui.py:78
+msgid "Photo Tag Approvals"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:37 src/plugins/myspace/msgui.py:75
+msgid "Picture Comments"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:38 src/plugins/myspace/msgui.py:82
+msgid "Recently Added Friends"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:39 src/plugins/myspace/msgui.py:80
+msgid "Video Comments"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:74
+msgid "Mail ({mailcount})"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:432
+msgid "MySpace Error"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:434
+msgid "Digsby does not have permission to perform this action."
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:566
+msgid "MySpace Alerts"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:567
+#, python-format
+msgid "You have new %s"
+msgstr ""
+
+#: src/plugins/myspace/MyspaceProtocol.py:684
+msgid "Activity stream item not found. It may have been removed by its creator."
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:24
+msgid "Post achievements to my Activity Stream"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:38
+msgid "Show Newsfeed:"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:42
+msgid "Status Updates"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:43
+msgid "Friend Updates"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:44
+msgid "Blog/Forum Posts"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:45
+msgid "Group Updates"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:46
+msgid "Photos"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:47
+msgid "Music"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:48
+msgid "Videos"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:50
+msgid "Applications"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:76
+msgid "Event Invites"
+msgstr ""
+
+#: src/plugins/myspace/msgui.py:77
+msgid "Profile Comments"
+msgstr ""
+
+#: src/plugins/myspace/objects.py:301
+msgid "Private user"
+msgstr ""
+
+#: src/plugins/myspace/objects.py:355
+msgid "Like! (via http://lnk.ms/C5dls)"
+msgstr ""
+
+#: src/plugins/myspace/objects.py:356
+msgid "Dislike! (via http://lnk.ms/C5dls)"
+msgstr ""
+
+#: src/plugins/myspace/res/content.tenjin:15
+msgid "Activity Stream"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:6
+msgid "New Mail"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:12
+msgid "New Birthdays"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:19
+msgid "New Blog Comments"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:26
+msgid "New Blog Subscriptions"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:33
+msgid "New Comments"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:40
+msgid "New Event Invitations"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:47
+msgid "New Friend Requests"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:54
+msgid "New Group Notifications"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:61
+msgid "New Photo Tag Approvals"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:68
+msgid "New Picture Comments"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:75
+msgid "New Recently Added Friends"
+msgstr ""
+
+#: src/plugins/myspace/res/indicators.tenjin:82
+msgid "New Video Comments"
+msgstr ""
+
+#: src/plugins/myspace/res/likes.tenjin:18
+#: src/plugins/myspace/res/likes.tenjin:32
+msgid "liked this"
+msgstr ""
+
+#: src/plugins/nowplaying/nowplaying.py:29
+msgid "Listening to music"
+msgstr ""
+
+#: src/plugins/nowplaying/nowplaying.py:182
+msgid "Listening To..."
+msgstr ""
+
+#: src/plugins/provider_aol/aol_sp.py:79
+msgid "Password should be 8 characters or less."
+msgstr ""
+
+#: src/plugins/provider_jabber/jabber_gui.py:33
+msgid "Use TLS if Possible"
+msgstr ""
+
+#: src/plugins/provider_jabber/jabber_gui.py:34
+msgid "Require TLS"
+msgstr ""
+
+#: src/plugins/provider_jabber/jabber_gui.py:35
+msgid "Force SSL"
+msgstr ""
+
+#: src/plugins/provider_jabber/jabber_gui.py:36
+msgid "No Encryption"
+msgstr ""
+
+#: src/plugins/provider_jabber/jabber_gui.py:50
+msgid "Ignore SSL Warnings"
+msgstr ""
+
+#: src/plugins/provider_jabber/jabber_gui.py:54
+msgid "Allow Plaintext Login"
+msgstr ""
+
+#: src/plugins/provider_windows_live/wl_sp.py:17
+msgid "Password should be 16 characters or less."
+msgstr ""
+
+#: src/plugins/provider_windows_live/wl_sp.py:22
+msgid "You can't have your password as your display name."
+msgstr ""
+
+#: src/plugins/researchdriver/researchtoast.py:30
+msgid "Help Digsby Stay Free"
+msgstr ""
+
+#: src/plugins/researchdriver/researchtoast.py:32
+msgid "You are helping Digsby stay free by allowing Digsby to use your PC's idle time."
+msgstr ""
+
+#: src/plugins/twitter/res/alerts.tenjin:6
+msgid "Search: "
+msgstr ""
+
+#: src/plugins/twitter/res/alerts.tenjin:8
+msgid "Group: "
+msgstr ""
+
+#: src/plugins/twitter/res/alerts.tenjin:25
+msgid "No alerts"
+msgstr ""
+
+#: src/plugins/twitter/res/content.tenjin:34
+msgid "Trending Topics"
+msgstr ""
+
+#: src/plugins/twitter/res/status.tenjin:20
+msgid "What are you doing?"
+msgstr ""
+
+#: src/plugins/twitter/res/tweet.tenjin:80
+msgid "Share"
+msgstr ""
+
+#: src/plugins/twitter/twgui.py:31
+msgid "Follow Digsby on Twitter"
+msgstr ""
+
+#: src/plugins/twitter/twgui.py:37
+msgid "Post achievements to my feed"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:216
+msgid "Followers"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:217
+msgid "Following"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:606 src/plugins/twitter/twitter_gui.py:702
+msgid "Favorites"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:607 src/plugins/twitter/twitter_gui.py:703
+msgid "History"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:851
+msgid "Reply"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:852
+msgid "Retweet"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:853
+msgid "Direct"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:1207
+msgid "Twitter Error"
+msgstr ""
+
+#: src/plugins/twitter/twitter.py:1208
+msgid "Send Tweet Failed"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:9
+msgid "Twitter allows for 150 requests per hour. Make sure to leave room for manual updates and other actions."
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:14
+msgid "Friends:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:15
+msgid "Mentions:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:16
+msgid "Directs:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:17
+msgid "Searches:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:35
+msgid "{mins} minute"
+msgid_plural "{mins} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/plugins/twitter/twitter_account_gui.py:38
+msgid "Never"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:94
+msgid "Update Frequency:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:111
+msgid "Auto-throttle when Twitter lowers the rate limit."
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:114
+msgid "Server"
+msgstr ""
+
+#: src/plugins/twitter/twitter_account_gui.py:185
+msgid "{total_updates} / hour"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:123
+msgid "&Search"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:127
+msgid "Twitter Search"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:187
+msgid "Search For:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:195
+msgid "Title:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:201
+msgid "Trending Topics:"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:211
+msgid "Search &Options"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:212
+msgid "Merge search results into Timeline view"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:214
+msgid "Popup notifications for new search results"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:355
+msgid "Twitter Group"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:408
+msgid "&Group Name"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:413
+msgid "Group &Members"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:426
+msgid "Group &Options"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:427
+msgid "&Filter this group's tweets out of the Timeline view"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:429
+msgid "Show &popup notifications for this group's tweets"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:606
+msgid "&Hide Toolbar"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:612
+msgid "Shorten &Links"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:613
+msgid "Image"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:614
+msgid "Shrink"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:710
+msgid "New Group..."
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:711
+msgid "New Search..."
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:712
+msgid "Edit and Rearrange..."
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1006
+msgid "Shortening..."
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1102
+msgid "Are you sure you want to upload the image in your clipboard?"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1103
+msgid "Image Upload"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1385
+msgid "&Rearrange"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1387
+msgid "Edit and &Rearrange"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1390
+msgid "&Mark As Read"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1393
+msgid "&Adds to Unread Count"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1511
+msgid "Text Size"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1601
+msgid "Shorten URLs\tCtrl+L"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1602
+msgid "Share Picture\tCtrl+P"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1603
+msgid "TweetShrink\tCtrl+S"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1605
+msgid "Set Global Status\tCtrl+G"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1607
+msgid "Auto Shorten Pasted URLs"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1608
+msgid "Auto Upload Pasted Images"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1609
+msgid "Auto Scroll When At Bottom"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1730
+msgid "Your tweet has spelling errors."
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1731
+msgid "Are you sure you'd like to send it?"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1735
+msgid "Tweet spelling errors"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1738
+msgid "Send Anyways"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:1996
+msgid "Twitter Groups and Searches"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:2020
+msgid "Refresh Now"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:2021
+msgid "Mark All As Read"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:2046
+msgid "Set Status"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:2064
+#, python-format
+msgid "Twitter (%s)"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:2290
+msgid "&Invite Followers"
+msgstr ""
+
+#: src/plugins/twitter/twitter_gui.py:2291
+msgid "&No Thanks"
+msgstr ""
+
+#: src/plugins/twitter/twitter_notifications.py:76
+#, python-format
+msgid "Twitter - %(feed_label)s (%(username)s)"
+msgstr ""
+
+#: src/plugins/twitter/twitter_notifications.py:78
+#, python-format
+msgid "Twitter - Group: %(feed_label)s (%(username)s)"
+msgstr ""
+
+#: src/plugins/twitter/twitter_util.py:83
+msgid "about a minute ago"
+msgstr ""
+
+#: src/plugins/twitter/twitter_util.py:85
+msgid "about {minutes} minutes ago"
+msgstr ""
+
+#: src/plugins/twitter/twitter_util.py:87
+msgid "about an hour ago"
+msgstr ""
+
+#: src/plugins/twitter/twitter_util.py:89
+msgid "about {hours} hours ago"
+msgstr ""
+
+#: src/plugins/twitter/twitter_util.py:91
+msgid "about a day ago"
+msgstr ""
+
+#: src/plugins/twitter/twitter_util.py:93
+msgid "about {days} days ago"
+msgstr ""
+
+#: src/util/diagnostic.py:584 src/util/diagnostic.py:941
+msgid "Submit Bug Report"
+msgstr ""
+
+#: src/util/diagnostic.py:587
+msgid "Bug report submitted successfully."
+msgstr ""
+
+#: src/util/diagnostic.py:589
+msgid "Bug report submission failed."
+msgstr ""
+
+#: src/util/diagnostic.py:916
+msgid "Please wait while we process the diagnostic information."
+msgstr ""
+
+#: src/util/diagnostic.py:917
+msgid "Thanks for your patience!"
+msgstr ""
+
+#: src/util/diagnostic.py:919
+msgid "Processing Diagnostic Info"
+msgstr ""
+
+#: src/util/diagnostic.py:922
+msgid "There was a problem submitting your bug report."
+msgstr ""
+
+#: src/util/diagnostic.py:923
+msgid "If the problem persists, please email bugs@digsby.com"
+msgstr ""
+
+#: src/util/diagnostic.py:930
+msgid "Bug report sent successfully."
+msgstr ""
+
+#: src/util/httplib2/httplib2.py:343
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+
+#: src/util/httplib2/httplib2.py:502
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+
+#: src/util/httplib2/httplib2.py:946
+msgid "Redirected but the response is missing a Location: header."
+msgstr ""
+
+#: src/util/httplib2/httplib2.py:973
+msgid "Redirected more times than rediection_limit allows."
+msgstr ""
+
+#: src/util/perfmon.py:127
+msgid ""
+"A log of the problem has been sent to digsby.com.\n"
+"\n"
+"Thanks for helping!"
+msgstr ""
+
+#: src/util/perfmon.py:128
+msgid "Diagnostic Log"
+msgstr ""
+
+#: src/util/perfmon.py:132
+msgid "There was an error when submitting the diagnostic log."
+msgstr ""
+
+#: src/util/perfmon.py:146
+msgid "Digsby appears to be running slowly."
+msgstr ""
+
+#: src/util/perfmon.py:147
+msgid "Do you want to capture diagnostic information and send it to digsby.com?"
+msgstr ""
+
+#: src/util/perfmon.py:151
+msgid "Digsby CPU Usage"
+msgstr ""
+
+#: src/util/primitives/strings.py:587
+msgid "aeiou"
+msgstr ""
+
+#: src/util/primitives/strings.py:588
+msgid "an"
+msgstr ""
+
+#: src/util/primitives/strings.py:590
+msgid "a"
+msgstr ""
+
+#: src/util/primitives/strings.py:592
+#, python-format
+msgid "%(article)s %(s)s"
+msgstr ""
+
+#: src/yahoo/YahooProtocol.py:1163
+msgid "May I add you to my contact list?"
+msgstr ""
+
+#: src/yahoo/YahooProtocol.py:1323
+msgid "There was an error modifying stealth settings for {name}."
+msgstr ""
+
+#: src/yahoo/login.py:35
+msgid "Bad Password"
+msgstr ""
+
+#: src/yahoo/login.py:36
+msgid "There is a security lock on your account. Log in to http://my.yahoo.com and try again."
+msgstr ""
+
+#: src/yahoo/login.py:37
+msgid "Account Not Set Up"
+msgstr ""
+
+#: src/yahoo/login.py:38
+msgid "Bad Username"
+msgstr ""
+
+#: src/yahoo/login.py:39
+msgid "Rate Limit"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:130
+msgid "No Updates"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:134 src/yahoo/yahoobuddy.py:137
+#: src/yahoo/yahoobuddy.py:151 src/yahoo/yahoobuddy.py:173
+msgid "Yahoo! 360:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:145 src/yahoo/yahoobuddy.py:167
+#: src/yahoo/yahoobuddy.py:174 src/yahoo/yahoobuddy.py:195
+#: src/yahoo/yahoobuddy.py:203
+msgid "Directory URL:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:152
+msgid "Real Name:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:153
+msgid "Nickname:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:155
+msgid "Age:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:156
+msgid "Sex:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:157
+msgid "Marital Status:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:158
+msgid "Occupation:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:159
+msgid "Email:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:160
+msgid "Home Page:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:161 src/yahoo/yahoobuddy.py:181
+msgid "Hobbies:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:162 src/yahoo/yahoobuddy.py:181
+msgid "Latest News:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:163 src/yahoo/yahoobuddy.py:181
+msgid "Favorite Quote:"
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:165 src/yahoo/yahoobuddy.py:195
+msgid "Member Since "
+msgstr ""
+
+#: src/yahoo/yahoobuddy.py:166 src/yahoo/yahoobuddy.py:195
+msgid "Last Update: "
+msgstr ""
+
+#. $Rev: 30062 $
+msgctxt "__metadata__"
+msgid "__version__"
+msgstr ""
+

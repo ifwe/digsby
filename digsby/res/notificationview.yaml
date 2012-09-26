@@ -1,0 +1,119 @@
+- contact_signon:
+    description: !_ 'Contact Signs On'
+    header: ${buddy.alias} signed on
+    minor: ${stripped_msg}
+
+- contact_signoff:
+    description: !_ 'Contact Signs Off'
+    header: ${buddy.alias} signed off
+
+- contact_available:
+    description: !_ 'Contact Becomes Available'
+    header: ${buddy.alias} is available
+    minor: ${stripped_msg}
+
+- contact_away:
+    description: !_ 'Contact Goes Away'
+    header: ${buddy.alias} is away
+    minor: ${stripped_msg}
+
+- contact_statusmessage:
+    description: !_ 'Contact Changes Status Message'
+    header: ${buddy.alias} is ${buddy.status}
+    minor: ${stripped_msg}
+
+- contact_returnsfromidle:
+    description: !_ 'Contact Returns From Idle'
+    header: ${buddy.alias} is no longer idle
+
+- contact_idle:
+    description: !_ 'Contact Becomes Idle'
+    header: ${buddy.alias} is idle
+
+- message_received:
+    description: !_ 'IM Received'
+    header: '${buddy.alias}'
+    minor: '${msg}'
+    max_lines: 5
+
+- message_received_background:
+    description: !_ 'IM Received (not in focus)'
+    header: '${buddy.alias}'
+    minor: '${msg}'
+    max_lines: 5
+
+- message_received_hidden:
+    description: !_ 'IM Received (hidden to tray)'
+    header: '${buddy.alias}'
+    minor: '${msg}'
+    max_lines: 5
+    default:
+      reaction: ['Popup']
+
+- message_received_initial:
+    description: !_ 'IM Received (first message)'
+    header: '${buddy.alias}'
+    minor: '${msg}'
+    max_lines: 5
+
+- message_sent:
+    description: !_ 'IM Sent'
+    header: '${buddy.alias}'
+    minor: '${msg}'
+
+- chatinvite_received:
+    description: !_ 'Group Chat Invite'
+    header: Chat Invite
+    max_lines: 5
+    notification_icon: 'skin:appdefaults.notificationicons.message'
+    icon: 'skin:actionsbar.icons.roomlist'
+    sticky: yes
+    default:
+      reaction: ['Popup']
+
+- filetransfer_request:
+    description: !_ 'File Transfer Request'
+    header: 'File Transfer Request'
+    minor: '${buddy.alias} wants to send you ${target.type} ${target.name}'
+    icon: 'skin:appdefaults.notificationicons.filetransfer'
+    sticky: yes
+    buttons:
+      - [save, Save]
+      - [saveas, Save As]
+      - [decline, Reject]
+
+- filetransfer_ends:
+    description: !_ 'File Transfer Complete'
+    header: 'File Transfer Complete'
+    minor: '${target.name} ${"sent to" if target.direction == "outgoing" else "received from"} ${buddy.alias}'
+    icon: 'skin:appdefaults.notificationicons.filetransfer'
+
+- filetransfer_error:
+    description: !_ 'File Transfer Error'
+    header: 'File Transfer Error'
+    minor: '${errmsg}'
+    icon: 'skin:appdefaults.notificationicons.error'
+
+- email_new:
+    description: !_ 'New Email Arrives'
+    header: '${email.fromname or email.fromemail}'
+    major: ${email.subject or "(no subject)"}
+    minor: ${(email.content or "(no preview)") if email.content is not None else ''}
+    pages: 'emails'
+    icon: 'skin:serviceicons.gmail'
+
+- error:
+    description: !_ 'Error Occurs'
+    header: '${title}'
+    major: '${msg}'
+    minor: '${details}'
+    icon: 'skin:appdefaults.notificationicons.error'
+
+- dictionary_install:
+    description: !_ 'Downloading dictionary'
+    header: '${title}'
+    major: '${msg}'
+    icon: 'skin:appdefaults.notificationicons.dict'
+    update: 'replace'
+    gui: no
+    always_show: Popup

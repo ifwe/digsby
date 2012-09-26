@@ -1,0 +1,21 @@
+service_provider: &provider_id yahoo
+path: mail.ymail.YahooMail
+name: !_ "Yahoo! Mail"
+service_name: !_ "Yahoo Mail"
+shortname: ymail
+name_truncated: "ymai"
+popularity: 599
+username_desc: !_ "Yahoo! ID"
+form: email
+type: service_component
+component_type: email
+newuser_url: "https://edit.yahoo.com/config/eval_register?new=1&.done=http%3A//mail.yahoo.com&.src=ym"
+password_url: "https://edit.yahoo.com/forgot?login=&intl=us&done=http%3a//mail.yahoo.com&src=ym"
+needs_webclient: no
+defaults:
+    updatefreq: 300
+whitelist_opts: ["enabled", "updatefreq", "alias"]
+
+entry_points:
+  digsby.component.email:
+    *provider_id: mail.ymail:YahooMail

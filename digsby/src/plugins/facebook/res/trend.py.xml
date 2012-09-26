@@ -1,0 +1,47 @@
+<!-- copied from post.py.xml -->
+
+<div class="post_row fb_filter___trend__" id="${post.id}" timestamp="${post.created_time}">
+<div class="post_content social_background_hover ${feed_trends_classes}">
+    <div class="buddyiconcell">
+        <div>
+            <img id="${post.id}_buddyicon" class="buddyicon" src="${post.source_logo_url}"/>
+        </div>
+    </div>
+    <div class="messagecell">
+        <div class="message_block">
+            <span class="name">
+                <a onclick="adClick(${post.id});" href="${post.redirect_url}" class="link namelink">${post.source}</a>
+            </span>
+            <span class="message major">#{to_str(post.feed_text())}</span>
+        </div>
+        <!-- show ad link with a "no media" gray bar on the left -->
+        <div class="no_media_bar minor">
+            <div class="attachment_section">
+                <div class="attachment minor">
+                    <div class="attachment_name one_zero_media_attachment_name">
+                        #{post.link_text}
+                    </div>
+                </div>
+        <?py include(r"#{{app.resource('trend_details.tenjin')}}") ?>
+            </div>
+        </div>
+        <div class="bottom_row">
+        <?py if feed_trends_show_timestamp: ?>
+            <span class="time minor" id="${post.id}_time" timestamp="${post.created_time}">${post.created_time}</span>
+            · <!--! this line has a dot  -->
+        <?py #endif ?>
+            <span class="minor comment_button_section link_section">
+                ${post.keyword}
+        <?py if feed_trends_help: ?>
+                  [ <a href="javascript:trendsHelp();">?</a> ]
+        <?py #endif ?>
+                · <!--! this line has a dot  -->
+                <a href="#" onclick="shareAd(${post.id}); return false;" class="skinlink link">Share</a>
+                <span class="adImpressionDiv" ad_id="${post.id}" lazy_src="${post.tracking_url}" />
+            </span>
+        </div>
+    </div>
+</div>
+<hr class="post_divider" />
+</div>
+

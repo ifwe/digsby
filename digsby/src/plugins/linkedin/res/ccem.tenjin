@@ -1,0 +1,1 @@
+<span class="news-item-text"><a href="${item.person.profile_url}" class="link namelink">${item.person.name}</a> ${{_('joined')}} LinkedIn</span>

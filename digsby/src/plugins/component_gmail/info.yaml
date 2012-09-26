@@ -1,0 +1,22 @@
+service_provider: &service_provider google
+path: component_gmail.gmail.Gmail
+name: !_ "Gmail"
+shortname: gmail
+name_truncated: "gmai"
+popularity: 1000
+username_desc: !_ "Gmail Account"
+form: email
+type: service_component
+component_type: email
+newuser_url: "http://mail.google.com/mail/signup"
+password_url: "https://www.google.com/accounts/ForgotPasswd?service=mail"
+needs_webclient: no
+
+defaults:
+    updatefreq: 300
+
+whitelist_opts: ["enabled", "updatefreq", "alias"]
+
+entry_points:
+    digsby.component.email:
+        *service_provider: "component_gmail.gmail:Gmail"

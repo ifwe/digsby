@@ -1,0 +1,24 @@
+<?py
+upcoming_birthdays = get_birthdays(feed.birthdays, feed.now)
+from util.primitives.strings import strftime_u
+from common import pref
+?>
+
+<?py if upcoming_birthdays: ?>
+<div class="birthdays">
+<div class="title">${{_('Upcoming Birthdays')}}</div>
+    <?py for uid, birthday in upcoming_birthdays: ?>
+        <?py if birthday['name']: ?>
+            <div>
+                <a href="${birthday['profile_url']}">${birthday['name']}</a>
+                ${strftime_u(birthday['bday'], pref("facebook.newsfeed.dateformat", "%B %d"))}
+            <?py if 'age' in birthday: ?>
+                (${birthday['age']})
+            <?py #endif ?>
+            </div>
+        <?py #endif ?>
+    <?py #endfor ?>
+</div>
+</div>
+
+<?py #endif ?>

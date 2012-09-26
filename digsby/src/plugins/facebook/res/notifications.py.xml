@@ -1,0 +1,11 @@
+
+<?py for notification in feed.notifications: ?>
+    <?py if not notification['title_html']: ?>
+        <?py continue ?>
+    <?py #endif ?>
+    <?py _context['notification'] = notification ?>
+    <div>
+    <?py include(r"#{{app.resource('notification.py.xml')}}") ?>
+    </div>
+    <?py del _context['notification'] ?>
+<?py #endfor ?>

@@ -1,0 +1,19 @@
+<div class="comment">
+  <span class="viewport">
+    <div class="comment_icon_cell">
+<?py if comment.person.picture_url is not None: ?>
+      <img class="comment_icon clipped-small" src="${comment.person.picture_url}" />
+<?py else: ?>
+      <img class="comment_icon clipped-small" src="${skin.get('BuddiesPanel.BuddyIcons.NoIcon').path.url()}" />
+<?py #endif ?>
+    </div>
+  </span>
+  <div class="comment_text_cell">
+    <div class="comment-author">
+      <a href="${comment.person.profile_url}" class="namelink">${comment.person.name}</a>
+    </div>
+    <div class="comment-text">
+      ${comment.text}
+    </div>
+  </div>
+</div>

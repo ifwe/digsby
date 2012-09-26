@@ -1,0 +1,31 @@
+Index: build-wxpython.sh
+===================================================================
+--- build-wxpython.sh	(revision 52902)
++++ build-wxpython.sh	(working copy)
+@@ -117,7 +117,7 @@
+   fi
+   
+   if [ "$WXPY_INSTALL_DIR" = "" ]; then
+-    WXPY_INSTALL_DIR=$HOME/wxpython-2.8.4
++    WXPY_INSTALL_DIR=$HOME/wxpython-2.8
+   fi
+   
+   if [ $clean = yes ]; then
+@@ -143,7 +143,7 @@
+   export INSTALLDIR=$WXPY_INSTALL_DIR
+   
+   if [ "${OSTYPE:0:6}" = "darwin" ]; then
+-    $WXWIN/distrib/scripts/mac/macbuild-lipo wxpython $UNICODE_OPT $DEBUG_OPT
++    $WXWIN/distrib/scripts/mac/macbuild wxpython $UNICODE_OPT $DEBUG_OPT
+   else
+     $WXWIN/distrib/scripts/unix/unixbuild wxpython $UNICODE_OPT $DEBUG_OPT
+   fi
+@@ -166,6 +166,8 @@
+ 
+   cd $scriptDir
+   python ./setup.py build_ext --inplace WX_CONFIG=$WXPY_INSTALL_DIR/bin/wx-config USE_SWIG=$USE_SWIG SWIG=$SWIG_BIN UNICODE=$UNICODE_WXPY_OPT
++  python ./setup.py install --install-headers=$WXPY_INSTALL_DIR/include --root=$WXPY_INSTALL_DIR --install-platlib=wxPython --install-scripts=wxPython --install-purelib=wxPython WX_CONFIG=$WXPY_INSTALL_DIR/bin/wx-config USE_SWIG=$USE_SWIG SWIG=$SWIG_BIN UNICODE=$UNICODE_WXPY_OPT
++  
+   if [ $? != 0 ]; then
+     exit $?
+   fi

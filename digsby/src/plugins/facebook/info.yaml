@@ -1,0 +1,83 @@
+name: !_ "Facebook"
+shortname: facebook
+name_truncated: face
+service_provider: &service_provider facebook
+service_name: !_ 'News Feed'
+component_type: social
+popularity: 807
+type: service_component
+form: social
+username_desc: !_ "Email Address"
+newuser_url:  http://www.facebook.com/r.php
+path: facebook.fbacct.FacebookAccount
+needs_password: false
+whitelist_opts: ['enabled', 'uid', 'secrets', 'filters', 'post_ach_all', 'informed_ach', 'show_hidden_posts', 'preferred_filter_key', 'alias']
+skin:
+  serviceicons:
+    facebook: serviceicons/facebook.png
+  FaceBookIcons:
+    Like: res/facebookicons/like.png
+    Dislike: res/facebookicons/dislike.png
+    notifications_icon: res/facebookicons/notifications_icon.png
+
+infobox:
+    maxheight: True
+    hosted: True
+
+show_alerts_label : !_ "Show Alerts"
+needs_alerts : yes
+alerts:
+    - 'Messages'
+    - 'Pokes'
+    - 'Shares'
+    - 'Friend Requests'
+    - 'Group Invitations'
+    - 'Event Invitations'
+    - 'Notifications'
+
+defaults:
+    alias: ~
+    informed_ach: no
+    post_ach_all: yes
+    show_hidden_posts: no
+    preferred_filter_key: 1 #live feed
+
+#more_details:
+#  - type: bool
+#    store: show_hidden_posts
+#    label: Show Hidden Posts
+#    default: no
+#  - type: enum
+#    store: preferred_filter_key
+#    elements:
+#      - Default Feed
+#      - Live Feed
+#      - News Feed (not in the right order)
+#    label: Preferred Filter Key
+#    help: http://forum.digsby.com/viewtopic.php?id=5547
+
+new_details:
+  - type: meta
+    store: informed_ach
+    value: yes
+
+basic_details: #basic to the account (read: important)
+  - type: bool
+    store: post_ach_all
+    label: !_ Post achievements to my Wall
+    default: yes
+    help: http://wiki.digsby.com/doku.php?id=faq#q32
+
+entry_points:
+  digsby.services.edit.advanced.extract_sub.social:
+    *service_provider: facebook.fbgui:extract_advanced_subpanel_social
+  digsby.services.edit.basic.extract_sub.social:
+    *service_provider: facebook.fbgui:extract_basic_subpanel_social
+  digsby.services.edit.advanced.construct_sub.social:
+    *service_provider: facebook.fbgui:construct_advanced_subpanel_social
+  digsby.services.edit.basic.construct_sub.social:
+    *service_provider: facebook.fbgui:construct_basic_subpanel_social
+
+  digsby.component.social:
+    *service_provider: facebook.fbacct:FacebookAccount
+

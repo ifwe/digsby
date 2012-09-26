@@ -1,0 +1,9 @@
+name: 'Digsby GeoIP'
+path: 'digsby_geoip'
+type: 'pure'
+
+entry_points:
+  digsby.jabber.session_started:
+    digsby_geoip: digsby_geoip:setup
+  digsby.geoip.received:
+    digsby_geoip: digsby_geoip:print_geoip

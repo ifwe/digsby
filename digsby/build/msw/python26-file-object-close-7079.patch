@@ -1,0 +1,17 @@
+Index: Objects/fileobject.c
+===================================================================
+--- Objects/fileobject.c	(revision 72606)
++++ Objects/fileobject.c	(working copy)
+@@ -554,8 +554,10 @@
+ file_close(PyFileObject *f)
+ {
+ 	PyObject *sts = close_the_file(f);
+-	PyMem_Free(f->f_setbuf);
+-	f->f_setbuf = NULL;
++    if (sts) {
++        PyMem_Free(f->f_setbuf);
++        f->f_setbuf = NULL;
++    }
+ 	return sts;
+ }
+ 

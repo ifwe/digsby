@@ -1,0 +1,219 @@
+Variant: Baby Pink
+
+Common:
+
+  Hover: pink/cl_hover.png 5 3 5 3
+  Menu_Hover: pink/menu_hover.png 5 3 5 3
+  Menu_Checked: pink/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: pink/group_bg.png
+  
+  Selected: pink/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: pink/menu_sep.png
+  
+MenuBar:
+  background: 0xF6E3F2
+  
+MenuLite:
+  SeparatorImage: pink/menu_sep.png
+  Backgrounds:
+    Selection: 0xdea0bc
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0xF6E3F2
+    Down: pink/mainmenuhover.png 1 1 1 1
+    Active: pink/mainmenuhover.png 1 1 1 1
+    Hover: pink/mainmenuhover.png 1 1 1 1
+    ActiveHover: pink/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: pink/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: pink/group_bg2.png
+    List: pink/list_bg.png 0 90 0 100
+    GroupSelected: pink/cl_selected2.png 5 3 5 3
+    BuddySelected: pink/cl_selected2.png 5 3 5 3
+    Buddy: pink/group_bg2.png
+  GroupIcons:
+    CollapsedHover: pink/right_hover.png
+    ExpandedHover: pink/expanded_hover.png
+  FontColors:
+    Group: 0x87385C
+    GroupHover: 0x87385C
+    GroupSelected: 0x87385C
+    AddAccountsLink: 0x87385C
+    
+Button:
+  Backgrounds:
+    Normal: pink/format_bar_button_bg.png
+    Down: pink/format_button_down.png 3 3 3 3
+    Active: pink/format_button_down.png 3 3 3 3
+    Hover: pink/format_button.png 3 3 3 3
+    ActiveHover: pink/format_button_down.png 3 3 3 3
+    Disabled: pink/button.png 1 1 1 1
+    Notify: pink/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: pink/format_button.png 3 3 3 3
+    Down: pink/format_button_down.png 3 3 3 3
+    Active: pink/format_button_down.png 3 3 3 3
+    Hover: pink/format_button.png 3 3 3 3
+    ActiveHover: pink/format_button_down.png 3 3 3 3
+    Disabled: pink/button.png 1 1 1 1
+    Notify: pink/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: pink/actionbar_button_bg.png
+    Down: pink/actionbar_button_down.png 2 2 2 2
+    Active: pink/actionbar_button_down.png 2 2 2 2
+    Hover: pink/actionbar_button.png 2 3 2 4
+    ActiveHover: pink/actionbar_button_down.png 2 2 2 2
+    Disabled: pink/actionbar_button.png 2 3 2 4
+    Notify: pink/actionbar_button.png 2 3 2 4
+
+FormattingBarButton:
+  Backgrounds:
+    Normal: pink/actionbar_button_bg.png
+    Down: pink/actionbar_button_down.png 2 2 2 2
+    Active: pink/actionbar_button_down.png 2 2 2 2
+    Hover: pink/actionbar_button.png 2 3 2 4
+    ActiveHover: pink/actionbar_button_down.png 2 2 2 2
+    Disabled: pink/actionbar_button.png 2 3 2 4
+    Notify: pink/actionbar_button.png 2 3 2 4
+  
+AccountAero:
+  Backgrounds:
+    Normal: pink/aero_button.png 75 10 75 10
+    Down: pink/aero_hover.png 75 10 75 0
+    Active: pink/aero_hover.png 75 10 75 0
+    Hover: pink/aero_hover.png 75 10 75 0
+    ActiveHover: pink/aero_button.png 75 10 75 0
+    Disabled: pink/aero_button.png 75 10 75 0
+    Notify: pink/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: pink/cbo_button_normal_left.png 3 3 3 3
+    hover: pink/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: pink/cbo_button_normal_right.png 3 3 3 3
+    Hover: pink/cbo_button_hover_right.png 3 3 3 3
+    Down: pink/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: pink/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: pink/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: pink/cbo_button_normal_left.png 3 3 3 3
+    hover: pink/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: pink/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: pink/TFLEFTO.png 4 4 0 4
+    Down: pink/TFLEFTO.png 4 4 0 4
+    Hover: pink/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - pink/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: pink/CommandBar.png 1 0 1 0
+    EmailHover: pink/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xf6e3f2
+    Contact: pink/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0xcc3399
+    NavBarHeader:  black
+    NavBarLink: 0xcc3399
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0xcc3399
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: pink/status_combo.png tile
+    Hover: pink/status_combo.png tile
+    Down: pink/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: pink/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: pink/Tabpage.png 0 0 0 5
+    Normal: pink/TabN.png 8 16 8 16
+    Active: pink/TabP.png 8 16 8 16
+    ActiveHover: pink/TabPO.png 8 16 8 16
+    Hover: pink/TabO.png 8 16 8 16
+    Notify: pink/TabA.png 8 16 8 16
+    
+AccountPanels:
+  frame: pink/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0xF6E3F2
+    Behind: 0xF6E3F2
+  Icons:
+    Show: pink/showicon.png
+  FontColors:
+    Account: black
+    State: 0x666666
+    Link: 0xcc3399
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0xF6E3F2      
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0xF6E3F2
+    
+Popup:
+  Background: pink/toast.png 20 20 20 20

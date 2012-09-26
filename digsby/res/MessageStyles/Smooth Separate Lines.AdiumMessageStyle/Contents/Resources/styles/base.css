@@ -1,0 +1,19 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.prefix
+{
+	font: medium 11px "Lucida Grande, Arial";
+}
+
+.prefix {
+	font-weight: bold;
+	font-size: 85%;
+	
+}
+
+.context + *[class="incoming"], .context + *[class="outgoing"] {
+    border-top: 2px solid rgb(200, 200, 200);
+}

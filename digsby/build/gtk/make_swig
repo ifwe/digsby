@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wget http://wxpython.wxcommunity.com/tools/SWIG-1.3.29-wx.tar.gz
+tar -xzvf SWIG-1.3.29-wx.tar.gz
+cd SWIG-1.3.29/
+./configure
+make
+sudo make install
+cd ..
+rm -rf SWIG-1.3.29

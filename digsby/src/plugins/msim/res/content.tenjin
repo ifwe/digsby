@@ -1,0 +1,106 @@
+<?py buddy_keys = (
+    #'UserName',
+    'IMName',
+    'DisplayName',
+    'NickName',
+    'RealName',
+    'Age',
+    'Gender',
+    'Location',
+    #'TotalFriends',
+    #'OfflineMsg',
+    'Headline',
+)
+# Other attributes not in the above list
+#['AvatarURL', 'AvatarUrl', 'BandName', 'ContactID', 'DisplayName', 'GroupID', 'ImageURL', 'LastImageUpdated', 'LastLogin', 'Position', 'ShowAvatar', 'SkyStatus', 'SongName', 'TotalFriends', 'UserID', 'Visibility',]
+?>
+<?py 
+nice_key_names = {
+    "UserName" : _("Username"),
+    "IMName"   : _("IM Name"),
+    "DisplayName": _("Display Name"),
+    "NickName" : _("Nickname"),
+    "RealName" : _("Real Name"),
+    "Age"      : _("Age"),
+    "Gender"   : _("Gender"),
+    "Location" : _("Location"),
+    "Headline" : _("IM Headline"),
+}
+?>
+
+<table width="100%" cellpadding="0" border="0">
+    <tr>
+        <td valign="top">
+            <div style="white-space: nowrap; position: relative;">
+                <div style="position: absolute; left: 0px; top: 0px;">
+                    <img src="${skin.get('serviceicons.'+proto.name).path.url()}" height="16" width="16" />
+                </div>
+                <div style="white-space: normal; overflow: hidden; word-wrap: break-word; margin-left: 20px; min-height: 20px;">
+                    <span class="header">
+                        ${buddy.alias}
+                    </span>
+                </div>
+            </div>
+<?py if buddy.alias != buddy.UserName: ?>
+            <div>
+                <span class="major" style="font-weight:bold;">
+                    Username:
+                </span>
+                <span class="minor">
+                    ${buddy.UserName}
+                </span>
+            </div>
+<?py #endif ?>
+            <div>
+                <span class="major" style="font-weight:bold;">
+                    Status:
+                </span>
+                <span class="minor">
+                    ${buddy.sightly_status}
+                </span>
+            </div>
+<?py if buddy.status_message: ?>
+            <hr />
+            <div id="buddy-status" class="minor">
+                #{util.net.linkify(buddy.status_message).replace("\n", "<br />")}
+            </div>
+<?py #endif ?>
+
+        </td>
+        <td width="68" valign="top" align="center">
+<?py sicon = skin.get('statusicons.'+buddy.status_orb) ?>        
+            <img src="${sicon.path.url()}" style="position: absolute; top: 8px; right: 8px;" />
+            <img id="#contactIcon" src="${renderers.get_buddy_icon_url(buddy)}" 
+                 width="${common.pref('infobox.iconsize', 64)}" onError="imgError(this)" />
+            <a class="link" href="profile">
+<?py if common.pref('infobox.showprofile', False): ?>
+                ${{_('Hide Profile')}}
+<?py else: ?>
+                ${{_('Show Profile')}}
+<?py #endif ?>
+            </a>
+        </td>
+    </tr>
+</table>
+<?py if common.pref('infobox.showprofile', False): ?>
+    <hr type="2" />
+    <table width="100%" cellpadding="0" border="0">
+        <tr>
+            <td>
+    <?py for key in buddy_keys: ?>
+        <?py val = getattr(buddy, key, None) or None?>
+        <?py if val is not None: ?>
+            <div>
+                <span class="major" style="font-weight:bold;">
+                    ${nice_key_names.get(key, key)}:
+                </span>
+                <span class="minor">
+                    ${val.decode('xml')}
+                </span>
+            </div>
+        <?py #endif ?>
+    <?py #endfor ?>
+            </td>
+        </tr>
+    </table>
+<?py #endif ?>

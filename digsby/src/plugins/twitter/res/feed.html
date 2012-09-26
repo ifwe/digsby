@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.3.2.js"></script>
+        <script type="text/javascript" src="jquery.history.js"></script>
+        <script type="text/javascript" src="utils.js"></script>
+
+        <link rel=StyleSheet href="Smooth Operator.css" type="text/css" media=screen>
+        <link rel=StyleSheet href="Twitter Smooth Operator.css" type="text/css" media=screen>
+        <script type="text/javascript" src="smoothOperator.js"></script>
+
+        <script type="text/javascript" src="timeline2.js"></script>
+        <script type="text/javascript" src="feed.js"></script>
+        <script type="text/javascript">
+            var importGlobals = [
+                'console',
+                'tweetActions',
+                'twitterLinkify',
+                'tweetUserImage',
+                'tweetScreenName',
+                'directTargetScreenName',
+                'tweetUserName',
+                'atify',
+                'hashify',
+                'settings',
+                'verbose',
+                'compareIds',
+            ];
+
+            if (window.opener) {
+                $.each(importGlobals, function (i, global) {
+                    window[global] = window.opener[global];
+                });
+            }
+        </script>
+    </head>
+    <body onload="feed_onload();" onunload="feed_onunload();">
+    </body>
+</html>
+

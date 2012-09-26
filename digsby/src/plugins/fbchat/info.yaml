@@ -1,0 +1,62 @@
+path: fbchat.xmppfb.FaceBookChatXMPP
+hostport: no
+newuser_url: "http://www.facebook.com/r.php"
+allow_contact_add: no
+
+name: !_ "Facebook Chat"
+shortname: fbchat
+name_truncated: "fbch"
+service_provider: &service_provider facebook
+popularity: 750
+component_type: im
+username_desc: !_ "Email Address"
+form: im
+type: service_component
+needs_password: no
+has_invisible: no
+needs_dataproxy: no
+statuses: [[!N_ "Available"], []]
+
+skin:
+  serviceicons:
+    fbchat: "serviceicons/facebook.png"
+
+defaults:
+  encryption: 0 #jcrypt_opts["Use TLS if Possible"]
+  ignore_ssl_warnings: yes
+  allow_plaintext: yes
+  autologin: no
+  server: !python/tuple
+    - chat.facebook.com
+    - 5222
+  block_unknowns: no
+  hide_os: no
+  dataproxy: ""
+  do_tls: yes
+  priority: 25
+  sasl_plain: no
+  plain: no
+  resource: Digsby
+  uid: ~
+  access_token: ~
+  alt_connect_opts:
+    - require_tls: no
+      verify_tls_peer: no
+      do_tls: yes
+      server: !python/tuple
+        - chat.facebook.com
+        - 443
+      do_ssl: no
+  alt_conn_lock: ~
+
+entry_points:
+  digsby.services.edit.advanced.construct_sub.im:
+    *service_provider: fbchat.fbchat_gui:construct_advanced_subpanel_im
+  digsby.services.edit.advanced.extract_sub.im:
+    *service_provider: fbchat.fbchat_gui:extract_advanced_subpanel_im
+  digsby.component.im:
+    *service_provider: fbchat.xmppfb:FaceBookChatXMPP
+  digsby.jabber.session_started:
+    fbchat_ignore: fbchat.compat:ignore_iq
+    fbchat: fbchat.own_message:setup
+

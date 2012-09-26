@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xs:schema xmlns:wsrm="http://schemas.xmlsoap.org/ws/2003/03/rm" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.xmlsoap.org/ws/2003/03/rm" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:import namespace="http://schemas.xmlsoap.org/ws/2002/07/utility" schemaLocation="utility.xsd"/>
+    <xs:complexType name="SequenceType">
+        <xs:sequence>
+            <xs:element ref="wsu:Identifier"/>
+            <xs:element name="MessageNumber" type="xs:unsignedLong"/>
+            <xs:element name="LastMessage" type="xs:ENTITY" minOccurs="0"/>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:anyAttribute namespace="##other" processContents="lax"/>
+    </xs:complexType>
+    <xs:element name="Sequence" type="wsrm:SequenceType"/>
+    <xs:element name="SequenceTerminate">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="wsu:Identifier"/>
+                <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SequenceAcknowledgment">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="wsu:Identifier"/>
+                <xs:element name="AcknowledgmentRange" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence/>
+                        <xs:attribute name="Upper" type="xs:unsignedLong" use="required"/>
+                        <xs:attribute name="Lower" type="xs:unsignedLong" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="AckRequestedType">
+        <xs:sequence>
+            <xs:element ref="wsu:Identifier"/>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:anyAttribute namespace="##other" processContents="lax"/>
+    </xs:complexType>
+    <xs:element name="AckRequested" type="wsrm:AckRequestedType"/>
+    <xs:element name="InactivityTimeout">
+        <xs:complexType mixed="false">
+            <xs:complexContent mixed="false">
+                <xs:extension base="wsrm:PolicyAssertionType">
+                    <xs:attribute name="Milliseconds" type="xs:unsignedLong" use="required"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="BaseRetransmissionInterval">
+        <xs:complexType mixed="false">
+            <xs:complexContent mixed="false">
+                <xs:extension base="wsrm:PolicyAssertionType">
+                    <xs:attribute name="Milliseconds" type="xs:unsignedLong" use="required"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ExponentialBackoff" type="wsrm:PolicyAssertionType"/>
+    <xs:element name="AcknowledgementInterval">
+        <xs:complexType mixed="false">
+            <xs:complexContent mixed="false">
+                <xs:extension base="wsrm:PolicyAssertionType">
+                    <xs:attribute name="Milliseconds" type="xs:unsignedLong" use="required"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="PolicyAssertionType">
+        <xs:sequence>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:anyAttribute namespace="##other"/>
+    </xs:complexType>
+    <xs:simpleType name="DeliveryAssuranceEnum">
+        <xs:restriction base="xs:QName">
+            <xs:enumeration value="wsrm:AtMostOnce"/>
+            <xs:enumeration value="wsrm:AtLeastOnce"/>
+            <xs:enumeration value="wsrm:ExactlyOnce"/>
+            <xs:enumeration value="wsrm:InOrder"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="DeliveryAssurance">
+        <xs:complexType mixed="false">
+            <xs:complexContent mixed="false">
+                <xs:extension base="wsrm:PolicyAssertionType">
+                    <xs:attribute name="Value" type="xs:QName" use="required"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="FaultCodes">
+        <xs:restriction base="xs:QName">
+            <xs:enumeration value="wsrm:UnknownSequence"/>
+            <xs:enumeration value="wsrm:SequenceTerminated"/>
+            <xs:enumeration value="wsrm:InvalidAcknowledgement"/>
+            <xs:enumeration value="wsrm:MessageNumberRollover"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="SequenceFaultType">
+        <xs:sequence>
+            <xs:element ref="wsu:Identifier"/>
+            <xs:element name="FaultCode" type="xs:QName"/>
+            <xs:any namespace="##any"/>
+        </xs:sequence>
+        <xs:anyAttribute/>
+    </xs:complexType>
+    <xs:element name="SequenceFault" type="wsrm:SequenceFaultType"/>
+    <xs:complexType name="SequenceRefType">
+        <xs:sequence>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="Identifier" type="xs:anyURI" use="required"/>
+        <xs:attribute name="Match" type="wsrm:MatchChoiceType" use="optional"/>
+        <xs:anyAttribute/>
+    </xs:complexType>
+    <xs:simpleType name="MatchChoiceType">
+        <xs:restriction base="xs:QName">
+            <xs:enumeration value="wsrm:Exact"/>
+            <xs:enumeration value="wsrm:Prefix"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="SequenceRef" type="wsrm:SequenceRefType"/>
+</xs:schema>

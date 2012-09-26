@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xsd:schema xmlns:rsi="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" elementFormDefault="qualified" version="1.0">
+    <xsd:element name="AuthenticationFailed">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="TweenerChallenge" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

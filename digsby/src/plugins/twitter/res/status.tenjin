@@ -1,0 +1,24 @@
+<?py if self_tweet: ?>
+<div class="self_tweet">
+<?py
+    tweet = self_tweet
+    import simplejson
+    user_url = "http://twitter.com/" + tweet.user.screen_name
+    imageClasses = 'profileImage'
+?>
+<div class="selfTweetContent tweetContent" id="${tweet.id}">
+        <span class="sender_text" style="display:none;">${simplejson.dumps(tweet.user.screen_name)}</span>
+        <span class="sender title">${{_('Status')}}: </span>
+        <span class="tweet_text_value" style="display:none;">#{simplejson.dumps(tweet.text)}</span>
+        <span class="tweetText">#{twitter_linkify(tweet.text)}</span>
+        <span class="">(<a class="status_updater" href="javascript:null;">${{_('update')}}</a>)</span>
+</div>
+</div>
+<?py else: ?>
+
+<div class="minor">
+<span>${{_('What are you doing?')}}</span>
+<span>(<a class="status_updater" href="javascript:null;">${{_('update')}}</a>)</span>
+</div>
+
+<?py #endif ?>

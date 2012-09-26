@@ -1,0 +1,96 @@
+    <?py img = skin.get('facebookicons.like') ?>
+<div class="likes minor">
+    <?py user_likes = 'likes' in post and 'user_likes' in post.likes and post.likes.user_likes; ?>
+    <?py uids = (('sample' in post.likes and post.likes.sample or []) + ('friends' in post.likes and post.likes.friends or [])) ?>
+    <?py if ('count' in post.likes and post.likes.count): ?>
+        <?py link = post.likes.get('href') or False ?>
+        <?py if user_likes: ?>
+    <div>
+            <img src="${img.path.url()}"
+                width="${img.Width}"
+                height="${img.Height}"
+            />
+            <?py if post.likes.count == 1: ?>
+                <?py likes_msg = _('You liked this') ?>
+            <?py elif post.likes.count > 1: ?>
+                <?py likes_fmt = ngettext("You and {startlink_other}one other{endlink_other} liked this",
+                                          "You and {startlink_other}{num_others} others{endlink_other} liked this",
+                                          post.likes.count - 1) ?>
+                <?py if link: ?>
+                    <?py likes_msg = likes_fmt.format(num_others = post.likes.count - 1,
+                                                      startlink_other='<a class="no_ondown_link" href="' + link + '">',
+                                                      endlink_other='</a>') ?>
+                <?py else: ?>
+                    <?py likes_msg = likes_fmt.format(num_others = post.likes.count - 1,
+                                                      startlink_other='',
+                                                      endlink_other='') ?>
+                <?py #endif ?>
+            <?py #endif ?>
+            #{likes_msg}
+            </div>
+        <?py elif uids: ?>
+            <?py for uid in uids: ?>
+                <?py if uid in feed.profiles and feed.profiles[uid].name: ?>
+                    <div>
+                        <img src="${img.path.url()}"
+                            width="${img.Width}"
+                            height="${img.Height}"
+                        />
+                    <?py if post.likes.count == 1: ?>
+                        <?py likes_fmt = _("{startlink_name}{name}{endlink_name} liked this") ?>
+                        <?py if feed.profiles[uid].url: ?>
+                            <?py likes_msg = likes_fmt.format(name = feed.profiles[uid].name or _("Facebook User"),
+                                                              startlink_name='<a class="link no_ondown_link" href="' + escape(feed.profiles[uid].url) + '">',
+                                                              endlink_name='</a>') ?>
+                        <?py else: ?>
+                            <?py likes_msg = likes_fmt.format(name = feed.profiles[uid].name or _("Facebook User"),
+                                                              startlink_name='',
+                                                              endlink_name='') ?>
+                        <?py #endif ?>
+                    <?py if post.likes.count > 1: ?>
+                        <?py likes_fmt = ngettext("{startlink_name}{name}{endlink_name} and {startlink_other}one other{endlink_other} liked this",
+                                                  "{startlink_name}{name}{endlink_name} and {startlink_other}{num_others} others{endlink_other} liked this",
+                                                  post.likes.count - 1) ?>
+                        <?py if link: ?>
+                            <?py likes_msg = likes_fmt.format(name = feed.profiles[uid].name or _('Facebook User'),
+                                                              num_others = post.likes.count - 1,
+                                                              startlink_name='<a class="link no_ondown_link" href="' + escape(feed.profiles[uid].url) + '">',
+                                                              startlink_other='<a class="no_ondown_link" href="' + link + '">',
+                                                              endlink_name='</a>',
+                                                              endlink_other='</a>') ?>
+                        <?py else: ?>
+                            <?py likes_msg = likes_fmt.format(name = feed.profiles[uid].name or _("Facebook User"),
+                                                              num_others = post.likes.count - 1,
+                                                              startlink_name='',
+                                                              startlink_other='',
+                                                              endlink_name='',
+                                                              endlink_other='') ?>
+                        <?py #endif ?>
+                    <?py #endif ?>
+                    #{likes_msg}
+                    <br/>
+                    </div>
+                    <?py break ?>
+                <?py #endif ?>
+            <?py else: ?>
+                <?py likes_fmt = ngettext("{startlink_other}one user{endlink_other} liked this",
+                                          "{startlink_other}{num_users} users{endlink_other} liked this",
+                                          post.likes.count) ?>
+                <?py if link: ?>
+                    <?py likes_msg = likes_fmt.format(name = feed.profiles[uid].name or _("Facebook User"),
+                                                      num_users = post.likes.count,
+                                                      startlink_other='<a class="no_ondown_link" href="' + link + '">',
+                                                      endlink_other='</a>') ?>
+                <?py else: ?>
+                    <?py likes_msg = likes_fmt.format(name = feed.profiles[uid].name or _("Facebook User"),
+                                                      num_users = post.likes.count,
+                                                      startlink_other='',
+                                                      endlink_other='') ?>
+                <?py #endif ?>
+                #{likes_msg}
+            <?py #endfor ?>
+        <?py del link ?>
+        <?py #endif ?>
+    <?py #endif ?>
+    <?py del user_likes ?>
+</div>

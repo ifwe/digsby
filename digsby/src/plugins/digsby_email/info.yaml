@@ -1,0 +1,124 @@
+type: "multi"
+name: !_ "Mail"
+
+common:
+  email_accounts_opts: &email_accounts_opts ["enabled", "updatefreq", "alias"]
+  email_defaults: &email_defaults
+    updatefreq: 300
+
+plugins:
+  provider_pop:
+    name: !_ "POP Account"
+    type: "service_provider"
+    provider_id: "pop"
+    entry_points:
+        digsby.service_provider:
+            pop: "digsby_email.pop_sp:POPServiceProvider"
+    provider_info:
+        popularity: 77
+        username_desc: !_ 'Username'
+        password_desc: !_ 'Password'
+        needs_smtp: yes
+
+
+  pop:
+    type: service_component
+    component_type: email
+    service_name: !_ "Mail"
+    service_provider: pop
+    needs_webclient: True
+    path: mail.pop.PopMail
+    needs_server: !N_ 'POP'
+    name: POP Email
+    smtp_pw_type: True
+    whitelist_opts:
+      - enabled
+      - updatefreq
+      - alias
+      - smtp_server
+      - smtp_port
+      - smtp_require_ssl
+      - smtp_username
+      - email_address
+      - popserver
+      - popport
+      - require_ssl
+    form: email
+    defaults:
+      smtp_password: ""
+      smtp_server: ""
+      updatefreq: 300
+      popport_ssl: 995
+      require_ssl: False
+      smtp_require_ssl: False
+      smtp_username: ""
+      smtp_port_ssl: 465
+      email_address: ""
+      popport: 110
+      smtp_port: 25
+    compatible:
+      - pop
+    name_truncated: pop
+    shortname: pop
+    popularity: 77
+    entry_points:
+      digsby.component.email:
+        pop: mail.pop:PopMail
+
+  provider_imap:
+    name: !_ "IMAP Account"
+    type: "service_provider"
+    provider_id: "imap"
+    entry_points:
+        digsby.service_provider:
+            imap: "digsby_email.imap_sp:IMAPServiceProvider"
+    provider_info:
+        popularity: 37
+        username_desc: !_ 'Username'
+        password_desc: !_ 'Password'
+        needs_smtp: yes
+
+  imap:
+    type: service_component
+    component_type: email
+    defaults:
+      require_ssl: False
+      default_ssl_port: 993
+      email_address: ""
+      updatefreq: 300
+      imapport_ssl: 993
+      smtp_port_ssl: 465
+      smtp_username: ""
+      smtp_require_ssl: False
+      smtp_server: ""
+      smtp_port: 25
+      smtp_password: ""
+      imapport: 143
+    path: mail.imap.IMAPMail
+    name_truncated: imap
+    compatible:
+      - imap
+    popularity: 37
+    needs_server: !N_ 'IMAP'
+    whitelist_opts: !set
+      - enabled
+      - updatefreq
+      - alias
+      - smtp_server
+      - smtp_port
+      - smtp_require_ssl
+      - smtp_username
+      - email_address
+      - imapserver
+      - imapport
+      - require_ssl
+    needs_webclient: True
+    name: IMAP Email
+    service_name: !_ "Mail"
+    shortname: imap
+    service_provider: imap
+    smtp_pw_type: True
+    form: email
+    entry_points:
+      digsby.component.email:
+        imap: mail.imap:IMAPMail

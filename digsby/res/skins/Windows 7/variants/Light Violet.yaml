@@ -1,0 +1,219 @@
+Variant: Violet
+
+Common:
+
+  Hover: purple/cl_hover.png 5 3 5 3
+  Menu_Hover: purple/menu_hover.png 5 3 5 3
+  Menu_Checked: purple/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: purple/group_bg.png
+  
+  Selected: purple/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: purple/menu_sep.png
+  
+MenuBar:
+  background: 0xECE3F6   
+  
+MenuLite:
+  SeparatorImage: purple/menu_sep.png
+  Backgrounds:
+    Selection: 0xc6badd
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0xECE3F6   
+    Down: purple/mainmenuhover.png 1 1 1 1
+    Active: purple/mainmenuhover.png 1 1 1 1
+    Hover: purple/mainmenuhover.png 1 1 1 1
+    ActiveHover: purple/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: purple/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: purple/group_bg2.png
+    List: purple/list_bg.png 0 90 0 100
+    GroupSelected: purple/cl_selected2.png 5 3 5 3
+    BuddySelected: purple/cl_selected2.png 5 3 5 3
+    Buddy: purple/group_bg2.png
+  GroupIcons:
+    CollapsedHover: purple/right_hover.png
+    ExpandedHover: purple/expanded_hover.png
+  FontColors:
+    Group: 0x50086b
+    GroupHover: 0x50086b
+    GroupSelected: 0x50086b
+    AddAccountsLink: 0x50086b
+    
+Button:
+  Backgrounds:
+    Normal: purple/format_bar_button_bg.png
+    Down: purple/format_button_down.png 3 3 3 3
+    Active: purple/format_button_down.png 3 3 3 3
+    Hover: purple/format_button.png 3 3 3 3
+    ActiveHover: purple/format_button_down.png 3 3 3 3
+    Disabled: purple/button.png 1 1 1 1
+    Notify: purple/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: purple/format_button.png 3 3 3 3
+    Down: purple/format_button_down.png 3 3 3 3
+    Active: purple/format_button_down.png 3 3 3 3
+    Hover: purple/format_button.png 3 3 3 3
+    ActiveHover: purple/format_button_down.png 3 3 3 3
+    Disabled: purple/button.png 1 1 1 1
+    Notify: purple/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: purple/actionbar_button_bg.png
+    Down: purple/actionbar_button_down.png 2 2 2 2
+    Active: purple/actionbar_button_down.png 2 2 2 2
+    Hover: purple/actionbar_button.png 2 3 2 4
+    ActiveHover: purple/actionbar_button_down.png 2 2 2 2
+    Disabled: purple/actionbar_button.png 2 3 2 4
+    Notify: purple/actionbar_button.png 2 3 2 4
+
+FormattingBarButton:
+  Backgrounds:
+    Normal: purple/actionbar_button_bg.png
+    Down: purple/actionbar_button_down.png 2 2 2 2
+    Active: purple/actionbar_button_down.png 2 2 2 2
+    Hover: purple/actionbar_button.png 2 3 2 4
+    ActiveHover: purple/actionbar_button_down.png 2 2 2 2
+    Disabled: purple/actionbar_button.png 2 3 2 4
+    Notify: purple/actionbar_button.png 2 3 2 4
+  
+AccountAero:
+  Backgrounds:
+    Normal: purple/aero_button.png 75 10 75 10
+    Down: purple/aero_hover.png 75 10 75 0
+    Active: purple/aero_hover.png 75 10 75 0
+    Hover: purple/aero_hover.png 75 10 75 0
+    ActiveHover: purple/aero_button.png 75 10 75 0
+    Disabled: purple/aero_button.png 75 10 75 0
+    Notify: purple/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: purple/cbo_button_normal_left.png 3 3 3 3
+    hover: purple/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: purple/cbo_button_normal_right.png 3 3 3 3
+    Hover: purple/cbo_button_hover_right.png 3 3 3 3
+    Down: purple/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: purple/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: purple/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: purple/cbo_button_normal_left.png 3 3 3 3
+    hover: purple/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: purple/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: purple/TFLEFTO.png 4 4 0 4
+    Down: purple/TFLEFTO.png 4 4 0 4
+    Hover: purple/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - purple/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: purple/CommandBar.png 1 0 1 0
+    EmailHover: purple/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xece3f6
+    Contact: purple/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x50086b
+    NavBarHeader:  black
+    NavBarLink: 0x50086b
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0x50086b
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: purple/status_combo.png tile
+    Hover: purple/status_combo.png tile
+    Down: purple/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: purple/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: purple/Tabpage.png 0 0 0 5
+    Normal: purple/TabN.png 8 16 8 16
+    Active: purple/TabP.png 8 16 8 16
+    ActiveHover: purple/TabPO.png 8 16 8 16
+    Hover: purple/TabO.png 8 16 8 16
+    Notify: purple/TabA.png 8 16 8 16
+    
+AccountPanels:
+  frame: purple/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0xECE3F6   
+    Behind: 0xECE3F6   
+  Icons:
+    Show: purple/showicon.png
+  FontColors:
+    Account: black
+    State: 0x666666
+    Link: 0x50086b
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0xECE3F6    
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0xECE3F6   
+    
+Popup:
+  Background: purple/toast.png 20 20 20 20

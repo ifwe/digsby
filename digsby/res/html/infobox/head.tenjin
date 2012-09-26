@@ -1,0 +1,48 @@
+<?py if 'jquery' in javascript_libs: ?>
+ <script type="text/javascript" src="${lib.resource('jquery-1.3.2.js', 'base').url()}" id="jquery" > </script>
+<?py #endif ?>
+<?py if 'jquery.hotkeys' in javascript_libs: ?>
+ <script type="text/javascript" src="${lib.resource('jquery.hotkeys-0.7.9.js', 'base').url()}" id="jquery.hotkeys" > </script>
+<?py #endif ?>
+ <script type="text/javascript">
+  //<![CDATA[
+   var LIGHTBOX_IMAGE_DIR = "${lib.resource('lightbox/images', 'base').url()}";
+  //]]>
+ </script>
+<?py if 'jquery.fullsize' in javascript_libs: ?>
+ <script type="text/javascript" src="${lib.resource('fullsize/jquery.fullsize.js', 'base').url()}" id="jquery.fullsize" > </script>
+<?py #endif ?>
+<?py if 'jquery.lightbox' in javascript_libs: ?>
+ <script type="text/javascript" src="${lib.resource('lightbox/jquery.lightbox-0.5.js', 'base').url()}" id="jquery.lightbox" > </script>
+<?py #endif ?>
+<?py if 'jquery.jgrow-singleline' in javascript_libs: ?>
+ <script type="text/javascript" src="${lib.resource('jquery.jgrow-0.3-singleline-mod.js', 'base').url()}" id="jquery.jgrow-singleline" > </script>
+<?py #endif ?>
+<?py if 'json' in javascript_libs: ?>
+ <script type="text/javascript" src=       "${lib.resource('json2.js', 'base').url()}" id="json" > </script>
+<?py #endif ?>
+<?py if 'dateformat' in javascript_libs: ?>
+ <script type="text/javascript" src= "${lib.resource('date.format.js', 'base').url()}" id="dateformat" > </script>
+<?py #endif ?>
+ <script type="text/javascript" src=       "${lib.resource('utils.js', 'base').url()}" id="utils" > </script>
+ <script type="text/javascript" src="${platform.resource('infobox.js', 'base').url()}" id="plat-base"> </script>
+ <script type="text/javascript" src=     "${app.resource('infobox.js', 'base').url()}" id="app-base"> </script>
+ <script type="text/javascript" src="${platform.resource('infobox.js', 'local').url()}" id="plat-local"> </script>
+ <script type="text/javascript" src=     "${app.resource('infobox.js', 'local').url()}" id="app-local"> </script>
+ <script type="text/javascript" src="${platform.resource('infobox.js', 'user').url()}" id="plat-user"> </script>
+ <script type="text/javascript" src=     "${app.resource('infobox.js', 'user').url()}" id="app-user"> </script>
+
+ <link rel="stylesheet" type="text/css" href="${lib.resource('fullsize/fullsize.css', 'base').url()}" />
+ <link rel="stylesheet" type="text/css" href="${lib.resource('lightbox/jquery.lightbox-0.5.css', 'base').url()}" />
+ <link rel="stylesheet" type="text/css" href="${platform.resource('infobox.css', 'base').url()}" />
+ <link rel="stylesheet" type="text/css" href=     "${app.resource('infobox.css', 'base').url()}" />
+ <link rel="stylesheet" type="text/css" href="${(gui.skin.skinpath('infobox.css',  False) or path.path()).url()}" />
+
+ <style type="text/css" id="gen_css">
+  #{gui.skin.get_css()}
+ </style>
+
+ <link rel="stylesheet" type="text/css" href="${platform.resource('infobox.css', 'local').url()}" />
+ <link rel="stylesheet" type="text/css" href=     "${app.resource('infobox.css', 'local').url()}" />
+ <link rel="stylesheet" type="text/css" href="${platform.resource('infobox.css', 'user').url()}" />
+ <link rel="stylesheet" type="text/css" href=     "${app.resource('infobox.css', 'user').url()}" />

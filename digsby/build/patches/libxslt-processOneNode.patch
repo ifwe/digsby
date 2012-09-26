@@ -1,0 +1,33 @@
+diff -ru libxslt-1.1.24/libxslt/transform.h libxslt-1.1.24/libxslt/transform.h
+--- libxslt-1.1.24/libxslt/transform.h	Mon Jan 15 04:54:32 2007
++++ libxslt-1.1.24/libxslt/transform.h	Thu Jul 12 11:42:26 2012
+@@ -32,6 +32,8 @@
+ /**
+  * Export context to users.
+  */
++XSLTPUBFUN void XSLTCALL xsltProcessOneNode(xsltTransformContextPtr ctxt, xmlNodePtr node, xsltStackElemPtr params);
++
+ XSLTPUBFUN xsltTransformContextPtr XSLTCALL 
+ 		xsltNewTransformContext	(xsltStylesheetPtr style,
+ 					 xmlDocPtr doc);
+diff -ru libxslt-1.1.24/win32/Makefile.msvc libxslt-1.1.24/win32/Makefile.msvc
+--- libxslt-1.1.24/win32/Makefile.msvc	Fri Aug  3 06:41:02 2007
++++ libxslt-1.1.24/win32/Makefile.msvc	Thu Jul 12 11:43:17 2012
+@@ -56,7 +56,7 @@
+ 
+ # The linker and its options.
+ LD = link.exe
+-LDFLAGS = /nologo
++LDFLAGS = /OPT:REF /OPT:ICF /nologo /DEBUG
+ LDFLAGS = $(LDFLAGS) /LIBPATH:$(BINDIR) /LIBPATH:$(LIBPREFIX)
+ LIBS = wsock32.lib
+ 
+@@ -69,7 +69,7 @@
+ CFLAGS = $(CFLAGS) /D "_DEBUG" /Od /Z7
+ LDFLAGS = $(LDFLAGS) /DEBUG
+ !else
+-CFLAGS = $(CFLAGS) /D "NDEBUG" /O2 
++CFLAGS = $(CFLAGS) /D "NDEBUG" /Os /GL /GS- /Zi
+ LDFLAGS = $(LDFLAGS) /OPT:NOWIN98
+ !endif
+ 

@@ -1,0 +1,6232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Aaron Costello <aaron@digsby.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Digsby\n"
+"Report-Msgid-Bugs-To: https://translations.launchpad.net/digsby\n"
+"POT-Creation-Date: 2011-03-29 11:04-0400\n"
+"PO-Revision-Date: 2011-03-29 11:03-0500\n"
+"Last-Translator: Aaron Costello <aaron@digsby.com>\n"
+"Language-Team: Digsby Team\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Poedit-Language: L33T\n"
+"X-Poedit-Country: USA\n"
+"X-Poedit-Basepath: ..\\\n"
+
+#. $Rev$
+msgctxt "__metadata__"
+msgid "__version__"
+msgstr ""
+
+#: res/actions.yaml:13 res/actions.yaml:126
+msgid "&Buddy Info"
+msgstr "&B|_||)|)'/ 1|\\||=0"
+
+#: res/actions.yaml:16 res/actions.yaml:129
+msgid "&Send IM"
+msgstr "&53|\\||) 1|\\/|"
+
+#: res/actions.yaml:19 res/actions.yaml:132
+msgid "Send &File"
+msgstr "53|\\||) &F1|_3"
+
+#: res/actions.yaml:22 res/actions.yaml:135
+msgid "Send &Email"
+msgstr "53|\\||) &3|\\/|41|_"
+
+#: res/actions.yaml:25 res/actions.yaml:138
+msgid "Send &SMS"
+msgstr "53|\\||) &5|\\/|5"
+
+#: res/actions.yaml:30 res/actions.yaml:58 res/actions.yaml:74
+#: res/actions.yaml:92 res/actions.yaml:108 src/gui/imwin/imwinmenu.py:65
+msgid "&View Past Chats"
+msgstr "&V13\\/\\/ P457 (#472"
+
+#: res/actions.yaml:33 res/actions.yaml:143
+msgid "&Alert Me When..."
+msgstr "&4|_3|27 |\\/|3 \\/\\/#3|\\|..."
+
+#: res/actions.yaml:38
+msgid "Re&name"
+msgstr "&R3&N4|\\/|3"
+
+#: res/actions.yaml:41 res/actions.yaml:61 res/actions.yaml:77
+#: res/actions.yaml:117
+msgid "Bl&ock"
+msgstr "|3|_&0(|<"
+
+#: res/actions.yaml:45 res/actions.yaml:65 res/actions.yaml:81
+#: res/actions.yaml:121
+msgid "Unbl&ock"
+msgstr "|_||\\|&B|_0(|<"
+
+#: res/actions.yaml:48 res/actions.yaml:313 res/actions.yaml:325
+#: res/actions.yaml:335 res/actions.yaml:346 res/actions.yaml:352
+#: res/actions.yaml:360 src/gui/widgetlist.py:43
+#: src/plugins/twitter/twitter_gui.py:1383
+msgid "&Delete"
+msgstr "&D3|_373"
+
+#: res/actions.yaml:97
+msgid "Resend authorization"
+msgstr "|2353|\\||) 4|_|7|-|0|2124710|\\|"
+
+#: res/actions.yaml:100
+msgid "Re-request authorization"
+msgstr "|23-|23Q|_|357 4|_|7|-|0|2124710|\\|"
+
+#: res/actions.yaml:103
+msgid "Remove authorization"
+msgstr "|23|\\/|0\\/3 4|_|7|-|0|2124710|\\|"
+
+#: res/actions.yaml:111
+msgid "Appear offline"
+msgstr "4PP34|2 0|=|=|_1|\\|3"
+
+#: res/actions.yaml:114
+msgid "Appear online"
+msgstr "4PP34|2 0|\\||_1|\\|3"
+
+#: res/actions.yaml:148
+msgid "Re&name && Rearrange..."
+msgstr "|23&N4|\\/|3 |\\| R34|2|24|\\|63"
+
+#: res/actions.yaml:151
+msgid "Split Merged Contact..."
+msgstr "5P|_17 |\\/|3|263|) (0|\\|74(7..."
+
+#: res/actions.yaml:162 src/gui/buddylist/buddylist.py:1011
+msgid "&Rename Group"
+msgstr "&R3|\\|4|\\/|3 6|20|_|P"
+
+#: res/actions.yaml:165 src/gui/buddylist/buddylist.py:1012
+msgid "&Delete Group"
+msgstr "&D3|_373 6|20|_|p"
+
+#: res/actions.yaml:169 src/gui/buddylist/buddylist.py:1013
+msgid "Add &Group"
+msgstr "4|)|) &6|20|_|P"
+
+#: res/actions.yaml:174 src/gui/accountslist.py:136
+#: src/gui/uberwidgets/connectionlist.py:462
+msgid "&Connect"
+msgstr "&(0|\\||\\|3(7"
+
+#: res/actions.yaml:177
+msgid "&Disconnect"
+msgstr "&D15(0|\\||\\|3(7"
+
+#: res/actions.yaml:186
+msgid "&Format Screen Name"
+msgstr "&F0|2|\\/|47 5(|233|\\| |\\|4|\\/|3"
+
+#: res/actions.yaml:190
+msgid "&Update Email Address"
+msgstr "&UP|)473 3|\\/|41|_ 4|)|)|2355"
+
+#: res/actions.yaml:194
+msgid "&Confirm Account"
+msgstr "&C0|\\||=1|2|\\/| 4((0|_||\\|7"
+
+#: res/actions.yaml:197
+msgid "Change &Password (URL)"
+msgstr "(#4|\\|63 &P455\\/\\/0|2|) (URL)"
+
+#: res/actions.yaml:200
+msgid "&IM Forwarding (URL)"
+msgstr "&1|\\/| |=0|2\\/\\/0|2|)1|\\|6 (URL)"
+
+#: res/actions.yaml:203
+msgid "&AOL Alerts (URL)"
+msgstr "&40|_ 4|_3|272 (|_||2|_)"
+
+#: res/actions.yaml:206
+msgid "&My Page on ICQ.com (URL)"
+msgstr "&|\\/|'/ P463 0|\\| ICQ.com (|_||2|_)"
+
+#: res/actions.yaml:218
+msgid "Set Priority"
+msgstr "537 P|210|217'/"
+
+#: res/actions.yaml:234
+msgid "Change &Password"
+msgstr "(#4|\\|63 &P455\\/\\/0|2|)"
+
+#: res/actions.yaml:244
+msgid "&Search for a Contact"
+msgstr "&534|3(|-| 4  (0|\\|74(7"
+
+#: res/actions.yaml:247
+msgid "Address Book"
+msgstr "4|)|)|2355 |300|<"
+
+#: res/actions.yaml:250
+msgid "Mobile Settings"
+msgstr "|\\/|0|31|_3 53771|\\|62"
+
+#: res/actions.yaml:253
+msgid "My Account"
+msgstr "|\\/|'/ 4((0|_||\\|7"
+
+#: res/actions.yaml:256 src/msn/msngui.py:35
+msgid "Create Group Chat"
+msgstr "(|23473 6|20|_|P (#47"
+
+#: res/actions.yaml:276
+msgid "My Account Info (URL)"
+msgstr "|\\/|'/ 4((0|_||\\|7 1|\\||=0 (URL)"
+
+#: res/actions.yaml:279
+msgid "My Web Profile (URL)"
+msgstr "|\\/|'/ \\/\\/3|3 P|20|=1|_3 (|_||2|_)"
+
+#: res/actions.yaml:283
+msgid "Update presence"
+msgstr "|_|P|)473 P|2353|\\|(3"
+
+#: res/actions.yaml:287
+msgid "Open &Inbox"
+msgstr "0P3|\\| &1|\\||30><"
+
+#: res/actions.yaml:290
+msgid "C&ompose..."
+msgstr "(&0|\\/|P053..."
+
+#: res/actions.yaml:295 src/plugins/facebook/actions.yaml:17
+#: src/plugins/linkedin/actions.yaml:13 src/plugins/myspace/actions.yaml:16
+#: src/plugins/twitter/twitter_gui.py:2044
+msgid "&Rename"
+msgstr "&R3|\\|4|\\/|3"
+
+#: res/actions.yaml:300 src/plugins/linkedin/actions.yaml:2
+msgid "&Check Now"
+msgstr "(#3(|<1|\\|' |\\|0\\/\\/..."
+
+#: res/actions.yaml:303 src/plugins/facebook/actions.yaml:4
+msgid "&Tell Me Again"
+msgstr "&73|_|_ |\\/|3 4641|\\|"
+
+#: res/actions.yaml:307 res/actions.yaml:319 res/actions.yaml:331
+#: res/actions.yaml:342 res/actions.yaml:350 res/actions.yaml:356
+#: src/gui/filetransfer/filetransferlist.py:473
+msgid "&Open"
+msgstr "&0P3|\\|"
+
+#: res/actions.yaml:309 res/actions.yaml:321 res/actions.yaml:333
+#: res/actions.yaml:344 res/actions.yaml:358
+msgid "Mark as &Read"
+msgstr "|\\/|4|2|< 42 &R34|)"
+
+#: res/actions.yaml:311 res/actions.yaml:323
+msgid "&Archive"
+msgstr "&4|2(#1\\/3"
+
+#: res/actions.yaml:315 res/actions.yaml:327 res/actions.yaml:337
+#: res/actions.yaml:362
+msgid "Report &Spam"
+msgstr "|23P0|27 &5P4|\\/|"
+
+#: res/actions.yaml:366 src/plugins/facebook/actions.yaml:2
+#: src/plugins/myspace/actions.yaml:2 src/plugins/twitter/twitter_gui.py:1499
+msgid "&Update Now"
+msgstr "&|_|P|)473 |\\|0\\/\\/"
+
+#: res/actions.yaml:369 src/plugins/facebook/actions.yaml:6
+#: src/plugins/linkedin/actions.yaml:4 src/plugins/myspace/actions.yaml:5
+msgid "&Home"
+msgstr "#0|\\/|3"
+
+#: res/actions.yaml:372 src/plugins/linkedin/actions.yaml:10
+msgid "&Profile"
+msgstr "P|20|=1|_3"
+
+#: res/actions.yaml:375 src/plugins/linkedin/actions.yaml:6
+#: src/plugins/myspace/actions.yaml:7
+msgid "&Inbox"
+msgstr "1|\\||30><"
+
+#: res/actions.yaml:378 src/plugins/facebook/actions.yaml:10
+#: src/plugins/myspace/actions.yaml:9
+msgid "&Friends"
+msgstr "|=|213|\\||)2:"
+
+#: res/actions.yaml:381 src/plugins/myspace/actions.yaml:11
+msgid "&Blog"
+msgstr "&B|_06"
+
+#: res/actions.yaml:384
+msgid "B&ulletins"
+msgstr "&B|_||_|_371|\\|2"
+
+#: res/actions.yaml:387 src/plugins/facebook/actions.yaml:20
+#: src/plugins/linkedin/actions.yaml:16 src/plugins/myspace/actions.yaml:19
+msgid "&Set Status"
+msgstr "537 5747|_|5"
+
+#: res/actions.yaml:391 src/gui/imwin/imwin_email.py:51
+#: src/gui/imwin/imwin_email.py:57 src/gui/imwin/imwin_email.py:115
+msgid "Edit..."
+msgstr "3|)17..."
+
+#: res/actions.yaml:398 src/gui/status.py:742 src/gui/widgetlist.py:61
+msgid "Delete"
+msgstr "|)3|_373"
+
+#: res/notificationview.yaml:1
+msgid "Contact Signs On"
+msgstr "(0|\\|74(72 516|\\|2 0|=|="
+
+#: res/notificationview.yaml:6
+msgid "Contact Signs Off"
+msgstr "(0|\\|74(72 516|\\|2 0|\\|"
+
+#: res/notificationview.yaml:10
+msgid "Contact Becomes Available"
+msgstr "|_|P|)473 4\\/41|_4|3|_3"
+
+#: res/notificationview.yaml:15
+msgid "Contact Goes Away"
+msgstr "(0|\\|74(7 |_4'/0|_|7"
+
+#: res/notificationview.yaml:20
+msgid "Contact Changes Status Message"
+msgstr "|)3|_373 S747|_|2 |\\/|355463"
+
+#: res/notificationview.yaml:25
+msgid "Contact Returns From Idle"
+msgstr "(0|\\|74(7 |237|_||2|\\|2 |=|20|\\/| 1|)|_3"
+
+#: res/notificationview.yaml:29
+msgid "Contact Becomes Idle"
+msgstr "(0|\\|74(7 |\\|4|\\/|3:"
+
+#: res/notificationview.yaml:33
+msgid "IM Received"
+msgstr "|23(31\\/3|) "
+
+#: res/notificationview.yaml:39
+msgid "IM Received (not in focus)"
+msgstr "1|\\/| |23(31\\/3|) (|\\|07 1|\\| |=0(|_|5)"
+
+#: res/notificationview.yaml:45
+msgid "IM Received (hidden to tray)"
+msgstr "1|\\/| |23(31\\/3|) (#1|)|)3|\\| 2 7|24'/)"
+
+#: res/notificationview.yaml:53
+msgid "IM Received (first message)"
+msgstr "1|\\/| |23(31\\/3|) (|=1|257 |\\/|355463)"
+
+#: res/notificationview.yaml:59
+msgid "IM Sent"
+msgstr "53|\\|7 "
+
+#: res/notificationview.yaml:64
+msgid "Group Chat Invite"
+msgstr "(#47 1|\\|\\/173"
+
+#: res/notificationview.yaml:74
+msgid "File Transfer Request"
+msgstr "|=1|_3 7|24|\\|5|=3|22"
+
+#: res/notificationview.yaml:85
+msgid "File Transfer Complete"
+msgstr "|=1|_3 7|24|\\|5|=3|22"
+
+#: res/notificationview.yaml:91
+msgid "File Transfer Error"
+msgstr "|=1|_3 7|24|\\|5|=3|22"
+
+#: res/notificationview.yaml:97
+msgid "New Email Arrives"
+msgstr "3|\\/|41|_ 4||)|)|255"
+
+#: res/notificationview.yaml:105
+msgid "Error Occurs"
+msgstr "3|2|20|2 0((|_||22"
+
+#: res/notificationview.yaml:112
+msgid "Downloading dictionary"
+msgstr "|)0\\/\\/|\\||_04|) |)1(710|\\|4|2Y?"
+
+#: src/AccountManager.py:266
+msgid "Digsby is running in \"Local Mode\""
+msgstr "|)165|3'/ B |2|_||\\||\\|1|\\|6 1|\\| \"|_0(4|_ |\\/|0|)3\""
+
+#: src/AccountManager.py:268
+msgid "Changes to Digsby preferences may not synchronize to your other PCs right away"
+msgstr "(#4|\\|632 2 |)165|3'/ P|23|=3|23|\\|(32 |\\/|4'/ |\\|07 5'/|\\|(#|20|\\|123 2 '/0 07#3|2 P(2 |216#7 4\\/\\/4Y"
+
+#: src/AccountManager.py:800 src/gui/social_status_dialog.py:592
+#: src/imaccount.py:517 src/plugins/twitter/twitter.py:1210
+#: src/social/network.py:69 src/social/network.py:74 src/social/network.py:76
+#: src/social/network.py:77
+msgid "Retry"
+msgstr "|237|2'/"
+
+#: src/AccountManager.py:801 src/imaccount.py:518 src/imaccount.py:519
+#: src/imaccount.py:520 src/social/network.py:75
+msgid "Reconnect"
+msgstr "|23(0|\\||\\|3(7"
+
+#: src/AccountManager.py:802 src/hub.py:80 src/jabber/JabberChat.py:263
+#: src/plugins/digsby_status/status_tag_urls.py:113
+#: src/plugins/digsby_updater/updater.py:577
+#: src/plugins/facebook/fbacct.py:370
+#: src/plugins/myspace/MyspaceProtocol.py:435
+#: src/plugins/researchdriver/researchtoast.py:37
+#: src/plugins/twitter/twitter.py:1212
+msgid "Close"
+msgstr "(|_053"
+
+#: src/AccountManager.py:803 src/imaccount.py:516 src/social/network.py:67
+msgid "Edit Account"
+msgstr "3|)17 4((0|_||\\|7"
+
+#: src/AccountManager.py:814 src/common/Protocol.py:35 src/digsbysplash.py:39
+#: src/digsbysplash.py:655 src/digsbysplash.py:659 src/digsbysplash.py:729
+msgid "Authentication Error"
+msgstr "0# |\\|035! 4|_|7|-|3|\\|71(4710|\\| 3|2|20|2"
+
+#: src/AccountManager.py:817
+msgid "Mailbox does not exist"
+msgstr "|\\/|41|_|30>< |)032 |\\|07 ><157"
+
+#: src/AccountManager.py:820
+msgid "This account has been signed on from another location"
+msgstr "|)12 4((0|_||\\|7 #42 |333|\\| 516|\\|3|) 0|\\| |=|20|\\/| 4|\\|07#3|2 |_0(4710|\\|"
+
+#: src/AccountManager.py:823
+msgid "Connection to server lost"
+msgstr "(0|\\||\\|3(710|\\| 2 53|2\\/3|2 |_057"
+
+#: src/AccountManager.py:826
+msgid "Failed to connect to server"
+msgstr "|=41|_3|) 2 (0|\\||\\|3(7 2 53|2\\/3|2"
+
+#: src/AccountManager.py:829
+msgid "Could not connect because you are signing on too often. Please wait 20 minutes before trying to log in again."
+msgstr "(0|_||_|) |\\|07 (0|\\||\\|3(7 (02 J00 12 516|\\|1|\\|6 0|\\| 700 0|=73|\\|. P|_3453 \\/\\/417 20 |\\/|1|\\||_|732 |33|=0|23 7|2'/1|\\|6 2 |_06 1|\\| 4641|\\|."
+
+#: src/AccountManager.py:848
+msgid "{protocol_name} Error"
+msgstr "{protocol_name} 3|2|20|2"
+
+#: src/common/AchievementMixin.py:105
+#, python-format
+msgid "%(num_accounts)d account"
+msgid_plural "%(num_accounts)d accounts"
+msgstr[0] "%(num_accounts)d 4((0|_||\\|7"
+msgstr[1] "%(num_accounts)d 4((0|_||\\|72"
+
+#: src/common/Conversation.py:12
+msgid "[Auto-Response] {message}"
+msgstr "[Auto-Response] {message}"
+
+#: src/common/Conversation.py:46
+msgid "Disconnected"
+msgstr "|)15(0|\\||\\|3(73|)"
+
+#: src/common/Conversation.py:114
+msgid "Some of the messages you sent may not have been received."
+msgstr "50|\\/|3 0|= 73# |\\/|3554632 J00 53|\\|7 |\\/|4'/ |\\|07 #4\\/3 |333|\\| |23(31\\/3|)."
+
+#: src/common/Conversation.py:349
+msgid "{name} joined the group chat"
+msgstr "{name} (|-|47 J01|\\|"
+
+#: src/common/Conversation.py:353
+msgid "{name} left the group chat"
+msgstr "{name} |_3|=7 73|-| 6|20|_|P"
+
+#: src/common/Conversation.py:371
+#, python-format
+msgid "%(name)s wants to have an Audio/Video chat. <a href=\"%(link)s\">Send them an invite.</a>"
+msgstr "%(name)s  \\/\\/4|\\|72 2 #4\\/3 |\\| 4|_||)10/\\/1|)30 (#47. <a href=\"%(link)s\">53|\\||) 7#3|\\/| |\\| 1|\\|\\/173.</a>"
+
+#: src/common/Protocol.py:25
+msgid "Online"
+msgstr "0|\\||_1|\\|3"
+
+#: src/common/Protocol.py:26 src/digsbysplash.py:517
+msgid "Connecting..."
+msgstr "(0|\\||\\|3(71|\\/|4(471|\\|'..."
+
+#: src/common/Protocol.py:27
+msgid "Authenticating..."
+msgstr "4|_|7#3|\\|71(471|\\|6..."
+
+#: src/common/Protocol.py:28
+msgid "Loading Contact List..."
+msgstr "|_04|)1|\\|6 (0|\\|74(7 |_157..."
+
+#: src/common/Protocol.py:29 src/common/statusmessage.py:35
+#: src/common/statusmessage.py:226 src/contacts/buddylistfilters.py:16
+#: src/gui/statuscombo.py:476 src/oscar/OscarBuddies.py:47
+msgid "Offline"
+msgstr "0|=|=|_1|\\|3"
+
+#: src/common/Protocol.py:30
+msgid "Checking Mail..."
+msgstr "(#3(|<1|\\|' |\\/|41|_..."
+
+#: src/common/Protocol.py:31
+msgid "Initializing..."
+msgstr "1|\\|1714|_121|\\|6..."
+
+#: src/common/Protocol.py:36
+msgid "You have signed in from another location"
+msgstr "|)1|) |_| 516|\\| 1|\\| |=|20|\\/| 4|\\|07#3|2 |_0(4710|\\|"
+
+#: src/common/Protocol.py:37 src/digsbysplash.py:40 src/digsbysplash.py:731
+msgid "Connection Lost"
+msgstr "0# |\\|035 (0|\\||\\|3(710|\\| |_057"
+
+#: src/common/Protocol.py:38 src/digsbysplash.py:651 src/digsbysplash.py:668
+#: src/digsbysplash.py:723 src/digsbysplash.py:733 src/digsbysplash.py:742
+msgid "Failed to Connect"
+msgstr "(0|\\||\\|3(7 |=41|_!!!110|\\|33|_3\\/3|\\|7'/"
+
+#: src/common/Protocol.py:39
+msgid "You are signing in too often"
+msgstr "|_| |2 516|\\|1|\\|6 1|\\| 2 0|=73|\\|"
+
+#: src/common/Protocol.py:40
+msgid "This account does not have a mailbox"
+msgstr "7|-|15 4((0|_||\\|7 |)032 |\\|07 |-|4\\/34 |\\/|41|_|30><"
+
+#: src/common/Protocol.py:41
+msgid "Failed to Initialize"
+msgstr "|=41|_3|) 2 1|\\|1714|_123"
+
+#: src/common/Protocol.py:42
+#, python-format
+msgid "Connection Failed. Retry in %s"
+msgstr "(0|\\||\\|3(710|\\| |=41|_3|). |237|2'/ 1 |\\| %s"
+
+#: src/common/Protocol.py:43
+msgid "Internal Server Error"
+msgstr "1|\\|73|2|\\|4|_ 53|2\\/3|2 3|2|20|2"
+
+#: src/common/Protocol.py:457
+msgid "Error inviting {name}: they are offline"
+msgstr "3|2|20|2 1|\\|\\/171|\\| {name}: 7#3'/ 12 0|=|=|_1|\\|3"
+
+#: src/common/Protocol.py:459
+msgid "Error inviting {name}: they do not support group chat"
+msgstr "3|2|20|2 1|\\|\\/171|\\|6 {name}: 7#3'/ |)0 |\\|07 5|_|PP0|27 6|20|_|P (#47"
+
+# %s
+#: src/common/accountbase.py:45 src/contacts/Contact.py:96
+#, python-format
+msgid "Enter an alias for %s:"
+msgstr "3|\\|73|2 |\\| 4|_142 4 %s:"
+
+#: src/common/accountbase.py:46 src/contacts/Contact.py:97
+#, python-format
+msgid "Rename %s"
+msgstr "|23|\\|4|\\/|3 %s"
+
+#: src/common/actions.py:149
+msgid "No actions"
+msgstr "|\\|0 4(710|\\|2"
+
+#: src/common/emailaccount.py:296
+msgid "Email Client"
+msgstr "3|\\/|41|_(|_13|\\|7"
+
+#: src/common/emailaccount.py:474
+msgid "No unread mail"
+msgstr "|\\|0 |_||\\||234|) |\\/|41|_"
+
+#: src/common/emailaccount.py:555
+msgid "No System Email Client"
+msgstr "|\\|0 5'/573|\\/| 3|\\/|41|_ (|_13|\\|7"
+
+#: src/common/emailaccount.py:556
+msgid "No system email client is configured."
+msgstr "|\\|0 5'/573|\\/| 3|\\/|41|_ (|_13|\\|7 |3 (0|\\||=16|_||23|)."
+
+#: src/common/emailaccount.py:561
+msgid "Could not start system mail client."
+msgstr "(0|_||_|) |\\|07 574|27 5'/573|\\/| |\\/|41|_ (|_13|\\|7."
+
+#: src/common/emailaccount.py:563
+msgid "Error launching system mail client"
+msgstr "3|2|20|2 |_4|_||\\|(#1|\\|6 5Y573|\\/| |\\/|41|_ (|_13|\\|7"
+
+#: src/common/emailaccount.py:626
+#, python-format
+msgid "Could not start system mail client %r."
+msgstr "(0|_||_|) |\\|07 574|27 5'/573|\\/| |\\/|41|_ (|_13|\\|7 %r."
+
+#: src/common/filetransfer.py:73
+msgid "{completed} of {size} ({speed}/sec) -- {time} remain"
+msgstr "{completed} 0|= {size} ({speed}/sec) -- {time} |23|\\/|41|\\|"
+
+#: src/common/filetransfer.py:74
+msgid "Received from {name}"
+msgstr "|23(31\\/3|0 |=|20|\\/| {name}"
+
+#: src/common/filetransfer.py:74
+msgid "Sent to {name}"
+msgstr "53|\\|7 2 {name}"
+
+#: src/common/filetransfer.py:75
+msgid "Connecting to {name}..."
+msgstr "(0|\\||\\|3(71|\\|' 2 {name}..."
+
+#: src/common/filetransfer.py:76 src/common/filetransfer.py:79
+msgid "Waiting for {name} to accept file"
+msgstr "\\/\\/4171|\\|' 4 {name} 2 4((3P7 |=1|_3"
+
+#: src/common/filetransfer.py:78
+msgid "Canceled by {name}"
+msgstr "(4|\\|(3|_|_3|) |3'/ {name}"
+
+#: src/common/filetransfer.py:80
+msgid "Failed during transfer from {name}"
+msgstr "|=41|_3d |)|_||21|\\|6 7|24|\\|5|=3|2 |=|20|\\/| {name}"
+
+#: src/common/filetransfer.py:80
+msgid "Failed during transfer to {name}"
+msgstr "|=41|_3d |)|_||21|\\|6 7|24|\\|5|=3|2 2 {name}"
+
+#: src/common/filetransfer.py:81
+msgid "Failed to connect to {name}"
+msgstr "|=41|_3|) 2 (0|\\||\\|3(7 2 {name}"
+
+#: src/common/filetransfer.py:82
+msgid "File size too big for proxy transfer"
+msgstr "|=1|_3 5123 700 |316 4 P|20><'/ 7|24|\\|5|=3|2"
+
+#: src/common/filetransfer.py:99
+msgid "Open"
+msgstr "0P3|\\|"
+
+#: src/common/filetransfer.py:100 src/gui/imagedialog.py:12
+#: src/imaccount.py:521 src/imaccount.py:524 src/imaccount.py:525
+#: src/imaccount.py:526 src/plugins/digsby_updater/UpdateProgress.py:147
+#: src/plugins/twitter/twitter_gui.py:1621
+msgid "Cancel"
+msgstr "(4|\\|(3|_"
+
+#: src/common/filetransfer.py:101 src/gui/accountslist.py:40
+#: src/gui/imwin/imwin_tofrom.py:341 src/gui/pref/pg_accounts.py:631
+#: src/plugins/digsby_updater/UpdateProgress.py:144
+#: src/plugins/twitter/twitter_gui.py:1948
+#: src/tests/testgui/uberdemos/UberComboXTDemo.py:32
+msgid "Remove"
+msgstr "|23|\\/|0\\/3"
+
+#: src/common/filetransfer.py:104
+msgid "Save"
+msgstr "54\\/3"
+
+#: src/common/filetransfer.py:105
+msgid "Save as..."
+msgstr "54\\/3 45..."
+
+#: src/common/filetransfer.py:106
+msgid "Reject"
+msgstr "|23J3(7"
+
+#: src/common/filetransfer.py:243
+msgid "Directory does not exist"
+msgstr "|)1|23(70|2'/ |)032 |\\|07 ><157"
+
+#: src/common/filetransfer.py:273
+msgid "Choose a location to save"
+msgstr "(#0053 @ |_0(4710|\\| 2 54\\/3"
+
+#: src/common/filetransfer.py:356
+msgid "Failed to receive {filename} from {name}"
+msgstr "|=41|_3|) 2 |23(31\\/3 {filename} |=|20|\\/| {name}"
+
+#: src/common/filetransfer.py:356
+msgid "Failed to send {filename} to {name}"
+msgstr "|=41|_3|) 2 53|\\||) {filename} 2 {name}"
+
+#: src/common/protocolmeta.py:42 src/common/statusmessage.py:31
+#: src/common/statusmessage.py:32 src/common/statusmessage.py:222
+#: src/gui/native/win/jumplist.py:129 src/gui/status.py:59
+#: src/gui/statuscombo.py:501 src/jabber/JabberResource.py:115
+#: src/plugins/component_gtalk/info.yaml:6 src/plugins/fbchat/info.yaml:17
+#: src/plugins/provider_aol/info.yaml:92
+#: src/plugins/provider_aol/info.yaml:137
+#: src/plugins/provider_jabber/info.yaml:48
+#: src/plugins/provider_windows_live/info.yaml:30
+msgid "Available"
+msgstr "4\\/41|_4|3|_3"
+
+#: src/common/protocolmeta.py:42 src/plugins/provider_aol/info.yaml:138
+#: src/plugins/provider_jabber/info.yaml:49
+msgid "Free For Chat"
+msgstr "|=|233 4 (#47"
+
+#: src/common/protocolmeta.py:43 src/common/statusmessage.py:33
+#: src/common/statusmessage.py:223 src/gui/native/win/jumplist.py:130
+#: src/gui/status.py:60 src/gui/statuscombo.py:517 src/gui/statuscombo.py:522
+#: src/oscar/OscarProtocol.py:1088 src/plugins/component_gtalk/info.yaml:7
+#: src/plugins/provider_aol/info.yaml:93
+#: src/plugins/provider_aol/info.yaml:139
+#: src/plugins/provider_jabber/info.yaml:50
+#: src/plugins/provider_windows_live/info.yaml:31
+msgid "Away"
+msgstr "4\\/\\/4'/"
+
+#: src/common/protocolmeta.py:43 src/jabber/JabberResource.py:14
+#: src/plugins/provider_aol/info.yaml:140
+#: src/plugins/provider_jabber/info.yaml:51
+msgid "Do Not Disturb"
+msgstr "|)0 |\\|07 |)157|_||2|3"
+
+#: src/common/protocolmeta.py:43 src/jabber/JabberResource.py:16
+#: src/plugins/provider_jabber/info.yaml:52
+msgid "Extended Away"
+msgstr "><73|\\||)3|) 4\\/\\/4'/"
+
+#: src/common/spelling/spellcheck.py:471
+msgid "You need to download the {langname} dictionary to use it. Would you like to download this dictionary now?"
+msgstr "J00 |\\|33|) 2 |)0\\/\\/|\\||_04|) 73# {langname} |)1(710|\\|4|2'/ 2 |_|53 17.  \\/\\/0|_||_|) J00 \\/\\/|_||3 2 |)0\\/\\/|\\||_04|) |)12 |)1(710|\\|4|2'/ |\\|0\\/\\/?"
+
+#: src/common/spelling/spellcheck.py:472
+msgid "Download Dictionary?"
+msgstr "|)0\\/\\/|\\||_04|) |)1(710|\\|4|2Y?"
+
+#: src/common/spelling/spellcheck.py:482
+msgid "Dictionary not downloaded."
+msgstr "|)1(710|\\|2|2'/ |\\|07 |)0\\/\\/|\\||_04|)3|)"
+
+#: src/common/spelling/spellcheck.py:483
+msgid "To download it later, select it in the Conversation Preferences."
+msgstr "2 |)0\\/\\/|\\||_04|) 17 |_8|2, 53|_397 17 1|\\| 73# (0|\\|\\/3|254710|\\| P|23|=3|23|\\|(32."
+
+#: src/common/spelling/spellcheck.py:486
+msgid "Download Dictionary Canceled"
+msgstr "|)0\\/\\/|\\||_04|) |)1(710|\\|4|2Y (4|\\|(3|_3|)"
+
+#: src/common/spelling/spellcheck.py:505
+msgid "Dictionary Set"
+msgstr "|)1(710|\\|4|2'/ 537"
+
+#: src/common/spelling/spellcheck.py:506
+msgid "Spellcheck language has been set to {langname}."
+msgstr "5P3|_|_(#3(|< |_4|\\|6|_|463 #42 |333|\\| 537 2 {langname}."
+
+#: src/common/spelling/spellcheck.py:511
+msgid "Spellcheck error"
+msgstr "5P3|_|_(#3(|< 3|2|20|2"
+
+#: src/common/spelling/spellcheck.py:512
+msgid "Failed setting up dictionary. Try reselecting desired language in the preferences."
+msgstr "|=41|_3|) 53771|\\|6 |_|P |)1(710|\\|4|2'/. 7|2'/ |2353|_3(71|\\|6 |)351|23|) |_4|\\|6|_|463 1|\\| 73# P|23|=3|23|\\|(32."
+
+#: src/common/spelling/spellcheck.py:518 src/common/spelling/spellcheck.py:676
+msgid "Dictionary Installed"
+msgstr "|)1(710|\\|2|2'/ 1|\\|s74|_|_3|)"
+
+#: src/common/spelling/spellcheck.py:519
+msgid "You can set this language in the conversation preferences."
+msgstr "J00 (4|\\| 537 |)12 |_4|\\|6|_|463 1|\\| 73# (0|\\|\\/3|254710|\\| P|23|=3|23|\\|(32."
+
+#: src/common/spelling/spellcheck.py:563
+msgid "Dictionary will be activated after install completes."
+msgstr "|)1(710|\\|4|2'/ \\/\\/1|_|_ |3 4(71\\/473|) 4|=73|2 1|\\|574|_|_ (0|\\/|P|_3732."
+
+#: src/common/spelling/spellcheck.py:563
+msgid "Installing Dictionary"
+msgstr "1|\\|574|_|_1|\\|' |)1(710|\\|4|2'/"
+
+#: src/common/spelling/spellcheck.py:676
+msgid "Setting spellcheck language..."
+msgstr "53771|\\|' 5P3|_|_(#3(|< |_4|\\|6|_|463..."
+
+#: src/common/spelling/spellcheck.py:689
+msgid "{langname} Dictionary"
+msgstr "{langname} |)1(710|\\|4|2'/"
+
+#: src/common/statusmessage.py:34 src/common/statusmessage.py:225
+#: src/gui/native/win/jumplist.py:131 src/gui/statuscombo.py:544
+msgid "Invisible"
+msgstr "1|\\|\\/151|3|_3"
+
+#: src/common/statusmessage.py:138
+msgid "{truncatedtitle}..."
+msgstr "{truncatedtitle}..."
+
+#: src/common/statusmessage.py:224
+msgid "Idle"
+msgstr "1|)|_3"
+
+#: src/contacts/Group.py:187
+msgid "That buddy is already part of metacontact \"{alias}\" in group \"{group}.\""
+msgstr "|)47 |3|_||)|)'/ |3 4|_|234|)'/ P4|27 0|= |\\/|374(0|\\|74(7 \"{alias}\" 1|\\| 6|20|_|P \"{group}.\""
+
+#: src/contacts/Group.py:189 src/gui/addcontactdialog.py:36
+#: src/gui/addcontactdialog.py:203 src/gui/capabilitiesbar.py:118
+#: src/gui/contactdialogs.py:252
+msgid "Add Contact"
+msgstr "4|)|) (0|\\|74(7"
+
+#: src/contacts/Group.py:221
+msgid "Enter a new name for {name}:"
+msgstr "3|\\|73|2 @ |\\|3\\/\\/ |\\|4|\\/|3 4 {name}:"
+
+#: src/contacts/Group.py:222
+msgid "Rename Group"
+msgstr "|23|\\|4|\\/|3 6|20|_|P"
+
+#: src/contacts/buddylistfilters.py:29 src/contacts/buddyliststore.py:97
+#: src/contacts/buddyliststore.py:384 src/contacts/buddyliststore.py:645
+#: src/contacts/metacontacts.py:43 src/plugins/linkedin/LinkedInAccount.py:84
+msgid "Contacts"
+msgstr "(0|\\|74(72"
+
+#: src/contacts/metacontacts.py:65
+msgid "Unknown"
+msgstr "|_||\\||<|\\|0\\/\\/|\\|"
+
+#: src/contacts/metacontacts.py:820
+msgid "Are you sure you want to split up this merged contact?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 5P|_17 |_|P |)12 |\\/|3|263|) (0|\\|74(7?"
+
+#: src/contacts/metacontacts.py:821
+msgid "Split Contacts"
+msgstr "5P|_17 (0|\\|74(72"
+
+#: src/contacts/sort_model.py:144
+msgid "None (custom)"
+msgstr "|\\|0|\\|3 ((|_|570|\\/|)"
+
+#: src/contacts/sort_model.py:145 src/contacts/sort_model.py:152
+#: src/gui/pref/pg_contact_list.py:405 src/gui/pref/prefstrings.py:20
+#: src/gui/status.py:372 src/plugins/myspace/res/status.tenjin:13
+#: src/plugins/twitter/res/status.tenjin:11
+msgid "Status"
+msgstr "5747|_|5"
+
+#: src/contacts/sort_model.py:146 src/contacts/sort_model.py:153
+msgid "Service"
+msgstr "53|2\\/1(3"
+
+#: src/contacts/sort_model.py:149
+msgid "None"
+msgstr "|\\|0|\\|3"
+
+#: src/contacts/sort_model.py:150
+msgid "Log Size"
+msgstr "|_06 5123"
+
+#: src/contacts/sort_model.py:151 src/gui/vcard/vcardgui.py:18
+msgid "Name"
+msgstr "|\\|4|\\/|3"
+
+#: src/crashgui.py:11
+msgid "Digsby Crash Report"
+msgstr "|)165|3'/ (|245# |23P0|27"
+
+#: src/crashgui.py:12
+msgid "Digsby appears to have crashed."
+msgstr "|)165|3'/ 4PP34|22 2 |-|4\\/3 |245|-|3|)."
+
+#: src/crashgui.py:13
+msgid "If you can, please describe what you were doing before it crashed."
+msgstr "1|= J00 (4|\\|, P|_3453 |)35(|21B3 \\/\\/07 J00 \\/\\/|_|2 |)01|\\|6 |33|=0|23 17 (|245#3|)."
+
+#: src/crashgui.py:15
+msgid "&Send Crash Report"
+msgstr "&53|\\||) (|245# |23P0|27"
+
+#: src/digsby/DigsbyProtocol.py:55
+msgid "Synchronizing Preferences..."
+msgstr "5'/|\\|(#|20|\\|121|\\|' P|23|=3|23|\\|(32..."
+
+#: src/digsby/DigsbyProtocol.py:57
+msgid "Synchronizing..."
+msgstr "5'/|\\|(#|20|\\|121|\\|'..."
+
+#: src/digsby/videochat.py:28
+msgid "Audio/Video Call with {name}"
+msgstr "4|_||)10/\\/1|)30 (4|_|_ \\/\\/17# {name}"
+
+#: src/digsby/videochat.py:91
+#, python-format
+msgid "Join me in an audio/video call: %s"
+msgstr "J01|\\| |\\/|3 1|\\| |\\| 4|_||)10/\\/1|)30 (4|_|_: %s"
+
+#: src/digsby/videochat.py:96
+msgid "You have invited {name} to an audio/video chat."
+msgstr "J00 #4\\/3 1|\\|\\/173|) {name} 2 |\\| 4|_||)10/\\/1|)30 (#47."
+
+#: src/digsby/videochat.py:111
+msgid "Audio/Video chat is currently unavailable."
+msgstr "4|_||)10/\\/1|)30 (#47 |3 (|_||2|23|\\|7|_'/ |_||\\|4\\/41|_4|3|_3."
+
+#: src/digsby/videochat.py:179
+msgid "Audio/Video call ended by other party."
+msgstr "4|_||)10/\\/1|)30 (4|_|_ 3|\\||)3|) |3'/ 07#3|2 P4|27'/."
+
+#: src/digsbysplash.py:27
+msgid "&Sign In"
+msgstr "&516|\\| 1|\\| 637"
+
+#: src/digsbysplash.py:41 src/digsbysplash.py:736
+msgid "We are upgrading Digsby. Please try connecting again in a few minutes."
+msgstr "0|-| |\\|035! |)1G5|3'/ |_3\\/3|_ |_|P G37! 7RY L473R D|_|D3"
+
+#: src/digsbysplash.py:42 src/digsbysplash.py:738
+msgid "Could not contact remote server. Check your network configuration."
+msgstr "(0|_||_|) |\\|07 (0|\\|74(7 |23|\\/|073 53|2\\/3|2. (|-|3(|< |_||2 1|\\|73|2\\/\\/3|32 (0|\\||=16."
+
+#: src/digsbysplash.py:46
+msgid "Invalid Digsby Username"
+msgstr "1|\\|\\/4|_1|) |)1G5|3'/ |_|53R|\\|4|\\/|3"
+
+#: src/digsbysplash.py:322
+msgid "Update Successful"
+msgstr "607 73|-| |31663|2 6|3s"
+
+#: src/digsbysplash.py:496 src/digsbysplash.py:776
+msgid "Loading..."
+msgstr "|\\|40 |_04|)2..."
+
+#: src/digsbysplash.py:538
+msgid "Login error!"
+msgstr "1 4|\\/| 3|2|20|2! |_0650|\\|"
+
+#: src/digsbysplash.py:592
+msgid "Your password will be saved on your portable device."
+msgstr "'/0|_||2 P455\\/\\/0|2|) \\/\\/1|_|_ |33 54\\/3|) 0|\\| '/0|_||2 P0|274|3|_3 |)3\\/1(e."
+
+#: src/digsbysplash.py:593
+msgid "Anyone with access to this device will be able to log into your Digsby account. Are you sure you want to save your password?"
+msgstr "|_| |33 7RY1|\\| 50|\\/|3 R1Z|<Y |3122|\\|172! R |_| F0R 4 534R34|_Z?"
+
+#: src/digsbysplash.py:598
+msgid "Security Information"
+msgstr "|-|4><><0|2 |=4><><0|22"
+
+#: src/digsbysplash.py:657
+msgid "Please make sure you have entered your Digsby username and password correctly."
+msgstr "|_|53|2|\\|4|\\/|3 || P455\\/\\/0|2|)2 |=41|_! RTFM |_061|\\| 5(|233|\\| |_1|\\||<463"
+
+#: src/digsbysplash.py:658
+msgid "If you need an account or forgot your password, use the links on the login screen."
+msgstr "|=0|2637 P455\\/\\/4|2 0|2 |\\|33|0 4((7? |_|53 |_1|\\||<2 0|\\| |_061|\\| 5(|233|\\|."
+
+#: src/digsbysplash.py:664
+msgid ""
+"Please check your Internet connection and make sure a firewall isn't blocking Digsby.\n"
+"If you connect to the Internet through a proxy server,\n"
+"click the \"Connection Settings\" link to set up the proxy.\n"
+"If you are still unable to connect, email bugs@digsby.com for technical support."
+msgstr ""
+"1 4|\\/| 3|2|20|2\n"
+"TL;DT\n"
+"5|\\/|0371|\\| |30|_|T F1|23|34|_|_Z || P0><><132"
+
+#: src/digsbysplash.py:766
+msgid "Register a Digsby Account"
+msgstr "51|\\|6 |_|P |\\|40!"
+
+#: src/gui/accountdialog.py:38
+#: src/plugins/digsby_service_editor/default_ui.py:580
+msgid "System Default"
+msgstr "5'/573|\\/| |)3|=4|_||_7"
+
+#: src/gui/accountdialog.py:39
+#: src/plugins/digsby_service_editor/default_ui.py:581
+msgid "Other Mail Client..."
+msgstr "07#3|2 |\\/|41|_ (|_13|\\|7..."
+
+#: src/gui/accountdialog.py:40
+#: src/plugins/digsby_service_editor/default_ui.py:582
+msgid "Launch URL..."
+msgstr "|_4|_||\\|(# |_||2|_..."
+
+#: src/gui/accountdialog.py:310 src/gui/accountdialog.py:393
+#: src/gui/contactdialogs.py:172 src/gui/notificationview.py:537
+#: src/gui/pref/iconeditor.py:552 src/gui/status.py:537
+#: src/plugins/digsby_service_editor/service_editor.py:87
+#: src/plugins/twitter/twitter_gui.py:120
+#: src/plugins/twitter/twitter_gui.py:356
+msgid "&Save"
+msgstr "&54\\/3"
+
+#: src/gui/accountdialog.py:315 src/gui/contactdialogs.py:91
+#: src/gui/contactdialogs.py:180 src/gui/imwin/imtabs.py:125
+#: src/gui/notificationview.py:94 src/gui/notificationview.py:538
+#: src/gui/pref/iconeditor.py:554 src/gui/proxydialog.py:234
+#: src/gui/status.py:541
+#: src/plugins/digsby_service_editor/service_editor.py:90
+#: src/plugins/twitter/twitter_gui.py:129
+msgid "&Cancel"
+msgstr "&(4|\\|(3|_"
+
+#: src/gui/accountdialog.py:321
+#: src/plugins/digsby_service_editor/service_editor.py:222
+msgid "That account already exists."
+msgstr "|)47 4((0|_||\\|7 4|_|234|)'/ ><1572."
+
+#: src/gui/accountdialog.py:354
+msgid "&Auto login"
+msgstr "&4|_|70 |_061|\\|"
+
+#: src/gui/accountdialog.py:355
+msgid "If checked, this account will automatically sign in when Digsby starts."
+msgstr "1|= (#3(|<3|), |)12 4((0|_||\\|7 \\/\\/1|_|_ 4|_|70|\\/|471(4|_|_'/ 516|\\| 1|\\| \\/\\/#3|\\| |)165|3'/ 574|272."
+
+#: src/gui/accountdialog.py:361
+#: src/plugins/digsby_service_editor/default_ui.py:211
+msgid "&Register New Account"
+msgstr "&R361573|2 |\\|3\\/\\/ 4((0|_||\\|7"
+
+#: src/gui/accountdialog.py:393
+msgid "&Register"
+msgstr "&R361573|2"
+
+#: src/gui/accountdialog.py:580
+msgid "Check for new mail every {n} minutes"
+msgstr "(#3(|< 4 |\\|3\\/\\/ |\\/|41|_ 3\\/3|2'/ {n} minutes"
+
+#: src/gui/accountdialog.py:591
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "|\\/|1|\\||_|73"
+msgstr[1] "|\\/|1|\\||_|732"
+
+#: src/gui/accountdialog.py:607
+#: src/plugins/digsby_service_editor/default_ui.py:73
+#: src/plugins/digsby_service_editor/default_ui.py:382
+msgid "Mail Client:"
+msgstr "|\\/|41|_ (|_13|\\|7:"
+
+#: src/gui/accountdialog.py:626
+#: src/plugins/digsby_service_editor/default_ui.py:394
+msgid "SMTP username/password are the same as {servertype}"
+msgstr "5|\\/|7P |_|s3r|\\|4|\\/|3/P455\\/\\/0|2|) 12 73# 54|\\/|3 42 {servertype}"
+
+#: src/gui/accountdialog.py:627
+#: src/plugins/digsby_service_editor/default_ui.py:395
+msgid "Log on using:"
+msgstr "|_06 0|\\| |_|51|\\|':"
+
+#: src/gui/accountdialog.py:753
+msgid "{show_topic}:"
+msgstr "{show_topic}:"
+
+#: src/gui/accountdialog.py:783
+msgid "Custom ({mailclient_name})"
+msgstr "(|_|570|\\/| ({mailclient_name})"
+
+#: src/gui/accountdialog.py:812
+#: src/plugins/digsby_service_editor/default_ui.py:626
+msgid "Please choose a mail client"
+msgstr "P|_3453 (#0053 @ |\\/|41|_ (|_13|\\|7"
+
+#: src/gui/accountdialog.py:860
+#: src/plugins/digsby_service_editor/default_ui.py:403
+msgid "Username:"
+msgstr "|_|53|2|\\|4|\\/|3:"
+
+#: src/gui/accountdialog.py:862
+#: src/plugins/digsby_service_editor/default_ui.py:404
+msgid "Password:"
+msgstr "P455\\/\\/0|2|):"
+
+#: src/gui/accountdialog.py:890 src/plugins/facebook/info.yaml:9
+#: src/plugins/fbchat/info.yaml:11 src/plugins/linkedin/info.yaml:8
+#: src/plugins/msim/info.yaml:7 src/plugins/myspace/info.yaml:9
+#: src/plugins/provider_linkedin/info.yaml:10
+#: src/plugins/provider_myspace/info.yaml:10
+#: src/plugins/provider_windows_live/info.yaml:22
+#: src/plugins/provider_windows_live/info.yaml:37
+#: src/plugins/provider_windows_live/info.yaml:81
+msgid "Email Address"
+msgstr "3|\\/|41|_ 4||)|)|255"
+
+#: src/gui/accountdialog.py:921
+msgid "&Display Name:"
+msgstr "&D15P|_4'/ |\\|4|\\/|3:"
+
+#: src/gui/accountdialog.py:1003
+#: src/plugins/digsby_service_editor/default_ui.py:265
+msgid "SMTP Server:"
+msgstr "5|\\/|7P 53|2\\/3|2:"
+
+#: src/gui/accountdialog.py:1005 src/gui/accountdialog.py:1026
+#: src/plugins/digsby_service_editor/default_ui.py:96
+msgid "Port:"
+msgstr "P0|27:"
+
+#: src/gui/accountdialog.py:1024
+msgid "Host:"
+msgstr "#057:"
+
+#: src/gui/accountdialog.py:1031 src/gui/infobox/htmlgeneration.py:237
+#: src/plugins/digsby_service_editor/default_ui.py:333
+msgid "Resource:"
+msgstr "|2350|_||2(3:"
+
+#: src/gui/accountdialog.py:1033
+#: src/plugins/digsby_service_editor/default_ui.py:333
+msgid "Priority:"
+msgstr "P|210|217'/:"
+
+#: src/gui/accountdialog.py:1038
+#: src/plugins/digsby_service_editor/default_ui.py:338
+msgid "Data Proxy:"
+msgstr "|)474 P|20XY:"
+
+#: src/gui/accountdialog.py:1119
+#: src/plugins/digsby_service_editor/default_ui.py:662
+msgid "Enter the URL that will be launched when you click \"Inbox\" for this email account."
+msgstr "3|\\|73|2 73# |_||2|_ |)47 \\/\\/1|_|_ |3 |_4|_||\\|(#3|) \\/\\/#3|\\| J00 (|_1(|< \"1|\\||30><\" 4 |)12 3|\\/|41|_ 4((0|_||\\|7."
+
+#: src/gui/accountdialog.py:1120
+#: src/plugins/digsby_service_editor/default_ui.py:663
+msgid "Enter the URL that will be launched when you click \"Compose\" for this email account."
+msgstr "3|\\|73|2 73# |_||2|_ |)47 \\/\\/1|_|_ |3 |_4|_||\\|(#3|) \\/\\/#3|\\| J00 (|_1(|< \"(0|\\/|P053\" 4 |)12 3|\\/|41|_ 4((0|_||\\|7."
+
+#: src/gui/accountdialog.py:1123
+#: src/plugins/digsby_service_editor/default_ui.py:666
+msgid "Launch URL"
+msgstr "|_4|_||\\|(# |_||2|_"
+
+#: src/gui/accountdialog.py:1136
+#: src/plugins/digsby_service_editor/default_ui.py:679
+msgid "Enter a URL for the Inbox"
+msgstr "3|\\|73|2 @ |_||2|_ 4 73# 1|\\||30><"
+
+#: src/gui/accountdialog.py:1139
+#: src/plugins/digsby_service_editor/default_ui.py:682
+msgid "Enter a URL for the Compose window"
+msgstr "3|\\|73|2 @ |_||2|_ 4 73# (0|\\/|P053 \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/accountslist.py:36 src/gui/pref/pg_accounts.py:627
+#: src/gui/pref/pg_privacy.py:269 src/gui/pref/pg_privacy.py:544
+#: src/gui/pref/pg_privacy.py:718 src/gui/pref/pg_privacy.py:720
+#: src/gui/status.py:738 src/gui/widgetlist.py:56
+#: src/plugins/twitter/twitter_gui.py:1947
+msgid "Edit"
+msgstr "3|)17"
+
+#: src/gui/accountslist.py:128 src/gui/accountslist.py:309
+#: src/gui/accountslist.py:406 src/gui/anylists.py:308 src/gui/status.py:726
+#: src/gui/uberwidgets/connectionlist.py:455 src/gui/widgetlist.py:42
+#: src/plugins/twitter/twitter_gui.py:1382
+msgid "&Edit"
+msgstr "&3|)17"
+
+#: src/gui/accountslist.py:129 src/gui/accountslist.py:310
+#: src/gui/accountslist.py:407 src/gui/anylists.py:309
+#: src/gui/filetransfer/filetransferlist.py:476 src/gui/status.py:727
+msgid "&Remove"
+msgstr "&R3|\\/|0\\/3"
+
+#: src/gui/accountslist.py:241
+#: src/plugins/digsby_service_editor/service_editor.py:211
+#: src/plugins/provider_jabber/jabber_gui.py:85
+msgid "Are you sure you want to delete account \"{name}\"?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)3|_373 4((0|_||\\|7 \"{name}\"?"
+
+#: src/gui/accountslist.py:242
+#: src/plugins/digsby_service_editor/service_editor.py:212
+#: src/plugins/provider_jabber/jabber_gui.py:86
+msgid "Delete Account"
+msgstr "|)3|_373 4((0|_||\\|7"
+
+#: src/gui/accountslist.py:340
+msgid "Are you sure you want to delete social network account \"{name}\"?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)3|_373 50(14|_ |\\|37\\/\\/0|2|< 4((0|_||\\|7 \"{name}\"?"
+
+#: src/gui/accountslist.py:341
+msgid "Delete Social Network Account"
+msgstr "|)3|_373 S0(14|_ |\\|37\\/\\/0|2|< 4((0|_||\\|7"
+
+#: src/gui/accountslist.py:440
+msgid "Are you sure you want to delete email account \"{account_name}\"?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)3|_373 3|\\/|41|_ 4((0|_||\\|7 \"{account_name}\"?"
+
+#: src/gui/accountslist.py:441
+msgid "Delete Email Account"
+msgstr "|)3|_373 3|\\/|41|_ 4((0|_||\\|7"
+
+#: src/gui/accountwizard.py:31
+msgid "Digsby Setup Wizard"
+msgstr "|)165|3'/ 537|_|P \\/\\/124|2|)"
+
+#: src/gui/accountwizard.py:40
+msgid "Welcome to Digsby!"
+msgstr "\\/\\/3|_(0|\\/|3 2 |)165|3'/!"
+
+#: src/gui/accountwizard.py:116
+msgid "Quick Access to Newsfeeds"
+msgstr "Q|_|1(|< 4((355 2 |\\|3\\/\\/s|=33|)2"
+
+#: src/gui/accountwizard.py:117
+msgid ""
+"\n"
+"You can access social network and email newsfeeds by clicking their icons in the tray.\n"
+"\n"
+"Double click to update your status (social networks) or launch your inbox (email accounts).\n"
+" \n"
+msgstr ""
+"\n"
+"J00 (4|\\| 4((352 50(14|_ |\\|37\\/\\/0|2|< |\\| 3|\\/|41|_ |\\|3\\/\\/5|=33|)2 |3'/ (|_1(|<1|\\|' 7#31|2 1(0|\\|2 1|\\| 73# 7|24'/.\n"
+"\n"
+"|)0|_|b|_3 (|_1(|< 2 |_|P|)473 '/0 5747|_|2 (50(14|_ |\\|37\\/\\/0|2|<2) 0|2 |_4|_||\\|(# '/0 1|\\||30>< (3|\\/|41|_ 4((0|_||\\|72).\n"
+"\n"
+
+#: src/gui/addcontactdialog.py:200 src/gui/chatgui.py:15
+#: src/gui/imdialogs.py:68
+msgid "No Connections"
+msgstr "|\\|0 (0|\\||\\|3(710|\\|2"
+
+#: src/gui/addcontactdialog.py:214 src/gui/pref/prefcontrols.py:1008
+#: src/tests/testgui/uberdemos/UberComboXTDemo.py:34
+msgid "Add"
+msgstr "4|)|)"
+
+#: src/gui/addcontactdialog.py:228
+msgid "Contact Type:"
+msgstr "(0|\\|74(7 7'/P3:"
+
+#: src/gui/addcontactdialog.py:232
+msgid "Screen Name:"
+msgstr "5(|233|\\| |\\|4|\\/|3:"
+
+#: src/gui/addcontactdialog.py:240 src/gui/contactdialogs.py:164
+msgid "Alias:"
+msgstr "4|_142:"
+
+#: src/gui/addcontactdialog.py:244
+msgid "In Group:"
+msgstr "1|\\| 6|20|_|P:"
+
+#: src/gui/addcontactdialog.py:249
+msgid "On Accounts:"
+msgstr "0|\\| 4((0|_||\\|72:"
+
+#: src/gui/app/mainMenuEvents.py:46 src/gui/app/menubar.py:38
+#: src/gui/buddylist/buddylistmenu.py:178
+#: src/gui/buddylist/buddylistmenu.py:307
+msgid "Status Panel"
+msgstr "5747|_|2 P4|\\|3|_"
+
+#: src/gui/app/mainMenuEvents.py:47 src/gui/buddylist/buddylistframe.py:591
+#: src/gui/buddylist/buddylistmenu.py:308 src/gui/pref/prefstrings.py:17
+#: src/main.py:504
+msgid "Buddy List"
+msgstr "|3|_||)|)'/ |_157"
+
+#: src/gui/app/mainMenuEvents.py:48 src/gui/buddylist/buddylistmenu.py:309
+msgid "Email Accounts"
+msgstr "3|\\/|41|_ 4((0|_||\\|72"
+
+#: src/gui/app/mainMenuEvents.py:49 src/gui/buddylist/buddylistmenu.py:310
+msgid "Social Networks"
+msgstr "50(14|_ |\\|37\\/\\/0|2|<2"
+
+#: src/gui/app/mainMenuEvents.py:50 src/gui/buddylist/buddylistmenu.py:311
+msgid "Connections"
+msgstr "(0|\\||\\|3(710|\\|2"
+
+#: src/gui/app/mainMenuEvents.py:150 src/gui/app/menubar.py:11
+#: src/gui/buddylist/buddylistmenu.py:297
+msgid "&Digsby"
+msgstr "&D165|3'/"
+
+#: src/gui/app/mainMenuEvents.py:152 src/gui/app/menubar.py:56
+#: src/gui/buddylist/buddylistmenu.py:243
+msgid "&Sort By"
+msgstr "&50|27 |3'/"
+
+#: src/gui/app/mainMenuEvents.py:154 src/gui/app/menubar.py:32
+#: src/gui/buddylist/buddylistmenu.py:302
+msgid "&View"
+msgstr "&V13\\/\\/"
+
+#: src/gui/app/mainMenuEvents.py:175 src/gui/app/menubar.py:24
+#: src/gui/buddylist/buddylistmenu.py:133
+#: src/gui/buddylist/buddylistmenu.py:150
+msgid "&Rename Selection"
+msgstr "&R3|\\|4|\\/|3 53|_3(710|\\|"
+
+#: src/gui/app/mainMenuEvents.py:176 src/gui/buddylist/buddylistmenu.py:151
+msgid "&Delete Selection"
+msgstr "&D3|_373 53|_3(710|\\|"
+
+#: src/gui/app/mainMenuEvents.py:180 src/gui/buddylist/buddylistmenu.py:155
+msgid "&Rename {name}"
+msgstr "&R3|\\|4|\\/|3 {name}"
+
+#: src/gui/app/mainMenuEvents.py:181 src/gui/buddylist/buddylistmenu.py:156
+msgid "&Delete {name}"
+msgstr "&D3|_373 {name}"
+
+#: src/gui/app/mainMenuEvents.py:312 src/gui/buddylist/buddylistmenu.py:172
+msgid "You can bring back the menubar by right clicking on the digsby icon in the task tray."
+msgstr "J00 (4|\\| |3|21|\\|' |34(|< 73# |\\/|3|\\||_||34|2 |3'/ |216#7 (|_1(|<1|\\|' 0|\\| 73# |)165'/ 1(0|\\| 1|\\| 73# 745|< 7|24'/."
+
+#: src/gui/app/mainMenuEvents.py:314 src/gui/buddylist/buddylistmenu.py:174
+msgid "Hide Menu Bar"
+msgstr "#1|)3 |\\/|3|\\||_| |34|2"
+
+#: src/gui/app/mainMenuEvents.py:330 src/gui/buddylist/buddylistmenu.py:322
+#: src/gui/visuallisteditor.py:286
+msgid "Arrange Panels"
+msgstr "4|2|24|\\|63 &P4|\\|3|_2"
+
+#: src/gui/app/menubar.py:14 src/gui/buddylist/buddylistmenu.py:109
+msgid "&New Status Message..."
+msgstr "&N3\\/\\/ 5747|_|2 |\\/|355463..."
+
+#: src/gui/app/menubar.py:15 src/gui/buddylist/buddylistmenu.py:110
+msgid "&Edit Status Messages..."
+msgstr "&3|)17 5747|_|2 |\\/|3554632..."
+
+#: src/gui/app/menubar.py:17 src/gui/buddylist/buddylistmenu.py:122
+msgid "My Status"
+msgstr "|\\/|'/ 5747|_|5"
+
+#: src/gui/app/menubar.py:18 src/gui/buddylist/buddylistmenu.py:123
+msgid "My &Accounts..."
+msgstr "|\\/|'/ &A((0|_||\\|72..."
+
+#: src/gui/app/menubar.py:21
+msgid "&New IM..."
+msgstr "&N3\\/\\/ 1|\\/|..."
+
+#: src/gui/app/menubar.py:22
+msgid "Add &Contact..."
+msgstr "4|)|) &(0|\\|74(7..."
+
+#: src/gui/app/menubar.py:23
+msgid "Add &Group..."
+msgstr "4|)|) &6|20|_|P..."
+
+#: src/gui/app/menubar.py:25 src/gui/buddylist/buddylistmenu.py:134
+msgid "&Delete Selection..."
+msgstr "&D3|_373 53|_3(710|\\|..."
+
+#: src/gui/app/menubar.py:27
+msgid "Sign &Off Digsby"
+msgstr "516|\\| &O|=|= |)165|3'/"
+
+#: src/gui/app/menubar.py:29 src/gui/buddylist/buddylistmenu.py:138
+#: src/gui/trayicons.py:197
+msgid "E&xit Digsby"
+msgstr "3&><17 |)165|3'/"
+
+#: src/gui/app/menubar.py:33 src/gui/buddylist/buddylistmenu.py:165
+msgid "&Always On Top"
+msgstr "&4|_\\/\\/4'/2 0|\\| 70P"
+
+#: src/gui/app/menubar.py:34
+msgid "Skins..."
+msgstr "5|<1|\\|2..."
+
+#: src/gui/app/menubar.py:37 src/gui/buddylist/buddylistmenu.py:168
+msgid "&Menu Bar"
+msgstr "&M3|\\||_| |34|2"
+
+#: src/gui/app/menubar.py:39 src/gui/buddylist/buddylistmenu.py:179
+msgid "Arrange &Panels..."
+msgstr "4|2|24|\\|63 &P4|\\|3|_2..."
+
+#: src/gui/app/menubar.py:41
+msgid "Show &Mobile Contacts"
+msgstr "5#0\\/\\/ &M0|31|_3 (0|\\|74(72"
+
+#: src/gui/app/menubar.py:42
+msgid "Show &Offline Contacts"
+msgstr "5#0\\/\\/ &O|=|=|_1|\\|3 (0|\\|74(72"
+
+#: src/gui/app/menubar.py:43
+msgid "&Group Offline Contacts"
+msgstr "&6|20|_|P 0|=|=|_1|\\|3 (0|\\|74(72"
+
+#: src/gui/app/menubar.py:44 src/gui/buddylist/buddylistmenu.py:185
+msgid "&Hide Offline Groups"
+msgstr "&H1|)3 0|=|=|_1|\\|3 6|20|_|P2"
+
+#: src/gui/app/menubar.py:49 src/gui/buddylist/buddylistmenu.py:208
+msgid "&None"
+msgstr "&N0|\\|3"
+
+#: src/gui/app/menubar.py:50 src/gui/buddylist/buddylistmenu.py:209
+msgid "&Status"
+msgstr "&5747|_|2"
+
+#: src/gui/app/menubar.py:51 src/gui/buddylist/buddylistmenu.py:210
+msgid "N&ame"
+msgstr "|\\|&A|\\/|3"
+
+#: src/gui/app/menubar.py:52 src/gui/buddylist/buddylistmenu.py:211
+msgid "&Log Size"
+msgstr "&L06 5123"
+
+#: src/gui/app/menubar.py:53 src/gui/buddylist/buddylistmenu.py:212
+msgid "Ser&vice"
+msgstr "53|2&V1(3"
+
+#: src/gui/app/menubar.py:54 src/gui/buddylist/buddylistmenu.py:222
+#: src/gui/buddylist/buddylistmenu.py:230
+msgid "Advan&ced..."
+msgstr "4|)\\/4|\\|&(3|)..."
+
+#: src/gui/app/menubar.py:59 src/gui/buddylist/buddylistmenu.py:303
+msgid "&Tools"
+msgstr "&700|_2"
+
+#: src/gui/app/menubar.py:60 src/gui/trayicons.py:192
+msgid "&Preferences..."
+msgstr "&P|23|=3|23|\\|(32..."
+
+#: src/gui/app/menubar.py:61
+msgid "&File Transfer History"
+msgstr "&|=1|_3 7|24|\\|5|=3|2 #1570|2'/"
+
+#: src/gui/app/menubar.py:62
+msgid "&Chat History"
+msgstr "&(#47 #1570|2'/"
+
+#: src/gui/app/menubar.py:65 src/gui/buddylist/buddylistmenu.py:304
+msgid "&Help"
+msgstr "&H3|_P"
+
+#: src/gui/app/menubar.py:66 src/gui/buddylist/buddylistmenu.py:265
+msgid "&Documentation"
+msgstr "&D0(|_||\\/|3|\\|74710|\\|"
+
+#: src/gui/app/menubar.py:67 src/gui/buddylist/buddylistmenu.py:266
+msgid "Support &Forums"
+msgstr "5|_|PP0|27 &F0|2|_||\\/|2"
+
+#: src/gui/app/menubar.py:69 src/gui/buddylist/buddylistmenu.py:268
+msgid "&Submit Bug Report"
+msgstr "&5|_||3|\\/|17 |3|_|6 |23P0|27"
+
+#: src/gui/app/menubar.py:70 src/gui/buddylist/buddylistmenu.py:269
+msgid "Su&ggest a Feature"
+msgstr "5|_|&G6357 @ |=347|_||23"
+
+#: src/gui/app/menubar.py:78
+msgid "&Invite Your Friends"
+msgstr "&1|\\|\\/173 '/0 |=|213|\\||)2"
+
+#: src/gui/app/menubar.py:79 src/plugins/digsby_about/aboutdialog.py:132
+msgid "&About Digsby"
+msgstr "&4|30|_|7 |)165|3'/"
+
+#: src/gui/authorizationdialog.py:21
+msgid "Authorize Contact"
+msgstr "4|_|7#0|2123 (0|\\|74(7"
+
+#: src/gui/authorizationdialog.py:41
+msgid "Authorize and Add"
+msgstr "4|_|7#0|2123 |\\| 4|)|)"
+
+#: src/gui/authorizationdialog.py:42
+msgid "Authorize"
+msgstr "4|_|7#0|2123"
+
+#: src/gui/authorizationdialog.py:43
+msgid "Deny"
+msgstr "|)3|\\|'/"
+
+#: src/gui/browser/jsconsole.py:15
+msgid "Javascript Console"
+msgstr "J4\\/45(|21P7 (0|\\|50|_3"
+
+#: src/gui/browser/jsconsole.py:47 src/gui/browser/jsconsole.py:48
+msgid "Clear"
+msgstr "(|_34|2"
+
+#: src/gui/browser/webkit/webkiteditsource.py:41
+msgid "&Copy"
+msgstr "&(0P'/"
+
+#: src/gui/browser/webkit/webkiteditsource.py:72
+msgid "&Open in Browser"
+msgstr "&0P3|\\| 1|\\| |3|20\\/\\/53|2"
+
+#: src/gui/browser/webkit/webkiteditsource.py:74
+msgid "Launches browser in pref \"debug.message_area.debug_browser\""
+msgstr "|_4|_||\\|(#32 |3|20\\/\\/53|2 1|\\| P|23|= \"debug.message_area.debug_browser\""
+
+#: src/gui/buddylist/accounttray.py:231
+msgid "{account.offline_reason} ({account.email_address})"
+msgstr "{account.offline_reason} ({account.email_address})"
+
+#: src/gui/buddylist/accounttray.py:238
+msgid "{count} unread message ({account.email_address})"
+msgid_plural "{count} unread messages ({account.email_address})"
+msgstr[0] "{count} |_||\\||234|) |\\/|355463 ({account.email_address})"
+msgstr[1] "{count} |_||\\||234|) |\\/|3554635 ({account.email_address})"
+
+#: src/gui/buddylist/accounttray.py:250
+msgid "{account.offline_reason} ({account.name})"
+msgstr "{account.offline_reason} ({account.name})"
+
+#: src/gui/buddylist/accounttray.py:252
+msgid "{count} new alert ({account.name})"
+msgid_plural "{count} new alerts ({account.name})"
+msgstr[0] "{count} |\\|3\\/\\/ 4|_3|27 ({account.name})"
+msgstr[1] "{count} |\\|3\\/\\/ 4|_3|272 ({account.name})"
+
+#: src/gui/buddylist/buddylist.py:190
+msgid "BuddyList Popup"
+msgstr "|3|_||)|)'/|_1t7 P0P|_|P"
+
+#: src/gui/buddylist/buddylist.py:240 src/gui/pref/pg_accounts.py:789
+msgid "Add Accounts"
+msgstr "4|)|) 4((0|_||\\|72"
+
+#: src/gui/buddylist/buddylist.py:253
+msgid "Need Help?"
+msgstr "|\\|33|) #3|_P?"
+
+#: src/gui/buddylist/buddylist.py:405
+msgid "&Add Group"
+msgstr "&4|)|) 6|20|_|P"
+
+#: src/gui/buddylist/buddylist.py:658 src/gui/buddylist/buddylist.py:671
+#: src/gui/contactdialogs.py:279 src/gui/contactdialogs.py:306
+msgid "Merge Contacts"
+msgstr "|\\/|3|263 (0|\\|74(72"
+
+#: src/gui/buddylist/buddylist.py:941
+msgid "This buddy can't accept file transfers"
+msgstr "|)12 |3|_||)|)'/ (4|\\|'7 4((3P7 |=1|_3 7|24|\\|5|=3|22"
+
+#: src/gui/buddylist/buddylist.py:942 src/gui/capabilitiesbar.py:81
+#: src/gui/capabilitiesbar.py:351 src/gui/imwin/imwin_native.py:378
+#: src/gui/imwin/imwinmenu.py:14
+msgid "Send File"
+msgstr "53|\\||) |=1|_3"
+
+#: src/gui/buddylist/buddylist.py:1010
+msgid "&Add Contact"
+msgstr "&4|)|) (0|\\|74(7"
+
+#: src/gui/buddylist/buddylistmenu.py:125
+msgid "&New IM...\tCtrl+N"
+msgstr "&N3\\/\\/ 1|\\/|...\tCtrl+N"
+
+#: src/gui/buddylist/buddylistmenu.py:127
+msgid "New Group C&hat...\tCtrl+Shift+N"
+msgstr "|\\|3\\/\\/ 6|20|_|P (&H47...\tCtrl+Shift+N"
+
+#: src/gui/buddylist/buddylistmenu.py:131
+msgid "Add &Contact...\tCtrl+A"
+msgstr "4|)|) &(0|\\|74(7...\tCtrl+A"
+
+#: src/gui/buddylist/buddylistmenu.py:132
+msgid "Add &Group...\tCtrl+Shift+A"
+msgstr "4|)|) &6|20|_|P...\tCtrl+Shift+A"
+
+#: src/gui/buddylist/buddylistmenu.py:136
+#, python-format
+msgid "Sign &Off Digsby (%s)"
+msgstr "516|\\| &O|=|= |)165|3'/ (%s)"
+
+#: src/gui/buddylist/buddylistmenu.py:166
+msgid "Skins...\tCtrl+S"
+msgstr "5|<1|\\|2...\tCtrl+S"
+
+#: src/gui/buddylist/buddylistmenu.py:181
+msgid "Show &Mobile Contacts\tCtrl+M"
+msgstr "5#0\\/\\/ &M0|31|_3 (0|\\|74(72\tCtrl+M"
+
+#: src/gui/buddylist/buddylistmenu.py:182
+msgid "Show &Offline Contacts\tCtrl+O"
+msgstr "5#0\\/\\/ &O|=|=|_1|\\|3 (0|\\|74(72\tCtrl+O"
+
+#: src/gui/buddylist/buddylistmenu.py:183
+msgid "&Group Offline Contacts\tCtrl+G"
+msgstr "&6|20|_|p 0|=|=|_1|\\|3 (0|\\|74(72\tCtrl+G"
+
+#: src/gui/buddylist/buddylistmenu.py:242
+msgid "&Group By"
+msgstr "&6|20|_|p |3'/"
+
+#: src/gui/buddylist/buddylistmenu.py:250
+msgid "&Preferences...\tCtrl+P"
+msgstr "&P|23|=3|23|\\|(32...\tCtrl+P"
+
+#: src/gui/buddylist/buddylistmenu.py:251
+msgid "Buddy List &Search\tCtrl+F"
+msgstr "|3|_||)|)'/ |_157 &534|2(#\tCtrl+F"
+
+#: src/gui/buddylist/buddylistmenu.py:252
+msgid "&File Transfer History\tCtrl+J"
+msgstr "&|=1|_3 7|24|\\|5|=3|2 #1570|2'/\tCtrl+J"
+
+#: src/gui/buddylist/buddylistmenu.py:258
+msgid "&Chat History\tCtrl+H"
+msgstr "&(#47 #1570|2'/\tCtrl+H"
+
+#: src/gui/buddylist/buddylistmenu.py:273
+msgid "Show Debug Console"
+msgstr "5#0\\/\\/ |)3|3|_|6 (0|\\|50|_3"
+
+#: src/gui/buddylist/buddylistmenu.py:276
+msgid "Su&pport Digsby"
+msgstr "5|_|&PP0|27 |)165|3'/"
+
+#: src/gui/buddylist/buddylistmenu.py:299 src/gui/pref/iconeditor.py:546
+msgid "&File"
+msgstr "&|=1|_3"
+
+#: src/gui/buddylist/buddylistmenu.py:331
+msgid "&Sign Off"
+msgstr "&516|\\| 0|=|="
+
+#: src/gui/buddylist/buddylistmenu.py:332
+msgid "&Sign On"
+msgstr "&516|\\| 0|\\|"
+
+#: src/gui/buddylist/buddylistmenu.py:335
+msgid "&Edit Account..."
+msgstr "&3|)17 4((0|_||\\|7..."
+
+#: src/gui/buddylist/buddylistmenu.py:405
+msgid "&Stealth Settings"
+msgstr "&5734|_7# 53771|\\|62"
+
+#: src/gui/buddylist/buddylistmenu.py:411
+msgid "Selection"
+msgstr "53|_3(710|\\|"
+
+#: src/gui/buddylist/buddylistmenu.py:414
+msgid "Appear Online to {name}"
+msgstr "4PP34|2 0|\\||_1|\\|3 2 {name}"
+
+#: src/gui/buddylist/buddylistmenu.py:416
+msgid "Appear Offline to {name}"
+msgstr "4PP34|2 0|=|=|_1|\\|3 2 {name}"
+
+#: src/gui/buddylist/buddylistmenu.py:418
+msgid "Appear Permanently Offline to {name}"
+msgstr "4PP34r P3|2|\\/|4|\\|3|\\|7|_'/ 0|=|=|_1|\\|3 2 {name}"
+
+#: src/gui/buddylist/buddylistmenu.py:423
+msgid "Learn More (URL)"
+msgstr "|_34|2|\\| |\\/|0|23 (|_||2|_)"
+
+#: src/gui/buddylist/buddylistmenu.py:463
+msgid "Chat with Resource"
+msgstr "(#47 \\/\\/17# |2350|_||2(3"
+
+#: src/gui/buddylist/buddylistmenu.py:480
+msgid "&Remove from Merged Contact"
+msgstr "&R3|\\/|0\\/3 |=|20|\\/| |\\/|3|263|) (0|\\|74(7"
+
+#: src/gui/buddylist/renderers.py:831 src/gui/searchgui.py:122
+msgid "Options..."
+msgstr "0P710|\\|2..."
+
+#: src/gui/bugreporter/bugreportergui.py:41
+msgid "Use this tool to submit a diagnostic log right after you experience a bug"
+msgstr "|_|53 |)12 700|_ 2 5|_||3|\\/|17 @ |)146|\\|0571O( |_06 |216#7 4|=73|2 J00 ><P3|213|\\|(3 @ |3|_|6"
+
+#: src/gui/bugreporter/bugreportergui.py:44
+#: src/gui/bugreporter/bugreportergui.py:80
+msgid "This diagnostic log file does not contain personal data such as the content of sent/received IMs, the content of emails, and the content of social network newsfeeds except where it directly pertains to an error."
+msgstr "|)12 |)146|\\|0571( |_06 |=1|_3 |)032 |\\|07 (0|\\|741|\\| P3|250|\\|4|_ |)474 5|_|(# 42 73# (0|\\|73|\\|7 0|= 53|\\|7/|23(31\\/3|) 1|\\/|2, 73# (0|\\|73|\\|7 0|= 3|\\/|41|_2, |\\| 73# (0|\\|73|\\|7 0|= 50(14|_ |\\|37\\/\\/0|2|< |\\|3\\/\\/5|=33|)2 ><(3P7 \\/\\/#3|23 17 |)1|23(7|_'/ P3|2741|\\|2 2 |\\| 3|2|20|2."
+
+# MARK: Reproduced multiple times...
+#: src/gui/bugreporter/bugreportergui.py:51
+#: src/gui/bugreporter/bugreportergui.py:83
+msgid "Please describe the bug in as much detail as possible. Include information such as what you were doing when the bug occurred and exactly what goes wrong."
+msgstr "P|_3453 |)35(|21|33 73# |3|_|6 1|\\| 42 |\\/||_|(# ||)3741|_ 42 P0551|3|_3.  1|\\|(|_|_||)3 1|\\||=0|2|\\/|4710|\\| 5|_|(# 42 \\/\\/07 J00 \\/\\/|_|2 |)01|\\|' \\/\\/#3|\\| 73# |3|_|6 0((|_||2|23|) |\\| ><4(7|_'/ \\/\\/07 6032 \\/\\/|20|\\|6."
+
+#: src/gui/bugreporter/bugreportergui.py:61
+msgid "Can you consistently reproduce this bug?"
+msgstr "(4|\\| J00 (0|\\|51573|\\|7|_'/ |23P|20|)|_|(3 |)12 |3|_|6?"
+
+#: src/gui/bugreporter/bugreportergui.py:63
+msgid "&Yes"
+msgstr "&Y32"
+
+#: src/gui/bugreporter/bugreportergui.py:64
+msgid "&No"
+msgstr "&N0"
+
+#: src/gui/bugreporter/bugreportergui.py:65
+msgid "&Don't Know"
+msgstr "&D0|\\|'7 |<|\\|0\\/\\/"
+
+#: src/gui/bugreporter/bugreportergui.py:68
+msgid "If this is a visual bug, please attach a screenshot to this report."
+msgstr "1|= |)12 |3 @ \\/15|_|4|_ |3|_|6, P|_3453 4774(# @ 5(|233|\\|5#07 2 |)12 |23P0|27."
+
+#: src/gui/bugreporter/bugreportergui.py:69
+#: src/gui/bugreporter/bugreportergui.py:104
+#: src/gui/bugreporter/bugreportergui.py:141
+msgid "Take Screenshot"
+msgstr "74|<3 5(|233|\\|5#07"
+
+#: src/gui/bugreporter/bugreportergui.py:73
+msgid "Taking Screenshot in {secs}"
+msgstr "74|<1|\\|' 5(|233|\\|5#07 1|\\| {secs}"
+
+#: src/gui/bugreporter/bugreportergui.py:139
+msgid "Remove Screenshot"
+msgstr "|23|\\/|0\\/3 5(|233|\\|5#07"
+
+#: src/gui/bugreporter/bugreportergui.py:199
+msgid "Submit Bug Report - Digsby"
+msgstr "5|_||3|\\/|17 |3|_|6 |23p0|27 - |)165|3'/"
+
+#: src/gui/bugreporter/bugreportergui.py:212
+msgid "Submit"
+msgstr "5|_||3|\\/|17"
+
+#: src/gui/bugreporter/bugreportergui.py:225
+msgid "Please enter a description of the bug."
+msgstr "P|_3453 3|\\|73|2 |)35(|21P710|\\| 0|= 73|-| |3|_|6"
+
+#: src/gui/bugreporter/bugreportergui.py:226
+msgid "Include as much information as possible about what went wrong and how to reproduce the issue."
+msgstr ""
+"P|_3453 3|\\|73|2 @ |)35(|21P710|\\| 0|= 73# |3|_|6.\n"
+"\n"
+"1|\\|c|_|_||)3 42 |\\/||_|(# 1|\\||=0r|\\/|4710|\\| 42 P0551|3|_3 4|30|_|7\n"
+"\\/\\/07 \\/\\/3|\\|7 \\/\\/|20|\\|6 |\\| #0\\/\\/ 2 |23P|20|0|_|(3 73# 155|_|3."
+
+#: src/gui/bugreporter/bugreportergui.py:230 src/gui/tracebackdialog.py:14
+msgid "Send Bug Report"
+msgstr "53|\\||) |3|_|6 |23P0|27"
+
+#: src/gui/bugreporter/bugreportergui.py:255
+msgid "Submit Bug Report - Screenshot - Digsby"
+msgstr "5|_||3|\\/|17 |3|_|6 |23p0|27 - 5(|233|\\|5#07 - |)165|3'/"
+
+#: src/gui/bugreporter/bugreportergui.py:277
+msgid "Blank out non Digsby windows"
+msgstr "|3|_4|\\||< 0|_|7 |\\|0|\\| |)165|3'/ \\/\\/1|\\||)0\\/\\/2"
+
+#: src/gui/bugreporter/bugreportergui.py:284
+msgid "Is it OK to send this screenshot to digsby.com?"
+msgstr "|3 17 0|< 2 53|\\||) |)12 5(|233|\\|5#07 2 |)165|3'/.(0|\\/|?"
+
+#: src/gui/capabilitiesbar.py:24
+msgid "Info"
+msgstr "1|\\||=0"
+
+#: src/gui/capabilitiesbar.py:24
+msgid "View buddy information"
+msgstr "\\/13\\/\\/ |3|_||)|)'/ 1|\\||=0|2|\\/|4710|\\|"
+
+#: src/gui/capabilitiesbar.py:25 src/gui/imdialogs.py:43
+msgid "IM"
+msgstr "1|\\/|"
+
+#: src/gui/capabilitiesbar.py:25
+msgid "Instant message this buddy"
+msgstr "1|\\|574|\\|7 |\\/|355463 |)12 |3|_||)|)'/"
+
+#: src/gui/capabilitiesbar.py:26
+msgid "Start an audio/video chat"
+msgstr "574|27 |\\| 4|_||)10/\\/1|)30 (#47"
+
+#: src/gui/capabilitiesbar.py:26
+msgid "Video"
+msgstr "\\/1|)30"
+
+#: src/gui/capabilitiesbar.py:27
+msgid "Files"
+msgstr "|=1|_32"
+
+#: src/gui/capabilitiesbar.py:27
+msgid "Send files to this buddy"
+msgstr "53|\\||) |=1|_32 2 |)12 |3|_||)|)'/"
+
+#: src/gui/capabilitiesbar.py:29 src/gui/vcard/vcardgui.py:138
+msgid "Email"
+msgstr "3|\\/|41|_"
+
+#: src/gui/capabilitiesbar.py:29
+msgid "Send email"
+msgstr "53|\\||) 3|\\/|41|_"
+
+#: src/gui/capabilitiesbar.py:30
+msgid "SMS"
+msgstr "5|\\/|5"
+
+#: src/gui/capabilitiesbar.py:30
+msgid "Send SMS messages"
+msgstr "53|\\||) 5|\\/|5  |\\/|3554632"
+
+#: src/gui/capabilitiesbar.py:107
+msgid "Group Chat"
+msgstr "6|20|_|P (#47"
+
+#: src/gui/capabilitiesbar.py:110
+msgid "View Past Chats"
+msgstr "\\/13\\/\\/ P457 (#472"
+
+#: src/gui/capabilitiesbar.py:114
+msgid "Alert Me When..."
+msgstr "4|_3|27 |\\/|3 \\/\\/#3|\\|..."
+
+#: src/gui/capabilitiesbar.py:115
+msgid "Block"
+msgstr "|3|_0(|<"
+
+#: src/gui/capabilitiesbar.py:138
+msgid "To:"
+msgstr "2:"
+
+#: src/gui/capabilitiesbar.py:141
+msgid "From:"
+msgstr "|=|20|\\/|:"
+
+#: src/gui/capabilitiesbar.py:300
+msgid "Unblock {name}"
+msgstr "|_||\\||3|_0(|< {name}"
+
+#: src/gui/capabilitiesbar.py:302
+msgid "Block {name}"
+msgstr "|3|_0(|< {name}"
+
+#: src/gui/capabilitiesbar.py:354 src/gui/imwin/imwin_native.py:379
+msgid "Transfer History"
+msgstr "7|24|\\|5|=3|2 #1570|2'/"
+
+#: src/gui/capabilitiesbar.py:377
+msgid "Icons Only"
+msgstr "1(0|\\|2 0|\\||_'/"
+
+#: src/gui/capabilitiesbar.py:378
+msgid "Text Only"
+msgstr "73><7 0|\\||_'/"
+
+#: src/gui/capabilitiesbar.py:379
+msgid "Icons Next to Text"
+msgstr "1(0|\\|2 |\\|3><7 2 73><7"
+
+#: src/gui/capabilitiesbar.py:380
+msgid "Icons Above Text"
+msgstr "1(0|\\|2 4|30\\/3 73><7"
+
+#: src/gui/capabilitiesbar.py:389
+msgid "Hide Actions Bar"
+msgstr "#1|)3 4(710|\\|2 |34|2"
+
+#: src/gui/chatgui.py:90
+msgid "Join Chat Room"
+msgstr "J01|\\| (#47 R00|\\/|"
+
+#: src/gui/chatgui.py:98 src/hub.py:158
+msgid "Join Chat"
+msgstr "J01|\\| (#47"
+
+#: src/gui/chatgui.py:111
+msgid "Account:"
+msgstr "4((0|_||\\|7:"
+
+#: src/gui/chatgui.py:117
+msgid "Invite:"
+msgstr "1|\\|\\/173:"
+
+#: src/gui/chatgui.py:155
+msgid "Server:"
+msgstr "53|2\\/3|2:"
+
+#: src/gui/chatgui.py:160
+msgid "Room Name:"
+msgstr "|200|\\/| |\\|4|\\/|3:"
+
+#: src/gui/contactdialogs.py:37
+msgid "Would you like to send \"{files[0]}\" to {buddy_name:s}?"
+msgid_plural "Would you like to send {num_files:d} files to {buddy_name:s}?"
+msgstr[0] "\\/\\/0|_||_|) J00 \\/\\/|_||3 2 53|\\||) \"{files[0]}\" 2 {buddy_name:s}?"
+msgstr[1] "\\/\\/0|_||_|) J00 \\/\\/|_||3 2 53|\\||) {num_files:d} files 2 {buddy_name:s}?"
+
+#: src/gui/contactdialogs.py:41
+msgid "Send Files"
+msgstr "53|\\||) |=1|_32"
+
+#: src/gui/contactdialogs.py:78
+msgid "Contact &Name:"
+msgstr "(0|\\|74(7 &N4|\\/|3:"
+
+#: src/gui/contactdialogs.py:81
+msgid "Accoun&t:"
+msgstr "4((0|_||\\|&7:"
+
+#: src/gui/contactdialogs.py:87
+msgid "&Add"
+msgstr "&4|)|)"
+
+#: src/gui/contactdialogs.py:158
+msgid "Would you like to merge these contacts?"
+msgstr "\\/\\/0|_||_|) J00 \\/\\/|_||3 2 |\\/|3|263 7#353 (0|\\|74(72?"
+
+#: src/gui/contactdialogs.py:161
+msgid "They will appear as one item on your buddy list."
+msgstr "7#3'/ \\/\\/1|_|_ 4PP34|2 42 0|\\|3 173|\\/| 0|\\| '/0 |3|_||)|)'/ |_157."
+
+# MARK: Simular to libe from visuallisteditor: "Drag and drop to reorder"
+#: src/gui/contactdialogs.py:182
+msgid "Drag and drop to rearrange:"
+msgstr "|)|246 |\\| |)|20P 2 |234|2|24|\\|63:"
+
+#: src/gui/filetransfer/filetransferlist.py:234
+#: src/gui/filetransfer/filetransferlist.py:243
+msgid "File not found"
+msgstr "|=1|_3 |\\|07 |=0|_||\\||)"
+
+#: src/gui/filetransfer/filetransferlist.py:461
+#: src/gui/filetransfer/filetransferlist.py:599 src/gui/pref/pg_files.py:11
+#: src/gui/pref/prefstrings.py:19
+msgid "File Transfers"
+msgstr "|=1|_3 7|24|\\|5|=3|22"
+
+#: src/gui/filetransfer/filetransferlist.py:474
+msgid "Open &Containing Folder"
+msgstr "0P3|\\| &C0|\\|741|\\|1|\\|' |=0|_|)3|2"
+
+#: src/gui/filetransfer/filetransferlist.py:542
+msgid "Clean Up"
+msgstr "(|_34|\\| |_|P"
+
+#: src/gui/filetransfer/filetransferlist.py:642
+msgid "file"
+msgid_plural "files"
+msgstr[0] "|=1|_3"
+msgstr[1] "|=1|_32"
+
+#: src/gui/helpdigsby.py:4
+msgid "Keep Digsby Free"
+msgstr "|<33P |)165|3'/ |=|233"
+
+#: src/gui/helpdigsby.py:5
+msgid "Digsby will use your computer's free time using it to conduct both free and paid research."
+msgstr "|)165|3'/ \\/\\/1|_|_ |_|53 '/0 (0|\\/|P|_|73|2'2 |=|233 71|\\/|3 |_|51|\\|6 17 2 (0|\\||)|_|(7 |307# |=|233 |\\| P41|) |23534|2(#."
+
+#: src/gui/helpdigsby.py:14 src/gui/pref/pg_privacy.py:342
+#: src/gui/pref/pg_research.py:129
+msgid "Options"
+msgstr "0P710|\\|2"
+
+#: src/gui/helpdigsby.py:15 src/gui/imagedialog.py:11
+msgid "OK"
+msgstr "0|<"
+
+#: src/gui/imagedialog.py:71
+msgid "Send Image"
+msgstr "53|\\||) 1|\\/|463"
+
+#: src/gui/imagedialog.py:72
+msgid "&Send Image"
+msgstr "&53|\\||) 1|\\/|463"
+
+#: src/gui/imagedialog.py:73
+msgid "&Don't Send"
+msgstr "&D0|\\|'7 53|\\||)"
+
+#: src/gui/imdialogs.py:19
+msgid "New IM"
+msgstr "|\\|3\\/\\/ 1|\\/|"
+
+#: src/gui/imdialogs.py:30
+msgid "To"
+msgstr "2"
+
+#: src/gui/imdialogs.py:36
+msgid "From"
+msgstr "|=|20|\\/|"
+
+#: src/gui/imwin/imhub.py:483
+msgid "Group Chat ({chat.chat_member_count:d})"
+msgstr "6|20|_|P (|-|47 ({chat.chat_member_count:d})"
+
+#: src/gui/imwin/imhub.py:484
+msgid "{alias:s}: {message:s}"
+msgstr "{alias:s}: {message:s}"
+
+#: src/gui/imwin/imtabs.py:57
+msgid "Close IM Window"
+msgstr "(|_053 1|\\/| \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/imwin/imtabs.py:58
+msgid "Warn me when I attempt to close multiple conversations"
+msgstr "\\/\\/4|2|\\| |\\/|3 \\/\\/#3|\\| 1 4773|\\/|P7 2 (|_053 |\\/||_||_71P|_3 (0|\\|\\/3|254710|\\|2"
+
+#: src/gui/imwin/imtabs.py:59
+msgid "You are about to close {num_tabs} conversations. Are you sure you want to continue?"
+msgstr "J00 12 4|30|_|7 2 (|_053 {num_tabs} (0|\\|\\/3|254710|\\|2.  12 J00 5|_||23 J00 \\/\\/4|\\|7 2 (0|\\|71|\\||_|3?"
+
+#: src/gui/imwin/imtabs.py:60
+msgid "Close &tabs"
+msgstr "(|_043 &74|32"
+
+#: src/gui/imwin/imtabs.py:757
+msgid "IM Windows"
+msgstr "1|\\/| \\/\\/1|\\||)0\\/\\/2"
+
+#: src/gui/imwin/imwin_ctrl.py:209
+msgid "Please add an email address for this buddy by clicking the \"To:\" box."
+msgstr "P|_3453 4|)|) |\\| 3|\\/|41|_ 4|)|)|2352 4 |)12 |3|_||)|)'/ |3'/ (|_1(|<1|\\|' 73# \"2:\" |30><."
+
+#: src/gui/imwin/imwin_ctrl.py:211
+msgid "Compose email to {name}"
+msgstr "(0|\\/|P053 3|\\/|41|_ 2 {name}"
+
+#: src/gui/imwin/imwin_ctrl.py:221
+msgid "Message Sent"
+msgstr "|\\/|355463 53|\\|7"
+
+#: src/gui/imwin/imwin_ctrl.py:230
+msgid "Failed to Send Email"
+msgstr "|=41|_3|) 2 53|\\||) 3|\\/|41|_"
+
+#: src/gui/imwin/imwin_ctrl.py:234
+msgid "Sending..."
+msgstr "53|\\||)1|\\|'..."
+
+#: src/gui/imwin/imwin_ctrl.py:270
+msgid "Please add an SMS number first."
+msgstr "P|_3453 4|)|) |\\| 5|\\/|5 |\\||_||\\/||33|2 |=1|257."
+
+#: src/gui/imwin/imwin_ctrl.py:271 src/gui/imwin/imwin_ctrl.py:274
+msgid "Send SMS Message"
+msgstr "53|\\||) 5|\\/|5 |\\/|355463"
+
+#: src/gui/imwin/imwin_ctrl.py:273
+msgid "You are not signed in to any accounts which can send SMS messages."
+msgstr "J00 12 |\\|07 516|\\|3|) 1|\\| 2 4|\\|'/ 4((0|_||\\|72 \\/\\/#1(# (4|\\| 53|\\||) 5|\\/|5 |\\/|3554632."
+
+#: src/gui/imwin/imwin_ctrl.py:288
+msgid "The error message received was:"
+msgstr "1 4|\\/| 3|2|20|2:"
+
+#: src/gui/imwin/imwin_ctrl.py:292
+msgid "There was an error in sending your SMS message."
+msgstr "7#3|23 \\/\\/|_|2 |\\| 3|2|20|2 1|\\| 53|\\||)1|\\|' '/0 5|\\/|5 |\\/|355463."
+
+#: src/gui/imwin/imwin_ctrl.py:293
+msgid "Send SMS Message Error"
+msgstr "53|\\||) 5|\\/|5 |\\/|355463 3|2|20|2"
+
+#: src/gui/imwin/imwin_ctrl.py:299
+msgid "Only the first {max_length:d} characters of your message can be sent over SMS:"
+msgstr "0|\\||_'/ 73|-| |=1|257 {max_length:d} (|-|4|22 0 |_| |\\/|355463 (4|\\| |33 53|\\|7 0\\/3|2 5|\\/|5:"
+
+#: src/gui/imwin/imwin_ctrl.py:300
+msgid "Do you want to send this message now?"
+msgstr "53|\\||) |\\/|355463 |\\|40?"
+
+#: src/gui/imwin/imwin_ctrl.py:303
+msgid "Send SMS - Character Limit"
+msgstr "53|\\||) 5|\\/|5 - (#4|24(73|2 |_1|\\/|17"
+
+#: src/gui/imwin/imwin_ctrl.py:461
+msgid "Reconnected"
+msgstr "|23(0|\\||\\|3(73|)"
+
+#: src/gui/imwin/imwin_ctrl.py:689
+msgid "You can only have one audio/video call at a time."
+msgstr "J00 (4|\\| 0|\\||_'/ #4\\/3 0|\\|3 4|_||)10/\\/1|)30 (4|_|_ 47 @ 71|\\/|3."
+
+#: src/gui/imwin/imwin_email.py:49
+msgid "Edit in {client}..."
+msgstr "3|)17 |\\| {client}..."
+
+#: src/gui/imwin/imwin_email.py:95
+msgid "Subject:"
+msgstr "5|_||3J3(7:"
+
+#: src/gui/imwin/imwin_email.py:116
+#: src/gui/uberwidgets/formattedinput2/iminput.py:67
+msgid "Send"
+msgstr "53|\\||)"
+
+#: src/gui/imwin/imwin_gui.py:43
+msgid "Typing"
+msgstr "7'/P1|\\|'"
+
+#: src/gui/imwin/imwin_gui.py:44
+msgid "Entered Text"
+msgstr "3|\\|73|23|)"
+
+#: src/gui/imwin/imwin_gui.py:75
+msgid "Digsby Announcement"
+msgstr "|)165|3'/ 4|\\||\\|0|_||\\|(3|\\/|3|\\|7"
+
+#: src/gui/imwin/imwin_gui.py:265
+#, python-format
+msgid "Would you like to send this image to %s?"
+msgstr "\\/\\/0|_||_|) J00 \\/\\/|_||3 2 53|\\||) |)12 1|\\/|463 2 %s"
+
+#: src/gui/imwin/imwin_native.py:417 src/gui/uberwidgets/formattedinput.py:758
+#: src/gui/uberwidgets/formattedinput2/formattingbar.py:137
+msgid "Choose a background color"
+msgstr "(#0053 @ |34(|<6|20|_||\\||) (0|_0|2"
+
+#: src/gui/imwin/imwin_tofrom.py:318
+msgid "{username} disconnected"
+msgstr "{username} |)15(0|\\||\\|3(73|)"
+
+#: src/gui/imwin/imwin_tofrom.py:321
+msgid "now sending from: {username}"
+msgstr "|\\|0\\/\\/ 53|\\||)1|\\|' |=|20|\\/|: {username}"
+
+#: src/gui/imwin/imwin_tofrom.py:342
+msgid "Add..."
+msgstr "4|)|)..."
+
+#: src/gui/imwin/imwin_tofrom.py:584
+msgid "Please enter a valid SMS number (ie: 555-555-5555 or 5555555555)"
+msgstr "P|_3453 3|\\|73|2 @ \\/4|_1|) 5|\\/|5 |\\||_||\\/||33|2 (ie: 555-555-5555 or 5555555555)"
+
+#: src/gui/imwin/imwin_tofrom.py:585
+msgid "Invalid SMS Number"
+msgstr "1|\\|\\/4|_1|) 5|\\/|5 |\\||_||\\/||33|2"
+
+#: src/gui/imwin/imwin_tofrom.py:593
+msgid "That SMS number is already in this buddy's list."
+msgstr "|)47 5|\\/|5 |\\||_||\\/||33|2 |3 4|_|234|)'/ 1|\\| |)12 |3|_||)|)'/'2 |_157."
+
+#: src/gui/imwin/imwin_tofrom.py:594
+msgid "Add SMS Number"
+msgstr "4|)|) 5|\\/|5 |\\||_||\\/||33|2"
+
+#: src/gui/imwin/imwin_tofrom.py:634
+msgid "Accounts..."
+msgstr "4((0|_||\\|75..."
+
+#: src/gui/imwin/imwin_tofrom.py:673
+msgid "Please enter a valid email address (ie: john123@digsby.com)"
+msgstr "P|_3453 3|\\|73|2 @ \\/4|_1|) 3|\\/|41|_ 4|)|)|2355 (ie: john123@digsby.com)"
+
+#: src/gui/imwin/imwin_tofrom.py:674
+msgid "Invalid Email Address"
+msgstr "1|\\|\\/4|_1|) 3|\\/|41|_ 4|)|)|2355"
+
+#: src/gui/imwin/imwin_tofrom.py:677
+msgid "That email is already registered with this buddy."
+msgstr "|)47 3|\\/|41|_ |3 4|_|234|)'/ |2361573|23|) \\/\\/17# |)12 |3|_||)|)'/."
+
+#: src/gui/imwin/imwin_tofrom.py:678
+msgid "Add Email Address"
+msgstr "4|)|) 3|\\/|41|_ 4|)|)|2355"
+
+#: src/gui/imwin/imwin_tofrom.py:729
+msgid "Add Email Account"
+msgstr "4|)|) 3|\\/|41|_ 4((0|_||\\|7"
+
+#: src/gui/imwin/imwinmenu.py:12
+msgid "Buddy Info"
+msgstr "|3|_||)|)'/ 1|\\||=0"
+
+#: src/gui/imwin/imwinmenu.py:13
+msgid "Send IM"
+msgstr "53|\\||) 1|\\/|"
+
+#: src/gui/imwin/imwinmenu.py:16
+msgid "Send Email"
+msgstr "53|\\||) 3|\\/|41|_"
+
+#: src/gui/imwin/imwinmenu.py:17
+msgid "Send SMS"
+msgstr "53|\\||) 5|\\/|5"
+
+#: src/gui/imwin/imwinmenu.py:40 src/gui/pastbrowser.py:414
+#: src/gui/toolbox/toolbox.py:1448 src/gui/uberwidgets/formattedinput.py:95
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:105
+#: src/plugins/twitter/twitter.py:1211 src/plugins/twitter/twitter_gui.py:1496
+msgid "Copy"
+msgstr "(0PY"
+
+#: src/gui/imwin/imwinmenu.py:41 src/gui/toolbox/toolbox.py:1451
+#: src/gui/uberwidgets/formattedinput.py:96
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:106
+msgid "Paste"
+msgstr "P4573"
+
+#: src/gui/imwin/imwinmenu.py:44 src/gui/imwin/imwinmenu.py:123
+msgid "Show &Actions Bar"
+msgstr "5#0\\/\\/ &A(710|\\|2 |34|2"
+
+#: src/gui/imwin/imwinmenu.py:45 src/gui/imwin/imwinmenu.py:124
+msgid "Show &Formatting Bar"
+msgstr "5#0\\/\\/ &F0|2|\\/|4771|\\|' |34|2"
+
+#: src/gui/imwin/imwinmenu.py:46
+msgid "Show Send Button"
+msgstr "5#0\\/\\/ 53|\\|d |3|_|770|\\|"
+
+#: src/gui/imwin/imwinmenu.py:64 src/plugins/twitter/twitter_gui.py:50
+msgid "&Keep on Top"
+msgstr "&K33P 0|\\| 70P"
+
+#: src/gui/imwin/imwinmenu.py:85
+msgid "Copy\tCtrl+C"
+msgstr "(0P'/\tCtrl+C"
+
+#: src/gui/imwin/imwinmenu.py:94
+msgid "Copy &Link"
+msgstr "(0P'/ &L1|\\||<"
+
+#: src/gui/imwin/imwinmenu.py:96
+msgid "Paste\tCtrl+V"
+msgstr "P4573\tCtrl+V"
+
+#: src/gui/imwin/imwinmenu.py:100
+msgid "Edit Source"
+msgstr "3|)17 S0|_||2(3"
+
+#: src/gui/imwin/imwinmenu.py:103
+msgid "&Javascript Console"
+msgstr "&J4\\/45(|21P7 (0|\\|50|_3"
+
+#: src/gui/imwin/imwinmenu.py:108 src/plugins/twitter/twitter_gui.py:1507
+msgid "&Increase Text Size\tCtrl+="
+msgstr "&1|\\|(|23453 73><7 5123"
+
+#: src/gui/imwin/imwinmenu.py:110 src/plugins/twitter/twitter_gui.py:1508
+msgid "&Decrease Text Size\tCtrl+-"
+msgstr "&D3(|23453 73><7 5123\tCtrl+-"
+
+#: src/gui/imwin/imwinmenu.py:113 src/plugins/twitter/twitter_gui.py:1510
+msgid "&Reset Text Size\tCtrl+0"
+msgstr "&R3537 73><7 5123\tCtrl+0"
+
+#: src/gui/imwin/imwinmenu.py:116
+msgid "&Text Size"
+msgstr "&73><7 5123"
+
+#: src/gui/imwin/imwinmenu.py:122
+msgid "Show &Room List"
+msgstr "5#0\\/\\/ &R00|\\/| |_157"
+
+#: src/gui/imwin/roomlist.py:405
+msgid "Invite Buddy"
+msgstr "1|\\|\\/173 B|_||)|)'/"
+
+#: src/gui/imwin/roomlist.py:524
+msgid "Do you want to invite {name} to this chat?"
+msgstr "|)0 J00 \\/\\/4|\\|7 2 1|\\|\\/173 {name} 2 |)12 (#47?"
+
+#: src/gui/imwin/roomlist.py:525
+msgid "Chat Invite"
+msgstr "(#47 1|\\|\\/173"
+
+#: src/gui/imwin/styles/adiummsgstyles.py:193 src/gui/skin/skintree.py:427
+#: src/msn/MSNBuddy.py:559
+msgid "(none)"
+msgstr "(|\\|0|\\|3)"
+
+#: src/gui/infobox/emailpanels.py:596
+msgid "(No Subject)"
+msgstr "(|\\|0 5|_||3J3(7)"
+
+#: src/gui/infobox/emailpanels.py:604
+msgid "(No Preview)"
+msgstr "(|\\|0 P|23\\/13\\/\\/)"
+
+#: src/gui/infobox/htmlgeneration.py:137
+msgid "No Profile"
+msgstr "|\\|0 P|20|=1|_3"
+
+#: src/gui/infobox/htmlgeneration.py:235
+msgid "Subscription:"
+msgstr "5|_||35(|21P710|\\|:"
+
+#: src/gui/infobox/htmlgeneration.py:238 src/gui/infobox/htmlgeneration.py:395
+#: src/plugins/facebook/res/status.py.xml:3
+msgid "Status:"
+msgstr "5747|_|5:"
+
+#: src/gui/infobox/htmlgeneration.py:339 src/yahoo/yahoobuddy.py:154
+msgid "Location:"
+msgstr "|_0(4710|\\|:"
+
+#: src/gui/infobox/htmlgeneration.py:344
+msgid "IP Address:"
+msgstr "1P 4||)|)|255:"
+
+#: src/gui/infobox/htmlgeneration.py:351
+msgid "Time on Page:"
+msgstr "71|\\/|3 0|\\| P463:"
+
+#: src/gui/infobox/htmlgeneration.py:374
+msgid "Online:"
+msgstr "0|\\||_1|\\|3:"
+
+#: src/gui/infobox/htmlgeneration.py:381
+msgid "Idle:"
+msgstr "1|)|_3:"
+
+#: src/gui/infobox/htmlgeneration.py:387
+msgid "Away:"
+msgstr "4\\/\\/4'/:"
+
+#: src/gui/infobox/htmlgeneration.py:396
+msgid "{status} + Idle"
+msgstr "{status} + 1|)|_3"
+
+#: src/gui/infobox/htmlgeneration.py:416
+#: src/plugins/msim/res/content.tenjin:77
+msgid "Hide Profile"
+msgstr "|-|1|)3 P|20|=1|_3"
+
+#: src/gui/infobox/htmlgeneration.py:416
+#: src/plugins/msim/res/content.tenjin:79
+msgid "Show Profile"
+msgstr "5|-|0\\/\\/ P|20|=1|_3"
+
+#: src/gui/infobox/infobox.py:1062
+#, python-format
+msgid "Unblock %s"
+msgstr "|_||\\||3|_0(|< %s"
+
+#: src/gui/infobox/infobox.py:1064
+#, python-format
+msgid "Block %s"
+msgstr "|3|_0(|< %s"
+
+#: src/gui/infobox/infobox.py:1365
+msgid "Error generating content"
+msgstr "3|2|20|2 63|\\|3|2473 (0|\\|73|\\|7"
+
+#: src/gui/infobox/infobox.py:1564
+msgid "No additional information"
+msgstr "\\/13\\/\\/ |3|_||)|)'/ 1|\\||=0|2|\\/|4710|\\|"
+
+#: src/gui/infobox/infobox.py:1792
+msgid "InfoBox"
+msgstr "1|\\||=0|30><"
+
+#: src/gui/input/inputmanager.py:391
+msgid "Key Debugger"
+msgstr "|<3'/ |)3|3|_|663|2"
+
+#: src/gui/native/win/jumplist.py:51
+msgid "Chat with {name}"
+msgstr "(#47 \\/\\/17# {name}"
+
+#: src/gui/native/win/jumplist.py:124
+msgid "Change IM Status to {status}"
+msgstr "(#4|\\|63 1|\\/| 5747|_|2 2 {status}"
+
+#: src/gui/native/win/jumplist.py:139 src/gui/social_status_dialog.py:830
+msgid "Set Global Status"
+msgstr "537 6|_0|34|_ 5747|_|2"
+
+#: src/gui/native/win/jumplist.py:139
+msgid "Set your status on multiple networks"
+msgstr "537 '/0 5747|_|2 0|\\| |\\/||_||_71P|_3 |\\|37\\/\\/0|2|<2"
+
+#: src/gui/native/win/jumplist.py:140
+msgid "New IM..."
+msgstr "|\\|3\\/\\/ 1|\\/|..."
+
+#: src/gui/native/win/jumplist.py:140
+msgid "Open the New IM window"
+msgstr "0P3|\\| 73# |\\|3\\/\\/ 1|\\/| \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/native/win/jumplist.py:141
+msgid "Open the Digsby Preferences window"
+msgstr "0P3|\\| 73# |)165|3'/ P|23|=3|23|\\|(32 \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/native/win/jumplist.py:141
+msgid "Preferences..."
+msgstr "P|23|=3|23|\\|(32..."
+
+#: src/gui/native/win/jumplist.py:150
+msgid "Close all windows and exit"
+msgstr "(|_053 4|_|_ \\/\\/1|\\||)0\\/\\/2 |\\| ><17"
+
+#: src/gui/native/win/jumplist.py:150
+msgid "Exit Digsby"
+msgstr "><17 |)165|3'/"
+
+#: src/gui/native/win/jumplist.py:164
+msgid "Enable Chat Logs"
+msgstr "3|\\|4|3|_3 C#47 |_062"
+
+#: src/gui/native/win/jumplist.py:164
+msgid "Opens the Preferences Window where you can enable logging"
+msgstr "0P3|\\|"
+
+#: src/gui/notifications/notificationlist.py:68
+msgid "Sound"
+msgstr "50|_||\\||)"
+
+#: src/gui/notifications/notificationlist.py:69
+msgid "Popup"
+msgstr "P0P|_|P"
+
+# MARK: Fragment
+#: src/gui/notificationview.py:46
+msgid "a Contact"
+msgstr "@ (0|\\|74(7"
+
+# MARK: Fragment? & WTF
+#: src/gui/notificationview.py:55
+msgid "Contact"
+msgstr "(0|\\|74(7"
+
+# MARK: Fragment
+#: src/gui/notificationview.py:55
+msgid "When "
+msgstr "\\/\\/#3|\\| "
+
+#: src/gui/notificationview.py:87
+msgid "&Action:"
+msgstr "&4(710|\\|"
+
+#: src/gui/notificationview.py:92 src/gui/proxydialog.py:232
+msgid "&OK"
+msgstr "&0|<"
+
+#: src/gui/notificationview.py:198
+msgid "Edit Event for \"{desc}\""
+msgstr "3|)17 3\\/3|\\|7 4 \"{desc}\""
+
+#: src/gui/notificationview.py:200
+msgid "Add Event for \"{desc}\""
+msgstr "4|)|) 3\\/3|\\|7 4 \"{desc}\""
+
+# MARKED %s Fragment
+#: src/gui/notificationview.py:242
+#, python-format
+msgid " for %s"
+msgstr "4 %s"
+
+#: src/gui/notificationview.py:502
+#, python-format
+msgid "Are you sure you want to remove %d event?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |23|\\/|0\\/3 %d 3\\/3|\\|7?"
+
+#: src/gui/notificationview.py:503
+#, python-format
+msgid "Are you sure you want to remove %d events?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |23|\\/|0\\/3 %d 3\\/3|\\|72?"
+
+#: src/gui/notificationview.py:505
+msgid "Remove Events: {notification_desc}"
+msgstr "|23570|23 3\\/3|\\|72: {notification_desc}"
+
+#: src/gui/notificationview.py:516
+msgid "Editing Alerts for {name}"
+msgstr "3|)17 4|_3|272 4 {name}"
+
+#: src/gui/pastbrowser.py:89
+msgid "Group Chats"
+msgstr "6|20|_|P (#472"
+
+#: src/gui/pastbrowser.py:301
+msgid "Find"
+msgstr "|=1|\\||)"
+
+#: src/gui/pastbrowser.py:304
+msgid "Next"
+msgstr "|\\|><7"
+
+#: src/gui/pastbrowser.py:305
+msgid "Prev"
+msgstr "P|23\\/"
+
+#: src/gui/pastbrowser.py:386 src/gui/status.py:372
+msgid "Account"
+msgstr "4((0|_||\\|7"
+
+#: src/gui/pastbrowser.py:392 src/gui/pastbrowser.py:470
+msgid "Buddy"
+msgstr "|3|_||)|)'/"
+
+#: src/gui/pastbrowser.py:402
+msgid "Date"
+msgstr "|)473"
+
+#: src/gui/pastbrowser.py:449
+msgid "Conversation Log"
+msgstr "(0|\\|\\/3|254710|\\| |_06"
+
+#: src/gui/pastbrowser.py:466
+msgid "Chats"
+msgstr "(#472"
+
+#: src/gui/pastbrowser.py:558
+msgid "{month}, {day}, {year}"
+msgstr "{month}, {day}, {year}"
+
+#: src/gui/pastbrowser.py:561
+msgid "There are no chat logs for {specific_day_string}."
+msgstr "7|-|3|23 |\\|0 (|-|47 |_062 4  {specific_day_string}."
+
+#: src/gui/pastbrowser.py:563
+msgid "There are no chat logs for {specific_day_string} with {name}."
+msgstr "7|-|3|23 |\\|0 (|-|47 |_062 4 {specific_day_string} \\/\\/17|-| {name}."
+
+#: src/gui/pastbrowser.py:664
+msgid "There is no chat history for {name} on {service} with {acct}."
+msgstr "7#3|23 |3 |\\|0 (#47 #1570|2'/ 4 {name} 0|\\| {service} \\/\\/17# {acct}."
+
+#: src/gui/pastbrowser.py:673
+msgid "Past Chat Browser"
+msgstr "P457 (#47 |3|20\\/\\/53|2"
+
+#: src/gui/pref/iconeditor.py:34
+msgid "Scree&n"
+msgstr "5(|233&N"
+
+#: src/gui/pref/iconeditor.py:35
+msgid "Capt&ure"
+msgstr "(4P7|_||23"
+
+#: src/gui/pref/iconeditor.py:48
+msgid "Set Buddy Icon"
+msgstr "537 |3|_||)|)'/ 1(0|\\|"
+
+#: src/gui/pref/iconeditor.py:430
+msgid "Choose an icon"
+msgstr "(#0053 |\\| 1(0|\\|"
+
+#: src/gui/pref/iconeditor.py:439
+msgid "Not a valid image:"
+msgstr "|\\|07 \\/4|_1|) 1|\\/|463:"
+
+#: src/gui/pref/iconeditor.py:442
+msgid "Invalid Image"
+msgstr "1|\\|\\/4|_1|) 1|\\/|463"
+
+#: src/gui/pref/iconeditor.py:547
+msgid "Cli&pboard"
+msgstr "(|_1&P|304|2|)"
+
+#: src/gui/pref/iconeditor.py:553 src/gui/protocols/jabbergui.py:289
+msgid "C&lear"
+msgstr "(&L34|2"
+
+#: src/gui/pref/pg_accounts.py:617
+msgid "(auto login)"
+msgstr "(4|_|70 |_061|\\|)"
+
+#: src/gui/pref/pg_accounts.py:828
+msgid "My Accounts"
+msgstr "|\\/|'/ 4((0|_||\\|72..."
+
+#: src/gui/pref/pg_accounts.py:832
+msgid "Account Options"
+msgstr "4((0|_||\\|7 0P710|\\|2"
+
+#: src/gui/pref/pg_accounts.py:863
+msgid "buddy list"
+msgstr "|3|_||)|)'/ |_157"
+
+#: src/gui/pref/pg_accounts.py:864
+msgid "icon tray"
+msgstr "1(0|\\| 7|24'/"
+
+#: src/gui/pref/pg_accounts.py:865
+msgid "buddy list and icon tray"
+msgstr "|3|_||)|)'/ |_157 |\\| 1(0|\\| 7|24'/"
+
+#: src/gui/pref/pg_accounts.py:901
+msgid "Show email accounts in:"
+msgstr "5#0\\/\\/ 3|\\/|41|_ 4((0|_||\\|72 1|\\|:"
+
+#: src/gui/pref/pg_accounts.py:902
+msgid "Show social networks in:"
+msgstr "5#0\\/\\/ 50(14|_ |\\|37\\/\\/0|2|<2 1|\\|:"
+
+#: src/gui/pref/pg_advanced.py:14
+msgid "IM Window"
+msgstr "1|\\/| \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/pref/pg_advanced.py:60 src/gui/pref/pg_advanced.py:94
+msgid "&Use Proxy Server"
+msgstr "&|_|53 P|20><'/ 53|2\\/3|2"
+
+#: src/gui/pref/pg_advanced.py:68
+msgid "Host"
+msgstr "#057"
+
+#: src/gui/pref/pg_advanced.py:69
+msgid "Port"
+msgstr "P0|27"
+
+#: src/gui/pref/pg_advanced.py:70 src/plugins/digsby_email/info.yaml:18
+#: src/plugins/digsby_email/info.yaml:76
+#: src/plugins/digsby_service_editor/default_ui.py:149
+#: src/plugins/digsby_service_editor/default_ui.py:154
+#: src/plugins/msim/res/content.tenjin:19
+msgid "Username"
+msgstr "|_|53|2|\\|4|\\/|3"
+
+#: src/gui/pref/pg_advanced.py:71 src/plugins/component_gtalk/info.yaml:60
+#: src/plugins/digsby_email/info.yaml:19 src/plugins/digsby_email/info.yaml:77
+#: src/plugins/digsby_service_editor/default_ui.py:166
+#: src/plugins/digsby_service_editor/default_ui.py:173
+#: src/plugins/provider_aol/info.yaml:14
+#: src/plugins/provider_aol/info.yaml:110
+#: src/plugins/provider_google/info.yaml:11
+#: src/plugins/provider_jabber/info.yaml:16
+#: src/plugins/provider_windows_live/info.yaml:23
+#: src/plugins/provider_yahoo/info.yaml:11
+msgid "Password"
+msgstr "P455\\/\\/0|2|)"
+
+#: src/gui/pref/pg_advanced.py:94
+msgid "&Use Global Settings"
+msgstr "&|_|53 6|_0|34|_ 53771|\\|62"
+
+#: src/gui/pref/pg_advanced.py:130
+msgid "&Protocol:"
+msgstr "&P|2070(0|_:"
+
+#: src/gui/pref/pg_appearance.py:39
+msgid "Application Skin"
+msgstr "4PP|_1(4710|\\| 5|<1|\\|"
+
+#: src/gui/pref/pg_appearance.py:41
+msgid "Conversation Theme"
+msgstr "(0|\\|\\/3|254710|\\| 7#3|\\/|3"
+
+#: src/gui/pref/pg_appearance.py:44
+msgid "Conversation Preview"
+msgstr "(0|\\|\\/3|254710|\\| P|23\\/13\\/\\/"
+
+#: src/gui/pref/pg_appearance.py:115
+msgid "Skin:"
+msgstr "5|<1|\\|:"
+
+#: src/gui/pref/pg_appearance.py:115 src/gui/pref/pg_appearance.py:203
+msgid "Variant:"
+msgstr "\\/4|214|\\|7:"
+
+#: src/gui/pref/pg_appearance.py:187
+msgid "Show header"
+msgstr "5#0\\/\\/ #34|)3|2"
+
+#: src/gui/pref/pg_appearance.py:192
+msgid "Show message fonts"
+msgstr "5#0\\/\\/ |\\/|355463 |=0|\\|72"
+
+#: src/gui/pref/pg_appearance.py:194
+msgid "Show message colors"
+msgstr "5#0\\/\\/ |\\/|355463 (0|_0|22"
+
+#: src/gui/pref/pg_appearance.py:201
+msgid "Theme:"
+msgstr "7#3|\\/|3:"
+
+#: src/gui/pref/pg_appearance.py:270
+msgid "Fonts:"
+msgstr "|=0|\\|72:"
+
+#: src/gui/pref/pg_appearance.py:275
+msgid "Colors:"
+msgstr "(0|_0|22:"
+
+#: src/gui/pref/pg_contact_list.py:27
+msgid "Sorting and Groups"
+msgstr "50|271|\\|' |\\| 6|20|_|P2"
+
+#: src/gui/pref/pg_contact_list.py:46
+msgid "Autohide when not in &focus"
+msgstr "4|_|70#1|)3 \\/\\/#3|\\| |\\|07 1|\\| &F0(|_|5"
+
+#: src/gui/pref/pg_contact_list.py:51
+msgid "Automatically &dock when near edge of screen"
+msgstr "4|_|70|\\/|471(4|_|_'/ &D0(|< \\/\\/#3|\\| |\\|34|2 3|)63 0|= 5(|233|\\|"
+
+#: src/gui/pref/pg_contact_list.py:57 src/gui/pref/pg_text_conversations.py:41
+msgid "&Keep on top of other applications"
+msgstr "&K33P 0|\\| 70P 0|= 07#3|2 4PP|_1(4710|\\|2"
+
+#: src/gui/pref/pg_contact_list.py:58
+msgid "Show in taskbar"
+msgstr "5#0\\/\\/ 1|\\| 745|<|34|2"
+
+#: src/gui/pref/pg_contact_list.py:64 src/gui/pref/pg_text_conversations.py:60
+msgid "Window Options"
+msgstr "\\/\\/1|\\||)0\\/\\/ 0P710|\\|2"
+
+#: src/gui/pref/pg_contact_list.py:81
+msgid "Contact Layout"
+msgstr "(0|\\|74(7 |_4'/0|_|7"
+
+#: src/gui/pref/pg_contact_list.py:104 src/gui/pref/pg_contact_list.py:110
+#: src/plugins/digsby_service_editor/service_editor.py:58
+msgid "Advanced"
+msgstr "4|)\\/4|\\|&(3|)..."
+
+#: src/gui/pref/pg_contact_list.py:104 src/gui/pref/pg_contact_list.py:110
+msgid "Basic"
+msgstr "|3451("
+
+#: src/gui/pref/pg_contact_list.py:243
+msgid "Group by:"
+msgstr "6|20|_|P |3'/:"
+
+#: src/gui/pref/pg_contact_list.py:244
+msgid "Sort by:"
+msgstr "50|27 |3'/:"
+
+#: src/gui/pref/pg_contact_list.py:245
+msgid "Then by:"
+msgstr "7#3|\\| |3'/:"
+
+#: src/gui/pref/pg_contact_list.py:353 src/gui/pref/pg_sandbox.py:79
+msgid "Far Left"
+msgstr "|=4|2 |_3|=7"
+
+#: src/gui/pref/pg_contact_list.py:354 src/gui/pref/pg_sandbox.py:80
+msgid "Left"
+msgstr "|_3|=7"
+
+#: src/gui/pref/pg_contact_list.py:355 src/gui/pref/pg_sandbox.py:81
+msgid "Badge (Lower Left)"
+msgstr "|34|)63 (|_0\\/\\/3|2 |_3|=7)"
+
+#: src/gui/pref/pg_contact_list.py:356 src/gui/pref/pg_sandbox.py:82
+msgid "Badge (Lower Right)"
+msgstr "|34|)63 (|_0\\/\\/3|2 |216#7)"
+
+#: src/gui/pref/pg_contact_list.py:357 src/gui/pref/pg_sandbox.py:83
+msgid "Right"
+msgstr "|216#7"
+
+#: src/gui/pref/pg_contact_list.py:358 src/gui/pref/pg_sandbox.py:84
+msgid "Far Right"
+msgstr "|=4|2 |216#7"
+
+#: src/gui/pref/pg_contact_list.py:377
+msgid "Show service icon on:"
+msgstr "5#0\\/\\/ 53|2\\/1(3 1(0|\\| 0|\\|:"
+
+#: src/gui/pref/pg_contact_list.py:379
+msgid "Show status icon on:"
+msgstr "5#0\\/\\/ 5747|_|2 1(0|\\| 0|\\|:"
+
+#: src/gui/pref/pg_contact_list.py:381
+msgid "Show buddy icon on the:"
+msgstr "5#0\\/\\/ |3|_||)|)'/ 1(0|\\| 0|\\| 73#:"
+
+#: src/gui/pref/pg_contact_list.py:390
+msgid "Buddy icon size:"
+msgstr "|3|_||)|)'/ 1(0|\\| 5123:"
+
+#: src/gui/pref/pg_contact_list.py:396
+msgid "Buddy padding:"
+msgstr "|3|_||)|)'/ P4|)|)1|\\|6:"
+
+#: src/gui/pref/pg_contact_list.py:401
+msgid "Contact name:"
+msgstr "(0|\\|74(7 |\\|4|\\/|3:"
+
+#: src/gui/pref/pg_contact_list.py:403
+msgid "&Show extra info:"
+msgstr "&5#0\\/\\/ ><7|24 1|\\||=0:"
+
+#: src/gui/pref/pg_contact_list.py:406
+msgid "Idle Time"
+msgstr "1|)|_3 71|\\/|3"
+
+#: src/gui/pref/pg_contact_list.py:407
+msgid "Idle Time + Status"
+msgstr "1|)|_3 71|\\/|3 + 5747|_|2"
+
+#: src/gui/pref/pg_files.py:13
+msgid "Save &files to:"
+msgstr "54\\/3 &F1|_32 2:"
+
+#: src/gui/pref/pg_files.py:15
+msgid "Create s&ubfolders for each IM account"
+msgstr "(|23473 5&U|3|=0|_|)3|22 4 34(# 1|\\/| 4((0|_||\\|7"
+
+#: src/gui/pref/pg_files.py:16
+msgid "&Auto-accept all file transfers from contacts on my contact list"
+msgstr "&4|_|70-4((3P7 4|_|_ |=1|_3 7|24|\\|5|=3|22 |=|20|\\/| (0|\\|74(72 0|\\| |\\/|'/ (0|\\|74(7 |_157"
+
+#: src/gui/pref/pg_general_profile.py:108
+msgid "&Launch Digsby when this computer starts"
+msgstr "&L4|_||\\|c# |)165|3'/ \\/\\/#3|\\| |)12 (0|\\/|P|_|73|2 574|272"
+
+#: src/gui/pref/pg_general_profile.py:125
+msgid "&Automatically download software updates"
+msgstr "&4|_|70|\\/|471(4|_|_'/ |)0\\/\\/|\\||_04|) \\/\\/4|232 |_|P|)4732"
+
+#: src/gui/pref/pg_general_profile.py:126
+msgid "&If connection to IM service is lost, automatically attempt to reconnect"
+msgstr "&1|= (0|\\||\\|3(710|\\| 2 1|\\/| 53|2\\/1(3 |3 |_057, 4|_|70|\\/|471(4|_|_'/ 4773|\\/|P7 2 |23(0|\\||\\|3(7"
+
+#: src/gui/pref/pg_general_profile.py:127
+msgid "Show trending news articles in social network feeds (powered by OneRiot)"
+msgstr "5#0\\/\\/ 7|23|\\||)1|\\|' |\\|3\\/\\/2 4|271(|_32 1|\\| 50(14|_ |\\|37\\/\\/0|2|< |=33|)2 (P0\\/\\/3|23|) |3'/ 0|\\|3|2107)"
+
+#: src/gui/pref/pg_general_profile.py:131
+msgid "General Options"
+msgstr "63|\\|3|24|_ 0P710|\\|2"
+
+#: src/gui/pref/pg_general_profile.py:143
+msgid "Profile (AIM Only)"
+msgstr "P|20|=1|_3 (41|\\/| 0|\\||_'/)"
+
+#: src/gui/pref/pg_general_profile.py:147
+msgid "Buddy Icon"
+msgstr "|3|_||)|)'/ 1(0|\\|"
+
+#: src/gui/pref/pg_general_profile.py:163
+msgid "Language"
+msgstr "|_4|\\|6|_|463"
+
+#: src/gui/pref/pg_general_profile.py:216
+msgid "Change"
+msgstr "(#4|\\|63"
+
+#: src/gui/pref/pg_general_profile.py:252
+msgid "&Promote Digsby in my AIM profile"
+msgstr "&P|20|\\/|073 |)165|3'/ 1|\\| |\\/|'/ 41|\\/| P|20|=1|_3"
+
+#: src/gui/pref/pg_helpdigsby.py:11
+msgid "&Allow Digsby to conduct research during idle itme"
+msgstr "&4|_|_0\\/\\/ |)165|3'/ 2 (0|\\||)|_|(7 |23534|2(# |)|_||21|\\|' 1|)|_3 17|\\/|3"
+
+#: src/gui/pref/pg_helpdigsby.py:15
+msgid "Help Digsby"
+msgstr "#3|_P |)165|3'/"
+
+#: src/gui/pref/pg_notifications.py:23
+msgid "bottom right corner"
+msgstr "|30770|\\/| |216#7  (0|2|\\|3|2"
+
+#: src/gui/pref/pg_notifications.py:24
+msgid "bottom left corner"
+msgstr "|30770|\\/| |_3|=7 (0|2|\\|3|2"
+
+#: src/gui/pref/pg_notifications.py:25
+msgid "top right corner"
+msgstr "70P |216#7 (0|2|\\|3|2"
+
+#: src/gui/pref/pg_notifications.py:26
+msgid "top left corner"
+msgstr "70P |_3|=7 (0|2|\\|3|2"
+
+# MARK: Fragment
+#: src/gui/pref/pg_notifications.py:35
+msgid "Enable &pop-up notifications in the "
+msgstr "3|\\|4|3|_3 &P0P-|_|P |\\|071|=1(4710|\\|2 1|\\| 73# "
+
+# MARKED: Fragment
+#: src/gui/pref/pg_notifications.py:40
+msgid " on monitor "
+msgstr "0|\\| |\\//|0|\\|170|2"
+
+#: src/gui/pref/pg_notifications.py:51
+msgid "Enable &sounds"
+msgstr "3|\\|4|3|_3 &50|_||\\||)2"
+
+#: src/gui/pref/pg_notifications.py:52 src/gui/pref/prefstrings.py:22
+#: src/plugins/facebook/fbgui.py:49
+msgid "Notifications"
+msgstr "|\\|071|=1(4710|\\|2"
+
+#: src/gui/pref/pg_notifications.py:59 src/plugins/myspace/msgui.py:49
+msgid "Events"
+msgstr "3\\/3|\\|7"
+
+#: src/gui/pref/pg_notifications.py:61
+msgid "Restore Defaults"
+msgstr "|23570|23 |)3|=4|_||_72"
+
+#: src/gui/pref/pg_notifications.py:75
+msgid ""
+"Are you sure you want to restore the default notification set?\n"
+"\n"
+"All of your notification settings will be lost."
+msgstr ""
+"12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |23570|23 73# |)3|=4|_||_7 |\\|071|=1(4710|\\| 537?\n"
+"\n"
+"4|_|_ 0|= '/0 |\\|071|=1(4710|\\| 53771|\\|62 \\/\\/1|_|_ |3 |_057."
+
+#: src/gui/pref/pg_notifications.py:78
+msgid "Restore Default Notifications"
+msgstr "|23570|23 |)3|=4|_||_7 |\\|071|=1(4710|\\|2"
+
+#: src/gui/pref/pg_privacy.py:17
+msgid "&Let others know that I am typing"
+msgstr "&L37 07#3|22 |<|\\|0\\/\\/ |)47 1 |3 7YP1|\\|6"
+
+#: src/gui/pref/pg_privacy.py:18
+msgid "&Automatically sign me into websites (e.g., Yahoo! Mail)"
+msgstr "&4|_|70|\\/|471(4|_|_'/ 516|\\| |\\/|3 1|\\|70 \\/\\/3|351732 (3.6., '/4#00! |\\/|41|_)"
+
+#: src/gui/pref/pg_privacy.py:21
+msgid "Global Privacy Options"
+msgstr "6|_0|34|_ P|21\\/4('/ 0P710|\\|2"
+
+#: src/gui/pref/pg_privacy.py:144
+msgid "You must be signed in to modify privacy settings."
+msgstr "J00 |\\/||_|57 |3 516|\\|3|) 1|\\| 2 |\\/|0|)1|='/ P|21\\/4('/ 53771|\\|62."
+
+#: src/gui/pref/pg_privacy.py:145
+#, python-format
+msgid "Sign in with \"%s\""
+msgstr "516|\\| 1|\\| \\/\\/17# \"%s\""
+
+#: src/gui/pref/pg_privacy.py:234
+msgid "{title} ({username})"
+msgstr "{title} ({username})"
+
+#: src/gui/pref/pg_privacy.py:295 src/gui/pref/pg_privacy.py:518
+msgid "Allow all users to contact me"
+msgstr "4|_|_0\\/\\/ 4|_|_ |_|53|22 2 (0|\\|74(7 |\\/|3"
+
+#: src/gui/pref/pg_privacy.py:296 src/gui/pref/pg_privacy.py:519
+#: src/gui/pref/pg_privacy.py:884
+msgid "Allow only users on my contact list"
+msgstr "4|_|_0\\/\\/ 0|\\||_'/ |_|53|22 0|\\| |\\/|'/ (0|\\|74(7 |_157"
+
+# MARK: Quotes
+#: src/gui/pref/pg_privacy.py:297 src/gui/pref/pg_privacy.py:675
+msgid "Allow only users on 'Allow List'"
+msgstr "4|_|_0\\/\\/ 0|\\||_'/ |_|53r2 0|\\| '4|_|_0\\/\\/ |_157'"
+
+#: src/gui/pref/pg_privacy.py:298
+msgid "Block all users"
+msgstr "|3|_0(|< 4|_|_ |_|53|22"
+
+#: src/gui/pref/pg_privacy.py:299 src/gui/pref/pg_privacy.py:676
+#: src/gui/pref/pg_privacy.py:885
+msgid "Block only users on 'Block List'"
+msgstr "|3|_0(|< 0|\\||_'/ |_|53|22 0|\\| '|3|_0(|< |_157"
+
+#: src/gui/pref/pg_privacy.py:301
+msgid "Only my screen name"
+msgstr "0|\\||_'/ |\\/|'/ 5(|233|\\| |\\|4|\\/|3"
+
+#: src/gui/pref/pg_privacy.py:302
+msgid "Only that I have an account"
+msgstr "0|\\||_'/ |)47 1 #4\\/3 |\\| 4((0|_||\\|7"
+
+#: src/gui/pref/pg_privacy.py:303
+msgid "Nothing about me"
+msgstr "|\\|07#1|\\|' 4|30|_|7 |\\/|3"
+
+#: src/gui/pref/pg_privacy.py:330 src/gui/pref/pg_privacy.py:556
+#: src/gui/pref/pg_privacy.py:727 src/gui/pref/pg_privacy.py:900
+#: src/gui/pref/pg_privacy.py:948
+msgid "Permissions"
+msgstr "P3|2|\\/|15510|\\|2"
+
+# MARK: Posible grammer issue
+#: src/gui/pref/pg_privacy.py:337
+msgid "Allow users who know my email address to find"
+msgstr "4|_|_0\\/\\/ |_|53|25 |)47 |\\|0 |\\/|'/ 3|\\/|41|_ 4|)|)|2355 2 |=1|\\||)"
+
+#: src/gui/pref/pg_privacy.py:411 src/gui/pref/pg_privacy.py:470
+#: src/gui/pref/pg_privacy.py:542 src/gui/pref/pg_privacy.py:643
+#: src/gui/pref/pg_privacy.py:719 src/gui/pref/pg_privacy.py:840
+msgid "Block List"
+msgstr "|3|_0(|< |_157"
+
+#: src/gui/pref/pg_privacy.py:494 src/gui/pref/pg_privacy.py:542
+msgid "Visible List"
+msgstr "\\/151|3|_3 |_157"
+
+#: src/gui/pref/pg_privacy.py:498 src/gui/pref/pg_privacy.py:542
+msgid "Invisible List"
+msgstr "1|\\|\\/151|3|_3 |_157"
+
+#: src/gui/pref/pg_privacy.py:530 src/gui/pref/pg_privacy.py:934
+msgid "Allow only users on my buddy list to contact me"
+msgstr "4|_|_0\\/\\/ 0|\\||_'/ |_|53|22 0|\\| |\\/|'/ |3|_||)|)'/ |_157 2 (0|\\|74(7 |\\/|3"
+
+#: src/gui/pref/pg_privacy.py:531
+msgid "Require authorization before users can add me to their contact list"
+msgstr "|23Q|_|1|23 4|_|7#0|2124710|\\| |33|=0|23 |_|532 (4|\\| 4|)|) |\\/|3 2 7#31|2 (0|\\|74(7 |_157"
+
+#: src/gui/pref/pg_privacy.py:532
+msgid "Block authorization requests with URLs in them"
+msgstr "|3|_0(|< 4|_|7#0|2124710|\\| |23Q|_|3572 \\/\\/17# |_||2|_2 1|\\| 7#3|\\/|"
+
+#: src/gui/pref/pg_privacy.py:533
+msgid "Allow others to view my online status from the web"
+msgstr "4|_|_0\\/\\/ 07#3|22 2 \\/13\\/\\/ |\\/|'/ 0|\\||_1|\\|3 5747|_|2 |=|20|\\/| 73# \\/\\/3|3"
+
+#: src/gui/pref/pg_privacy.py:658 src/gui/pref/pg_privacy.py:717
+msgid "Allow List"
+msgstr "4|_|_0\\/\\/ |_157"
+
+#: src/gui/pref/pg_privacy.py:674 src/gui/pref/pg_privacy.py:710
+msgid "Allow unknown users to contact me"
+msgstr "4|_|_0\\/\\/ |_||\\||<|\\|0\\/\\/|\\| |_|53|22 2 (0|\\|74(7 |\\/|3"
+
+#: src/gui/pref/pg_privacy.py:862
+msgid "Could not block {item:s}"
+msgstr "(0|_||_|) |\\|07 |3|_0(|< {item:s}"
+
+#: src/gui/pref/pg_privacy.py:870
+msgid "{item:s} is on your buddylist. Do you want to remove {item:s} from your buddylist and block the user?"
+msgstr "{item:s} |=|231|\\||) |-|45. |)0 |\\|07 \\/\\/4|\\|7 && |3|_0(|< {item:s}"
+
+#: src/gui/pref/pg_privacy.py:872
+msgid "Confirm Block and Remove"
+msgstr "(0|\\||=1|2|\\/| |3|_0(|< |\\| |23|\\/|0\\/3"
+
+#: src/gui/pref/pg_privacy.py:939
+msgid "Hide operating system from other users"
+msgstr "|-|1|)3 05 |=|20|\\/| 07|-|3|2 |_|53|25"
+
+# MARK: Should be translated?
+#: src/gui/pref/pg_privacy.py:984
+msgid "Nothing to see here. If you do see this, this is either a special dev-only account, or something is broken."
+msgstr "|\\|07#1|\\|' 2 533 #3|23. 1|= J00 |)0 533 |)12, |)12 |3 317#3|2 @ 5P3(14|_ |)3\\/-0|\\||_'/ 4((0|_||\\|7, 0|2 50|\\/|37#1|\\|' |3 |3|20|<3|\\|."
+
+# MARK: Formatting
+#: src/gui/pref/pg_research.py:12
+msgid ""
+"Help Digsby stay free for all users. Allow Digsby to use part of your computer's idle processing power to contribute to commercial grid computing projects by enabling the Research Module.\n"
+"<p>\n"
+"This module turns on after your computer has been completely idle (no mouse or keyboard movement) for a period of time. It turns off the instant you move your mouse or press a key, so it has no effect on your PC's performance when you're using it. The research module also runs as a low priority, sandboxed Java process, so that other tasks your computer is doing will get done first, and so that it is completely secure.\n"
+"<p>\n"
+"For more details, see the <a href=\"http://wiki.digsby.com/doku.php?id=cpuusage\">Research Module FAQ</a>.\n"
+msgstr "TL;DT <a href=\"http://wiki.digsby.com/doku.php?id=cpuusage\">Research Module FAQ</a>\n"
+
+#: src/gui/pref/pg_research.py:98 src/gui/pref/prefstrings.py:25
+msgid "Research Module"
+msgstr "|23534|2(# |\\/|0|)|_||_3"
+
+# MARK: Object reference in string
+#: src/gui/pref/pg_research.py:105
+msgid "Allow Digsby to use CPU time to conduct research after %2(research.idle_time_min)d minutes of idle time"
+msgstr "4|_|_0\\/\\/ |)165|3'/ 2 |_|53 (P|_| 71|\\/|3 2 (0|\\||)|_|(7 |23534|2(# 4|=73|2 %2(research.idle_time_min)d |\\/|1|\\||_|732 0|= 1|)|_3 71|\\/|3"
+
+#: src/gui/pref/pg_research.py:111
+msgid "Maximum CPU Usage:"
+msgstr "|\\/|4><1|\\/||_||\\/| (P|_| |_|5463:"
+
+#: src/gui/pref/pg_research.py:116 src/gui/pref/pg_research.py:123
+msgid "{val}%"
+msgstr "{val}%"
+
+#: src/gui/pref/pg_research.py:118
+msgid "Maximum Bandwidth Usage:"
+msgstr "|\\/|4><1|\\/||_||\\/| |34|\\||)\\/\\/1|)7# |_|5463:"
+
+#: src/gui/pref/pg_status.py:19
+msgid "Status Options"
+msgstr "5747|_|2 0P710|\\|2"
+
+#: src/gui/pref/pg_status.py:21
+msgid "Promote Digsby in my IM status messages"
+msgstr "P|20|\\/|073 |)165|3'/ 1|\\| |\\/|'/ 1|\\/| 5747|_|2 |\\/|3554632"
+
+#: src/gui/pref/pg_status.py:24
+msgid "Let others know that I am idle after %2(messaging.idle_after)d minutes of inactivity"
+msgstr "|_37 07#3|22 |<|\\|0\\/\\/ |)47 1 |3 1|)|_3 4|=73|2 %2(messaging.idle_after)d |\\/|1|\\||_|732 0|= 1|\\|4(71\\/17'/"
+
+#: src/gui/pref/pg_status.py:31
+msgid "Autorespond with status message"
+msgstr "4|_|70|235P0|\\||) \\/\\/17# 5747|_|2 |\\/|355463"
+
+#: src/gui/pref/pg_status.py:32
+msgid "Disable sounds"
+msgstr "|)154|3|_3 50|_||\\||)2"
+
+#: src/gui/pref/pg_status.py:33
+msgid "Disable pop-up notifications"
+msgstr "|)154B|_3 P0P-|_|P |\\|071|=1(4710|\\|2"
+
+#: src/gui/pref/pg_status.py:36
+msgid "When away..."
+msgstr "\\/\\/#3|\\| 4\\/\\/4'/..."
+
+#: src/gui/pref/pg_status.py:43
+msgid "&Hide new conversation windows"
+msgstr "&H1|)3 |\\|3\\/\\/ (0|\\|\\/3|254710|\\| \\/\\/1|\\||)0\\/\\/2"
+
+#: src/gui/pref/pg_status.py:44
+msgid "&Disable sounds"
+msgstr "&D154|3|_3 50|_||\\||)2"
+
+#: src/gui/pref/pg_status.py:45
+msgid "Disable &pop-up notifications"
+msgstr "|)154B|_3 &P0P-|_|P |\\|071|=1(4710|\\|2"
+
+#: src/gui/pref/pg_status.py:48
+msgid "When running full screen applications..."
+msgstr "\\/\\/#3|\\| |2|_||\\||\\|1|\\|' |=|_||_|_ 5(|233|\\| 4PP|_1(4710|\\|2..."
+
+#: src/gui/pref/pg_status.py:58 src/gui/status.py:605
+msgid "New Status Message"
+msgstr "|\\|3\\/\\/ 5747|_|2 |\\/|355463"
+
+#: src/gui/pref/pg_status.py:58
+msgid "Status Messages"
+msgstr "5747|_|2 |\\/|3554632"
+
+#: src/gui/pref/pg_supportdigsby.py:12
+#: src/gui/supportdigsby/supportdialog.py:120
+msgid "Support Digsby"
+msgstr "5|_|PP0|27 |)165|3'/"
+
+#: src/gui/pref/pg_text_conversations.py:20
+msgid "automatically take focus"
+msgstr "4|_|70|\\/|461(4|_|_'/ 74|<3 |=0(|_|5"
+
+#: src/gui/pref/pg_text_conversations.py:21
+msgid "start minimized in taskbar"
+msgstr "574|27 |\\/|1|\\|1|\\/|123|) 1|\\| 745|<|34|2"
+
+#: src/gui/pref/pg_text_conversations.py:22
+msgid "start hidden (tray icon blinks)"
+msgstr "574|27 #1|)|)3|\\| (7|24'/ 1(0|\\| |3|_1|\\||<2)"
+
+#: src/gui/pref/pg_text_conversations.py:26
+msgid "bottom"
+msgstr "|30770|\\/|"
+
+#: src/gui/pref/pg_text_conversations.py:27
+msgid "top"
+msgstr "2"
+
+#: src/gui/pref/pg_text_conversations.py:28
+msgid "left"
+msgstr "|_3|=7"
+
+#: src/gui/pref/pg_text_conversations.py:29
+msgid "right"
+msgstr "|216#7"
+
+#: src/gui/pref/pg_text_conversations.py:45
+msgid "Group multiple conversations into one tabbed window"
+msgstr "6|20|_|P |\\/||_||_71P|_3 (0|\\|\\/3|254710|\\|2 1|\\|70 0|\\|3 74|3|33|) \\/\\/1|\\||)0\\/\\/"
+
+# MARK: Format
+#: src/gui/pref/pg_text_conversations.py:51
+msgid "New conversation windows: "
+msgstr "|\\|3\\/\\/ (0|\\|\\/3|254710|\\| \\/\\/1|\\||)0\\/\\/2:"
+
+#: src/gui/pref/pg_text_conversations.py:53
+msgid "buddy icon"
+msgstr "|3|_||)|)'/ 1(0|\\|"
+
+#: src/gui/pref/pg_text_conversations.py:54
+msgid "service icon"
+msgstr "53|2\\/1(3 1(0|\\|"
+
+#: src/gui/pref/pg_text_conversations.py:55
+msgid "status icon"
+msgstr "5747|_|2 1(0|\\|"
+
+# MARK: Fragment
+#: src/gui/pref/pg_text_conversations.py:56
+msgid "Identify conversations with the contact's: "
+msgstr "1|)3|\\|71|='/ (0|\\|\\/3|254710|\\|2 \\/\\/17# 73# (0|\\|7497'5: "
+
+#: src/gui/pref/pg_text_conversations.py:63
+msgid "Conversation Options"
+msgstr "(0|\\|\\/3|254710|\\| 0P710|\\|2"
+
+#: src/gui/pref/pg_text_conversations.py:65
+msgid "Don't show flash ads"
+msgstr "|)0|\\|'7 5#0\\/\\/ |=|_45# 4|)2"
+
+#: src/gui/pref/pg_text_conversations.py:69
+msgid ""
+"Help keep Digsby free by showing an\n"
+"advertisement in the IM window."
+msgstr "5|_|PP0|27 |)165|3'/ |)3\\/3|_0P|\\/|3|\\|7 |3'/ 5#0\\/\\/1|\\|' |\\| 4|) 1|\\| 73# 1|\\/| \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/pref/pg_text_conversations.py:70
+msgid "Support Digsby development with an ad"
+msgstr "5|_|PP0|27 |)165|3'/ |)3\\/3|_0P|\\/|3|\\|7 |3'/ 5#0\\/\\/1|\\|' |\\| 4|) 1|\\| 73# 1|\\/| \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/pref/pg_text_conversations.py:72
+msgid "Location of ad in IM window: "
+msgstr "|_0(4710|\\| 0|= 4|) 1|\\| 1|\\/| \\/\\/1|\\||)0\\/\\/: "
+
+#: src/gui/pref/pg_text_conversations.py:76
+msgid "Ad Options"
+msgstr "0P710|\\|2"
+
+#: src/gui/pref/pg_text_conversations.py:85
+msgid "Text Formatting"
+msgstr "73><7 |=0|2|\\/|4771|\\|'"
+
+#: src/gui/pref/pg_text_conversations.py:105
+msgid "Your messages will look like this."
+msgstr "'/0 |\\/|3554632 \\/\\/1|_|_ |_00|< 45 |)12."
+
+# MARK: Key replacement
+#: src/gui/pref/pg_text_conversations.py:156
+msgid "Show last %2(conversation_window.num_lines)d lines in IM window"
+msgstr "5#0\\/\\/ |_457 %2(conversation_window.num_lines)d |_1|\\|32 0|= #1570|2'/ 1|\\| (0|\\|\\/3|54710|\\| \\/\\/1|\\||)0\\/\\/"
+
+#: src/gui/pref/pg_text_conversations.py:159
+msgid "&Display timestamp:"
+msgstr "&D15P|_4'/ 71|\\/|3574|\\/|P: "
+
+#: src/gui/pref/pg_text_conversations.py:167
+msgid "Spell check:"
+msgstr "5P3|_|_(#3(|< 3|2|20|2"
+
+#: src/gui/pref/pg_text_conversations.py:186
+msgid "Log IM conversations to hard drive"
+msgstr "|_06 1|\\/| (0|\\|\\/3|254710|\\|2 2 #4|2|) |)|21\\/3"
+
+#: src/gui/pref/pg_text_conversations.py:216
+msgid "Show &emoticons:"
+msgstr "3|\\|4|3|_3 &E|\\/|071(0|\\|2: "
+
+#: src/gui/pref/pg_widgets.py:41
+msgid "Widget Preview"
+msgstr "\\/\\/1|)637 P|23\\/13\\/\\/"
+
+#: src/gui/pref/pg_widgets.py:49
+msgid "&Copy To Clipboard"
+msgstr "&(0P'/ 2 C|_1P|304|2d"
+
+#: src/gui/pref/pg_widgets.py:88
+msgid "New Widget"
+msgstr "|\\|3\\/\\/ \\/\\/1|)637"
+
+#: src/gui/pref/pg_widgets.py:88 src/gui/pref/prefstrings.py:23
+msgid "Widgets"
+msgstr "\\/\\/1|)6372"
+
+#: src/gui/pref/pg_widgets.py:90
+msgid "Embed Tag"
+msgstr "3|\\/||33|) 746"
+
+#: src/gui/pref/prefcontrols.py:584
+msgid "Custom ({prefval})"
+msgstr "(|_|570|\\/| ({prefval})"
+
+#: src/gui/pref/prefcontrols.py:799
+msgid "{val}px"
+msgstr "{val}P><"
+
+#: src/gui/pref/prefsdialog.py:170
+msgid "Digsby Preferences"
+msgstr "|)165|3'/ P|23|=3|23|\\|(32"
+
+#: src/gui/pref/prefsdialog.py:263
+msgid "&Done"
+msgstr "&D0|\\|3"
+
+#: src/gui/pref/prefsdialog.py:289
+msgid "Search"
+msgstr "&534|2(#"
+
+#: src/gui/pref/prefstrings.py:14
+msgid "Accounts"
+msgstr "4((0|_||\\|75"
+
+#: src/gui/pref/prefstrings.py:15
+msgid "General & Profile"
+msgstr "63|\\|3|24|_ & P|20|=1|_3"
+
+#: src/gui/pref/prefstrings.py:16
+msgid "Skins"
+msgstr "5|<1|\\|2"
+
+#: src/gui/pref/prefstrings.py:18
+msgid "Conversations"
+msgstr "(0|\\|\\/3|254710|\\|2"
+
+#: src/gui/pref/prefstrings.py:21 src/plugins/msim/myspacegui/privacy.py:88
+msgid "Privacy"
+msgstr "P|21\\/4('/"
+
+#: src/gui/pref/prefstrings.py:26 src/gui/proxydialog.py:222
+msgid "Connection Settings"
+msgstr "(0|\\||\\|3(710|\\| 53771|\\|62"
+
+#: src/gui/pref/prefstrings.py:42
+msgid "Developer"
+msgstr "|)3\\/3|_0P3|2"
+
+#: src/gui/protocols/__init__.py:7
+msgid "Enter a new password for {username}:"
+msgstr "3|\\|73|2 @ |\\|3\\/\\/ P455\\/\\/0|2|) 4 {username}::"
+
+#: src/gui/protocols/__init__.py:8 src/gui/protocols/jabbergui.py:139
+msgid "Change Password"
+msgstr "(#4|\\|63 P455\\/\\/0|2|)"
+
+#: src/gui/protocols/__init__.py:22
+msgid "Are you sure you want to delete contact {name}?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)3|_373 c0|\\|74c7 {name}?"
+
+#: src/gui/protocols/__init__.py:23
+msgid "Delete Contact"
+msgstr "|)3|_373 (0|\\|74c7"
+
+#: src/gui/protocols/__init__.py:36
+msgid "WARNING!"
+msgstr "\\/\\/4|2|\\|1|\\|6!!12eleventy"
+
+#: src/gui/protocols/__init__.py:37
+msgid "All your contacts in this group will be deleted locally AND on the server."
+msgstr "4|_|_ |_| (0|\\|74(72 |\\| |015 6|20|_|P \\/\\/1|_|_ |3 |)3|_373|) |_0(4|_|_'/ |\\| 0|\\| 53|2\\/3|2."
+
+#: src/gui/protocols/__init__.py:38
+msgid "Are you sure you want to remove {groupname}?"
+msgstr "|_| 5|_||23 |_| \\/\\/4|\\|4 2 |23|\\/|0\\/3 {groupname}?"
+
+#: src/gui/protocols/__init__.py:42
+msgid "Delete Group"
+msgstr "|)3|_373 6|20|_|P"
+
+#: src/gui/protocols/__init__.py:47
+msgid "Add Group"
+msgstr "4|)|) 6|20|_|P"
+
+#: src/gui/protocols/__init__.py:47
+msgid "Please enter a group name:"
+msgstr "P|_3453 3|\\|73|2 @ 6|20|_|P |\\|4|\\/|3:"
+
+#: src/gui/protocols/__init__.py:60
+#, python-format
+msgid "Are you sure you want to block %s?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |3|_0(|< %s?"
+
+#: src/gui/protocols/__init__.py:61
+msgid "Block Buddy"
+msgstr "|3|_0(|< B|_||)|)Y"
+
+# %s
+#: src/gui/protocols/jabbergui.py:18
+#, python-format
+msgid "Enter a priority for %s:"
+msgstr "3|\\|73|2  @ P|210|217'/ 4 %s:"
+
+#: src/gui/protocols/jabbergui.py:19
+msgid "Set Jabber Priority"
+msgstr "537 J4|3|33|2 P|210|217'/"
+
+#: src/gui/protocols/jabbergui.py:105
+msgid "Incorrect Password"
+msgstr "1|\\|(0|2|23(7 P455\\/\\/0|2|)"
+
+#: src/gui/protocols/jabbergui.py:111
+msgid "Failed to delete account from the server."
+msgstr "|=41|_3|) 2 |)3|_373 4((0|_||\\|7 |=|20|\\/| 73# 53|2\\/3|2."
+
+#: src/gui/protocols/jabbergui.py:112
+msgid "Delete Account - Failed"
+msgstr "|)3|_373 4((0|_||\\|7 - |=41|_3|)"
+
+#: src/gui/protocols/jabbergui.py:150
+msgid "Old Password: "
+msgstr "0|_|) P455\\/\\/0|2|): "
+
+#: src/gui/protocols/jabbergui.py:152
+msgid "New Password: "
+msgstr "|\\|3\\/\\/ P455\\/\\/0|2|): "
+
+#: src/gui/protocols/jabbergui.py:154
+msgid "Confirm New Password: "
+msgstr "(0|\\||=1|2|\\/| |\\|3\\/\\/ P455\\/\\/0|2|): "
+
+#: src/gui/protocols/jabbergui.py:217
+msgid "Incorrect Old Password"
+msgstr "1|\\|(0|2|23(7 0|_|) P455\\/\\/0|2|)"
+
+#: src/gui/protocols/jabbergui.py:219
+msgid "Passwords do not match"
+msgstr "P455\\/\\/0|2|) |)0 |\\|07 |\\/|47(#"
+
+#: src/gui/protocols/jabbergui.py:219
+msgid "Paswords do not match"
+msgstr "P45\\/\\/0|2|)2 |)0 |\\|07 |\\/|47(#"
+
+#: src/gui/protocols/jabbergui.py:280
+msgid "&Enabled"
+msgstr "&3|\\|4|3|_3|)"
+
+#: src/gui/protocols/jabbergui.py:283
+msgid "&Scroll Lock"
+msgstr "&5(|20|_|_ |_0(|<"
+
+#: src/gui/protocols/jabbergui.py:290
+msgid "&Close"
+msgstr "&(|_053"
+
+#: src/gui/protocols/oscargui.py:10
+msgid "Enter a formatted screenname for {username}"
+msgstr "3|)17 |=0|2|\\/|4773|) 5(|233|\\||\\|4|\\/|3 |=0|2 {username}"
+
+#: src/gui/protocols/oscargui.py:11
+msgid "The new screenname must be the same as the old one, except for changes in capitalization and spacing."
+msgstr "73# |\\|3\\/\\/ 5(|233|\\||\\|4|\\/|3 |\\/||_|57 |3 73# 54|\\/|3 42 73# 0|_|) 0|\\|3, ><(3P7 4 (#4|\\|632 1|\\| (4P174|_124710|\\| |\\| 5P4(1|\\|6."
+
+#: src/gui/protocols/oscargui.py:14
+msgid "Edit Formatted Screenname"
+msgstr "3|)17 |=0|2|\\/|4773|) 5(|233|\\||\\|4|\\/|3"
+
+#: src/gui/protocols/oscargui.py:26
+msgid "Enter an email address:"
+msgstr "3|\\|73|2 |\\| 3|\\/|41|_ 4|)|)|2352:"
+
+#: src/gui/protocols/oscargui.py:27
+msgid "Edit Account Email: {username}"
+msgstr "3|)17 4((0|_||\\|7 3|\\/|41|_: {username}"
+
+#: src/gui/proxydialog.py:40
+msgid "&No proxy"
+msgstr "&N0 P|20><'/"
+
+#: src/gui/proxydialog.py:41
+msgid "Use &default system settings"
+msgstr "|_|53 &D3|=4|_||_7 5'/573|\\/| 53771|\\|62"
+
+#: src/gui/proxydialog.py:42
+msgid "&Specify proxy settings"
+msgstr "&5P3(1|=Y P|20><'/ 53771|\\|62"
+
+#: src/gui/proxydialog.py:59
+msgid "&Host:"
+msgstr "&H057:"
+
+#: src/gui/proxydialog.py:66
+msgid "P&ort:"
+msgstr "P&0|27:"
+
+#: src/gui/proxydialog.py:96
+msgid "&Username:"
+msgstr "&|_|53|2|\\|4|\\/|3:"
+
+#: src/gui/proxydialog.py:105
+msgid "&Password:"
+msgstr "&P455\\/\\/0|2|):"
+
+#: src/gui/proxydialog.py:117
+msgid "Proxy Server"
+msgstr "P|20><'/ 53|2\\/3|2"
+
+#: src/gui/proxydialog.py:118
+msgid "Protocol"
+msgstr "P|2070(0|_"
+
+#: src/gui/proxydialog.py:121
+msgid "How to Connect"
+msgstr "#0\\/\\/ 2 (0|\\||\\|3(7"
+
+#: src/gui/proxydialog.py:123
+msgid "Authentication"
+msgstr "4|_|7#3|\\|71(4710|\\|"
+
+#: src/gui/searchgui.py:43
+msgid "Arrange Searches"
+msgstr "4|2|24|\\|63 534|2(#32"
+
+#: src/gui/searchgui.py:89
+msgid "Search {search_engine_name:s} for \"{search_string:s}\""
+msgstr "534|2(|-| {search_engine_name:s} 4 \"{search_string:s}\""
+
+#: src/gui/searchgui.py:132
+msgid "Web Search"
+msgstr "\\/\\/3|3 534|2(#"
+
+#: src/gui/social_status_dialog.py:103
+msgid "Set IM Status"
+msgstr "537 1|\\/| 5747|_|2"
+
+#: src/gui/social_status_dialog.py:380
+msgid "Choose Accounts:"
+msgstr "(#0053 4((0|_||\\|72:"
+
+#: src/gui/social_status_dialog.py:438
+msgid "Insert Link"
+msgstr "1|\\|53|27 |_1|\\||<"
+
+#: src/gui/social_status_dialog.py:451
+msgid "Website URL:"
+msgstr "\\/\\/3|35173 |_||2|_:"
+
+#: src/gui/social_status_dialog.py:461
+msgid "Insert &Link"
+msgstr "1|\\|53|27 &L1|\\||<"
+
+#: src/gui/social_status_dialog.py:507
+msgid "Share Image"
+msgstr "5#4|23 1|\\/|463"
+
+#: src/gui/social_status_dialog.py:582
+msgid "Uploading Image..."
+msgstr "|_|P|_04|)1|\\|' 1|\\/|463..."
+
+#: src/gui/social_status_dialog.py:777
+msgid "Errors Encountered:"
+msgstr "3|2|20|2 3|\\|(0|_||\\|73|23|):"
+
+#: src/gui/social_status_dialog.py:882
+#: src/plugins/msim/myspacegui/editstatus.py:6
+msgid "Your Status:"
+msgstr "'/0 5747|_|5:"
+
+#: src/gui/social_status_dialog.py:891
+msgid "&Update Status"
+msgstr "&|_|P|)473 5747|_|2"
+
+# MARK: %r replacement
+#: src/gui/social_status_dialog.py:1081
+#, python-format
+msgid "Network error (%r)"
+msgstr "|\\|37\\/\\/0|2|< 3|2|20|2  (%r)"
+
+# MARK: %s replacement
+#: src/gui/social_status_dialog.py:1083
+#, python-format
+msgid "Network error (%s)"
+msgstr "|\\|37\\/\\/0|2|< 3|2|20|2 (%s)"
+
+# MARK: I don't know what that means
+#: src/gui/social_status_dialog.py:1085
+msgid "Network error ({error!r} - {error!s})"
+msgstr "|\\|37\\/\\/0|2|< 3|2|20|2 "
+
+# MARK: Ambiguous
+#: src/gui/social_status_dialog.py:1087 src/gui/social_status_dialog.py:1090
+#, python-format
+msgid "%s"
+msgstr "%s"
+
+# MARK: %s replacement
+#: src/gui/social_status_dialog.py:1092
+#, python-format
+msgid "Unknown error (%s)"
+msgstr "|_||\\||<|\\|0\\/\\/|\\| 3|2|20|2 %s"
+
+#: src/gui/social_status_dialog.py:1094
+msgid "Unknown error"
+msgstr "|_||\\||<|\\|0\\/\\/|\\| 3|2|20|2"
+
+#: src/gui/spellchecktextctrlmixin.py:550
+msgid "Add to Dictionary"
+msgstr "4|)|) 2 |)1(710|\\|4|2'/"
+
+# MARK: Needs context
+#: src/gui/status.py:116
+msgid "/"
+msgstr "/"
+
+#: src/gui/status.py:117
+msgid "{status} ({account_types} Only)"
+msgstr "{status} ({account_types} 0|\\||_'/)"
+
+# MARK: unsure?
+#: src/gui/status.py:372
+msgid "Message"
+msgstr "|\\/|355463"
+
+#: src/gui/status.py:494
+msgid "&Title:"
+msgstr "&717|_3:"
+
+#: src/gui/status.py:499
+msgid "&State:"
+msgstr "&57473:"
+
+#: src/gui/status.py:507
+msgid "&Status message:"
+msgstr "&5747|_|2 |\\/|355463:"
+
+#: src/gui/status.py:533
+msgid "&Use a different status for some accounts"
+msgstr "&|_|53 @ |)1|=|=3|23|\\|7 5747|_|2 4 50|\\/|3 4((0|_||\\|72"
+
+#: src/gui/status.py:537
+msgid "&Set"
+msgstr "&537"
+
+#: src/gui/status.py:546
+msgid "Save for &later"
+msgstr "54\\/3 |=0|2 |_473|2"
+
+#: src/gui/status.py:606
+msgid "New Status for {name}"
+msgstr "|\\|3\\/\\/ 5747|_|2 |=0|2 {name}"
+
+#: src/gui/status.py:631
+msgid "Edit Status Message"
+msgstr "3|)17 5747|_|2 |\\/|355463"
+
+#: src/gui/status.py:634
+msgid "Edit Status for {account}"
+msgstr "3|)17 5747|_|2 4 {account}"
+
+#: src/gui/status.py:791
+msgid "Are you sure you want to delete status message \"{title}\"?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)3|_373 5747|_|2 |\\/|355463 \"{title}\"?"
+
+#: src/gui/status.py:792
+msgid "Delete Status Message"
+msgstr "|)3|_373 S747|_|2 |\\/|355463"
+
+#: src/gui/statuscombo.py:87 src/gui/statuscombo.py:165
+#: src/gui/statuscombo.py:529 src/plugins/twitter/twitter_gui.py:615
+msgid "Global Status"
+msgstr "6|_0|34|_ 5747|_|5"
+
+#: src/gui/statuscombo.py:105 src/gui/statuscombo.py:540
+msgid "Promote Digsby!"
+msgstr "P|20|\\/|073 |)165|3'/!"
+
+#: src/gui/statuscombo.py:125 src/gui/statuscombo.py:160
+#: src/gui/statuscombo.py:526
+msgid "Custom..."
+msgstr "(|_|570|\\/|..."
+
+#: src/gui/statuscombo.py:639
+msgid "Press 'Ctrl+F' to Search List"
+msgstr "P|2355 'Ctrl+F' 2 534|2(# |_157"
+
+#: src/gui/supportdigsby/supportdialog.py:96
+#: src/gui/supportdigsby/supportoptions.py:71
+msgid "Are you sure?"
+msgstr "12 j00 5|_||23?"
+
+#: src/gui/supportdigsby/supportdialog.py:97
+msgid "Are you sure you want do this?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 |)0 |)12?"
+
+#: src/gui/supportdigsby/supportdialog.py:111
+msgid "Thank you for supporting Digsby."
+msgstr "7'/ 4 5|_|PP0|271|\\|' |)165|3'/."
+
+#: src/gui/supportdigsby/supportdialog.py:111
+msgid "Thank you!"
+msgstr "7'/!"
+
+#: src/gui/supportdigsby/supportoptions.py:22
+#: src/gui/supportdigsby/supportoptions.py:32
+msgid "Set"
+msgstr "537"
+
+#: src/gui/supportdigsby/supportoptions.py:23
+msgid "Make Google Powered Digsby Search your homepage"
+msgstr "|\\/|4|<3 6006|_3 P0\\/\\/3|23|) |)165|3'/ 534|2(# '/0 |)3|=4|_||_7 534|2(# #0|\\/|3P463"
+
+#: src/gui/supportdigsby/supportoptions.py:33
+msgid "Make Google Powered Digsby Search your default search engine"
+msgstr "|\\/|4|<3 6006|_3 P0\\/\\/3|23|) |)165|3'/ 534|2(# '/0 |)3|=4|_||_7 534|2(# 3|\\|61|\\|3"
+
+#: src/gui/supportdigsby/supportoptions.py:42
+#: src/gui/supportdigsby/supportoptions.py:47
+msgid "Invite"
+msgstr "1|\\|\\/173"
+
+#: src/gui/supportdigsby/supportoptions.py:43
+msgid "Invite your friends via Email"
+msgstr "1|\\|\\/173 '/0 |=|213|\\||)2 \\/14 3|\\/|41|_"
+
+#: src/gui/supportdigsby/supportoptions.py:48
+msgid "Invite your friends via Facebook"
+msgstr "1|\\|\\/173 '/0 |=|213|\\||)2 \\/14 |=4(3|300|<"
+
+#: src/gui/supportdigsby/supportoptions.py:52
+#: src/gui/supportdigsby/supportoptions.py:57
+msgid "Join Group"
+msgstr "J01|\\| 6|20|_|P"
+
+#: src/gui/supportdigsby/supportoptions.py:53
+msgid "Become a fan on Facebook"
+msgstr "|33(0|\\/|3 @ |=4|\\| 0|\\| |=4(3|300|<"
+
+#: src/gui/supportdigsby/supportoptions.py:58
+msgid "Become a fan on LinkedIn"
+msgstr "|33(0|\\/|3 @ |=4|\\| 0|\\| |_1|\\||<3|)1|\\|"
+
+#: src/gui/supportdigsby/supportoptions.py:62
+msgid "Follow"
+msgstr "|=0|_|_0\\/\\/"
+
+#: src/gui/supportdigsby/supportoptions.py:63
+msgid "Follow us on Twitter"
+msgstr "|=0|_|_0\\/\\/ |_|2 0|\\| 7\\/\\/1773|2"
+
+#: src/gui/supportdigsby/supportoptions.py:67
+msgid "Help Digsby conduct research"
+msgstr "#3|_P |)165|3'/ (0|\\||)|_|(7 |23534|2(#"
+
+#: src/gui/supportdigsby/supportoptions.py:70
+msgid "Helping us conduct research keeps Digsby free and ad-free. Are you sure you want to disable this option?"
+msgstr "#3|_P1|\\|' |_|2 (0|\\||)|_|(7 |23534|2(# |<33P2 D165|3'/ |=|233 |\\| 4|)-|=r33. 12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)154|3|_3 |)12 0P710|\\|?"
+
+#: src/gui/supportdigsby/supportoptions.py:83
+msgid "Disable"
+msgstr "|)154B|_3"
+
+#: src/gui/supportdigsby/supportoptions.py:85
+msgid "Enable"
+msgstr "3|\\|4|3|_3"
+
+#: src/gui/supportdigsby/supportoptions.py:94
+msgid "Subscribe"
+msgstr "5|_||35(|21|33"
+
+#: src/gui/supportdigsby/supportoptions.py:95
+msgid "Subscribe to our Blog"
+msgstr "5|_||35(|21|33 2 0|_|r |3|_06"
+
+#: src/gui/supportdigsby/supportoptions.py:99
+msgid "Create"
+msgstr "(|23473"
+
+#: src/gui/supportdigsby/supportoptions.py:100
+msgid "Create a Digsby widget for your blog or website"
+msgstr "(|23473 @ |)165|3'/ \\/\\/1|)637 4 J00 |3|_06 0|2 \\/\\/3|35173"
+
+# MARK: %r replacement
+#: src/gui/supportdigsby/supportoptions.py:105
+#, python-format
+msgid "Set to %r"
+msgstr "537 2 %r"
+
+# MARK: Is this supposed to be translated?
+#: src/gui/supportdigsby/supportoptions.py:108
+#, python-format
+msgid "Increment this number: %r"
+msgstr "1|\\|(|23|\\/|3|\\|7 |)12 |\\||_||\\/||33|2: %r"
+
+#: src/gui/toast/toasthelp.py:25
+msgid "TIP: Popup Notifications"
+msgstr "71P: P0P|_|P |\\|071|=1(4710|\\|2"
+
+#: src/gui/toast/toasthelp.py:27
+msgid "You can right click popups to close them right away instead of waiting for them to fade out."
+msgstr "J00 (4|\\| |216#7 (|_1(|< P0P|_|P2 2 (|_053 7#3|\\/| |216#7 4\\/\\/4'/ 1|\\|5734|) 0|= \\/\\/4171|\\|' 4 7#3|\\/| 2 |=4|)3 0|_|7."
+
+#: src/gui/toolbox/toolbox.py:427
+msgid "Confirm"
+msgstr "(0|\\||=1|2|\\/|"
+
+#: src/gui/toolbox/toolbox.py:1225 src/gui/toolbox/toolbox.py:1252
+msgid "Right To Left"
+msgstr "|216#7 2 |_3|=7"
+
+#: src/gui/toolbox/toolbox.py:1336
+msgid "Use Long URL"
+msgstr "|_|53 |_0|\\|6 |_||2|_"
+
+#: src/gui/toolbox/toolbox.py:1346
+msgid "Shorten URL"
+msgstr "5#0|273|\\| |_||2|_"
+
+#: src/gui/toolbox/toolbox.py:1437
+msgid "Undo"
+msgstr "|_||\\||)0"
+
+#: src/gui/toolbox/toolbox.py:1440
+msgid "Redo"
+msgstr "|23|)0"
+
+#: src/gui/toolbox/toolbox.py:1445
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:104
+msgid "Cut"
+msgstr "(|_|7"
+
+#: src/gui/toolbox/toolbox.py:1455
+#: src/gui/uberwidgets/formattedinput2/FormattedExpandoTextCtrl.py:108
+msgid "Select All"
+msgstr "53|_3(7 4|_|_"
+
+#: src/gui/toolbox/toolbox.py:1461
+msgid "Select an image file"
+msgstr "53|_3(7 |\\| 1|\\/|463 |=1|_3"
+
+#: src/gui/trayicons.py:172
+msgid "Set &Global Status..."
+msgstr "537 &G|_0|34|_ 5747|_|2..."
+
+#: src/gui/trayicons.py:175
+msgid "Set IM &Status"
+msgstr "537 1|\\/| &S747|_|5"
+
+#: src/gui/trayicons.py:179 src/gui/trayicons.py:185
+msgid "Show &Buddy List"
+msgstr "5#0\\/\\/ &B|_||)|)'/ |_157"
+
+#: src/gui/trayicons.py:185
+msgid "Hide &Buddy List"
+msgstr "#1|)3 &B|_||)|)'/ |_157"
+
+#: src/gui/trayicons.py:190
+msgid "Show Menu Bar"
+msgstr "5#0\\/\\/ |\\/|3|\\||_| |34|2"
+
+#: src/gui/trayicons.py:214
+msgid "Digsby"
+msgstr "D165|3'/"
+
+#: src/gui/trayicons.py:225
+msgid "{msgs} message"
+msgid_plural "{msgs} messages"
+msgstr[0] "{msgs} |\\/|355463"
+msgstr[1] "{msgs} |\\/|3554632"
+
+# MARK: Should be translated?
+#: src/gui/trayicons.py:230
+msgid "{alias} ({service}) - {message}"
+msgstr "{alias} ({service}) - {message}"
+
+#: src/gui/trayicons.py:298
+msgid "Show All"
+msgstr "5#0\\/\\/ 4|_|_"
+
+#: src/gui/uberwidgets/formattedinput.py:423
+#: src/gui/uberwidgets/formattedinput2/formattingbar.py:103
+msgid "Hide Formatting Bar"
+msgstr "#1|)3 |=0|2|\\/|4771|\\|' B4|2"
+
+#: src/gui/uberwidgets/formattedinput.py:726
+#: src/gui/uberwidgets/formattedinput2/formattedinput.py:206
+msgid "Set Font..."
+msgstr "537 |=0|\\|7..."
+
+#: src/gui/uberwidgets/formattedinput.py:739
+#: src/gui/uberwidgets/formattedinput2/formattingbar.py:133
+msgid "Choose a foreground color"
+msgstr "(#0053 @ |=0|236|20|_||\\||) (0|_0|2"
+
+#: src/gui/vcard/vcardgui.py:19
+msgid "Unit"
+msgstr "|_||\\|17"
+
+#: src/gui/vcard/vcardgui.py:48
+msgid "Last Name"
+msgstr "|_457 |\\|4|\\/|3"
+
+#: src/gui/vcard/vcardgui.py:49
+msgid "First Name"
+msgstr "|=1|257 |\\|4|\\/|3"
+
+#: src/gui/vcard/vcardgui.py:50
+msgid "Middle Name"
+msgstr "|\\/|1|)|)|_3 |\\|4|\\/|3"
+
+#: src/gui/vcard/vcardgui.py:51
+msgid "Prefix"
+msgstr "P|23|=1><"
+
+#: src/gui/vcard/vcardgui.py:52
+msgid "Suffix"
+msgstr "S|_||=|=1><"
+
+#: src/gui/vcard/vcardgui.py:108
+msgid "Number"
+msgstr "|\\||_||\\/||33|2"
+
+#: src/gui/vcard/vcardgui.py:173
+msgid "Street"
+msgstr "57|2337"
+
+#: src/gui/vcard/vcardgui.py:176
+msgid "City"
+msgstr "(17'/"
+
+#: src/gui/vcard/vcardgui.py:177
+msgid "State"
+msgstr "57473"
+
+#: src/gui/vcard/vcardgui.py:178
+msgid "Postal Code"
+msgstr "P0574|_ (0|)3"
+
+#: src/gui/vcard/vcardgui.py:179
+msgid "Country"
+msgstr "(0|_||\\|7|2'/"
+
+#: src/gui/vcard/vcardgui.py:263
+#, python-format
+msgid "vCard Editor for %(username)s"
+msgstr "\\/(4|2|) 3|)170|2 4 %(username)s"
+
+# MARK: Should be translated?
+#: src/gui/vcard/vcardgui.py:263
+msgid "vCard Viewer"
+msgstr "\\/(4|2|) \\/13\\/\\/3|2"
+
+#: src/gui/vcard/vcardgui.py:274
+msgid "Retreive"
+msgstr "|237|231\\/3"
+
+#: src/gui/vcard/vcardgui.py:334
+msgid "General"
+msgstr "63|\\|3|24|_"
+
+#: src/gui/vcard/vcardgui.py:337
+msgid "Full Name"
+msgstr "|=|_||_|_ |\\|4|\\/|3"
+
+#: src/gui/vcard/vcardgui.py:338 src/plugins/msim/res/content.tenjin:22
+msgid "Nickname"
+msgstr "|\\|1(|<|\\|4|\\/|3"
+
+#: src/gui/vcard/vcardgui.py:339 src/oscar/OscarBuddies.py:282
+msgid "Birthday"
+msgstr "|31|27#|)4'/"
+
+#: src/gui/vcard/vcardgui.py:341
+msgid "Homepage"
+msgstr "#0|\\/|3P463"
+
+#: src/gui/vcard/vcardgui.py:358
+msgid "Work"
+msgstr "\\/\\/0|2|<"
+
+#: src/gui/vcard/vcardgui.py:363 src/oscar/OscarBuddies.py:330
+msgid "Position"
+msgstr "P051710|\\|"
+
+#: src/gui/vcard/vcardgui.py:364
+msgid "Role"
+msgstr "|20|_3"
+
+#: src/gui/vcard/vcardgui.py:377 src/plugins/msim/res/content.tenjin:26
+msgid "Location"
+msgstr "|_0(4710|\\|"
+
+#: src/gui/vcard/vcardgui.py:390
+msgid "About"
+msgstr "4|30|_|7"
+
+#: src/gui/video/webvideo.py:19
+msgid "{name} has invited you to an audio/video chat."
+msgstr "{name} 1|\\|\\/173|) |_| 2 |\\| 4|_||)10/\\/1|)30 (#47."
+
+#: src/gui/video/webvideo.py:20 src/hub.py:125
+msgid "Would you like to join?"
+msgstr "J01|\\| 637?"
+
+#: src/gui/video/webvideo.py:24
+msgid "Audio/Video Chat Invitation"
+msgstr "4|_||)10/\\/1|)30 (#47 1|\\|\\/174710|\\|"
+
+#: src/gui/visuallisteditor.py:114
+msgid "(Unnamed Panel)"
+msgstr "(|_||\\||\\|4|\\/|3|) P4|\\|3|_)"
+
+# MARK: Simular to line in contact dialog: "Drag and drop to rearrange:"
+#: src/gui/visuallisteditor.py:298
+msgid "Drag and drop to reorder"
+msgstr "|)|246 |\\| |)|20P 2 |230|2|)3|2"
+
+#: src/gui/visuallisteditor.py:308
+msgid "Done"
+msgstr "|)0|\\|3"
+
+#: src/gui/widgetlist.py:124
+msgid "Are you sure you want to delete widget \"{widgetname}\"?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |)3|_373 \\/\\/1|)637 \"{widgetname}\"?"
+
+#: src/gui/widgetlist.py:125
+msgid "Delete Widget"
+msgstr "|)3|_373 \\/\\/1|)637"
+
+#: src/hub.py:110
+msgid "{protocolname} DirectIM"
+msgstr "{protocolname} |)1|23(71|\\/|"
+
+#: src/hub.py:111
+msgid "{name} wants to directly connect with you. (Your IP address will be revealed.)"
+msgstr "{name} \\/\\/4|\\|75 |)1|23>< (0|\\||\\|3><"
+
+#: src/hub.py:130
+msgid "{name} has invited you to a group chat."
+msgstr "{name} \\/\\/4|\\|75 70 P4|27'/ |_|P."
+
+#: src/hub.py:133
+msgid "You have been invited to a group chat."
+msgstr "J00 #4\\/3 |333|\\| 1|\\|\\/173|) 2 @ 6|20|_|P (#47."
+
+#: src/hub.py:143
+msgid "Join"
+msgstr "J01|\\|"
+
+#: src/hub.py:144
+msgid "Ignore"
+msgstr "16|\\|0|23"
+
+#: src/hub.py:154
+msgid "{protocol_name:s} Invite"
+msgstr "{protocol_name:s} 1|\\|\\/173"
+
+#: src/hub.py:160
+msgid "Ignore Invite"
+msgstr "16|\\|0|23 1|\\|\\/173"
+
+#: src/hub.py:179
+msgid "Allow {buddy} to add you ({you}) as a buddy on {protocol}?"
+msgstr "4|_|_0\\/\\/ {buddy} 2 4|)|) J00 ({you}) 42 @ |3|_||)|)'/ 0|\\|  {protocol}?"
+
+#: src/imaccount.py:515 src/imaccount.py:522
+msgid "Connect"
+msgstr "(0|\\||\\|3(7"
+
+#: src/imaccount.py:523
+msgid "Disconnect"
+msgstr "|)15(0|\\||\\|3(7"
+
+#: src/jabber/JabberBuddy.py:176 src/oscar/OscarBuddies.py:270
+msgid "Full Name:"
+msgstr "|=|_||_|_ |\\|4|\\/|3:"
+
+#: src/jabber/JabberBuddy.py:187
+msgid "Birthday:"
+msgstr "|31|27#|)4'/:"
+
+#: src/jabber/JabberBuddy.py:187
+#: src/plugins/digsby_service_editor/default_ui.py:143
+msgid "Email Address:"
+msgstr "3|\\/|41|_ 4||)|)|255:"
+
+#: src/jabber/JabberBuddy.py:187
+msgid "Phone:"
+msgstr "P|-|0|\\|3:"
+
+#: src/jabber/JabberBuddy.py:196
+msgid "Website"
+msgstr "\\/\\/3|35173"
+
+#: src/jabber/JabberBuddy.py:203 src/oscar/OscarBuddies.py:304
+msgid "Additional Information:"
+msgstr "4|)|)1710|\\|4|_ 1|\\||=0|2|\\/|4710|\\|"
+
+#: src/jabber/JabberBuddy.py:210
+msgid "{street} {extra_adress} {locality} {region} {postal_code} {country}"
+msgstr "{street} {extra_adress} {locality} {region} {postal_code} {country}"
+
+#: src/jabber/JabberBuddy.py:256 src/oscar/OscarBuddies.py:310
+msgid "Home Address:"
+msgstr "|-|0|\\/|3 4||)|)|255:"
+
+#: src/jabber/JabberChat.py:298
+msgid "You have been invited to {roomname}"
+msgstr "J00 #4\\/3 |333|\\| 1|\\|\\/173|) 2 {roomname}"
+
+#: src/jabber/JabberConversation.py:133
+msgid "{name} has left the conversation."
+msgstr "{name} |24|\\| 4\\/\\/4'/."
+
+#: src/jabber/JabberResource.py:15 src/oscar/OscarBuddies.py:45
+msgid "Free for Chat"
+msgstr "|=|233 4 (#47"
+
+#: src/main.py:379
+msgid "Your digsby password has been changed. Please log back in with the new password."
+msgstr "'/0 |)165b'/ P455\\/\\/0|2|) #42 |333|\\| (#4|\\|63|). P|_3453 |_06 |34(|< 1|\\| \\/\\/17# 73# |\\|3\\/\\/ P455\\/\\/0|2|)."
+
+#: src/main.py:381
+msgid "Password Changed"
+msgstr "P455\\/\\/0|2|) (#4|\\|63|)"
+
+#: src/main.py:562
+msgid "Advanced Preferences"
+msgstr "4|)\\/4|\\|(3|) P|23|=3|23|\\|(32"
+
+#: src/main.py:562
+msgid "Please login first."
+msgstr "P|_3453 |_061|\\| |=1|257."
+
+#: src/main.py:816
+msgid "Global Shortcuts"
+msgstr "6|_0|34|_ 5#0|27(|_|72"
+
+#: src/main.py:820
+msgid "Debug Global Shortcuts"
+msgstr "|)3|3|_|6 6|_0|34|_ 5#0|27(|_|72"
+
+#: src/main.py:823
+msgid "Text Controls"
+msgstr "73><7 (0|\\|7|20|_2"
+
+#: src/main.py:1321
+msgid "There was an error submitting your crash report."
+msgstr "7#3|23 \\/\\/|_|2 |\\| 3|2|20|2 5|_||3|\\/|1771|\\|' '/0 (|245# |23P0|27."
+
+#: src/main.py:1334
+msgid "Crash report submitted successfully."
+msgstr "(|245# |23P0|27 5|_||3|\\/|1773|) 5|_|((355|=|_||_|_'/."
+
+#: src/main.py:1341
+msgid "Would you like to restart Digsby now?"
+msgstr "\\/\\/0|_||_|) J00 \\/\\/|_||3 2 |23574|27 |)165|3'/ |\\|0\\/\\/?"
+
+#: src/main.py:1343
+msgid "Crash Report"
+msgstr "(|245# |23P0|27"
+
+#: src/msn/MSNBuddy.py:26 src/plugins/provider_windows_live/info.yaml:32
+msgid "Be Right Back"
+msgstr "|3 |216#7 |34(|<"
+
+#: src/msn/MSNBuddy.py:27 src/plugins/provider_windows_live/info.yaml:34
+msgid "On the Phone"
+msgstr "0|\\| 73# P#0|\\|3"
+
+#: src/msn/MSNBuddy.py:28 src/plugins/provider_windows_live/info.yaml:35
+msgid "Out to Lunch"
+msgstr "0|_|7 2 |_|_||\\|(#"
+
+#: src/msn/MSNBuddy.py:284 src/oscar/OscarBuddies.py:232
+msgid "Mobile"
+msgstr "|\\/|0|31|_3"
+
+#: src/msn/MSNBuddy.py:488 src/plugins/digsby_service_editor/default_ui.py:207
+msgid "Display Name:"
+msgstr "|)15P|_4Y |\\|4|\\/|3:"
+
+#: src/msn/MSNBuddy.py:555
+msgid "Administrators:"
+msgstr "4|)|\\/|1|\\|157|2470|22:"
+
+#: src/msn/MSNBuddy.py:557
+msgid "Assistant Administrators:"
+msgstr "45515574|\\|7 4|)|\\/|1|\\|157|2470|22:"
+
+#: src/msn/MSNBuddy.py:559
+msgid "Members:"
+msgstr "M3|\\/||33|22"
+
+#: src/msn/MSNBuddy.py:561
+msgid "Invited:"
+msgstr "1|\\|\\/173|):"
+
+#: src/msn/MSNBuddy.py:797
+msgid "{song:s} by {artist:s}"
+msgstr "{song:s}|3'/ {artist:s}"
+
+#: src/msn/MSNConversation.py:287
+msgid "There was a network error creating a chat session."
+msgstr "7#3|23 \\/\\/|_|2 @ |\\|37\\/\\/0|2|< 3|2|20|2 (|23471|\\|' @ (#47 535510|\\|."
+
+#: src/msn/MSNConversation.py:466
+msgid "Your messages could not be sent because too many conversation sessions have been requested."
+msgstr "'/0 |\\/|3554632 (0|_||_|) |\\|07 |3 53|\\|7 (02 700 |\\/|4|\\|'/ (0|\\|\\/3|254710|\\| 535510|\\|2 #4\\/3 |333|\\| |23Q|_|3573|)."
+
+# MARK: Fragment
+#: src/msn/MSNConversation.py:597 src/msn/p21/MSNP21Conversation.py:259
+msgid "winked at you!"
+msgstr "\\/\\/1|\\||<3|) 47 J00!"
+
+# MARK: Fragment
+#: src/msn/MSNConversation.py:598 src/msn/p21/MSNP21Conversation.py:260
+msgid "nudged you!"
+msgstr "|\\||_||)63|) J00!"
+
+#: src/msn/msngui.py:15
+msgid "Group Invite"
+msgstr "6|20|_|P 1|\\|\\/173"
+
+#: src/msn/msngui.py:20 src/plugins/digsby_updater/updater.py:487
+#: src/plugins/digsby_updater/updater.py:499
+msgid "Yes"
+msgstr "'/32"
+
+#: src/msn/msngui.py:21 src/plugins/digsby_updater/updater.py:488
+#: src/plugins/digsby_updater/updater.py:500
+msgid "No"
+msgstr "|\\|0"
+
+# MARK: Formatting
+#: src/msn/msngui.py:25
+#, python-format
+msgid ""
+"\n"
+"%(inviter_email)s says: \"%(invite_message)s\""
+msgstr ""
+"\n"
+"%(inviter_email)s says: \"%(invite_message)s\""
+
+# MARK: %s replacement
+#: src/msn/msngui.py:28
+#, python-format
+msgid ""
+"%(inviter_email)s has invited you to join the group %(circle_name)s.%(invite_segment)s\n"
+"Would you like to join?"
+msgstr ""
+"%(inviter_email)s #42 1|\\|\\/173|) J00 2 J01|\\| 73# 6|20|_|P %(circle_name)s.%(invite_segment)s\n"
+"\\/\\/0|_||_|) J00 \\/\\/|_||3 2 J01|\\|?"
+
+#: src/msn/msngui.py:36
+msgid "Please enter a name for your group chat:"
+msgstr "P|_3453 3|\\|73|2 4 |\\|4|\\/|3 6|20|_|P 4 J00 6|20|_|P (|-|47:"
+
+#: src/oscar/OscarBuddies.py:46 src/plugins/provider_aol/info.yaml:142
+msgid "Occupied"
+msgstr "0((|_|P13|)"
+
+#: src/oscar/OscarBuddies.py:255 src/oscar/OscarBuddies.py:346
+msgid "Profile URL:"
+msgstr "P|20|=1|_3 |_||2|_:"
+
+#: src/oscar/OscarBuddies.py:281 src/plugins/msim/res/content.tenjin:25
+msgid "Gender"
+msgstr "63|\\||)3|2"
+
+#: src/oscar/OscarBuddies.py:285 src/oscar/OscarBuddies.py:333
+msgid "{label}:"
+msgstr "{label}:"
+
+#: src/oscar/OscarBuddies.py:291
+msgid "Website:"
+msgstr "\\/\\/3|35173:"
+
+#: src/oscar/OscarBuddies.py:323
+msgid "Work Address:"
+msgstr "\\/\\/0|2|< 4||)|)|255:"
+
+#: src/oscar/OscarBuddies.py:330
+msgid "Company"
+msgstr "(0|\\/|P4|\\|'/"
+
+#: src/oscar/OscarBuddies.py:330
+msgid "Department"
+msgstr "|)3P4|27|\\/|3|\\|7"
+
+#: src/oscar/OscarBuddies.py:338
+msgid "Work Website:"
+msgstr "\\/\\/0|2|< \\/\\/3|35173:"
+
+#: src/oscar/snac/family_x07.py:165
+msgid "You should receive an email with confirmation instructions shortly."
+msgstr "J00 5#0|_||_|) |23(31\\/3 |\\| 3|\\/|41|_ \\/\\/17# (0|\\||=1|2|\\/|4710|\\| 1|\\|57|2|_|9710|\\|2 5#0|27|_'/."
+
+#: src/oscar/snac/family_x07.py:166
+msgid "Your account is already confirmed."
+msgstr "'/0 4((0|_||\\|7 |3 4|_|234|)'/ (0|\\||=1|2|\\/|3|)."
+
+#: src/oscar/snac/family_x07.py:167
+msgid "There was an unknown server error."
+msgstr "7#3|23 \\/\\/|_|2 |\\| |_||\\||<|\\|0\\/\\/|\\| 53|2\\/3|2 3|2|20|2."
+
+#: src/oscar/snac/family_x07.py:180
+msgid "Confirm Account: {username}"
+msgstr "(0|\\||=1|2|\\/| 4((0|_||\\|7: {username}"
+
+#: src/oscar/snac/family_x15.py:636
+msgid "Female"
+msgstr "|=3|\\/|4|_3"
+
+#: src/oscar/snac/family_x15.py:636
+msgid "Male"
+msgstr "|\\/|4|_3"
+
+#: src/plugins/component_gmail/gmail.py:123
+msgid "Mark as Read"
+msgstr "|\\/|4|2|< 42 |234|)"
+
+#: src/plugins/component_gmail/gmail.py:124
+msgid "Archive"
+msgstr "4|2(#1\\/3"
+
+#: src/plugins/component_gmail/info.yaml:2
+msgid "Gmail"
+msgstr "6|\\/|41|_"
+
+#: src/plugins/component_gmail/info.yaml:6
+msgid "Gmail Account"
+msgstr "3|\\/|41|_ 4((0|_||\\|72"
+
+#: src/plugins/component_gtalk/info.yaml:0
+msgid "Google Talk"
+msgstr "6006|_3 74|_|<"
+
+#: src/plugins/component_gtalk/info.yaml:59
+#: src/plugins/provider_google/info.yaml:0
+#: src/plugins/provider_google/info.yaml:10
+msgid "Google Account"
+msgstr "(#0053 4((0|_||\\|72:"
+
+#: src/plugins/component_yahooim/info.yaml:1
+msgid "Yahoo"
+msgstr "'/4#00"
+
+#: src/plugins/component_yahooim/info.yaml:3
+msgid "Yahoo Messenger"
+msgstr "'/4|-|00 |\\/|355463|2"
+
+#: src/plugins/component_yahooim/info.yaml:7
+#: src/plugins/component_ymail/info.yaml:7
+#: src/plugins/provider_yahoo/info.yaml:10
+msgid "Yahoo! ID"
+msgstr "'/4#00! 1|)"
+
+#: src/plugins/component_ymail/info.yaml:2
+msgid "Yahoo! Mail"
+msgstr "'/4#00 |\\/|41|_"
+
+#: src/plugins/component_ymail/info.yaml:3
+msgid "Yahoo Mail"
+msgstr "'/4#00 |\\/|41|_"
+
+#: src/plugins/digsby_about/aboutdialog.py:48
+msgid "About Digsby"
+msgstr "4|30|_|7 |)165|3'/"
+
+#: src/plugins/digsby_about/res/content.tenjin:14
+msgid "Checking for updates..."
+msgstr "(#3(|< 4 |_|P|)4732..."
+
+#: src/plugins/digsby_about/res/content.tenjin:20
+msgid "Digsby is up to date"
+msgstr "|)165|3'/ 15 |_|P 2 |)473"
+
+#: src/plugins/digsby_about/res/content.tenjin:26
+#: src/plugins/digsby_updater/updater.py:484
+#: src/plugins/digsby_updater/updater.py:496
+msgid "Update Available"
+msgstr "|_|P|)473 4\\/41|_4|3|_3"
+
+#: src/plugins/digsby_about/res/content.tenjin:31
+msgid "Copyright © 2010 dotSyntax, LLC."
+msgstr "(0p'/|216#7 © 2010 |)07S'/|\\|74><, |_|_(."
+
+#: src/plugins/digsby_about/res/content.tenjin:33
+msgid "All Rights Reserved."
+msgstr "4|_|_ |216#72 |2353|2\\/3|)."
+
+#: src/plugins/digsby_email/info.yaml:1 src/plugins/digsby_email/info.yaml:26
+#: src/plugins/digsby_email/info.yaml:116
+#: src/plugins/myspace/MyspaceProtocol.py:39
+msgid "Mail"
+msgstr "|\\/|41|_"
+
+#: src/plugins/digsby_email/info.yaml:10
+msgid "POP Account"
+msgstr "P0P 4((0|_||\\|7"
+
+#: src/plugins/digsby_email/info.yaml:68
+msgid "IMAP Account"
+msgstr "1|\\/|4P 4((0|_||\\|72"
+
+# MARK: Formating, Reproduction
+#: src/plugins/digsby_inviter/inviter.py:28
+#: src/plugins/digsby_inviter/inviter.py:39
+msgid ""
+"Please support Digsby by helping us spread the word!\n"
+"Would you like to invite your address book contacts to Digsby?"
+msgstr ""
+"P|_3453 5|_|PP0|27 |)165|3'/ |3'/ #3|_P1|\\|' |_|2 5P|234|) 73# \\/\\/0|2|)!\n"
+"\\/\\/0|_||_|) J00 \\/\\/|_||3 2 1|\\|\\/173 '/0 4|)|)|2355 |300|< (0|\\|74(72 2 |)165|3'/?"
+
+#: src/plugins/digsby_inviter/inviter.py:54
+msgid "Send Invites"
+msgstr "53|\\||) 1|\\|\\/1732"
+
+#: src/plugins/digsby_inviter/inviter.py:55
+#: src/plugins/digsby_status/status_tag_urls.py:68
+#: src/plugins/facebook/fbgui.py:19 src/plugins/linkedin/ligui.py:17
+#: src/plugins/msim/myspacegui/prompts.py:11 src/plugins/myspace/msgui.py:19
+#: src/plugins/twitter/twgui.py:23
+msgid "No Thanks"
+msgstr "|\\|0 7#4|\\||<2"
+
+#: src/plugins/digsby_service_editor/default_ui.py:62
+msgid "{account_name:s} - {service_name:s} Settings"
+msgstr "{account_name:s} - {service_name:s} 53771|\\|62"
+
+#: src/plugins/digsby_service_editor/default_ui.py:150
+msgid "New User?"
+msgstr "|\\|3\\/\\/ |_|53|2?"
+
+#: src/plugins/digsby_service_editor/default_ui.py:167
+msgid "Forgot Password?"
+msgstr "|=0|2607 P455\\/\\/0|2|)?"
+
+# MARK: %s replacement
+#: src/plugins/digsby_service_editor/default_ui.py:247
+#, python-format
+msgid "&%s Server:"
+msgstr "&%s 53|2\\/3|2:"
+
+#: src/plugins/digsby_service_editor/default_ui.py:248
+msgid "&This server requires SSL"
+msgstr "&|)12 53|2\\/3|2 |23Q|_|1|232 55|_"
+
+#: src/plugins/digsby_service_editor/default_ui.py:266
+msgid "This server requires SSL"
+msgstr "|)12 53|2\\/3|2 |23Q|_|1|232 55|_"
+
+#: src/plugins/digsby_service_editor/default_ui.py:326
+msgid "IM Server:"
+msgstr "1|\\/| 53|2\\/3|2:"
+
+#: src/plugins/digsby_service_editor/default_ui.py:348
+msgid "Always connect over HTTP"
+msgstr "4|_\\/\\/4'/2 (0|\\||\\|3(7 0\\/3|2 #77P"
+
+#: src/plugins/digsby_service_editor/default_ui.py:364
+msgid "Check for new mail every"
+msgstr "(#3(|< 4 |\\|3\\/\\/ |\\/|41|_ 3\\/3|2'/"
+
+# MARK: Fragment
+#: src/plugins/digsby_service_editor/default_ui.py:366
+msgid "minutes"
+msgstr "|\\/|1|\\||_|732"
+
+#: src/plugins/digsby_service_editor/default_ui.py:597
+msgid "Custom ({mailclient})"
+msgstr "(|_|570|\\/| ({mailclient})"
+
+#: src/plugins/digsby_status/status_tag_urls.py:56
+#: src/plugins/facebook/fbgui.py:10 src/plugins/linkedin/ligui.py:8
+#: src/plugins/myspace/msgui.py:10
+#: src/plugins/researchdriver/researchtoast.py:36
+#: src/plugins/twitter/twgui.py:14
+msgid "Learn More"
+msgstr "|_34|2|\\| |\\/|0|23"
+
+#: src/plugins/digsby_status/status_tag_urls.py:67
+msgid "Yes, Spread the Word!"
+msgstr "'/32,  5P|234|) 73# \\/\\/0|2|)!"
+
+#: src/plugins/digsby_status/status_tag_urls.py:106
+msgid "Spread the Word!"
+msgstr "5P|234|) 73# \\/\\/0|2|)!"
+
+#: src/plugins/digsby_status/status_tag_urls.py:109
+msgid "We've made it easier to spread the word about Digsby by adding a link to your IM status. You can disable this option in Preferences > Status."
+msgstr "\\/\\/3'\\/3 |\\/|4|)3 17 34513|2 2 5P|234|) 73# \\/\\/0|2|) 4|30|_|7 |)165|3'/ |3'/ 4|)|)1|\\|' @ |_1|\\||< 2 '/0 1|\\/| 5747|_|2. J00 (4|\\| |)154|3|_3 |)12 0P710|\\| 1|\\| P|23|=3|23|\\|(32 > 5747|_|2."
+
+#: src/plugins/digsby_updater/UpdateProgress.py:55
+msgid "Digsby Update"
+msgstr "|)165|3'/ |_|P|)473"
+
+#: src/plugins/digsby_updater/UpdateProgress.py:63
+msgid "{state}: {completed} of {size} -- {time} remain"
+msgstr "{state}: {completed} 0|= {size} -- {time} |23|\\/|41|\\|"
+
+#: src/plugins/digsby_updater/UpdateProgress.py:145
+msgid "Slower"
+msgstr "5|_0\\/\\/3|2"
+
+#: src/plugins/digsby_updater/UpdateProgress.py:146
+msgid "Faster!"
+msgstr "|=4573|2!"
+
+#: src/plugins/digsby_updater/machelpers.py:18
+msgid "Error while updating Digsby. Please restart and try again, or grab the latest version from digsby.com. Digsby will now shut down."
+msgstr "3|2|20|2 \\/\\/#1|_3 |_|P|)471|\\|6 |)165|3'/. P|_3453 |23574|27 |\\| 7|2'/ 4641|\\|, 0|2 6|24|3 73# |_47357 \\/3|2510|\\| |=|20|\\/| |)165|3'/.(0|\\/|. |)165|3'/ \\/\\/1|_|_ |\\|0\\/\\/ 5#|_|7 |)0\\/\\/|\\|."
+
+#: src/plugins/digsby_updater/machelpers.py:25
+msgid "Updated successfully. Digsby now needs to restart."
+msgstr "|_|P|)473|) 5|_|((355|=|_||_|_'/. |)165|3'/ |\\|0\\/\\/ |\\|33|)2 2 |23574|27."
+
+#: src/plugins/digsby_updater/machelpers.py:31
+msgid "Unable to authenticate. Please restart and try again."
+msgstr "|_||\\|4|3|_3 2 4|_|7#3|\\|71(473. P|_3453 |23574|27 |\\| 7|2'/ 4641|\\|."
+
+#: src/plugins/digsby_updater/updater.py:202
+msgid "Check for {tag} updates"
+msgstr "(#3(|< 4 {tag} |_|P|)4732"
+
+#: src/plugins/digsby_updater/updater.py:204
+msgid "Check for Updates"
+msgstr "(#3(|< 4 |_|P|)4732"
+
+#: src/plugins/digsby_updater/updater.py:485
+#: src/plugins/digsby_updater/updater.py:497
+msgid ""
+"A Digsby update is available to download.\n"
+"Would you like to begin downloading it now?"
+msgstr "@ |)165|3'/ |_|P|)473 |3 4\\/41|_4|3|_3 2 |)0\\/\\/|\\||_04|).\\|\\|\\/\\/0|_||_|) J00 \\/\\/|_||3 2 |3361|\\| |)0\\/\\/|\\||_04|)1|\\|6 17 |\\|0\\/\\/?"
+
+#: src/plugins/digsby_updater/updater.py:573
+msgid "Update Failed"
+msgstr "|_|P|)473 |=41|_3|)"
+
+#: src/plugins/digsby_updater/updater.py:574
+msgid "Digsby was unable to complete the download. This update will be attempted again later."
+msgstr " \\/\\/|_|2 |_||\\|4B|_3 2 (0|\\/|P|_373 73# |)0\\/\\/|\\||_04|). |)12 |_|P|)473 \\/\\/1|_|_ |3 4773|\\/|P73|) 4641|\\| |_8|2."
+
+#: src/plugins/digsby_updater/updater.py:576
+msgid "Manual Update"
+msgstr "|\\/|4|\\||_|4|_ |_|P|)473"
+
+#: src/plugins/digsby_updater/updater.py:606
+msgid "Update Ready"
+msgstr "|_|P|)473 |234|)'/"
+
+#: src/plugins/digsby_updater/updater.py:607
+msgid "A new version of Digsby is ready to install. Restart Digsby to apply the update."
+msgstr "@ |\\|3\\/\\/ \\/3|2510|\\| 0|= |)165|3'/ |3 |234|)'/ 2 1|\\|574|_|_. |23574|27 |)165|3'/ 2 4PP|_'/ 73# |_|P|)473."
+
+#: src/plugins/digsby_updater/updater.py:609
+msgid "Restart Now"
+msgstr "|23574|27 |\\|40"
+
+#: src/plugins/digsby_updater/updater.py:610
+msgid "Restart Later"
+msgstr "|23574|27 |_8|2"
+
+#: src/plugins/facebook/actions.yaml:8
+msgid "Pro&file"
+msgstr "P|20|=1|_3"
+
+#: src/plugins/facebook/actions.yaml:12
+msgid "&Photos"
+msgstr "P#0702"
+
+#: src/plugins/facebook/actions.yaml:14
+msgid "&Messages"
+msgstr "|\\/|3554632"
+
+#: src/plugins/facebook/fbacct.py:310
+#: src/plugins/facebook/res/comment_link.py.xml:19
+#: src/plugins/facebook/res/comment_link.py.xml:20
+#: src/plugins/linkedin/LinkedInAccount.py:235
+#: src/plugins/linkedin/res/comment_link.tenjin:12
+#: src/plugins/linkedin/res/comment_link.tenjin:13
+#: src/plugins/myspace/MyspaceProtocol.py:416
+#: src/plugins/myspace/res/comment_link.tenjin:7
+#: src/plugins/myspace/res/comment_link.tenjin:9
+msgid "Comment"
+msgstr "(0|\\/||\\/|3|\\|7"
+
+#: src/plugins/facebook/fbacct.py:318
+#: src/plugins/facebook/res/like_link.py.xml:11
+#: src/plugins/linkedin/res/like_dislike_link.tenjin:20
+#: src/plugins/myspace/res/like_dislike_link.tenjin:17
+msgid "Like"
+msgstr "\\/\\/|_||3"
+
+#: src/plugins/facebook/fbacct.py:318
+#: src/plugins/facebook/res/like_link.py.xml:16
+msgid "Unlike"
+msgstr "|_||\\||_1|<3"
+
+#: src/plugins/facebook/fbacct.py:329
+#: src/plugins/myspace/MyspaceProtocol.py:424
+msgid "comment"
+msgstr "(0|\\/||\\/|3|\\|7"
+
+#: src/plugins/facebook/fbacct.py:349 src/plugins/facebook/fbacct.py:353
+msgid "like"
+msgstr "\\/\\/|_||3"
+
+#: src/plugins/facebook/fbacct.py:366
+msgid "Facebook Error"
+msgstr "|=4(3|300|< 3|2|20|2"
+
+#: src/plugins/facebook/fbacct.py:367
+#: src/plugins/myspace/MyspaceProtocol.py:432
+msgid "Error posting {thing}"
+msgstr "3|2|20|2  P0571|\\|6 {thing}"
+
+#: src/plugins/facebook/fbacct.py:368
+msgid "Digsby does not have permission to publish to your stream."
+msgstr "|)165|3'/ |)032 |\\|07 #4\\/3 P3|2|\\/|15510|\\| 2 P|_||3|_15# 2 '/0 57|234|\\/|."
+
+#: src/plugins/facebook/fbacct.py:369
+#: src/plugins/myspace/MyspaceProtocol.py:434
+msgid "Grant Permissions"
+msgstr "6|24|\\|7 P3|2|\\/|15510|\\|2"
+
+#: src/plugins/facebook/fbacct.py:389
+msgid "Facebook Alerts"
+msgstr "|=4(3b00|< 4|_3|272"
+
+#: src/plugins/facebook/fbacct.py:396
+msgid "You have new messages."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ |\\/|3554632."
+
+#: src/plugins/facebook/fbacct.py:399
+msgid "You have new pokes."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ P0|<32."
+
+#: src/plugins/facebook/fbacct.py:402
+msgid "You have new shares."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ 5#4|232."
+
+#: src/plugins/facebook/fbacct.py:405
+msgid "You have new friend requests."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ |=|213|\\||) |23Q|_|3572."
+
+#: src/plugins/facebook/fbacct.py:408
+msgid "You have new group invites."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ 6|20|_|P 1|\\|\\/1732."
+
+#: src/plugins/facebook/fbacct.py:411
+msgid "You have new event invites."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/1732."
+
+#: src/plugins/facebook/fbacct.py:416
+msgid "You have new notifications."
+msgstr "J00 #4\\/3 |\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/1732."
+
+#: src/plugins/facebook/fbgui.py:18 src/plugins/linkedin/ligui.py:16
+#: src/plugins/myspace/msgui.py:18 src/plugins/twitter/twgui.py:22
+msgid "Post Achievements"
+msgstr "P057 4(#13\\/3|\\/|3|\\|72"
+
+#: src/plugins/facebook/fbgui.py:24
+msgid "Post achievements to my Wall"
+msgstr "P057 4(#13\\/3|\\/|3|\\|72 2 |\\/|'/ \\/\\/4|_|_"
+
+#: src/plugins/facebook/fbgui.py:40 src/plugins/myspace/msgui.py:69
+msgid "Show Alerts:"
+msgstr "5#0\\/\\/ 4|_3|272:"
+
+#: src/plugins/facebook/fbgui.py:43
+msgid "Messages"
+msgstr "|\\/|3554632"
+
+#: src/plugins/facebook/fbgui.py:44
+msgid "Pokes"
+msgstr "P0|<32"
+
+#: src/plugins/facebook/fbgui.py:45
+msgid "Shares"
+msgstr "5#4|232"
+
+#: src/plugins/facebook/fbgui.py:46 src/plugins/myspace/MyspaceProtocol.py:33
+#: src/plugins/myspace/msgui.py:79
+msgid "Friend Requests"
+msgstr "|=|213|\\||) |239|_|3572"
+
+#: src/plugins/facebook/fbgui.py:47
+msgid "Group Invitations"
+msgstr "6|20|_|P 1|\\|\\/174710|\\|2"
+
+#: src/plugins/facebook/fbgui.py:48 src/plugins/myspace/MyspaceProtocol.py:32
+msgid "Event Invitations"
+msgstr "3\\/3|\\|7 1|\\|\\/174710|\\|2"
+
+#: src/plugins/facebook/info.yaml:0
+msgid "Facebook"
+msgstr "|=4(3|300|<"
+
+#: src/plugins/facebook/info.yaml:4
+msgid "News Feed"
+msgstr "|\\|3\\/\\/5 |=33|)"
+
+#: src/plugins/facebook/info.yaml:26 src/plugins/myspace/info.yaml:47
+#: src/plugins/twitter/res/content.tenjin:25
+msgid "Show Alerts"
+msgstr "5#0\\/\\/ 4|_3|272:"
+
+#: src/plugins/facebook/notifications.yaml:1
+msgid "Facebook Alert"
+msgstr "|=4(3b00|< 4|_3|272"
+
+#: src/plugins/facebook/notifications.yaml:10
+#: src/plugins/facebook/notifications.yaml:11
+msgid "Facebook Notification"
+msgstr "|\\|071|=1(4710|\\|2"
+
+#: src/plugins/facebook/notifications.yaml:21
+msgid "Facebook Newsfeed"
+msgstr "|\\/|'/5P4(3 |\\|3\\/\\/5|=33|)"
+
+#: src/plugins/facebook/res/alerts.py.xml:2
+#: src/plugins/myspace/res/indicators.tenjin:2
+#: src/plugins/twitter/res/content.tenjin:8
+msgid "Alerts"
+msgstr "5#0\\/\\/ 4|_3|272:"
+
+#: src/plugins/facebook/res/alerts.py.xml:4
+msgid "No Alerts"
+msgstr "|\\|0 4|_3|272"
+
+#: src/plugins/facebook/res/alerts.py.xml:6
+#, python-format
+msgid "%d new message"
+msgid_plural "%d new messages"
+msgstr[0] "%d |\\|3\\/\\/ |\\/|355463."
+msgstr[1] "%d |\\|3\\/\\/ |\\/|3554632."
+
+#: src/plugins/facebook/res/alerts.py.xml:7
+#, python-format
+msgid "%d new friend request"
+msgid_plural "%d new friend requests"
+msgstr[0] "%d |\\|3\\/\\/ |=|213|\\||) |23Q|_|357"
+msgstr[1] "%d |\\|3\\/\\/ |=|213|\\||) |23Q|_|3572"
+
+#: src/plugins/facebook/res/alerts.py.xml:8
+#, python-format
+msgid "%d new poke"
+msgid_plural "%d new pokes"
+msgstr[0] "%d |\\|3\\/\\/ P0|<3"
+msgstr[1] "%d |\\|3\\/\\/ P0|<32"
+
+#: src/plugins/facebook/res/alerts.py.xml:9
+#, python-format
+msgid "%d new share"
+msgid_plural "%d new shares"
+msgstr[0] "%d |\\|3\\/\\/ 5#4|23."
+msgstr[1] "%d |\\|3\\/\\/ 5#4|232."
+
+#: src/plugins/facebook/res/alerts.py.xml:10
+#, python-format
+msgid "%d new group invite"
+msgid_plural "%d new group invites"
+msgstr[0] "%d |\\|3\\/\\/ 6|20|_|P 1|\\|\\/173."
+msgstr[1] "%d |\\|3\\/\\/ 6|20|_|P 1|\\|\\/1732."
+
+#: src/plugins/facebook/res/alerts.py.xml:11
+#, python-format
+msgid "%d new event invite"
+msgid_plural "%d new event invites"
+msgstr[0] "%d |\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/173."
+msgstr[1] "%d |\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/1732."
+
+#: src/plugins/facebook/res/alerts.py.xml:12
+#, python-format
+msgid "%d new notification"
+msgid_plural "%d new notifications"
+msgstr[0] "%d |\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/173."
+msgstr[1] "%d |\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/1732."
+
+#: src/plugins/facebook/res/birthdays.py.xml:9
+msgid "Upcoming Birthdays"
+msgstr "|_|P(0|\\/|1|\\|6 |31|27#|)4'/5"
+
+#: src/plugins/facebook/res/comment.py.xml:11
+#: src/plugins/facebook/res/comment.py.xml:13
+#: src/plugins/facebook/res/dislikes.py.xml:28
+#: src/plugins/facebook/res/dislikes.py.xml:30
+#: src/plugins/facebook/res/dislikes.py.xml:39
+#: src/plugins/facebook/res/dislikes.py.xml:41
+#: src/plugins/facebook/res/dislikes.py.xml:55
+#: src/plugins/facebook/res/dislikes.py.xml:57
+#: src/plugins/facebook/res/dislikes.py.xml:63
+#: src/plugins/facebook/res/dislikes.py.xml:65
+#: src/plugins/facebook/res/dislikes.py.xml:71
+#: src/plugins/facebook/res/dislikes.py.xml:73
+#: src/plugins/facebook/res/likes.py.xml:42
+#: src/plugins/facebook/res/likes.py.xml:46
+#: src/plugins/facebook/res/likes.py.xml:55
+#: src/plugins/facebook/res/likes.py.xml:62
+#: src/plugins/facebook/res/likes.py.xml:80
+#: src/plugins/facebook/res/likes.py.xml:85
+msgid "Facebook User"
+msgstr "|=4(3b00|< |_|53|2"
+
+#: src/plugins/facebook/res/comment_link.py.xml:2
+#: src/plugins/facebook/res/comment_post_link.py.xml:2
+#: src/plugins/facebook/res/comments.py.xml:2
+#: src/plugins/facebook/res/dislike_link.py.xml:2
+#: src/plugins/facebook/res/dislikes.py.xml:2
+msgid "Dislike! (via http://digsby.com/fb)"
+msgstr "|)15|_1|<3! (via  http://digsby.com)"
+
+#: src/plugins/facebook/res/comment_post_link.py.xml:15
+#, python-format
+msgid "See all %d comments"
+msgstr "533 4|_|_ %d (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/facebook/res/comment_post_link.py.xml:17
+msgid "See all comments"
+msgstr "533 4|_|_ (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/facebook/res/content.tenjin:35
+msgid "Back to News Feed"
+msgstr "|34(|< 2 |\\|3\\/\\/5|=33|):"
+
+# MARK: Shuold be translated?
+#: src/plugins/facebook/res/dislike_link.py.xml:18
+msgid "Dislike"
+msgstr "|)15|_1|<3"
+
+#: src/plugins/facebook/res/dislike_link.py.xml:23
+msgid "Undislike"
+msgstr "|_||\\||)15|_1|<3"
+
+#: src/plugins/facebook/res/dislike_link.py.xml:32
+msgid "Dislikes"
+msgstr "|)154B|_32"
+
+#: src/plugins/facebook/res/like_link.py.xml:25
+#: src/plugins/linkedin/res/like_dislike_link.tenjin:29
+#: src/plugins/myspace/res/like_dislike_link.tenjin:26
+msgid "Likes"
+msgstr "|_1|<35"
+
+#: src/plugins/facebook/res/likes.py.xml:14
+msgid "You liked this"
+msgstr "|_| |_1|<3|) |)15"
+
+#: src/plugins/facebook/res/likes.py.xml:16
+msgid "You and {startlink_other}one other{endlink_other} liked this"
+msgid_plural "You and {startlink_other}{num_others} others{endlink_other} liked this"
+msgstr[0] "|_| |\\| {startlink_other}1 07|-|3|2{endlink_other} |_1|<3|) |)15"
+msgstr[1] "|_| |\\| {startlink_other}{num_others} 07|-|3|22{endlink_other} |_1|<3|) |)15"
+
+#: src/plugins/facebook/res/likes.py.xml:40
+msgid "{startlink_name}{name}{endlink_name} liked this"
+msgstr "{startlink_name}{name}{endlink_name} |_1|<3|) |)15"
+
+#: src/plugins/facebook/res/likes.py.xml:51
+msgid "{startlink_name}{name}{endlink_name} and {startlink_other}one other{endlink_other} liked this"
+msgid_plural "{startlink_name}{name}{endlink_name} and {startlink_other}{num_others} others{endlink_other} liked this"
+msgstr[0] "{startlink_name}{name}{endlink_name} |\\| {startlink_other}1 07|-|3|2{endlink_other} liked this"
+msgstr[1] "{startlink_name}{name}{endlink_name} |\\| {startlink_other} 07|-|3|22{endlink_other} liked this"
+
+#: src/plugins/facebook/res/likes.py.xml:76
+msgid "{startlink_other}one user{endlink_other} liked this"
+msgid_plural "{startlink_other}{num_users} users{endlink_other} liked this"
+msgstr[0] "{startlink_other}1 |_|53|2{endlink_other} \\/\\/|_||33|) |)1s"
+msgstr[1] "{startlink_other}{num_users} |_|53|22{endlink_other} \\/\\/|_||33|) |)12"
+
+#: src/plugins/facebook/res/post.py.xml:63
+msgid "See Friendship"
+msgstr "533 |=|213|\\||)2"
+
+#: src/plugins/facebook/res/status.py.xml:7
+#: src/plugins/linkedin/res/content.tenjin:3
+msgid "You have no status message"
+msgstr "J00 #4\\/3 |\\|0 5747|_|5 |\\/|3554632."
+
+#: src/plugins/facebook/res/status.py.xml:9
+#: src/plugins/myspace/res/status.tenjin:18
+#: src/plugins/twitter/res/status.tenjin:14
+#: src/plugins/twitter/res/status.tenjin:21
+msgid "update"
+msgstr "|_|P|)4732"
+
+#: src/plugins/fbchat/info.yaml:5
+msgid "Facebook Chat"
+msgstr "|=4(3b00|< (|-|47"
+
+#: src/plugins/fbchat/xmppfb.py:116
+msgid "Send Message"
+msgstr "53|\\||) |\\/|355463"
+
+#: src/plugins/fbchat/xmppfb.py:117
+msgid "Send Poke"
+msgstr "53|\\||) P0|<3"
+
+#: src/plugins/fbchat/xmppfb.py:118
+msgid "View Photos"
+msgstr "\\/13\\/\\/ P#0702"
+
+#: src/plugins/fbchat/xmppfb.py:122 src/yahoo/yahoobuddy.py:133
+msgid "View Profile"
+msgstr "\\/13\\/\\/ P|20|=1|_3"
+
+#: src/plugins/fbchat/xmppfb.py:123
+msgid "Write on Wall"
+msgstr "\\/\\/|2173 0|\\| \\/\\/4|_|_"
+
+#: src/plugins/fbchat/xmppfb.py:132 src/yahoo/yahoobuddy.py:164
+#: src/yahoo/yahoobuddy.py:181
+msgid "Links:"
+msgstr "|_1|\\||<2:"
+
+#: src/plugins/feed_trends/feed_trends.py:702
+msgid "Trending News"
+msgstr "7|23|\\||)1|\\|' |\\|3\\/\\/2"
+
+#: src/plugins/feed_trends/feed_trends.py:973
+msgid "read more..."
+msgstr "|234|) |\\/|0|23..."
+
+#: src/plugins/feed_trends/feed_trends.py:1010
+msgid "Feed Trends Debug"
+msgstr "|=33|) 7|23|\\||)2 |)3|3|_|6"
+
+#: src/plugins/feed_trends/geo_trends.py:260
+msgid "Featured Content"
+msgstr "|=347|_||23|) (0|\\|73|\\|7"
+
+# MARK: Fragment?
+#: src/plugins/feed_trends/res/trend_details.tenjin:7
+msgid "get address"
+msgstr "637 4|)|)|2355"
+
+# MARK: Fragment?
+#: src/plugins/feed_trends/res/trend_details.tenjin:12
+msgid "phone number"
+msgstr "P#0|\\|3 |\\||_||\\/||33|2"
+
+#: src/plugins/feed_trends/res/trend_details.tenjin:25
+msgid "reviews"
+msgstr "|23\\/13\\/\\/2"
+
+#: src/plugins/linkedin/LinkedInAccount.py:66
+msgid "Checking now..."
+msgstr "(#3(|<1|\\|' |\\|0\\/\\/..."
+
+#: src/plugins/linkedin/LinkedInAccount.py:82
+#: src/plugins/twitter/twitter.py:214
+msgid "Home"
+msgstr "#0|\\/|3"
+
+#: src/plugins/linkedin/LinkedInAccount.py:83
+msgid "Inbox"
+msgstr "1|\\||30><"
+
+#: src/plugins/linkedin/LinkedInAccount.py:85
+#: src/plugins/twitter/twitter.py:215
+msgid "Profile"
+msgstr "P|20|=1|_3"
+
+#: src/plugins/linkedin/LinkedInAccount.py:176
+msgid "API request limit has been reached."
+msgstr "4P1 |23Q|_|357 |_1|\\/|17 #42 |333|\\| |234(#3|)."
+
+#: src/plugins/linkedin/LinkedInAccount.py:378
+#: src/plugins/myspace/MyspaceAccount.py:334
+msgid "Please set your computer clock to the correct time / timezone."
+msgstr "P|_3453 537 '/0 (0|\\/|P|_|73|2 (|_0(|< 2 73# (0|2|23(7 71|\\/|3 / 71|\\/|320|\\|3."
+
+#: src/plugins/linkedin/LinkedInObjects.py:138
+msgid "Like! (via http://digsby.com)"
+msgstr "\\/\\/|_||3! (via http://digsby.com)"
+
+#: src/plugins/linkedin/LinkedInObjects.py:139
+msgid "Dislike! (via http://digsby.com)"
+msgstr "|)15|_1|<3! (via  http://digsby.com)"
+
+# MARK: Fragment, %s replacement
+#: src/plugins/linkedin/LinkedInObjects.py:294
+#, python-format
+msgid "answered the question \"%s\""
+msgstr "4|\\|5\\/\\/3|23|) 73# Q|_|35710|\\| \"%s\""
+
+# MARK: %s replacement, fragment, formatting
+#: src/plugins/linkedin/LinkedInObjects.py:356
+#: src/plugins/linkedin/LinkedInObjects.py:435
+#, python-format
+msgid "%s and "
+msgstr "%s 4|\\||) "
+
+# MARK: Fragment, %s replacement
+#: src/plugins/linkedin/LinkedInObjects.py:360
+#, python-format
+msgid "is now connected to %s"
+msgstr "|3 |\\|0\\/\\/ (0|\\||\\|3(73|) 2 %s"
+
+# MARK: Fragment
+#: src/plugins/linkedin/LinkedInObjects.py:371
+#: src/plugins/linkedin/res/ncon.tenjin:1
+msgid "is now a connection"
+msgstr "|3 |\\|0\\/\\/ @ (0|\\||\\|3(710|\\|"
+
+# MARK: Fragment?
+#: src/plugins/linkedin/LinkedInObjects.py:385
+msgid "joined LinkedIn"
+msgstr "J01|\\|3|) |_1|\\||<3|)1|\\|"
+
+#: src/plugins/linkedin/LinkedInObjects.py:412
+msgid "posted a job: {position_title:s} at {company_name:s}"
+msgstr "P0573|) 4 J0|3: {position_title:s} @ {company_name:s}"
+
+# MARK: Fragment, %s replacement
+#: src/plugins/linkedin/LinkedInObjects.py:439
+#, python-format
+msgid "is now a member of %s"
+msgstr "|3 |\\|0\\/\\/ @ |\\/|3|\\/||33|2 0|= %s"
+
+# MARK: Fragment
+#: src/plugins/linkedin/LinkedInObjects.py:459
+#: src/plugins/linkedin/res/picu.tenjin:1
+msgid "has a new profile photo"
+msgstr "#42 @ |\\|3\\/\\/ P|20|=1|_3 P#070"
+
+# MARK: Fragmnet, %s replacement
+#: src/plugins/linkedin/LinkedInObjects.py:498
+#, python-format
+msgid "has recommended %s"
+msgstr "#42 |23(0|\\/||\\/|3|\\||)3|) %s"
+
+# MARK: Fragment, %s replacemnet
+#: src/plugins/linkedin/LinkedInObjects.py:500
+#, python-format
+msgid "was recommended by %s"
+msgstr "\\/\\/|_|2 |23(0|\\/||\\/|3|\\||)3|) |3'/ %s"
+
+# MARK: Fragment
+#: src/plugins/linkedin/LinkedInObjects.py:512
+msgid "has an updated profile"
+msgstr "#42 |\\| |_|P|)473|) P|20|=1|_3"
+
+# MARK: Fragment, %s replacement
+#: src/plugins/linkedin/LinkedInObjects.py:536
+#, python-format
+msgid "asked a question: %s"
+msgstr "45|<3|) @ Q|_|35710|\\|: %s"
+
+# MARK: Should be translated?
+#: src/plugins/linkedin/LinkedInProtocol.py:121
+msgid "Throttle"
+msgstr "7#|2077|_3"
+
+#: src/plugins/linkedin/actions.yaml:8
+msgid "C&ontacts"
+msgstr "(0|\\|74(72"
+
+#: src/plugins/linkedin/info.yaml:0
+msgid "LinkedIn"
+msgstr "|_1|\\||<3|)1|\\|"
+
+#: src/plugins/linkedin/info.yaml:46
+msgid "LinkedIn Newsfeed"
+msgstr "|\\/|'/5P4(3 |\\|3\\/\\/5|=33|)"
+
+#: src/plugins/linkedin/ligui.py:28
+msgid "Post achievements to my LinkedIn Network"
+msgstr "P057 4(#13\\/3|\\/|3|\\|72 2 |\\/|'/ |_1|\\||<3|)1|\\| |\\|37\\/\\/0|2|<"
+
+# MARK: Fragment
+#: src/plugins/linkedin/res/ccem.tenjin:1
+msgid "joined"
+msgstr "J01|\\|3|)"
+
+# MARK: Fragment, %s replacement
+#: src/plugins/linkedin/res/conn.tenjin:1
+msgid "is now connected to"
+msgstr "|3 |\\|0\\/\\/ (0|\\||\\|3(73|) 2"
+
+#: src/plugins/linkedin/res/content.tenjin:11
+msgid "Network Updates"
+msgstr "(#3(|< 4 |_|P|)4732"
+
+#: src/plugins/linkedin/res/content.tenjin:14
+msgid "No news today."
+msgstr "|\\|0 |\\|3\\/\\/2 70|)4'/."
+
+# MARK: Fragment, Should exist?
+#: src/plugins/linkedin/res/dislikes.tenjin:15
+#: src/plugins/linkedin/res/dislikes.tenjin:33
+#: src/plugins/myspace/res/dislikes.tenjin:15
+#: src/plugins/myspace/res/dislikes.tenjin:30
+#: src/plugins/myspace/res/likes.tenjin:15
+#: src/plugins/myspace/res/likes.tenjin:29
+msgid "and"
+msgstr "|\\|"
+
+# MARK: Fragment
+#: src/plugins/linkedin/res/dislikes.tenjin:16
+#: src/plugins/linkedin/res/dislikes.tenjin:34
+#: src/plugins/myspace/res/dislikes.tenjin:17
+#: src/plugins/myspace/res/dislikes.tenjin:31
+#: src/plugins/myspace/res/likes.tenjin:16
+#: src/plugins/myspace/res/likes.tenjin:30
+msgid "other"
+msgid_plural "others"
+msgstr[0] "07#3|2"
+msgstr[1] "07#3|22"
+
+#: src/plugins/linkedin/res/dislikes.tenjin:18
+#: src/plugins/myspace/res/dislikes.tenjin:19
+#: src/plugins/myspace/res/dislikes.tenjin:33
+msgid "disliked this"
+msgstr "|)15|_1|<3|) |)15"
+
+# MARK: Fragment
+#: src/plugins/linkedin/res/jgrp.tenjin:1
+msgid "has joined"
+msgstr "#42 J01|\\|3|)"
+
+# MARK: Fragment, I don't know what this is
+#: src/plugins/linkedin/res/jobp.tenjin:1
+msgid "at"
+msgstr "@ "
+
+# Mark: Fragment, Multiple %s replacements
+#: src/plugins/linkedin/res/jobp.tenjin:1
+msgid "posted a job"
+msgstr "P0573|) @ J0|3"
+
+#: src/plugins/linkedin/res/like_dislike_link.tenjin:18
+#: src/plugins/myspace/res/like_dislike_link.tenjin:15
+msgid "Liked"
+msgstr "|_1|<3|)"
+
+#: src/plugins/msim/MSIMConversation.py:35
+msgid "{name} zapped you"
+msgstr "{name} 24PP3|) J00"
+
+#: src/plugins/msim/MSIMConversation.py:36
+msgid "You zapped {name}"
+msgstr "J00 P3\\/\\/3|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:37
+msgid "Zap"
+msgstr "P3\\/\\/"
+
+#: src/plugins/msim/MSIMConversation.py:41
+msgid "{name} whacked you"
+msgstr "{name} \\/\\/#4(|<3|) J00"
+
+#: src/plugins/msim/MSIMConversation.py:42
+msgid "You whacked {name}"
+msgstr "J00 \\/\\/#4(|<3|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:43
+msgid "Whack"
+msgstr "\\/\\/#4(|<"
+
+#: src/plugins/msim/MSIMConversation.py:47
+msgid "{name} torched you"
+msgstr "{name} 70|2(|-|3|) |_|"
+
+#: src/plugins/msim/MSIMConversation.py:48
+msgid "You torched {name}"
+msgstr "J00 70|2(#3|)  {name}"
+
+#: src/plugins/msim/MSIMConversation.py:49
+msgid "Torch"
+msgstr "70|2(#"
+
+#: src/plugins/msim/MSIMConversation.py:53
+msgid "{name} smooched you"
+msgstr "{name} 5|\\/|00(|-|3|) |_|"
+
+#: src/plugins/msim/MSIMConversation.py:54
+msgid "You smooched {name}"
+msgstr "J00 5|\\/|00(#3|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:55
+msgid "Smooch"
+msgstr "5|\\/|00(#"
+
+#: src/plugins/msim/MSIMConversation.py:59
+msgid "{name} slapped you"
+msgstr "{name} 5|_4PP3|) |_|"
+
+#: src/plugins/msim/MSIMConversation.py:60
+msgid "You slapped {name}"
+msgstr "J00 5|_4PP3|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:61
+msgid "Slap"
+msgstr "5|_4P"
+
+#: src/plugins/msim/MSIMConversation.py:65
+msgid "{name} goosed you"
+msgstr "{name} 5|_|P|2153 |3|_|753(|<53|) |_|!"
+
+#: src/plugins/msim/MSIMConversation.py:66
+msgid "You goosed {name}"
+msgstr "J00 60053|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:67
+msgid "Goose"
+msgstr "60053"
+
+#: src/plugins/msim/MSIMConversation.py:71
+msgid "{name} high-fived you"
+msgstr "{name} |-|16|-| |=1\\/3|) |_|"
+
+#: src/plugins/msim/MSIMConversation.py:72
+msgid "You high-fived {name}"
+msgstr "J00 #16#-|=1\\/3|)  {name}"
+
+#: src/plugins/msim/MSIMConversation.py:73
+msgid "High-Five"
+msgstr "#16#-|=1\\/3"
+
+#: src/plugins/msim/MSIMConversation.py:77
+msgid "{name} punk'd you"
+msgstr "{name} P|_||\\||<3|) |_|"
+
+#: src/plugins/msim/MSIMConversation.py:78
+msgid "You punk'd {name}"
+msgstr "J00 7|20|_|_3|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:79
+msgid "Punk"
+msgstr "P|_||\\||<"
+
+#: src/plugins/msim/MSIMConversation.py:83
+msgid "{name} raspberry'd you"
+msgstr "{name} |245P|33|2|2Y'|) |_|"
+
+#: src/plugins/msim/MSIMConversation.py:84
+msgid "You raspberry'd {name}"
+msgstr "J00 |245P|33|2|2'/'|) {name}"
+
+#: src/plugins/msim/MSIMConversation.py:85
+msgid "Raspberry"
+msgstr "|245P|33|2|2'/"
+
+#: src/plugins/msim/info.yaml:0
+msgid "MySpace IM"
+msgstr "|\\/|'/5P4(3 1|\\/|"
+
+#: src/plugins/msim/info.yaml:4
+msgid "MySpaceIM"
+msgstr "|\\/|'/5P4(31|\\/|"
+
+#: src/plugins/msim/myspacegui/editstatus.py:6
+msgid "MySpace Status"
+msgstr "|\\/|'/5P4(3 5747|_|5"
+
+#: src/plugins/msim/myspacegui/privacy.py:20
+msgid "Everyone"
+msgstr "3\\/3|2Y0|\\|3"
+
+#: src/plugins/msim/myspacegui/privacy.py:21
+msgid "Only people on my contact list"
+msgstr "0|\\||_'/ P30P|_3 0|\\| |\\/|'/ (0|\\|74(7 |_157"
+
+#: src/plugins/msim/myspacegui/privacy.py:22
+msgid "No one"
+msgstr "|\\|0"
+
+#: src/plugins/msim/myspacegui/privacy.py:63
+msgid "Only people on my contact list can see my status"
+msgstr "0|\\||_'/ P30P|_3 0|\\| |\\/|'/ (0|\\|74(7 |_157 (4|\\| 533 |\\/|'/ 5747|_|5"
+
+#: src/plugins/msim/myspacegui/privacy.py:67
+msgid "Only people on my contact list can send me messages"
+msgstr "0|\\||_'/ P30P|_3 0|\\| |\\/|'/ (0|\\|74(7 |_157 (4|\\| 53|\\||) |\\/|3 |\\/|3554632"
+
+#: src/plugins/msim/myspacegui/privacy.py:74
+msgid "When I'm offline, receive and store messages from:"
+msgstr "\\/\\/#3|\\| 1'|\\/| 0|=|=|_1|\\|3, |23c31\\/3 |\\| 570|23 |\\/|3554632 |=|20|\\/|:"
+
+#: src/plugins/msim/myspacegui/privacy.py:80
+msgid "Offline Messages"
+msgstr "0|=|=|_1|\\|3 |\\/|3554632"
+
+#: src/plugins/msim/myspacegui/prompts.py:8
+msgid "Would you like to automatically add your MySpace friends to your MySpace IM contact list?"
+msgstr "\\/\\/0|_||_|) J00 \\/\\/|_||3 2 4|_|70|\\/|471(4|_|_'/ 4|)|) '/0 |\\/|'/5P4(3 |=|213|\\||)2 2 '/0 |\\/|'/5P4(3 1|\\/| (0|\\|74(7 |_157?"
+
+#: src/plugins/msim/myspacegui/prompts.py:9
+msgid "Add Top Friends"
+msgstr "4|)|) 70P |=|213|\\||)2"
+
+#: src/plugins/msim/myspacegui/prompts.py:10
+msgid "Add All Friends"
+msgstr "4|)|) 4|_|_ |=|213|\\||)2"
+
+#: src/plugins/msim/myspacegui/prompts.py:13
+msgid "Add Friends"
+msgstr "4|)|) |=|213|\\||)2"
+
+#: src/plugins/msim/res/content.tenjin:20
+msgid "IM Name"
+msgstr "1|\\/| |\\|4|\\/|3"
+
+#: src/plugins/msim/res/content.tenjin:21
+msgid "Display Name"
+msgstr "|)15P|_4'/ |\\|4|\\/|3:"
+
+#: src/plugins/msim/res/content.tenjin:23
+msgid "Real Name"
+msgstr "|234|_ |\\|4|\\/|3"
+
+#: src/plugins/msim/res/content.tenjin:24
+msgid "Age"
+msgstr "463"
+
+#: src/plugins/msim/res/content.tenjin:27
+msgid "IM Headline"
+msgstr "1|\\/| #34|)|_1|\\|3"
+
+# MARK: Fragment
+#: src/plugins/myspace/MyspaceAccount.py:557
+msgid "added"
+msgstr "4|)|)3|)"
+
+# MARK: %s replacement
+#: src/plugins/myspace/MyspaceAccount.py:558
+#, python-format
+msgid "%s account"
+msgstr "%s 4((0|_||\\|7"
+
+# MARK: Fragment
+#: src/plugins/myspace/MyspaceAccount.py:559
+msgid "to"
+msgstr "2"
+
+#: src/plugins/myspace/MyspaceProtocol.py:28 src/plugins/myspace/msgui.py:83
+msgid "Birthdays"
+msgstr "|31|27#|)4'/5"
+
+#: src/plugins/myspace/MyspaceProtocol.py:29 src/plugins/myspace/msgui.py:73
+msgid "Blog Comments"
+msgstr "|3|_06 (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/MyspaceProtocol.py:30 src/plugins/myspace/msgui.py:74
+msgid "Blog Subscriptions"
+msgstr "|3|_06 5|_||35(|21P710|\\|2"
+
+#: src/plugins/myspace/MyspaceProtocol.py:31
+msgid "Comments"
+msgstr "(0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/MyspaceProtocol.py:34 src/plugins/myspace/msgui.py:81
+msgid "Group Notifications"
+msgstr "6|20|_|P |\\|071|=1(4710|\\|2"
+
+#: src/plugins/myspace/MyspaceProtocol.py:35 src/plugins/myspace/msgui.py:78
+msgid "Photo Tag Approvals"
+msgstr "P#070 746 4PP|20\\/4|_2"
+
+#: src/plugins/myspace/MyspaceProtocol.py:36 src/plugins/myspace/msgui.py:75
+msgid "Picture Comments"
+msgstr "P1(7|_||23 C0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/MyspaceProtocol.py:37 src/plugins/myspace/msgui.py:82
+msgid "Recently Added Friends"
+msgstr "|23(3|\\|7|_'/ 4|)|)3|) |=|213|\\||)2"
+
+#: src/plugins/myspace/MyspaceProtocol.py:38 src/plugins/myspace/msgui.py:80
+msgid "Video Comments"
+msgstr "\\/1|)30 (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/MyspaceProtocol.py:73
+msgid "Mail ({mailcount})"
+msgstr "|\\/|41|_ ({mailcount})"
+
+#: src/plugins/myspace/MyspaceProtocol.py:394
+#: src/plugins/myspace/notifications.yaml:9
+msgid "MySpace Newsfeed"
+msgstr "|\\/|'/5P4(3 |\\|3\\/\\/5|=33|)"
+
+#: src/plugins/myspace/MyspaceProtocol.py:431
+msgid "MySpace Error"
+msgstr "|\\/|'/5P4(3 3|2|20|2"
+
+#: src/plugins/myspace/MyspaceProtocol.py:433
+msgid "Digsby does not have permission to perform this action."
+msgstr "|)165|3'/ |)032 |\\|07 #4\\/3 P3|2|\\/|15510|\\| 2 P3|2|=0|2|\\/| |)12 4(710|\\|."
+
+#: src/plugins/myspace/MyspaceProtocol.py:565
+msgid "MySpace Alerts"
+msgstr "|\\/|'/5P4(3 4|_3|272"
+
+#: src/plugins/myspace/MyspaceProtocol.py:566
+#, python-format
+msgid "You have new %s"
+msgstr "J00 #4\\/3 |\\|3\\/\\/ %s"
+
+#: src/plugins/myspace/MyspaceProtocol.py:683
+msgid "Activity stream item not found. It may have been removed by its creator."
+msgstr "4(71\\/17'/ 57|234|\\/| 173|\\/| |\\|07 |=0|_||\\||). 17 |\\/|4Y #4\\/3 |333|\\| |23|\\/|0\\/3|) |3'/ 172 (|23470|2."
+
+#: src/plugins/myspace/actions.yaml:13
+msgid "&Post Bulletin"
+msgstr "&P057 |3|_||_|_371|\\|"
+
+#: src/plugins/myspace/info.yaml:63
+msgid "Show Newsfeed"
+msgstr "5#0\\/\\/ |\\|3\\/\\/5|=33|)"
+
+#: src/plugins/myspace/msgui.py:24
+msgid "Post achievements to my Activity Stream"
+msgstr "P057 4(#13\\/3|\\/|3|\\|72 2 |\\/|'/ 4(71\\/17'/ 57|234|\\/|"
+
+#: src/plugins/myspace/msgui.py:38
+msgid "Show Newsfeed:"
+msgstr "5#0\\/\\/ |\\|3\\/\\/5|=33|):"
+
+#: src/plugins/myspace/msgui.py:42
+msgid "Status Updates"
+msgstr "5747|_|2 |_|P|)4732"
+
+#: src/plugins/myspace/msgui.py:43
+msgid "Friend Updates"
+msgstr "|=|213|\\||) |_|P|)4732"
+
+#: src/plugins/myspace/msgui.py:44
+msgid "Blog/Forum Posts"
+msgstr "|3|_06/|=0|2|_||\\/| P0572"
+
+#: src/plugins/myspace/msgui.py:45
+msgid "Group Updates"
+msgstr "6|20|_|P |_|P|)4732"
+
+#: src/plugins/myspace/msgui.py:46
+msgid "Photos"
+msgstr "P#0702"
+
+#: src/plugins/myspace/msgui.py:47
+msgid "Music"
+msgstr "|\\/||_|51("
+
+#: src/plugins/myspace/msgui.py:48
+msgid "Videos"
+msgstr "\\/1|)302"
+
+#: src/plugins/myspace/msgui.py:50
+msgid "Applications"
+msgstr "4PP|_1(4710|\\|2"
+
+#: src/plugins/myspace/msgui.py:76
+msgid "Event Invites"
+msgstr "3\\/3|\\|7 1|\\|\\/1732"
+
+#: src/plugins/myspace/msgui.py:77
+msgid "Profile Comments"
+msgstr "P|20|=1|_3 (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/notifications.yaml:1
+msgid "MySpace Alert"
+msgstr "|\\/|'/5P4(3 4|_3|272"
+
+#: src/plugins/myspace/objects.py:301
+msgid "Private user"
+msgstr "P|21\\/473 |_|53|2"
+
+#: src/plugins/myspace/objects.py:354
+msgid "Like! (via http://lnk.ms/C5dls)"
+msgstr "\\/\\/|_||3! (via http://lnk.ms/C5dls)"
+
+#: src/plugins/myspace/objects.py:355
+msgid "Dislike! (via http://lnk.ms/C5dls)"
+msgstr "|)15|_1|<3! (via http://lnk.ms/C5dls)"
+
+#: src/plugins/myspace/res/content.tenjin:15
+msgid "Activity Stream"
+msgstr "4(71\\/17'/ 57|234|\\/|"
+
+#: src/plugins/myspace/res/indicators.tenjin:6
+msgid "New Mail"
+msgstr "|\\|3\\/\\/ |\\/|41|_"
+
+#: src/plugins/myspace/res/indicators.tenjin:12
+msgid "New Birthdays"
+msgstr "|\\|3\\/\\/ |31|27#|)4'/5"
+
+#: src/plugins/myspace/res/indicators.tenjin:19
+msgid "New Blog Comments"
+msgstr "|\\|3\\/\\/ |3|_06 (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/res/indicators.tenjin:26
+msgid "New Blog Subscriptions"
+msgstr "|\\|3\\/\\/ |3|_06 5|_||35(|21P710|\\|2"
+
+#: src/plugins/myspace/res/indicators.tenjin:33
+msgid "New Comments"
+msgstr "|\\|3\\/\\/ (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/res/indicators.tenjin:40
+msgid "New Event Invitations"
+msgstr "|\\|3\\/\\/ 3\\/3|\\|7 1|\\|\\/174710|\\|2"
+
+#: src/plugins/myspace/res/indicators.tenjin:47
+msgid "New Friend Requests"
+msgstr "|\\|3\\/\\/ |=|213|\\||) |239|_|3572"
+
+#: src/plugins/myspace/res/indicators.tenjin:54
+msgid "New Group Notifications"
+msgstr "|\\|3\\/\\/ 6|20|_|P |\\|071|=1(4710|\\|2"
+
+#: src/plugins/myspace/res/indicators.tenjin:61
+msgid "New Photo Tag Approvals"
+msgstr "|\\|3\\/\\/ P#070 746 4PP|20\\/4|_2"
+
+#: src/plugins/myspace/res/indicators.tenjin:68
+msgid "New Picture Comments"
+msgstr "|\\|3\\/\\/ P1(7|_||23 (0|\\/||\\/|3|\\|72"
+
+#: src/plugins/myspace/res/indicators.tenjin:75
+msgid "New Recently Added Friends"
+msgstr "|\\|3\\/\\/ |23(3|\\|7|_'/ 4|)|)3|) |=|213|\\||)2"
+
+#: src/plugins/myspace/res/indicators.tenjin:82
+msgid "New Video Comments"
+msgstr "|\\|3\\/\\/ \\/1|)30 (0|\\/||\\/|3|\\|72"
+
+# MARK: Fragment
+#: src/plugins/myspace/res/likes.tenjin:18
+#: src/plugins/myspace/res/likes.tenjin:32
+msgid "liked this"
+msgstr "|_1|<3|) |)15"
+
+#: src/plugins/nowplaying/nowplaying.py:29
+msgid "Listening to music"
+msgstr "|_1573|\\|1|\\|' 2 |\\/||_|51("
+
+#: src/plugins/nowplaying/nowplaying.py:182
+msgid "Listening To..."
+msgstr "|_1573|\\|1|\\|' 2 |\\/||_|51("
+
+#: src/plugins/provider_aol/aol_sp.py:79
+msgid "Password should be 8 characters or less."
+msgstr "P455\\/\\/0|2|) 5#0|_||_|) |3 8 (#4|24(73|22 0|2 |_355."
+
+#: src/plugins/provider_aol/info.yaml:5
+msgid "AOL/AIM Account"
+msgstr "40|_/41|\\/| 4((0|_||\\|72"
+
+#: src/plugins/provider_aol/info.yaml:13 src/plugins/provider_aol/info.yaml:56
+#: src/plugins/provider_aol/info.yaml:73
+msgid "Screen Name"
+msgstr "5(|233|\\| |\\|4|\\/|3"
+
+#: src/plugins/provider_aol/info.yaml:63
+msgid "AOL Mail"
+msgstr "40|_ |\\/|41|_"
+
+#: src/plugins/provider_aol/info.yaml:72
+msgid "AIM"
+msgstr "41|\\/|"
+
+#: src/plugins/provider_aol/info.yaml:99
+msgid "ICQ Account"
+msgstr "1(Q 4((0|_||\\|7"
+
+#: src/plugins/provider_aol/info.yaml:109
+msgid "UIN or Email"
+msgstr "|_|1|\\| 0|2 3|\\/|41|_"
+
+#: src/plugins/provider_aol/info.yaml:117
+#: src/plugins/provider_jabber/info.yaml:25
+msgid "Chat"
+msgstr "(#47"
+
+#: src/plugins/provider_aol/info.yaml:141
+msgid "Not Available"
+msgstr "|\\|07 4\\/41|_4|3|_3"
+
+#: src/plugins/provider_aol/info.yaml:143
+msgid "ICQ Number"
+msgstr "1(Q |\\||_||\\/||33|2"
+
+#: src/plugins/provider_facebook/info.yaml:0
+#: src/plugins/provider_facebook/info.yaml:10
+msgid "Facebook Account"
+msgstr "|=4(3|300|< 4((0|_||\\|7"
+
+#: src/plugins/provider_jabber/info.yaml:5
+msgid "Jabber Account"
+msgstr "J4|3|33|2 4((0|_||\\|72"
+
+#: src/plugins/provider_jabber/info.yaml:15
+#: src/plugins/provider_jabber/info.yaml:28
+msgid "Jabber ID"
+msgstr "J4|3|33|2 1||)"
+
+#: src/plugins/provider_jabber/jabber_gui.py:33
+msgid "Use TLS if Possible"
+msgstr "|_|53 7|_5 1|= P0551|3|_3"
+
+#: src/plugins/provider_jabber/jabber_gui.py:34
+msgid "Require TLS"
+msgstr "|23Q|_|1|23 7|_5"
+
+#: src/plugins/provider_jabber/jabber_gui.py:35
+msgid "Force SSL"
+msgstr "|=0|2(3 55|_"
+
+# MARK: Should be translated?
+#: src/plugins/provider_jabber/jabber_gui.py:36
+msgid "No Encryption"
+msgstr "|\\|0 3|\\|(|21P710|\\|"
+
+#: src/plugins/provider_jabber/jabber_gui.py:50
+msgid "Ignore SSL Warnings"
+msgstr "16|\\|0|23 55|_ \\/\\/4|2|\\|1|\\|62"
+
+#: src/plugins/provider_jabber/jabber_gui.py:54
+msgid "Allow Plaintext Login"
+msgstr "4|_|_0\\/\\/ P|_41|\\|73><7 |_061|\\|"
+
+#: src/plugins/provider_linkedin/info.yaml:0
+msgid "LinkedIn Account"
+msgstr "|_1|\\||<3|)1|\\| 4((0|_||\\|7"
+
+#: src/plugins/provider_myspace/info.yaml:0
+msgid "MySpace Account"
+msgstr "|\\/|'/5P4(3 4((0|_||\\|72..."
+
+#: src/plugins/provider_twitter/info.yaml:0
+msgid "Twitter Account"
+msgstr "7\\/\\/1773|2 4((0|_||\\|7"
+
+#: src/plugins/provider_twitter/info.yaml:10 src/plugins/twitter/info.yaml:10
+msgid "Twitter ID"
+msgstr "7\\/\\/1773|2 1 |)"
+
+#: src/plugins/provider_windows_live/info.yaml:1
+msgid "Windows Live"
+msgstr "\\/\\/1|\\||)0\\/\\/2 |_1\\/3"
+
+#: src/plugins/provider_windows_live/info.yaml:10
+msgid "Windows Live Account"
+msgstr "\\/\\/1|\\||)0\\/\\/2 |_1\\/3 4((0|_||\\|7"
+
+#: src/plugins/provider_windows_live/info.yaml:33
+msgid "Busy"
+msgstr "|3|_|5'/"
+
+#: src/plugins/provider_windows_live/info.yaml:54
+msgid "Live Messenger"
+msgstr "|_1\\/3 |\\/|355463|2"
+
+#: src/plugins/provider_windows_live/info.yaml:77
+msgid "Hotmail"
+msgstr "|-|07|\\/|41|_"
+
+#: src/plugins/provider_windows_live/wl_sp.py:17
+msgid "Password should be 16 characters or less."
+msgstr "P455\\/\\/0|2|) 5#0|_||_|) |3 16 (#4|24(73|22 0|2 |_355."
+
+#: src/plugins/provider_windows_live/wl_sp.py:22
+msgid "You can't have your password as your display name."
+msgstr "J00 (4|\\|'7 #4\\/3 '/0 P455\\/\\/0|2|) 42 '/0 |)15P|_4'/ |\\|4|\\/|3."
+
+#: src/plugins/provider_yahoo/info.yaml:0
+msgid "Yahoo Account"
+msgstr "'/4#00 4((0|_||\\|7"
+
+#: src/plugins/researchdriver/researchtoast.py:30
+msgid "Help Digsby Stay Free"
+msgstr "#3|_P |)165|3'/ 574'/ |=|233"
+
+#: src/plugins/researchdriver/researchtoast.py:32
+msgid "You are helping Digsby stay free by allowing Digsby to use your PC's idle time."
+msgstr "J00 12 #3|_P1|\\|' |)165|3'/ 574'/ |=|233 |3'/ 4|_|_0\\/\\/1|\\|' |)165b'/ 2 |_|53 '/0 P('2 1|)|_3 71|\\/|3."
+
+#: src/plugins/twitter/info.yaml:0
+msgid "Twitter"
+msgstr "7\\/\\/1773|2"
+
+#: src/plugins/twitter/info.yaml:3
+msgid "Timeline"
+msgstr "71|\\/||_1|\\|3"
+
+#: src/plugins/twitter/notifications.yaml:1
+msgid "Twitter Update"
+msgstr "7\\/\\/1773|2 |_|P|)473"
+
+#: src/plugins/twitter/notifications.yaml:9
+msgid "Twitter Direct Message"
+msgstr "7\\/\\/1773|2 |)1|23(7 |\\/|355463"
+
+#: src/plugins/twitter/res/alerts.tenjin:6
+msgid "Search: "
+msgstr "534|2(#"
+
+# MARK: Partial
+#: src/plugins/twitter/res/alerts.tenjin:8
+msgid "Group: "
+msgstr "6|20|_|P:"
+
+#: src/plugins/twitter/res/alerts.tenjin:25
+msgid "No alerts"
+msgstr "|\\|0 4|_3|272:"
+
+#: src/plugins/twitter/res/content.tenjin:34
+msgid "Trending Topics"
+msgstr "7|23|\\||)1|\\|' 70P1(2:"
+
+#: src/plugins/twitter/res/status.tenjin:20
+msgid "What are you doing?"
+msgstr "\\/\\/07 12 J00 |)01|\\|'?"
+
+#: src/plugins/twitter/res/tweet.tenjin:80
+msgid "Share"
+msgstr "5#4|23"
+
+#: src/plugins/twitter/twgui.py:31
+msgid "Follow Digsby on Twitter"
+msgstr "|=0|_|_0\\/\\/ |)165|3'/ 0|\\| 7\\/\\/1773|2"
+
+#: src/plugins/twitter/twgui.py:37
+msgid "Post achievements to my feed"
+msgstr "P057 4(#13\\/3|\\/|3|\\|72 2 |\\/|'/ |=33|)"
+
+#: src/plugins/twitter/twitter.py:216
+msgid "Followers"
+msgstr "|=0|_|_0\\/\\/3|22"
+
+#: src/plugins/twitter/twitter.py:217
+msgid "Following"
+msgstr "|=0|_|_0\\/\\/1|\\|'"
+
+#: src/plugins/twitter/twitter.py:231
+msgid "Invite Friends"
+msgstr "1|\\|\\/173 |=|213|\\||)2"
+
+#: src/plugins/twitter/twitter.py:606 src/plugins/twitter/twitter_gui.py:702
+msgid "Favorites"
+msgstr "|=4\\/0|21732"
+
+#: src/plugins/twitter/twitter.py:607 src/plugins/twitter/twitter_gui.py:703
+msgid "History"
+msgstr "#1570|2'/"
+
+#: src/plugins/twitter/twitter.py:851
+msgid "Reply"
+msgstr "|23P|_'/"
+
+#: src/plugins/twitter/twitter.py:852
+msgid "Retweet"
+msgstr "|237\\/\\/337"
+
+#: src/plugins/twitter/twitter.py:853
+msgid "Direct"
+msgstr "|)1|23(7"
+
+#: src/plugins/twitter/twitter.py:1207
+msgid "Twitter Error"
+msgstr "7\\/\\/1773|2 3|2|23|2"
+
+#: src/plugins/twitter/twitter.py:1208
+msgid "Send Tweet Failed"
+msgstr "53|\\||) 7\\/\\/337 |=41|_3|)"
+
+# MARK: Used? Formatting
+#: src/plugins/twitter/twitter_account_gui.py:7
+msgid ""
+"Twitter allows for 150 requests per hour. Make sure to\n"
+"leave room for manual updates and other actions."
+msgstr ""
+"7\\/\\/1773|2 4|_|_0\\/\\/2 4 150 |23Q|_|3572 P3|2 #0|_||2. |\\/|4|<3 5|_||23 2\n"
+"|_34\\/3 |200|\\/| 4 |\\/|4|\\||_|4|_ |_|P|)4732 |\\| 07#3|2 4(710|\\|2."
+
+#: src/plugins/twitter/twitter_account_gui.py:13
+msgid "Friends:"
+msgstr "|=|213|\\||)2:"
+
+#: src/plugins/twitter/twitter_account_gui.py:14
+msgid "Mentions:"
+msgstr "|\\/|3|\\|710|\\|2:"
+
+#: src/plugins/twitter/twitter_account_gui.py:15
+msgid "Directs:"
+msgstr "|)1|23(72:"
+
+#: src/plugins/twitter/twitter_account_gui.py:16
+msgid "Searches:"
+msgstr "534|2(#35:"
+
+#: src/plugins/twitter/twitter_account_gui.py:34
+msgid "{mins} minute"
+msgid_plural "{mins} minutes"
+msgstr[0] "{mins} |\\/|1|\\||_|7 |_||\\|17"
+msgstr[1] "{mins} |\\/|1|\\||_|7 |_||\\|175"
+
+#: src/plugins/twitter/twitter_account_gui.py:37
+msgid "Never"
+msgstr "|\\|3\\/3|2"
+
+#: src/plugins/twitter/twitter_account_gui.py:93
+msgid "Update Frequency:"
+msgstr "|_|P|)473 |=|23Q|_|3|\\|('/:"
+
+#: src/plugins/twitter/twitter_account_gui.py:109
+msgid "Auto-throttle when Twitter lowers the rate limit."
+msgstr "4|_|70-7#|2077|_3 \\/\\/#3|\\| 7\\/\\/1773|2 |_0\\/\\/3|22 73# |2473 |_1|\\/|17."
+
+#: src/plugins/twitter/twitter_account_gui.py:112
+msgid "Server"
+msgstr "53|2\\/3|2:"
+
+#: src/plugins/twitter/twitter_account_gui.py:181
+msgid "{total_updates} / hour"
+msgstr "{total_updates} / |-|0|_||2"
+
+#: src/plugins/twitter/twitter_gui.py:123
+msgid "&Search"
+msgstr "&534|2(#"
+
+#: src/plugins/twitter/twitter_gui.py:127
+msgid "Twitter Search"
+msgstr "7\\/\\/1773|2 534|2(#"
+
+#: src/plugins/twitter/twitter_gui.py:187
+msgid "Search For:"
+msgstr "534|2(# |=0|2:"
+
+#: src/plugins/twitter/twitter_gui.py:195
+msgid "Title:"
+msgstr "717|_3:"
+
+#: src/plugins/twitter/twitter_gui.py:201
+msgid "Trending Topics:"
+msgstr "7|23|\\||)1|\\|' 70P1(2:"
+
+#: src/plugins/twitter/twitter_gui.py:211
+msgid "Search &Options"
+msgstr "534|2(# &OP710|\\|2"
+
+#: src/plugins/twitter/twitter_gui.py:212
+msgid "Merge search results into Timeline view"
+msgstr "|\\/|3|263 534|2(# |235|_||_72 1|\\|70 71|\\/|3|_1|\\|3 \\/13\\/\\/"
+
+#: src/plugins/twitter/twitter_gui.py:214
+msgid "Popup notifications for new search results"
+msgstr "P0P|_|P |\\|071|=1(4710|\\|2 4 |\\|3\\/\\/ 534|2(# |235|_||_72"
+
+#: src/plugins/twitter/twitter_gui.py:355
+msgid "Twitter Group"
+msgstr "7\\/\\/1773|2 6|20|_|P"
+
+#: src/plugins/twitter/twitter_gui.py:408
+msgid "&Group Name"
+msgstr "&6|20|_|p |\\|4|\\/|3"
+
+#: src/plugins/twitter/twitter_gui.py:413
+msgid "Group &Members"
+msgstr "6|20|_|P &M3|\\/||33|22"
+
+#: src/plugins/twitter/twitter_gui.py:426
+msgid "Group &Options"
+msgstr "6|20|_|P &0P710|\\|2"
+
+#: src/plugins/twitter/twitter_gui.py:427
+msgid "&Filter this group's tweets out of the Timeline view"
+msgstr "&|=1|_73|2 |)12 6|20|_|P'2 7\\/\\/3372 0|_|7 0|= 73# 71|\\/|3|_1|\\|3 \\/13\\/\\/"
+
+#: src/plugins/twitter/twitter_gui.py:429
+msgid "Show &popup notifications for this group's tweets"
+msgstr "5#0\\/\\/ &P0P|_|P |\\|071|=1(4710|\\|2 4 |)12 6|20|_|P'5 7\\/\\/3372"
+
+#: src/plugins/twitter/twitter_gui.py:606
+msgid "&Hide Toolbar"
+msgstr "&H1|)3 700|_|34|2"
+
+#: src/plugins/twitter/twitter_gui.py:612
+msgid "Shorten &Links"
+msgstr "5#0|273|\\| &L1|\\||<2"
+
+#: src/plugins/twitter/twitter_gui.py:613
+msgid "Image"
+msgstr "1|\\/|463"
+
+#: src/plugins/twitter/twitter_gui.py:614
+msgid "Shrink"
+msgstr "5#|21|\\||<"
+
+#: src/plugins/twitter/twitter_gui.py:710
+msgid "New Group..."
+msgstr "|\\|3\\/\\/ 6|20|_|P"
+
+#: src/plugins/twitter/twitter_gui.py:711
+msgid "New Search..."
+msgstr "|\\|3\\/\\/ 534|2(#..."
+
+#: src/plugins/twitter/twitter_gui.py:712
+msgid "Edit and Rearrange..."
+msgstr "3|)17 |\\| R34|2|24|\\|63"
+
+#: src/plugins/twitter/twitter_gui.py:1006
+msgid "Shortening..."
+msgstr "5#0|273|\\|1|\\|'"
+
+#: src/plugins/twitter/twitter_gui.py:1102
+msgid "Are you sure you want to upload the image in your clipboard?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 2 |_|P|_04|) 73# 1|\\/|463 1|\\| '/0 (|_1P|304|2|)?"
+
+#: src/plugins/twitter/twitter_gui.py:1103
+msgid "Image Upload"
+msgstr "1|\\/|463 |_|P|_04|)"
+
+#: src/plugins/twitter/twitter_gui.py:1385
+msgid "&Rearrange"
+msgstr "&R34|2|24|\\|63"
+
+#: src/plugins/twitter/twitter_gui.py:1387
+msgid "Edit and &Rearrange"
+msgstr "3|)17 |\\| &R34|2|24|\\|63"
+
+#: src/plugins/twitter/twitter_gui.py:1390
+msgid "&Mark As Read"
+msgstr "&M4|2|< 42 |234|)"
+
+#: src/plugins/twitter/twitter_gui.py:1393
+msgid "&Adds to Unread Count"
+msgstr "&4|)|)2 2 |_||\\||234|) (0|_||\\|7"
+
+#: src/plugins/twitter/twitter_gui.py:1511
+msgid "Text Size"
+msgstr "73><7 5123"
+
+#: src/plugins/twitter/twitter_gui.py:1601
+msgid "Shorten URLs\tCtrl+L"
+msgstr "5#0|273|\\| |_||2|_\tCtrl+L"
+
+#: src/plugins/twitter/twitter_gui.py:1602
+msgid "Share Picture\tCtrl+P"
+msgstr "5#4|23 P1(7|_||23\tCtrl+P"
+
+#: src/plugins/twitter/twitter_gui.py:1603
+msgid "TweetShrink\tCtrl+S"
+msgstr "7\\/\\/3375#|21|\\||<\tCtrl+S"
+
+#: src/plugins/twitter/twitter_gui.py:1605
+msgid "Set Global Status\tCtrl+G"
+msgstr "537 6|_0|34|_ 5747|_|2\tCtrl+G"
+
+#: src/plugins/twitter/twitter_gui.py:1607
+msgid "Auto Shorten Pasted URLs"
+msgstr "4|_|70 5#0|273|\\| P4573|) |_||2|_2"
+
+#: src/plugins/twitter/twitter_gui.py:1608
+msgid "Auto Upload Pasted Images"
+msgstr "4|_|70 |_|P|_04|) P4573|) 1|\\/|4632"
+
+#: src/plugins/twitter/twitter_gui.py:1609
+msgid "Auto Scroll When At Bottom"
+msgstr "4|_|70 5(|20|_|_ \\/\\/#3|\\| 47 |30770|\\/|"
+
+#: src/plugins/twitter/twitter_gui.py:1730
+msgid "Your tweet has spelling errors."
+msgstr "7\\/\\/337 5P3|_|_1|\\|' 3|2|20|22"
+
+#: src/plugins/twitter/twitter_gui.py:1731
+msgid "Are you sure you'd like to send it?"
+msgstr "12 J00 5|_||23 J00 \\/\\/4|\\|7 |)0 |)12?"
+
+#: src/plugins/twitter/twitter_gui.py:1735
+msgid "Tweet spelling errors"
+msgstr "7\\/\\/337 5P3|_|_1|\\|' 3|2|20|22"
+
+#: src/plugins/twitter/twitter_gui.py:1738
+msgid "Send Anyways"
+msgstr "53|\\||) 4|\\|'/\\/\\/4'/2"
+
+#: src/plugins/twitter/twitter_gui.py:1996
+msgid "Twitter Groups and Searches"
+msgstr "7\\/\\/1773|2 6|20|_|P5 |\\| 534|2(#32"
+
+#: src/plugins/twitter/twitter_gui.py:2020
+msgid "Refresh Now"
+msgstr "|23|=|235# |\\|0\\/\\/"
+
+#: src/plugins/twitter/twitter_gui.py:2021
+msgid "Mark All As Read"
+msgstr "|\\/|4|2|< 4|_|_ 42 |234|)"
+
+#: src/plugins/twitter/twitter_gui.py:2046
+msgid "Set Status"
+msgstr "537 5747|_|5"
+
+#: src/plugins/twitter/twitter_gui.py:2064
+#, python-format
+msgid "Twitter (%s)"
+msgstr "7\\/\\/1773|2 (%s)"
+
+#: src/plugins/twitter/twitter_gui.py:2290
+msgid "&Invite Followers"
+msgstr "&1|\\|\\/173 |=0|_|_0\\/\\/3|22"
+
+#: src/plugins/twitter/twitter_gui.py:2291
+msgid "&No Thanks"
+msgstr "&N0 7#4|\\||<2"
+
+#: src/plugins/twitter/twitter_gui.py:2304
+msgid "Invite Twitter Followers"
+msgstr "1|\\|\\/173 7\\/\\/1773|2 |=0|_|_0\\/\\/3|22"
+
+# MARK: Formatting, Reproduction
+#: src/plugins/twitter/twitter_gui.py:2305
+msgid ""
+"Please support Digsby by helping us spread the word. Would\n"
+"you like to send a direct message to your Twitter followers\n"
+"inviting them to Digsby?"
+msgstr ""
+"P|_3453 5|_|PP0|27 |)165|3'/ |3'/ #3|_P1|\\|' |_|2 5P|234|) 73# \\/\\/0|2|)! \\/\\/0|_||_|)\n"
+"J00 \\/\\/|_||3 2  53|\\||) @ |)1|23(7 |\\/|355463 2 '/0 7\\/\\/1773|2 |=0|_|_0\\/\\/3r2\n"
+"1|\\|\\/171|\\|' 7#3|\\/| 2 |)165|3'/?"
+
+#: src/plugins/twitter/twitter_notifications.py:76
+#, python-format
+msgid "Twitter - %(feed_label)s (%(username)s)"
+msgstr "7\\/\\/1773|2 - %(feed_label)s (%(username)s)"
+
+#: src/plugins/twitter/twitter_notifications.py:78
+#, python-format
+msgid "Twitter - Group: %(feed_label)s (%(username)s)"
+msgstr "7\\/\\/1773|2 - 6|20|_|P: %(feed_label)s (%(username)s)"
+
+#: src/plugins/twitter/twitter_util.py:83
+msgid "about a minute ago"
+msgstr "4|30|_|7 @ |\\/|1|\\||_|73  460"
+
+#: src/plugins/twitter/twitter_util.py:85
+msgid "about {minutes} minutes ago"
+msgstr "4|30|_|7 {minutes} |\\/|1|\\||_|732  460"
+
+#: src/plugins/twitter/twitter_util.py:87
+msgid "about an hour ago"
+msgstr "4|30|_|7 |\\| #0|_||2 460"
+
+#: src/plugins/twitter/twitter_util.py:89
+msgid "about {hours} hours ago"
+msgstr "4|30|_|7 {hours} #0|_||22 460"
+
+#: src/plugins/twitter/twitter_util.py:91
+msgid "about a day ago"
+msgstr "4|30|_|7 @ |)4'/ 460"
+
+#: src/plugins/twitter/twitter_util.py:93
+msgid "about {days} days ago"
+msgstr "4|30|_|7 {days} |)4'/2 460"
+
+#: src/util/diagnostic.py:584 src/util/diagnostic.py:941
+msgid "Submit Bug Report"
+msgstr "5|_||3|\\/|17 |3|_|6 |23p0|27"
+
+#: src/util/diagnostic.py:587
+msgid "Bug report submitted successfully."
+msgstr "|3|_|6 |23P0|27 5|_||3|\\/|1773|) 5|_|((355|=|_||_|_'/."
+
+#: src/util/diagnostic.py:589
+msgid "Bug report submission failed."
+msgstr "|3|_|6 |23P0|27 5|_||3|\\/|15510|\\| |=41|_!"
+
+#: src/util/diagnostic.py:916
+msgid "Please wait while we process the diagnostic information."
+msgstr "P|_3453 \\/\\/417 \\/\\/#1|_3 \\/\\/3 P|20(352 73# |)146|\\|0571( 1|\\||=0|2|\\/|4710|\\|."
+
+#: src/util/diagnostic.py:917
+msgid "Thanks for your patience!"
+msgstr "7#4|\\||<2 4 '/0 P4713|\\|(3!"
+
+#: src/util/diagnostic.py:919
+msgid "Processing Diagnostic Info"
+msgstr "P|20(3551|\\|' |)146|\\|0571( 1|\\||=0"
+
+#: src/util/diagnostic.py:922
+msgid "There was a problem submitting your bug report."
+msgstr "7#3|23 \\/\\/|_|2 |\\| 3|2|20|2 5|_||3|\\/|1771|\\|' '/0 (|245# |23P0|27."
+
+#: src/util/diagnostic.py:923
+msgid "If the problem persists, please email bugs@digsby.com"
+msgstr "1|= 73# P|20|3|_3|\\/| P3|251572, P|_3453 3|\\/|41|_ bugs@digsby.com"
+
+#: src/util/diagnostic.py:930
+msgid "Bug report sent successfully."
+msgstr "|3|_|6 |23P0|27 53|\\|7 5|_|((355|=|_||_|_Y."
+
+#: src/util/httplib2/httplib2.py:343
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr "(0|\\|73|\\|7 P|_||2P0|273|) 2 |3 (0|\\/|P|23553|) \\/\\/17# %s |3|_|7 |=41|_3|) 2 |)3(0|\\/|P|2355."
+
+#: src/util/httplib2/httplib2.py:502
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr "73# (#4|_|_3|\\|63 |)03s|\\|'7 (0|\\|741|\\| @ 53|2\\/3|2 |\\|0|\\|(3, 0|2 |)12 0|\\|3 |3 3|\\/|P7'/."
+
+#: src/util/httplib2/httplib2.py:946
+msgid "Redirected but the response is missing a Location: header."
+msgstr "|23|)1|23(73|) |3|_|7 73# |235P0|\\|53 |3 |\\/|1551|\\|' @ |_0(4710|\\|: #34|)3|2."
+
+#: src/util/httplib2/httplib2.py:973
+msgid "Redirected more times than rediection_limit allows."
+msgstr "|23|)1|23(73|) |\\/|0|23 71|\\/|32 7#4|\\| |23|)13(710|\\|_|_1|\\/|17 4|_|_0\\/\\/2."
+
+#: src/util/perfmon.py:127
+msgid ""
+"A log of the problem has been sent to digsby.com.\n"
+"\n"
+"Thanks for helping!"
+msgstr ""
+"@ |_06 0|= 73# P|20|3|_3|\\/| #42 |333|\\| 53|\\|7 2 |)165|3'/.(0|\\/|.\n"
+"\n"
+"7#4|\\||<2 4 #3|_P1|\\|'!"
+
+#: src/util/perfmon.py:128
+msgid "Diagnostic Log"
+msgstr "|)146|\\|0571( |_06"
+
+#: src/util/perfmon.py:132
+msgid "There was an error when submitting the diagnostic log."
+msgstr "7#3|23 \\/\\/|_|2 |\\| 3|2|20|2 \\/\\/#3|\\| 5|_||3|\\/|1771|\\|' 73# |)146|\\|0571( |_06."
+
+#: src/util/perfmon.py:146
+msgid "Digsby appears to be running slowly."
+msgstr "|)165|3'/ |331|\\| 5|_0\\/\\/?"
+
+#: src/util/perfmon.py:147
+msgid "Do you want to capture diagnostic information and send it to digsby.com?"
+msgstr "(4P7|_||2 |)146|\\|0571(2 |\\| 53|\\||) 2 |)165|3'/?"
+
+#: src/util/perfmon.py:151
+msgid "Digsby CPU Usage"
+msgstr "|)165|3'/ (P|_| |_|5463"
+
+# MARK: Shuold be translated, not actually correct, may not exist in other languages
+#: src/util/primitives/strings.py:587
+msgid "aeiou"
+msgstr "aeiou"
+
+# MARK: Fragment, Should exist?
+#: src/util/primitives/strings.py:588
+msgid "an"
+msgstr "|\\|"
+
+# MARK: Fragment, I don't know what this is
+#: src/util/primitives/strings.py:590
+msgid "a"
+msgstr "@ "
+
+# MARK: Key replacement
+#: src/util/primitives/strings.py:592
+#, python-format
+msgid "%(article)s %(s)s"
+msgstr "%(article)s %(s)s"
+
+#: src/yahoo/YahooProtocol.py:1163
+msgid "May I add you to my contact list?"
+msgstr "|\\/|4'/ 1 4|)|) J00 2 |\\/|'/ (0|\\|74(7 |_157?"
+
+#: src/yahoo/YahooProtocol.py:1323
+msgid "There was an error modifying stealth settings for {name}."
+msgstr "7#3|23 \\/\\/|_|2 |\\| 3|2|20|2 |\\/|0|)1|='/1|\\|' 5734|_7# 53771|\\|62 4 {name}"
+
+#: src/yahoo/login.py:35
+msgid "Bad Password"
+msgstr "|34|) P455\\/\\/0|2|)"
+
+#: src/yahoo/login.py:36
+msgid "There is a security lock on your account. Log in to http://my.yahoo.com and try again."
+msgstr "7#3|23 |3 @ 53(|_||217'/ |_0(|< 0|\\| '/0 4((0|_||\\|7. |_06 1|\\| 2  http://my.yahoo.com |\\| 7|2'/ 4641|\\|."
+
+#: src/yahoo/login.py:37
+msgid "Account Not Set Up"
+msgstr "4((0|_||\\|7 |\\|07 537 |_|P"
+
+#: src/yahoo/login.py:38
+msgid "Bad Username"
+msgstr "|34|) |_|53|2|\\|4|\\/|3"
+
+#: src/yahoo/login.py:39
+msgid "Rate Limit"
+msgstr "|2473 |_1|\\/|17"
+
+#: src/yahoo/yahoobuddy.py:130
+msgid "No Updates"
+msgstr "|\\|0 |_|P|)4732"
+
+#: src/yahoo/yahoobuddy.py:134 src/yahoo/yahoobuddy.py:137
+#: src/yahoo/yahoobuddy.py:151 src/yahoo/yahoobuddy.py:173
+msgid "Yahoo! 360:"
+msgstr "'/4#00! 360:"
+
+#: src/yahoo/yahoobuddy.py:145 src/yahoo/yahoobuddy.py:167
+#: src/yahoo/yahoobuddy.py:174 src/yahoo/yahoobuddy.py:195
+#: src/yahoo/yahoobuddy.py:203
+msgid "Directory URL:"
+msgstr "|)1|23(70|2'/ |_||2|_:"
+
+#: src/yahoo/yahoobuddy.py:152
+msgid "Real Name:"
+msgstr "|234|_ |\\|4|\\/|3:"
+
+#: src/yahoo/yahoobuddy.py:153
+msgid "Nickname:"
+msgstr "|\\|1(|<|\\|4|\\/|3:"
+
+#: src/yahoo/yahoobuddy.py:155
+msgid "Age:"
+msgstr "463:"
+
+#: src/yahoo/yahoobuddy.py:156
+msgid "Sex:"
+msgstr "53><:"
+
+#: src/yahoo/yahoobuddy.py:157
+msgid "Marital Status:"
+msgstr "|\\/|4|2174|_ 5747|_|5:"
+
+#: src/yahoo/yahoobuddy.py:158
+msgid "Occupation:"
+msgstr "0((|_|P4710|\\|:"
+
+#: src/yahoo/yahoobuddy.py:159
+msgid "Email:"
+msgstr "3|\\/|41|_:"
+
+#: src/yahoo/yahoobuddy.py:160
+msgid "Home Page:"
+msgstr "#0|\\/|3P463:"
+
+#: src/yahoo/yahoobuddy.py:161 src/yahoo/yahoobuddy.py:181
+msgid "Hobbies:"
+msgstr "|-|0|3|3132:"
+
+#: src/yahoo/yahoobuddy.py:162 src/yahoo/yahoobuddy.py:181
+msgid "Latest News:"
+msgstr "|_47357 |\\|4\\/\\/32"
+
+#: src/yahoo/yahoobuddy.py:163 src/yahoo/yahoobuddy.py:181
+msgid "Favorite Quote:"
+msgstr "|=4\\/0|2173 Q|_|073:"
+
+#: src/yahoo/yahoobuddy.py:165 src/yahoo/yahoobuddy.py:195
+msgid "Member Since "
+msgstr "|\\/|3|\\/||33|2 51|\\|(3"
+
+#: src/yahoo/yahoobuddy.py:166 src/yahoo/yahoobuddy.py:195
+msgid "Last Update: "
+msgstr "|_457 |_|P|)473:"
+
+#, fuzzy
+#~ msgid "'Away']]"
+#~ msgstr "4\\/\\/4'/"
+
+#~ msgid "Newsfeed"
+#~ msgstr "5#0\\/\\/ |\\|3\\/\\/5|=33|):"
+
+#, fuzzy
+#~ msgid "\"Available\"], []]"
+#~ msgstr "4\\/41|_4|3|_3"
+
+#, fuzzy
+#~ msgid "'Available'],"
+#~ msgstr "4\\/41|_4|3|_3"
+
+# MARK: Fragment, Posible multilingual issue
+#~ msgid "from"
+#~ msgstr "|=|20|\\/|"
+
+# MARK: Should not be translated...
+#~ msgid "test"
+#~ msgstr "7357"
+
+# MARK: Fragment, %s replacement
+#~ msgid "to %s"
+#~ msgstr "2 %s"
+
+#~ msgid "&Submit"
+#~ msgstr "&5|_||3|\\/|17"
+
+#~ msgid "Sent "
+#~ msgstr "53|\\|7 "
+
+# MARK: %s replacement
+#~ msgid "Show %s:"
+#~ msgstr "5#0\\/\\/ %s:"
+
+# MARK: Reproduced multiple times...
+#~ msgid "Please describe the bug in as much detail as possible. Include information such as what you were doing when the bug occured and exactly what goes wrong."
+#~ msgstr "P|_3453 |)35(|21|33 73# |3|_|6 1|\\| 42 |\\/||_|(# ||)3741|_ 42 P0551|3|_3.  1|\\|(|_|_||)3 1|\\||=0|2|\\/|4710|\\| 5|_|(# 42 \\/\\/07 J00 \\/\\/|_|2 |)01|\\|' \\/\\/#3|\\| 73# |3|_|6 0((|_||2|23|) |\\| ><4(7|_'/ \\/\\/07 6032 \\/\\/|20|\\|6."
+
+# MARK: Fragment
+#~ msgid "..."
+#~ msgstr "..."
+
+# MARK: Formatting, duplicated
+#~ msgid ""
+#~ "This diagnostic log file does not contain personal data such as the content of sent/received IMs,\n"
+#~ "the content of emails, and the content of social network newsfeeds except where it directly pertains to an error."
+#~ msgstr ""
+#~ "|)12 |)146|\\|0571( |_06 |=1|_3 |)032 |\\|07 (0|\\|741|\\| P3|250|\\|4|_ |)474 5|_|(# 42 73# (0|\\|73|\\|7 0|= 53|\\|7/|23(31\\/3|) 1|\\/|2,\n"
+#~ "73# (0|\\|73|\\|7 0|= 3|\\/|41|_2, |\\| 73# (0|\\|73|\\|7 0|= 50(14|_ |\\|37\\/\\/0|2|< |\\|3\\/\\/5|=33|)2 ><(3P7 \\/\\/#3|23 17 |)1|23(7|_'/ P3|2741|\\|2 2 |\\| 3|2|20|2."
+
+# MARK: Fragment
+#~ msgid "receive"
+#~ msgstr "|23(31\\/3"
+
+#~ msgid "blog subscriptions"
+#~ msgstr "|3|_06 5|_||35(|21P710|\\|2"
+
+# MARK: Fragment
+#~ msgid "send"
+#~ msgstr "53|\\||)"

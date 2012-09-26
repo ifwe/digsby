@@ -1,0 +1,9 @@
+name: 'Digsby IQ Version'
+path: 'digsby_iq_version'
+type: 'pure'
+
+entry_points:
+  digsby.jabber.session_started:
+    digsby_iq_version: digsby_iq_version:session_started
+  digsby.jabber.initialized:
+    digsby_iq_version: digsby_iq_version:initialized

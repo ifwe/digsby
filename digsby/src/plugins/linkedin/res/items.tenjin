@@ -1,0 +1,5 @@
+<?py for item in items: ?>
+    <?py _context['item'] = item ?>
+    <?py include(app.resource('item.tenjin')) ?>
+    <?py del _context['item'] ?>
+<?py #endfor ?>

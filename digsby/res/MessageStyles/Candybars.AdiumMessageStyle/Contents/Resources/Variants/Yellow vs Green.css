@@ -1,0 +1,56 @@
+
+    @import url("../base.css");
+
+
+    /* Text shadows and text opacity of incoming/outgoing messages: */
+    .incoming_row, .outgoing_row
+    {
+        color:					rgb(255, 255, 255);
+        text-shadow: 0 1px 2px	rgb(  0,   0,   0);
+    }
+
+
+    /* Background colors of incoming/outgoing messages: */
+
+    .incoming_row	{	background-color: #86C500;	}
+    .outgoing_row	{	background-color: #FFBA00;	}
+
+
+    /* Background colors of incoming/outgoing context messages: */
+
+    .incoming_row_context
+    {	color: #768B48;
+        background-color: #C3DD8C;
+    }
+
+    .outgoing_row_context
+    {	color: #CDAB50;
+        background-color: #FFE28C;
+    }
+
+
+    /* Color of links in incoming/outgoing messages */
+    .message_incoming a, .message_incoming_context a
+    {
+        color: #86C500;
+    }
+    .message_outgoing a, .message_outgoing_context a
+    {
+        color: #FFBA00;
+    }
+
+
+    /* Color of incoming/outgoing timestamps */
+    .incoming_row .timestamp, .outgoing_row .timestamp
+    {
+        color: #fff;
+    }
+
+    /* Status message colors: */
+    .status_row
+    {	color: #5B800B;
+        background-color: #E3F0C6;
+    }
+
+    /* Color for status message timestamp */
+    .status_row .timestamp	{	color: #7BA71B;		}

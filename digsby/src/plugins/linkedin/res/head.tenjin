@@ -1,0 +1,6 @@
+<script type="text/javascript">
+//<![CDATA[
+loader_img = '<img class="loader_img" src="' + '${app.resource('ajax-loader.gif', 'base').url()}' + '"/>';
+ensureLibrariesLoaded(["${lib.resource('pythonbridge.js', 'base').url()}"]);
+//]]>
+</script>

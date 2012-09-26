@@ -1,0 +1,22 @@
+<div class="comment" id="comment_${comment.id}" >
+    <div class="comment_icon_cell">
+        <img class="comment_icon" src="${feed.profiles[comment.fromid].pic_square}"/>
+    </div>
+    <div class="comment_text_cell">
+<?py if ('can_remove' in post.comments and post.comments.can_remove) or int(comment.fromid) == int(post.viewer_id): ?>
+    <div class="del_comment"><a href="javascript:null;" class="del_comment_link">X</a></div>
+<?py #endif ?>
+        <div class="comment_name">
+<?py if bool(feed.profiles[comment.fromid].url): ?>
+<a class="link no_ondown_link" href="${feed.profiles[comment.fromid].url}">${feed.profiles[comment.fromid].name or _("Facebook User")}</a>
+<?py else: ?>
+${feed.profiles[comment.fromid].name or _("Facebook User")}
+<?py #endif ?>
+            · <!--! this line has a dot  -->
+        </div>
+        <div class="comment_time time minor" timestamp="${comment.time}"></div>
+        <div class="comment_text">
+            #{linkify(preserve_newlines(escape(to_str(comment.text))))}
+        </div>
+    </div>
+</div>

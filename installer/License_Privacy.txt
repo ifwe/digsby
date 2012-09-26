@@ -1,0 +1,161 @@
+THIS IS A LEGAL AGREEMENT between "you," the end user of Digsby(R) brand software, and dotSyntax, LLC ("dotSyntax").
+
+Use of the software you are about to download or install indicates your acceptance of these terms.  You also agree to accept these terms by so indicating at the appropriate screen, prior to the download or installation process.  As used in this Agreement, the capitalized term "Software" means the Digsby instant messaging software, the Digsby service, the Digsby websites, the Digsby Widget, and all other software, features, tools, websites, widgets, and services offered by dotSyntax and its business divisions together with any and all enhancements, upgrades, and updates that may be provided to you in the future by dotSyntax.  IF YOU DO NOT AGREE TO THESE TERMS AND CONDITIONS, YOU SHOULD SO INDICATE AT THE APPROPRIATE SCREEN AND PROMPTLY DISCONTINUE THE INSTALLATION AND DOWNLOAD PROCESS.
+
+1.	OWNERSHIP.
+
+The Software and any accompanying documentation are owned by dotSyntax and ownership of the Software shall at all times remain with dotSyntax.  Copies are provided to you only to allow you to exercise your rights under this Agreement.  This Agreement does not constitute a sale of the Software or any accompanying documentation, or any portion thereof.  Without limiting the generality of the foregoing, you do not receive any rights to any patents, copyrights, trade secrets, trademarks or other intellectual property rights relating to or in the Software or any accompanying documentation.  All rights not expressly granted to you under this Agreement are reserved by dotSyntax.
+
+2.	HOW WE MAY MODIFY THIS CONTRACT.
+
+We may change this contract at any time.  You must review this contract on a regular basis.  You can find the most recent version of the contract at http://www.digsby.com/tos.php.  The changed contract is in effect right away.  If you do not agree to changes in the contract, then you must stop using the Software.  If you do not stop using the Software, then your use of the Software will continue under the changed contract.
+
+3.	HOW YOU MAY ACCESS AND USE THE SOFTWARE.
+
+You must be at least 13 years of age to use the Software. If dotSyntax discovers through reliable means that you are younger than 13, dotSyntax will cancel your account.
+
+We provide the Software for your personal use.  You may use the Software while you are at work, but you may not use the Software to conduct business without a separate written contract with dotSyntax.   
+
+You are responsible for all activity associated with your Software account and password.  You must notify dotSyntax right away of any use of your account that you did not authorize or any breach in security known to you that relates to the Software.  
+
+Do not provide your Software account and password to third parties.  You may not authorize any third party to access and/or use the Software on your behalf.  You may also not use any automated process or service to access and/or use the Software such as a BOT, a spider or periodic caching of information stored by dotSyntax.  You may not use any software or services with the Software or authorized third-party software which modifies or reroutes, or attempts to modify or reroute, the Software.  You may also not use any software or hardware that reduces the number of users directly accessing or using the Software (sometimes called 'multiplexing' or 'pooling' software or hardware).
+
+You may only use the Software or authorized third-party software to sign into and use the Software.
+
+
+4.	WHAT YOU MAY NOT DO WITH THE SOFTWARE.
+
+The privacy, safety and security of our Software and the users of our Software are very important to us.  You may not use the Software in any way that could harm the Software, other Software users, dotSyntax or our affiliates.   Some examples of harmful activity that we do not permit include:
+
+You will not, and will not permit others to: (i) reverse engineer, decompile, disassemble, derive the source code of, modify, or create derivative works from the Software; or (ii) use, copy, modify, alter, or transfer, electronically or otherwise, the Software or any of the accompanying documentation except as expressly permitted in this Agreement; or (iii) redistribute, sell, rent, lease, sublicense, or otherwise transfer rights to the Software whether in a stand-alone configuration or as incorporated with other software code written by any party except as expressly permitted in this Agreement.
+
+You will not use the Software to engage in or allow others to engage in any illegal activity.
+
+You will not engage in use of the Software that will interfere with or damage the operation of the services of third parties by overburdening/disabling network resources through automated queries, excessive usage or similar conduct.
+
+You will not use the Software to engage in any activity that will violate the rights of third parties, including, without limitation, through the use, public display, public performance, reproduction, distribution, or modification of communications or materials that infringe copyrights, trademarks, publicity rights, privacy rights, other proprietary rights, or rights against defamation of third parties.
+
+You will not transfer the Software or utilize the Software in combination with third party software authored by you or others to create an integrated software program which you transfer to unrelated third parties.
+
+5.	UPGRADES, UPDATES AND ENHANCEMENTS
+
+All upgrades, updates or enhancements of the Software shall be deemed to be part of the Software and will be subject to this Agreement.  The Software may communicate with dotSyntax's servers to check for available updates to the Software, including bug fixes, patches, enhanced functions, missing plug-ins and new versions (collectively, "Updates"). During this process, the Software sends dotSyntax a request for the latest version information. By installing the Software, you hereby agree to automatically request and receive Updates from dotSyntax's servers.
+
+6.	DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED ON AN AS IS BASIS, WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES THAT IT IS FREE OF DEFECTS, VIRUS FREE, ABLE TO OPERATE ON AN UNINTERRUPTED BASIS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING.  THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE AND AGREEMENT.  NO USE OF THE SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+7.	LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL DOTSYNTAX BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF ADVISED OF THE POSSIBILITY THEREOF, AND REGARDLESS OF THE LEGAL OR EQUITABLE THEORY (CONTRACT, TORT OR OTHERWISE) UPON WHICH THE CLAIM IS BASED.  IN ANY CASE, DOTSYNTAX'S COLLECTIVE LIABILITY UNDER ANY PROVISION OF THIS LICENSE SHALL NOT EXCEED IN THE AGGREGATE THE SUM OF THE FEES (IF ANY) YOU PAID FOR THIS LICENSE.
+
+8.	CHANGES TO THE SOFTWARE; ADDITIONAL LIABILITY LIMITATION.
+
+WE MAY CHANGE THE SOFTWARE OR DELETE FEATURES AT ANY TIME AND FOR ANY REASON. WITHOUT LIMITING THE GENERAL NATURE OF SECTIONS 6 AND 7, DOTSYNTAX IS NOT RESPONSIBLE OR LIABLE FOR (1) ANY CONTENT, INCLUDING WITHOUT LIMITATION, ANY INFRINGING, INACCURATE, OBSCENE, INDECENT, THREATENING, OFFENSIVE, DEFAMATORY, TORTIOUS, OR ILLEGAL CONTENT, OR (2) ANY THIRD PARTY CONDUCT, TRANSMISSIONS OR DATA. IN ADDITION, WITHOUT LIMITING THE GENERALITY OF SECTIONS 6 AND 7, DOTSYNTAX IS NOT RESPONSIBLE OR LIABLE FOR (1) ANY VIRUSES OR OTHER DISABLING FEATURES THAT AFFECT YOUR ACCESS TO OR USE OF THE SOFTWARE, (2) ANY INCOMPATIBILITY BETWEEN THE SOFTWARE AND OTHER WEB SITES, SERVICES, SOFTWARE AND HARDWARE, (3) ANY DELAYS OR FAILURES YOU MAY EXPERIENCE IN INITIATING, CONDUCTING OR COMPLETING ANY TRANSMISSIONS OR TRANSACTIONS IN CONNECTION WITH THE SOFTWARE IN AN ACCURATE OR TIMELY MANNER, OR (4) ANY DAMAGES OR COSTS OF ANY TYPE ARISING OUT OF OR IN ANY WAY CONNECTED WITH YOUR USE OF ANY SERVICES AVAILABLE FROM THIRD PARTIES THROUGH LINKS. THE LIMITATIONS, EXCLUSIONS AND DISCLAIMERS OF THIS CONTRACT APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, AND ARE NOT INTENDED TO DEPRIVE YOU OF ANY MANDATORY PROTECTIONS PROVIDED TO YOU UNDER APPLICABLE LAW. 
+
+9.	LEGENDS AND NOTICES
+
+You agree that you will not remove or alter any trademark, logo, copyright or other proprietary notices, legends, symbols or labels in the Software or any accompanying documentation.
+
+10.	TERMINATION OF SOFTWARE AND SERVICE.
+
+This Agreement is effective upon your acceptance as provided herein and payment of the applicable license fees (if any), and will remain in force until terminated.  You may terminate the licenses granted in this Agreement at any time by destroying the Software and any accompanying documentation, together with any and all copies thereof.  The licenses granted in this Agreement will terminate automatically if you breach any of its terms or conditions or any of the terms or conditions of any other agreement between you and dotSyntax.  Upon termination, you shall immediately destroy the original and all copies of the Software and any accompanying documentation, or return them to dotSyntax.
+
+11.	SOFTWARE SUGGESTIONS
+
+dotSyntax  welcomes suggestions for enhancing the Software and any accompanying documentation that may result in computer programs, reports, presentations, documents, ideas or inventions relating or useful to dotSyntax's business.  You acknowledge that all title, ownership rights, and intellectual property rights concerning such suggestions shall become the exclusive property of dotSyntax and may be used for its business purposes in its sole discretion without any payment or accounting to you.
+
+12.	EXPORT CONTROL
+
+The Software may contain encryption and is subject to United States export control laws and regulations and may be subject to export or import regulations in other countries, including controls on encryption products.  You agree that you will not export, re-export or transfer the Software in violation of any applicable laws or regulations of the United States or the country where you legally obtained it.  You are responsible for obtaining any licenses to export, re-export, transfer or import the Software.
+
+In addition to the above, the Software may not be used by, or exported or re-exported to: (i) any U.S. or EU sanctioned or embargoed country, or to nationals or residents of such countries; or (ii) to any person, entity or organization or other party identified on the U.S. Department of Commerce's Table of Denial Orders or the U.S. Department of Treasury's lists of Specially Designated Nationals and Blocked Persons, as published and revised from time to time; (iii) to any party engaged in nuclear, chemical/biological weapons or missile proliferation activities, unless authorized by U.S. and local (as required) law or regulations.
+
+12.	COPYRIGHT AND TRADEMARK INFORMATION
+
+COPYRIGHT NOTICE:  Copyright © 2007 - 2009 dotSyntax, LLC.  All Rights Reserved.
+"Digsby" and the digsby egg shaped logo are registered trademarks of dotSyntax, LLC.  All other trademarks, trade names service marks, service names are the property of their respective holders, including but not limited to, the following: 
+* "AIM" and the running man logo are registered trademarks of America Online, Inc.
+* "Google Talk" is a registered trademark of Google Inc.
+* "ICQ" is a registered mark of ICQ, Inc.
+* "JABBER" is a registered trademark of the Jabber Software Foundation
+* "MSN" and the butterfly logo are registered trademarks of Microsoft Corporation.
+* "Yahoo!" and "Yahoo! Messenger" are registered trademarks of Yahoo, Inc. 
+* "GMail" is a registered trademark of Google Inc.
+* "Facebook" is a registered trademark of Facebook Inc.
+* "MySpace" is a registered trademark MySpace Inc.
+* "LinkedIn" is a registered trademark of LinkedIn Inc.
+Digsby and dotSyntax are in no way affiliated with or endorsed by America Online, Inc., Google Inc., ICQ, Inc., Jabber Software Foundation, Microsoft Corporation, Yahoo, Inc., Facebook Inc., MySpace Inc., LinkedIn, Inc.
+
+All "Conversation Themes", sound sets, and emoticon sets are used with the consent of their original creators and/or license owners.
+
+14.	MISCELLANEOUS
+
+This Agreement constitutes the entire agreement between the parties concerning the Software, and may be amended only by a writing signed by both parties.  This Agreement shall be governed by the laws of the State of New York, excluding its conflict of law provisions.  All disputes relating to this Agreement are subject to the exclusive jurisdiction of the courts of New York and you expressly consent to the exercise of personal jurisdiction in the courts of New York in connection with any such dispute.  This Agreement shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods.  If any provision in this Agreement should be held illegal or unenforceable by a court of competent jurisdiction, such provision shall be modified to the extent necessary to render it enforceable without losing its intent, or severed from this Agreement if no such modification is possible, and other provisions of this Agreement shall remain in full force and effect.  A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, shall not waive such term or condition or any subsequent breach thereof.
+
+15. USAGE OF COMPUTER RESOURCES.
+
+You agree to permit the Software to use the processing power of your computer when it is idle to run downloaded algorithms (mathematical equations) and code within a process. You understand that when the Software uses your computer, it likewise uses your CPU, bandwidth, and electrical power. The Software will use your computer to solve distributed computing problems, such as but not limited to, accelerating medical research projects, analyzing the stock market, searching the web, and finding the largest known prime number. This functionality is completely optional and you may disable it at any time.
+
+16. DIGSBY DONATES
+dotSyntax offers a browser plugin called Digsby Donates. Installation and usage of the plugin Software indicates your acceptance of the terms of service found at http://www.digsby.com/freecause.php
+
+17. PERFORMANCE AND USAGE DATA.
+
+dotSyntax may automatically upload performance and usage data for evaluating the Software. Such data will not personally identify you. 
+
+18.	CUSTOMER SUPPORT.
+
+Please consult the "help" section of the Software for how we may provide you with customer support ("Support").  Unless you have entered into a separate written support contract with dotSyntax for the Software, however, we may terminate any Support we provide at any time. 
+ 
+Authorized third-party software that uses the Software is not supported by dotSyntax.  You should contact the provider of such software for support, if any. 
+
+19.	PRIVACY POLICY
+
+The Privacy Policy available at http://www.digsby.com/privacy.php explains dotSyntax's information practices that apply to your Registration Information and other information about you and your use of Digsby. You consent to the transfer of this information to and within the United States or other countries for processing and storage by us. Additionally, you agree that Digsby may use your username and password to authenticate you on the Software.
+
+PRIVACY POLICY
+Last Updated: May 20, 2008
+
+This privacy policy governs your use of the DIGSBY software, the DIGSBY service, the DIGSBY websites, the DIGSBY Widget, and all other software, features, tools, websites, widgets, and services offered by or through DIGSBY ("DIGSBY Products") from DOTSYNTAX LLC and its business divisions.
+
+When you register with DIGSBY, and use DIGSBY Products, you provide DIGSBY and DOTSYNTAX LLC with personally identifiable information (your "DIGSBY information"). This Policy explains the information practices that apply to your DIGSBY information. This Policy does not apply to information collected by third party Web sites linked to or otherwise accessible from offerings presented through DIGSBY Products and DOTSYNTAX LLC. The information collected or received by third party Web sites is subject to their own privacy policies.
+
+Collection of Your DIGSBY Information
+Your DIGSBY information consists of personally identifiable information collected or received about you when you register to use DIGSBY or log in to DIGSBY as a registered user and interact with DIGSBY Products. Depending on how you use DIGSBY Products, your DIGSBY information may include registration-related information (such as e-mail address); information about your visits to DIGSBY Web sites and pages; information about contacts on your Buddy List (such as alias, SMS numbers, and email addresses); information about the features or offerings from DIGSBY that you use, and how frequently you use them; customer service information about you as a DIGSBY user; and other information specifically related to your use of a particular DIGSBY feature or offering.
+
+In order to access your third party Instant Messaging, Email, and Social Network accounts, you must enter your applicable user name(s) and password(s) in to DIGSBY. This information is stored on our servers and is encrypted in a manner that would prevent anyone, including DOTSYNTAX LLC employees from accessing your passwords. We are 100% transparent about our security procedures and you can read about the exact steps we take to protect your data at http://security.digsby.com.
+
+Your DIGSBY information may also include certain technical information gathered by DIGSBY and DOTSYNTAX LLC when you use DIGSBY Products. Some of the technical information that may be collected or received includes: the type of browser you are using (e.g., Firefox, Internet Explorer), the type of operating system you are using (e.g., Windows XP or Mac OS), CPU type (e.g. Pentium), your manner of connecting to the Internet (e.g, connection speed through narrowband or broadband access); Internet protocol address; other information about your geographic location; and the domain name of your Internet service provider.
+
+How Your DIGSBY Information Is Used
+Your DIGSBY information is used to operate and improve the features, offerings and content presented to you by DIGSBY and DOTSYNTAX LLC; to personalize the content provided to you; to fulfill your requests for products, programs, and services; to communicate with you and respond to your inquiries; to conduct research about your use of DIGSBY Products; and to help offer you other products, programs, or services that may be of interest.
+
+Your DIGSBY information will not be shared with third parties except in circumstances in which you have consented to the sharing of your DIGSBY information. Your IM conversations are not sent to DIGSBY servers or stored at DOTSYNTAX LLC owned facilities. However, certain features such as "Chat Logs" result in Instant Messaging history being stored on the computer you use to access DIGSBY. DOTSYNTAX LLC does not read your private online communications when you use any of the communication tools offered as DIGSBY Products. If, however, you use these tools to disclose information about yourself publicly (for example, in chat rooms or online message boards made available by DIGSBY), other online users may obtain access to any information you provide.
+
+Your DIGSBY information may be accessed and disclosed in response to legal process (for example, a court order, search warrant or subpoena), or in other circumstances in which DOTSYNTAX LLC has a good faith belief that DIGSBY is being used for unlawful purposes. DOTSYNTAX LLC may also access or disclose your DIGSBY information when necessary to protect the rights or property of DIGSBY or DOTSYNTAX LLC, or in special cases such as a threat to your safety or that of others.
+
+DOTSYNTAX LLC may use agents and contractors in order to help operate DIGSBY Products. If such agents and contractors have access to personally identifiable information, they are required to protect this information in a manner that is consistent with this Privacy Policy by, for example, not using the information for any purpose other than to carry out the services they are performing for DOTSYNTAX LLC.
+
+In the event that ownership of DIGSBY was to change as a result of a merger or acquisition by another company, your DIGSBY information may be transferred. DOTSYNTAX LLC will provide you notice prior to any such transfer of your DIGSBY information.
+
+Cookies
+DOTSYNTAX LLC may use cookies on the Websites it operates. Cookies are small text files that are placed on your computer's hard drive by our servers to identify your computer to our servers. Except for your IP Address, no personally identifiable information stored in the DIGSBY cookies will be shared with outside companies for any purpose without your permission.
+
+Our Commitment to Security
+DOTSYNTAX LLC has established safeguards to help prevent unauthorized access to or misuse of your DIGSBY information, but cannot guarantee that your personally identifiable information will never be disclosed in a manner inconsistent with this Privacy Policy (for example, in the event of unauthorized acts by third parties that violate applicable law or the policies of DIGSBY or DOTSYNTAX LLC. To protect your privacy and security, DOTSYNTAX LLC uses passwords to help verify your identity before granting access or making corrections to any of your DIGSBY information. These passwords are encrypted in a way which prevents them from being accessed by anyone including all DOTSYNTAX LLC employees. If you forget or misplace your DIGSBY password, an email will be sent to the email address on record with instructions on how to set a new password. You will be required to re-enter all of your Instant Messaging, Email, and Social Network account passwords when resetting your DIGSBY password.
+
+Special Note for Parents
+DIGSBY is intended for a general audience, and children under the age of thirteen are not permitted to register with DIGSBY.
+
+How to Contact Us
+If you have any questions or concerns about the DIGSBY Privacy Policy or its implementation, you may contact us by sending an email to privacy[at]digsby[dot]com or by sending mail to the following address:
+
+dotSyntax, LLC
+125 Tech Park Drive
+Rochester, NY 14623
+
+Changes to this Privacy Policy and Additional Information
+The DIGSBY Privacy Policy may be updated from time to time, and so you should review this Policy periodically.
+
+DIGSBY may in the future offer other special features and services, and if these features and services are not described in this Policy, you will be provided with additional privacy-related information in this agreement.

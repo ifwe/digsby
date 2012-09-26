@@ -1,0 +1,53 @@
+body
+{
+	margin: 0px;
+}
+
+#Chat {
+	overflow: hidden;
+}
+
+.bottomdivider {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+}
+
+.status_message {
+	padding: 0px 7px 0px 7px;
+}
+
+.prefixcontainer{
+    white-space: nowrap;
+    max-width: 100%;
+    position: relative;
+    left: -22px;
+}
+
+.prefix {
+    white-space: normal;
+	position: relative;
+}
+
+.timestampbefore, .timestampafter{
+    white-space: nowrap;
+}
+
+.messagebody {
+	padding: 1px 7px 1px 1px;
+    max-width: 100%;
+    margin-left: 23px;
+}
+
+.nextmessagebody {
+	padding: 1px 7px 1px 1px;
+    margin-left: 23px;
+}
+
+.message{
+    margin-left: -23px;
+    margin-right: 23px;
+}

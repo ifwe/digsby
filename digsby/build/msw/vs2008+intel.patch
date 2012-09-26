@@ -1,0 +1,482 @@
+### Eclipse Workspace Patch 1.0
+#P Digsby
+Index: build/msw/python/PCbuild/pcbuild.sln
+===================================================================
+--- build/msw/python/PCbuild/pcbuild.sln	(revision 70358)
++++ build/msw/python/PCbuild/pcbuild.sln	(working copy)
+@@ -2,13 +2,13 @@
+ # Visual Studio 2008
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "python", "python.vcproj", "{B11D750F-CD1F-4A96-85CE-E69A5C5259F9}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 		{E9E0A1F6-0009-4E8C-B8F8-1B8F5D49A058} = {E9E0A1F6-0009-4E8C-B8F8-1B8F5D49A058}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "make_versioninfo", "make_versioninfo.vcproj", "{F0E0541E-F17D-430B-97C4-93ADF0DD284E}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pythoncore", "pythoncore.vcproj", "{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}"
++Project("{EAF909A5-FA59-4C3D-9431-0FCC20D5BCF9}") = "pythoncore", "pythoncore.icproj", "{A89B81E6-3B74-4D41-9809-71E959C1AC10}"
+ 	ProjectSection(ProjectDependencies) = postProject
+ 		{F0E0541E-F17D-430B-97C4-93ADF0DD284E} = {F0E0541E-F17D-430B-97C4-93ADF0DD284E}
+ 		{6DE10744-E396-40A5-B4E2-1B69AA7C8D31} = {6DE10744-E396-40A5-B4E2-1B69AA7C8D31}
+@@ -17,7 +17,7 @@
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pythonw", "pythonw.vcproj", "{F4229CC3-873C-49AE-9729-DD308ED4CD4A}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w9xpopen", "w9xpopen.vcproj", "{E9E0A1F6-0009-4E8C-B8F8-1B8F5D49A058}"
+@@ -35,43 +35,43 @@
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winsound", "winsound.vcproj", "{28B5D777-DDF2-4B6B-B34F-31D938813856}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_bsddb", "_bsddb.vcproj", "{B4D38F3F-68FB-42EC-A45D-E00657BB3627}"
+ 	ProjectSection(ProjectDependencies) = postProject
+ 		{6DE10744-E396-40A5-B4E2-1B69AA7C8D31} = {6DE10744-E396-40A5-B4E2-1B69AA7C8D31}
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_ctypes", "_ctypes.vcproj", "{0E9791DB-593A-465F-98BC-681011311618}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_ctypes_test", "_ctypes_test.vcproj", "{9EC7190A-249F-4180-A900-548FDCF3055F}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_elementtree", "_elementtree.vcproj", "{17E1E049-C309-4D79-843F-AE483C264AEA}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_msi", "_msi.vcproj", "{31FFC478-7B4A-43E8-9954-8D03E2187E9C}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_socket", "_socket.vcproj", "{86937F53-C189-40EF-8CE8-8759D8E7D480}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_sqlite3", "_sqlite3.vcproj", "{13CECB97-4119-4316-9D42-8534019A5A44}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 		{A1A295E5-463C-437F-81CA-1F32367685DA} = {A1A295E5-463C-437F-81CA-1F32367685DA}
+ 	EndProjectSection
+ EndProject
+@@ -79,37 +79,37 @@
+ 	ProjectSection(ProjectDependencies) = postProject
+ 		{B11D750F-CD1F-4A96-85CE-E69A5C5259F9} = {B11D750F-CD1F-4A96-85CE-E69A5C5259F9}
+ 		{86937F53-C189-40EF-8CE8-8759D8E7D480} = {86937F53-C189-40EF-8CE8-8759D8E7D480}
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_testcapi", "_testcapi.vcproj", "{6901D91C-6E48-4BB7-9FEC-700C8131DF1D}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_tkinter", "_tkinter.vcproj", "{4946ECAC-2E69-4BF8-A90A-F5136F5094DF}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bz2", "bz2.vcproj", "{73FCD2BD-F133-46B7-8EC1-144CD82A59D5}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "select", "select.vcproj", "{18CAE28C-B454-46C1-87A0-493D91D97F03}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unicodedata", "unicodedata.vcproj", "{ECC7CEAC-A5E5-458E-BB9E-2413CC847881}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pyexpat", "pyexpat.vcproj", "{D06B6426-4762-44CC-8BAD-D79052507F2F}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bdist_wininst", "bdist_wininst.vcproj", "{EB1C19C1-1F18-421E-9735-CAEE69DC6A3C}"
+@@ -117,7 +117,7 @@
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_hashlib", "_hashlib.vcproj", "{447F05A8-F581-4CAC-A466-5AC7936E207E}"
+ 	ProjectSection(ProjectDependencies) = postProject
+ 		{B11D750F-CD1F-4A96-85CE-E69A5C5259F9} = {B11D750F-CD1F-4A96-85CE-E69A5C5259F9}
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3", "sqlite3.vcproj", "{A1A295E5-463C-437F-81CA-1F32367685DA}"
+@@ -127,7 +127,7 @@
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_multiprocessing", "_multiprocessing.vcproj", "{9E48B300-37D1-11DD-8C41-005056C00008}"
+ 	ProjectSection(ProjectDependencies) = postProject
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10} = {A89B81E6-3B74-4D41-9809-71E959C1AC10}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kill_python", "kill_python.vcproj", "{6DE10744-E396-40A5-B4E2-1B69AA7C8D31}"
+@@ -176,22 +176,22 @@
+ 		{F0E0541E-F17D-430B-97C4-93ADF0DD284E}.Release|Win32.Build.0 = Release|Win32
+ 		{F0E0541E-F17D-430B-97C4-93ADF0DD284E}.Release|x64.ActiveCfg = Release|Win32
+ 		{F0E0541E-F17D-430B-97C4-93ADF0DD284E}.Release|x64.Build.0 = Release|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Debug|Win32.ActiveCfg = Debug|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Debug|Win32.Build.0 = Debug|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Debug|x64.ActiveCfg = Debug|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Debug|x64.Build.0 = Debug|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGInstrument|Win32.ActiveCfg = PGInstrument|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGInstrument|Win32.Build.0 = PGInstrument|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGInstrument|x64.ActiveCfg = PGInstrument|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGInstrument|x64.Build.0 = PGInstrument|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGUpdate|Win32.ActiveCfg = PGUpdate|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGUpdate|Win32.Build.0 = PGUpdate|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGUpdate|x64.ActiveCfg = PGUpdate|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGUpdate|x64.Build.0 = PGUpdate|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Release|Win32.ActiveCfg = Release|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Release|Win32.Build.0 = Release|Win32
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Release|x64.ActiveCfg = Release|x64
+-		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Release|x64.Build.0 = Release|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Debug|Win32.ActiveCfg = Debug|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Debug|Win32.Build.0 = Debug|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Debug|x64.ActiveCfg = Debug|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Debug|x64.Build.0 = Debug|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGInstrument|Win32.ActiveCfg = PGInstrument|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGInstrument|Win32.Build.0 = PGInstrument|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGInstrument|x64.ActiveCfg = PGInstrument|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGInstrument|x64.Build.0 = PGInstrument|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGUpdate|Win32.ActiveCfg = PGUpdate|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGUpdate|Win32.Build.0 = PGUpdate|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGUpdate|x64.ActiveCfg = PGUpdate|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.PGUpdate|x64.Build.0 = PGUpdate|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Release|Win32.ActiveCfg = Release|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Release|Win32.Build.0 = Release|Win32
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Release|x64.ActiveCfg = Release|x64
++		{A89B81E6-3B74-4D41-9809-71E959C1AC10}.Release|x64.Build.0 = Release|x64
+ 		{F4229CC3-873C-49AE-9729-DD308ED4CD4A}.Debug|Win32.ActiveCfg = Debug|Win32
+ 		{F4229CC3-873C-49AE-9729-DD308ED4CD4A}.Debug|Win32.Build.0 = Debug|Win32
+ 		{F4229CC3-873C-49AE-9729-DD308ED4CD4A}.Debug|x64.ActiveCfg = Debug|x64
+@@ -552,6 +552,14 @@
+ 		{6DE10744-E396-40A5-B4E2-1B69AA7C8D31}.Release|Win32.Build.0 = Release|Win32
+ 		{6DE10744-E396-40A5-B4E2-1B69AA7C8D31}.Release|x64.ActiveCfg = Release|x64
+ 		{6DE10744-E396-40A5-B4E2-1B69AA7C8D31}.Release|x64.Build.0 = Release|x64
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Debug|Win32.ActiveCfg = Debug|Win32
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Debug|x64.ActiveCfg = Debug|x64
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGInstrument|Win32.ActiveCfg = PGInstrument|Win32
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGInstrument|x64.ActiveCfg = PGInstrument|x64
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGUpdate|Win32.ActiveCfg = PGUpdate|Win32
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.PGUpdate|x64.ActiveCfg = PGUpdate|x64
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Release|Win32.ActiveCfg = Release|Win32
++		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}.Release|x64.ActiveCfg = Release|x64
+ 	EndGlobalSection
+ 	GlobalSection(SolutionProperties) = preSolution
+ 		HideSolutionNode = FALSE
+Index: build/msw/python/PCbuild/pythoncore.vcproj
+===================================================================
+--- build/msw/python/PCbuild/pythoncore.vcproj	(revision 70358)
++++ build/msw/python/PCbuild/pythoncore.vcproj	(working copy)
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="Windows-1252"?>
+ <VisualStudioProject
+ 	ProjectType="Visual C++"
+-	Version="9,00"
++	Version="9.00"
+ 	Name="pythoncore"
+ 	ProjectGUID="{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}"
+ 	RootNamespace="pythoncore"
+@@ -43,6 +43,9 @@
+ 			<Tool
+ 				Name="VCCLCompilerTool"
+ 				AdditionalOptions="/Zm200 "
++				Optimization="2"
++				InlineFunctionExpansion="2"
++				FavorSizeOrSpeed="1"
+ 				AdditionalIncludeDirectories="..\Python;..\Modules\zlib"
+ 				PreprocessorDefinitions="_USRDLL;Py_BUILD_CORE;Py_ENABLE_SHARED;WIN32"
+ 				RuntimeLibrary="2"
+@@ -118,6 +121,7 @@
+ 			<Tool
+ 				Name="VCCLCompilerTool"
+ 				AdditionalOptions="/Zm200 "
++				Optimization="2"
+ 				AdditionalIncludeDirectories="..\Python;..\Modules\zlib"
+ 				PreprocessorDefinitions="_USRDLL;Py_BUILD_CORE;Py_ENABLE_SHARED;WIN32"
+ 				RuntimeLibrary="2"
+@@ -498,9 +502,14 @@
+ 			<Tool
+ 				Name="VCCLCompilerTool"
+ 				AdditionalOptions="/Zm200 "
++				Optimization="2"
++				InlineFunctionExpansion="1"
++				EnableIntrinsicFunctions="false"
++				FavorSizeOrSpeed="1"
+ 				AdditionalIncludeDirectories="..\Python;..\Modules\zlib"
+ 				PreprocessorDefinitions="_USRDLL;Py_BUILD_CORE;Py_ENABLE_SHARED;WIN32"
+-				RuntimeLibrary="2"
++				RuntimeLibrary="0"
++				EnableEnhancedInstructionSet="0"
+ 			/>
+ 			<Tool
+ 				Name="VCManagedResourceCompilerTool"
+@@ -518,9 +527,12 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				AdditionalDependencies="getbuildinfo.o"
++				AdditionalOptions="/NODEFAULTLIB:libmmt.lib"
++				AdditionalDependencies="getbuildinfo.o libmmt.lib"
+ 				OutputFile="$(OutDir)\$(PyDllName).dll"
+-				IgnoreDefaultLibraryNames="libc"
++				LinkIncremental="1"
++				IgnoreAllDefaultLibraries="false"
++				IgnoreDefaultLibraryNames="libc;msvcrt"
+ 				ProgramDatabaseFile="$(OutDir)$(PyDllName).pdb"
+ 				BaseAddress="0x1e000000"
+ 				ImportLibrary="$(OutDirPGI)$(PyDllName).lib"
+@@ -573,6 +585,9 @@
+ 			<Tool
+ 				Name="VCCLCompilerTool"
+ 				AdditionalOptions="/Zm200 "
++				Optimization="2"
++				InlineFunctionExpansion="1"
++				FavorSizeOrSpeed="1"
+ 				AdditionalIncludeDirectories="..\Python;..\Modules\zlib"
+ 				PreprocessorDefinitions="_USRDLL;Py_BUILD_CORE;Py_ENABLE_SHARED;WIN32"
+ 				RuntimeLibrary="2"
+@@ -655,11 +670,11 @@
+ 				>
+ 			</File>
+ 			<File
+-				RelativePath="..\Include\bytes_methods.h"
++				RelativePath="..\Include\bytearrayobject.h"
+ 				>
+ 			</File>
+ 			<File
+-				RelativePath="..\Include\bytearrayobject.h"
++				RelativePath="..\Include\bytes_methods.h"
+ 				>
+ 			</File>
+ 			<File
+@@ -983,6 +998,10 @@
+ 				>
+ 			</File>
+ 			<File
++				RelativePath="..\Modules\_bytesio.c"
++				>
++			</File>
++			<File
+ 				RelativePath="..\Modules\_codecsmodule.c"
+ 				>
+ 			</File>
+@@ -999,10 +1018,6 @@
+ 				>
+ 			</File>
+ 			<File
+-				RelativePath="..\Modules\_bytesio.c"
+-				>
+-			</File>
+-			<File
+ 				RelativePath="..\Modules\_functoolsmodule.c"
+ 				>
+ 			</File>
+@@ -1057,6 +1072,14 @@
+ 			<File
+ 				RelativePath="..\Modules\cmathmodule.c"
+ 				>
++				<FileConfiguration
++					Name="PGUpdate|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						RuntimeLibrary="0"
++					/>
++				</FileConfiguration>
+ 			</File>
+ 			<File
+ 				RelativePath="..\Modules\cPickle.c"
+@@ -1097,6 +1120,15 @@
+ 			<File
+ 				RelativePath="..\Modules\mathmodule.c"
+ 				>
++				<FileConfiguration
++					Name="PGUpdate|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						AdditionalOptions=""
++						RuntimeLibrary="0"
++					/>
++				</FileConfiguration>
+ 			</File>
+ 			<File
+ 				RelativePath="..\Modules\md5.c"
+@@ -1371,15 +1403,11 @@
+ 				>
+ 			</File>
+ 			<File
+-				RelativePath="..\Objects\bytes_methods.c"
+-				>
+-			</File>
+-			<File
+ 				RelativePath="..\Objects\bytearrayobject.c"
+ 				>
+ 			</File>
+ 			<File
+-				RelativePath="..\Objects\stringobject.c"
++				RelativePath="..\Objects\bytes_methods.c"
+ 				>
+ 			</File>
+ 			<File
+@@ -1499,6 +1527,10 @@
+ 				>
+ 			</File>
+ 			<File
++				RelativePath="..\Objects\stringobject.c"
++				>
++			</File>
++			<File
+ 				RelativePath="..\Objects\structseq.c"
+ 				>
+ 			</File>
+@@ -1613,6 +1645,14 @@
+ 			<File
+ 				RelativePath="..\PC\getpathp.c"
+ 				>
++				<FileConfiguration
++					Name="PGUpdate|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						Optimization="2"
++					/>
++				</FileConfiguration>
+ 			</File>
+ 			<File
+ 				RelativePath="..\PC\import_nt.c"
+@@ -1649,6 +1689,38 @@
+ 			<File
+ 				RelativePath="..\Python\ceval.c"
+ 				>
++				<FileConfiguration
++					Name="Release|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						PreprocessorDefinitions="USE_COMPUTED_GOTOS"
++					/>
++				</FileConfiguration>
++				<FileConfiguration
++					Name="Debug|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						PreprocessorDefinitions="USE_COMPUTED_GOTOS"
++					/>
++				</FileConfiguration>
++				<FileConfiguration
++					Name="PGInstrument|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						PreprocessorDefinitions="USE_COMPUTED_GOTOS"
++					/>
++				</FileConfiguration>
++				<FileConfiguration
++					Name="PGUpdate|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						PreprocessorDefinitions="USE_COMPUTED_GOTOS"
++					/>
++				</FileConfiguration>
+ 			</File>
+ 			<File
+ 				RelativePath="..\Python\codecs.c"
+Index: build/msw/python/PCbuild/pythoncore.icproj
+===================================================================
+--- build/msw/python/PCbuild/pythoncore.icproj	(revision 0)
++++ build/msw/python/PCbuild/pythoncore.icproj	(revision 0)
+@@ -0,0 +1,56 @@
++<?xml version="1.0" encoding="Windows-1252"?>
++<VisualStudioProject
++	ProjectType="Intel C++ Project"
++	Version="11.0"
++	Name="pythoncore"
++	ProjectGUID="{A89B81E6-3B74-4D41-9809-71E959C1AC10}"
++	VCNestedProjectGUID="{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}"
++	VCNestedProjectFileName="pythoncore.vcproj">
++	<Configurations>
++		<Configuration
++			Name="Release|Win32">
++			<Tool
++				Name="CppCmplrTool"
++				Optimization="1000"
++				InterproceduralOptimization="2"/>
++		</Configuration>
++		<Configuration
++			Name="Release|x64">
++			<Tool
++				Name="CppCmplrTool"
++				Optimization="1000"/>
++		</Configuration>
++		<Configuration
++			Name="PGInstrument|Win32">
++			<Tool
++				Name="CppCmplrTool"
++				ProfileGuidedOptimization="1"/>
++		</Configuration>
++		<Configuration
++			Name="PGInstrument|x64">
++			<Tool
++				Name="CppCmplrTool"
++				ProfileGuidedOptimization="1"/>
++		</Configuration>
++		<Configuration
++			Name="PGUpdate|Win32">
++			<Tool
++				Name="CppCmplrTool"
++				Optimization="1000"
++				InterproceduralOptimization="2"
++				EnableEnhancedInstructionSet="1001"
++				GenerateAlternateCodePaths="0"
++				UseProcessorExtensions="0"
++				ProfileGuidedOptimization="3"/>
++		</Configuration>
++		<Configuration
++			Name="PGUpdate|x64">
++			<Tool
++				Name="CppCmplrTool"
++				Optimization="1000"
++				InterproceduralOptimization="2"
++				ProfileGuidedOptimization="3"/>
++		</Configuration>
++	</Configurations>
++	<Files/>
++</VisualStudioProject>

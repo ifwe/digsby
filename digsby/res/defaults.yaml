@@ -1,0 +1,593 @@
+profile:
+    promote: yes
+    name: 'I use digsby!'
+
+    formatting: "arial 10"
+
+login:
+    invisible: no
+    status: online
+    status_message: ""
+
+    reconnect:
+        attempt: yes
+        attempt_times: 5
+
+messaging:
+    spellcheck:
+      enabled: yes
+      max_suggestions: 5
+      engineoptions:
+        lang: en
+        encoding: utf-8
+        keyboard: standard
+      kb_shortcut_fixes: no
+    default_style: "arial 10"
+    typed_delay: 3.5
+    shift_to_send: no
+    show_send_button: no
+    show_formatting_bar: yes
+    show_actions_bar: yes
+    rtl_input: no
+    echo_immediately: yes
+    tabs:
+        enabled: yes
+        ctrl_new_window: yes
+        icon: buddy
+        warn_on_close: yes
+        left_down_activates: no
+    psychic: no
+    become_idle: yes
+    idle_after: 10
+    auto_away: no
+    auto_away_after: 20
+    auto_away_message: "I walked away from the computer."
+    typing_notifications:
+        show_in_title: yes
+        clear_after: 30
+    when_away:
+        autorespond: no
+        disable_sound: no
+        disable_popup: no
+        show_hide_convo_checkbox: yes
+        hide_convos: no
+    popups:
+        close_dismisses_hidden: no
+    groupchat:
+        enabled: yes
+
+videochat:
+    report_capability: yes
+
+appearance:
+    skin: Windows 7
+    variant: ~
+    conversations:
+        theme: Smooth Operator
+        variant: ~
+        icon: 'none'
+        emoticons:
+            enabled: yes
+            pack: "MSN Messenger"
+        show_header: yes
+        show_message_fonts: yes
+        show_message_colors: yes
+
+conversation_window:
+    open_email_for_offline: no
+    when_created: window
+    always_on_top: no
+    room_announcements: yes
+    resize_input: yes
+    input_base_height: 0
+    show_history: yes
+    merge_metacontact_history: no
+    num_lines: 5
+    new_action: stealfocus
+
+    timestamp: yes
+    timestamp_format: '%#I:%M %p'
+    border: no
+
+    actions_bar_icons: next
+
+    roomlist:
+      width: 110
+
+    notify_flash: yes
+    flash_count: 3
+    flash_time: 0
+    cycle_unread_ims: yes
+    unread_cycle_pause: 1000
+    paste:
+        images: yes
+
+imwin:
+    ads: yes
+    ads_glass: yes
+    ads_position: bottom
+    ads_disable_flash: no
+
+tabs:
+  enabled: no
+  hide_at_1: yes
+  rows: 2
+  max_width: 100
+  side_tabs: no
+  side_tabs_width: 100
+  style: 2
+  flip: no
+  tabbar_x: no
+  notify_count: 10
+  notify_duration: 1000
+  no_type_note: no
+  preview_alpha: 200
+  fade_speed: normal
+
+
+log:
+    ims: yes
+    chats: yes
+    events: yes
+    encrypt: no
+
+    outputdir: ""
+
+
+startup:
+    splash: yes
+    single_instance: yes
+    launch_on_login: no
+    default_im_check: no
+
+filetransfer:
+    create_subfolders: no
+    auto_accept_from_blist: no
+    use_port: no
+    port: 0
+    virus_scan: no
+    virus_scan_file: ""
+
+    save_to: no
+    save_to_dir: ''
+
+    window:
+      show_on_starting: yes
+
+connectionlist:
+    max_height: 200
+    online_linger: 2000
+
+infobox:
+    pause_time: 250
+    min_angle_of_entry: 30
+    max_angle_of_entry: 60
+    tracelines: no
+    show: yes
+    showprofile: yes
+    showcapabilities: yes
+    hide_delay: 500
+    show_delay: 1000
+    ratio_to_screen: 0.75
+    width: 375
+    iconsize: 64
+    right_of_list: no
+    animate: yes
+    animation:
+        time: 200
+        interval: 10
+        resizing: no
+        method: 2
+        slide_speed: 0.4
+    birthday_format: '%m/%d/%y'
+    fonts:
+        normal: Times New Roman
+        fixed: Courier New
+    aim:
+        show_profile_link: no
+
+email:
+    preview_length: 200
+    marquee:
+        enabled: no
+        delay_ms: 40
+    signature:
+        enabled: yes
+        value: !python/unicode |-
+
+            _____________________________________________________________
+            Sent using Digsby - http://email.digsby.com
+
+
+trayicons:
+    digsby:
+        show_status_orb: yes
+        show_available_orb: no
+        unread_messages:
+            flash_interval_ms: 1000
+            show_count: yes
+            flash_only_count: no
+    email:
+        gray_on_empty: yes
+        show_count: yes
+
+
+buddylist:
+    show_on_startup: yes
+    show_mobile: yes
+    show_offline: yes
+    group_offline: yes
+    hide_offline_groups: no
+    fakeroot_name: Contacts
+
+    show_email_as: both
+    show_social_as: both
+
+    emailpanel:
+        order: []
+
+    socialpanel:
+        order: []
+
+    show_status: yes
+
+    order: ['status', 'blist', 'clist', 'elist', 'slist']
+
+    tray_icon: always
+    close_button_exits: no
+    use_skin: no
+
+    hide_scrollbar: no
+    auto_resize: no
+
+    autohide: no     # Autohide when not in focus
+    always_on_top: no
+    show_menubar: yes
+    show_in_taskbar: yes
+
+    hide_group_titles: no
+    show_recent_buddies: no
+    recent_buddies_num: 5
+
+    # seconds for a buddy to appear differently when signing on or off
+    coming_going_time: 4
+
+    sorting: yes
+    sortby: none none
+
+    border_space: 35
+
+    dock:
+        slide_velocity: 1000
+
+    layout:
+        ez_layout: yes
+        name_font_face: Tahoma
+        name_font_size: 10
+        show_extra: yes
+        extra_padding: 1
+        extra_info: both
+        extra_font_face: Arial
+        extra_font_size: 7
+        show_buddy_icon: yes
+        buddy_icon_pos: right
+        buddy_icon_size: 32
+        show_status_icon: yes
+        status_icon_pos: left
+        status_icon_size: 16
+        side_icon_size: 13
+        show_service_icon: yes
+        service_icon_size: 16
+        service_icon_pos: bright
+        indent: 6
+        minimum_height: 16
+        badge_ratio: 0.5
+        badge_min_size: 6
+        badge_max_size: 16
+        padding: 2
+        show_idle_after: 1
+        grey_offline: yes
+
+    expanded: []
+
+prompts:
+  defaults:
+    contacts:
+      del_group: yes
+      del_contact: yes
+      block: yes
+
+privacy:
+    send_typing_notifications: yes
+    www_auto_signin: yes
+    unknown_buddy_popup: yes
+
+email_view: panel
+social_view: panel
+can_has_social_update: no
+
+notifications:
+    enable_sound: yes
+    enable_popup: yes
+    popups:
+        location: lowerleft
+        duration: 4000
+        opacity:
+            hover: 100
+            normal: 100
+        max_height: 400
+        max_lines: 2
+        offset: [0, 0]
+        monitor: 0
+        reverse_scroll: yes #yes: scroll down increases, no: scroll up increases
+
+    quiet_time: 10  # how many seconds after a silence to squash popups
+    editor:
+        view: simple
+
+windows:
+    sticky: yes
+
+fullscreen:
+    hide_convos: no
+    disable_sounds: no
+    disable_popups: no
+    disable_alerts: yes
+    set_status: no
+    set_status_message: ""
+
+locale: en
+
+proxy:
+    use_proxy: no
+    protocol: SOCKS4
+    host: ''
+    port: ''
+    username: ''
+    password: ''
+
+
+#
+# Protocols
+#
+
+icq:
+    default_server: login.icq.com
+    default_port: 5190
+    proxy:
+        use_global: yes
+        protocol: SOCKS4
+        host: ''
+        port: ''
+        username: ''
+        password: ''
+
+oscar:
+    keepalive: 30
+    buddyicon:
+        default: linc.gif
+        max_size: [40, 40]
+    capabilities:
+        - avatar
+        - chat_service
+        - ichatav_info
+        - direct_im
+    icq:
+        set_about: no
+    peer:
+        auto_accept:
+            sharing: no
+            direct_connect: no
+            file_transfer: no
+        always_proxy: no
+        proxy_server: ars.oscar.aol.com
+
+        # local IP address and port to bind when listening for p2p conns
+        local_ip: ''
+        incoming_port: 0
+        use_port: no
+        port: 0
+        share_files: no
+        share_files_dir: ""
+    default_port: 5190
+    default_server: login.oscar.aol.com
+
+aim:
+    default_server: login.oscar.aol.com
+    default_port: 5190
+    proxy:
+        use_global: yes
+        protocol: SOCKS4
+        host: ''
+        port: ''
+        username: ''
+        password: ''
+
+msn:
+    default_port: 1863
+    default_server: messenger.hotmail.com
+    proxy:
+        use_global: yes
+        protocol: SOCKS4
+        host: ''
+        port: ''
+        username: ''
+        password: ''
+    spaces:
+        photosize: 20
+    direct:
+        timeout: 5
+    login:
+        timeout: 60
+
+jabber:
+    default_port: 5222
+    default_server: ''
+    use_direct_ft:    yes
+    use_proxy_ft:     yes
+    use_faulty_localhost_ips:   no
+    system_message:
+        show_gone: no
+    proxy:
+        use_global: yes
+        protocol: SOCKS4
+        host: ''
+        port: ''
+        username: ''
+        password: ''
+    phone_is_mobile: no
+
+digsby:
+    updater:
+        auto_download: yes
+        install_prompt: yes
+        use_transfer_window: yes
+        help_menu: no
+        initial_delay: 300 # 5 minutes
+        update_interval: 21600 # 6 hours
+    default_port: 5222
+    default_server: digsby.org
+    guest:
+        domains: ['guest.digsby.org']
+    status:
+        promote_tag:
+            enabled: yes
+            upgrade_response: ~
+
+yahoo:
+    default_port: 5050
+    default_server: scs.msg.yahoo.com
+    filetransfer:
+        server: 'filetransfer.msg.yahoo.com:80'
+        relay:  'relay.msg.yahoo.com'
+    proxy:
+        use_global: yes
+        protocol: SOCKS4
+        host: ''
+        port: ''
+        username: ''
+        password: ''
+
+gmail:
+    proxy:
+        use_global: yes
+        protocol: SOCKS4
+        host: ''
+        port: ''
+        username: ''
+        password: ''
+    default_server: 'gmail.com'
+    default_port: 5222
+
+irc:
+    show_colors: yes
+    default_port: 6667
+
+myspace:
+    default_server: im.myspace.akadns.net
+    default_port: 1863
+
+facebook:
+    newsfeed:
+        maxage: 172800 #two days in seconds
+        dateformat: "%B %d"
+        user_filter: ['-1']
+        min_wall_interval: 172800
+    combined_wall:
+        num_visible: 5
+    webkitbrowser: yes
+    api:
+        https: no #significantly slower
+
+debug:
+    protocolstate: no
+    shell:
+        minimal: yes
+        font: Courier New
+        history:
+            size: 600
+            lines: []
+
+    shell_history: []
+    shell_history_size: 600
+    loglevel: 0
+    bug_reporter:
+        auto_open: true
+    message_area:
+        show_edit_source: no
+        show_jsconsole: no
+    traceback_dialog: yes
+
+menus:
+  shift_mode: no
+  submenu_delay: 200
+
+metacontacts:
+  show_first_online_status: no
+
+
+plugins:
+  nowplaying:
+    format: "%(artist)s - %(title)s"
+    backup_format: "%(filename)s"
+    show_link: no
+
+research: #plura processing
+#    enabled: yes #bool: old and broken, replaced with local pref.
+    revive_interval_seconds: 3600 #int: try to reboot the java process after an hour dead
+    cpu_percent: 75 #float: soft limit max, still hard limited to 25% on laptops, etc.
+    bandwidth_percent: 90 #float
+    idle_time_min: 5 #int: minutes of idle time to wait before turning on.
+#    idle_time_ms: 300000 #int: if present, gives more fine grained control over idle time (and overrides it)
+    always_on: no #bool: always on? still limited by battery setting
+    battery_override: no #bool: run when on battery? still limited by idle/always on
+
+imap:
+  max_fetch_bytes: 6144
+
+twitter:
+  max_tab_length: 100 # number to show
+  max_fetch_size: 100 # number to ask the api for
+  min_cache_size: 100 # number to store
+  scan_urls: yes
+
+  paste:
+    shorten_urls: true
+    upload_images: true
+  autoscroll:
+    when_at_bottom: true
+  popups:
+    mark_as_read: true
+
+fbchat:
+  min_update_interval: 35000 # milliseconds
+  max_update_interval: 60000 # milliseconds
+  signoff: no
+  use_persistent: yes
+  conn_lost_threshold: 3
+
+logging:
+  comtypes: 20
+  comtypes._objects: 20
+
+search:
+  buddylist:
+    enabled: yes
+    show_hint: yes
+  external:
+    - {name: google, enabled: yes}
+    - {name: oneriot, enabled: yes}
+    - {name: amazon, enabled: yes}
+    - {name: newegg, enabled: yes}
+    - {name: itunes, enabled: yes}
+    - {name: twitter, enabled: yes}
+    - {name: facebook, enabled: yes}
+    - {name: linkedin, enabled: yes}
+    - {name: youtube, enabled: yes}
+    - {name: wikipedia, enabled: yes}
+    - {name: technorati, enabled: yes}
+    - {name: bing, enabled: no}
+
+social:
+  use_global_status: yes
+  feed_ads: yes

@@ -1,0 +1,37 @@
+@import "../base.css";
+
+.container, .container_context {
+	margin: 0px 36px 0px 48px;
+}
+
+.buddyicon_div_outgoing {
+	float:left;
+}
+
+.buddyicon_div_incoming {
+	float:right;
+}
+
+.arrow_outgoing {
+	left:32px;
+	
+	background: url("../images/arrow.png");
+}
+
+.arrow_incoming {
+	right:33px;
+	
+	background: url("../images/arrow_right.png");
+}
+
+.arrow_context_outgoing {
+	left:32px;
+	
+	background: url("../images/context_arrow.png");
+}
+
+.arrow_context_incoming {
+	right:33px;
+	
+	background: url("../images/context_arrow_right.png");
+}

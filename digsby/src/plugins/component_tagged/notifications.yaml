@@ -1,0 +1,28 @@
+- tagged_alert:
+    description: !_ 'Tagged Alert'
+    header: '${title}'
+    minor: '${msg}'
+    icon: 'skin:serviceicons.tagged'
+    update: paged
+    max_lines: 6
+    default:
+      reaction: ['Popup']
+
+- tagged_toast:
+    description: !_ 'Tagged Toast'
+    header: '${title}'
+    minor: '${msg}'
+    icon: 'skin:serviceicons.tagged'
+    max_lines: 6
+    default:
+      reaction: ['Popup']
+
+- tagged_elections:
+    description: !_ 'Tagged Elections'
+    header: '${title}'
+    minor: '${msg}'
+    icon: 'skin:serviceicons.elections'
+    update: paged
+    max_lines: 6
+    default:
+      reaction: ['Popup']

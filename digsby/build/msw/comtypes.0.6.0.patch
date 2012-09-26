@@ -1,0 +1,80 @@
+Index: comtypes/__init__.py
+===================================================================
+--- comtypes/__init__.py	(.../comtypes)	(revision 21063)
++++ comtypes/__init__.py	(.../comtypes)	(revision 21063)
+@@ -144,14 +144,15 @@
+     logger.debug("CoInitializeEx(None, %s)", flags)
+     _ole32.CoInitializeEx(None, flags)
+ 
+-# COM is initialized automatically for the thread that imports this
++# COM is NOT initialized automatically for the thread that imports this
+ # module for the first time.  sys.coinit_flags is passed as parameter
+ # to CoInitializeEx, if defined, otherwise COINIT_APARTMENTTHREADED
+ # (COINIT_MULTITHREADED on Windows CE) is used.
+ #
+ # A shutdown function is registered with atexit, so that
+ # CoUninitialize is called when Python is shut down.
+-CoInitializeEx()
++def initialize(flags=None):
++    CoInitializeEx()
+
+ # We need to have CoUninitialize for multithreaded model where we have
+ # to initialize and uninitialize COM for every new thread (except main)
+Index: comtypes/_comobject.py
+===================================================================
+--- comtypes/_comobject.py	(.../comtypes)	(revision 21063)
++++ comtypes/_comobject.py	(.../comtypes)	(revision 21063)
+@@ -51,7 +51,7 @@
+ def _do_implement(interface_name, method_name):
+     def _not_implemented(*args):
+         """Return E_NOTIMPL because the method is not implemented."""
+-        _debug("unimplemented method %s_%s called", interface_name, method_name)
++        # removed log: _debug("unimplemented method %s_%s called", interface_name, method_name)
+         return E_NOTIMPL
+     return _not_implemented
+ 
+@@ -426,8 +426,8 @@
+         if result == 1:
+             # keep reference to the object in a class variable.
+             COMObject._instances_[self] = None
+-            _debug("%d active COM objects: Added   %r", len(COMObject._instances_), self)
+-        _debug("%r.AddRef() -> %s", self, result)
++            # removed log: _debug("%d active COM objects: Added   %r", len(COMObject._instances_), self)
++        # removed log: _debug("%r.AddRef() -> %s", self, result)
+         return result
+ 
+     def IUnknown_Release(self, this,
+@@ -438,16 +438,18 @@
+         # have been deleted already - so we supply it as default
+         # argument.
+         result = __InterlockedDecrement(self._refcnt)
+-        _debug("%r.Release() -> %s", self, result)
++        #_debug("%r.Release() -> %s", self, result)
+         if result == 0:
+             # For whatever reasons, at cleanup it may be that
+             # COMObject is already cleaned (set to None)
+             try:
+                 del COMObject._instances_[self]
+             except AttributeError:
+-                _debug("? active COM objects: Removed %r", self)
++                # removed log: _debug("? active COM objects: Removed %r", self)
++                pass
+             else:
+-                _debug("%d active COM objects: Removed %r", len(COMObject._instances_), self)
++                # removed log: _debug("%d active COM objects: Removed %r", len(COMObject._instances_), self)
++                pass
+             if self._factory is not None:
+                 self._factory.LockServer(None, 0)
+         return result
+@@ -460,9 +462,9 @@
+         ptr = self._com_pointers_.get(iid, None)
+         if ptr is not None:
+             # CopyComPointer(src, dst) calls AddRef!
+-            _debug("%r.QueryInterface(%s) -> S_OK", self, iid)
++            #_debug("%r.QueryInterface(%s) -> S_OK", self, iid)
+             return CopyComPointer(ptr, ppvObj)
+-        _debug("%r.QueryInterface(%s) -> E_NOINTERFACE", self, iid)
++        #_debug("%r.QueryInterface(%s) -> E_NOINTERFACE", self, iid)
+         return E_NOINTERFACE
+ 
+     def QueryInterface(self, interface):

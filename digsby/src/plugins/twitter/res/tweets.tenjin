@@ -1,0 +1,10 @@
+
+<?py for tweet in tweets: ?>
+    <?py _context['tweet'] = tweet ?>
+    <?py if self_tweet is not None and tweet.id == self_tweet.id: ?>
+        <?py continue ?>
+    <?py #endif ?>
+    <?py include(r"#{{app.resource('tweet.tenjin')}}") ?>
+    <hr class="post_divider" />
+    <?py del _context['tweet'] ?>
+<?py #endfor ?>

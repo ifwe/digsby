@@ -1,0 +1,8 @@
+name: 'Digsby-GNTP'
+path: 'digsby_gntp'
+type: 'pure'
+
+entry_points:
+  digsby.profile.addons:
+    growl_recv: digsby_gntp.receiver:GrowlReceiver
+    growl_send: digsby_gntp.sender:GrowlSender

@@ -1,0 +1,89 @@
+<?py
+import simplejson
+
+try: user_url = tweet.user_url
+except AttributeError: user_url = "http://twitter.com/" + tweet.user.screen_name
+
+imageClasses = 'profileImage'
+#last_tweet = i == len(tweets)-1
+#if last_tweet: imageClasses += ' profileImage_last'
+
+isad = getattr(tweet, '_isad', False)
+trends_classes = feed_trends_classes if isad else ''
+show_timestamp = not isad or feed_trends_show_timestamp
+?>
+<div class="tweet social_background_hover ${trends_classes}" id="${tweet.id}">
+<a href="#{user_url}"><img class="${imageClasses}" src="${tweet.user.profile_image_url}" /></a>
+<div class="tweetContent" id="${tweet.id}">
+    <span class="sender_text" style="display:none;">${simplejson.dumps(tweet.user.screen_name)}</span>
+    <span class="sender">
+<?py if not getattr(tweet, '_isad', False): ?>
+        <a href="#{user_url}">${tweet.user.screen_name}</a>
+<?py else: ?>
+        <a onclick="adClick(${tweet.id});" href="#{user_url}">${tweet.user.screen_name}</a>
+<?py #endif ?>
+    </span>
+    <span class="tweet_text_value" style="display:none;">#{simplejson.dumps(tweet.text)}</span>
+    <span class="tweetText">#{twitter_linkify(tweet.text)}</span>
+<?py
+if tweet.tweet_type not in ('direct',):
+    favorite_class = " favorite_" + ("on" if tweet.get('favorited', False) else "off")
+else:
+    favorite_class = ''
+
+?>
+<?py #endif ?>
+<?py if isad and tweet.link_text: ?>
+    <div class="trend_link">
+        <div class="trend_link_text">#{tweet.link_text}</div>
+    <?py
+    _context['post'] = tweet
+    include(r"#{{app.resource('trend_details.tenjin')}}")
+    ?>
+    </div>
+<?py #endif ?>
+    <div class="controls minor#{favorite_class}">
+<?py if not getattr(tweet, '_isad', False) and tweet.get('has_controls', True): ?>
+        <table class="controls_table">
+        <tr>
+    <?py if tweet.tweet_type not in ('sent','direct'): ?>
+        <td><a class="tw_reply_link" title="${{_('Reply')}}" href="javascript:null;"><img class="reply_icon" src="${{res('img/reply.png')}}"/></a></td>
+        <td><a class="tw_retweet_link" title="${{_('Retweet')}}" href="javascript:null;"><img class="retweet_icon" src="${{res('img/retweet.gif')}}"/></a></td>
+    <?py #endif ?>
+    <?py if tweet.tweet_type not in ('sent','search'): ?>
+        <td><a class="tw_direct_link" title="${{_('Direct Message')}}" href="javascript:null;"><img class="direct_icon" src="${{res('img/direct.gif')}}"/></a></td>
+    <?py #endif ?>
+    <?py if tweet.tweet_type in ('sent',): ?>
+        <td class="delete_cell"><a class="tw_delete_link" title="${{_('Delete')}}" href="javascript:null;"><img class="delete_icon" src="${{res('img/delete.gif')}}"/></a></td>
+        <td class="pending_delete_cell"><img class="delete_icon" src="${{res('img/pending.png')}}"/></td>
+    <?py #endif ?>
+    <?py if tweet.tweet_type not in ('direct',): ?>
+        <td class="star_on"><a class="tw_favorite_link" title="${{_('Unfavorite')}}" href="javascript:null;"><img class="star_icon" src="${res('img/star_on.gif')}"/></a></td>
+        <td class="star_off"><a class="tw_favorite_link" title="${{_('Favorite')}}" href="javascript:null;"><img class="star_icon" src="${res('img/star_off.gif')}"/></a></td>
+        <td class="star_pending"><img class="star_icon" src="${res('img/pending.png')}"/></td>
+    <?py #endif ?>
+        </tr>
+        </table>
+<?py #endif ?>
+<?py if show_timestamp: ?>
+        ${format_tweet_date(tweet)}
+        · <!--! this line has a dot  -->
+<?py #endif ?>
+<?py if getattr(tweet, '_isad', False): ?>
+      ${tweet.keyword}
+    <?py if feed_trends_help: ?>
+      [ <a href="javascript:trendsHelp();">?</a> ]
+    <?py #endif ?>
+      · <!--! this line has a dot  -->
+      <a href="#" onclick="shareAd(${tweet.id}); return false;" class="skinlink link">${{_('Share')}}</a>
+      <span class="adImpressionDiv" ad_id="${tweet.id}" lazy_src="${tweet.tracking_url}" />
+<?py #endif ?>
+    </div>
+    <div class="form_wrapper" style="display:none;"><table "input_table"><tr><td class="textarea_wrapper"><div><textarea name="foo" rows="1" class="input_area minor_border"></textarea></div></td><td><div class="char_count"></div></td></tr></table></div>
+    <!-- "display:none;" is here because css may not be loaded yet -->
+
+</div>
+
+</div>
+
+

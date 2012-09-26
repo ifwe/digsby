@@ -1,0 +1,35 @@
+<?PY
+DISLIKE = _("Dislike! (via http://digsby.com/fb)")
+?>
+
+<?py
+num_comments = ('comments' in post and 'count' in post.comments and post.comments.count != '0' and post.comments.count) or 0;
+can_comment = 'comments' in post and 'can_post' in post.comments and post.comments.can_post;
+dislikes = (post.post_id in feed.comments and [c for c in feed.comments[post.post_id] if c.text == #{{repr(DISLIKE)}}]) or [];
+num_dislikes = len(dislikes);
+num_non_dislike_comments = max(num_comments - num_dislikes, 0);
+user_dislikes = [c for c in dislikes if int(c.fromid) == int(post.viewer_id)]
+?>
+    <span class="dislike_link_block">
+<?py if can_comment: ?>
+        <?py if not user_dislikes: ?>
+            <span class="dislike_button_section link_section">
+                · <!--! this line has a dot  -->
+                <a href="javascript:null;" class="link dislike_button">${{_('Dislike')}}</a>
+            </span>
+        <?py else: ?>
+            <span class="dislike_button_section link_section">
+                · <!--! this line has a dot  -->
+                <a href="javascript:null;" class="link undislike_button">${{_('Undislike')}}</a>
+            </span>
+        <?py #endif ?>
+        <?py if num_dislikes > 0: ?>
+            <a class="link link_section num_dislikes comment_button_section comment_button" href="javascript:null;">(${num_dislikes})</a>
+        <?py #endif ?>
+<?py else: ?>
+    <?py if num_dislikes > 0: ?>
+        · <!--! this line has a dot  -->
+        <a class="link link_section num_dislikes comment_button_section comment_button" href="javascript:null;">${{_('Dislikes')}} (${num_dislikes})</a> <!--! &lt;--needs link2 -->
+    <?py #endif ?>
+<?py #endif ?>
+    </span>

@@ -1,0 +1,20 @@
+name: !_ "Facebook Account"
+type: "service_provider"
+provider_id: &provider_id "facebook"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_facebook.facebook_service_provider:FacebookServiceProvider"
+
+provider_info:
+    popularity: 807
+    username_desc: !_ 'Facebook Account'
+    newuser_url:  http://www.facebook.com/r.php
+
+    needs_password: no
+    display_domain: "facebook"
+
+
+skin:
+    serviceprovidericons:
+        *provider_id: "res/facebook.png"

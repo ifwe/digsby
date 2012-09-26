@@ -1,0 +1,223 @@
+Variant: Dark Pink
+
+Common:
+
+  Hover: darkpink/cl_hover.png 5 3 5 3
+  Menu_Hover: darkpink/menu_hover.png 5 3 5 3
+  Menu_Checked: darkpink/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: darkpink/group_bg.png
+  
+  Selected: darkpink/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: darkpink/menu_sep.png
+  
+MenuBar:
+  background: 0xefa4c2
+  
+MenuLite:
+  SeparatorImage: darkpink/menu_sep.png
+  Backgrounds:
+    Selection: 0xdea0bc
+  FontColors:
+    Selection: 0x000000
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0xefa4c2
+    Down: darkpink/mainmenuhover.png 1 1 1 1
+    Active: darkpink/mainmenuhover.png 1 1 1 1
+    Hover: darkpink/mainmenuhover.png 1 1 1 1
+    ActiveHover: darkpink/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: darkpink/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: darkpink/group_bg2.png
+    List: darkpink/list_bg.png 0 90 0 100
+    GroupSelected: darkpink/cl_selected2.png 5 3 5 3
+    BuddySelected: darkpink/cl_selected2.png 5 3 5 3
+    Buddy: darkpink/group_bg2.png
+  GroupIcons:
+    Collapsed: darkpink/right1.png
+    CollapsedHover: darkpink/right_hover.png
+    ExpandedHover: darkpink/expanded_hover.png
+    CollapsedSelected: darkpink/right.png
+  FontColors:
+    Group: 0x87385C
+    GroupHover: 0x87385C
+    GroupSelected: 0x87385C
+    AddAccountsLink: 0x87385C
+    
+Button:
+  Backgrounds:
+    Normal: darkpink/format_bar_button_bg.png
+    Down: darkpink/format_button_down.png 3 3 3 3
+    Active: darkpink/format_button_down.png 3 3 3 3
+    Hover: darkpink/format_button.png 3 3 3 3
+    ActiveHover: darkpink/format_button_down.png 3 3 3 3
+    Disabled: darkpink/button.png 1 1 1 1
+    Notify: darkpink/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: darkpink/format_button.png 3 3 3 3
+    Down: darkpink/format_button_down.png 3 3 3 3
+    Active: darkpink/format_button_down.png 3 3 3 3
+    Hover: darkpink/format_button.png 3 3 3 3
+    ActiveHover: darkpink/format_button_down.png 3 3 3 3
+    Disabled: darkpink/button.png 1 1 1 1
+    Notify: darkpink/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: darkpink/actionbar_button_bg.png
+    Down: darkpink/actionbar_button_down.png 2 2 2 2
+    Active: darkpink/actionbar_button_down.png 2 2 2 2
+    Hover: darkpink/actionbar_button.png 2 3 2 4
+    ActiveHover: darkpink/actionbar_button_down.png 2 2 2 2
+    Disabled: darkpink/actionbar_button.png 2 3 2 4
+    Notify: darkpink/actionbar_button.png 2 3 2 4
+
+FormattingBarButton:
+  Backgrounds:
+    Normal: darkpink/actionbar_button_bg.png
+    Down: darkpink/actionbar_button_down.png 2 2 2 2
+    Active: darkpink/actionbar_button_down.png 2 2 2 2
+    Hover: darkpink/actionbar_button.png 2 3 2 4
+    ActiveHover: darkpink/actionbar_button_down.png 2 2 2 2
+    Disabled: darkpink/actionbar_button.png 2 3 2 4
+    Notify: darkpink/actionbar_button.png 2 3 2 4
+  
+AccountAero:
+  Backgrounds:
+    Normal: darkpink/aero_button.png 75 10 75 10
+    Down: darkpink/aero_hover.png 75 10 75 0
+    Active: darkpink/aero_hover.png 75 10 75 0
+    Hover: darkpink/aero_hover.png 75 10 75 0
+    ActiveHover: darkpink/aero_button.png 75 10 75 0
+    Disabled: darkpink/aero_button.png 75 10 75 0
+    Notify: darkpink/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: darkpink/cbo_button_normal_left.png 3 3 3 3
+    hover: darkpink/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: darkpink/cbo_button_normal_right.png 3 3 3 3
+    Hover: darkpink/cbo_button_hover_right.png 3 3 3 3
+    Down: darkpink/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: darkpink/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: darkpink/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: darkpink/cbo_button_normal_left.png 3 3 3 3
+    hover: darkpink/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: darkpink/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: darkpink/TFLEFTO.png 4 4 0 4
+    Down: darkpink/TFLEFTO.png 4 4 0 4
+    Hover: darkpink/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpink/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: darkpink/CommandBar.png 1 0 1 0
+    EmailHover: darkpink/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xffdaee
+    Contact: darkpink/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x87385C
+    NavBarHeader:  black
+    NavBarLink: 0x87385C
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: 0x87385C
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: darkpink/status_combo.png tile
+    Hover: darkpink/status_combo.png tile
+    Down: darkpink/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: darkpink/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: darkpink/Tabpage.png 0 0 0 5
+    Normal: darkpink/TabN.png 8 16 8 16
+    Active: darkpink/TabP.png 8 16 8 16
+    ActiveHover: darkpink/TabPO.png 8 16 8 16
+    Hover: darkpink/TabO.png 8 16 8 16
+    Notify: darkpink/TabA.png 8 16 8 16
+    
+AccountPanels:
+  frame: darkpink/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0xeea6c1
+    Behind: 0xeea6c1
+  Icons:
+    Show: darkpink/showicon.png
+  FontColors:
+    Account: black
+    State: black
+    Link: 0x87385C
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0xeea6c1    
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0xeea6c1
+    
+Popup:
+  Background: darkpink/toast.png 20 20 20 20

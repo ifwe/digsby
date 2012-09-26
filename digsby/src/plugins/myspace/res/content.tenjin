@@ -1,0 +1,18 @@
+    <div id = "myspace-selfstatus">
+<?py include(str(app.resource('status.tenjin'))) ?>
+    </div>
+    <hr />
+    
+<?py if indicators: ?>
+    <div id="myspace-indicators">
+    <?py include(str(app.resource('indicators.tenjin'))) ?>
+        <hr />
+    </div>
+<?py #end ?>
+    
+    <div id="myspace-activities">
+        <div width="100%" class="activitiesContainer">
+            <span class="date-separator title static">${{_('Activity Stream')}}</span>
+<?py include(str(app.resource('activities.tenjin'))) ?>
+        </div>
+    </div>

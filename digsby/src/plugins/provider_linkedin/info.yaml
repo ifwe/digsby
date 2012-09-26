@@ -1,0 +1,16 @@
+name: !_ "LinkedIn Account"
+type: "service_provider"
+provider_id: &provider_id "linkedin"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_linkedin.linkedin_sp:LinkedInServiceProvider"
+
+provider_info:
+    popularity: 148
+    username_desc: !_ "Email Address"
+    newuser_url: https://www.linkedin.com/secure/register?trk=hb_join
+
+    needs_password: no
+    display_domain: "linkedin"
+

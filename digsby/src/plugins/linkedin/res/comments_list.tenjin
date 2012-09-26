@@ -1,0 +1,11 @@
+<div class="comments"> 
+<?py if item.comments is not None: ?>
+    <?py for comment in item.comments: ?>
+        <?py if comment.is_like or comment.is_dislike: ?>
+        <?py     continue ?>
+        <?py _context['comment'] = comment ?>
+        <?py include(r"#{{app.resource('comment.tenjin')}}") ?>
+        <?py del _context['comment'] ?>
+    <?py #endfor ?>
+<?py #endif ?>
+</div>

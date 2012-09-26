@@ -1,0 +1,44 @@
+@import "../base.css";
+
+body {
+	background: #BFBFBF url("../images/background_sand.png") bottom left repeat fixed;
+}
+
+.header_blue {
+	background: url("../images/header_graphite_background.png") bottom left repeat-x;
+	color:#ffffff;
+}
+
+.header_red {
+	background: url("../images/header_grey_background.png") bottom left repeat-x;
+	color:#ffffff;
+}
+
+.header_context {
+	background: url("../images/header_context_background.png") bottom left repeat-x;
+	color:#999999;
+}
+
+.header_blue_edge {
+	background: url("../images/header_graphite.png") top right no-repeat;
+}
+
+.header_red_edge {
+	background: url("../images/header_grey.png") top right no-repeat;
+}
+
+.header_context_edge {
+	background: url("../images/header_context.png") top right no-repeat;
+}
+
+.message_red a {
+	color: #555;
+}
+
+.message_blue a {
+	color: #738091;
+}
+
+.message_context a {
+	color: #999999;
+}

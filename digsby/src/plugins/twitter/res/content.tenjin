@@ -1,0 +1,38 @@
+<div class="twitter_content">
+<?py include(r"#{{app.resource('status.tenjin')}}") ?>
+<hr class="content_hr"/>
+
+<?py alerts_style = "" if acct.should_show_unread_counts() else "display:none;" ?>
+
+<div class="alerts-section" style="${alerts_style}">
+    <div class="title" style="display:inline-block;">${{_('Alerts')}}</div>
+    <span class="alertToggleLink link">
+        <a href="^_^_disable_unread_counts" 
+          onClick="javascript:$('.alerts-section').toggle();$('.showAlertToggle').toggle();">
+              Hide
+        </a>
+    </span>
+<?py include(r"#{{app.resource('alerts.tenjin')}}") ?>
+    <hr class="content_hr header_bottom"/>
+</div>
+
+<?py showlink_style = "display:none;" if acct.should_show_unread_counts() else "" ?>
+
+<div class="title date-separator" style="display:inline-block;">Timeline</div>
+<span class="showAlertToggle alertToggleLink link" style="${showlink_style}">
+    <a href="^_^_enable_unread_counts" 
+       onClick="javascript:$('.alerts-section').toggle();$('.showAlertToggle').toggle();">
+           ${{_('Show Alerts')}}
+    </a>
+</span>
+
+<div class="tweets" >
+<?py include(r"#{{app.resource('tweets.tenjin')}}") ?>
+</div>
+<div class="trending">
+<hr class="content_hr footer_top"/>
+<div class="title">${{_('Trending Topics')}}</div>
+<?py include(r"#{{app.resource('trends.tenjin')}}") ?>
+</div>
+</div>
+

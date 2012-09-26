@@ -1,0 +1,8 @@
+--- 
+name: !python/unicode l33t
+language: !python/unicode lt
+catalog_format: po
+domain: !python/unicode digsby
+shortname: !python/unicode digsby-i18n-digsby-lt
+pot_version: !python/unicode 29983
+type: lang

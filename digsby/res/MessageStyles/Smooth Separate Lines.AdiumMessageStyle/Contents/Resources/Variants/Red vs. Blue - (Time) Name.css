@@ -1,0 +1,42 @@
+@import url(../styles/layout.css);
+@import url(../styles/base.css);
+
+.prefix .timestampbefore {
+	display: inline;
+}
+
+.prefix .sender {
+	display: inline;
+}
+
+.prefix .timestampafter {
+	display: none;
+}
+
+.incoming .prefix {
+	color: #2B5674;
+}
+
+.outgoing .prefix
+{
+	color: #99171D;
+}
+
+.incoming.context .prefix {
+	color: #2B5674;
+}
+
+.outgoing.context .prefix {
+	color: #99171D;
+}
+
+.context .messagebody, .context .nextmessagebody {
+	color: #454642;
+	background-color: #FFFFFF;
+}
+
+.status_message {
+	text-align: center;
+	font: 9px "Lucida Grande";
+	color: #454642;
+}

@@ -1,0 +1,12 @@
+name: 'Browser Settings'
+path: 'digsby_browsersettings'
+type: 'pure'
+platforms: ['win']
+
+entry_points:
+  digsby.profile.addons:
+    browsersettings: digsby_browsersettings.settings:BrowserSettingsAddon
+  digsby.browsersettings.set_homepage:
+    browsersettings: digsby_browsersettings.settings:set_homepage
+  digsby.browsersettings.set_search:
+    browsersettings: digsby_browsersettings.settings:set_search

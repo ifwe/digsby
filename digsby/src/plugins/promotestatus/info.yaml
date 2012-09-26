@@ -1,0 +1,9 @@
+name: 'Promote Digsby Status'
+path: 'promote'
+type: 'pure'
+
+entry_points:
+  digsby.im.statusmessages:
+    promote: promotestatus.promote:status_factory
+  digsby.im.statusmessages.set.pre:
+    promote: promotestatus.promote:on_before_status_change

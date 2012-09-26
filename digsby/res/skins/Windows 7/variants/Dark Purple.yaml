@@ -1,0 +1,261 @@
+Variant: Dark Purple
+
+Common:
+
+  Hover: darkpurple/cl_hover.png 5 3 5 3
+  Menu_Hover: darkpurple/menu_hover.png 5 3 5 3
+  Menu_Checked: darkpurple/menu_checked2.png
+  Menu_Background: 0xF0F0F0
+  
+  Group_Background: darkpurple/group_bg.png
+  
+  Selected: darkpurple/cl_selected.png 3 3 3 3
+  #Gradient: selected_gradient.png
+  
+  ButtonBar_Background: images/group_bg.png
+  
+Menu:
+  SeparatorImage: darkpurple/menu_sep.png
+  
+MenuBar:
+  background: 0xac8ad1  
+  
+MenuLite:
+  SeparatorImage: darkpurple/menu_sep.png
+  Backgrounds:
+    Selection: 0xc6badd
+  
+MenuButton:
+  Backgrounds: 
+    Normal: 0xac8ad1   
+    Down: darkpurple/mainmenuhover.png 1 1 1 1
+    Active: darkpurple/mainmenuhover.png 1 1 1 1
+    Hover: darkpurple/mainmenuhover.png 1 1 1 1
+    ActiveHover: darkpurple/mainmenuhover.png 1 1 1 1  
+    
+BuddiesPanel:
+  BuddyIcons:
+    Frame: darkpurple/CF.png 6 6 6 6
+    FrameSize: 3
+  Backgrounds:
+    Group: darkpurple/group_bg2.png
+    List: darkpurple/list_bg.png 0 90 0 100
+    GroupSelected: darkpurple/cl_selected2.png 5 3 5 3
+    BuddySelected: darkpurple/cl_selected2.png 5 3 5 3
+    Buddy: darkpurple/group_bg2.png
+  GroupIcons:
+    Collapsed: darkpurple/right1.png
+    CollapsedHover: darkpurple/right_hover.png
+    ExpandedHover: darkpurple/expanded_hover.png
+    CollapsedSelected: darkpurple/right.png
+  FontColors:
+    Group: 0x50086b
+    GroupHover: 0x50086b
+    GroupSelected: 0xe1d9f0
+    AddAccountsLink: 0x50086b
+    BuddySelected: 0xe1d9f0
+    
+Button:
+  Backgrounds:
+    Normal: darkpurple/format_bar_button_bg.png
+    Down: darkpurple/format_button_down.png 3 3 3 3
+    Active: darkpurple/format_button_down.png 3 3 3 3
+    Hover: darkpurple/format_button.png 3 3 3 3
+    ActiveHover: darkpurple/format_button_down.png 3 3 3 3
+    Disabled: darkpurple/button.png 1 1 1 1
+    Notify: darkpurple/button.png 1 1 1 1
+  
+PopupButton:
+  Backgrounds:
+    Normal: darkpurple/format_button.png 3 3 3 3
+    Down: darkpurple/format_button_down.png 3 3 3 3
+    Active: darkpurple/format_button_down.png 3 3 3 3
+    Hover: darkpurple/format_button.png 3 3 3 3
+    ActiveHover: darkpurple/format_button_down.png 3 3 3 3
+    Disabled: darkpurple/button.png 1 1 1 1
+    Notify: darkpurple/button.png 1 1 1 1
+
+ActionBarButton:
+  Backgrounds:
+    Normal: darkpurple/actionbar_button_bg.png
+    Down: darkpurple/actionbar_button_down.png 2 2 2 2
+    Active: darkpurple/actionbar_button_down.png 2 2 2 2
+    Hover: darkpurple/actionbar_button.png 2 3 2 4
+    ActiveHover: darkpurple/actionbar_button_down.png 2 2 2 2
+    Disabled: darkpurple/actionbar_button.png 2 3 2 4
+    Notify: darkpurple/actionbar_button.png 2 3 2 4
+  FontColors:
+    Normal: 0xeeeeee
+    Down: 0xeeeeee
+    Active: 0xeeeeee
+    Hover:  0xeeeeee
+    ActiveHover: 0xeeeeee
+    Disabled:  0x9AA9BC
+    Notify:  white
+  MenuIcon: variants/darkpurple/icons/CDD.png
+   
+FormattingBar:
+  ToolbarSkin: FormattingButtonBar
+  MenuSkin: MenuLite
+  IconSize: 15
+  Icons:
+    Bold: variants/darkpurple/icons/Bold.png
+    Italic: variants/darkpurple/icons/Italics.png
+    Underline: variants/darkpurple/icons/Underline.png
+    ForegroundColor: variants/darkpurple/icons/TextCol.png
+    BackgroundColor: variants/darkpurple/icons/BackCol.png
+    Emote: variants/darkpurple/icons/Emote2.png
+     
+FormattingBarButton:
+  Backgrounds:
+    Normal: darkpurple/actionbar_button_bg.png
+    Down: darkpurple/actionbar_button_down.png 2 2 2 2
+    Active: darkpurple/actionbar_button_down.png 2 2 2 2
+    Hover: darkpurple/actionbar_button.png 2 3 2 4
+    ActiveHover: darkpurple/actionbar_button_down.png 2 2 2 2
+    Disabled: darkpurple/actionbar_button.png 2 3 2 4
+    Notify: darkpurple/actionbar_button.png 2 3 2 4
+  FontColors:
+    Normal: 0xeeeeee #0x1e395b
+    Down: 0xeeeeee #0x1e395b
+    Active: 0xeeeeee #0x1e395b
+    Hover: 0xeeeeee #0x1e395b
+    ActiveHover: 0xeeeeee #0x1e395b
+    Disabled: 0xeeeeee #0x1e395b
+    Notify: 0xeeeeee #0x1e395b
+  MenuIcon: variants/darkpurple/icons/CDD.png
+  
+AccountAero:
+  Backgrounds:
+    Normal: darkpurple/aero_button.png 75 10 75 10
+    Down: darkpurple/aero_hover.png 75 10 75 0
+    Active: darkpurple/aero_hover.png 75 10 75 0
+    Hover: darkpurple/aero_hover.png 75 10 75 0
+    ActiveHover: darkpurple/aero_button.png 75 10 75 0
+    Disabled: darkpurple/aero_button.png 75 10 75 0
+    Notify: darkpurple/aero_button.png 75 10 75 0
+
+ComboBox:
+  Backgrounds:
+    Normal: darkpurple/cbo_button_normal_left.png 3 3 3 3
+    hover: darkpurple/cbo_button_hover_left.png 3 3 3 3
+
+ButtonCombo:
+  IconSize: 8
+  Backgrounds:
+    Normal: darkpurple/cbo_button_normal_right.png 3 3 3 3
+    Hover: darkpurple/cbo_button_hover_right.png 3 3 3 3
+    Down: darkpurple/cbo_button_hover_right.png 3 3 3 3
+    
+ActionButtonBar:
+  background: darkpurple/CommandBar.png 1 0 1 0
+  
+FormattingButtonBar:
+  background: darkpurple/CommandBar.png 1 0 1 0
+  
+StatusComboBox:
+  Backgrounds:
+    Normal: darkpurple/cbo_button_normal_left.png 3 3 3 3
+    hover: darkpurple/cbo_button_hover_left.png 3 3 3 3
+    
+ToFrom:
+  background: darkpurple/Header.png
+  
+ComboBoxToFrom:
+  Backgrounds:
+    Normal: darkpurple/TFLEFTO.png 4 4 0 4
+    Down: darkpurple/TFLEFTO.png 4 4 0 4
+    Hover: darkpurple/TFLEFTO.png 4 4 0 4
+    
+CommandButtonToFrom:
+  Backgrounds:
+    Normal:
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+    Down: 
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+    Active:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+    Hover:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+    ActiveHover:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+    Disabled:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+    Notify:  
+      - icons/down_white.png v_center h_center -2 1
+      - darkpurple/TFRIGHTO.png 0 4 4 4
+
+InfoBox:
+  Backgrounds:
+    Header: darkpurple/CommandBar.png 1 0 1 0
+    EmailHover: darkpurple/cl_hover.png 5 3 5 3
+    SocialHoverColor: 0xe5d8fd
+    Contact: darkpurple/group_bg.png
+  FontColors:
+    Header:  black
+    Title:  black
+    Body: black
+    Link: 0x50086b
+    NavBarHeader:  black
+    NavBarLink: black
+    EmailHoverTitle:  black
+    EmailHoverMajor:  black
+    EmailHoverMinor: 0x333333
+    EmailHoverLink: black
+    
+StatusDropdown:
+  Backgrounds:
+    Normal: darkpurple/status_combo.png tile
+    Hover: darkpurple/status_combo.png tile
+    Down: darkpurple/status_combo.png tile
+    
+StatusPanel:
+  FrameSize: 8
+  Frame: darkpurple/statusbar.png 7 7 7 7
+  
+Tabs:
+  Backgrounds:
+    Bar: darkpurple/Tabpage.png 0 0 0 5
+    Normal: darkpurple/TabN.png 8 16 8 16
+    Active: darkpurple/TabP.png 8 16 8 16
+    ActiveHover: darkpurple/TabPO.png 8 16 8 16
+    Hover: darkpurple/TabO.png 8 16 8 16
+    Notify: darkpurple/TabA.png 8 16 8 16
+  FontColors:
+    Normal: 0xeeeeee #0xe1d9f0
+    Active: white
+    ActiveHover: white
+    Hover: 0xeeeeee
+    
+AccountPanels:
+  frame: darkpurple/aero_button.png 75 10 75 10 #0xb7cdde
+  Backgrounds:
+    Account: 0xad8cd0   
+    Behind: 0xad8cd0  
+  Icons:
+    Show: darkpurple/showicon.png
+  FontColors:
+    Account: black
+    State: black
+    Link: 0x50086b
+    
+SocialPanel:
+  Backgrounds:
+    Normal: 0xad8cd0
+    
+EmailPanel:
+  Backgrounds:
+    Normal: 0xad8cd0  
+    
+Popup:
+  Background: darkpurple/toast.png 20 20 20 20
+  FontColors:
+    Title: white
+    Major: white
+    Minor: white

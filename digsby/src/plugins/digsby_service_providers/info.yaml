@@ -1,0 +1,16 @@
+name: Service Provider Icons Package
+type: pure
+skin:
+  serviceprovidericons:
+    aol: res/aol.png
+    facebook: res/facebook.png
+    google: res/google.png
+    icq: res/icq.png
+    imap: res/imap.png
+    jabber: res/jabber.png
+    linkedin: res/linkedin.png
+    myspace: res/myspace.png
+    pop: res/pop.png
+    twitter: res/twitter.png
+    windows_live: res/windows_live.png
+    yahoo: res/yahoo.png

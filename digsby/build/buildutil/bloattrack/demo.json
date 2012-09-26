@@ -1,0 +1,3362 @@
+var kTree = {
+  "data": {
+    "$area": 2645535
+  }, 
+  "name": "/ 2.6m", 
+  "children": [
+    {
+      "data": {
+        "$area": 2378473
+      }, 
+      "name": "default 2.4m", 
+      "children": [
+        {
+          "data": {
+            "$area": 354156
+          }, 
+          "name": "rendering 354.2k", 
+          "children": [
+            {
+              "data": {
+                "$area": 138273
+              }, 
+              "name": "RenderLayer_1.o 138.3k"
+            }, 
+            {
+              "data": {
+                "$area": 26023
+              }, 
+              "name": "RenderBlock_1.o 26.0k"
+            }, 
+            {
+              "data": {
+                "$area": 21203
+              }, 
+              "name": "RenderBlockLineLayout_1.o 21.2k"
+            }, 
+            {
+              "data": {
+                "$area": 16017
+              }, 
+              "name": "RenderBoxModelObject_1.o 16.0k"
+            }, 
+            {
+              "data": {
+                "$area": 14436
+              }, 
+              "name": "RenderBox_1.o 14.4k"
+            }, 
+            {
+              "data": {
+                "$area": 13719
+              }, 
+              "name": "RenderObject_1.o 13.7k"
+            }, 
+            {
+              "data": {
+                "$area": 8584
+              }, 
+              "name": "InlineFlowBox_1.o 8.6k"
+            }, 
+            {
+              "data": {
+                "$area": 8365
+              }, 
+              "name": "InlineTextBox_1.o 8.4k"
+            }, 
+            {
+              "data": {
+                "$area": 8237
+              }, 
+              "name": "RenderListMarker_1.o 8.2k"
+            }, 
+            {
+              "data": {
+                "$area": 8171
+              }, 
+              "name": "RenderFlexibleBox_1.o 8.2k"
+            }, 
+            {
+              "data": {
+                "$area": 6895
+              }, 
+              "name": "RenderText_1.o 6.9k"
+            }, 
+            {
+              "data": {
+                "$area": 6354
+              }, 
+              "name": "RenderTreeAsText_1.o 6.4k"
+            }, 
+            {
+              "data": {
+                "$area": 6313
+              }, 
+              "name": "RenderTableCell_1.o 6.3k"
+            }, 
+            {
+              "data": {
+                "$area": 5860
+              }, 
+              "name": "RenderTableSection_1.o 5.9k"
+            }, 
+            {
+              "data": {
+                "$area": 5607
+              }, 
+              "name": "AutoTableLayout_1.o 5.6k"
+            }, 
+            {
+              "data": {
+                "$area": 5313
+              }, 
+              "name": "RenderEmbeddedObject_1.o 5.3k"
+            }, 
+            {
+              "data": {
+                "$area": 4894
+              }, 
+              "name": "RenderInline_1.o 4.9k"
+            }, 
+            {
+              "data": {
+                "$area": 4536
+              }, 
+              "name": "style 4.5k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 3847
+                  }, 
+                  "name": "RenderStyle_1.o 3.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 689
+                  }, 
+                  "name": "FillLayer_1.o 689"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 4494
+              }, 
+              "name": "RenderTable_1.o 4.5k"
+            }, 
+            {
+              "data": {
+                "$area": 3845
+              }, 
+              "name": "RenderView_1.o 3.8k"
+            }, 
+            {
+              "data": {
+                "$area": 2968
+              }, 
+              "name": "RenderCounter_1.o 3.0k"
+            }, 
+            {
+              "data": {
+                "$area": 2710
+              }, 
+              "name": "RenderListBox_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 2600
+              }, 
+              "name": "RenderFrameSet_1.o 2.6k"
+            }, 
+            {
+              "data": {
+                "$area": 2564
+              }, 
+              "name": "RenderImage_1.o 2.6k"
+            }, 
+            {
+              "data": {
+                "$area": 2260
+              }, 
+              "name": "RenderFileUploadControl_1.o 2.3k"
+            }, 
+            {
+              "data": {
+                "$area": 2225
+              }, 
+              "name": "RenderFieldset_1.o 2.2k"
+            }, 
+            {
+              "data": {
+                "$area": 2132
+              }, 
+              "name": "RenderTextControl_1.o 2.1k"
+            }, 
+            {
+              "data": {
+                "$area": 2104
+              }, 
+              "name": "RenderTextControlSingleLine_1.o 2.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1900
+              }, 
+              "name": "RenderTheme_1.o 1.9k"
+            }, 
+            {
+              "data": {
+                "$area": 1802
+              }, 
+              "name": "FixedTableLayout_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1801
+              }, 
+              "name": "RenderMenuList_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1417
+              }, 
+              "name": "RenderScrollbar_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1407
+              }, 
+              "name": "RenderWidget_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1231
+              }, 
+              "name": "RenderObjectChildList_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1139
+              }, 
+              "name": "RenderSlider_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1138
+              }, 
+              "name": "RenderLineBoxList_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1125
+              }, 
+              "name": "RenderMarquee_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 787
+              }, 
+              "name": "EllipsisBox_1.o 787"
+            }, 
+            {
+              "data": {
+                "$area": 714
+              }, 
+              "name": "RenderReplaced_1.o 714"
+            }, 
+            {
+              "data": {
+                "$area": 677
+              }, 
+              "name": "RenderListItem_1.o 677"
+            }, 
+            {
+              "data": {
+                "$area": 651
+              }, 
+              "name": "RenderTableRow_1.o 651"
+            }, 
+            {
+              "data": {
+                "$area": 595
+              }, 
+              "name": "RenderApplet_1.o 595"
+            }, 
+            {
+              "data": {
+                "$area": 541
+              }, 
+              "name": "LayoutState_1.o 541"
+            }, 
+            {
+              "data": {
+                "$area": 529
+              }, 
+              "name": "TextControlInnerElements_1.o 529"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 345399
+          }, 
+          "name": "css 345.4k", 
+          "children": [
+            {
+              "data": {
+                "$area": 161900
+              }, 
+              "name": "CSSParser_1.o 161.9k"
+            }, 
+            {
+              "data": {
+                "$area": 82159
+              }, 
+              "name": "CSSStyleSelector_1.o 82.2k"
+            }, 
+            {
+              "data": {
+                "$area": 31320
+              }, 
+              "name": "CSSComputedStyleDeclaration_1.o 31.3k"
+            }, 
+            {
+              "data": {
+                "$area": 14523
+              }, 
+              "name": "CSSSelector_1.o 14.5k"
+            }, 
+            {
+              "data": {
+                "$area": 11513
+              }, 
+              "name": "MediaQuery_1.o 11.5k"
+            }, 
+            {
+              "data": {
+                "$area": 7446
+              }, 
+              "name": "CSSMutableStyleDeclaration_1.o 7.4k"
+            }, 
+            {
+              "data": {
+                "$area": 6000
+              }, 
+              "name": "CSSFontSelector_1.o 6.0k"
+            }, 
+            {
+              "data": {
+                "$area": 4789
+              }, 
+              "name": "CSSPrimitiveValue_1.o 4.8k"
+            }, 
+            {
+              "data": {
+                "$area": 3023
+              }, 
+              "name": "CSSGradientValue_1.o 3.0k"
+            }, 
+            {
+              "data": {
+                "$area": 2060
+              }, 
+              "name": "MediaQueryEvaluator_1.o 2.1k"
+            }, 
+            {
+              "data": {
+                "$area": 2032
+              }, 
+              "name": "CSSPropertyLonghand_1.o 2.0k"
+            }, 
+            {
+              "data": {
+                "$area": 1759
+              }, 
+              "name": "MediaList_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1580
+              }, 
+              "name": "MediaQueryExp_1.o 1.6k"
+            }, 
+            {
+              "data": {
+                "$area": 1416
+              }, 
+              "name": "MediaFeatureNames_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1220
+              }, 
+              "name": "WebKitCSSTransformValue_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1115
+              }, 
+              "name": "CSSBorderImageValue_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1068
+              }, 
+              "name": "FontValue_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1003
+              }, 
+              "name": "CSSParserValues_1.o 1.0k"
+            }, 
+            {
+              "data": {
+                "$area": 999
+              }, 
+              "name": "ShadowValue_1.o 999"
+            }, 
+            {
+              "data": {
+                "$area": 835
+              }, 
+              "name": "CSSImportRule_1.o 835"
+            }, 
+            {
+              "data": {
+                "$area": 812
+              }, 
+              "name": "WebKitCSSMatrix_1.o 812"
+            }, 
+            {
+              "data": {
+                "$area": 716
+              }, 
+              "name": "CSSHelper_1.o 716"
+            }, 
+            {
+              "data": {
+                "$area": 704
+              }, 
+              "name": "CSSTimingFunctionValue_1.o 704"
+            }, 
+            {
+              "data": {
+                "$area": 702
+              }, 
+              "name": "WebKitCSSKeyframeRule_1.o 702"
+            }, 
+            {
+              "data": {
+                "$area": 679
+              }, 
+              "name": "CSSMediaRule_1.o 679"
+            }, 
+            {
+              "data": {
+                "$area": 637
+              }, 
+              "name": "CSSFontFaceSource_1.o 637"
+            }, 
+            {
+              "data": {
+                "$area": 610
+              }, 
+              "name": "CSSSegmentedFontFace_1.o 610"
+            }, 
+            {
+              "data": {
+                "$area": 593
+              }, 
+              "name": "CSSStyleSheet_1.o 593"
+            }, 
+            {
+              "data": {
+                "$area": 592
+              }, 
+              "name": "StyleMedia_1.o 592"
+            }, 
+            {
+              "data": {
+                "$area": 535
+              }, 
+              "name": "WebKitCSSKeyframesRule_1.o 535"
+            }, 
+            {
+              "data": {
+                "$area": 532
+              }, 
+              "name": "CSSReflectValue_1.o 532"
+            }, 
+            {
+              "data": {
+                "$area": 527
+              }, 
+              "name": "CSSStyleDeclaration_1.o 527"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 211266
+          }, 
+          "name": "editing 211.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 27443
+              }, 
+              "name": "ApplyStyleCommand_1.o 27.4k"
+            }, 
+            {
+              "data": {
+                "$area": 19202
+              }, 
+              "name": "ReplaceSelectionCommand_1.o 19.2k"
+            }, 
+            {
+              "data": {
+                "$area": 16697
+              }, 
+              "name": "CompositeEditCommand_1.o 16.7k"
+            }, 
+            {
+              "data": {
+                "$area": 16597
+              }, 
+              "name": "SelectionController_1.o 16.6k"
+            }, 
+            {
+              "data": {
+                "$area": 16001
+              }, 
+              "name": "markup_1.o 16.0k"
+            }, 
+            {
+              "data": {
+                "$area": 15457
+              }, 
+              "name": "Editor_1.o 15.5k"
+            }, 
+            {
+              "data": {
+                "$area": 13842
+              }, 
+              "name": "DeleteSelectionCommand_1.o 13.8k"
+            }, 
+            {
+              "data": {
+                "$area": 10763
+              }, 
+              "name": "visible_units_1.o 10.8k"
+            }, 
+            {
+              "data": {
+                "$area": 8217
+              }, 
+              "name": "htmlediting_1.o 8.2k"
+            }, 
+            {
+              "data": {
+                "$area": 7689
+              }, 
+              "name": "IndentOutdentCommand_1.o 7.7k"
+            }, 
+            {
+              "data": {
+                "$area": 7530
+              }, 
+              "name": "InsertListCommand_1.o 7.5k"
+            }, 
+            {
+              "data": {
+                "$area": 6540
+              }, 
+              "name": "VisibleSelection_1.o 6.5k"
+            }, 
+            {
+              "data": {
+                "$area": 5881
+              }, 
+              "name": "TextIterator_1.o 5.9k"
+            }, 
+            {
+              "data": {
+                "$area": 5863
+              }, 
+              "name": "TypingCommand_1.o 5.9k"
+            }, 
+            {
+              "data": {
+                "$area": 5158
+              }, 
+              "name": "VisiblePosition_1.o 5.2k"
+            }, 
+            {
+              "data": {
+                "$area": 4541
+              }, 
+              "name": "DeleteButtonController_1.o 4.5k"
+            }, 
+            {
+              "data": {
+                "$area": 4515
+              }, 
+              "name": "InsertTextCommand_1.o 4.5k"
+            }, 
+            {
+              "data": {
+                "$area": 4219
+              }, 
+              "name": "InsertParagraphSeparatorCommand_1.o 4.2k"
+            }, 
+            {
+              "data": {
+                "$area": 3779
+              }, 
+              "name": "FormatBlockCommand_1.o 3.8k"
+            }, 
+            {
+              "data": {
+                "$area": 3300
+              }, 
+              "name": "BreakBlockquoteCommand_1.o 3.3k"
+            }, 
+            {
+              "data": {
+                "$area": 2453
+              }, 
+              "name": "InsertLineBreakCommand_1.o 2.5k"
+            }, 
+            {
+              "data": {
+                "$area": 2101
+              }, 
+              "name": "HTMLInterchange_1.o 2.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1624
+              }, 
+              "name": "EditorCommand_1.o 1.6k"
+            }, 
+            {
+              "data": {
+                "$area": 733
+              }, 
+              "name": "CreateLinkCommand_1.o 733"
+            }, 
+            {
+              "data": {
+                "$area": 592
+              }, 
+              "name": "SmartReplaceICU_1.o 592"
+            }, 
+            {
+              "data": {
+                "$area": 529
+              }, 
+              "name": "MergeIdenticalElementsCommand_1.o 529"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 188280
+          }, 
+          "name": "DerivedSources 188.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 60151
+              }, 
+              "name": "Grammar_1.o 60.2k"
+            }, 
+            {
+              "data": {
+                "$area": 20320
+              }, 
+              "name": "CSSGrammar_1.o 20.3k"
+            }, 
+            {
+              "data": {
+                "$area": 15098
+              }, 
+              "name": "JSDOMWindow_1.o 15.1k"
+            }, 
+            {
+              "data": {
+                "$area": 11609
+              }, 
+              "name": "UserAgentStyleSheetsData_1.o 11.6k"
+            }, 
+            {
+              "data": {
+                "$area": 11220
+              }, 
+              "name": "JSInspectorBackend_1.o 11.2k"
+            }, 
+            {
+              "data": {
+                "$area": 10189
+              }, 
+              "name": "HTMLNames_1.o 10.2k"
+            }, 
+            {
+              "data": {
+                "$area": 7525
+              }, 
+              "name": "JSDocument_1.o 7.5k"
+            }, 
+            {
+              "data": {
+                "$area": 4750
+              }, 
+              "name": "JSElement_1.o 4.8k"
+            }, 
+            {
+              "data": {
+                "$area": 4734
+              }, 
+              "name": "JSHTMLElementWrapperFactory_1.o 4.7k"
+            }, 
+            {
+              "data": {
+                "$area": 4476
+              }, 
+              "name": "HTMLElementFactory_1.o 4.5k"
+            }, 
+            {
+              "data": {
+                "$area": 2650
+              }, 
+              "name": "JSNode_1.o 2.6k"
+            }, 
+            {
+              "data": {
+                "$area": 2444
+              }, 
+              "name": "JSXMLHttpRequest_1.o 2.4k"
+            }, 
+            {
+              "data": {
+                "$area": 2306
+              }, 
+              "name": "JSWebKitCSSMatrix_1.o 2.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1935
+              }, 
+              "name": "JSCanvasRenderingContext2D_1.o 1.9k"
+            }, 
+            {
+              "data": {
+                "$area": 1605
+              }, 
+              "name": "JSMouseEvent_1.o 1.6k"
+            }, 
+            {
+              "data": {
+                "$area": 1360
+              }, 
+              "name": "JSNavigator_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1340
+              }, 
+              "name": "JSCSSPrimitiveValue_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1224
+              }, 
+              "name": "JSEvent_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1175
+              }, 
+              "name": "JSMutationEvent_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1174
+              }, 
+              "name": "JSKeyboardEvent_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1146
+              }, 
+              "name": "JSWheelEvent_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1144
+              }, 
+              "name": "JSWorkerContext_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1138
+              }, 
+              "name": "JSDOMImplementation_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1108
+              }, 
+              "name": "JSRange_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1108
+              }, 
+              "name": "JSCharacterData_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1108
+              }, 
+              "name": "JSDOMCoreException_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1080
+              }, 
+              "name": "JSAbstractWorker_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1078
+              }, 
+              "name": "JSMessagePort_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 940
+              }, 
+              "name": "JSErrorEvent_1.o 940"
+            }, 
+            {
+              "data": {
+                "$area": 814
+              }, 
+              "name": "JSWebKitAnimationEvent_1.o 814"
+            }, 
+            {
+              "data": {
+                "$area": 814
+              }, 
+              "name": "JSWebKitTransitionEvent_1.o 814"
+            }, 
+            {
+              "data": {
+                "$area": 793
+              }, 
+              "name": "JSProgressEvent_1.o 793"
+            }, 
+            {
+              "data": {
+                "$area": 741
+              }, 
+              "name": "JSCompositionEvent_1.o 741"
+            }, 
+            {
+              "data": {
+                "$area": 741
+              }, 
+              "name": "JSTextEvent_1.o 741"
+            }, 
+            {
+              "data": {
+                "$area": 692
+              }, 
+              "name": "JSBeforeLoadEvent_1.o 692"
+            }, 
+            {
+              "data": {
+                "$area": 685
+              }, 
+              "name": "JSUIEvent_1.o 685"
+            }, 
+            {
+              "data": {
+                "$area": 668
+              }, 
+              "name": "JSPopStateEvent_1.o 668"
+            }, 
+            {
+              "data": {
+                "$area": 662
+              }, 
+              "name": "JSCSSStyleSheet_1.o 662"
+            }, 
+            {
+              "data": {
+                "$area": 656
+              }, 
+              "name": "JSDOMSelection_1.o 656"
+            }, 
+            {
+              "data": {
+                "$area": 616
+              }, 
+              "name": "JSCSSStyleDeclaration_1.o 616"
+            }, 
+            {
+              "data": {
+                "$area": 578
+              }, 
+              "name": "JSPageTransitionEvent_1.o 578"
+            }, 
+            {
+              "data": {
+                "$area": 549
+              }, 
+              "name": "JSClipboard_1.o 549"
+            }, 
+            {
+              "data": {
+                "$area": 536
+              }, 
+              "name": "JSHTMLAllCollection_1.o 536"
+            }, 
+            {
+              "data": {
+                "$area": 536
+              }, 
+              "name": "JSXMLHttpRequestUpload_1.o 536"
+            }, 
+            {
+              "data": {
+                "$area": 536
+              }, 
+              "name": "JSHTMLCollection_1.o 536"
+            }, 
+            {
+              "data": {
+                "$area": 528
+              }, 
+              "name": "JSNamedNodeMap_1.o 528"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 158188
+          }, 
+          "name": "html 158.2k", 
+          "children": [
+            {
+              "data": {
+                "$area": 30259
+              }, 
+              "name": "HTMLDocumentParser_1.o 30.3k"
+            }, 
+            {
+              "data": {
+                "$area": 19216
+              }, 
+              "name": "HTMLDocument_1.o 19.2k"
+            }, 
+            {
+              "data": {
+                "$area": 13380
+              }, 
+              "name": "HTMLInputElement_1.o 13.4k"
+            }, 
+            {
+              "data": {
+                "$area": 12339
+              }, 
+              "name": "LegacyHTMLTreeConstructor_1.o 12.3k"
+            }, 
+            {
+              "data": {
+                "$area": 11124
+              }, 
+              "name": "HTML5Lexer_1.o 11.1k"
+            }, 
+            {
+              "data": {
+                "$area": 10352
+              }, 
+              "name": "HTMLElement_1.o 10.4k"
+            }, 
+            {
+              "data": {
+                "$area": 7772
+              }, 
+              "name": "HTMLViewSourceDocument_1.o 7.8k"
+            }, 
+            {
+              "data": {
+                "$area": 7720
+              }, 
+              "name": "PreloadScanner_1.o 7.7k"
+            }, 
+            {
+              "data": {
+                "$area": 5521
+              }, 
+              "name": "HTMLTableElement_1.o 5.5k"
+            }, 
+            {
+              "data": {
+                "$area": 4774
+              }, 
+              "name": "HTMLFormElement_1.o 4.8k"
+            }, 
+            {
+              "data": {
+                "$area": 3044
+              }, 
+              "name": "HTMLBodyElement_1.o 3.0k"
+            }, 
+            {
+              "data": {
+                "$area": 2944
+              }, 
+              "name": "HTMLAnchorElement_1.o 2.9k"
+            }, 
+            {
+              "data": {
+                "$area": 2448
+              }, 
+              "name": "HTMLLinkElement_1.o 2.4k"
+            }, 
+            {
+              "data": {
+                "$area": 2354
+              }, 
+              "name": "canvas 2.4k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 2354
+                  }, 
+                  "name": "CanvasRenderingContext2D_1.o 2.4k"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 1838
+              }, 
+              "name": "HTMLTextAreaElement_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1793
+              }, 
+              "name": "HTMLFrameSetElement_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1730
+              }, 
+              "name": "HTML5TreeBuilder_1.o 1.7k"
+            }, 
+            {
+              "data": {
+                "$area": 1532
+              }, 
+              "name": "HTML5EntityParser_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 1473
+              }, 
+              "name": "HTMLImageElement_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 1456
+              }, 
+              "name": "HTMLEmbedElement_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 1343
+              }, 
+              "name": "HTMLCollection_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1294
+              }, 
+              "name": "HTMLSelectElement_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1293
+              }, 
+              "name": "HTMLFormCollection_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1021
+              }, 
+              "name": "HTMLHRElement_1.o 1.0k"
+            }, 
+            {
+              "data": {
+                "$area": 972
+              }, 
+              "name": "HTMLAreaElement_1.o 972"
+            }, 
+            {
+              "data": {
+                "$area": 965
+              }, 
+              "name": "HTMLObjectElement_1.o 965"
+            }, 
+            {
+              "data": {
+                "$area": 927
+              }, 
+              "name": "HTMLFrameElementBase_1.o 927"
+            }, 
+            {
+              "data": {
+                "$area": 860
+              }, 
+              "name": "HTMLTablePartElement_1.o 860"
+            }, 
+            {
+              "data": {
+                "$area": 826
+              }, 
+              "name": "HTMLAppletElement_1.o 826"
+            }, 
+            {
+              "data": {
+                "$area": 722
+              }, 
+              "name": "HTML5DocumentParser_1.o 722"
+            }, 
+            {
+              "data": {
+                "$area": 706
+              }, 
+              "name": "HTMLNameCollection_1.o 706"
+            }, 
+            {
+              "data": {
+                "$area": 696
+              }, 
+              "name": "ValidityState_1.o 696"
+            }, 
+            {
+              "data": {
+                "$area": 672
+              }, 
+              "name": "HTMLOptionElement_1.o 672"
+            }, 
+            {
+              "data": {
+                "$area": 619
+              }, 
+              "name": "HTMLMarqueeElement_1.o 619"
+            }, 
+            {
+              "data": {
+                "$area": 602
+              }, 
+              "name": "HTMLMapElement_1.o 602"
+            }, 
+            {
+              "data": {
+                "$area": 543
+              }, 
+              "name": "HTMLButtonElement_1.o 543"
+            }, 
+            {
+              "data": {
+                "$area": 532
+              }, 
+              "name": "DateComponents_1.o 532"
+            }, 
+            {
+              "data": {
+                "$area": 526
+              }, 
+              "name": "HTMLParamElement_1.o 526"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 154335
+          }, 
+          "name": "yarr 154.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 135943
+              }, 
+              "name": "RegexCompiler_1.o 135.9k"
+            }, 
+            {
+              "data": {
+                "$area": 18392
+              }, 
+              "name": "RegexJIT_1.o 18.4k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 131096
+          }, 
+          "name": "API 131.1k", 
+          "children": [
+            {
+              "data": {
+                "$area": 131096
+              }, 
+              "name": "JSCallbackConstructor_1.o 131.1k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 127277
+          }, 
+          "name": "runtime 127.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 19402
+              }, 
+              "name": "ArrayPrototype_1.o 19.4k"
+            }, 
+            {
+              "data": {
+                "$area": 18474
+              }, 
+              "name": "StringPrototype_1.o 18.5k"
+            }, 
+            {
+              "data": {
+                "$area": 11629
+              }, 
+              "name": "JSGlobalObject_1.o 11.6k"
+            }, 
+            {
+              "data": {
+                "$area": 9699
+              }, 
+              "name": "JSONObject_1.o 9.7k"
+            }, 
+            {
+              "data": {
+                "$area": 7743
+              }, 
+              "name": "NumberPrototype_1.o 7.7k"
+            }, 
+            {
+              "data": {
+                "$area": 7023
+              }, 
+              "name": "ObjectConstructor_1.o 7.0k"
+            }, 
+            {
+              "data": {
+                "$area": 5268
+              }, 
+              "name": "LiteralParser_1.o 5.3k"
+            }, 
+            {
+              "data": {
+                "$area": 4876
+              }, 
+              "name": "JSGlobalData_1.o 4.9k"
+            }, 
+            {
+              "data": {
+                "$area": 4723
+              }, 
+              "name": "JSArray_1.o 4.7k"
+            }, 
+            {
+              "data": {
+                "$area": 4609
+              }, 
+              "name": "JSGlobalObjectFunctions_1.o 4.6k"
+            }, 
+            {
+              "data": {
+                "$area": 3655
+              }, 
+              "name": "JSObject_1.o 3.7k"
+            }, 
+            {
+              "data": {
+                "$area": 3585
+              }, 
+              "name": "DateConstructor_1.o 3.6k"
+            }, 
+            {
+              "data": {
+                "$area": 2836
+              }, 
+              "name": "Operations_1.o 2.8k"
+            }, 
+            {
+              "data": {
+                "$area": 2746
+              }, 
+              "name": "JSString_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 2727
+              }, 
+              "name": "DatePrototype_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 1606
+              }, 
+              "name": "Executable_1.o 1.6k"
+            }, 
+            {
+              "data": {
+                "$area": 1561
+              }, 
+              "name": "RegExpPrototype_1.o 1.6k"
+            }, 
+            {
+              "data": {
+                "$area": 1499
+              }, 
+              "name": "FunctionConstructor_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 1453
+              }, 
+              "name": "CommonIdentifiers_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 1411
+              }, 
+              "name": "ExceptionHelpers_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1398
+              }, 
+              "name": "FunctionPrototype_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1288
+              }, 
+              "name": "Arguments_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1087
+              }, 
+              "name": "RegExpConstructor_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1071
+              }, 
+              "name": "MathObject_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1021
+              }, 
+              "name": "RegExpObject_1.o 1.0k"
+            }, 
+            {
+              "data": {
+                "$area": 924
+              }, 
+              "name": "JSFunction_1.o 924"
+            }, 
+            {
+              "data": {
+                "$area": 851
+              }, 
+              "name": "ObjectPrototype_1.o 851"
+            }, 
+            {
+              "data": {
+                "$area": 724
+              }, 
+              "name": "UString_1.o 724"
+            }, 
+            {
+              "data": {
+                "$area": 652
+              }, 
+              "name": "SmallStrings_1.o 652"
+            }, 
+            {
+              "data": {
+                "$area": 622
+              }, 
+              "name": "Structure_1.o 622"
+            }, 
+            {
+              "data": {
+                "$area": 591
+              }, 
+              "name": "Error_1.o 591"
+            }, 
+            {
+              "data": {
+                "$area": 523
+              }, 
+              "name": "DateConversion_1.o 523"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 118994
+          }, 
+          "name": "platform 119.0k", 
+          "children": [
+            {
+              "data": {
+                "$area": 36976
+              }, 
+              "name": "graphics 37.0k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 9190
+                  }, 
+                  "name": "transforms 9.2k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 6325
+                      }, 
+                      "name": "TransformationMatrix_1.o 6.3k"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 1022
+                      }, 
+                      "name": "RotateTransformOperation_1.o 1.0k"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 656
+                      }, 
+                      "name": "MatrixTransformOperation_1.o 656"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 627
+                      }, 
+                      "name": "TranslateTransformOperation_1.o 627"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 560
+                      }, 
+                      "name": "PerspectiveTransformOperation_1.o 560"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 6226
+                  }, 
+                  "name": "wx 6.2k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 4044
+                      }, 
+                      "name": "UniscribeController_1.o 4.0k"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 2182
+                      }, 
+                      "name": "ImageWx_1.o 2.2k"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 3450
+                  }, 
+                  "name": "GraphicsContext_1.o 3.5k"
+                }, 
+                {
+                  "data": {
+                    "$area": 3358
+                  }, 
+                  "name": "win 3.4k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 3358
+                      }, 
+                      "name": "FontCacheWin_1.o 3.4k"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 3304
+                  }, 
+                  "name": "Color_1.o 3.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2296
+                  }, 
+                  "name": "FontCache_1.o 2.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2115
+                  }, 
+                  "name": "Path_1.o 2.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1805
+                  }, 
+                  "name": "GlyphPageTreeNode_1.o 1.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1697
+                  }, 
+                  "name": "WidthIterator_1.o 1.7k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1536
+                  }, 
+                  "name": "FontFastPath_1.o 1.5k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1145
+                  }, 
+                  "name": "Image_1.o 1.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 854
+                  }, 
+                  "name": "BitmapImage_1.o 854"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 20972
+              }, 
+              "name": "network 21.0k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 8719
+                  }, 
+                  "name": "curl 8.7k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 8194
+                      }, 
+                      "name": "ResourceHandleManager_1.o 8.2k"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 525
+                      }, 
+                      "name": "FormDataStreamCurl_1.o 525"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 5273
+                  }, 
+                  "name": "ResourceResponseBase_1.o 5.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2117
+                  }, 
+                  "name": "HTTPParsers_1.o 2.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2015
+                  }, 
+                  "name": "FormData_1.o 2.0k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1667
+                  }, 
+                  "name": "ResourceRequestBase_1.o 1.7k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1181
+                  }, 
+                  "name": "ResourceHandle_1.o 1.2k"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 10742
+              }, 
+              "name": "KURL_1.o 10.7k"
+            }, 
+            {
+              "data": {
+                "$area": 9302
+              }, 
+              "name": "image-decoders 9.3k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 4203
+                  }, 
+                  "name": "gif 4.2k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 3450
+                      }, 
+                      "name": "GIFImageReader_1.o 3.5k"
+                    }, 
+                    {
+                      "data": {
+                        "$area": 753
+                      }, 
+                      "name": "GIFImageDecoder_1.o 753"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 1810
+                  }, 
+                  "name": "bmp 1.8k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 1810
+                      }, 
+                      "name": "BMPImageReader_1.o 1.8k"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 1451
+                  }, 
+                  "name": "ico 1.5k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 1451
+                      }, 
+                      "name": "ICOImageDecoder_1.o 1.5k"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 1281
+                  }, 
+                  "name": "jpeg 1.3k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 1281
+                      }, 
+                      "name": "JPEGImageDecoder_1.o 1.3k"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 557
+                  }, 
+                  "name": "png 557", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 557
+                      }, 
+                      "name": "PNGImageDecoder_1.o 557"
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 8242
+              }, 
+              "name": "text 8.2k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 2504
+                  }, 
+                  "name": "TextCodecICU_1.o 2.5k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1796
+                  }, 
+                  "name": "TextBreakIteratorICU_1.o 1.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1380
+                  }, 
+                  "name": "transcoder 1.4k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 1380
+                      }, 
+                      "name": "FontTranscoder_1.o 1.4k"
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 868
+                  }, 
+                  "name": "TextEncoding_1.o 868"
+                }, 
+                {
+                  "data": {
+                    "$area": 591
+                  }, 
+                  "name": "BidiContext_1.o 591"
+                }, 
+                {
+                  "data": {
+                    "$area": 554
+                  }, 
+                  "name": "TextCodecLatin1_1.o 554"
+                }, 
+                {
+                  "data": {
+                    "$area": 549
+                  }, 
+                  "name": "Base64_1.o 549"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 8215
+              }, 
+              "name": "ContextMenu_1.o 8.2k"
+            }, 
+            {
+              "data": {
+                "$area": 6195
+              }, 
+              "name": "wx 6.2k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 2734
+                  }, 
+                  "name": "KeyboardEventWx_1.o 2.7k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1141
+                  }, 
+                  "name": "wxcode 1.1k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 1141
+                      }, 
+                      "name": "win 1.1k", 
+                      "children": [
+                        {
+                          "data": {
+                            "$area": 1141
+                          }, 
+                          "name": "scrollbar_render_1.o 1.1k"
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "data": {
+                    "$area": 920
+                  }, 
+                  "name": "ContextMenuWx_1.o 920"
+                }, 
+                {
+                  "data": {
+                    "$area": 763
+                  }, 
+                  "name": "PopupMenuWx_1.o 763"
+                }, 
+                {
+                  "data": {
+                    "$area": 637
+                  }, 
+                  "name": "PasteboardWx_1.o 637"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 4874
+              }, 
+              "name": "ThreadGlobalData_1.o 4.9k"
+            }, 
+            {
+              "data": {
+                "$area": 4313
+              }, 
+              "name": "sql 4.3k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 3708
+                  }, 
+                  "name": "SQLiteDatabase_1.o 3.7k"
+                }, 
+                {
+                  "data": {
+                    "$area": 605
+                  }, 
+                  "name": "SQLiteFileSystem_1.o 605"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 2194
+              }, 
+              "name": "ScrollView_1.o 2.2k"
+            }, 
+            {
+              "data": {
+                "$area": 2134
+              }, 
+              "name": "ScrollbarThemeComposite_1.o 2.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1821
+              }, 
+              "name": "Logging_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1058
+              }, 
+              "name": "BlobItem_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 752
+              }, 
+              "name": "animation 752", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 752
+                  }, 
+                  "name": "AnimationList_1.o 752"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 604
+              }, 
+              "name": "LinkHash_1.o 604"
+            }, 
+            {
+              "data": {
+                "$area": 600
+              }, 
+              "name": "Length_1.o 600"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 90776
+          }, 
+          "name": "dom 90.8k", 
+          "children": [
+            {
+              "data": {
+                "$area": 22641
+              }, 
+              "name": "Document_1.o 22.6k"
+            }, 
+            {
+              "data": {
+                "$area": 10250
+              }, 
+              "name": "Range_1.o 10.3k"
+            }, 
+            {
+              "data": {
+                "$area": 8395
+              }, 
+              "name": "Node_1.o 8.4k"
+            }, 
+            {
+              "data": {
+                "$area": 7895
+              }, 
+              "name": "XMLDocumentParserLibxml2_1.o 7.9k"
+            }, 
+            {
+              "data": {
+                "$area": 6052
+              }, 
+              "name": "ContainerNode_1.o 6.1k"
+            }, 
+            {
+              "data": {
+                "$area": 4573
+              }, 
+              "name": "Element_1.o 4.6k"
+            }, 
+            {
+              "data": {
+                "$area": 4458
+              }, 
+              "name": "Position_1.o 4.5k"
+            }, 
+            {
+              "data": {
+                "$area": 3975
+              }, 
+              "name": "EventNames_1.o 4.0k"
+            }, 
+            {
+              "data": {
+                "$area": 3306
+              }, 
+              "name": "TreeWalker_1.o 3.3k"
+            }, 
+            {
+              "data": {
+                "$area": 2845
+              }, 
+              "name": "ScriptElement_1.o 2.8k"
+            }, 
+            {
+              "data": {
+                "$area": 2745
+              }, 
+              "name": "SelectElement_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 2700
+              }, 
+              "name": "DOMImplementation_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 1505
+              }, 
+              "name": "Text_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 1264
+              }, 
+              "name": "NodeIterator_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1135
+              }, 
+              "name": "XMLDocumentParser_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1122
+              }, 
+              "name": "ProcessingInstruction_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1113
+              }, 
+              "name": "NamedNodeMap_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1034
+              }, 
+              "name": "MessagePort_1.o 1.0k"
+            }, 
+            {
+              "data": {
+                "$area": 988
+              }, 
+              "name": "StyleElement_1.o 988"
+            }, 
+            {
+              "data": {
+                "$area": 757
+              }, 
+              "name": "ViewportArguments_1.o 757"
+            }, 
+            {
+              "data": {
+                "$area": 720
+              }, 
+              "name": "PositionIterator_1.o 720"
+            }, 
+            {
+              "data": {
+                "$area": 680
+              }, 
+              "name": "StyledElement_1.o 680"
+            }, 
+            {
+              "data": {
+                "$area": 623
+              }, 
+              "name": "SelectorNodeList_1.o 623"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 80917
+          }, 
+          "name": "jit 80.9k", 
+          "children": [
+            {
+              "data": {
+                "$area": 30728
+              }, 
+              "name": "JITArithmetic32_64_1.o 30.7k"
+            }, 
+            {
+              "data": {
+                "$area": 16248
+              }, 
+              "name": "JITOpcodes32_64_1.o 16.2k"
+            }, 
+            {
+              "data": {
+                "$area": 12750
+              }, 
+              "name": "JITPropertyAccess32_64_1.o 12.8k"
+            }, 
+            {
+              "data": {
+                "$area": 9075
+              }, 
+              "name": "JITStubs_1.o 9.1k"
+            }, 
+            {
+              "data": {
+                "$area": 7795
+              }, 
+              "name": "JIT_1.o 7.8k"
+            }, 
+            {
+              "data": {
+                "$area": 2604
+              }, 
+              "name": "JITCall32_64_1.o 2.6k"
+            }, 
+            {
+              "data": {
+                "$area": 1068
+              }, 
+              "name": "ThunkGenerators_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 649
+              }, 
+              "name": "JITOpcodes_1.o 649"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 76193
+          }, 
+          "name": "bindings 76.2k", 
+          "children": [
+            {
+              "data": {
+                "$area": 76193
+              }, 
+              "name": "js 76.2k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 19388
+                  }, 
+                  "name": "SerializedScriptValue_1.o 19.4k"
+                }, 
+                {
+                  "data": {
+                    "$area": 9395
+                  }, 
+                  "name": "JSDOMWindowCustom_1.o 9.4k"
+                }, 
+                {
+                  "data": {
+                    "$area": 8087
+                  }, 
+                  "name": "JSCanvasRenderingContext2DCustom_1.o 8.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2443
+                  }, 
+                  "name": "JSDatabaseCustom_1.o 2.4k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2341
+                  }, 
+                  "name": "JSWorkerContextCustom_1.o 2.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 2317
+                  }, 
+                  "name": "JSHistoryCustom_1.o 2.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1971
+                  }, 
+                  "name": "JSDOMWindowBase_1.o 2.0k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1814
+                  }, 
+                  "name": "JSSQLTransactionCustom_1.o 1.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1801
+                  }, 
+                  "name": "JSXMLHttpRequestCustom_1.o 1.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1658
+                  }, 
+                  "name": "JSCSSStyleDeclarationCustom_1.o 1.7k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1376
+                  }, 
+                  "name": "JSClipboardCustom_1.o 1.4k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1256
+                  }, 
+                  "name": "JSSQLTransactionSyncCustom_1.o 1.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1233
+                  }, 
+                  "name": "JSMessageEventCustom_1.o 1.2k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1232
+                  }, 
+                  "name": "JSOptionConstructor_1.o 1.2k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1220
+                  }, 
+                  "name": "ScriptController_1.o 1.2k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1162
+                  }, 
+                  "name": "JSEventListener_1.o 1.2k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1160
+                  }, 
+                  "name": "JSLocationCustom_1.o 1.2k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1142
+                  }, 
+                  "name": "WorkerScriptController_1.o 1.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1092
+                  }, 
+                  "name": "JSDOMBinding_1.o 1.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1090
+                  }, 
+                  "name": "JSInspectorFrontendHostCustom_1.o 1.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1060
+                  }, 
+                  "name": "JSLazyEventListener_1.o 1.1k"
+                }, 
+                {
+                  "data": {
+                    "$area": 977
+                  }, 
+                  "name": "JSHTMLCollectionCustom_1.o 977"
+                }, 
+                {
+                  "data": {
+                    "$area": 834
+                  }, 
+                  "name": "JSWorkerCustom_1.o 834"
+                }, 
+                {
+                  "data": {
+                    "$area": 802
+                  }, 
+                  "name": "JSInjectedScriptHostCustom_1.o 802"
+                }, 
+                {
+                  "data": {
+                    "$area": 789
+                  }, 
+                  "name": "JSDOMWindowShell_1.o 789"
+                }, 
+                {
+                  "data": {
+                    "$area": 703
+                  }, 
+                  "name": "JSDatabaseSyncCustom_1.o 703"
+                }, 
+                {
+                  "data": {
+                    "$area": 702
+                  }, 
+                  "name": "JSEventCustom_1.o 702"
+                }, 
+                {
+                  "data": {
+                    "$area": 690
+                  }, 
+                  "name": "JSDOMGlobalObject_1.o 690"
+                }, 
+                {
+                  "data": {
+                    "$area": 690
+                  }, 
+                  "name": "JSHTMLDocumentCustom_1.o 690"
+                }, 
+                {
+                  "data": {
+                    "$area": 679
+                  }, 
+                  "name": "JSSQLResultSetRowListCustom_1.o 679"
+                }, 
+                {
+                  "data": {
+                    "$area": 665
+                  }, 
+                  "name": "JSWorkerContextErrorHandler_1.o 665"
+                }, 
+                {
+                  "data": {
+                    "$area": 616
+                  }, 
+                  "name": "JSImageDataCustom_1.o 616"
+                }, 
+                {
+                  "data": {
+                    "$area": 588
+                  }, 
+                  "name": "JSCallbackData_1.o 588"
+                }, 
+                {
+                  "data": {
+                    "$area": 576
+                  }, 
+                  "name": "JSImageConstructor_1.o 576"
+                }, 
+                {
+                  "data": {
+                    "$area": 537
+                  }, 
+                  "name": "ScriptFunctionCall_1.o 537"
+                }, 
+                {
+                  "data": {
+                    "$area": 533
+                  }, 
+                  "name": "JSCustomSQLStatementErrorCallback_1.o 533"
+                }, 
+                {
+                  "data": {
+                    "$area": 532
+                  }, 
+                  "name": "ScheduledAction_1.o 532"
+                }, 
+                {
+                  "data": {
+                    "$area": 529
+                  }, 
+                  "name": "ScriptCallStack_1.o 529"
+                }, 
+                {
+                  "data": {
+                    "$area": 513
+                  }, 
+                  "name": "JSJavaScriptCallFrameCustom_1.o 513"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 67319
+          }, 
+          "name": "page 67.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 15467
+              }, 
+              "name": "animation 15.5k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 10931
+                  }, 
+                  "name": "AnimationBase_1.o 10.9k"
+                }, 
+                {
+                  "data": {
+                    "$area": 3333
+                  }, 
+                  "name": "CompositeAnimation_1.o 3.3k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1203
+                  }, 
+                  "name": "AnimationController_1.o 1.2k"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 12946
+              }, 
+              "name": "EventHandler_1.o 12.9k"
+            }, 
+            {
+              "data": {
+                "$area": 7609
+              }, 
+              "name": "Frame_1.o 7.6k"
+            }, 
+            {
+              "data": {
+                "$area": 3715
+              }, 
+              "name": "FrameView_1.o 3.7k"
+            }, 
+            {
+              "data": {
+                "$area": 3670
+              }, 
+              "name": "DOMWindow_1.o 3.7k"
+            }, 
+            {
+              "data": {
+                "$area": 3559
+              }, 
+              "name": "SecurityOrigin_1.o 3.6k"
+            }, 
+            {
+              "data": {
+                "$area": 3017
+              }, 
+              "name": "Page_1.o 3.0k"
+            }, 
+            {
+              "data": {
+                "$area": 2901
+              }, 
+              "name": "XSSAuditor_1.o 2.9k"
+            }, 
+            {
+              "data": {
+                "$area": 2866
+              }, 
+              "name": "ContextMenuController_1.o 2.9k"
+            }, 
+            {
+              "data": {
+                "$area": 2559
+              }, 
+              "name": "DragController_1.o 2.6k"
+            }, 
+            {
+              "data": {
+                "$area": 1818
+              }, 
+              "name": "FocusController_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1384
+              }, 
+              "name": "DOMSelection_1.o 1.4k"
+            }, 
+            {
+              "data": {
+                "$area": 1014
+              }, 
+              "name": "FrameTree_1.o 1.0k"
+            }, 
+            {
+              "data": {
+                "$area": 839
+              }, 
+              "name": "Chrome_1.o 839"
+            }, 
+            {
+              "data": {
+                "$area": 779
+              }, 
+              "name": "UserContentURLPattern_1.o 779"
+            }, 
+            {
+              "data": {
+                "$area": 775
+              }, 
+              "name": "WindowFeatures_1.o 775"
+            }, 
+            {
+              "data": {
+                "$area": 696
+              }, 
+              "name": "Console_1.o 696"
+            }, 
+            {
+              "data": {
+                "$area": 604
+              }, 
+              "name": "OriginAccessEntry_1.o 604"
+            }, 
+            {
+              "data": {
+                "$area": 570
+              }, 
+              "name": "Location_1.o 570"
+            }, 
+            {
+              "data": {
+                "$area": 531
+              }, 
+              "name": "Navigator_1.o 531"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 62200
+          }, 
+          "name": "loader 62.2k", 
+          "children": [
+            {
+              "data": {
+                "$area": 28241
+              }, 
+              "name": "FrameLoader_1.o 28.2k"
+            }, 
+            {
+              "data": {
+                "$area": 4630
+              }, 
+              "name": "icon 4.6k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 4630
+                  }, 
+                  "name": "IconDatabase_1.o 4.6k"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 4201
+              }, 
+              "name": "TextResourceDecoder_1.o 4.2k"
+            }, 
+            {
+              "data": {
+                "$area": 2736
+              }, 
+              "name": "DocumentThreadableLoader_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 2707
+              }, 
+              "name": "loader_1.o 2.7k"
+            }, 
+            {
+              "data": {
+                "$area": 2572
+              }, 
+              "name": "MainResourceLoader_1.o 2.6k"
+            }, 
+            {
+              "data": {
+                "$area": 2442
+              }, 
+              "name": "HistoryController_1.o 2.4k"
+            }, 
+            {
+              "data": {
+                "$area": 2309
+              }, 
+              "name": "ImageDocument_1.o 2.3k"
+            }, 
+            {
+              "data": {
+                "$area": 1856
+              }, 
+              "name": "DocumentLoader_1.o 1.9k"
+            }, 
+            {
+              "data": {
+                "$area": 1717
+              }, 
+              "name": "DocumentWriter_1.o 1.7k"
+            }, 
+            {
+              "data": {
+                "$area": 1230
+              }, 
+              "name": "CrossOriginAccessControl_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1220
+              }, 
+              "name": "TextDocument_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1219
+              }, 
+              "name": "PluginDocument_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 1091
+              }, 
+              "name": "DocLoader_1.o 1.1k"
+            }, 
+            {
+              "data": {
+                "$area": 973
+              }, 
+              "name": "SubresourceLoader_1.o 973"
+            }, 
+            {
+              "data": {
+                "$area": 899
+              }, 
+              "name": "ImageLoader_1.o 899"
+            }, 
+            {
+              "data": {
+                "$area": 570
+              }, 
+              "name": "PolicyChecker_1.o 570"
+            }, 
+            {
+              "data": {
+                "$area": 540
+              }, 
+              "name": "CachedResource_1.o 540"
+            }, 
+            {
+              "data": {
+                "$area": 526
+              }, 
+              "name": "Cache_1.o 526"
+            }, 
+            {
+              "data": {
+                "$area": 521
+              }, 
+              "name": "ProgressTracker_1.o 521"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 45503
+          }, 
+          "name": "pcre 45.5k", 
+          "children": [
+            {
+              "data": {
+                "$area": 23704
+              }, 
+              "name": "pcre_ucp_searchfuncs_1.o 23.7k"
+            }, 
+            {
+              "data": {
+                "$area": 12592
+              }, 
+              "name": "pcre_exec_1.o 12.6k"
+            }, 
+            {
+              "data": {
+                "$area": 9207
+              }, 
+              "name": "pcre_compile_1.o 9.2k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 33158
+          }, 
+          "name": "inspector 33.2k", 
+          "children": [
+            {
+              "data": {
+                "$area": 19697
+              }, 
+              "name": "InspectorDOMAgent_1.o 19.7k"
+            }, 
+            {
+              "data": {
+                "$area": 5321
+              }, 
+              "name": "InspectorController_1.o 5.3k"
+            }, 
+            {
+              "data": {
+                "$area": 2955
+              }, 
+              "name": "InspectorValues_1.o 3.0k"
+            }, 
+            {
+              "data": {
+                "$area": 2070
+              }, 
+              "name": "InspectorCSSStore_1.o 2.1k"
+            }, 
+            {
+              "data": {
+                "$area": 1822
+              }, 
+              "name": "InspectorResource_1.o 1.8k"
+            }, 
+            {
+              "data": {
+                "$area": 756
+              }, 
+              "name": "ConsoleMessage_1.o 756"
+            }, 
+            {
+              "data": {
+                "$area": 537
+              }, 
+              "name": "InspectorTimelineAgent_1.o 537"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 32139
+          }, 
+          "name": "bytecompiler 32.1k", 
+          "children": [
+            {
+              "data": {
+                "$area": 19516
+              }, 
+              "name": "BytecodeGenerator_1.o 19.5k"
+            }, 
+            {
+              "data": {
+                "$area": 12623
+              }, 
+              "name": "NodesCodegen_1.o 12.6k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 23109
+          }, 
+          "name": "wtf 23.1k", 
+          "children": [
+            {
+              "data": {
+                "$area": 15053
+              }, 
+              "name": "dtoa_1.o 15.1k"
+            }, 
+            {
+              "data": {
+                "$area": 3517
+              }, 
+              "name": "FastMalloc_1.o 3.5k"
+            }, 
+            {
+              "data": {
+                "$area": 2324
+              }, 
+              "name": "text 2.3k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 1812
+                  }, 
+                  "name": "StringImpl_1.o 1.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 512
+                  }, 
+                  "name": "WTFString_1.o 512"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 1695
+              }, 
+              "name": "DateMath_1.o 1.7k"
+            }, 
+            {
+              "data": {
+                "$area": 520
+              }, 
+              "name": "unicode 520", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 520
+                  }, 
+                  "name": "UTF8_1.o 520"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 21939
+          }, 
+          "name": "plugins 21.9k", 
+          "children": [
+            {
+              "data": {
+                "$area": 7103
+              }, 
+              "name": "PluginView_1.o 7.1k"
+            }, 
+            {
+              "data": {
+                "$area": 6219
+              }, 
+              "name": "win 6.2k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 3005
+                  }, 
+                  "name": "PluginDatabaseWin_1.o 3.0k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1712
+                  }, 
+                  "name": "PluginViewWin_1.o 1.7k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1502
+                  }, 
+                  "name": "PluginPackageWin_1.o 1.5k"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 3942
+              }, 
+              "name": "PluginDatabase_1.o 3.9k"
+            }, 
+            {
+              "data": {
+                "$area": 3098
+              }, 
+              "name": "PluginStream_1.o 3.1k"
+            }, 
+            {
+              "data": {
+                "$area": 952
+              }, 
+              "name": "wx 952", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 952
+                  }, 
+                  "name": "PluginDataWx_1.o 952"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 625
+              }, 
+              "name": "P...624 625"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 18896
+          }, 
+          "name": "storage 18.9k", 
+          "children": [
+            {
+              "data": {
+                "$area": 5358
+              }, 
+              "name": "DatabaseTracker_1.o 5.4k"
+            }, 
+            {
+              "data": {
+                "$area": 5176
+              }, 
+              "name": "Database_1.o 5.2k"
+            }, 
+            {
+              "data": {
+                "$area": 3788
+              }, 
+              "name": "DatabaseAuthorizer_1.o 3.8k"
+            }, 
+            {
+              "data": {
+                "$area": 1748
+              }, 
+              "name": "SQLStatement_1.o 1.7k"
+            }, 
+            {
+              "data": {
+                "$area": 1541
+              }, 
+              "name": "SQLTransaction_1.o 1.5k"
+            }, 
+            {
+              "data": {
+                "$area": 664
+              }, 
+              "name": "DatabaseTh...663 664"
+            }, 
+            {
+              "data": {
+                "$area": 621
+              }, 
+              "name": "OriginUsageRecord_1.o 621"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 11072
+          }, 
+          "name": "parser 11.1k", 
+          "children": [
+            {
+              "data": {
+                "$area": 11072
+              }, 
+              "name": "Lexer_1.o 11.1k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 8257
+          }, 
+          "name": "xml 8.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 8257
+              }, 
+              "name": "XMLHttpRequest_1.o 8.3k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 6710
+          }, 
+          "name": "interpreter 6.7k", 
+          "children": [
+            {
+              "data": {
+                "$area": 6710
+              }, 
+              "name": "Interpreter_1.o 6.7k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 5476
+          }, 
+          "name": "bridge 5.5k", 
+          "children": [
+            {
+              "data": {
+                "$area": 3092
+              }, 
+              "name": "c 3.1k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 1783
+                  }, 
+                  "name": "c_instance_1.o 1.8k"
+                }, 
+                {
+                  "data": {
+                    "$area": 1309
+                  }, 
+                  "name": "c_utility_1.o 1.3k"
+                }
+              ]
+            }, 
+            {
+              "data": {
+                "$area": 1311
+              }, 
+              "name": "runtime_object_1.o 1.3k"
+            }, 
+            {
+              "data": {
+                "$area": 548
+              }, 
+              "name": "runtime_root_1.o 548"
+            }, 
+            {
+              "data": {
+                "$area": 525
+              }, 
+              "name": "NP_jsobject_1.o 525"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 1871
+          }, 
+          "name": "profiler 1.9k", 
+          "children": [
+            {
+              "data": {
+                "$area": 1229
+              }, 
+              "name": "Profiler_1.o 1.2k"
+            }, 
+            {
+              "data": {
+                "$area": 642
+              }, 
+              "name": "ProfileGenerator_1.o 642"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 1278
+          }, 
+          "name": "history 1.3k", 
+          "children": [
+            {
+              "data": {
+                "$area": 642
+              }, 
+              "name": "BackForwardList_1.o 642"
+            }, 
+            {
+              "data": {
+                "$area": 636
+              }, 
+              "name": "HistoryItem_1.o 636"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 1065
+          }, 
+          "name": "bytecode 1.1k", 
+          "children": [
+            {
+              "data": {
+                "$area": 1065
+              }, 
+              "name": "CodeBlock_1.o 1.1k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 1017
+          }, 
+          "name": "workers 1.0k", 
+          "children": [
+            {
+              "data": {
+                "$area": 1017
+              }, 
+              "name": "WorkerContext_1.o 1.0k"
+            }
+          ]
+        }, 
+        {
+          "data": {
+            "$area": 587
+          }, 
+          "name": "debugger 587", 
+          "children": [
+            {
+              "data": {
+                "$area": 587
+              }, 
+              "name": "Debugger_1.o 587"
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "data": {
+        "$area": 231246
+      }, 
+      "name": "symbols without paths 231.2k", 
+      "children": [
+        {
+          "data": {
+            "$area": 207216
+          }, 
+          "name": "misc 207.2k"
+        }, 
+        {
+          "data": {
+            "$area": 24030
+          }, 
+          "name": "WTF:: 24.0k"
+        }
+      ]
+    }, 
+    {
+      "data": {
+        "$area": 17832
+      }, 
+      "name": "C: 17.8k", 
+      "children": [
+        {
+          "data": {
+            "$area": 17832
+          }, 
+          "name": "Users 17.8k", 
+          "children": [
+            {
+              "data": {
+                "$area": 17832
+              }, 
+              "name": "Kevin 17.8k", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 17832
+                  }, 
+                  "name": "src 17.8k", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 17832
+                      }, 
+                      "name": "digsby 17.8k", 
+                      "children": [
+                        {
+                          "data": {
+                            "$area": 17832
+                          }, 
+                          "name": "build 17.8k", 
+                          "children": [
+                            {
+                              "data": {
+                                "$area": 17832
+                              }, 
+                              "name": "msw 17.8k", 
+                              "children": [
+                                {
+                                  "data": {
+                                    "$area": 17832
+                                  }, 
+                                  "name": "WebKit 17.8k", 
+                                  "children": [
+                                    {
+                                      "data": {
+                                        "$area": 17832
+                                      }, 
+                                      "name": "WebKit 17.8k", 
+                                      "children": [
+                                        {
+                                          "data": {
+                                            "$area": 17832
+                                          }, 
+                                          "name": "wx 17.8k", 
+                                          "children": [
+                                            {
+                                              "data": {
+                                                "$area": 17832
+                                              }, 
+                                              "name": "build 17.8k", 
+                                              "children": [
+                                                {
+                                                  "data": {
+                                                    "$area": 17832
+                                                  }, 
+                                                  "name": "default 17.8k", 
+                                                  "children": [
+                                                    {
+                                                      "data": {
+                                                        "$area": 8250
+                                                      }, 
+                                                      "name": "WebBrowserShell_1.o 8.3k"
+                                                    }, 
+                                                    {
+                                                      "data": {
+                                                        "$area": 6060
+                                                      }, 
+                                                      "name": "WebView_1.o 6.1k"
+                                                    }, 
+                                                    {
+                                                      "data": {
+                                                        "$area": 2621
+                                                      }, 
+                                                      "name": "WebFrame_1.o 2.6k"
+                                                    }, 
+                                                    {
+                                                      "data": {
+                                                        "$area": 901
+                                                      }, 
+                                                      "name": "WebKitSupport 901", 
+                                                      "children": [
+                                                        {
+                                                          "data": {
+                                                            "$area": 901
+                                                          }, 
+                                                          "name": "ChromeClientWx_1.o 901"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "data": {
+        "$area": 17434
+      }, 
+      "name": "vc_mswuhdll 17.4k", 
+      "children": [
+        {
+          "data": {
+            "$area": 14428
+          }, 
+          "name": "wxzlib_inflate.obj 14.4k"
+        }, 
+        {
+          "data": {
+            "$area": 1264
+          }, 
+          "name": "wxzlib_inftrees.obj 1.3k"
+        }, 
+        {
+          "data": {
+            "$area": 1120
+          }, 
+          "name": "wxzlib_inffast.obj 1.1k"
+        }, 
+        {
+          "data": {
+            "$area": 622
+          }, 
+          "name": "wxzlib_adler32.obj 622"
+        }
+      ]
+    }, 
+    {
+      "data": {
+        "$area": 550
+      }, 
+      "name": "f: 550", 
+      "children": [
+        {
+          "data": {
+            "$area": 550
+          }, 
+          "name": "dd 550", 
+          "children": [
+            {
+              "data": {
+                "$area": 550
+              }, 
+              "name": "vctools 550", 
+              "children": [
+                {
+                  "data": {
+                    "$area": 550
+                  }, 
+                  "name": "crt_bld 550", 
+                  "children": [
+                    {
+                      "data": {
+                        "$area": 550
+                      }, 
+                      "name": "SELF_X86 550", 
+                      "children": [
+                        {
+                          "data": {
+                            "$area": 550
+                          }, 
+                          "name": "crt 550", 
+                          "children": [
+                            {
+                              "data": {
+                                "$area": 550
+                              }, 
+                              "name": "src 550", 
+                              "children": [
+                                {
+                                  "data": {
+                                    "$area": 550
+                                  }, 
+                                  "name": "build 550", 
+                                  "children": [
+                                    {
+                                      "data": {
+                                        "$area": 550
+                                      }, 
+                                      "name": "INTEL 550", 
+                                      "children": [
+                                        {
+                                          "data": {
+                                            "$area": 550
+                                          }, 
+                                          "name": "dll_obj 550", 
+                                          "children": [
+                                            {
+                                              "data": {
+                                                "$area": 550
+                                              }, 
+                                              "name": "crtdll.obj 550"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<?py myspace_png = app.resource('myspace.png', 'base').url() ?>
+<?py
+user = acct.user_from_activity(item)
+buddyicon = acct.get_imageurl_for_user(user)
+?>
+<div id="${item.id}" class="activityItem ${item.activity_type} major social_background_hover" timestamp="${item.updated_parsed}" timestyle="smart">
+    <div class="activity-icon">
+      <div class="viewport">
+<?py if buddyicon is not None: ?>
+            <img id="${item.id}_buddyicon" class="buddyicon clipped" src="${buddyicon}" />
+<?py else: ?>
+            <img id="${item.id}_buddyicon" class="buddyicon clipped" src="${gui.skin.get('BuddiesPanel.BuddyIcons.NoIcon').path.url()}" />
+<?py #endif ?>
+      </div>
+    </div>
+    <div class="activity-data" timestamp="${item.updated_parsed}" timestyle="smart">
+<?py if item.activity_type == "DigsbyStatusUpdate": ?>
+       <span class="${item.activity_type}">
+       <span class="namelink-container"><a class="link namelink" href="${getattr(user, 'profileUrl', getattr(user, 'webUri', None))}">#{getattr(user, 'displayName', getattr(user, 'name', None))}</a></span>
+       <span class="status_text"> #{item.body}</span>
+       </span>
+<?py else: ?>
+    <?py for (ctype, cval) in item.contents: ?>
+           <span class="default ${item.activity_type}">
+        <?py if ctype == 'xhtml': ?>
+                #{util.linkify(cval)}
+        <?py elif ctype == 'html': ?>
+                #{util.linkify(cval.decode('xml'))}
+        <?py #end ?>
+           </span>
+    <?py #end ?>
+<?py #endif ?>
+<?py include(r"#{{app.resource('comment_section.tenjin')}}") ?>
+    <div class="error_section" style=""></div>
+<?py include(r"#{{app.resource('bottom_row.tenjin')}}") ?>
+    </div>
+</div>
+<hr class="activity-divider" />

@@ -1,0 +1,10 @@
+<span class="news-item-text"><a href="${friend.profile_url}" class="namelink link">${friend.name}</a> ${{_('is now connected to')}}
+<?py if len(item.connection_list) > 2: ?>
+    <?py for new_conn in item.connection_list[:-2]: ?>
+     <a href="${new_conn.profile_url}" class="link">${new_conn.name}</a>,
+    <?py #endfor ?>
+<?py if len(item.connection_list) >= 2: ?>
+    <a href="${item.connection_list[-2].profile_url}" class="link">${item.connection_list[-2].name}</a> and 
+<?py #endif ?>
+    <a href="${item.connection_list[-1].profile_url}" class="link">${item.connection_list[-1].name}</a>.
+</span>

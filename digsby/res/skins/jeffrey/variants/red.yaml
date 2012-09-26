@@ -1,0 +1,6 @@
+Variant: Red Version
+
+common:
+ GMain: vertical 0xBC0000 0x131a2d
+ GSelected: vertical 0xEC0203 0x131a2d
+ GAccount: 0xBC0000 0x131a2d border 0x556a99

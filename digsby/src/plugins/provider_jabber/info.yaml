@@ -1,0 +1,84 @@
+type: "multi"
+name: "Jabber"
+
+plugins:
+  provider_jabber:
+    name: !_ "Jabber Account"
+    type: "service_provider"
+    provider_id: "jabber"
+    entry_points:
+        digsby.service_provider:
+            jabber: "services.service_provider:UsernamePasswordServiceProvider"
+        digsby.services.delete.build_dialog:
+            jabber: "provider_jabber.jabber_gui:delete_account_dialog"
+    provider_info:
+        popularity: 78
+        username_desc: !_ 'Jabber ID'
+        password_desc: !_ 'Password'
+        newuser_url: &jabber_org http://www.jabber.org
+        password_url: *jabber_org
+
+  jabber:
+    name: Jabber
+    service_provider: &service_provider jabber
+    type: service_component
+    component_type: im
+    service_name: !_ "Chat"
+    shortname: jabber
+    path: jabber.protocol
+    username_desc: !_ 'Jabber ID'
+    newuser_url: *jabber_org
+    password_url: *jabber_org
+    name_truncated: jabb
+    form: jabber
+    more_details:
+      - elements:
+          - Use TLS if Possible
+          - Require TLS
+          - Force SSL
+          - No Encryption
+        type: enum
+        store: encryption
+      - store: ignore_ssl_warnings
+        label: Ignore SSL Warnings
+        type: bool
+      - type: bool
+        store: allow_plaintext
+        label: Allow Plaintext Login
+    statuses:
+      - - !N_ 'Available'
+        - !N_ 'Free For Chat'
+      - - !N_ 'Away'
+        - !N_ 'Do Not Disturb'
+        - !N_ 'Extended Away'
+    defaults:
+      allow_plaintext: True
+      autologin: False
+      dataproxy: ""
+      server: !python/tuple
+        - ""
+        - 5222
+      block_unknowns: False
+      ignore_ssl_warnings: False
+      encryption: 0
+      hide_os: False
+      resource: Digsby
+      priority: 5
+
+    compatible: !set
+      - jabber
+      - gtalk
+
+    needs_resourcepriority: True
+    popularity: 47
+    needs_register: True
+    needs_dataproxy: True
+
+    entry_points:
+      digsby.component.im:
+        *service_provider: jabber.JabberProtocol:JabberProtocol
+
+      digsby.services.edit.advanced.construct_sub.im:
+        *service_provider: provider_jabber.jabber_gui:construct_advanced_subpanel_im
+      digsby.services.edit.advanced.extract_sub.im:
+        *service_provider: provider_jabber.jabber_gui:extract_advanced_subpanel_im

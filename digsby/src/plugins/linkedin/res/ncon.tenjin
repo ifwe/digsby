@@ -1,0 +1,1 @@
+<span class="news-item-text"><a href="${friend.profile_url}" class="namelink link">${friend.name}</a> ${{_('is now a connection')}}</span>

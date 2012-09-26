@@ -1,0 +1,10 @@
+<span class="news-item-text"><a href="${friend.profile_url}" class="namelink link">${friend.name}</a>
+<?py if item.recommended: ?>
+    has recommended <a href="${item.recommended.profile_url}" class="link namelink">${item.recommended.name}</a>
+<?py elif item.recommender: ?>
+    has been recommended by <a href="${item.recommender.profile_url}" class="link namelink">${item.recommender.name}</a>
+<?py #endif ?>
+<?py if getattr(item, 'url', None) is not None: ?>
+    (<a class="link" href="${item.url}">view</a>)
+<?py #endif ?>
+</span>

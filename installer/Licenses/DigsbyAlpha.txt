@@ -1,0 +1,94 @@
+This Alpha Test Agreement ("Agreement") is made and effective from the 21st day of December, 2007, until the 1st day of February, 2008 by and between dotSyntax,  LLC ("Developer") and Alpha Tester ("Recipient"). 
+
+Developer is the owner of a prototype product (the "Product") which it desires to have tested by a prospective user in what is commonly referred to as "Alpha Test". The Product contains valuable, confidential, trade secret information owned by Developer. The Recipient desires to test and evaluate the Product. 
+
+NOW, THEREFORE, in consideration of the promises set forth herein, the parties hereto agree as follows: 
+
+   1. Arrangement.
+
+      Developer agrees to provide to Recipient the Product, and Recipient accepts the Product, subject to the terms of this Agreement. Recipient agrees to test and evaluate the Product as provided herein, and report to Developer with respect to the usefulness and functionality of Product.
+
+   2. Non-Disclosure.
+
+         A. Recipient acknowledges and agrees that in providing the Product, Developer may disclose to Recipient certain confidential, proprietary trade secret information of Developer (the "Confidential Information"). Confidential Information may include, but is not limited to, the Product, computer programs, flowcharts, diagrams, manuals, schematics, development tools, specifications, design documents, marketing information, screen shots, or any descriptions of the product. During this Agreement, Recipient agrees that it will not, without the express prior written consent of Developer, disclose any Confidential Information or any part thereof to any third party, except to the extent that such Confidential Information a) is or becomes generally available to the public through no fault of Recipient; or b) is rightfully received by Recipient from a third party without limitation as to its use. At the termination of this Agreement, Recipient may publicly disclose any Confidential Information learned about the Product. 
+
+         B. Recipient also agrees that it shall not duplicate, translate, modify, copy, printout, disassemble, decompile or otherwise tamper with the Product or any firmware, circuit board or software provided therewith.  
+
+         C. Recipient also agrees that it shall not provide any third party with screen shots, descriptions, demonstrations, or other information about the Product.  
+
+   3. License.
+
+      Recipient acknowledges that Recipients shall have only a limited, non-exclusive, nontransferable license to use the Product for a period to be concluded by notification by Developer. Recipient acknowledges and agrees that it will not use the Product for any purpose that is illegal. Because the Product is a "Alpha Test" version only and is not error or bug free, Recipient agrees that it will use the Product carefully and will not use it in any way which might result in any loss of its or any third party's property or information. 
+
+   4. Termination.
+
+      Recipient may terminate this Agreement at any time prior to expiration of the Alpha Test by deleting the Product including all Confidential Information and copies thereof. Developer may terminate this Agreement upon notice to Recipient, subject to Recipient's obligation to return the Product, Confidential Information and all copies thereof. The obligations of Recipient in Section 2 above shall survive the termination of this Agreement. If not earlier terminated, this Agreement shall terminate automatically upon the end of the period set forth in this Agreement. 
+   5. Developer's Warranties.
+
+      Developer represents and warrants that it has the requisite right and legal authority to grant the license and provide the Product and the Confidential Information as contemplated by this Agreement. DEVELOPER MAKES NO OTHER WARRANTY, EXPRESS OR IMPLIED, WITH RESPECT TO THE PRODUCT OR ANY OTHER CONFIDENTIAL INFORMATION AND ALL OTHER WARRANTIES, WHETHER EXPRESS OR IMPLIED, ARE HEREBY DISCLAIMED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. DEVELOPER'S SOLE LIABILITY FOR BREACH OF THE REPRESENTATION AND WARRANTY ABOVE, AND RECIPIENT'S SOLE REMEDY, SHALL BE THAT DEVELOPER SHALL INDEMNIFY AND HOLD RECIPIENT HARMLESS FROM AND AGAINST ANY LOSS, SUIT, DAMAGE, CLAIM OR DEFENSE ARISING OUT OF BREACH OF THE REPRESENTATION AND WARRANTY, INCLUDING REASONABLE ATTORNEYS' FEES. 
+
+   7. Governing Law.
+
+      This Agreement is to be governed by, construed and enforced according to the laws of the State of New York. 
+
+   8. No Assignment.
+
+      Recipient may not assign this Agreement without the prior written consent of Developer. This Agreement shall be binding upon and inured to the benefit of the parties and their respective administrators, successors and assigns. 
+
+   9. Headings.
+
+      Headings used in this Agreement are provided for convenience only and shall not be used to construe meaning or intent. 
+
+  10. Final Agreement.
+
+      This Agreement terminates and supersedes all prior understandings or agreements on the subject matter hereof. This Agreement may be modified only by a further writing that is duly executed by both parties. 
+
+  11. Arbitration.
+
+      The parties agree that they will use their best efforts to amicably resolve any dispute arising out of or relating to this Agreement. Any controversy, claim or dispute that cannot be so resolved shall be settled by final binding arbitration in accordance with the rules of the American Arbitration Association, and judgment upon the award rendered by the arbitrator or arbitrators may be entered in any court having jurisdiction thereof. Any such arbitration shall be conducted in the city where the Developer's headquarters are located, or such other place as may be mutually agreed upon by the parties. Within fifteen (15) days after the commencement of the arbitration, each party shall select one person to act as arbitrator, and the two arbitrators so selected shall select a third arbitrator within ten (10) days of their appointment. Each party shall bear its own costs and expenses and an equal share of the arbitrators expenses and administrative fees of arbitration.  
+
+Privacy Policy
+Last Updated: December 21, 2007
+
+This privacy policy governs your use of the DIGSBY software, the DIGSBY service, the DIGSBY websites, the DIGSBY Widget, and all other software, features, tools, websites, widgets, and services offered by or through DIGSBY ("DIGSBY Products") from DOTSNYTAX LLC and its business divisions.
+
+When you register with DIGSBY, and use DIGSBY Products, you provide DIGSBY and DOTSYNTAX LLC with personally identifiable information (your "DIGSBY information"). This Policy explains the information practices that apply to your DIGSBY information. This Policy does not apply to information collected by third party Web sites linked to or otherwise accessible from offerings presented through DIGSBY Products and DOTSYNTAX LLC. The information collected or received by third party Web sites is subject to their own privacy policies.
+
+Collection of Your DIGSBY Information
+Your DIGSBY information consists of personally identifiable information collected or received about you when you register to use DIGSBY or log in to DIGSBY as a registered user and interact with DIGSBY Products. Depending on how you use DIGSBY Products, your DIGSBY information may include registration-related information (such as e-mail address); information about your visits to DIGSBY Web sites and pages; information about contacts on your Buddy List (such as alias, SMS numbers, and email addresses); information about the features or offerings from DIGSBY that you use, and how frequently you use them; customer service information about you as a DIGSBY user; and other information specifically related to your use of a particular DIGSBY feature or offering.
+
+In order to access your third party Instant Messaging, Email, and Social Network accounts, you must enter your applicable user name(s) and password(s) on DIGSBY. This information is stored on our servers and is encrypted in a manor that would prevent anyone, including DOTSYNTAX LLC employees from accessing your passwords.
+
+Your DIGSBY information may also include certain technical information gathered by DIGSBY and DOTSYNTAX LLC when you use DIGSBY Products. Some of the technical information that may be collected or received includes: the type of browser you are using (e.g., Firefox, Internet Explorer), the type of operating system you are using (e.g., Windows XP or Mac OS), CPU type (e.g. Pentium), your manner of connecting to the Internet (e.g, connection speed through narrowband or broadband access); Internet protocol address; other information about your geographic location; and the domain name of your Internet service provider.
+
+How Your DIGSBY Information Is Used
+Your DIGSBY information is used to operate and improve the features, offerings and content presented to you by DIGSBY and DOTSYNTAX LLC; to personalize the content provided to you; to fulfill your requests for products, programs, and services; to communicate with you and respond to your inquiries; to conduct research about your use of DIGSBY Products; and to help offer you other products, programs, or services that may be of interest.
+
+Your DIGSBY information will not be shared with third parties except in circumstances in which you have consented to the sharing of your DIGSBY information. Your IM conversations are not sent to DIGSBY servers or stored at DOTSYNTAX LLC owned facilities. However, certain features such as "Chat Logs" result in Instant Messaging history being stored on the computer you use to access DIGSBY. DOTSNYTAX LLC does not read your private online communications when you use any of the communication tools offered as DIGSBY Products. If, however, you use these tools to disclose information about yourself publicly (for example, in chat rooms or online message boards made available by DIGSBY), other online users may obtain access to any information you provide.
+
+Your DIGSBY information may be accessed and disclosed in response to legal process (for example, a court order, search warrant or subpoena), or in other circumstances in which DOTSYNTAX LLC has a good faith belief that DIGSBY is being used for unlawful purposes. DOTSYNTAX LLC may also access or disclose your DIGSBY information when necessary to protect the rights or property of DIGSBY or DOTSYNTAX LLC, or in special cases such as a threat to your safety or that of others.
+
+DOTSYNTAX LLC may use agents and contractors in order to help operate DIGSBY Products. If such agents and contractors have access to personally identifiable information, they are required to protect this information in a manner that is consistent with this Privacy Policy by, for example, not using the information for any purpose other than to carry out the services they are performing for DOTSYNTAX, LLC.
+
+In the event that ownership of DIGSBY was to change as a result of a merger or acquisition by another company, your DIGSBY information may be transferred. DOTSYNTAX LLC will provide you notice prior to any such transfer of your DIGSBY information.
+
+Cookies
+DOTSNYTAX may use cookies on the Websites it operates. Cookies are small text files that are placed on your computer's hard drive by our servers to identify your computer to our servers. Except for your IP Address, no personally identifiable information stored in the DIGSBY cookies will be shared with outside companies for any purpose without your permission.
+
+Our Commitment to Security
+DOTSYNTAX LLC has established safeguards to help prevent unauthorized access to or misuse of your DIGSBY information, but cannot guarantee that your personally identifiable information will never be disclosed in a manner inconsistent with this Privacy Policy (for example, in the event of unauthorized acts by third parties that violate applicable law or the policies of DIGSBY or DOTSYNTAX LLC. To protect your privacy and security, DOTSYNTAX LLC uses passwords to help verify your identity before granting access or making corrections to any of your DIGSBY information. These passwords are encrypted in a way that they may not be retrieved by DOTSYNTAX LLC employees. If you forget or misplace your DIGSBY password, an email will be sent to the email address on record with instructions on how to set a new password. You will be required to re-enter all of your Instant Messaging, Email, and Social Network account passwords when resetting your DIGSBY password.
+
+Special Note for Parents
+DIGSBY is intended for a general audience, and children under the age of thirteen are not permitted to register with DIGSBY.
+
+How to Contact Us
+If you have any questions or concerns about the DIGSBY Privacy Policy or its implementation, you may contact us by sending an email to privacy[at]digsby[dot]com or by sending mail to the following address:
+
+dotSyntax, LLC
+125 Tech Park Drive
+Rochester, NY 14623
+
+Changes to this Privacy Policy and Additional Information
+The DIGSBY Privacy Policy may be updated from time to time, and so you should review this Policy periodically.
+
+DIGSBY may in the future offer other special features and services, and if these features and services are not described in this Policy, you will be provided with additional privacy-related information in this agreement.

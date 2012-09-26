@@ -1,0 +1,19 @@
+- myspace_alert:
+    description: !_ 'MySpace Alert'
+    header: '${title}'
+    minor: '${msg}'
+    icon: 'skin:serviceicons.myspace'
+    default:
+      reaction: ['Popup']
+
+- myspace_newsfeed:
+    description: !_ 'MySpace Newsfeed'
+    header: '${item.author_name.decode("xml")}'
+    minor: '${util.strip_html(getattr(item, "body", "") or getattr(item, "title", ""))}'
+    icon: 'skin:serviceicons.myspace'
+    pages: 'items'
+    max_lines: 5
+    update: paged
+    default:
+      reaction: ['Popup']
+

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<definitions xmlns:msnab="http://www.msn.com/webservices/AddressBook"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:ns="http://www.w3.org/2001/XMLSchema"
+             xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             targetNamespace="http://www.msn.com/webservices/AddressBook">
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:msnab="http://www.msn.com/webservices/AddressBook">
+            <include schemaLocation="msnab_servicetypes.xsd"/>
+        </schema>
+    </types>
+    <message name="ABHeader">
+        <part name="ApplicationHeader" element="msnab:ABApplicationHeader"/>
+        <part name="AuthHeader" element="msnab:ABAuthHeader"/>
+    </message>
+    <message name="FindMembershipMessage">
+        <part name="FindMembershipRequest" element="msnab:FindMembership"/>
+    </message>
+    <message name="ABFindAllMessage">
+        <part name="ABFindAllRequest" element="msnab:ABFindAll"/>
+    </message>
+    <message name="ABContactAddMessage">
+        <part name="ABContactAddRequest" element="msnab:ABContactAdd"/>
+    </message>
+    <message name="ABContactDeleteMessage">
+        <part name="ABContactDeleteRequest" element="msnab:ABContactDelete"/>
+    </message>
+    <message name="ABGroupContactAddMessage">
+        <part name="ABGroupContactAddRequest" element="msnab:ABGroupContactAdd"/>
+    </message>
+    <message name="ABGroupAddMessage">
+        <part name="ABGroupAddRequest" element="msnab:ABGroupAdd"/>
+    </message>
+    <message name="ABGroupUpdateMessage">
+        <part name="ABGroupUpdateRequest" element="msnab:ABGroupUpdate"/>
+    </message>
+    <message name="ABGroupDeleteMessage">
+        <part name="ABGroupDeleteRequest" element="msnab:ABGroupDelete"/>
+    </message>
+    <message name="ABGroupContactDeleteMessage">
+        <part name="ABGroupContactDeleteRequest" element="msnab:ABGroupContactDelete"/>
+    </message>
+    <message name="ABContactUpdateMessage">
+        <part name="ABContactUpdateRequest" element="msnab:ABContactUpdate"/>
+    </message>
+    <message name="AddMemberMessage">
+        <part name="AddMemberRequest" element="msnab:AddMember"/>
+    </message>
+    <message name="DeleteMemberMessage">
+        <part name="DeleteMemberRequest" element="msnab:DeleteMember"/>
+    </message>
+    <message name="ServiceHeader">
+        <part name="ServiceHeader" element="msnab:ServiceHeader"/>
+    </message>
+    <message name="FindMembershipResponseMessage">
+        <part name="FindMembershipResponse" element="msnab:FindMembershipResponse"/>
+    </message>
+    <message name="ABFindAllResponseMessage">
+        <part name="ABFindAllResponse" element="msnab:ABFindAllResponse"/>
+    </message>
+    <message name="ABContactAddResponseMessage">
+        <part name="ABContactAddResponse" element="msnab:ABContactAddResponse"/>
+    </message>
+    <message name="ABContactDeleteResponseMessage">
+        <part name="ABContactDeleteResponse" element="msnab:ABContactDeleteResponse"/>
+    </message>
+    <message name="ABGroupContactAddResponseMessage">
+        <part name="ABGroupContactAddResponse" element="msnab:ABGroupContactAddResponse"/>
+    </message>
+    <message name="ABGroupAddResponseMessage">
+        <part name="ABGroupAddResponse" element="msnab:ABGroupAddResponse"/>
+    </message>
+    <message name="ABGroupUpdateResponseMessage">
+        <part name="ABGroupUpdateResponse" element="msnab:ABGroupUpdateResponse"/>
+    </message>
+    <message name="ABGroupDeleteResponseMessage">
+        <part name="ABGroupDeleteResponse" element="msnab:ABGroupDeleteResponse"/>
+    </message>
+    <message name="ABGroupContactDeleteResponseMessage">
+        <part name="ABGroupContactDeleteResponse" element="msnab:ABGroupContactDeleteResponse"/>
+    </message>
+    <message name="ABContactUpdateResponseMessage">
+        <part name="ABContactUpdateResponse" element="msnab:ABContactUpdateResponse"/>
+    </message>
+    <message name="AddMemberResponseMessage">
+        <part name="AddMemberResponse" element="msnab:AddMemberResponse"/>
+    </message>
+    <message name="DeleteMemberResponseMessage">
+        <part name="DeleteMemberResponse" element="msnab:DeleteMemberResponse"/>
+    </message>
+    <message name="InvalidPassportUserMessage">
+        <part name="fault" element="msnab:InvalidPassportUser"/>
+    </message>
+    <message name="ABAddMessage">
+        <part name="ABAddRequest" element="msnab:ABAdd"/>
+    </message>
+    <message name="ABAddResponseMessage">
+        <part name="ABAddResponse" element="msnab:ABAddResponse"/>
+    </message>
+    <message name="UpdateDynamicItemMessage">
+        <part name="UpdateDynamicItem" element="msnab:UpdateDynamicItem"/>
+    </message>
+    <message name="UpdateDynamicItemResponseMessage">
+        <part name="UpdateDynamicItemResponse" element="msnab:UpdateDynamicItemResponse"/>
+    </message>
+    <message name="ABFindContactsPagedMessage">
+        <part name="ABFindContactsPagedRequest" element="msnab:ABFindContactsPaged"/>
+    </message>
+    <message name="ABFindContactsPagedResponseMessage">
+        <part name="ABFindContactsPagedResponse" element="msnab:ABFindContactsPagedResponse"/>
+    </message>
+    <message name="GetContactsRecentActivityMessage">
+        <part name="GetContactsRecentActivityRequest" element="msnab:GetContactsRecentActivity"/>
+    </message>
+    <message name="GetContactsRecentActivityResponseMessage">
+        <part name="GetContactsRecentActivityResponse" element="msnab:GetContactsRecentActivityResponse"/>
+    </message>
+    <message name="WNHeader">
+        <part name="WNApplicationHeader" element="msnab:WNApplicationHeader"/>
+        <part name="WNAuthHeader" element="msnab:WNAuthHeader"/>
+        <part name="WNServiceHeader" element="msnab:WNServiceHeader"/>
+    </message>
+    <message name="CreateCircleMessage">
+        <part name="CreateCircleRequest" element="msnab:CreateCircle"/>
+    </message>
+    <message name="CreateCircleResponseMessage">
+        <part name="CreateCircleResponse" element="msnab:CreateCircleResponse"/>
+    </message>
+    <message name="CreateContactMessage">
+        <part name="CreateContactRequest" element="msnab:CreateContact"/>
+    </message>
+    <message name="CreateContactResponseMessage">
+        <part name="CreateContactResponse" element="msnab:CreateContactResponse"/>
+    </message>
+    <message name="ManageWLConnectionMessage">
+        <part name="ManageWLConnection" element="msnab:ManageWLConnection"/>
+    </message>
+    <message name="ManageWLConnectionResponseMessage">
+        <part name="ManageWLConnectionResponse" element="msnab:ManageWLConnectionResponse"/>
+    </message>
+    <message name="BreakConnectionMessage">
+        <part name="BreakConnection" element="msnab:BreakConnection"/>
+    </message>
+    <message name="BreakConnectionResponseMessage">
+        <part name="BreakConnectionResponse" element="msnab:BreakConnectionResponse"/>
+    </message>
+    <message name="AddDynamicItemMessage">
+        <part name="AddDynamicItem" element="msnab:AddDynamicItem"/>
+    </message>
+    <message name="AddDynamicItemResponseMessage">
+        <part name="AddDynamicItemResponse" element="msnab:AddDynamicItemResponse"/>
+    </message>
+    <portType name="SharingServicePortType">
+        <operation name="FindMembership">
+            <input message="msnab:FindMembershipMessage"/>
+            <output message="msnab:FindMembershipResponseMessage"/>
+        </operation>
+        <operation name="AddMember">
+            <input message="msnab:AddMemberMessage"/>
+            <output message="msnab:AddMemberResponseMessage"/>
+        </operation>
+        <operation name="DeleteMember">
+            <input message="msnab:DeleteMemberMessage"/>
+            <output message="msnab:DeleteMemberResponseMessage"/>
+        </operation>
+        <operation name="CreateCircle">
+            <input message="msnab:CreateCircleMessage"/>
+            <output message="msnab:CreateCircleResponseMessage"/>
+        </operation>
+    </portType>
+    <portType name="ABServicePortType">
+        <operation name="ABFindAll">
+            <input message="msnab:ABFindAllMessage"/>
+            <output message="msnab:ABFindAllResponseMessage"/>
+        </operation>
+        <operation name="ABContactAdd">
+            <input message="msnab:ABContactAddMessage"/>
+            <output message="msnab:ABContactAddResponseMessage"/>
+            <fault name="InvalidPassportUserException" message="msnab:InvalidPassportUserMessage"/>
+        </operation>
+        <operation name="ABContactDelete">
+            <input message="msnab:ABContactDeleteMessage"/>
+            <output message="msnab:ABContactDeleteResponseMessage"/>
+            <fault name="InvalidPassportUserException" message="msnab:InvalidPassportUserMessage"/>
+        </operation>
+        <operation name="ABGroupContactAdd">
+            <input message="msnab:ABGroupContactAddMessage"/>
+            <output message="msnab:ABGroupContactAddResponseMessage"/>
+            <fault name="InvalidPassportUserException" message="msnab:InvalidPassportUserMessage"/>
+        </operation>
+        <operation name="ABGroupAdd">
+            <input message="msnab:ABGroupAddMessage"/>
+            <output message="msnab:ABGroupAddResponseMessage"/>
+        </operation>
+        <operation name="ABGroupUpdate">
+            <input message="msnab:ABGroupUpdateMessage"/>
+            <output message="msnab:ABGroupUpdateResponseMessage"/>
+        </operation>
+        <operation name="ABGroupDelete">
+            <input message="msnab:ABGroupDeleteMessage"/>
+            <output message="msnab:ABGroupDeleteResponseMessage"/>
+        </operation>
+        <operation name="ABGroupContactDelete">
+            <input message="msnab:ABGroupContactDeleteMessage"/>
+            <output message="msnab:ABGroupContactDeleteResponseMessage"/>
+        </operation>
+        <operation name="ABContactUpdate">
+            <input message="msnab:ABContactUpdateMessage"/>
+            <output message="msnab:ABContactUpdateResponseMessage"/>
+        </operation>
+        <operation name="ABAdd">
+            <input message="msnab:ABAddMessage"/>
+            <output message="msnab:ABAddResponseMessage"/>
+        </operation>
+        <operation name="UpdateDynamicItem">
+            <input message="msnab:UpdateDynamicItemMessage"/>
+            <output message="msnab:UpdateDynamicItemResponseMessage"/>
+        </operation>
+        <operation name="ABFindContactsPaged">
+            <input message="msnab:ABFindContactsPagedMessage"/>
+            <output message="msnab:ABFindContactsPagedResponseMessage"/>
+        </operation>
+        <operation name="CreateContact">
+            <input message="msnab:CreateContactMessage"/>
+            <output message="msnab:CreateContactResponseMessage"/>
+        </operation>
+        <operation name="ManageWLConnection">
+            <input message="msnab:ManageWLConnectionMessage"/>
+            <output message="msnab:ManageWLConnectionResponseMessage"/>
+        </operation>
+        <operation name="BreakConnection">
+            <input message="msnab:BreakConnectionMessage"/>
+            <output message="msnab:BreakConnectionResponseMessage"/>
+        </operation>
+        <operation name="AddDynamicItem">
+            <input message="msnab:AddDynamicItemMessage"/>
+            <output message="msnab:AddDynamicItemResponseMessage"/>
+        </operation>
+    </portType>
+    <portType name="WhatsUpServicePortType">
+        <operation name="GetContactsRecentActivity">
+            <input message="msnab:GetContactsRecentActivityMessage"/>
+            <output message="msnab:GetContactsRecentActivityResponseMessage"/>
+        </operation>
+    </portType>
+    <binding name="SharingServiceBinding" type="msnab:SharingServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="FindMembership">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/FindMembership"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AddMember">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/AddMember"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteMember">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/DeleteMember"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCircle">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/CreateCircle"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <binding name="ABServiceBinding" type="msnab:ABServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="ABFindAll">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABFindAll"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABContactAdd">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABContactAdd"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="InvalidPassportUserException">
+                <soap:fault name="InvalidPassportUserException" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ABContactDelete">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABContactDelete"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="InvalidPassportUserException">
+                <soap:fault name="InvalidPassportUserException" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ABGroupContactAdd">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABGroupContactAdd"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="InvalidPassportUserException">
+                <soap:fault name="InvalidPassportUserException" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ABGroupAdd">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABGroupAdd"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABGroupUpdate">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABGroupUpdate"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABGroupDelete">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABGroupDelete"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABGroupContactDelete">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABGroupContactDelete"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABContactUpdate">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABContactUpdate"/>
+            <input>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABAdd">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABAdd"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+        <operation name="UpdateDynamicItem">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/UpdateDynamicItem"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+        <operation name="ABFindContactsPaged">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ABFindContactsPaged"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateContact">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/CreateContact"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+        <operation name="ManageWLConnection">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/ManageWLConnection"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+        <operation name="BreakConnection">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/BreakConnection"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+        <operation name="AddDynamicItem">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/AddDynamicItem"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ABHeader" part="ApplicationHeader" use="literal"/>
+                <soap:header message="msnab:ABHeader" part="AuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:ServiceHeader" part="ServiceHeader" use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <binding name="WhatsUpServiceBinding" type="msnab:WhatsUpServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="GetContactsRecentActivity">
+            <soap:operation soapAction="http://www.msn.com/webservices/AddressBook/GetContactsRecentActivity"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:WNHeader" part="WNApplicationHeader" use="literal"/>
+                <soap:header message="msnab:WNHeader" part="WNAuthHeader" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+                <soap:header message="msnab:WNHeader" part="WNServiceHeader" use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="SharingService">
+        <port name="FindMembershipPort" binding="msnab:SharingServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/SharingService.asmx"/>
+        </port>
+        <port name="AddMemberPort" binding="msnab:SharingServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/SharingService.asmx"/>
+        </port>
+        <port name="DeleteMemberPort" binding="msnab:SharingServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/SharingService.asmx"/>
+        </port>
+        <port name="CreateCirclePort" binding="msnab:SharingServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/SharingService.asmx"/>
+        </port>
+    </service>
+    <service name="ABService">
+        <port name="ABFindAllPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABContactAddPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABContactDeletePort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABGroupContactAddPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABGroupAddPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABGroupUpdatePort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABGroupDeletePort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABGroupContactDeletePort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABContactUpdatePort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABAddPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="UpdateDynamicItemPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ABFindContactsPagedPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="CreateContactPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="ManageWLConnectionPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="BreakConnectionPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+        <port name="AddDynamicItemPort" binding="msnab:ABServiceBinding">
+            <soap:address location="https://contacts.msn.com/abservice/abservice.asmx"/>
+        </port>
+    </service>
+    <service name="WhatsUpService">
+        <port name="GetContactsRecentActivityPort" binding="msnab:WhatsUpServiceBinding">
+            <soap:address location="http://sup.live.com/whatsnew/whatsnewservice.asmx"/>
+        </port>
+    </service>
+</definitions>

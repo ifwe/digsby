@@ -1,0 +1,19 @@
+---
+#executablepath: # this is set to the .exe file and shouldn't be changed
+#temp: # don't use flash drives for temp stuff
+
+documents: "./env/documents"
+
+data: "./env/data"
+config: "./env/config"
+localdata: "./env/localdata"
+
+userdata: "./env/userdata"
+userconfig: "./env/userconfig"
+userlocaldata: "./env/userlocaldata"
+
+userstartup: "./env/userstartup"
+startup: "./env/startup"
+
+userdesktop: "./env/userdesktop"
+desktop: "./env/desktop"

@@ -1,0 +1,17 @@
+name: !_ "Yahoo Account"
+type: "service_provider"
+provider_id: &provider_id "yahoo"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_yahoo.yahoo_service_provider:YahooServiceProvider"
+
+provider_info:
+    popularity: 860
+    username_desc: !_ 'Yahoo! ID'
+    password_desc: !_ 'Password'
+    newuser_url: 'https://edit.yahoo.com/registration'
+    password_url: 'https://edit.yahoo.com/forgot'
+    default_domain: "yahoo.com"
+    display_domain: "yahoo"
+

@@ -1,0 +1,24 @@
+
+<table class="media_table"><tr class="media_row">
+<?py for img in post.attachment.media: ?>
+<td class="media_cell">
+
+    <?py src  = (img.src if 'src' in img else ''); ?>
+    <?py href = (img.href if 'href' in img else ''); ?>
+    <?py if 'type' in img and img.type == 'photo': ?>
+            <?py if bool('alt' in img and img.alt): ?>
+                    <a href="${str(src).replace('_s.', '_n.')}" context="${href}" index="${img.photo.index}" aid="${img.photo.aid}" pid="${img.photo.pid}" class="photolinklink"><img alt="${img.alt}" title="${img.alt}" src="${src}" longdesc="${str(src).replace('_s.', '_n.')}" class="picturelink"/></a>
+            <?py else: ?>
+                    <a href="${str(src).replace('_s.', '_n.')}" context="${href}" index="${img.photo.index}" aid="${img.photo.aid}" pid="${img.photo.pid}" class="photolinklink"><img src="${src}" longdesc="${str(src).replace('_s.', '_n.')}" class="picturelink"/></a>
+            <?py #endif ?>
+    <?py else: ?>
+            <?py if bool('alt' in img and img.alt): ?>
+                    <a href="${href}" class="picturelinklink"><img alt="${img.alt}" title="${img.alt}" src="${src}" class="picturelink"/></a>
+            <?py else: ?>
+                    <a href="${href}" class="picturelinklink"><img src="${src}" class="picturelink"/></a>
+            <?py #endif ?>
+    <?py #endif ?>
+    <?py del src, href ?>
+</td>
+<?py #endfor ?>
+</tr></table>

@@ -1,0 +1,20 @@
+name: !_ "Google Account"
+type: "service_provider"
+provider_id: &provider_id "google"
+
+entry_points:
+    digsby.service_provider:
+        *provider_id: "provider_google.google_service_provider:GoogleServiceProvider"
+
+provider_info:
+    popularity: 1000
+    username_desc: !_ 'Google Account'
+    password_desc: !_ 'Password'
+    newuser_url: 'https://www.google.com/accounts/NewAccount'
+    password_url: 'https://www.google.com/accounts/ForgotPasswd'
+    default_domain: "gmail.com"
+    display_domain: "gmail"
+
+skin:
+    serviceprovidericons:
+        *provider_id: "res/google.png"

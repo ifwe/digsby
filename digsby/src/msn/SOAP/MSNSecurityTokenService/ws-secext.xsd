@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xsd:schema xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" targetNamespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified" blockDefault="#all" version="0.2">
+	<xsd:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+	<xsd:import namespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" schemaLocation="wss-utility.xsd"/>
+	<xsd:import namespace="urn:oasis:names:tc:SAML:1.0:assertion" schemaLocation="sstc-saml-schema-assertion-1.1-cs.xsd"/>
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+	<xsd:attribute name="Usage" type="xsd:string"/>
+	<xsd:element name="SecurityTokenReference" type="wsse:SecurityTokenReferenceType"/>
+	<xsd:complexType name="SecurityTokenReferenceType">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:any namespace="##other" processContents="lax" minOccurs="0"/>
+			<xsd:element ref="wsse:Reference" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="Id" type="xsd:string"/>
+		<xsd:attribute name="Usage" type="xsd:string"/>
+	</xsd:complexType>
+	<xsd:element name="Security" type="wsse:SecurityHeaderType"/>
+	<xsd:complexType name="SecurityHeaderType">
+		<xsd:sequence>
+			<xsd:element ref="wsse:UsernameToken" minOccurs="0"/>
+			<xsd:element ref="wsu:Timestamp" minOccurs="0"/>
+			<xsd:element ref="saml:Assertion" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="UsernameTokenType">
+		<xsd:sequence>
+			<xsd:element name="Username" type="wsse:AttributedString"/>
+			<xsd:element name="Password" type="wsse:PasswordString"/>
+		</xsd:sequence>
+		<xsd:attribute ref="wsu:Id"/>
+	</xsd:complexType>
+	<xsd:element name="UsernameToken" type="wsse:UsernameTokenType"/>
+	<xsd:complexType name="AttributedString">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="Id" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="PasswordString">
+		<xsd:simpleContent>
+			<xsd:extension base="wsse:AttributedString"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="EncodedString">
+		<xsd:simpleContent>
+			<xsd:extension base="wsse:AttributedString"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:element name="KeyIdentifier" type="wsse:KeyIdentifierType"/>
+	<xsd:element name="Reference" type="wsse:ReferenceType">
+		<xsd:annotation>
+			<xsd:documentation>This element defines a security token reference</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="ReferenceType">
+		<xsd:annotation>
+			<xsd:documentation>This type represents a reference to an external security token.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="URI" type="xsd:anyURI"/>
+		<xsd:attribute name="ValueType" type="xsd:QName"/>
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>
+	</xsd:complexType>
+	<xsd:complexType name="KeyIdentifierType">
+		<xsd:simpleContent>
+			<xsd:extension base="wsse:EncodedString"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:element name="BinarySecurityToken" type="wsse:BinarySecurityTokenType"/>
+	<xsd:complexType name="BinarySecurityTokenType">
+		<xsd:simpleContent>
+			<xsd:extension base="wsse:EncodedString"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:element name="PolicyReference">
+		<xsd:complexType>
+			<xsd:attribute name="URI" type="xsd:anyURI" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="FaultcodeEnum">
+		<xsd:restriction base="xsd:QName">
+			<xsd:enumeration value="wsse:UnsupportedSecurityToken"/>
+			<xsd:enumeration value="wsse:UnsupportedAlgorithm"/>
+			<xsd:enumeration value="wsse:InvalidSecurity"/>
+			<xsd:enumeration value="wsse:InvalidSecurityToken"/>
+			<xsd:enumeration value="wsse:FailedAuthentication"/>
+			<xsd:enumeration value="wsse:FailedCheck"/>
+			<xsd:enumeration value="wsse:SecurityTokenUnavailable"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:attribute name="Id" type="xsd:string"/>
+</xsd:schema>

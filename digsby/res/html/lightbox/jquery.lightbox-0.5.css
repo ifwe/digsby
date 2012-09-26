@@ -1,0 +1,183 @@
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CC Attribution-No Derivative Works 2.5 Brazil - http://creativecommons.org/licenses/by-nd/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 975;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	width: 90%;
+	z-index: 1000;
+	text-align: center;
+	line-height: 0;
+	overflow: hidden;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background: #FFF;
+	width: 0px;
+	height: 0px;
+	margin: 0 auto;
+        -webkit-box-shadow: 0 2px 16px #000;
+}
+#lightbox-container-image { 
+        padding: 0px; 
+}
+
+#lightbox-loading {
+    z-index: 1001;
+    top: 45%;
+    left: 45%;
+    height: 25%;
+    position: absolute;
+    height: 51px;
+    width: 51px;
+    background: transparent url("fullsize-loading-bg.png") no-repeat left top;
+    text-align: center;
+    line-height: 0;
+}
+
+#lightbox-loading-inner {
+    z-index: 1001;
+	height: 100%;
+	width: 100%;
+	background: transparent url("fullsize-loading-spinner.gif") no-repeat center center;
+}
+
+
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+
+#lightbox-nav-btnPrev {
+    width: 20%;
+}
+
+#lightbox-nav-btnNext {
+    width: 80%;
+}
+
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	background: transparent url("fullsize-title-bg.png") repeat-x left top;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 0px;
+        -webkit-box-shadow: 0 2px 16px #000;
+}
+#lightbox-container-image-data {
+	padding: 0px; 
+	color: #DDD; 
+		max-width:100%;
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	text-align: left;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+#lightbox-image-details {
+	position:relative;
+	max-width:100%;
+	overflow:hidden;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: "Lucida Grande", sans-serif;
+    margin: .3em .7em .3em .7em;
+}
+#lightbox-image-details-caption { font-weight: bold; overflow:hidden; max-width:100%; margin:1px 0px 3px 3px; padding: 0.1em 0 0 0;}
+#lightbox-image-details-currentNumber {
+	max-width:100%;
+	margin:1px 3px 3px 0px;
+	padding: 0.1em 0 0 0;
+}
+#lightbox-secNav {
+
+}
+#lightbox-secNav-btnClose {
+	width: auto; 
+	float: right;
+    padding: 0.1em 0 0 0;
+    text-decoration: none;
+    background: transparent url("fullsize-close.png") no-repeat left top;
+
+	display: block;
+	margin: 1px 3px 3px 0px;
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	z-index: 1000;
+}
+
+#lightbox-secNav-btnClose:hover {
+        background-position: right top;
+}
+
+#lightbox-secNav-btnContext {
+        padding: 0.2em 0.7em;
+        float: right;
+        padding: 0.1em 0 0 0;
+        text-decoration: none;
+        background: transparent url("fullsize-popout-hover-lessalpha.png") no-repeat left top;
+            
+        display: block;
+        margin: 1px 3px 3px 3px;
+        width: 16px;
+        height: 16px;
+        text-decoration: none;
+        z-index: 1000;
+
+}
+
+#lightbox-secNav-btnContext:hover {
+        background-position: right top;
+}
+
+.hover-icon {
+    position: absolute;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent url("fullsize-icon.png") no-repeat left top;
+    z-index: 950;
+    cursor: pointer;
+}
+

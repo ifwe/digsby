@@ -1,0 +1,41 @@
+- facebook_alert:
+    description: !_ 'Facebook Alert'
+    header: "${title}"
+    minor: '${msg}'
+    icon: 'skin:serviceicons.facebook'
+    max_lines: 6
+    default:
+      reaction: ['Popup']
+
+- facebook_notifications:
+    description: !_ 'Facebook Notification'
+    header: !_ 'Facebook Notification'
+    minor: ${notification['title_text']}
+    icon: 'skin:serviceicons.facebook'
+    pages: 'notifications'
+    max_lines: 5
+    update: paged
+    default:
+      reaction: ['Popup']
+
+- facebook_newsfeed:
+    description: !_ 'Facebook Newsfeed'
+    header: |-
+        ${(profiles[int(post['actor_id'])].name + u' \xbb ' + profiles[int(post['target_id'])].name
+          if ('source_id' in post and 'actor_id' in post and 'target_id' in post and post.target_id and post.source_id and post.actor_id and int(post.target_id) != int(post.actor_id))
+          else profiles[int(post['actor_id'])].name)}
+    minor: |-
+        ${('message' in post and post.message.strip()
+          or ('attachment' in post and post.attachment and
+              (post.attachment.get('name', '').strip() or
+               post.attachment.get('caption', '').strip() or
+               (post.attachment.get('description') and
+                scrape_clean(post.attachment.get('description', '').strip()) or
+                (post.attachment.get('media') and any(media.get('type') == 'photo' for media in post.attachment.get('media')) and 'Uploaded photos')
+                ) or '')))}
+    icon: 'skin:serviceicons.facebook'
+    pages: 'posts'
+    max_lines: 5
+    update: paged
+    default:
+      reaction: ['Popup']

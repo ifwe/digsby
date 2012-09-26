@@ -1,0 +1,17 @@
+Variant: Green Version
+
+common:
+# 768099 556a99 131a2d 02050a
+  GMain: 0x55996a 0x132d1a
+  GSelected: 0x769980 0x132d1a
+  GDark: 0x555555 black
+  MyBlack: 0x02050a
+  MyWhite: white
+  LightGrey: 0xcccccc
+  MidGrey: 0xdddddd
+  DarkGrey: grey
+
+
+AccountPanels:
+  Backgrounds:
+    Account: 0x55996a 0x132d1a border 0x55996a

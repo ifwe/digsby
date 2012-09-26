@@ -1,0 +1,200 @@
+
+/*
+   
+   Modern Bubbling v0.9.2 beta
+   an Adium Message Style
+   
+   Created by Jim Myhrberg (jim@zhuoqe.org).
+   http://zhuoqe.org/blog/category/modern-bubbling/
+
+*/
+
+
+/* import default header style sheet */
+@import url("styles/_headers/_default.css");
+
+
+BODY {
+	background: #fff url("images/bg.jpg") bottom repeat-x;
+	color: #303030;
+	/*font-family: helvetica;*/
+	/*font-size: 11px;*/
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#Chat {
+	overflow: hidden;
+	padding-top: 5px;
+	padding-bottom: 12px;
+}
+.emoticon {
+	border-style: none;
+	position: relative;
+	margin: -3px 0px -5px 0px;
+}
+
+
+.history {
+	color: #b3b3b3;
+}
+
+.status {
+	color: #c7c7c7;
+	font-family: helvetica, sans-serif;
+	font-size: 10px;
+	margin: 4px 0px 0px 0px;
+	text-align: center;
+	cursor: default;
+}
+.status .stime {
+	font-size: 9px;
+	/*visibility: hidden;*/
+}
+/*
+.status:hover .stime {
+	visibility: visible;
+}
+*/
+
+/* @group message */
+
+.message {
+	position: relative;
+	min-height: 42px;
+}
+.message .body {
+	padding: 9px 20px 22px 20px;
+	/*word-wrap: break-word;*/
+	/*text-shadow: #ccc 0px 1px 1px;*/
+	overflow: auto;
+}
+.message .time {
+	font-size: 9px;
+	position: absolute;
+	bottom: -2px;
+	text-align: center;
+	width: 100%;
+	color: #c7c7c7;
+	visibility: hidden;
+}
+.message:hover .time {
+	visibility: visible;
+}
+
+.message .topleft {
+	background: url("images/modern/topleft.png") top left no-repeat;
+	width: 24px;
+	height: 14px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.message .top {
+	background: url("images/modern/top.png") top right repeat-x;
+	height: 14px;
+	position: absolute;
+	top: 0px;
+	right: 24px;
+	left: 24px;
+	z-index: -1;
+}
+.message .topright {
+	background: url("images/modern/topright.png") top right no-repeat;
+	width: 24px;
+	height: 16px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+}
+.message .left {
+	background: url("images/modern/left.png") top left repeat-y;
+	width: 24px;
+	position: absolute;
+	left: 0px;
+	top: 14px;
+	bottom: 29px;
+	z-index: -1;
+}
+.message .middle {
+	background: url("images/modern/middle.png") top left repeat;
+	position: absolute;
+	left: 24px;
+	right: 24px;
+	top: 14px;
+	bottom: 29px;
+	z-index: -1;
+}
+.message .right {
+	background: url("images/modern/right.png") top right repeat-y;
+	width: 24px;
+	position: absolute;
+	right: 0px;
+	top: 14px;
+	bottom: 29px;
+	z-index: -1;
+}
+.message .bottomleft {
+	background: url("images/modern/bottomleft.png") bottom left no-repeat;
+	width: 24px;
+	height: 29px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.message .bottom {
+	background: url("images/modern/bottom.png") bottom right repeat-x;
+	height: 29px;
+	position: absolute;
+	bottom: 0px;
+	right: 24px;
+	left: 24px;
+	z-index: -1;
+}
+.message .bottomright {
+	background: url("images/modern/bottomright.png") bottom right no-repeat;
+	width: 24px;
+	height: 29px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: -1;
+}
+
+.compact {
+	padding: 9px 20px 22px 20px;
+}
+.compact .cbody, .compact .cnbody {
+	position: relative;
+	word-wrap: break-word;
+}
+.compact .cnbody {
+	border-top: 1px dotted #ededed;
+	padding-top: 3px;
+	margin-top: 3px;
+}
+.compact .ctime {
+	font-size: 9px;
+	position: absolute;
+	width: 40px;
+	top: 3px;
+	color: #c7c7c7;
+	white-space: nowrap;
+	visibility: hidden;
+}
+.compact .cnbody .ctime {
+	top: 5px;
+}
+.compact .cbody:hover .ctime, .compact .cnbody:hover .ctime {
+	visibility: visible;
+}
+
+/* @end */
+
+
+
+
+

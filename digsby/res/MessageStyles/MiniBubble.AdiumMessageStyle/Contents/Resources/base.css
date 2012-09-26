@@ -1,0 +1,204 @@
+body {
+    background: #3A3A3A url("images/background.png") bottom left repeat fixed;
+    margin: -5px 8px 15px 8px;
+}
+
+.message img {
+    vertical-align:middle;
+}
+
+.message_context img {
+    vertical-align:middle;
+}
+
+.post_container {
+    margin-top:14px;
+    position:relative;
+}
+
+.container {
+    position: relative;
+    top:-1px;
+    background: url("images/bottom_right.png") bottom right no-repeat;
+    margin: 0px 0px 0px 48px;
+    padding: 0 0 1px 0;
+}
+
+.container_context {
+    position: relative;
+    top:-1px;
+    background: url("images/context_bottom_right.png") bottom right no-repeat;
+    padding: 0 0 1px 0;
+}
+
+.container_incoming, .container_outgoing {
+    position: relative;
+    top:-1px;
+    background: url("images/bottom_right.png") bottom right no-repeat;
+    padding: 0 0 1px 0;
+}
+
+.sender {
+    top: -6px;
+    left: -10px;
+    right: 10px;
+    position: absolute;
+    background: url("images/top_left.png") top left no-repeat;
+
+    padding: 6px 0 0 56px;
+    margin-bottom: 0;
+}
+
+.sender_context {
+    top: -6px;
+    left: -10px;
+    right: 38px;
+    position: absolute;
+    background: url("images/context_top_left.png") top left no-repeat;
+
+    padding: 6px 0 0 56px;
+    margin-bottom: 0;
+}
+
+.time, .time_context {
+    position: absolute;
+    right: 3px;
+    top: -6px;
+
+    text-align:right;
+
+    font-size: 9px;
+    font-family: "Lucida Grande";
+
+    padding: 6px 10px 0 2px;
+    margin-bottom: 0;
+}
+
+.time {
+    color: #888888;
+    background: url("images/top_right.png") top right no-repeat;
+}
+
+.time_context {
+    color: #333333;
+    background: url("images/context_top_right.png") top right no-repeat;
+    left: -15px;
+
+}
+
+.time_next, .time_next_context {
+    float:right;
+
+    font-size: 9px;
+    font-family: "Lucida Grande";
+
+    padding: 0 0 0 0;
+    margin-right: -1px;
+    margin-bottom: 0;
+}
+
+.time_next {
+    color: #888888;
+}
+
+.time_next_context {
+    color: #333333;
+}
+
+.message {
+    position: relative;
+    background: url("images/bottom_left.png") bottom left repeat-y;
+    top: -1px;
+    left: -12px;
+    margin-right: 2px;
+    padding: 0px 0 1px 10px;
+    color: #333333;
+}
+
+.message_context {
+    position: relative;
+    background: url("images/context_bottom_left.png") bottom left repeat-y;
+    top: 0px;
+    left: -12px;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    padding: 0px 0 1px 10px;
+    color: #333333;
+}
+
+p {
+    padding: 0;
+    padding-top:0px;
+    margin-bottom: 7px;
+    margin-right:40px;
+    overflow: auto;
+}
+
+p.next {
+    padding: 0;
+    padding-top:1px;
+    margin-top:-3px;
+    margin-bottom: 7px;
+    overflow: auto;
+}
+
+.buddyicon_div {
+    position:relative;
+    top:-6px;
+    left:0px;
+
+    float:left;
+
+    height:25px;
+    width:29px;
+}
+
+.buddyicon_div_outgoing, .buddyicon_div_incoming {
+    position:relative;
+    top:-6px;
+    left:0px;
+
+    height:25px;
+    width:29px;
+}
+
+.buddyicon_img {
+    height:24px;
+    width:24px;
+
+    position:relative;
+    top:0px;
+    left:2px;
+}
+.buddyicon_overlay_img {
+    height:25px;
+    width:29px;
+
+    position:absolute;
+    z-index:1;
+}
+
+.arrow_outgoing, .arrow_incoming {
+    position:absolute;
+    top:6px;
+
+    height:6px;
+    width:7px;
+
+    z-index:2;
+}
+
+.arrow_context_outgoing, .arrow_context_incoming {
+    position:absolute;
+    top:6px;
+
+    height:6px;
+    width:6px;
+
+    z-index:2;
+}
+
+#Chat {
+    overflow: hidden;
+    margin-bottom: -8px;
+}

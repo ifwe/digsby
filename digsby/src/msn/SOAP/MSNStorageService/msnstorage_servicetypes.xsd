@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xsd:schema xmlns="http://www.msn.com/webservices/storage/2008" xmlns:msnss="http://www.msn.com/webservices/storage/2008" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.msn.com/webservices/storage/2008" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+    <xsd:include schemaLocation="msnstorage_datatypes.xsd"/>
+    <xsd:element name="StorageApplicationHeader">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ApplicationID" type="xsd:string" default="Messenger Client 8.5"/>
+                <xsd:element name="Scenario" type="xsd:string" default="Initial"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="StorageUserHeader">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Puid" type="xsd:int" default="0"/>
+                <xsd:element name="Cid" type="xsd:int" default="0" minOccurs="0"/>
+                <xsd:element name="TicketToken" type="xsd:token"/>
+                <xsd:element name="IsAdmin" type="xsd:boolean" default="false" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="AffinityCacheHeader">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="CacheKey" type="xsd:token" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GetProfile" type="msnss:GetProfileRequestType"/>
+    <xsd:complexType name="GetProfileRequestType">
+        <xsd:sequence>
+            <xsd:element name="profileHandle" type="msnss:Handle"/>
+            <xsd:element name="profileAttributes" type="msnss:profileAttributes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetProfileResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="GetProfileResult" type="msnss:GetProfileResultType"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GetProfileResultType">
+        <xsd:sequence>
+            <xsd:element name="ResourceID" type="xsd:string"/>
+            <xsd:element name="DateModified" type="xsd:string"/>
+            <xsd:element name="ExpressionProfile">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ResourceID" type="xsd:string"/>
+                        <xsd:element name="DateModified" type="xsd:string"/>
+                        <xsd:element name="Version" type="xsd:int" minOccurs="0"/>
+                        <xsd:element name="Flags" type="xsd:int"/>
+                        <xsd:element name="Photo" type="documentBaseType"/>
+                        <xsd:element name="Attachments" minOccurs="0">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name="Document" type="documentBaseType" minOccurs="0" maxOccurs="unbounded"/>
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                        <xsd:element name="PersonalStatus" type="xsd:string"  minOccurs="0"/>
+                        <xsd:element name="PersonalStatusLastModified" type="xsd:string"  minOccurs="0"/>
+                        <xsd:element name="DisplayName" type="xsd:string"/>
+                        <xsd:element name="DisplayNameLastModified" type="xsd:string"/>
+                        <xsd:element name="StaticUserTilePublicURL" type="xsd:anyURI"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="UpdateProfile" type="msnss:UpdateProfileRequestType"/>
+    <xsd:complexType name="UpdateProfileRequestType">
+        <xsd:sequence>
+            <xsd:element name="profile">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ResourceID" type="xsd:string"/>
+                        <xsd:element name="ExpressionProfile" type="ExpressionProfile"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="profileAttributesToDelete" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ExpressionProfileAttributes" type="ExpressionProfileAttributesType"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="UpdateProfileResponse"/>
+    <xsd:element name="FindDocuments" type="msnss:FindDocumentsRequestType"/>
+    <xsd:complexType name="FindDocumentsRequestType">
+        <xsd:sequence>
+            <xsd:element name="objectHandle" type="msnss:Handle"/>
+            <xsd:element name="documentAttributes">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ResourceID" type="xsd:boolean"/>
+                        <xsd:element name="Name" type="xsd:boolean"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="documentFilter">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="FilterAttributes" type="xsd:string" default="None"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="documentSort">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="SortBy" type="xsd:string" default="DateModified"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="findContext">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="FindMethod" type="xsd:string" default="Default"/>
+                        <xsd:element name="ChunkSize" type="xsd:int"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="FindDocumentsResponse" type="msnss:FindDocumentsResultType"/>
+    <xsd:complexType name="FindDocumentsResultType">
+        <xsd:sequence>
+            <xsd:element name="Document">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ResourceID" type="xsd:string"/>
+                        <xsd:element name="Name" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CreateProfileRequestType">
+        <xsd:sequence>
+            <xsd:element name="profile">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ExpressionProfile" type="ExpressionProfile"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="CreateProfile" type="CreateProfileRequestType"/>
+    <xsd:element name="CreateProfileResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="CreateProfileResult" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="ShareItemRequestType">
+        <xsd:sequence>
+            <xsd:element name="resourceID" type="xsd:string"/>
+            <xsd:element name="displayName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ShareItem" type="ShareItemRequestType"/>
+    <xsd:complexType name="ShareItemResponseType">
+        <xsd:sequence>
+            <xsd:element name="ShareItemResult" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ShareItemResponse" type="ShareItemResponseType"/>
+    <xsd:element name="UpdateDocument" type="UpdateDocumentRequestType"/>
+    <xsd:complexType name="UpdateDocumentRequestType">
+        <xsd:sequence>
+            <xsd:element name="document" type="documentBaseType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="UpdateDocumentResponse"/>
+    <xsd:complexType name="CreateDocumentRequestType">
+        <xsd:sequence>
+            <xsd:element name="parentHandle" type="Handle"/>
+            <xsd:element name="document" type="documentBaseType"/>
+            <xsd:element name="relationshipName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="CreateDocument" type="CreateDocumentRequestType"/>
+    <xsd:complexType name="CreateDocumentResponseType">
+        <xsd:sequence>
+            <xsd:element name="CreateDocumentResult" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="CreateDocumentResponse" type="CreateDocumentResponseType"/>
+    <xsd:complexType name="CreateRelationshipsRequestType">
+        <xsd:sequence>
+            <xsd:element name="relationships">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Relationship" type="Relationship" maxOccurs="unbounded"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="CreateRelationships" type="CreateRelationshipsRequestType"/>
+    <xsd:element name="CreateRelationshipsResponse"/>
+    <xsd:complexType name="DeleteRelationshipsRequestType">
+        <xsd:sequence>
+            <xsd:element name="sourceHandle" type="Handle"/>
+            <xsd:element name="targetHandles">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ObjectHandle" type="Handle" maxOccurs="unbounded"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DeleteRelationships" type="DeleteRelationshipsRequestType"/>
+    <xsd:element name="DeleteRelationshipsResponse"/>
+</xsd:schema>

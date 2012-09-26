@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wget http://voxel.dl.sourceforge.net/sourceforge/bakefile/bakefile-0.2.5.tar.gz
+tar -xzvf bakefile-0.2.5.tar.gz
+cd bakefile-0.2.5/
+./configure
+make
+sudo make install
+cd ..
+rm -rf bakefile-0.2.5

@@ -1,0 +1,54 @@
+Buddylist
+=========
+
+This subproject makes sorted and merged buddylists across protocols.
+
+It handles many cases to create a "sane" buddylist across different services:
+
+- merges similarly named groups across protocols
+- filters offline buddies based on preference
+- groups offline buddies based on preference
+- handles protocols with and without root groups
+- prunes empty groups
+- sorts by different attributes at once, i.e., log size, and then protocol
+
+Three binaries are created*:
+
+    buddylist.dll        Sorter functionality.
+
+    blist.pyd            Python interface to buddylist.dll
+
+    buddylist_test.exe   Google Test binary testing functionality in
+                         buddylist.dll. Source is blist_test.cpp in test/
+
+There is also a set of Python tests for exercising functionality in blist.pyd
+in the test/ directory: sorter_test.py
+
+*The extensions for these binaries may vary by platform.
+
+Windows
+-------
+
+All project files are in the msvc2008 directory.
+
+To build the buddylist binaries, run b.bat (which is in this directory) in a
+MSVC2008 dev console, or open msvc2008\BuddyListSort.sln in Visual Studio.
+
+*IMPORTANT*
+
+Before building, the following environment variables need to be set:
+
+SIP_BIN     sip.exe
+SIP_INCLUDE directory to find sip.h
+GTEST       path to a gtest directory (needed for building unittests--not
+            required to build buddylist.dll and blist.pyd)
+
+Upon a successful build, the project script copies binaries (and debugging
+symbol files) to ../../win (digsby/ext/win), where they can be imported by
+Digsby.
+
+Mac/Linux
+---------
+
+No makefiles have been created for the buddylist subproject yet!
+

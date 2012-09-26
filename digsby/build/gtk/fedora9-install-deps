@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo yum -y groupinstall 'Development Tools'
+sudo yum -y install python-devel gtk2-devel mesa-libGL-devel mesalibGLU-devel
+sudo yum -y install syck-python libxml2-python m2crypto python-imaging python-protocols
+sudo yum -y install libtiff-devel libjpeg-devel libpng-devel giflib-devel
+sudo yum -y install libgnomeprint22-devel libgnomeprintui22-devel libcurl-devel
+sudo yum -y install flex bison gperf libicu-devel libxml2-devel libxslt-devel libsqlite-devel

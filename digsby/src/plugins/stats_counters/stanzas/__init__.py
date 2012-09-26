@@ -1,0 +1,1 @@
+DIGSBY_STATS_COUNTER_NS = 'digsby:stats:counter'

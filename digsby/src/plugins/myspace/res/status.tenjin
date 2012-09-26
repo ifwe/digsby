@@ -1,0 +1,20 @@
+<?py if self_status: ?>
+    <?py (ctype, cval) = self_status.contents[-1] ?>
+<?py else: ?>
+    <?py ctype = cval = None ?>
+<?py #endif ?>
+
+<?py if self_status: ?>
+    <span timestamp="${self_status.updated_parsed}"
+        timestyle="pretty" >
+<?py else: ?>
+    <span />
+<?py #endif ?>
+ <span class="title">${{_('Status')}}:</span> 
+<?py if cval: ?>
+ <span class="major">#{acct.connection.userinfo.displayName}</span>
+ <span class="major">#{util.linkify(cval)} (<a href="^_^edit_status">${{_('update')}}</a>)</span>
+<?py else: ?>
+ <span class="major">You have no status message (<a href="^_^edit_status">${{_('update')}}</a>)</span>
+<?py #end ?>
+</span>

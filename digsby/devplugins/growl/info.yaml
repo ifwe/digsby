@@ -1,0 +1,9 @@
+name: 'Growl'
+path: 'growl'
+type: 'pure'
+
+
+entry_points:
+  digsby.profile.addons:
+    growl_addon: growl.growl:GrowlAddon
+

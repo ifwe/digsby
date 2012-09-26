@@ -1,0 +1,1 @@
+Aspell (project lead is Kevin Atkinson) is covered under the Lesser Gnu Public License (LGPL).

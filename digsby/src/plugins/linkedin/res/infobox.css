@@ -1,0 +1,197 @@
+.activity-divider {
+    background: none;
+    background-color:#d7d7d7;
+    margin-bottom: 0.4em;
+    margin-left:54px;
+}
+
+.activity-divider + .activity-divider {
+    display: none;
+}
+
+ul {
+ -webkit-padding-start: 20px; /* for inner content of each entry*/
+}
+
+ul.news-item-list { /* outer list of entries */
+ -webkit-padding-start: 40px;
+}
+
+.trend_link, .news-item-text {
+    margin-bottom: .3em;
+}
+
+.bottom-row {
+    margin-top: .3em;
+}
+
+.date-separator {
+    display:block;
+    margin-bottom:.4em;
+}
+
+li + .date-separator {
+ margin-top: 10px;
+}
+.news-item {
+ word-wrap: break-word;
+ table-layout: fixed;
+ border-spacing: 0px 2px;
+ width: 100%;
+ max-width: 100%;
+ margin-bottom: .1em;
+}
+
+.news-item-content {
+ margin-left: 54px;
+ min-height: 52px;
+ max-width: 100%;
+ vertical-align: top;
+}
+
+.news-item + .no-news-today {
+ display: none;
+}
+
+.viewport {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.comment > .viewport {
+    display: inline;
+}
+
+.clipped {
+    max-width:;
+    display: block;
+    position: absolute;
+}
+
+.activity-icon {
+ vertical-align: top;
+ text-align: center;
+ float: left;
+ clear: both;
+ padding: 0px;
+ width: 54px;
+ height: 52px;
+ margin-top:2px;
+}
+
+.news-item-content {
+ margin-left: 54px;
+ min-height: 52px;
+ max-width: 100%;
+ vertical-align: top;
+}
+
+hr {
+ height: 1px;
+ border: 2px;
+}
+
+
+.comment:hover .del_comment {
+    opacity: 1;
+}
+.comment_block, .likes {
+/*
+    display:none;
+*/
+}
+.comments {
+    /*
+    display:table;
+    table-layout: fixed;
+    */
+    padding:0px;
+    border:0px;
+    border-spacing:0px;
+    margin-bottom: 0.3em;
+}
+.comment {
+    /*
+    display:table-row;
+    */
+    padding-top:.3em;
+    /* margin-top:.3em; */
+}
+.comment_icon_cell {
+    float:left;
+    min-height:30px;
+    min-width:30px;
+}
+
+.comment_icon {
+    margin-top:2px;
+    max-width:28px;
+    max-height: 28px;
+}
+
+.comment_text {
+    word-wrap: break-word;
+}
+.comment_text_cell {
+    min-height:30px;
+    margin-left:32px;
+    /*margin-top:-.2em;*/
+    /*margin-bottom:.1666em;*/
+}
+.comment_name, .comment_time {
+    display:inline;
+}
+
+.del_comment {
+    text-align:right;
+    float:right;
+    vertical-align:top;
+    opacity: 0;
+}
+
+.link_section {
+    display:inline;
+}
+
+.time-container:before {
+ content: "";
+}
+
+.time-container:after {
+ content: "";
+}
+
+.time-container {
+ display: inline;
+}
+
+.comments_section {
+    display:none;
+    margin-top: .3em;
+}
+
+.input_area {
+    margin-top:.3em;
+    width:100%;
+}
+.form_wrapper {
+    position:relative; /*when adding a centered spinner, this seems to be needed */
+}
+
+.namelink-container {
+    display: inline-block;
+}
+
+.loader_img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-8px;
+    margin-left:-8px;
+}
+
+.error_section {
+    display:none;
+    color: red;
+}

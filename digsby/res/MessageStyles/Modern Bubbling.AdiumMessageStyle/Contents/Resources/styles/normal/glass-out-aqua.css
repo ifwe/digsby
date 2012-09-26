@@ -1,0 +1,51 @@
+
+/* @group outgoing */
+
+.outgoing .history {
+	color: #586bb1;
+}
+
+.outgoing .compact .cnbody {
+	border-top: 1px dotted #8cb4ff;
+}
+
+.outgoing .message .bottomleft {
+	background-image: url("../../images/glass-aqua/bottomleft-arrow.png");
+}
+
+/* @group message */
+
+.outgoing .message .time {
+	color: #9ca0c0;
+}
+.outgoing .message .topleft {
+	background: url("../../images/glass-aqua/topleft.png") top left no-repeat;
+}
+.outgoing .message .top {
+	background: url("../../images/glass-aqua/top.png") top right repeat-x;
+}
+.outgoing .message .topright {
+	background: url("../../images/glass-aqua/topright.png") top right no-repeat;
+}
+.outgoing .message .left {
+	background: url("../../images/glass-aqua/left.png") top left repeat-y;
+}
+.outgoing .message .middle {
+	background: url("../../images/glass-aqua/middle.png") top left repeat;
+}
+.outgoing .message .right {
+	background: url("../../images/glass-aqua/right.png") top right repeat-y;
+}
+/*.outgoing .message .bottomleft {
+	background: url("../../images/glass-aqua/bottomleft.png") bottom left no-repeat;
+}*/
+.outgoing .message .bottom {
+	background: url("../../images/glass-aqua/bottom.png") bottom right repeat-x;
+}
+.outgoing .message .bottomright {
+	background: url("../../images/glass-aqua/bottomright.png") bottom right no-repeat;
+}
+
+/* @end */
+
+/* @end */

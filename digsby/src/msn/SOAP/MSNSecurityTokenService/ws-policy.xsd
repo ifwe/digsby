@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.xmlsoap.org/ws/2004/09/policy" elementFormDefault="qualified">
+	<xs:import namespace="http://www.w3.org/2005/08/addressing" schemaLocation="addressing.xsd"/>
+	<xs:element name="AppliesTo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="wsa:EndpointReference"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PolicyReference">
+		<xs:complexType>
+			<xs:attribute name="URI"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

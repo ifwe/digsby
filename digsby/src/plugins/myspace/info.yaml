@@ -1,0 +1,103 @@
+name: MySpace
+shortname: myspace
+name_truncated: mysp
+service_provider: &service_provider myspace
+service_name: !_ Activity Stream
+popularity: 152
+type: service_component
+component_type: social
+form: social
+username_desc: !_ "Email Address"
+newuser_url:  http://signups.myspace.com/index.cfm?fuseaction=signup
+password_url: http://collect.myspace.com/index.cfm?fuseaction=user.retrievepassword
+path: myspace.MyspaceAccount.MyspaceAccount
+needs_password: false
+whitelist_opts: ['filters', 'oauth_token', 'enabled',
+                 'post_ach_all', 'informed_ach', 'alias'
+                 ]
+
+defaults:
+  alias: ~
+  informed_ach: yes
+  post_ach_all: no
+
+  filters:
+    indicators:
+      blogcommenturl: True
+      blogsubscriptionposturl: True
+      picturecommenturl: True
+      eventinvitationurl: True
+      commenturl: True
+      phototagapprovalurl: True
+      friendsrequesturl: True
+      videocommenturl: True
+      groupnotificationurl: True
+      recentlyaddedfriendurl: True
+      birthdayurl: True
+    feed:
+      statuses: True
+      friends: True
+      posts: True
+      groups: True
+      photos: True
+      music: True
+      videos: True
+      events: True
+      applications: True
+needs_indicators: True
+show_indicators_label: !_ "Show Alerts"
+indicators:
+  - Blog Comments
+  - Blog Subscriptions
+  - Picture Comments
+  - Event Invites
+  - Profile Comments
+  - Photo Tag Approvals
+  - Friend Requests
+  - Video Comments
+  - Group Notifications
+  - Recently Added Friends
+  - Birthdays
+
+needs_feed: True
+
+show_feed_label: !_ "Show Newsfeed"
+feed:
+ - Status Updates
+ - Friend Updates
+ - Blog/Forum Posts
+ - Group Updates
+ - Photos
+ - Music
+ - Videos
+ - Events
+ - Applications
+
+infobox:
+    maxheight: True
+    hosted: True
+
+new_details:
+  - type: meta
+    store: informed_ach
+    value: yes
+
+skin:
+  myspace:
+    icons:
+      no_news: facebookicons/ad.gif
+      like: res/like.png
+      dislike: res/dislike.png
+
+entry_points:
+  digsby.services.edit.advanced.extract_sub.social:
+    *service_provider: myspace.msgui:extract_advanced_subpanel_social
+  digsby.services.edit.basic.extract_sub.social:
+    *service_provider: myspace.msgui:extract_basic_subpanel_social
+  digsby.services.edit.advanced.construct_sub.social:
+    *service_provider: myspace.msgui:construct_advanced_subpanel_social
+  digsby.services.edit.basic.construct_sub.social:
+    *service_provider: myspace.msgui:construct_basic_subpanel_social
+
+  digsby.component.social:
+    *service_provider: myspace.MyspaceAccount:MyspaceAccount

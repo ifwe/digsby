@@ -1,0 +1,62 @@
+name: !_ "LinkedIn"
+shortname: linkedin
+name_truncated: link
+service_name: !_ Network Updates
+service_provider: &service_provider linkedin
+popularity: 148
+type: service_component
+component_type: social
+username_desc: !_ "Email Address"
+newuser_url: https://www.linkedin.com/secure/register?trk=hb_join
+needs_password: false
+path: linkedin.LinkedInAccount.LinkedInAccount
+form: social
+whitelist_opts: ['enabled', 'oauth_token', 'informed_ach', 'post_ach_all', 'alias']
+
+skin:
+  serviceicons:
+    lapi: res/linkedin.png
+    linkedin: res/linkedin.png
+  linkedinicons:
+    like: res/like.png
+    dislike: res/dislike.png
+
+infobox:
+    maxheight: True
+    hosted: True
+
+defaults:
+  alias: ~
+  informed_ach: no
+  post_ach_all: no
+
+new_details:
+  - type: meta
+    store: informed_ach
+    value: yes
+
+notifications:
+    - linkedin_newsfeed:
+        description: !_ 'LinkedIn Newsfeed'
+        header: '${item.title}'
+        minor: '${item.body}'
+        icon: &icon 'skin:serviceicons.linkedin'
+        notification_icon: *icon
+        pages: 'items'
+        max_lines: 5
+        update: paged
+        default:
+          reaction: ['Popup']
+
+entry_points:
+  digsby.services.edit.basic.construct_sub.social:
+    *service_provider: linkedin.ligui:construct_basic_social_panel
+  digsby.services.edit.advanced.construct_panel:
+    *service_provider: linkedin.ligui:construct_advanced_panel
+  digsby.services.edit.basic.extract_sub.provider:
+    *service_provider: linkedin.ligui:extract_basic_provider_panel
+  digsby.services.edit.basic.extract_sub.social:
+    *service_provider: linkedin.ligui:extract_basic_social_panel
+
+  digsby.component.social:
+    *service_provider: linkedin.LinkedInAccount:LinkedInAccount

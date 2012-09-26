@@ -1,0 +1,257 @@
+#myspace-indicators ul {
+ list-style-type: none;
+ margin-right: 0px;
+ margin-left: -40px;
+ margin-top: 4px;
+}
+
+.indicator {
+ padding-left: 8px;
+}
+
+.activityHeader {
+ display: inline;
+}
+
+.activityMedia {
+ overflow: hidden;
+ display: block;
+ padding-bottom: 4px;
+}
+
+.activityMedia ul {
+ display: inline;
+ padding: 0px;
+}
+
+.activityMedia li {
+ display: inline;
+}
+
+.activityFooter {
+ display: none;
+}
+
+.activityDetail {
+ display: none;
+}
+
+.Person + ul, .Band + ul {
+ display: none;
+}
+
+.thumbnailImage {
+ padding-top: 4px;
+ padding-left: 0px;
+ padding-right: 4px;
+ height: 64px;
+}
+
+.activity-icon {
+ vertical-align: top;
+ text-align: center;
+ float: left;
+ clear: both;
+ padding: 0px;
+ width: 54px;
+ height: 52px;
+ margin-top:2px;
+}
+
+/*
+.activity-icon img {
+ max-width: 50px;
+ max-height: 50px;
+ width: 50px;
+ height: 50px;
+}
+*/
+
+.activity-data {
+ margin-left: 54px;
+ min-height: 52px;
+ max-width: 100%;
+ vertical-align: top;
+}
+
+.activityItem {
+ word-wrap: break-word;
+ table-layout: fixed;
+ border-spacing: 0px 2px;
+ width: 100%;
+ max-width: 100%;
+ margin-bottom: .1em;
+}
+
+.activity-divider {
+    background: none;
+    background-color:#d7d7d7;
+    margin-bottom: 0.4em;
+    margin-left:54px;
+}
+
+.date-separator {
+ padding: 3px 0px;
+ display: block;
+}
+
+hr {
+ height: 1px;
+ border: 2px;
+}
+
+.StatusMoodUpdate a + a:before {
+ content: " ";
+}
+
+.activityItem + .no-news-today {
+ display: none;
+}
+
+.viewport {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.comment > .viewport {
+    display: inline;
+}
+
+.clipped {
+    max-width:;
+    display: block;
+    position: absolute;
+}
+
+
+.comments_end {
+    margin-top: .5em;
+}
+.error_section {
+    display:none;
+    color: red;
+}
+.bottom_row {
+
+    margin-top:.3em;
+    /*
+    padding-bottom:.3em;
+    */
+}
+
+.comment:hover .del_comment {
+    opacity: 1;
+}
+.comment_block, .likes {
+/*
+    display:none;
+*/
+}
+.comments {
+    /*
+    display:table;
+    table-layout: fixed;
+    */
+    padding:0px;
+    border:0px;
+    border-spacing:0px;
+}
+.comment {
+    /*
+    display:table-row;
+    */
+    margin-top:.3em;
+}
+.comment_icon_cell {
+    float:left;
+    min-height:30px;
+    min-width:30px;
+}
+
+.comment_icon {
+    margin-top:2px;
+    max-width:28px;
+    max-height: 28px;
+}
+
+.comment_text {
+    word-wrap: break-word;
+}
+.comment_text_cell {
+    min-height:30px;
+    margin-left:32px;
+    /*margin-top:-.2em;*/
+    /*margin-bottom:.1666em;*/
+}
+.comment_name, .comment_time {
+    display:inline;
+}
+
+.del_comment {
+    text-align:right;
+    float:right;
+    vertical-align:top;
+    opacity: 0;
+}
+
+.link_section {
+    display:inline;
+}
+
+.time-container:before {
+ content: "";
+}
+
+.time-container:after {
+ content: "";
+}
+
+.time-container {
+ display: inline;
+}
+
+.comments_section {
+    display:none;
+}
+
+.input_area {
+    margin-top:.3em;
+    width:100%;
+}
+.form_wrapper {
+    position:relative; /*when adding a centered spinner, this seems to be needed */
+}
+
+#myspace-selfstatus .namelink {
+    display: none;
+}
+
+.namelink-container {
+    display: inline-block;
+}
+
+.loader_img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-8px;
+    margin-left:-8px;
+}
+
+hr + hr {
+    display: none;
+}
+
+.likes div, .dislikes div {
+    display: inline-block;
+}
+
+.likes, .dislikes {
+    padding-top: .3em;
+}
+
+.comments_section {
+    padding-top: .3em;
+    padding-bottom: .3em;
+}

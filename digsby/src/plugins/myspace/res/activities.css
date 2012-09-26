@@ -1,0 +1,264 @@
+﻿ .activitiesContainer{
+	padding:5px 0;overflow:hidden;
+}
+.activitiesContainer ul{
+	list-style-type:none;padding-left:0;
+}
+.activitiesContainer .friendCountHeader{
+	text-align:center;padding:5px;
+}
+.activitiesContainer .dateHeader{
+	margin:5px 10px 14px;overflow:hidden;width:100%;
+}
+.activitiesContainer li{
+	clear:left;
+}
+.activitiesContainer h5{
+	font-weight:normal;margin-bottom:0;
+}
+.activitiesContainer .activityItem{
+	margin-bottom:10px;line-height:1.6em;margin-left:12px;zoom:1;
+}
+.activitiesContainer .activityItem ul{
+	margin:5px 0 0 0;
+}
+.activitiesContainer .activityItem ul li{
+	display:inline;margin-right:5px;margin-bottom:5px;padding:0;float:left;clear:none;background:none;
+}
+.activitiesContainer .ProfileSongAdd ul li{
+	float:none;
+}
+.activitiesContainer .activityMedia a{
+	float:left;
+}
+.activitiesContainer .today .CelebrateBirthday .promo,.activitiesContainer .commonIcon,.activitiesContainer .activityHeader,.activitiesContainer a.Song{
+	background:transparent url(/Modules/HomeDisplay/Static/img/commonIcons021.gif) no-repeat left top;
+}
+.activitiesContainer .activityFooter{
+	float:none;padding-left:20px;
+}
+.activitiesContainer .activityFooter a{
+	float:none;
+}
+.activitiesContainer .activityHeader{
+	padding-left:20px;
+}
+.activitiesContainer .activityItem .activityFooter{
+	clear:left;
+}
+.activitiesContainer .activityItem .activityMedia .activityFooter{
+	clear:none;
+}
+.activitiesContainer .activityItem .inline{
+	display:block;margin-top:15px;
+}
+.activitiesContainer .activityItem .activityMedia{
+	padding-left:20px;
+}
+.activitiesContainer .activityItem .ActivityTemplatePortrait ul{
+	padding-top:10px;padding-bottom:10px;margin:0;display:block;width:auto;
+}
+.activitiesContainer .activityItem .ActivityTemplatePortrait ul li{
+	display:block;margin:0;padding:0;clear:right;width:100%;
+}
+.activitiesContainer .activityItem .hasThumbnail ul{
+	padding-left:105px;
+}
+.activitiesContainer .activityItem .hasThumbnail ul ul{
+	padding:0;
+}
+.activitiesContainer .activityItem .hasThumbnail ul ul li{
+	clear:left;
+}
+.activitiesContainer .hasThumbnail .activityFooter{
+	padding-left:105px;
+}
+.activitiesContainer a.Song{
+	background-position:0 -7628px;padding:2px 0 5px 20px;display:block;overflow:hidden;clear:right;
+}
+.activitiesContainer .ProfileSongAdd a.Song,.activitiesContainer .AddSongToPlaylist ul li a.Song{
+	float:none;
+}
+.activitiesContainer .ProfileSongAdd .inline{
+	margin-top:0;
+}
+.activitiesContainer .ProfileSongAdd .ActivityTemplatePortrait ul{
+	padding-bottom:0;
+}
+.activitiesContainer .AddSongToPlaylist a.Song{
+	background:none;padding:0;
+}
+.activitiesContainer .today .CelebrateBirthday .promo{
+	background-position:0 -13951px;padding-left:15px;
+}
+.activitiesContainer .CelebrateBirthday .thumbnailImage{
+	border:none;
+}
+.activitiesContainer .CelebrateBirthday .activityMedia ul,.activitiesContainer .CelebrateBirthday .activityFooter{
+	padding-left:75px;
+}
+.activitiesContainer .upcoming .CelebrateBirthday .promo{
+	border-left:1px solid #b2b2b2;padding-left:5px;margin-left:5px;
+}
+.activitiesContainer .today .CelebrateBirthday .promo{
+	display:inline-block;
+}
+.activitiesContainer img.thumbnailImage{
+	max-width:90px;height:56px;margin:5px 5px 0 0;padding:2px;display:block;
+}
+.activitiesContainer li.FriendAdd .activityHeader,.activitiesContainer li.ABIFriendAdd .activityHeader{
+	background-position:0 -925px;
+}
+.activitiesContainer li.JoinedGroup .activityHeader{
+	background-position:0 -4068px;
+}
+.activitiesContainer li.PhotoAdd .activityHeader{
+	background-position:0 -2189px;
+}
+.activitiesContainer li.PhotoTagged .activityHeader{
+	background-position:0 -4377px;
+}
+.activitiesContainer li.ProfileUpdate .activityHeader,.activitiesContainer li.RealNameShow .activityHeader{
+	background-position:0 -3125px;
+}
+.activitiesContainer li.ProfileSongAdd .activityHeader{
+	background-position:0 -296px;
+}
+.activitiesContainer li.SongUpload .activityHeader{
+	background-position:0 -3750px;
+}
+.activitiesContainer li.FriendCategoryAdd .activityHeader{
+	background-position:0 -2499px;
+}
+.activitiesContainer li.BlogAdd .activityHeader{
+	background-position:0 -614px;
+}
+.activitiesContainer li.ApplicationAdd .activityHeader .activitiesContainer li.ApplicationInnerActivity .activityHeader{
+	background-position:0 -1562px;
+}
+.activitiesContainer li.BandShow .activityHeader{
+	background-position:0 -4694px;
+}
+.activitiesContainer li.ProfileVideoUpdate .activityHeader,.activitiesContainer li.VideoAdd .activityHeader,.activitiesContainer li.FavoriteVideoAdd .activityHeader{
+	background-position:0 -2813px;
+}
+.activitiesContainer li.ForumTopicReply .activityHeader,.activitiesContainer li.ForumPosted .activityHeader{
+	background-position:0 -3438px;
+}
+.activitiesContainer li.MiniLogAdd .activityHeader{
+	background-position:0 -1876px;
+}
+.activitiesContainer li.MobilePhotoUpload .activityHeader{
+	background-position:0 -9118px;
+}
+.activitiesContainer li.MobileAppAdd .activityHeader{
+	background-position:0 -10309px;
+}
+.activitiesContainer li.MobileIPhoneAppAdd .activityHeader{
+	background-position:0 -9870px;
+}
+.activitiesContainer li.MobileBlackBerryAppAdd .activityHeader{
+	background-position:0 -10533px;
+}
+.activitiesContainer li.MobileSidekickAppAdd .activityHeader{
+	background-position:0 -10100px;
+}
+.activitiesContainer li.MobileAndroidAppAdd .activityHeader{
+	background-position:0 -10100px;
+}
+.activitiesContainer li.EventPosting .activityHeader,.activitiesContainer li.EventAttending .activityHeader{
+	background-position:0 -9656px;
+}
+.activitiesContainer li.StatusMoodUpdate .activityHeader{
+	background-position:0 -11480px;
+}
+.activitiesContainer li.AddLocalPlaceReview .activityHeader,.activitiesContainer li.AddLocalPlaceRating .activityHeader,.activitiesContainer li.AddLocalPlaceToProfile .activityHeader,.activitiesContainer li.BookmarkLocalPlace .activityHeader{
+	background-position:0 -11798px;
+}
+.activitiesContainer li.AddSongToPlaylist .activityHeader{
+	background-position:0 -12098px;
+}
+.activitiesContainer li.SetupEmail .activityHeader{
+	background-position:0 -13587px;
+}
+.activitiesContainer li.AddSongToPlaylist ul li{
+	float:none;
+}
+.activitiesContainer li.AddSongToPlaylist ul li a.Playlist{
+	float:none;
+}
+.activitiesContainer li.AddSongToPlaylist .ActivityTemplatePortrait ul{
+	padding-bottom:0;
+}
+.activitiesContainer .playlistDesc{
+	margin:0;
+}
+.activitiesContainer li.AddSongToPlaylist .activityFooter{
+	margin:0;
+}
+.activitiesContainer div.ratingRow{
+	line-height:14px;margin-top:5px;clear:left;
+}
+.activitiesContainer div.ratingRow .ratingText{
+	float:left;font-size:11px;padding:3px 5px;background:#fff8d0;color:#000;border:1px solid #ccc;
+}
+.activitiesContainer div.ratingRow .ratingValue{
+	background-color:#fff;color:#000;border:1px solid #ccc;border-left:0 solid #ccc;font-size:11px;font-weight:bold;padding:3px 5px;text-align:center;width:16px;float:left;*width:35px;
+}
+.activitiesContainer .myStuffDesc{
+	float:left;
+}
+.activitiesContainer .reviewSnippet a{
+	float:none;
+}
+.activitiesContainer .AddLocalPlaceReview ul li,.activitiesContainer .AddLocalPlaceRating ul li,.activitiesContainer .AddLocalPlaceToProfile ul li,.activitiesContainer .BookmarkLocalPlace ul li{
+	width:100%;
+}
+.activitiesContainer .playlistSongsBy{
+	font-weight:bold;
+}
+.activitiesContainer div.starRatingContainer{
+	clear:left;
+}
+.activitiesContainer div.starRatingContainer .filledRatingStar,.activitiesContainer div.starRatingContainer .emptyRatingStar{
+	background-image:url(/Modules/MyStuff/Static/img/ratingstarSmall.gif);
+}
+.activitiesContainer div.starRatingContainer .filledRatingStar{
+	background-position:0 0;
+}
+.activitiesContainer div.starRatingContainer .emptyRatingStar{
+	background-position:-18px 0;
+}
+.activitiesContainer div.starRatingContainer .ratingStar{
+	height:17px;width:18px;float:left;
+}
+.activitiesContainer div.starRatingContainer .starRatingLabel{
+	float:left;padding-right:3px;
+}
+.activitiesContainer div.reviewSnippet{
+	clear:left;
+}
+.activitiesContainer li.PostProfileComment .activityHeader{
+	background-position:0 -6893px;
+}
+.activitiesContainer li.PostProfileComment .activityFooter{
+	margin-top:0;
+}
+.activitiesContainer .friendUpdatesModuleTip{
+	line-height:normal;font-size:11px;padding-left:20px;
+}
+.activitiesContainer .friendUpdatesModuleTip .arrow-friendUpdatesModuleTip{
+	margin-left:20px;position:relative;width:22px;background-position:0 -8874px;display:block;height:12px;padding:0;
+}
+.activitiesContainer .friendUpdatesModuleTip .box-friendUpdatesModuleTip{
+	padding:5px;background-color:#FFF7D3;color:#000;font-weight:normal;
+}
+.activitiesClearfix:after{
+	clear:both;content:".";display:block;height:0;line-height:0;visibility:hidden;
+}
+.activitiesClearfix{
+	display:block;
+}
+* html .activitiesClearfix{
+	height:1%;
+}

@@ -1,0 +1,777 @@
+facebook:
+    order:
+      - self_status
+      - alerts
+#      - birthdays
+      - newsfeed
+    self_status: >
+                    <body link='${fonts.linkfc}'><div id="content">
+                        <table width='100%' cellpadding='3' cellspacing='0' border='0' valign='top'>
+                            <tr>
+                                <td>
+                                    ${TagFont(unicode(obj.self_status.formated_name) + ' ',    'title',fonts)}
+                                    ${TagFont(unicode(obj.self_status.formated_message), 'major',fonts)}
+                                    ${TagFont(' (','major',fonts)}
+                                    ${TagFont("<a href='^_^edit_status'>edit</a>",'link',fonts)}
+                                    ${TagFont(')','major',fonts)}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ${separator()}
+                                </td>
+                            </tr>
+                        </table>
+
+    birthdays:
+        header: >
+                    <table width='100%' cellpadding='3' cellspacing='0' border='0' valign='top'>
+                        <tr>
+                            <td>
+                                ${TagFont('Upcoming Birthdays','title',fonts)}
+                                <table cellpadding='0' width='100%' cellspacing='0' border='0' align='left' valign='top'>
+
+        footer: >
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>
+                        ${separator()}
+                      </td>
+                    </tr>
+                    </table>
+                    </td>
+                    </body>
+        tuple:
+          message: >
+                        <tr><td>
+                           ${TagFont(obj[0] + ' ' + obj[1], 'major', fonts)}
+                        </td></tr>
+
+    alerts:
+        header: >
+                    <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+                        <tr>
+                            <td>
+                                <div style='padding: 3;'>${TagFont('Alerts','title',fonts)}</div>
+                            </td>
+                        </tr>
+
+        num_msgs: >
+                    <tr>
+                        <td>
+                            <div style = 'padding: 0 0 0 12;'>
+                                ${TagFont(u''.join(['<a href=', obj.urls['msgs'], '>', \
+                                                      str(obj.num_msgs), ' new message', \
+                                                      's' if obj.num_msgs-1 else '', \
+                                                    '</a>']),'major',fonts)}
+                            </div>
+                        </td>
+                    </tr>
+        num_friend_requests: >
+                                <tr>
+                                    <td>
+                                        <div style = 'padding: 0 0 0 12;'>
+                                            ${TagFont(u''.join(['<a href=', obj.urls['friend_requests'], '>', \
+                                                                  str(obj.num_friend_requests), ' new friend request', \
+                                                                  's' if obj.num_friend_requests-1 else '', \
+                                                                '</a>']),'major',fonts)}
+                                        </div>
+                                    </td>
+                                </tr>
+        num_pokes: >
+                    <tr>
+                        <td>
+                            <div style = 'padding: 0 0 0 12;'>
+                                ${TagFont(u''.join(['<a href=', obj.urls['pokes'], '>', \
+                                                      str(obj.num_pokes), ' new poke', \
+                                                      's' if obj.num_pokes-1 else '', \
+                                                    '</a>']),'major',fonts)}
+                            </div>
+                        </td>
+                    </tr>
+        num_shares: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont(u''.join(['<a href=', obj.urls['shares'], '>', \
+                                                          str(obj.num_shares), ' new share', \
+                                                          's' if obj.num_shares-1 else '', \
+                                                        '</a>']),'major',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+        num_group_invites: >
+                            <tr>
+                                <td>
+                                    <div style = 'padding: 0 0 0 12;'>
+                                        ${TagFont(u''.join(['<a href=', obj.urls['group_invites'], '>', \
+                                                              str(obj.num_group_invites), ' new group invite', \
+                                                              's' if obj.num_group_invites-1 else '', \
+                                                            '</a>']),'major',fonts)}
+                                    </div>
+                                </td>
+                            </tr>
+        num_event_invites: >
+                                <tr>
+                                    <td>
+                                        <div style = 'padding: 0 0 0 12;'>
+                                            ${TagFont(u''.join(['<a href=', obj.urls['event_invites'], '>', \
+                                                                  str(obj.num_event_invites), ' new event invite', \
+                                                                  's' if obj.num_event_invites-1 else '', \
+                                                                '</a>']),'major',fonts)}
+                                        </div>
+                                    </td>
+                                </tr>
+
+        none: >
+                    <tr>
+                        <td>
+                            <div style = 'padding: 0 0 0 12;'>
+                                ${TagFont('No Alerts','minor',fonts)}
+                            </div>
+                        </td>
+                    </tr>
+        footer: >
+                    <tr>
+                        <td colspan='2'>
+                            <div style='padding: 8 3 2 3;'>${separator()}</div>
+                        </td>
+                    </tr>
+                    </table>
+
+    newsfeed:
+      header: >
+                <table cellpadding='3' cellspacing='0' border='0' valign='top'>
+                    <tr>
+                        <td colspan='2'>
+                            ${TagFont('News Feed','title',fonts)}
+                        </td>
+                    </tr>
+      separator: ""
+      footer: "</table></div></body>"
+      Status:
+        message: >
+                    <tr>
+                        <td>
+                            ${skinimagetag('facebookicons.status')}
+                        </td>
+                        <td width=100%>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" valign="top">
+                                <tr>
+                                    <td>
+                                        ${TagFont(u''.join(['<a href=http://www.facebook.com/profile.php?id=', str(obj.uid), '>', \
+                                                               obj.name, '</a> ', obj.message]),'major',fonts)}
+                                        ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+      Profile:
+        message: >
+                    <tr>
+                        <td>
+                            ${skinimagetag('facebookicons.profile')}
+                        </td>
+                        <td width=100%>
+                            ${TagFont(u''.join( \
+                              ['<a href=http://www.facebook.com/profile.php?id=', str(obj.uid), '&highlight>', \
+                                  obj.name, \
+                               '</a> updated ', obj.his_her_their, ' profile']),'major',fonts)}
+                            ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                        </td>
+                    </tr>
+      Tagged:
+        message: >
+                    <tr>
+                        <td>
+                            ${skinimagetag('facebookicons.album')}
+                        </td>
+                        <td width=100%>
+                            ${TagFont(u''.join(['You were tagged in ', str(obj.count), ' photos ', \
+                                                'in album - <a href=', obj.link, '>', \
+                                                                obj.album_name, \
+                                                            '</a>']),'major',fonts)}
+                            ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                        </td>
+                    </tr>
+      Album:
+        message: >
+                    <tr>
+                        <td>
+                            ${skinimagetag('facebookicons.album')}
+                        </td>
+                        <td>
+                            ${TagFont(u''.join(['<a href=http://www.facebook.com/profile.php?id=', str(obj.owner), '>', \
+                                                 obj.owner_name, \
+                                                '</a> added new photos to album - <a href=', obj.link, '>', \
+                                                obj.name, '</a>']),'major',fonts)}
+                            ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                        </td>
+                    </tr>
+      Wall:
+        message: >
+                    <tr>
+                        <td>
+                            ${skinimagetag('facebookicons.wall')}
+                        </td>
+                        <td width=100%>
+                            ${TagFont(u''.join(['You have a new ','<a href=http://www.facebook.com/profile.php?id=', str(obj.uid), '&v=wall>wall post</a>']),'major',fonts)}
+                            ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                        </td>
+                    </tr>
+      FriendsWall:
+        message: >
+                  <tr>
+                      <td>
+                          ${skinimagetag('facebookicons.wall')}
+                      </td>
+                      <td width=100%>
+                          ${TagFont(u''.join(['<a href=http://www.facebook.com/profile.php?id=', str(obj.uid), '>', \
+                                                obj.name,'</a> has a new ', \
+                                              '<a href=http://www.facebook.com/profile.php?id=', str(obj.uid), \
+                                               '&v=wall>wall post</a>']),'major',fonts)}
+                          ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                      </td>
+                  </tr>
+      FriendsNotes:
+        message: >
+                 <tr>
+                     <td>
+                         ${skinimagetag('facebookicons.note')}
+                     </td>
+                     <td width=100%>
+                         ${TagFont(u''.join(['<a href=http://www.facebook.com/profile.php?id=', str(obj.uid), '>', \
+                                                 obj.name, '</a> added a <a href=http://www.facebook.com/notes.php?id=', \
+                                                 str(obj.uid), '>new note</a>']),'major',fonts)}
+                         ${TagFont(u''.join([' (',obj.formatted_time,')']),'minor',fonts)}
+                     </td>
+                 </tr>
+      str:
+        message: >
+                 <tr>
+                     <td colspan='2'>
+                         ${TagFont(obj,'title',fonts)}
+                     </td>
+                 </tr>
+      CombinedFriendsWall:
+        message: >
+                 <tr>
+                     <td>
+                         ${skinimagetag('facebookicons.wall')}
+                     </td>
+                     <td width=100%>
+                         ${TagFont(u''.join([(', '.join([('<a href=http://www.facebook.com/profile.php?id=' + str(wall.uid) + '>' \
+                                                 + wall.name + '</a>') for wall in obj.visible_walls()[:-1]])), \
+                                              ((' and ' +'<a href=http://www.facebook.com/profile.php?id=' + \
+                                                 str(obj.visible_walls()[-1].uid) + '>' + obj.visible_walls()[-1].name + '</a>') \
+                                                if not obj.number_more() else (' and ' + str(obj.number_more()) + ' others')), \
+                                                 ' have new wall posts']),'major',fonts)}
+                     </td>
+                 </tr>
+
+      CombinedFriendsNotes:
+        message: >
+                 <tr>
+                     <td>
+                         ${skinimagetag('facebookicons.note')}
+                     </td>
+                     <td width=100%>
+                         ${TagFont(u''.join([u', '.join('<a href=http://www.facebook.com/profile.php?id=%s&v=app_2347471856>%s</a>' % \
+                                                     (str(note.uid), note.name) for note in obj.notes[:-1]), \
+                                                     ' and <a href=http://www.facebook.com/notes.php?id=', \
+                                                   str(obj.notes[-1].uid), '>', \
+                                                   obj.notes[-1].name, '</a> wrote new notes']),'major',fonts)}
+                     </td>
+                 </tr>
+      NoneType:
+        message: >
+                    <tr>
+                        <td>
+                            ${skinimagetag('facebookicons.nothing')}
+                        </td>
+                        <td width=100%>
+                            ${TagFont('No News Today','major',fonts)}
+                        </td>
+                    </tr>
+
+digsby:
+    separator: "${separator()}"
+    header: "<b>${obj.nice_name} is ${obj.status}</b>"
+    footer: "<b>This is a Digsby buddy</b><br>"
+    status_message: "<b>Status:</b><br>${obj.status_message or 'none'}"
+
+myspace:
+  order:
+    - personal_status
+    - alerts
+    - bdays
+    - statuses
+  header: >
+              <body link='${fonts.linkfc}'>
+                <div id="content">
+  footer: >
+              </div></body>
+  personal_status: >
+     <table width='100%' cellpadding='3' cellspacing='0' border='0' valign='top'>
+     <tr><td>
+       ${TagFont('Status: ', 'title', fonts)} 
+       ${TagFont(obj.personal_status.username + ' ', 'major', fonts)} 
+       ${TagFont(obj.personal_status.status,   'major', fonts)} 
+       ${TagFont(' (','major',fonts)}
+       ${TagFont("<a href='^_^edit_status'>edit</a>",'link',fonts)}
+       ${TagFont(')','major',fonts)}
+      </td></tr>
+      <tr><td>${separator()}</td></tr>
+     </table>
+  alerts:
+    order:
+      - messages
+      - friendRequests
+      - profileComments
+      - pictureComments
+      - blogComments
+      - birthday
+      - events
+    header: >
+                            <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+                                <tr>
+                                    <td colspan='2'>
+                                        <div style="padding: 3;">${TagFont('Alerts','title',fonts)}</div>
+                                    </td>
+                                </tr>
+    footer: >
+                <tr>
+                    <td colspan='2'>
+                        <div style='padding: 8 3 2 3;'>${separator()}</div>
+                    </td>
+                </tr>
+                </table>
+
+    birthday: >
+                <tr>
+                    <td>
+                        <div style = 'padding: 0 0 0 12;'>
+                            ${TagFont('<a href="^_^openurl/home">New Birthdays</a></font>','link',fonts)}
+                        </div>
+                    </td>
+                </tr>
+
+    friendRequests: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('<a href="^_^openurl/newfrs">New Friend Requests</a>','link',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+
+    messages: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('<a href="^_^openurl/mail">New Messages</a>','link',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+
+    profileComments: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('<a href="^_^openurl/newcoms">New Comments</a>','link',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+    blogComments: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('<a href="^_^openurl/newbcoms">New Blog Comments</a>','link',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+
+    pictureComments: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('<a href="^_^openurl/newpcoms">New Picture Comments</a>','link',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+
+    events: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('<a href="^_^openurl/events">New Events Invites</a>','link',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+
+    none: >
+                        <tr>
+                            <td>
+                                <div style = 'padding: 0 0 0 12;'>
+                                    ${TagFont('No Alerts','minor',fonts)}
+                                </div>
+                            </td>
+                        </tr>
+
+  statuses:
+    header: >
+                        <table cellpadding='3' cellspacing='0' border='0' valign='top'>
+                            <tr>
+                                <td colspan='2'>
+                                    ${TagFont('Status Updates','title',fonts)}
+                                </td>
+                            </tr>
+    footer: >
+                    </table>
+    none: >
+                <tr>
+                    <td>${TagFont('No Status Updates','major',fonts)}</td>
+                </tr>
+
+    FriendMyspaceStatus:
+      message: >
+                    <tr>
+                        <td>
+                            <a href='^_^openurl/profile/${obj.userid}'>
+                                <img src='${obj.cache_url.encode('utf-8').encode('url')}' style = "width: 45;">
+                            </a>
+                        </td>
+                        <td width="100%">
+                            <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+                                <tr>
+                                    <td>
+                                        <a href='^_^openurl/profile/${obj.userid}'>
+                                            ${TagFont(obj.username, 'link', fonts)}
+                                        </a>
+                                        ${TagFont("&nbsp;"+obj.status, 'major', fonts)}
+                                        <span style="white-space: nowrap;">${TagFont(" ("+obj.when.strip()+")", 'minor', fonts) if obj.when else ""}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+  bdays:
+    hide_empty: yes
+    header: >
+                
+                <table cellpadding='3' cellspacing='0' border='0' valign='top'>
+                    <tr>
+                        <td colspan='2'>
+                            ${TagFont('Upcoming Birthdays','title',fonts)}
+                        </td>
+                    </tr>
+
+    footer: >
+                <tr>
+                  <td colspan='2'>
+                    ${separator()}
+                  </td>
+                </tr>
+                </table>
+
+    none:  <td>${TagFont('No Birthdays','major',fonts)}</td>
+    MyspaceBirthday:
+      message: >
+                    <tr>
+                        <td valign='top'>
+                            <a href='^_^openurl/profile/${obj.userid}'>
+                              <img src = '${obj.cache_url.encode('utf-8').encode('url')}' style= 'width: 45;'>
+                            </a>
+                        </td>
+                        <td valign='top' width="100%">
+                            <a href='${obj.profile_link or ("^_^openurl/profile/"+str(obj.userid))}'>
+                              ${TagFont(obj.username, 'link', fonts)}
+                            </a>
+                            <br />
+                            ${TagFont(obj.date, 'header', fonts)}
+                        </td>
+                    </tr>
+
+
+    BirthdayParty:
+      message: 'whoo! party time!'
+
+twitter:
+  TwitterDirectMsg: &TwitterDirectMsg
+    message: >
+      <tr>
+        <td style="width:52; padding: 3;">
+          <div style= 'position: relative; width: 48px; height: 48px;'>
+                <div style="position:absolute; top:0px; left:0px;">
+                    <img src="${obj.cache_values['sender_cache_url'].encode('utf-8').encode('url') or ''}" style="width: 36;">
+                </div>
+                <div style="position:absolute; bottom:0px; right:0px;">
+                    <img src="${obj.cache_values['recipient_cache_url'].encode('utf-8').encode('url') or ''}" style="width: 24;">
+                </div>
+          </div>
+        </td>
+        <td style = "width: 100%; padding: 3;">
+          <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+            <tr>
+              <td>
+                  ${TagFont(obj.linkified_text, 'major', fonts)}
+              </td>
+            </tr>
+            <tr>
+              <td valign='top'>
+                <table cellpadding='0' cellspacing='0' border='0' valign='top'>
+                  <tr>
+                    ${'<td><a href="^_^new_tweet/d ' + obj.sender_screen_name + ' /">' if \
+                      obj.shouldShow('delete') else \
+                      '<td><a href="^_^new_tweet/d ' + obj.recipient_screen_name + ' /">'}
+                    ${skinimagetag('twittericons.direct') + '</a></td>'}
+                    ${'<td><a href="^_^destroy_direct_message/' + str(obj.id) + '">' + \
+                      skinimagetag('twittericons.delete') + '</a></td>' \
+                      if obj.shouldShow('delete') else ''}
+                    <td width='100%'>
+                      ${TagFont('&nbsp;from ' + '<a href="http://twitter.com/' + \
+                                  obj.sender_screen_name + '">' + \
+                                  obj.sender_screen_name + '</a> ' \
+                        if obj.shouldShow('delete') else \
+                        TagFont('&nbsp;sent to ', 'minor', fonts) + '<a href="http://twitter.com/' + \
+                                  obj.recipient_screen_name + '">' + \
+                                  obj.recipient_screen_name + '</a> ', 'minor', fonts)}
+                      ${TagFont('&nbsp;' + obj.relative_created_at, 'minor', fonts)}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+  TwitterStatus: &TwitterStatus
+    message: >
+        <tr>
+            <td style="width: 52; padding: 3;">
+                <img width="48" height="48" src="${(obj.cache_values['cache_url'] or '').encode('utf-8').encode('url')}" />
+            </td>
+            <td style="width: 100%; padding: 3;">
+              <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+                <tr>
+                  <td>
+                      ${TagFont('<a href="http://twitter.com/' + obj.user_screen_name + '">' + obj.user_screen_name + '</a> ', 'major', fonts)}
+                      ${TagFont(obj.linkified_text, 'major', fonts)}
+                  </td>
+                </tr>
+                <tr>
+                  <td valign='top'>
+                    <table cellpadding='0' cellspacing='0' border='0' valign='top'>
+                      <tr>
+                        ${'<td valign="center"><a title="Reply" href="^_^new_tweet/@' + obj.user_screen_name + ' /' + str(obj.id) + '">' + \
+                          skinimagetag('twittericons.reply') + '</a></td>' \
+                          if obj.shouldShow('reply') else ''}
+                        ${'<td valign="center"><a title="Retweet" href="^_^retweet/' + str(obj.id) + '">' + skinimagetag('twittericons.retweet') + '</a></td>' \
+                          if obj.shouldShow('retweet') else ''}
+                        ${'<td valign="center"><a title="Direct Message" href="^_^new_tweet/d ' + obj.user_screen_name + ' /">' + \
+                          skinimagetag('twittericons.direct') + '</a></td>' \
+                          if obj.shouldShow('direct') else ''}
+                        ${'<td valign="center"><a title="Favorite" href="^_^create_favorite/' + str(obj.id) + '">' + \
+                         skinimagetag('twittericons.staroff') + '</a></td>' \
+                         if obj.shouldShow('create_favorite') else ''}
+                        ${'<td valign="center"><a title="Unfavorite" href="^_^destroy_favorite/' + str(obj.id) + '">' + \
+                         skinimagetag('twittericons.staron') + '</a></td>' \
+                         if obj.shouldShow('destroy_favorite') else ''}
+                        ${'<td valign="center"><a title="Delete" href="^_^destroy_status/' + str(obj.id) + '">' + \
+                          skinimagetag('twittericons.delete') + '</a></td>' \
+                          if obj.shouldShow('delete') else ''}
+                        <td width='100%'>
+                          ${TagFont(u''.join(['&nbsp;', obj.relative_created_at,
+                                             (' via ' + obj.source) if obj.source else '']),
+                                                  'minor',fonts)}
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+        </tr>
+        
+  TwitterSelfStatus: &TwitterSelfStatus
+    message: >
+        <tr>
+            <td style="width: 52; padding: 3;">
+                <img width="48" height="48" src="${(obj.cache_values['cache_url'] or '').encode('utf-8').encode('url')}" />
+            </td>
+            <td style="width: 100%; padding: 3;">
+              <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+                <tr>
+                  <td>
+                      ${TagFont('<a href="http://twitter.com/' + obj.user_screen_name + '">' + obj.user_screen_name + '</a> ', 'major', fonts)}
+                      ${TagFont(obj.linkified_text, 'major', fonts)}
+                  </td>
+                </tr>
+                <tr>
+                  <td valign='top'>
+                    <table cellpadding='0' cellspacing='0' border='0' valign='top'>
+                      <tr>
+                        ${'<td><a href="^_^create_favorite/' + str(obj.id) + '">' + \
+                         skinimagetag('twittericons.staroff') + '</a></td>' \
+                         if obj.shouldShow('create_favorite') else ''}
+                        ${'<td><a href="^_^destroy_favorite/' + str(obj.id) + '">' + \
+                         skinimagetag('twittericons.staron') + '</a></td>' \
+                         if obj.shouldShow('destroy_favorite') else ''}
+                        ${'<td><a href="^_^destroy_status/' + str(obj.id) + '">' + \
+                          skinimagetag('twittericons.delete') + '</a></td>' \
+                          if obj.shouldShow('delete') else ''}
+                        <td width='100%'>
+                            ${TagFont(u''.join(['&nbsp;', obj.relative_created_at,
+                                         (' via ' + obj.source) if obj.source else '']),
+                                  'minor',fonts)}
+                            ${TagFont('&nbsp;(<a href="^_^new_tweet">update</a>)', 'major', fonts)}
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+        </tr>
+        
+  TwitterNoSelfStatus: &TwitterNoSelfStatus >
+        <tr>
+            <td style="width: 52; padding: 3;">
+                ${skinimagetag('serviceicons.twitter')}
+            </td>
+            <td align="center" style="width: 100%; padding: 3; vertical-align: middle;">
+                    ${TagFont('What are you doing?<br />', 'minor', fonts)}
+                    ${TagFont('&nbsp;(<a href="^_^new_tweet">update</a>)', 'minor', fonts)}
+            </td>
+        </tr>
+  TwitterFooter: &TwitterFooter >
+                             </table>
+                             </div></body>
+  TwitterNone: &TwitterNone ''
+  TwitterSelfHeader: &TwitterSelfHeader >
+                    <body link='${fonts.linkfc}'><div id="content">
+                        <table width='100%' cellpadding='0' cellspacing='0' border='0' valign='top'>
+  TwitterSelfFooter: &TwitterSelfFooter >
+                        <tr>
+                          <td colspan='2'>
+                            ${separator()}
+                          </td>
+                        </tr>
+  timeline:
+    order:
+      - self_feed
+      - timeline
+    self_feed:
+      header: *TwitterSelfHeader
+      footer: *TwitterSelfFooter
+      none: *TwitterNoSelfStatus
+      TwitterStatusMsg: *TwitterSelfStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+    timeline:
+      header: >
+                <tr><td border='0' style="white-space: nowrap; padding: 3;">${TagFont('Timeline','title',fonts)}</td><td width='100%' align='right' style="padding: 3;"><a href="^_^tabloaded2/timeline/True">${TagFont('Refresh','link',fonts)}</a></td></tr>
+      footer: *TwitterFooter
+      none: *TwitterNone
+      TwitterStatusMsg: *TwitterStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+  directs:
+    order:
+      - self_feed
+      - directs
+    self_feed:
+      header: *TwitterSelfHeader
+      footer: *TwitterSelfFooter
+      none: *TwitterNoSelfStatus
+      TwitterStatusMsg: *TwitterSelfStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+    directs:
+      header: >
+                <tr><td border="0" style="white-space: nowrap; padding: 3;">${TagFont('Directs','title',fonts)}</td><td width='100%' align='right' style="padding: 3;"><a href="^_^tabloaded2/directs/True">${TagFont('Refresh','link',fonts)}</a></td></tr>
+      footer: *TwitterFooter
+      none: *TwitterNone
+      TwitterStatusMsg: *TwitterStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+  replies:
+    order:
+      - self_feed
+      - replies
+    self_feed:
+      header: *TwitterSelfHeader
+      footer: *TwitterSelfFooter
+      none: *TwitterNoSelfStatus
+      TwitterStatusMsg: *TwitterSelfStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+    replies:
+      header: >
+                <tr><td border="0" style="white-space: nowrap; padding: 3;">${TagFont('Mentions','title',fonts)}</td><td width='100%' align='right' style="padding: 3;"><a href="^_^tabloaded2/replies/True">${TagFont('Refresh','link',fonts)}</a></td></tr>
+      footer: *TwitterFooter
+      none: *TwitterNone
+      TwitterStatusMsg: *TwitterStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+  archive:
+    order:
+      - self_feed
+      - archive
+    self_feed:
+      header: *TwitterSelfHeader
+      footer: *TwitterSelfFooter
+      none: *TwitterNoSelfStatus
+      TwitterStatusMsg: *TwitterSelfStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+    archive:
+      header: >
+                <tr><td border="0" style="white-space: nowrap; padding: 3;">${TagFont('Archive','title',fonts)}</td><td width='100%' align='right' style="padding: 3;"><a href="^_^tabloaded2/archive/True">${TagFont('Refresh','link',fonts)}</a></td></tr>
+      footer: *TwitterFooter
+      none: *TwitterNone
+      TwitterStatusMsg: *TwitterStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+  favorites:
+    order:
+      - self_feed
+      - favorites
+    self_feed:
+      header: *TwitterSelfHeader
+      footer: *TwitterSelfFooter
+      none: *TwitterNoSelfStatus
+      TwitterStatusMsg: *TwitterSelfStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+    favorites:
+      header: >
+                <tr><td border="0" style="white-space: nowrap; padding: 3;">${TagFont('Favorites','title',fonts)}</td><td width='100%' align='right' style="padding: 3;"><a href="^_^tabloaded2/favorites/True">${TagFont('Refresh','link',fonts)}</a></td></tr>
+      footer: *TwitterFooter
+      none: *TwitterNone
+      TwitterStatusMsg: *TwitterStatus
+      TwitterDirectMsg: *TwitterDirectMsg
+
+
+rss:
+  order:
+    - feed
+  feed:
+    header: >
+                <body><div id="content">
+                <table width='100%' cellpadding='3' cellspacing='0' border='0' valign='top'>
+                    <tr>
+                        <td>
+                            ${TagFont('Foo','title',fonts)}
+                            <table cellpadding='2' cellspacing='0' border='0' valign='top'>
+                                                        </table>
+                            <table cellpadding='0' width='100%' cellspacing='0' border='0' align='left' valign='top'>
+
+    footer: >
+                </table>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </div></body>
+    RssItem:
+      message: >
+                    <tr><td>
+                       ${TagFont(obj.title, 'major', fonts)}
+                    </td></tr>

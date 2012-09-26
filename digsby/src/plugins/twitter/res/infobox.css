@@ -1,0 +1,147 @@
+table{
+    table-layout: fixed;
+    display:table;
+}
+
+.controls {
+    padding-top: 2px;
+}
+
+.controls_table, .controls_table tr, .controls_table td {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    border-spacing:0px;
+}
+.controls_table {
+    display:inline-table;
+    vertical-align:text-top;
+}
+.trendlink {
+    white-space: nowrap;
+    line-height: 140%;
+}
+
+span.trend {
+    padding-left: 3px;
+}
+
+div.trends {
+    padding-top: 3px;
+    margin-left: -3px;
+}
+
+.tweet {
+    clear: left;
+}
+.date-separator {
+    display:block;
+    margin-bottom:.4em;
+}
+
+.profileImage {
+    float: left;
+    width: 48px;
+    height: 48px;
+    padding-top: 2px;
+}
+
+.profileImage_last {
+    padding-bottom: 5px;
+}
+
+
+.tweetContent {
+    margin-left: 52px;
+    min-height: 50px;
+    max-width:100%;
+    /*border: 1px solid blue; */
+}
+
+.selfTweetContent {
+    margin-left: 0px;
+    min-height: 0px;
+    padding-bottom: 2px;
+}
+
+.content_hr { clear: left; width:100%;}
+
+.alerts ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 2px;
+}
+
+.controls img {
+    vertical-align: middle;
+}
+.input_area {
+    margin-top:.3em;
+    width:100%;
+    /*margin-right: 3em;*/
+    /*border: 1px solid;*/
+}
+.input_area_over_limit {
+    background-color: red;
+    color:white;
+}
+.form_wrapper {
+    display:none;
+}
+
+.post_divider {
+    background: none;
+    background-color:#d7d7d7;
+    margin-bottom: 0.4em;
+    margin-left:52px;
+}
+
+.direct_icon, .reply_icon, .retweet_icon, .delete_icon {
+    width:16px;
+    height:16px;
+}
+.direct_icon {
+    padding-left:2px;
+}
+.star_icon {
+    width:18px;
+    height:16px;
+}
+
+.star_on, .star_off, .star_pending, .pending_delete_cell {
+    display:none;
+}
+
+.controls.delete_pending .delete_cell {
+    display:none;
+}
+
+.controls.delete_pending .pending_delete_cell {
+    display:table-cell;
+}
+
+.controls.favorite_on td.star_on {
+    display:table-cell;
+}
+
+.controls.favorite_off td.star_off {
+    display:table-cell;
+}
+
+.controls.favorite_pending td.star_pending {
+    display:table-cell;
+}
+.char_count {
+    min-width:2em;
+    text-align:right;
+}
+.textarea_wrapper {
+    width:100%;
+}
+.input_table {
+    width:100%;
+}
+
+.alertToggleLink {
+    float: right;
+}

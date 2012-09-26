@@ -1,0 +1,302 @@
+Index: pyxmpp/jabber/clientstream.py
+===================================================================
+--- pyxmpp/jabber/clientstream.py	(revision 676)
++++ pyxmpp/jabber/clientstream.py	(working copy)
+@@ -123,8 +123,8 @@
+             self.__logger.debug("Skipping unknown auth method: %s" % method)
+             return self._try_auth()
+         elif self.available_auth_methods is not None:
++            self._auth_methods_left.pop(0)
+             if method in self.available_auth_methods:
+-                self._auth_methods_left.pop(0)
+                 self.auth_method_used=method
+                 if method=="digest":
+                     self._digest_auth_stage2(self.auth_stanza)
+@@ -134,6 +134,7 @@
+                 return
+             else:
+                 self.__logger.debug("Skipping unavailable auth method: %s" % method)
++                return self._try_auth()
+         else:
+             self._auth_stage1()
+ 
+Index: pyxmpp/jabber/vcard.py
+===================================================================
+--- pyxmpp/jabber/vcard.py	(revision 676)
++++ pyxmpp/jabber/vcard.py	(working copy)
+@@ -382,11 +382,14 @@
+                 if n.name=='TYPE':
+                     self.type=unicode(n.getContent(),"utf-8","replace")
+                 if n.name=='BINVAL':
+-                    self.image=base64.decodestring(n.getContent())
++                    try:
++                        self.image=base64.decodestring(n.getContent())
++                    except:
++                        self.image=None
+                 if n.name=='EXTVAL':
+                     self.uri=unicode(n.getContent(),"utf-8","replace")
+                 n=n.next
+-            if (self.uri and self.image) or (not self.uri and not self.image):
++            if (self.uri and self.image):
+                 raise ValueError,"Bad %s value in vcard" % (name,)
+             if (not self.uri and not self.image):
+                 raise Empty,"Bad %s value in vcard" % (name,)
+Index: pyxmpp/jabber/dataforms.py
+===================================================================
+--- pyxmpp/jabber/dataforms.py	(revision 676)
++++ pyxmpp/jabber/dataforms.py	(working copy)
+@@ -70,7 +70,8 @@
+             - `xmlnode`: `libxml2.xmlNode`
+             - `doc`: `libxml2.xmlDoc`"""
+         _unused = doc
+-        xmlnode.setProp("label", self.label.encode("utf-8"))
++        if self.label is not None:
++            xmlnode.setProp("label", self.label.encode("utf-8"))
+         for value in self.values:
+             xmlnode.newTextChild(xmlnode.ns(), "value", value.encode("utf-8"))
+         return xmlnode
+@@ -153,9 +154,9 @@
+               and `unicode` for other field types.
+         """
+         self.name = name
+-        if field_type is not None and field_type not in self.allowed_types:
++        if field_type and field_type not in self.allowed_types:
+             raise ValueError, "Invalid form field type: %r" % (field_type,)
+-        self.type = field_type
++        self.type = field_type or None
+         if value is not None:
+             if values:
+                 raise ValueError, "values or value must be given, not both"
+@@ -259,7 +260,8 @@
+             - `doc`: `libxml2.xmlDoc`"""
+         if self.type is not None and self.type not in self.allowed_types:
+             raise ValueError, "Invalid form field type: %r" % (self.type,)
+-        xmlnode.setProp("type", self.type)
++        if self.type is not None:
++            xmlnode.setProp("type", self.type)
+         if not self.label is None:
+             xmlnode.setProp("label", self.label)
+         if not self.name is None:
+@@ -470,7 +472,7 @@
+     xml_element_namespace = DATAFORM_NS
+ 
+     def __init__(self, xmlnode_or_type = "form", title = None, instructions = None,
+-            fields = None, reported_fields = None, items = None):
++            fields = None, reported_fields = None, items = None, strict=True):
+         """Initialize a `Form` object.
+ 
+         :Parameters:
+@@ -489,7 +491,7 @@
+             - `items`: `list` of `Item`
+         """
+         if isinstance(xmlnode_or_type, libxml2.xmlNode):
+-            self.__from_xml(xmlnode_or_type)
++            self.__from_xml(xmlnode_or_type, strict)
+         elif xmlnode_or_type not in self.allowed_types:
+             raise ValueError, "Form type %r not allowed." % (xmlnode_or_type,)
+         else:
+@@ -643,7 +645,7 @@
+         for item in self.items:
+             item.as_xml(xmlnode, doc)
+ 
+-    def __from_xml(self, xmlnode):
++    def __from_xml(self, xmlnode, strict=True):
+         """Initialize a `Form` object from an XML element.
+ 
+         :Parameters:
+@@ -658,9 +660,11 @@
+         self.instructions = None
+         if (xmlnode.type != "element" or xmlnode.name != "x"
+                 or xmlnode.ns().content != DATAFORM_NS):
+-            raise ValueError, "Not a form: " + xmlnode.serialize() 
++            raise ValueError, "Not a form: " + xmlnode.serialize()
+         self.type = xmlnode.prop("type")
+-        if not self.type in self.allowed_types:
++        if not strict:
++            self.type = self.type or None
++        elif not self.type in self.allowed_types:
+             raise BadRequestProtocolError, "Bad form type: %r" % (self.type,)
+         child = xmlnode.children
+         while child:
+Index: pyxmpp/stanzaprocessor.py
+===================================================================
+--- pyxmpp/stanzaprocessor.py	(revision 676)
++++ pyxmpp/stanzaprocessor.py	(working copy)
+@@ -109,18 +109,24 @@
+                 ufr=None
+             if self._iq_response_handlers.has_key((sid,ufr)):
+                 key=(sid,ufr)
+-            elif ( (fr==self.peer or fr==self.me)
++            elif ( (fr==self.peer or fr==self.me or fr==self.me.bare())
+                     and self._iq_response_handlers.has_key((sid,None))):
+                 key=(sid,None)
+             else:
++                self.__logger.warning('ignoring stanza from %r', fr)
++                self.__logger.warning('I am %r', self.me)
++                self.__logger.warning(self._iq_response_handlers.keys())
+                 return False
+             res_handler, err_handler = self._iq_response_handlers[key]
+             if stanza.get_type()=="result":
+                 response = res_handler(stanza)
+             else:
+                 response = err_handler(stanza)
+-            del self._iq_response_handlers[key]
+-            self.process_response(response)
++            try:
++                del self._iq_response_handlers[key]
++                self.process_response(response)
++            except KeyError:
++                assert not self._iq_response_handlers.keys()
+             return True
+ 
+         q=stanza.get_query()
+Index: pyxmpp/xmlextra.py
+===================================================================
+--- pyxmpp/xmlextra.py	(revision 676)
++++ pyxmpp/xmlextra.py	(working copy)
+@@ -212,7 +212,10 @@
+                         try:
+                             self._root.addChild(node1)
+                             self._handler.stanza(self._doc, node1)
+-                        except:
++                        except Exception:
++                            import traceback
++                            traceback.print_exc()
++                        finally:
+                             node1.unlinkNode()
+                             node1.freeNode()
+                             del node1
+Index: pyxmpp/jid.py
+===================================================================
+--- pyxmpp/jid.py	(revision 676)
++++ pyxmpp/jid.py	(working copy)
+@@ -198,7 +198,7 @@
+         object.__setattr__(self,"resource",s)
+ 
+     def __str__(self):
+-        warnings.warn("JIDs should not be used as strings", DeprecationWarning, stacklevel=2)
++#        warnings.warn("JIDs should not be used as strings", DeprecationWarning, stacklevel=2)
+         return self.as_utf8()
+ 
+     def __unicode__(self):
+Index: pyxmpp/sasl/digest_md5.py
+===================================================================
+--- pyxmpp/sasl/digest_md5.py	(revision 676)
++++ pyxmpp/sasl/digest_md5.py	(working copy)
+@@ -267,11 +267,13 @@
+                     self.__logger.debug("auth not supported")
+                     return Failure("not-implemented")
+             elif var=="charset":
++                val = _unquote(val)
+                 if val!="utf-8":
+                     self.__logger.debug("charset given and not utf-8")
+                     return Failure("bad-challenge")
+                 charset="utf-8"
+             elif var=="algorithm":
++                val = _unquote(val)
+                 if val!="md5-sess":
+                     self.__logger.debug("algorithm given and not md5-sess")
+                     return Failure("bad-challenge")
+Index: pyxmpp/client.py
+===================================================================
+--- pyxmpp/client.py	(revision 676)
++++ pyxmpp/client.py	(working copy)
+@@ -62,7 +62,7 @@
+           (stream becomes connected, session established etc.).
+         - `interface_providers`: list of object providing interfaces that
+           could be used by the Client object. Initialized to [`self`] by
+-          the constructor if not set earlier. Put objects providing 
++          the constructor if not set earlier. Put objects providing
+           `IPresenceHandlersProvider`, `IMessageHandlersProvider`,
+           `IIqHandlersProvider` or `IStanzaHandlersProvider` into this list.
+     :Types:
+@@ -281,7 +281,7 @@
+ 
+     def _session_started(self):
+         """Called when session is started.
+-        
++
+         Activates objects from `self.interface_provides` by installing
+         their stanza handlers, etc."""
+         for ob in self.interface_providers:
+@@ -349,8 +349,8 @@
+         if not self.roster:
+             raise ClientError("Roster update, but no roster")
+         q=iq.get_query()
+-        item=self.roster.update(q)
+-        if item:
++        items=self.roster.update(q)
++        for item in items:
+             self.roster_updated(item)
+         resp=iq.make_result_response()
+         self.stream.send(resp)
+Index: pyxmpp/roster.py
+===================================================================
+--- pyxmpp/roster.py	(revision 676)
++++ pyxmpp/roster.py	(working copy)
+@@ -231,7 +231,7 @@
+         n.unlinkNode()
+         n.freeNode()
+         return r
+-    
++
+     def __iter__(self):
+         return self.items_dict.itervalues()
+ 
+@@ -346,31 +346,33 @@
+         ctxt=common_doc.xpathNewContext()
+         ctxt.setContextNode(query)
+         ctxt.xpathRegisterNs("r",ROSTER_NS)
+-        item=ctxt.xpathEval("r:item")
++        items=ctxt.xpathEval("r:item")
+         ctxt.xpathFreeContext()
+-        if not item:
++        if not items:
+             raise ValueError,"No item to update"
+-        item=item[0]
+-        item=RosterItem(item)
+-        jid=item.jid
+-        subscription=item.subscription
+-        try:
+-            local_item=self.get_item_by_jid(jid)
+-            local_item.subscription=subscription
+-        except KeyError:
++        local_items = []
++        for item in items:
++            item=RosterItem(item)
++            jid=item.jid
++            subscription=item.subscription
++            try:
++                local_item=self.get_item_by_jid(jid)
++                local_item.subscription=subscription
++            except KeyError:
++                if subscription=="remove":
++                    return [RosterItem(jid,"remove")]
++                if self.server or subscription not in ("none","from","to","both"):
++                    subscription="none"
++                local_item=RosterItem(jid,subscription)
+             if subscription=="remove":
+-                return RosterItem(jid,"remove")
+-            if self.server or subscription not in ("none","from","to","both"):
+-                subscription="none"
+-            local_item=RosterItem(jid,subscription)
+-        if subscription=="remove":
+-            del self.items_dict[local_item.jid]
+-            return RosterItem(jid,"remove")
+-        local_item.name=item.name
+-        local_item.groups=list(item.groups)
+-        if not self.server:
+-            local_item.ask=item.ask
+-        self.items_dict[local_item.jid]=local_item
+-        return local_item
++                del self.items_dict[local_item.jid]
++                return [RosterItem(jid,"remove")]
++            local_item.name=item.name
++            local_item.groups=list(item.groups)
++            if not self.server:
++                local_item.ask=item.ask
++            self.items_dict[local_item.jid]=local_item
++            local_items.append(local_item)
++        return local_items
+ 
+ # vi: sts=4 et sw=4

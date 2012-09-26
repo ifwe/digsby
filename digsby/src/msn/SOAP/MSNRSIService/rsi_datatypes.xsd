@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xsd:schema xmlns:rsi="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" xmlns="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" elementFormDefault="qualified" version="1.0">
+    <xsd:complexType name="MetadataMessage">
+        <xsd:sequence>
+            <xsd:element name="T" type="xsd:integer">
+                <xsd:annotation>
+                    <xsd:documentation>11</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="S" type="xsd:integer">
+                <xsd:annotation>
+                    <xsd:documentation>6</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="RT" type="xsd:dateTime" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>The time the message was received.			</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="RS" type="xsd:boolean">
+                <xsd:annotation>
+                    <xsd:documentation>Read set.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SZ" type="xsd:integer">
+                <xsd:annotation>
+                    <xsd:documentation>The size of the message.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="E" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>The passport name of the sender.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="I" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>The unique ID for this message. Seems to be a GUID.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="F" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>Hotmail folder GUID. 000009 or .!!OIM</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="N" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>RFC 2047-encoded friendly name of the sender.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SU" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="MetaData">
+        <xsd:sequence>
+            <xsd:element name="M" type="rsi:MetadataMessage" maxOccurs="unbounded"/>
+            <xsd:element name="Q">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="QTM" type="xsd:integer"/>
+                        <xsd:element name="QNM" type="xsd:integer"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

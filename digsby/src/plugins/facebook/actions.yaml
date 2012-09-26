@@ -1,0 +1,21 @@
+FacebookAccount:
+    - call: update_now
+      name: !_ '&Update Now'
+    - call: tell_me_again
+      name: !_ '&Tell Me Again'
+    - call: OpenHome
+      name: !_ '&Home'
+    - call: OpenProfile
+      name: !_ 'Pro&file'
+    - call: OpenFriends
+      name: !_ '&Friends'
+    - call: OpenPhotos
+      name: !_ '&Photos'
+    - call: OpenMessages
+      name: !_ '&Messages'
+    - ------------------------
+    - call: rename_gui
+      name: !_ "&Rename"
+    - ------------------------
+    - call: edit_status
+      name: !_ '&Set Status'

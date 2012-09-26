@@ -1,0 +1,18 @@
+name: Native Skin
+
+###################################################################
+#### REUSABLE ELEMENTS
+###################################################################
+
+#### CAPABILITIES BAR IN IM WINDOW
+#### NEEDS SUPPORT FOR ICON OR TEXT MODE
+#### SPLIT INTO ALL BARS INCLUDING EMAIL RELATED (some have icons) buttonbarskin (like buttonskin)
+ActionsBar:
+  ToolbarSkin: ButtonBar
+  IconSize: 24
+  Icons:
+    Font: actions/font.png 
+    Background: actions/colorwheel.png 
+    ViewPastChats: actions/messages.png 
+    AlertMeWhen: actions/alarmclock.png 
+    AddContact: actions/id_card_add.png 

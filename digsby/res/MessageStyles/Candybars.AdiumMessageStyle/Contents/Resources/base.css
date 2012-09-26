@@ -1,0 +1,149 @@
+	body
+	{
+		color: rgb(0, 0, 0);
+		background: #fff;
+		
+		margin: 0;
+
+	}
+	
+	#Chat
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+	p
+	{
+		margin: 0;
+	}
+	
+	img
+	{
+		vertical-align: middle;
+	}
+	
+	.incoming_row, .outgoing_row, .incoming_row_context, .outgoing_row_context, .status_row
+	{
+		font-family: Lucida Grande;
+		font-size: 11px;
+		font-weight: bold;
+	}
+	
+	.incoming_row, .outgoing_row, .incoming_row_context, .outgoing_row_context
+	{
+		padding: 3px 10px;
+		
+		overflow: hidden;
+
+		background-image: url("images/row_background_noshadow.png");
+		background-position: repeat-x top;
+	}
+	
+	.status_row
+	{
+		text-align: center;
+		font-weight: normal;
+		
+		margin-bottom: 2px;
+
+		padding: 3px 10px;
+		
+		overflow: hidden;
+	}
+
+	.message_incoming, .message_outgoing, .message_incoming_context, .message_outgoing_context
+	{
+		background: url("images/row_shadow.png") repeat-x top left;
+
+		padding: 4px 10px 10px 10px;
+		
+		overflow: auto;
+	}
+
+	.message_incoming_context, .message_outgoing_context
+	{
+		color: rgb(0, 0, 0);
+	}
+	
+	.next_message
+	{
+		padding: 6px 0 0 0;
+        min-height: 1.1em;
+	}
+			
+	.timestamp
+	{
+		float: right;
+		font-weight: normal;
+	}
+	
+	.next_message .timestamp
+	{
+        padding: 0 0 0 6px;
+		color: rgb(128, 128, 128);
+        font-size: 60%;
+	}
+	
+	.header
+	{
+		background: url("images/row_header.png") repeat-x;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		
+		z-index:2;
+		
+		height: 25px;
+	}
+	
+	.header_icon
+	{
+		position: absolute;
+		top: 3px;
+		left: 7px;
+		
+		width: 18px;
+		height: 18px;
+
+		float: left;
+
+		background: #eee;
+	}
+	
+	.header_text
+	{
+		padding: 4px 10px 0 30px;
+		
+		font-family: Lucida Grande;
+		font-size: 11px;
+		line-height:16px;
+	}
+	
+	.iconwindow
+	{
+		position:fixed;
+		top: 22px;
+		left:6px;
+
+		z-index: 2;
+		background: #fff;
+		
+		padding: 4px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

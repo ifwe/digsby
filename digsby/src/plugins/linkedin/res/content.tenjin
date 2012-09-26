@@ -1,0 +1,19 @@
+<div id="linkedin-selfstatus">
+
+<?PY DEFAULT_STATUS_TEXT = _('You have no status message') ?>
+<?py status_text = getattr(conn.users.get(conn.userid, None), 'status', '') or #{{repr(to_str(DEFAULT_STATUS_TEXT))}} ?>
+  <span class="title">Status:</span>
+  <span class="major">#{util.linkify(status_text.encode('xml'))} (<a href="^_^SetStatus">${{_('update')}}</a>)</span>
+  <hr />
+</div>
+<div id="linkedin-newsfeed">
+ <div class="news-item-list">
+  <span class="title date-separator static">${{_('Network Updates')}}</span>
+  <div class="news-item no-news-today">
+    <div class="news-item-content">
+    ${{_('No news today.')}}
+    </div>
+  </div>
+<?py include(app.resource('items.tenjin')) ?>
+ </div>
+</div>

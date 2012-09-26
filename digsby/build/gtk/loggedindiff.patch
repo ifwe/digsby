@@ -1,0 +1,37 @@
+===================================================================
+--- src/gui/buddylist/buddylistframe.py	(revision 16930)
++++ src/gui/buddylist/buddylistframe.py	(working copy)
+@@ -264,7 +264,7 @@
+                                   'socialpanel'
+                        )
+ 
+-        self.clist = ConnectionsPanel(self)
++        #self.clist = ConnectionsPanel(self)
+ 
+ 
+         self.infobox.Befriend(self.blist)
+@@ -277,12 +277,13 @@
+ 
+     @bind('BuddyList.Accounts.ToggleShow')
+     def ToggleConnPanel(self):
++        return
+         self.clist.ToggleState()
+ 
+     def gui_layout(self, layoutNow = True):
+-        elems = ['status', 'blist','clist', 'slist', 'elist']
++        elems = ['status', 'blist', 'slist', 'elist']
+ 
+-        panel_order = pref('buddylist.order', elems)
++        panel_order = elems #pref('buddylist.order', elems)
+         email_view  = pref('buddylist.show_email_as', 'panel')  in ('panel', 'both') and len(self.elist.active)
+         social_view = pref('buddylist.show_social_as', 'panel') in ('panel', 'both') and len(self.slist.active)
+         status_view = pref('buddylist.show_status', True)
+@@ -305,7 +306,7 @@
+             viewable.status= (self.status,  0, EXPAND)
+ 
+         viewable.blist =     (self.blist,   1, EXPAND)
+-        viewable.clist =     (self.clist,   0, EXPAND)
++        #viewable.clist =     (self.clist,   0, EXPAND)
+ 
+         if email_view:
+             viewable.elist = (self.elist,   0, EXPAND)

@@ -1,0 +1,12 @@
+<div class="comments_section">
+<?py if getattr(item, 'supports_comments', False): ?>
+    <?py _context['item'] = item ?>
+    <?py include(r"#{{app.resource('likes.tenjin')}}") ?>
+    <?py include(r"#{{app.resource('dislikes.tenjin')}}") ?>
+        <div class="comment_block">
+            <div class="comments_start" style="display:none;"></div>
+    <?py include(r"#{{app.resource('comments_list.tenjin')}}") ?>
+            <div class="comments_end" style="display:none;"></div>
+        </div>
+<?py #endif ?>
+</div>

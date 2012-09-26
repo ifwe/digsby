@@ -1,0 +1,343 @@
+a {
+    color: #000098;
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none outside none;
+    margin: 3px 0 0 0;
+    padding: 0;
+}
+
+li {
+    padding: 2px 0;
+}
+
+.tag-state-hidden {
+    display: none;
+}
+
+.cash {
+    color: #006600;
+    font-weight: bold;
+}
+
+/* News Feed Menu */
+.menu li {
+    display: inline-block;
+    padding: 1px;
+}
+
+.menu .title:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/* Alerts */
+.tagged-alerts a { padding: 1px 0 1px 20px; }
+
+    /* Add / Remove / etc */
+.set_top { background-position:0 0; }
+.unset_top { background-position:0 -100px; }
+.remove { background-position:0 -200px; }
+.add_small_grey { background-position:0 -400px; }
+.add_small, .add_small_grey:hover { background-position:0 -300px; }
+.remove_small_grey { background-position:0 -600px; }
+.remove_small, .remove_small_grey:hover, .block_user { background-position:0 -500px; }
+.report { background-position:0 -7098px; }
+.close { background-position:0 -5600px; }
+.close:hover { background-position:0 -5500px; }
+    /* Friends related */
+.add_friend,
+.friend_requests { background-position:0 -700px; }
+.invite_friend { background-position:0 -4900px; }
+.find_friend { background-position:0 -5000px; }
+.new_friends { background-position:0 -1700px; }
+.viewfriends { background-position:0 -800px; }
+.message,
+.unread_messages { background-position:0 -900px; }
+.comment, .comments { background-position:0 -1000px; }
+.pending_comment { background-position: 0 -5400px; }
+.instantmsg,
+.chat_invites { background-position:0 -1100px; }
+    /* Profile icons */
+.profile_edit { background-position:0 -2500px; }
+.friendsview,
+.view_profile { background-position:0 -2600px; }
+.changeskin { background-position:0 -2700px; }
+.addbox { background-position:0 -2800px; }
+.widgets { background-position:0 -2900px; }
+.journals { background-position:0 -3000px; }
+.videos { background-position:0 -3100px; }
+.pets { background-position:0 -2000px; }
+.luv { background-position:0 -2100px; }
+.gift,
+.gifts { background-position:0 -1500px; }
+.wink { background-position:0 -2200px; }
+.tags,
+.new_tags { background-position:0 -2300px; }
+.gold,
+.gold_2 { background-position:0 -2400px; }
+.gold_small { background-position:0 -4800px; }
+    /* Photo icons */
+.photos,
+.photo_comments,
+.profile_photo { background-position:0 -1200px; }
+.photos_edit { background-position:0 -1300px; }
+    /* Group icons */
+.group_invite { background-position:0 -3200px; }
+.group_edit { background-position:0 -3300px; }
+.group_members { background-position:0 -3400px; }
+.group_leave { background-position:0 -3500px; }
+.group_forum_reply { background-position:2px -3702px; }
+.group_alert { background-position:0 -4600px; }
+.groups_updated { background-position:0 -4600px; }
+.cr_photo_warning { background-position:0 -7900px; }
+
+    /* Misc other icons/alerts */
+.birthday,
+.birthdays { background-position:0 -1400px; }
+.new_friend { background-position:0 -1700px; }
+.meetme_match { background-position:0 -1800px; }
+.meetme_yes { background-position:0 -1900px; }
+.mob_app,
+.mob_hire,
+.mob_fight,
+.mob_promo,
+.mob_promo_simple,
+.mob_prop_rdy,
+.mob_boost { background-position:0 -4000px; }
+.sororitylife { background-position:0 -4300px; }
+.sororitylife_new_version { background-position:0 -4300px; }
+.poker,
+.poker_2 { background-position:0 -4400px; }
+.adventure_quest { background-position: 0 -5100px; }
+.profile_viewers { background-position:0 -4500px; }
+.top_8 { background-position:0 -4700px; }
+.games { background-position:0 -6600px; }
+.adv_quest { background-position:0 -5100px; }
+.action_slots { background-position:0 -5200px;}
+.zoosk_coin { background-position: 0 -5700px; }
+.zoosk_message { background-position: 0 -5800px; }
+.voted { background-position: 0 -6000px; }
+.fav { background-position: 0 -6100px; }
+.farm_ready, .farm_visit { background-position: 0 -6200px; }
+.fightordie { background-position: 0 -6300px; }
+.happyaquarium { background-position: 0 -6497px; }
+.questions { background-position: 0 -6700px; }
+.questions_answer { background-position: 0 -6800px; }
+.vampire { background-position: 0 -6900px; }
+.action_tabs { background-position: 0 -7000px; }
+.cafe { background-position: 0 -7800px; }
+.cafe_food_ready, .cafe_visit { background-position: 0 -7200px; }
+.cafe_food_rotting { background-position: 0 -7300px; }
+.cafe_visit_eat { background-position: 0 -7400px; }
+.cafe_needs_love, .cafe_waiter_contract_expired { background-position: 0 -7500px; }
+.cafe_visit_clean { background-position: 0 -7600px; }
+.online { background-position: 0 -7700px; }
+.topics_promo { background-position: 0 -8000px; }
+.topics_new { background-position: 0 -8000px; }
+.topics_response { background-position: 0 -8000px; }
+.mobile_new_update { background-position: 0 -8100px; }
+.elections_job_completed,
+.elections_favor,
+.elections_hired,
+.elections_new_round { background-position: 0 -8200px; }
+
+/* Elections */
+
+.elections-feed li {
+    line-height: 16px;
+    margin: 0 0 5px;
+    padding: 0 0 0 20px;
+}
+
+.ui-icon-job-16,
+.ui-icon-job-32                 { background-position:0 0; }
+
+.ui-icon-thanks-16,
+.ui-icon-thanks-32              { background-position:0 -100px; }
+
+.ui-icon-favors-16,
+.ui-icon-favors-32              { background-position:0 -200px; }
+
+.ui-icon-funds-16,
+.ui-icon-funds-32               { background-position:0 -300px; }
+
+.ui-icon-votes-16,
+.ui-icon-candidate-0-16,
+.ui-icon-world-5-16,
+.ui-icon-world-6-16,
+.ui-icon-votes-32,
+.ui-icon-candidate-0-32,
+.ui-icon-world-5-32,
+.ui-icon-world-6-32             { background-position:0 -400px; }
+
+.ui-icon-fame-16,
+.ui-icon-fame-32                { background-position:0 -500px; }
+
+.ui-icon-project-16,
+.ui-icon-project-complete-16,
+.ui-icon-candidate-5-16,
+.ui-icon-candidate-17-16,
+.ui-icon-party-0-16,
+.ui-icon-project-32,
+.ui-icon-project-complete-32,
+.ui-icon-candidate-5-32,
+.ui-icon-candidate-17-32,
+.ui-icon-party-0-32             { background-position:0 -600px; }
+
+.ui-icon-got-collaborator-16,
+.ui-icon-candidate-7-16,
+.ui-icon-candidate-18-16,
+.ui-icon-got-collaborator-32,
+.ui-icon-candidate-7-32,
+.ui-icon-candidate-18-32        { background-position:0 -700px; }
+
+.ui-icon-got-fame-16,
+.ui-icon-candidate-6-16,
+.ui-icon-got-fame-32,
+.ui-icon-candidate-6-32         { background-position:0 -800px; }
+
+.ui-icon-got-vote-16,
+.ui-icon-candidate-8-16,
+.ui-icon-world-1-16,
+.ui-icon-got-vote-32,
+.ui-icon-candidate-8-32,
+.ui-icon-world-1-32             { background-position:0 -900px; }
+
+.ui-icon-got-staff-16,
+.ui-icon-candidate-1-16,
+.ui-icon-got-staff-32,
+.ui-icon-candidate-1-32         { background-position:0 -1000px; }
+
+.ui-icon-project-start-16,
+.ui-icon-candidate-3-16,
+.ui-icon-project-start-32,
+.ui-icon-candidate-3-32         { background-position:0 -1100px; }
+
+.ui-icon-contributed-16,
+.ui-icon-candidate-4-16,
+.ui-icon-contributed-32,
+.ui-icon-candidate-4-32         { background-position:0 -1200px; }
+
+.ui-icon-gave-favor-16,
+.ui-icon-candidate-9-16,
+.ui-icon-gave-favor-32,
+.ui-icon-candidate-9-32         { background-position:0 -1300px; }
+
+.ui-icon-got-favor-16,
+.ui-icon-candidate-10-16,
+.ui-icon-candidate-19-16,
+.ui-icon-got-favor-32,
+.ui-icon-candidate-10-32,
+.ui-icon-candidate-19-32        { background-position:0 -1400px; }
+
+.ui-icon-gave-thanks-16,
+.ui-icon-candidate-11-16,
+.ui-icon-gave-thanks-32,
+.ui-icon-candidate-11-32        { background-position:0 -1500px; }
+
+.ui-icon-got-thanks-16,
+.ui-icon-candidate-12-16,
+.ui-icon-candidate-20-16,
+.ui-icon-got-thanks-32,
+.ui-icon-candidate-12-32,
+.ui-icon-candidate-20-32        { background-position:0 -1600px; }
+
+.ui-icon-staff-change-16,
+.ui-icon-candidate-2-16,
+.ui-icon-staff-change-32,
+.ui-icon-candidate-2-32         { background-position:0 -1700px; }
+
+.ui-icon-level-up-16,
+.ui-icon-candidate-13-16,
+.ui-icon-level-up-32,
+.ui-icon-candidate-13-32        { background-position:0 -1800px; }
+
+.ui-icon-party-captain-16,
+.ui-icon-candidate-15-16,
+.ui-icon-party-2-16,
+.ui-icon-world-3-16,
+.ui-icon-party-captain-32,
+.ui-icon-candidate-15-32,
+.ui-icon-party-2-32,
+.ui-icon-world-3-32             { background-position:0 -1900px; }
+
+.ui-icon-party-leader-16,
+.ui-icon-candidate-16-16,
+.ui-icon-party-leader-32,
+.ui-icon-candidate-16-32        { background-position:0 -2000px; }
+
+.ui-icon-party-join-16,
+.ui-icon-candidate-14-16,
+.ui-icon-party-1-16,
+.ui-icon-party-join-32,
+.ui-icon-candidate-14-32,
+.ui-icon-party-1-32             { background-position:0 -2100px; }
+
+.ui-icon-party-line-16,
+.ui-icon-world-4-16,
+.ui-icon-party-line-32,
+.ui-icon-world-3-32             { background-position:0 -2200px; }
+
+.ui-icon-contact-16,
+.ui-icon-contact-32             { background-position:0 -2300px; }
+
+/* Pets */
+.pets-feed li {
+    margin: 0 0 5px;
+    padding: 0 0 1em 25px;
+    width: 28em;
+}
+
+.pets-icon-0 {
+    background-position: 0 0;
+    width: 19px;
+    height: 20px;
+}
+
+.pets-icon-1,
+.pets-icon-8,
+.pets-icon-10,
+.pets-icon-12 {
+    background-position: 0 -30px;
+    width: 19px;
+    height: 14px;
+}
+
+.pets-icon-2 {
+    background-position: 0 -54px;
+    width: 21px;
+    height: 14px;
+}
+
+.pets-icon-3,
+.pets-icon-9 {
+    background-position: 0 -78px;
+    width: 19px;
+    height: 14px;
+}
+
+.pets-icon-4,
+.pets-icon-5,
+.pets-icon-6,
+.pets-icon-7 {
+    background-position: 0 -102px;
+    width: 19px;
+    height: 12px;
+}
+
+.pets-icon-11 {
+    background-position: 0 -124px;
+    width: 24px;
+    height: 20px;
+}
+
+.pets-icon-13 {
+    background-position: 0 -154px;
+    width: 15px;
+    height: 15px;
+}

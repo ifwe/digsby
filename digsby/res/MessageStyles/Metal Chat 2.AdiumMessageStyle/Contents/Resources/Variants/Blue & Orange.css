@@ -1,0 +1,11 @@
+@import url('../main.css');
+
+.container .headerOutgoing .left {
+    background-image: url(../images/chatHeaderBarOrangeLeft.png);
+}
+.container .headerOutgoing .userName {
+    background-image: url(../images/chatHeaderBarOrangeTile.png);
+}
+.container .headerOutgoing .right {
+    background-image: url(../images/chatHeaderBarOrangeRight.png);
+}

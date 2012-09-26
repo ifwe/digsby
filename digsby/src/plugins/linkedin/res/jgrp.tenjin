@@ -1,0 +1,1 @@
+<span class="news-item-text"><a href="${friend.profile_url}" class="link namelink">${friend.name}</a> ${{_('has joined')}} #{', '.join('<a href="%s" class="link">%s</a>' % (g.url, g.name) for g in item.group_list)}</span>

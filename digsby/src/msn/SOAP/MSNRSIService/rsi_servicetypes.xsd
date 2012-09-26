@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xsd:schema xmlns:rsi="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" xmlns="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.hotmail.msn.com/ws/2004/09/oim/rsi" elementFormDefault="qualified" version="1.0">
+    <xsd:include schemaLocation="rsi_datatypes.xsd"/>
+    <xsd:element name="PassportCookie">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="t" type="xsd:string"/>
+                <xsd:element name="p" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GetMetadata" type="rsi:GetMetadataRequestType"/>
+    <xsd:complexType name="GetMetadataRequestType">
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:element name="GetMetadataResponse" type="xsd:anyType"/>
+    <xsd:element name="GetMetadataResponse2" type="rsi:GetMetadataResponseType"/>
+    <xsd:complexType name="GetMetadataResponseType">
+        <xsd:sequence>
+            <xsd:element name="MD" type="rsi:MetaData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetMessage" type="rsi:GetMessageRequestType"/>
+    <xsd:complexType name="GetMessageRequestType">
+        <xsd:sequence>
+            <xsd:element name="messageId" type="xsd:string"/>
+            <xsd:element name="alsoMarkAsRead" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetMessageResponse" type="rsi:GetMessageResponseType"/>
+    <xsd:complexType name="GetMessageResponseType">
+        <xsd:sequence>
+            <xsd:element name="GetMessageResult" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DeleteMessages" type="rsi:DeleteMessagesRequestType"/>
+    <xsd:complexType name="DeleteMessagesRequestType">
+        <xsd:sequence>
+            <xsd:element name="messageIds">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="messageId" type="xsd:string" maxOccurs="unbounded"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DeleteMessagesResponse" type="rsi:DeleteMessagesResponseType"/>
+    <xsd:complexType name="DeleteMessagesResponseType">
+        <xsd:sequence/>
+    </xsd:complexType>
+</xsd:schema>

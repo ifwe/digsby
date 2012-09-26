@@ -1,0 +1,39 @@
+/** Fonts are currently dropped directly in the skin.
+  */
+/*
+.major, .minor, .header, .title, .link {
+  font-family: "Tahoma";
+}
+
+.major, .minor, .header, .title, .link {
+  font-size: 8pt;
+}
+
+.major, .header, .title {
+  color: #000000;
+}
+
+.major, .minor, .link {
+ font-weight: normal;
+}
+
+.header, .title {
+  font-weight: bold;
+}
+
+.minor {
+  color: #808080;
+}
+
+.link {
+  color: #334162;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.bold {
+ font-weight: bold;
+}
+*/

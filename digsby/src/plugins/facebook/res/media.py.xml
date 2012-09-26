@@ -1,0 +1,14 @@
+
+<div class="media">
+<?py num_media = len(post.attachment.media) ?>
+<?py if num_media == 1: ?>
+        <div class="media1">
+    <?py include(r"#{{app.resource('medium.py.xml')}}") ?>
+        </div>
+<?py else: ?>
+        <div class="media_many">
+    <?py include(r"#{{app.resource('medium.py.xml')}}") ?>
+        </div>
+<?py #endif ?>
+<?py del num_media ?>
+</div>

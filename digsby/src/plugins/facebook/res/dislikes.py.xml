@@ -1,0 +1,79 @@
+<?PY
+DISLIKE = _("Dislike! (via http://digsby.com/fb)")
+?>
+<?py
+from util.primitives.structures import oset
+
+num_comments = ('comments' in post and 'count' in post.comments and post.comments.count != '0' and post.comments.count) or 0;
+can_comment = 'comments' in post and 'can_post' in post.comments and post.comments.can_post;
+dislikes = (post.post_id in feed.comments and [c for c in feed.comments[post.post_id] if c.text == #{{repr(DISLIKE)}}]) or [];
+num_dislikes = len(dislikes);
+num_non_dislike_comments = max(num_comments - num_dislikes, 0);
+user_dislikes = [c for c in dislikes if int(c.fromid) == int(post.viewer_id)];
+uids = oset([int(c.fromid) for c in dislikes if int(c.fromid) != int(post.viewer_id)]);
+?>
+<?py img = skin.get('facebookicons.dislike') ?>
+<div class="dislikes minor">
+<?py if num_dislikes: ?>
+    <?py if user_dislikes: ?>
+        <div>
+        <img src="${img.path.url()}"
+            width="${img.Width}"
+            height="${img.Height}"
+        />
+        <?py if len(uids) >= 2: ?>
+            You,
+            <?py for uid in uids[:-1]: ?>
+                <?py if feed.profiles[uid].url: ?>
+<a class="link no_ondown_link" href="${feed.profiles[uid].url}">${feed.profiles[uid].name or _("Facebook User")}</a>,
+                <?py else: ?>
+                    ${feed.profiles[uid].name or _("Facebook User")}
+                <?py #endif ?>
+        <?py else: ?>
+                You
+        <?py #endif ?>
+        <?py if len(uids) >= 1: ?>
+            and
+            <?py uid = uids[-1] ?>
+            <?py if feed.profiles[uid].url: ?>
+<a class="link no_ondown_link" href="${feed.profiles[uid].url}">${feed.profiles[uid].name or _("Facebook User")}</a>
+            <?py else: ?>
+                ${feed.profiles[uid].name or _("Facebook User")}
+            <?py #endif ?>
+        <?py #endif ?>
+        disliked this
+        </div>
+    <?py elif uids: ?>
+        <div>
+        <img src="${img.path.url()}"
+            width="${img.Width}"
+            height="${img.Height}"
+        />
+        <?py if len(uids) >= 3: ?>
+            <?py for uid in uids[:-2]: ?>
+                <?py if feed.profiles[uid].url: ?>
+<a class="link no_ondown_link" href="${feed.profiles[uid].url}">${feed.profiles[uid].name or _("Facebook User")}</a>,
+                <?py else: ?>
+                    ${feed.profiles[uid].name or _("Facebook User")}
+                <?py #endif ?>
+        <?py #endif ?>
+        <?py if len(uids) >= 2: ?>
+            <?py uid = uids[-2] ?>
+            <?py if feed.profiles[uid].url: ?>
+<a class="link no_ondown_link" href="${feed.profiles[uid].url}">${feed.profiles[uid].name or _("Facebook User")}</a>
+            <?py else: ?>
+                ${feed.profiles[uid].name or _("Facebook User")}
+            <?py #endif ?>
+            and
+        <?py #endif ?>
+        <?py uid = uids[-1] ?>
+        <?py if feed.profiles[uid].url: ?>
+<a class="link no_ondown_link" href="${feed.profiles[uid].url}">${feed.profiles[uid].name or _("Facebook User")}</a>
+        <?py else: ?>
+            ${feed.profiles[uid].name or _("Facebook User")}
+        <?py #endif ?>
+        disliked this
+        </div>
+    <?py #endif ?>
+<?py #endif ?>
+</div>

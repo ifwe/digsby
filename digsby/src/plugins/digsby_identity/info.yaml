@@ -1,0 +1,27 @@
+type: pure
+name: "Digsby Identity Management"
+shortname: digsby_identity
+
+entry_points:
+    digsby.identity.exists:
+        'local': digsby_identity:Identity.exists
+    digsby.identity.create:
+        'local': digsby_identity:Identity.create
+    digsby.identity.delete:
+        'local': digsby_identity:Identity.delete
+    digsby.identity.all:
+        'local': digsby_identity:Identity.all
+    digsby.identity.last:
+        'local': digsby_identity:Identity.last
+    digsby.identity.activate:
+        'local': digsby_identity:Identity.activate
+    digsby.identity.deactivate:
+        'local': digsby_identity:Identity.deactivate
+    digsby.identity.active:
+        'local': digsby_identity:Identity.active
+    digsby.identity.save_data:
+        'local': digsby_identity:Identity.save_data
+    digsby.identity.load_data:
+        'local': digsby_identity:Identity.load_data
+    digsby.identity.get:
+        'local': digsby_identity:Identity

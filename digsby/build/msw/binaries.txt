@@ -1,0 +1,58 @@
+#__LICENSE_GOES_HERE__
+# these files and their PDBs are sent to the symbol server by
+# sendsymbols.py
+
+# cgui
+$PLATLIB\cgui.pyd
+$PLATLIB\blist.pyd
+$PLATLIB\buddylist$_DEBUG.dll
+
+# python
+$DPYTHON\python$_DEBUG.exe
+$DPYTHON\pythonw$_DEBUG.exe
+$DPYTHON\python26$_DEBUG.dll
+
+$DPYTHON\DLLs\_ctypes.pyd
+$DPYTHON\DLLs\_elementtree.pyd
+$DPYTHON\DLLs\_hashlib.pyd
+$DPYTHON\DLLs\_multiprocessing.pyd
+$DPYTHON\DLLs\_socket.pyd
+$DPYTHON\DLLs\_ssl.pyd
+$DPYTHON\DLLs\bz2.pyd
+$DPYTHON\DLLs\pyexpat.pyd
+$DPYTHON\DLLs\select.pyd
+$DPYTHON\DLLs\unicodedata.pyd
+$DPYTHON\DLLs\winsound.pyd
+
+# wx
+$PLATLIB\wxbase28${WX_POSTFIX}_net_vc.dll
+$PLATLIB\wxbase28${WX_POSTFIX}_vc.dll
+
+$PLATLIB\wxmsw28${WX_POSTFIX}_adv_vc.dll
+$PLATLIB\wxmsw28${WX_POSTFIX}_core_vc.dll
+$PLATLIB\wxmsw28${WX_POSTFIX}_stc_vc.dll
+
+# webkit
+$PLATLIB\wxwebkit.dll
+$PLATLIB\icuuc42.dll
+$PLATLIB\icuuc.pdb
+$PLATLIB\icuin42.dll
+$PLATLIB\icuin.pdb
+$PLATLIB\icudt42.dll
+
+$PLATLIB\sip.pyd
+$PLATLIB\libxml2.dll
+$PLATLIB\_syck.pyd
+
+# wxpy
+$PLATLIB\wx\_webview.pyd
+$PLATLIB\wx\_wxcalendar.pyd
+$PLATLIB\wx\_wxcore.pyd
+$PLATLIB\wx\_wxstc.pyd
+
+# speedups
+$PLATLIB\_jsonspeedups.pyd
+$PLATLIB\_speedups.pyd
+$PLATLIB\_xmlextra.pyd
+
+$PLATLIB\libcurl${DEBUG}.dll

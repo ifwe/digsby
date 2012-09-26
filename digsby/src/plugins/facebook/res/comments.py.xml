@@ -1,0 +1,18 @@
+<?PY
+DISLIKE = _("Dislike! (via http://digsby.com/fb)")
+?>
+<?py if 'comment_count' in _context: ?>
+    <div class="comments have_comments">
+<?py else: ?>
+    <div class="comments">
+<?py #endif ?>
+<?py from common import pref; dislike_enabled = pref('facebook.dislike_enabled', type=bool, default=True) ?>
+<?py if post.post_id in feed.comments: ?>
+    <?py for comment in [comment for comment in feed.comments[post.post_id] if comment.text != #{{repr(DISLIKE)}} or not dislike_enabled]: ?>
+        <?py _context['comment'] = comment ?>
+        <?py include(r"#{{app.resource('comment.py.xml')}}") ?>
+        <?py del _context['comment'] ?>
+    <?py #endfor ?>
+<?py #endif ?>
+    </div>
+<?py include(r"#{{app.resource('comment_post_link.py.xml')}}") ?>

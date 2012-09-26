@@ -1,0 +1,16 @@
+name: IRC
+name_truncated: irc
+popularity: 1
+path: irc.ircclient.IRCClient
+username_desc: Nick
+form: im
+type: im
+
+skin:
+ serviceicons:
+  irc: "res/irc.png"
+  
+defaults:
+  server: ["irc.freenode.net", 6667]
+  #has_added_friends: no
+  #autologin: no

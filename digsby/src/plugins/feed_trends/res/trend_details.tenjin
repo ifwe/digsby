@@ -1,0 +1,31 @@
+<div style="padding-top: 3px;" >
+
+<span style="vertical-align:middle;">
+
+<?py if post.content.get('street'): ?>
+    <a href="${post.redirect_url}"><img valign="middle" src="${feed_trends_resource('map.png', 'base').url()}"></a>
+    <a style="padding-right: 6px;" href="${post.redirect_url}">${{_('get address')}}</a>
+<?py #endif ?>
+
+<?py if post.content.get('phone'): ?>
+    <a href="${post.redirect_url}"><img valign="middle" src="${feed_trends_resource('phone.png', 'base').url()}"></a>
+    <a style="padding-right: 6px;" href="${post.redirect_url}">${{_('phone number')}}</a>
+<?py #endif ?>
+
+<?py
+reviews = post.content.get('reviews', 0)
+try:
+    num_reviews = int(reviews or 0)
+except ValueError:
+    num_reviews = 0
+?>
+
+<?py if num_reviews: ?>
+    <a href="${post.redirect_url}"><img valign="middle" src="${feed_trends_resource('star.png', 'base').url()}"></a>
+    <a href="${post.redirect_url}">${{_('reviews')}} (${num_reviews})</a>
+<?py #endif ?>
+
+</span>
+
+</div>
+

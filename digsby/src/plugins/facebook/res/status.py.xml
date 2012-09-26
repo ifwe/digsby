@@ -1,0 +1,12 @@
+<?py msg = status ?>
+<span class="status">
+<div class="status_title title">${{_('Status:')}}</div>
+<?py if msg and 'message' in msg and msg.message: ?>
+    <div class="status_name">${feed.profiles[int(msg.uid)].name if int(msg.uid) in feed.profiles else ""}</div> #{linkify(escape(to_str(msg.message)))} <span class="minor" id="${msg.status_id}_status_time" timestamp="${msg.time}"></span>
+<?py else: ?>
+    ${{_('You have no status message')}}
+<?py #endif ?>
+(<a href="javascript:null" class="edit_status">${{_('update')}}</a>)
+<hr class="content_hr"/>
+</span>
+<?py del msg ?>

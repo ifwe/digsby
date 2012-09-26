@@ -1,0 +1,48 @@
+
+BODY {
+	background: #fff url("../../images/bg-white.jpg") top center repeat-y;
+}
+
+
+.message .topleft {
+	background: url("../../images/white/topleft.png") top left no-repeat;
+}
+.message .top {
+	background: url("../../images/white/top.png") top right repeat-x;
+}
+.message .topright {
+	background: url("../../images/white/topright.png") top right no-repeat;
+}
+.message .left {
+	background: url("../../images/white/left.png") top left repeat-y;
+}
+.message .middle {
+	background: url("../../images/white/middle.png") top left repeat;
+}
+.message .right {
+	background: url("../../images/white/right.png") top right repeat-y;
+}
+.message .bottomleft {
+	background: url("../../images/white/bottomleft.png") top left no-repeat;
+	height: 17px;
+	bottom: 12px;
+}
+.message .bottom {
+	background: url("../../images/white/bottom.png") top right repeat-x;
+	height: 17px;
+	bottom: 12px;
+}
+.message .bottomright {
+	background: url("../../images/white/bottomright.png") top right no-repeat;
+	height: 17px;
+	bottom: 12px;
+}
+
+
+.incoming .message .bottomright {
+	background-image: url("../../images/white/bottomright-arrow.png");
+}
+
+.outgoing .message .bottomleft {
+	background-image: url("../../images/white/bottomleft-arrow.png");
+}

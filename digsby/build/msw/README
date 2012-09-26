@@ -1,0 +1,71 @@
+
+building Digsby dependencies on Windows
+=======================================
+
+Known Issues
+------------
+
+MSVC9: python/pcbuild/pcbuild.sln is not msvc9 express compatible, fails
+       need to script "vcbuild /upgrade pcbuild.sln" process
+
+Prerequisites
+-------------
+
+- Visual Studio 2008
+- Windows 7 SDK (first google result; you can leave .NET components unchecked in the installer)
+  - make sure to run the "Windows SDK Configuration Tool" and set the latest version as active
+- Python 2.6 (installed to C:\python26)
+ - http://python.org/download/
+- perl (ActiveState Perl is easy to install)
+ - http://www.activestate.com/activeperl/downloads/
+- svn (command-line binaries)
+ - http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=8100
+- swig
+- git (msys-git, in c:\Program Files\Git\bin\git.exe)
+ - http://code.google.com/p/msysgit/
+   - your public key needs to be stored in mini:/home/git/.ssh/authorized_keys2
+     (ssh-keygen can create an ~/.ssh/id_rsa.pub file for you that git will use
+     automatically)
+   - Make sure to choose "leave line endings as they are" when installing. If you
+     didn't, open Git Bash and run the following command to prevent problems:
+       git config --global core.autocrlf false
+   - make sure to run these commands to get your username/email configured
+     so that if you need to push commits back they have your name.
+        git config --global user.name "Your Name Comes Here"
+        git config --global user.email you@yourdomain.example.com
+- bakefile
+ - http://www.bakefile.org/download.html
+- for building CGUI:
+ - need boost: unzip http://sourceforge.net/projects/boost/files/boost/1.42.0/ somewhere and set BOOST_DIR to that directory.
+
+Bootstrapped
+------------
+
+- svn (command-line binaries)
+ - http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=8100
+- nasm.exe
+ - required by OpenSSL build process
+ - binaries at sourceforge: http://sourceforge.net/project/showfiles.php?group_id=6208&package_id=47034
+- for building webkit, a cygwin install from http://webkit.org/building/tools.html
+
+
+Instructions
+------------
+
+Get Digsby:
+  svn co http://DIGSBYSVN/digsby/trunk digsby
+
+Build all dependencies:
+  cd digsby\build\msw
+  python build_all.py
+
+To run:
+  cd ..\.. (back into the root Digsby directory)
+  digsby.bat
+
+
+---
+git fails w/ FAT32
+
+lxml must be built after PIL (needs zlib) which must come after webkit (needs jpeg)
+

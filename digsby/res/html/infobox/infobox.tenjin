@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<?py include(str(platform.resource('head.tenjin'))) ?>
+
+     <!-- Includes script/link tags to pull in javascript and CSS
+          from digsby and whatever plugin is creating the content
+      -->
+      
+<?py include(str(app.resource('head.tenjin'))) ?>
+
+    </head>
+
+    <body>
+     <div id="content" class="content major">
+<?py include(str(app.resource('content.tenjin'))) ?>
+     </div>
+    </body>
+</html>

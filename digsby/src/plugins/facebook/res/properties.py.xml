@@ -1,0 +1,16 @@
+<?py if do_attachment and 'attachment' in post and 'properties' in post.attachment and post.attachment.properties: ?>
+<div class="properties">
+    <?py for property in post.attachment.properties: ?>
+    <div class='minor'>
+        <?py if 'name' in property and property.name: ?>
+            ${property.name}:
+        <?py #endif ?>
+        <?py if 'href' in property and property.href: ?>
+            <a href="${property.href}">${property.text}</a>
+        <?py else: ?>
+            <span class="major">${property.text}</span>
+        <?py #endif ?>
+    </div>
+    <?py #endfor ?>
+</div>
+<?py #endif ?>

@@ -1,0 +1,26 @@
+.context a {    color: #606060;}.context a:hover {    text-shadow: #c0c0c0 0 1px 1px;}
+.context .header {
+    background: url(../images/gray/m-header-center.png) repeat-x;
+}
+.context .header .left {
+    background: url(../images/gray/m-header-left.png);
+}
+.context .header .right {
+    background: url(../images/gray/m-header-right.png);
+}.context .header .sender {    color: #606060;    text-shadow: #a0a0a0 0 2px 2px;}.context .header .overlay {    background-image: url(../images/gray/m-icon-overlay.png);}
+.context .messages {
+    background: url(../images/gray/m-left.png) left repeat-y;
+}
+.context .messages > div {
+    background: url(../images/gray/m-right.png) right repeat-y;
+}
+.context .messages > div > div {    background: #f8f8f8;}.context .messages .time {    color: #404040;    /*text-shadow: #c0c0c0 0 1px 1px;*/}.context .messages .message {    color: #404040;}.context .messages .sep {    background: #d0d0d0;    border-bottom: 1px solid #ebebeb;}
+.context .bottom {
+    background: url(../images/gray/m-bottom-center.png) repeat-x;
+}
+.context .bottom .left {
+    background: url(../images/gray/m-bottom-left.png);
+}
+.context .bottom .right {
+    background: url(../images/gray/m-bottom-right.png);
+}.context + .incoming, .context + .outgoing {    border-top: 2px solid rgb(64,64,64);}

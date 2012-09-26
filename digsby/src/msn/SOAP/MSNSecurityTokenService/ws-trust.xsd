@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by wp (freezingsoft) -->
+<xs:schema xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+           xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+           xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+           xmlns:wst="http://schemas.xmlsoap.org/ws/2005/02/trust"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+           xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+           xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"
+           targetNamespace="http://schemas.xmlsoap.org/ws/2005/02/trust"
+           elementFormDefault="qualified">
+    <xs:import namespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" schemaLocation="ws-secext.xsd"/>
+    <xs:import namespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" schemaLocation="wss-utility.xsd"/>
+    <xs:import namespace="http://schemas.xmlsoap.org/ws/2004/09/policy" schemaLocation="ws-policy.xsd"/>
+    <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+    <xs:import namespace="urn:oasis:names:tc:SAML:1.0:assertion" schemaLocation="sstc-saml-schema-assertion-1.1-cs.xsd"/>
+    <xs:element name="RequestSecurityToken" type="wst:RequestSecurityTokenType"/>
+    <xs:complexType name="RequestSecurityTokenType">
+        <xs:sequence>
+            <xs:element ref="wst:TokenType" minOccurs="0"/>
+            <xs:element ref="wst:RequestType"/>
+            <xs:element ref="wsp:AppliesTo" minOccurs="0"/>
+            <xs:element ref="wsp:PolicyReference" minOccurs="0"/>
+            <xs:any namespace="" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="Id" type="xs:string"/>
+    </xs:complexType>
+    <xs:element name="TokenType" type="xs:anyURI"/>
+    <xs:element name="RequestType" type="wst:RequestTypeOpenEnum"/>
+    <xs:simpleType name="RequestTypeOpenEnum">
+        <xs:restriction base="wst:RequestTypeEnum"/>
+    </xs:simpleType>
+    <xs:simpleType name="RequestTypeEnum">
+        <xs:restriction base="xs:anyURI">
+            <xs:enumeration value="http://schemas.xmlsoap.org/ws/2005/02/trust/Issue"/>
+            <xs:enumeration value="http://schemas.xmlsoap.org/ws/2005/02/trust/Renew"/>
+            <xs:enumeration value="http://schemas.xmlsoap.org/ws/2005/02/trust/Cancel"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="RequestSecurityTokenResponse" type="wst:RequestSecurityTokenResponseType"/>
+    <xs:complexType name="RequestSecurityTokenResponseType">
+        <xs:sequence>
+            <xs:element ref="wst:TokenType" minOccurs="0"/>
+            <xs:element ref="wsp:AppliesTo" minOccurs="0"/>
+            <xs:element ref="wst:Lifetime" minOccurs="0"/>
+            <xs:element ref="wst:RequestedSecurityToken" minOccurs="0"/>
+            <xs:element ref="wst:RequestedAttachedReference" minOccurs="0"/>
+            <xs:element ref="wst:RequestedUnattachedReference" minOccurs="0"/>
+            <xs:element ref="wst:RequestedTokenReference" minOccurs="0"/>
+            <xs:element ref="wst:RequestedProofToken" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="RequestedAttachedReference">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="wsse:SecurityTokenReference"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RequestedUnattachedReference">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="wsse:SecurityTokenReference"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RequestedTokenReference" type="wst:RequestedTokenReferenceType"/>
+    <xs:complexType name="RequestedTokenReferenceType">
+        <xs:sequence>
+            <xs:element ref="wsse:KeyIdentifier"/>
+            <xs:element ref="wsse:Reference"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="RequestedProofToken" type="wst:RequestedProofTokenType"/>
+    <xs:complexType name="RequestedProofTokenType">
+        <xs:sequence>
+            <xs:element ref="wst:BinarySecret"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="BinarySecret" type="wst:BinarySecretType"/>
+    <xs:complexType name="BinarySecretType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string"/>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="BinarySecretTypeEnum">
+        <xs:restriction base="xs:anyURI">
+            <xs:enumeration value="http://schemas.xmlsoap.org/ws/2005/02/trust/AsymmetricKey"/>
+            <xs:enumeration value="http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey"/>
+            <xs:enumeration value="http://schemas.xmlsoap.org/ws/2005/02/trust/Nonce"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BinarySecretTypeOpenEnum">
+        <xs:union memberTypes="wst:BinarySecretTypeEnum xs:anyURI"/>
+    </xs:simpleType>
+    <xs:element name="RequestedSecurityToken" type="wst:RequestedSecurityTokenType"/>
+    <xs:complexType name="RequestedSecurityTokenType">
+        <xs:sequence>
+            <xs:any namespace="##any" processContents="lax"/>
+            <xs:element name="EncryptedData" type="wst:EncryptedDataType" minOccurs="0"/>
+            <xs:element ref="wsse:BinarySecurityToken" minOccurs="0"/>
+            <xs:element ref="saml:Assertion" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Lifetime" type="wst:LifetimeType"/>
+    <xs:complexType name="LifetimeType">
+        <xs:sequence>
+            <xs:element ref="wsu:Created" minOccurs="0"/>
+            <xs:element ref="wsu:Expires" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="RequestSecurityTokenResponseCollection" type="wst:RequestSecurityTokenResponseCollectionType"/>
+    <xs:complexType name="RequestSecurityTokenResponseCollectionType">
+        <xs:sequence>
+            <xs:element ref="wst:RequestSecurityTokenResponse" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:attribute name="Id" type="xs:string"/>
+    <xs:complexType name="CipherDataType">
+        <xs:sequence>
+            <xs:element name="CipherValue" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EncryptedDataType">
+        <xs:sequence>
+            <xs:element name="EncryptionMethod" type="wst:EncryptionMethodType"/>
+            <xs:element ref="ds:KeyInfo"/>
+            <xs:element name="CipherData" type="wst:CipherDataType"/>
+        </xs:sequence>
+        <xs:attribute name="Id" type="xs:string"/>
+        <xs:attribute name="Type" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="EncryptionMethodType">
+        <xs:attribute name="Algorithm" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>

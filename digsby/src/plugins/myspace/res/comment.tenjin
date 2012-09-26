@@ -1,0 +1,32 @@
+<?py myspace_png = app.resource('myspace.png', 'base').url() ?>
+<?py user = acct.user_from_id(comment.userid) ?>
+<?py if user is None: ?>
+    <?py userlink = None ?>
+<?py else: ?>
+    <?py userlink = user.get('webUri', user.get('profileUrl', None)) ?>
+<?py #endif ?>
+<div class="comment" id="comment_${comment.commentId}">
+    <span class="viewport">
+      <div class="comment_icon_cell">
+<?py if acct.get_imageurl_for_user(user) is not None: ?>
+          <img class="comment_icon clipped-small" src="${acct.get_imageurl_for_user(user)}" />
+<?py else: ?>
+          <img class="comment_icon clipped-small" src="${gui.skin.get('BuddiesPanel.BuddyIcons.NoIcon').path.url()}" />
+<?py #endif ?>
+      </div>
+    </span>
+    <div class="comment_text_cell" timestamp="${comment.postedDate_parsed}" timestyle="smart">
+        <div class="comment_name">
+<?py if userlink: ?>
+    <a class="link no_ondown_link" href="${userlink}">#{acct._name_for_user(user)}</a>
+<?py else: ?>
+#{acct._name_for_user(user)}
+<?py #end ?>
+        </div>
+         · <!--! this line has a dot  -->
+        <div class="comment_time time-container minor"></div>
+        <div class="comment_text">
+            #{util.linkify(util.preserve_newlines(to_str(comment.text)))}
+        </div>
+    </div>
+</div>

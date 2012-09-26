@@ -1,0 +1,10 @@
+
+<?py for post in posts: ?>
+    <?py _context['post'] = post ?>
+    <?py if getattr(post, '_isad', False): ?>
+    <?py     include(r"#{{app.resource('trend.py.xml')}}") ?>
+    <?py else: ?>
+    <?py     include(r"#{{app.resource('post.py.xml')}}") ?>
+    <?py #endif ?>
+    <?py del _context['post'] ?>
+<?py #endfor ?>

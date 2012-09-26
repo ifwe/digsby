@@ -1,0 +1,29 @@
+<?py
+num_likes = ('likes' in post and 'count' in post.likes and post.likes.count) or 0;
+user_likes = 'likes' in post and 'user_likes' in post.likes and post.likes.user_likes;
+can_like = 'likes' in post and ('can_like' not in post.likes or post.likes.can_like);
+?>
+    <span class="like_link_block">
+<?py if can_like: ?>
+        <?py if not user_likes: ?>
+            <span class="like_button_section link_section">
+                · <!--! this line has a dot  -->
+                <a href="javascript:null;" class="link like_button">${{_('Like')}}</a>
+            </span>
+        <?py else: ?>
+            <span class="like_button_section link_section">
+                · <!--! this line has a dot  -->
+                <a href="javascript:null;" class="link unlike_button">${{_('Unlike')}}</a>
+            </span>
+        <?py #endif ?>
+        <?py if num_likes > 0: ?>
+            <a class="link link_section num_likes comment_button_section comment_button" href="javascript:null;">(${num_likes})</a>
+        <?py #endif ?>
+<?py else: ?>
+    <?py if num_likes > 0: ?>
+        · <!--! this line has a dot  -->
+        <a class="link link_section num_likes comment_button_section comment_button" href="javascript:null;">${{_('Likes')}} (${num_likes})</a> <!--! &lt;--needs link2 -->
+    <?py #endif ?>
+<?py #endif ?>
+    </span>
+<?py del num_likes, user_likes, can_like ?>

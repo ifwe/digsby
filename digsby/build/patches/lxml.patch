@@ -1,0 +1,25 @@
+Index: src/lxml/html/__init__.py
+===================================================================
+--- src/lxml/html/__init__.py
++++ src/lxml/html/__init__.py
+@@ -43,4 +43,6 @@
+ def __fix_docstring(s):
+     import sys
++    if s is None:
++        return None
+     if sys.version_info[0] >= 3:
+         sub = re.compile(r"^(\s*)u'", re.M).sub
+     else:
+Index: setupinfo.py
+===================================================================
+--- setupinfo.py
++++ setupinfo.py
+@@ -149,7 +149,7 @@
+         libs = ['libxslt', 'libexslt', 'libxml2', 'iconv']
+         if OPTION_STATIC:
+             libs = ['%s_a' % lib for lib in libs]
+-        libs.extend(['zlib', 'WS2_32'])
++        libs.extend(['zlib1', 'WS2_32'])
+     elif OPTION_STATIC:
+         libs = ['z', 'm']
+     else:

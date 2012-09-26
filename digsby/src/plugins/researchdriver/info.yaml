@@ -1,0 +1,16 @@
+name: 'Research'
+path: 'researchdriver'
+platforms:
+  - 'win'
+
+type: 'pure'
+
+entry_points: 
+  digsby.research.started: 
+    research: researchdriver.researchtoast:on_research
+  digsby.app.idle: 
+    research: researchdriver.driver:control
+  digsby.profile.addons: 
+    research: researchdriver.driver:init
+  blobs.update.prefs: 
+    research: researchdriver.driver:check_cli_args
