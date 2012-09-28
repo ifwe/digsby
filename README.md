@@ -3,7 +3,7 @@ Required tools:
  * [msysgit](http://code.google.com/p/msysgit/downloads/list)
  * [cygwin](http://svn.webkit.org/repository/webkit/trunk/Tools/CygwinDownloader/cygwin-downloader.zip)
     * Note: on windows with UAC enabled, it may fail to run setup.exe after downloading packages. You'll have to run it manually.
-    * after installing, open a cygwin shell (cygwin.bat) and execute `perl -e "use Switch;"`
+    * After installing, open a cygwin shell (cygwin.bat) and execute `perl -e "use Switch;"`
     * If you don't get an error, cygwin is configured properly. Otherwise, execute the following:
         * `curl -L http://search.cpan.org/CPAN/authors/id/R/RG/RGARCIA/Switch-2.16.tar.gz -o Switch-2.16.tar.gz`
         * `tar -xzf Switch-2.16.tar.gz`
