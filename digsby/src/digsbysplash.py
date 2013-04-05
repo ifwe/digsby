@@ -366,8 +366,6 @@ class LoginController(object):
         i = evt.Int
         length = len(evt.EventObject.Items)
 
-        print 'LAST WUT', evt.EventObject.GetCurrentSelection()
-
         if i == length - 3:
             # the ----- line. do nothing
             self.window.FindWindowById(LoginWindow.USERNAME).SetSelection(last_choice)
@@ -412,7 +410,6 @@ class LoginController(object):
 
         else:
             self._last_choice = i
-            print 'LAST CHOICE', i
             self.window.FindWindowById(LoginWindow.PASSWORD).SetValue('')
 
     def OnText(self, evt):
