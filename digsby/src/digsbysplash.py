@@ -332,7 +332,7 @@ class LoginController(object):
         self.window.EnableControls(False, SIGN_IN)
         self.window.Update()
 
-        #self.save_info()
+        self.save_info()
 
         #info = self.allinfo[self._get_window_username()]
         info = self.get_info()[self._get_window_username()]
