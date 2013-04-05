@@ -334,7 +334,6 @@ class LoginController(object):
 
         self.save_info()
 
-        #info = self.allinfo[self._get_window_username()]
         info = self.get_info()[self._get_window_username()]
 
         def myfunc():
