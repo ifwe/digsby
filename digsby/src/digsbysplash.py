@@ -16,11 +16,9 @@ from traceback import print_exc
 import hooks
 DEFAULT_SPLASH_POS = (300, 300)
 
-from cPickle import dump, load
 import os.path
 import sys
 import path
-import syck
 import re
 
 import datastore.v0 as datastore
@@ -30,8 +28,13 @@ log = logging.getLogger('loginwindow')
 
 try:
     _
-except:
+except NameError:
     _ = lambda s: s
+
+try:
+    sentinel
+except NameError:
+    sentinel = object()
 
 SIGN_IN = _("&Sign In")
 RESDIR = 'res'
@@ -86,15 +89,19 @@ def icon_bundle():
         _icon_bundle = wx.IconBundleFromFile(digsby_icon_filename(), wx.BITMAP_TYPE_ANY)
     return _icon_bundle
 
+
 def identity(username):
     return (i for i in hooks.first('digsby.identity.all')
             if i.name == username).next()
 
+
 def identities():
     return [i for i in hooks.first('digsby.identity.all')]
 
+
 def last_identity():
     return hooks.first('digsby.identity.last')
+
 
 class LoginController(object):
     '''
@@ -116,10 +123,8 @@ class LoginController(object):
         profiles, profile = identities(), None
         if profiles:
             profile = last_identity() or profiles[0]
-            username = profile.name
             position = profile.get('pos', DEFAULT_SPLASH_POS)
         else:
-            username = ''
             position = DEFAULT_SPLASH_POS
 
         bitmaps = cgui.LoginWindowBitmaps()
@@ -305,8 +310,8 @@ class LoginController(object):
             self.set_status(_('Loading...'))
             self.window.EnableControls(False, SIGN_IN, False)
             self.window.Update()
-            from M2Crypto import m2 #yeah, we're actually Loading...
-            m2.rand_bytes(16)       #just in case this chunk of dll isn't in memory, preload
+            from M2Crypto import m2  # yeah, we're actually Loading...
+            m2.rand_bytes(16)        # just in case this chunk of dll isn't in memory, preload
         import digsbyprofile
         if (digsbyprofile.profile and digsbyprofile.profile.is_connected):
             self.window.EnableControls(True, SIGN_IN, True)
@@ -327,9 +332,8 @@ class LoginController(object):
         self.window.EnableControls(False, SIGN_IN)
         self.window.Update()
 
-        #self.save_info()
+        self.save_info()
 
-        #info = self.allinfo[self._get_window_username()]
         info = self.get_info()[self._get_window_username()]
 
         def myfunc():
@@ -361,8 +365,6 @@ class LoginController(object):
         i = evt.Int
         length = len(evt.EventObject.Items)
 
-        print 'LAST WUT', evt.EventObject.GetCurrentSelection()
-
         if i == length - 3:
             # the ----- line. do nothing
             self.window.FindWindowById(LoginWindow.USERNAME).SetSelection(last_choice)
@@ -380,9 +382,12 @@ class LoginController(object):
 
             identity_obj.password = self.window.GetPassword()
 
-            if wx.OK == wx.MessageBox(
+            confirm_delete = wx.MessageBox(
                 _('Are you sure you want to delete profile "%s"?' % username),
-                _('Remove Profile'), wx.OK | wx.CANCEL):
+                _('Remove Profile'),
+                wx.OK | wx.CANCEL
+            )
+            if wx.OK == confirm_delete:
 
                 import digsby.digsbylocal as digsbylocal
                 try:
@@ -404,7 +409,6 @@ class LoginController(object):
 
         else:
             self._last_choice = i
-            print 'LAST CHOICE', i
             self.window.FindWindowById(LoginWindow.PASSWORD).SetValue('')
 
     def OnText(self, evt):
@@ -488,7 +492,8 @@ class LoginController(object):
 
         res = dialog.ShowModal()
 
-        if res != wx.ID_OK: return
+        if res != wx.ID_OK:
+            return
 
         # create the identity
         username, password = dialog.GetUsername(), dialog.GetPassword()
@@ -568,7 +573,6 @@ class LoginController(object):
 
     def get_info(self):
         assert IsMainThread()
-        find = self.window.FindWindowById
 
         window = self.window
         username = self._get_window_username()
@@ -645,6 +649,7 @@ class LoginController(object):
 
         if msgbox is not None:
             wx.MessageBox(msgbox, message)
+
 
 def show_conn_settings(evt):
     sys.util_allowed = True
