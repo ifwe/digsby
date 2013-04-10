@@ -28,12 +28,12 @@ log = logging.getLogger('loginwindow')
 
 try:
     _
-except:
+except NameError:
     _ = lambda s: s
 
 try:
     sentinel
-except:
+except NameError:
     sentinel = object()
 
 SIGN_IN = _("&Sign In")
