@@ -175,7 +175,7 @@ class Gmail(EmailAccount):
         if self.web_login:
             self.new_token(internal=False)
         if self.web_login and self.external_token:
-            return UrlQuery('https://www.google.com/accounts/TokenAuth?',
+            return UrlQuery('https://accounts.google.com/TokenAuth?',
                     **{'auth':self.external_token,
                        'service':'mail',
                        'continue':url,
@@ -256,7 +256,7 @@ class Gmail(EmailAccount):
         if not token:
             return False
 
-        webreq_result = self.webrequest(UrlQuery('https://www.google.com/accounts/TokenAuth?',
+        webreq_result = self.webrequest(UrlQuery('https://accounts.google.com/TokenAuth?',
                                                  **{'auth':token,
                                                     'service':'mail',
                                                     'continue':self.internalBaseMailUrl,
