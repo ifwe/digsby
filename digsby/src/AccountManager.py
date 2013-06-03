@@ -1044,44 +1044,56 @@ class AccountManager(Observable, HashedAccounts):
         diag = hooks.first('digsby.services.edit', parent = parent, sp = sp, impl="digsby_service_editor")
         old_offline = acct.offline_reason
         acct.offline_reason = StateMixin.Reasons.NONE
-        res = diag.ShowModal()
-        from wx import ID_SAVE
-        if diag.ReturnCode == ID_SAVE:
-            info = diag.RetrieveData()
-            sp.update_info(info)
-            sp.update_components(info)
 
-            if connect:
-                for ctype in sp.get_component_types():
-                    comp = sp.get_component(ctype, create = False)
-                    if comp is acct:
-                        #enable it.
-                        if hasattr(comp, 'enable'):
-                            if old_offline == StateMixin.Reasons.BAD_PASSWORD:
-                                log.info('comp.Connect() %r', comp)
-                                comp.Connect()
-                            elif not comp.enabled:
-                                log.info('comp.enable() %r', comp)
-                                comp.enable()
-                        else:
-                            #UpdateMixin
-                            if not comp.enabled:
-                                log.info('comp.enabled = True %r', comp)
-                                comp.enabled = True
-                            else:
-                                log.info('comp.Connect() %r', comp)
-                                comp.Connect()
+        info = None
+        try:
+            res = diag.ShowModal()
+            from wx import ID_SAVE
+            if diag.ReturnCode == ID_SAVE:
+                info = diag.RetrieveData()
+        finally:
+            diag.Destroy()
+
+        if info is None:
+            return
+
+        sp.update_info(info)
+        sp.update_components(info)
+
+        if not connect:
+            return
+
+        for ctype in sp.get_component_types():
+            comp = sp.get_component(ctype, create = False)
+            if comp is None:
+                continue
+
+            if comp is acct:
+                #enable it.
+                if hasattr(comp, 'enable'):
+                    if old_offline == StateMixin.Reasons.BAD_PASSWORD:
+                        log.info('comp.Connect() %r', comp)
+                        comp.Connect()
+                    elif not comp.enabled:
+                        log.info('comp.enable() %r', comp)
+                        comp.enable()
+                else:
+                    #UpdateMixin
+                    if not comp.enabled:
+                        log.info('comp.enabled = True %r', comp)
+                        comp.enabled = True
                     else:
-                        if comp.enabled and hasattr(comp, 'enable'):
-                            log.info('comp.enable() %r', comp)
-                            comp.enable()
-                        else:
-                            #UpdateMixin
-                            if comp.enabled:
-                                log.info('comp.Connect() %r', comp)
-                                comp.Connect()
-
-        diag.Destroy()
+                        log.info('comp.Connect() %r', comp)
+                        comp.Connect()
+            else:
+                if comp.enabled and hasattr(comp, 'enable'):
+                    log.info('comp.enable() %r', comp)
+                    comp.enable()
+                else:
+                    #UpdateMixin
+                    if comp.enabled:
+                        log.info('comp.Connect() %r', comp)
+                        comp.Connect()
 
     def save_all_info(self):
         self.save_local_info()
