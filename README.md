@@ -54,6 +54,10 @@ Dependency Troubleshooting
 ==========================
 TODO
 
+Link explainin how to fix the missing: `vcvarsall.bat` file: [Fix](http://stackoverflow.com/questions/2667069/cannot-find-vcvarsall-bat-when-running-a-python-script)
+Summary:
+You need to create a variable called: `VS90COMNTOOLS` that has the contents of `VS100COMNTOOLS`
+
 Running Digsby
 ==============
 `python Digsby.py`
