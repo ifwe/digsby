@@ -38,9 +38,14 @@ class Gmail(EmailAccount):
 
     protocol = 'gmail'
 
+    # TODO: these variables are all used, but it's unclear if
+    # they should all be from the same domain (https://accounts.google.com).
+    # Need to audit them and see what's up.
     baseAuthUrl  = 'https://www.google.com'
     authUrl  = '/accounts/ClientAuth'
     tokenUrl = '/accounts/IssueAuthToken'
+
+    tokenAuthUrl = 'https://accounts.google.com/TokenAuth'
 
     messageIdMatcher  = re.compile(r'message_id=([a-z0-9]+?)&')
     jsredirectMatcher = re.compile('location\.replace\("(.*)"\)')
@@ -175,7 +180,7 @@ class Gmail(EmailAccount):
         if self.web_login:
             self.new_token(internal=False)
         if self.web_login and self.external_token:
-            return UrlQuery('https://www.google.com/accounts/TokenAuth?',
+            return UrlQuery(self.tokenAuthUrl,
                     **{'auth':self.external_token,
                        'service':'mail',
                        'continue':url,
@@ -256,7 +261,7 @@ class Gmail(EmailAccount):
         if not token:
             return False
 
-        webreq_result = self.webrequest(UrlQuery('https://www.google.com/accounts/TokenAuth?',
+        webreq_result = self.webrequest(UrlQuery(self.tokenAuthUrl,
                                                  **{'auth':token,
                                                     'service':'mail',
                                                     'continue':self.internalBaseMailUrl,
